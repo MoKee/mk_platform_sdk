@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cyanogenmod.app;
+package mokee.app;
 
 import android.os.Build;
 
@@ -21,13 +21,16 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @hide
+ */
 public class ThemeVersion {
     private static final String THEME_VERSION_CLASS_NAME = "android.content.ThemeVersion";
     private static final String THEME_VERSION_FIELD_NAME = "THEME_VERSION";
     private static final String MIN_SUPPORTED_THEME_VERSION_FIELD_NAME =
             "MIN_SUPPORTED_THEME_VERSION";
-    private static final int CM11 = 1;
-    private static final int CM12_PRE_VERSIONING = 2;
+    private static final int MK44 = 1;
+    private static final int MK51_PRE_VERSIONING = 2;
 
     public static int getVersion() {
         int version;
@@ -37,8 +40,8 @@ public class ThemeVersion {
             version = (Integer) themeVersionField.get(null);
         } catch(Exception e) {
             // Field doesn't exist. Fallback to SDK level
-            version = Build.VERSION.SDK_INT < 21 ? CM11 :
-                    CM12_PRE_VERSIONING;
+            version = Build.VERSION.SDK_INT < 21 ? MK44 :
+                    MK51_PRE_VERSIONING;
         }
         return version;
     }
@@ -52,8 +55,8 @@ public class ThemeVersion {
             getMinSupportedVersion = (Integer) themeVersionField.get(null);
         } catch(Exception e) {
             // Field doesn't exist. Fallback to SDK level
-            getMinSupportedVersion = Build.VERSION.SDK_INT < 21 ? CM11 :
-                    CM12_PRE_VERSIONING;
+            getMinSupportedVersion = Build.VERSION.SDK_INT < 21 ? MK44 :
+                    MK51_PRE_VERSIONING;
         }
         return getMinSupportedVersion;
     }
