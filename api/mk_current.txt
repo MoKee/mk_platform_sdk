@@ -1,0 +1,24 @@
+package mokee.platform {
+
+  public final class Manifest {
+    ctor public Manifest();
+  }
+
+  public static final class Manifest.permission {
+    ctor public Manifest.permission();
+  }
+
+  public final class R {
+    ctor public R();
+  }
+
+  public static final class R.attr {
+    ctor public R.attr();
+  }
+
+  public static final class R.string {
+    ctor public R.string();
+  }
+
+}
+

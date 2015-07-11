@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The MoKee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,23 +21,23 @@ LOCAL_PATH := $(call my-dir)
 # did, the PRIVATE_* vars for R.java wouldn't be guaranteed to be correct.
 # Instead, it depends on the R.stamp file, which lists the corresponding
 # R.java file as a prerequisite.
-cm_platform_res := APPS/org.cyanogenmod.platform-res_intermediates/src
+mk_platform_res := APPS/org.mokee.platform-res_intermediates/src
 
-# The CyanogenMod Platform Framework Library
+# The MoKee Platform Framework Library
 # ============================================================
 include $(CLEAR_VARS)
 
-cyanogenmod_app_src := src/java/
-library_src := cm/lib/main/java
+mokee_app_src := src/java/
+library_src := mk/lib/main/java
 
-LOCAL_MODULE := org.cyanogenmod.platform
+LOCAL_MODULE := org.mokee.platform
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_JAVA_LIBRARIES := \
     services
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(cyanogenmod_app_src)) \
+    $(call all-java-files-under, $(mokee_app_src)) \
     $(call all-java-files-under, $(library_src))
 
 ## READ ME: ########################################################
@@ -51,36 +51,35 @@ LOCAL_SRC_FILES := \
 ##
 ## READ ME: ########################################################
 LOCAL_SRC_FILES += \
-    $(call all-Iaidl-files-under, $(cyanogenmod_app_src))
+    $(call all-Iaidl-files-under, $(mokee_app_src))
 
-cmplat_LOCAL_INTERMEDIATE_SOURCES := \
-    $(cm_platform_res)/cyanogenmod/platform/R.java \
-    $(cm_platform_res)/cyanogenmod/platform/Manifest.java \
-    $(cm_platform_res)/org/cyanogenmod/platform/internal/R.java
+mkplat_LOCAL_INTERMEDIATE_SOURCES := \
+    $(mk_platform_res)/mokee/platform/R.java \
+    $(mk_platform_res)/org/mokee/platform/internal/R.java
 
 LOCAL_INTERMEDIATE_SOURCES := \
-    $(cmplat_LOCAL_INTERMEDIATE_SOURCES)
+    $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
 
-# Include aidl files from cyanogenmod.app namespace as well as internal src aidl files
+# Include aidl files from mokee.app namespace as well as internal src aidl files
 LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
 
 include $(BUILD_JAVA_LIBRARY)
-cm_framework_module := $(LOCAL_INSTALLED_MODULE)
+mk_framework_module := $(LOCAL_INSTALLED_MODULE)
 
 # Make sure that R.java and Manifest.java are built before we build
 # the source for this library.
-cm_framework_res_R_stamp := \
-    $(call intermediates-dir-for,APPS,org.cyanogenmod.platform-res,,COMMON)/src/R.stamp
-$(full_classes_compiled_jar): $(cm_framework_res_R_stamp)
+mk_framework_res_R_stamp := \
+    $(call intermediates-dir-for,APPS,org.mokee.platform-res,,COMMON)/src/R.stamp
+$(full_classes_compiled_jar): $(mk_framework_res_R_stamp)
 
-$(cm_framework_module): | $(dir $(cm_framework_module))org.cyanogenmod.platform-res.apk
+$(mk_framework_module): | $(dir $(mk_framework_module))org.mokee.platform-res.apk
 
-cm_framework_built := $(call java-lib-deps, org.cyanogenmod.platform)
+mk_framework_built := $(call java-lib-deps, org.mokee.platform)
 
-# ====  org.cyanogenmod.platform.xml lib def  ========================
+# ====  org.mokee.platform.xml lib def  ========================
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := org.cyanogenmod.platform.xml
+LOCAL_MODULE := org.mokee.platform.xml
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_CLASS := ETC
@@ -96,64 +95,64 @@ include $(BUILD_PREBUILT)
 # ============================================================
 include $(CLEAR_VARS)
 
-LOCAL_MODULE:= org.cyanogenmod.platform.sdk
+LOCAL_MODULE:= org.mokee.platform.sdk
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := services
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(cyanogenmod_app_src)) \
-    $(call all-Iaidl-files-under, $(cyanogenmod_app_src))
+    $(call all-java-files-under, $(mokee_app_src)) \
+    $(call all-Iaidl-files-under, $(mokee_app_src))
 
-# Included aidl files from cyanogenmod.app namespace
+# Included aidl files from mokee.app namespace
 LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
 
-$(full_target): $(cm_framework_built) $(gen)
+$(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # ===========================================================
 # Common Droiddoc vars
-cmplat_docs_src_files := \
-    $(call all-java-files-under, $(cyanogenmod_app_src)) \
-    $(call all-html-files-under, $(cyanogenmod_app_src))
+mkplat_docs_src_files := \
+    $(call all-java-files-under, $(mokee_app_src)) \
+    $(call all-html-files-under, $(mokee_app_src))
 
-cmplat_docs_java_libraries := \
-    org.cyanogenmod.platform.sdk
+mkplat_docs_java_libraries := \
+    org.mokee.platform.sdk
 
 # SDK version as defined
-cmplat_docs_SDK_VERSION := 0.1
+mkplat_docs_SDK_VERSION := 0.1
 
 # release version
-cmplat_docs_SDK_REL_ID := 0
+mkplat_docs_SDK_REL_ID := 0
 
-cmplat_docs_LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+mkplat_docs_LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
-cmplat_docs_LOCAL_DROIDDOC_SOURCE_PATH := \
-    $(cmplat_docs_src_files)
+mkplat_docs_LOCAL_DROIDDOC_SOURCE_PATH := \
+    $(mkplat_docs_src_files)
 
-intermediates.COMMON := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS), org.cyanogenmod.platform.sdk,,COMMON)
+intermediates.COMMON := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS), org.mokee.platform.sdk,,COMMON)
 
 # ====  the api stubs and current.xml ===========================
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \
-    $(cmplat_docs_src_files) \
+    $(mkplat_docs_src_files) \
     $(call all-java-files-under, $(library_src))
-LOCAL_INTERMEDIATE_SOURCES:= $(cmplat_LOCAL_INTERMEDIATE_SOURCES)
-LOCAL_JAVA_LIBRARIES:= $(cmplat_docs_java_libraries)
-LOCAL_MODULE_CLASS:= $(cmplat_docs_LOCAL_MODULE_CLASS)
-LOCAL_DROIDDOC_SOURCE_PATH:= $(cmplat_docs_LOCAL_DROIDDOC_SOURCE_PATH)
+LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
+LOCAL_JAVA_LIBRARIES:= $(mkplat_docs_java_libraries)
+LOCAL_MODULE_CLASS:= $(mkplat_docs_LOCAL_MODULE_CLASS)
+LOCAL_DROIDDOC_SOURCE_PATH:= $(mkplat_docs_LOCAL_DROIDDOC_SOURCE_PATH)
 LOCAL_ADDITIONAL_JAVA_DIR:= $(intermediates.COMMON)/src
-LOCAL_ADDITIONAL_DEPENDENCIES:= $(cmplat_docs_LOCAL_ADDITIONAL_DEPENDENCIES)
+LOCAL_ADDITIONAL_DEPENDENCIES:= $(mkplat_docs_LOCAL_ADDITIONAL_DEPENDENCIES)
 
-LOCAL_MODULE := cm-api-stubs
+LOCAL_MODULE := mk-api-stubs
 
 LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR:= build/tools/droiddoc/templates-sdk
 
 LOCAL_DROIDDOC_OPTIONS:= \
-        -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/cmsdk_stubs_current_intermediates/src \
-        -stubpackages cyanogenmod.app:cyanogenmod.os:cyanogenmod.platform:org.cyanogenmod.platform \
-        -api $(INTERNAL_CM_PLATFORM_API_FILE) \
-        -removedApi $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE) \
+        -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_stubs_current_intermediates/src \
+        -stubpackages mokee.app:mokee.platform:org.mokee.platform \
+        -api $(INTERNAL_MK_PLATFORM_API_FILE) \
+        -removedApi $(INTERNAL_MK_PLATFORM_REMOVED_API_FILE) \
         -nodocs \
         -verbose
 
@@ -161,29 +160,29 @@ LOCAL_UNINSTALLABLE_MODULE := true
 
 include $(BUILD_DROIDDOC)
 
-$(full_target): $(cm_framework_built) $(gen)
-$(INTERNAL_CM_PLATFORM_API_FILE): $(full_target)
+$(full_target): $(mk_framework_built) $(gen)
+$(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
 
 # ====  the system api stubs ===================================
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \
-    $(cmplat_docs_src_files) \
+    $(mkplat_docs_src_files) \
     $(call all-java-files-under, $(library_src))
-LOCAL_INTERMEDIATE_SOURCES:= $(cmplat_LOCAL_INTERMEDIATE_SOURCES)
-LOCAL_JAVA_LIBRARIES:= $(cmplat_docs_java_libraries)
-LOCAL_MODULE_CLASS:= $(cmplat_docs_LOCAL_MODULE_CLASS)
-LOCAL_DROIDDOC_SOURCE_PATH:= $(cmplat_docs_LOCAL_DROIDDOC_SOURCE_PATH)
+LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
+LOCAL_JAVA_LIBRARIES:= $(mkplat_docs_java_libraries)
+LOCAL_MODULE_CLASS:= $(mkplat_docs_LOCAL_MODULE_CLASS)
+LOCAL_DROIDDOC_SOURCE_PATH:= $(mkplat_docs_LOCAL_DROIDDOC_SOURCE_PATH)
 LOCAL_ADDITIONAL_JAVA_DIR:= $(intermediates.COMMON)/src
 
-LOCAL_MODULE := cm-system-api-stubs
+LOCAL_MODULE := mk-system-api-stubs
 
 LOCAL_DROIDDOC_OPTIONS:=\
-        -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/cmsdk_system_stubs_current_intermediates/src \
-        -stubpackages cyanogenmod.app:cyanogenmod.os:cyanogenmod.platform:org.cyanogenmod.platform \
+        -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_system_stubs_current_intermediates/src \
+        -stubpackages mokee.app:mokee.platform:org.mokee.platform \
         -showAnnotation android.annotation.SystemApi \
-        -api $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE) \
-        -removedApi $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE) \
+        -api $(INTERNAL_MK_PLATFORM_SYSTEM_API_FILE) \
+        -removedApi $(INTERNAL_MK_PLATFORM_SYSTEM_REMOVED_API_FILE) \
         -nodocs \
         -verbose
 
@@ -193,44 +192,43 @@ LOCAL_UNINSTALLABLE_MODULE := true
 
 include $(BUILD_DROIDDOC)
 
-$(full_target): $(cm_framework_built) $(gen)
-$(INTERNAL_CM_PLATFORM_API_FILE): $(full_target)
+$(full_target): $(mk_framework_built) $(gen)
+$(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
 
 # Documentation
 # ===========================================================
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := org.cyanogenmod.platform.sdk
-LOCAL_INTERMEDIATE_SOURCES:= $(cmplat_LOCAL_INTERMEDIATE_SOURCES)
+LOCAL_MODULE := org.mokee.platform.sdk
+LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_SRC_FILES := $(cmplat_docs_src_files)
+LOCAL_SRC_FILES := $(mkplat_docs_src_files)
 LOCAL_ADDITONAL_JAVA_DIR := $(intermediates.COMMON)/src
 
 LOCAL_IS_HOST_MODULE := false
-LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR := vendor/cm/build/tools/droiddoc/templates-cmsdk
 LOCAL_ADDITIONAL_DEPENDENCIES := \
     services
 
-LOCAL_JAVA_LIBRARIES := $(cmplat_docs_java_libraries)
+LOCAL_JAVA_LIBRARIES := $(mkplat_docs_java_libraries)
 
 LOCAL_DROIDDOC_OPTIONS := \
         -offlinemode \
-        -hidePackage org.cyanogenmod.platform.internal \
+        -hidePackage org.mokee.platform.internal \
         -hdf android.whichdoc offline \
-        -hdf sdk.version $(cmplat_docs_docs_SDK_VERSION) \
-        -hdf sdk.rel.id $(cmplat_docs_docs_SDK_REL_ID) \
+        -hdf sdk.version $(mkplat_docs_docs_SDK_VERSION) \
+        -hdf sdk.rel.id $(mkplat_docs_docs_SDK_REL_ID) \
         -hdf sdk.preview 0 \
-        -since $(CM_SRC_API_DIR)/1.txt 1
+        -since $(MK_SRC_API_DIR)/1.txt 1
 
-$(full_target): $(cm_framework_built) $(gen)
+$(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_DROIDDOC)
 
 include $(call first-makefiles-under,$(LOCAL_PATH))
 
 # Cleanup temp vars
 # ===========================================================
-cmplat.docs.src_files :=
-cmplat.docs.java_libraries :=
+mkplat.docs.src_files :=
+mkplat.docs.java_libraries :=
 intermediates.COMMON :=
