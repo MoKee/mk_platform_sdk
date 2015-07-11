@@ -17,4 +17,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">魔趣系统</string>
+  <string name="profileNameDefault">默认</string>
+  <string name="profileNameWork">工作</string>
+  <string name="profileNameHome">住宅</string>
+  <string name="profileNameSilent">静音</string>
+  <string name="profileNameNight">夜晚</string>
+  <string name="profileNameAutomobile">汽车</string>
+  <string name="profileGroupPhone">电话</string>
+  <string name="profileGroupCalendar">日历</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">电子邮件</string>
+  <string name="profileGroupSMS">短信</string>
+  <string name="wildcardProfile">其他</string>
 </resources>

@@ -55,6 +55,7 @@ LOCAL_SRC_FILES += \
 
 mkplat_LOCAL_INTERMEDIATE_SOURCES := \
     $(mk_platform_res)/mokee/platform/R.java \
+    $(mk_platform_res)/mokee/platform/Manifest.java \
     $(mk_platform_res)/org/mokee/platform/internal/R.java
 
 LOCAL_INTERMEDIATE_SOURCES := \
