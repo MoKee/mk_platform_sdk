@@ -151,7 +151,7 @@ LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR:= build/tools/droiddoc/templates-sdk
 
 LOCAL_DROIDDOC_OPTIONS:= \
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_stubs_current_intermediates/src \
-        -stubpackages mokee.app:mokee.platform:org.mokee.platform \
+        -stubpackages mokee.app:mokee.profiles:mokee.platform:org.mokee.platform \
         -api $(INTERNAL_MK_PLATFORM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_REMOVED_API_FILE) \
         -nodocs \
@@ -180,7 +180,7 @@ LOCAL_MODULE := mk-system-api-stubs
 
 LOCAL_DROIDDOC_OPTIONS:=\
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_system_stubs_current_intermediates/src \
-        -stubpackages mokee.app:mokee.platform:org.mokee.platform \
+        -stubpackages mokee.app:mokee.profiles:mokee.platform:org.mokee.platform \
         -showAnnotation android.annotation.SystemApi \
         -api $(INTERNAL_MK_PLATFORM_SYSTEM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_SYSTEM_REMOVED_API_FILE) \
@@ -221,7 +221,8 @@ LOCAL_DROIDDOC_OPTIONS := \
         -hdf sdk.version $(mkplat_docs_docs_SDK_VERSION) \
         -hdf sdk.rel.id $(mkplat_docs_docs_SDK_REL_ID) \
         -hdf sdk.preview 0 \
-        -since $(MK_SRC_API_DIR)/1.txt 1
+        -since $(MK_SRC_API_DIR)/1.txt 1 \
+        -since $(MK_SRC_API_DIR)/2.txt 2
 
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_DROIDDOC)
