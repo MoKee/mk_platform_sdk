@@ -40,4 +40,15 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_PROFILE_SERVICE = "profile";
+
+    /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link mokee.app.SettingsManager} changing system settings.
+     *
+     * @see android.content.Context#getSystemService
+     * @see mokee.app.SettingsManager
+     *
+     * @hide
+     */
+    public static final String MK_SETTINGS_SERVICE = "mksettings";
 }

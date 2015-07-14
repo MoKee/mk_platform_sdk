@@ -17,6 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Label for the MoKee system components when they are shown to the user. -->
     <string name="mokee_system_label">MoKee System</string>
+    <string name="permlab_modifyNetworkSettings">change system network settings</string>
+    <string name="permdesc_modifyNetworkSettings">Allows an app to make changes to a restricted set of system network settings.</string>
 
     <!-- Profiles -->
     <!-- Names of default profiles. -->

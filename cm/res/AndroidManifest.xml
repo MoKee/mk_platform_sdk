@@ -38,6 +38,12 @@
                 android:label="@string/permlab_writePhoneLocation"
                 android:description="@string/permdesc_writePhoneLocation" />
 
+    <!-- Allows system applications to make changes to a subset of system network settings -->
+    <permission android:name="mokee.permission.MODIFY_NETWORK_SETTINGS"
+                android:label="@string/permlab_modifyNetworkSettings"
+                android:description="@string/permdesc_modifyNetworkSettings"
+                android:protectionLevel="system|signature" />
+
     <application android:process="system"
                  android:persistent="true"
                  android:hasCode="false"

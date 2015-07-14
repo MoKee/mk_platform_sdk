@@ -123,6 +123,14 @@ package mokee.app {
     field public static final int PROFILES_STATE_ENABLED = 1; // 0x1
   }
 
+  public class SettingsManager {
+    method public static mokee.app.SettingsManager getInstance(android.content.Context);
+    method public void rebootDevice();
+    method public void setAirplaneModeEnabled(boolean);
+    method public void setMobileDataEnabled(boolean);
+    method public void shutdownDevice();
+  }
+
 }
 
 package mokee.os {
@@ -154,6 +162,7 @@ package mokee.platform {
 
   public static final class Manifest.permission {
     ctor public Manifest.permission();
+    field public static final java.lang.String MODIFY_SETTINGS = "mokee.permission.MODIFY_SETTINGS";
     field public static final java.lang.String READ_PHONE_LOCATION = "mokee.permission.READ_PHONE_LOCATION";
     field public static final java.lang.String WRITE_PHONE_LOCATION = "mokee.permission.WRITE_PHONE_LOCATION";
   }
