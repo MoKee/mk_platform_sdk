@@ -29,4 +29,8 @@
   <string name="profileGroupEmail">电子邮件</string>
   <string name="profileGroupSMS">短信</string>
   <string name="wildcardProfile">其他</string>
+  <string name="permlab_readPhoneLocation">读取手机位置</string>
+  <string name="permdesc_readPhoneLocation">允许应用程序读取有关手机位置的信息</string>
+  <string name="permlab_writePhoneLocation">写入手机位置</string>
+  <string name="permdesc_writePhoneLocation">允许应用程序更改手机位置</string>
 </resources>

@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Система MoKee</string>
+  <string name="profileNameDefault">По умолчанию</string>
+  <string name="profileNameWork">На работе</string>
+  <string name="profileNameHome">Дома</string>
+  <string name="profileNameSilent">Тихий</string>
+  <string name="profileNameNight">Ночной</string>
+  <string name="profileNameAutomobile">В автомобиле</string>
+  <string name="profileGroupPhone">Телефон</string>
+  <string name="profileGroupCalendar">Календарь</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">Эл. почта</string>
+  <string name="profileGroupSMS">СМС</string>
+  <string name="wildcardProfile">Другие</string>
+  <string name="permlab_readPhoneLocation">Доступ к местоположению</string>
+  <string name="permdesc_readPhoneLocation">Позволить приложению получить местоположение телефона.</string>
+  <string name="permlab_writePhoneLocation">Записать местоположение</string>
+  <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
 </resources>
