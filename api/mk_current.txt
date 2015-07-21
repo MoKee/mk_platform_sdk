@@ -108,10 +108,10 @@ package mokee.app {
     field public static final java.lang.String EXTRA_LAST_PROFILE_UUID = "uuid";
     field public static final java.lang.String EXTRA_PROFILES_STATE = "profile_state";
     field public static final java.lang.String EXTRA_PROFILE_DIALOG_THEME = "mokee.platform.intent.extra.profile.DIALOG_THEME";
-    field public static final java.lang.String EXTRA_PROFILE_EXISTING_UUID = "android.intent.extra.profile.EXISTING_UUID";
+    field public static final java.lang.String EXTRA_PROFILE_EXISTING_UUID = "mokee.intent.extra.profile.EXISTING_UUID";
     field public static final java.lang.String EXTRA_PROFILE_NAME = "name";
     field public static final java.lang.String EXTRA_PROFILE_PICKED_UUID = "mokee.platform.intent.extra.profile.PICKED_UUID";
-    field public static final java.lang.String EXTRA_PROFILE_SHOW_NONE = "android.intent.extra.profile.SHOW_NONE";
+    field public static final java.lang.String EXTRA_PROFILE_SHOW_NONE = "mokee.intent.extra.profile.SHOW_NONE";
     field public static final java.lang.String EXTRA_PROFILE_TITLE = "mokee.platform.intent.extra.profile.TITLE";
     field public static final java.lang.String EXTRA_PROFILE_UUID = "uuid";
     field public static final java.lang.String INTENT_ACTION_PROFILE_SELECTED = "mokee.platform.intent.action.PROFILE_SELECTED";
