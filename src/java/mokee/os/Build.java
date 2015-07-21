@@ -34,6 +34,7 @@ public class Build {
      *
      * This parcelable version should be the latest version API version listed in
      * {@link MK_VERSION_CODES}
+     * @hide
      */
     public static final int PARCELABLE_VERSION = MK_VERSION_CODES.BOYSENBERRY;
 
