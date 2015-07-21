@@ -18,7 +18,7 @@ package mokee.app;
 
 import android.app.Notification;
 import android.app.NotificationGroup;
-import cyanogenmod.os.Build;
+import mokee.os.Build;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -304,7 +304,7 @@ public final class ProfileGroup implements Parcelable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
             mName = in.readString();
             mUuid = ParcelUuid.CREATOR.createFromParcel(in).getUuid();
             mDefaultGroup = in.readInt() != 0;

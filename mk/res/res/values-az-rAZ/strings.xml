@@ -16,17 +16,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="mokee_system_label">Σύστημα MoKee</string>
-  <string name="profileNameDefault">Προεπιλογή</string>
-  <string name="profileNameWork">Εργασία</string>
-  <string name="profileNameHome">Σπίτι</string>
-  <string name="profileNameSilent">Αθόρυβο</string>
-  <string name="profileNameNight">Νύχτα</string>
-  <string name="profileNameAutomobile">Αυτοκίνητο</string>
-  <string name="profileGroupPhone">Τηλέφωνο</string>
-  <string name="profileGroupCalendar">Ημερολόγιο</string>
+  <string name="mokee_system_label">MoKee Sistemi</string>
+  <string name="profileNameDefault">İlkin</string>
+  <string name="profileNameWork">İş</string>
+  <string name="profileNameHome">Ev</string>
+  <string name="profileNameSilent">Səssiz</string>
+  <string name="profileNameNight">Gecə</string>
+  <string name="profileNameAutomobile">Avtomobil</string>
+  <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar">Təqvim</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Ηλεκτρονικό ταχυδρομείο</string>
+  <string name="profileGroupEmail">E-poçt</string>
   <string name="profileGroupSMS">SMS</string>
-  <string name="wildcardProfile">Άλλο</string>
+  <string name="wildcardProfile">Digər</string>
 </resources>

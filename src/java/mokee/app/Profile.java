@@ -199,7 +199,7 @@ public final class Profile implements Parcelable, Comparable {
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
             // API release to help unravel this parcel
-            if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
                 mType = in.readInt();
                 mId = in.readString();
                 mState = in.readInt();
@@ -610,7 +610,7 @@ public final class Profile implements Parcelable, Comparable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
             if (in.readInt() != 0) {
                 mName = in.readString();
             }

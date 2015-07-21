@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,52 +14,52 @@
  * limitations under the License.
  */
 
-package cyanogenmod.os;
+package mokee.os;
 
 import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
 /**
- * Information about the current CyanogenMod build, extracted from system properties.
+ * Information about the current MoKee OpenSource build, extracted from system properties.
  */
 public class Build {
     /** Value used for when a build property is unknown. */
     public static final String UNKNOWN = "unknown";
 
     /**
-     * Since there might be a case where new versions of the cm framework use applications running
+     * Since there might be a case where new versions of the mk framework use applications running
      * old versions of the protocol (and thus old versions of this class), we need a versioning
      * system for the parcels sent between the core framework and its sdk users.
      *
      * This parcelable version should be the latest version API version listed in
-     * {@link CM_VERSION_CODES}
+     * {@link MK_VERSION_CODES}
      */
-    public static final int PARCELABLE_VERSION = CM_VERSION_CODES.BOYSENBERRY;
+    public static final int PARCELABLE_VERSION = MK_VERSION_CODES.BOYSENBERRY;
 
     private static final SparseArray<String> sdkMap;
     static
     {
         sdkMap = new SparseArray<String>();
-        sdkMap.put(CM_VERSION_CODES.APRICOT, "Apricot");
-        sdkMap.put(CM_VERSION_CODES.BOYSENBERRY, "Boysenberry");
+        sdkMap.put(MK_VERSION_CODES.APRICOT, "Apricot");
+        sdkMap.put(MK_VERSION_CODES.BOYSENBERRY, "Boysenberry");
     }
 
     /** Various version strings. */
-    public static class CM_VERSION {
+    public static class MK_VERSION {
         /**
          * The user-visible SDK version of the framework; its possible
-         * values are defined in {@link Build.CM_VERSION_CODES}.
+         * values are defined in {@link Build.MK_VERSION_CODES}.
          *
-         * Will return 0 if the device does not support the CM SDK.
+         * Will return 0 if the device does not support the MK SDK.
          */
         public static final int SDK_INT = SystemProperties.getInt(
-                "ro.cm.build.version.plat.sdk", 0);
+                "ro.mk.build.version.plat.sdk", 0);
     }
 
     /**
      * Enumeration of the currently known SDK version codes.  These are the
-     * values that can be found in {@link CM_VERSION#SDK_INT}.  Version numbers
+     * values that can be found in {@link MK_VERSION#SDK_INT}.  Version numbers
      * increment monotonically with each official platform release.
      *
      * To programmatically validate that a given API is available for use on the device,
@@ -70,7 +70,7 @@ public class Build {
      * <pre class="prettyprint">
      * private void removeActiveProfile() {
      *     Make sure we're running on BoysenBerry or higher to use Profiles API
-     *     if (Build.CM_VERSION.SDK_INT >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+     *     if (Build.MK_VERSION.SDK_INT >= Build.MK_VERSION_CODES.BOYSENBERRY) {
      *         ProfileManager profileManager = ProfileManager.getInstance(this);
      *         Profile activeProfile = profileManager.getActiveProfile();
      *         if (activeProfile != null) {
@@ -80,14 +80,14 @@ public class Build {
      * }
      * </pre>
      */
-    public static class CM_VERSION_CODES {
+    public static class MK_VERSION_CODES {
         /**
-         * June 2015: The first version of the platform sdk for CyanogenMod
+         * June 2015: The first version of the platform sdk for MoKee OpenSource
          */
         public static final int APRICOT = 1;
 
         /**
-         * July 2015 - ?: The second version of the platform sdk for CyanogenMod
+         * July 2015 - ?: The second version of the platform sdk for MoKee OpenSource
          */
         public static final int BOYSENBERRY = 2;
     }

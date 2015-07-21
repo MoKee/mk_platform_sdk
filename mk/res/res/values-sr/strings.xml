@@ -17,4 +17,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee систем</string>
+  <string name="profileNameDefault">Подразумевано</string>
+  <string name="profileNameWork">Посао</string>
+  <string name="profileNameHome">Кући</string>
+  <string name="profileNameSilent">Тишина</string>
+  <string name="profileNameNight">Ноћ</string>
+  <string name="profileNameAutomobile">Аутомобил</string>
+  <string name="profileGroupPhone">Телефон</string>
+  <string name="profileGroupCalendar">Календар</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">Е-пошта</string>
+  <string name="profileGroupSMS">SMS</string>
+  <string name="wildcardProfile">Друго</string>
 </resources>

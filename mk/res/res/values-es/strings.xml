@@ -19,10 +19,10 @@
   <string name="mokee_system_label">Sistema de MoKee</string>
   <string name="profileNameDefault">Predeterminado</string>
   <string name="profileNameWork">Trabajo</string>
-  <string name="profileNameHome">Página de inicio</string>
+  <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silencio</string>
   <string name="profileNameNight">Noche</string>
-  <string name="profileNameAutomobile">Automóvil</string>
+  <string name="profileNameAutomobile">Coche</string>
   <string name="profileGroupPhone">Teléfono</string>
   <string name="profileGroupCalendar">Calendario</string>
   <string name="profileGroupGmail">Gmail</string>

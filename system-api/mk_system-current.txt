@@ -124,6 +124,28 @@ package mokee.app {
 
 }
 
+package mokee.os {
+
+  public class Build {
+    ctor public Build();
+    method public static java.lang.String getNameForSDKInt(int);
+    field public static final int PARCELABLE_VERSION = 2; // 0x2
+    field public static final java.lang.String UNKNOWN = "unknown";
+  }
+
+  public static class Build.MK_VERSION {
+    ctor public Build.MK_VERSION();
+    field public static final int SDK_INT;
+  }
+
+  public static class Build.MK_VERSION_CODES {
+    ctor public Build.MK_VERSION_CODES();
+    field public static final int APRICOT = 1; // 0x1
+    field public static final int BOYSENBERRY = 2; // 0x2
+  }
+
+}
+
 package mokee.platform {
 
   public final class Manifest {

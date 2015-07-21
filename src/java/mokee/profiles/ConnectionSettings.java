@@ -31,7 +31,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import com.android.internal.telephony.RILConstants;
 
-import cyanogenmod.os.Build;
+import mokee.os.Build;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -127,11 +127,11 @@ public final class ConnectionSettings implements Parcelable {
         public static final int STATE_ENABLED = 1;
     }
 
-    private static final int CM_MODE_2G = 0;
-    private static final int CM_MODE_3G = 1;
-    private static final int CM_MODE_4G = 2;
-    private static final int CM_MODE_2G3G = 3;
-    private static final int CM_MODE_ALL = 4;
+    private static final int MK_MODE_2G = 0;
+    private static final int MK_MODE_3G = 1;
+    private static final int MK_MODE_4G = 2;
+    private static final int MK_MODE_2G3G = 3;
+    private static final int MK_MODE_ALL = 4;
 
     /** @hide */
     public static final Parcelable.Creator<ConnectionSettings> CREATOR =
@@ -256,19 +256,19 @@ public final class ConnectionSettings implements Parcelable {
             case PROFILE_CONNECTION_2G3G4G:
                 Intent intent = new Intent(ACTION_MODIFY_NETWORK_MODE);
                 switch(getValue()) {
-                    case CM_MODE_2G:
+                    case MK_MODE_2G:
                         intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_GSM_ONLY);
                         break;
-                    case CM_MODE_3G:
+                    case MK_MODE_3G:
                         intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_WCDMA_ONLY);
                         break;
-                    case CM_MODE_4G:
+                    case MK_MODE_4G:
                         intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_LTE_ONLY);
                         break;
-                    case CM_MODE_2G3G:
+                    case MK_MODE_2G3G:
                         intent.putExtra(EXTRA_NETWORK_MODE, RILConstants.NETWORK_MODE_WCDMA_PREF);
                         break;
-                    case CM_MODE_ALL:
+                    case MK_MODE_ALL:
                         intent.putExtra(EXTRA_NETWORK_MODE,
                                 RILConstants.NETWORK_MODE_LTE_GSM_WCDMA);
                         break;
@@ -425,7 +425,7 @@ public final class ConnectionSettings implements Parcelable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
             mConnectionId = in.readInt();
             mOverride = in.readInt() != 0;
             mValue = in.readInt();
