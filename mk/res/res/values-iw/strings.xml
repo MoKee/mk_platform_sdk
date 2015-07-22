@@ -25,8 +25,6 @@
   <string name="profileNameAutomobile">רכב</string>
   <string name="profileGroupPhone">טלפון</string>
   <string name="profileGroupCalendar">לוח שנה</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">דוא\"ל</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">אחר</string>
 </resources>

@@ -25,7 +25,6 @@
   <string name="profileNameAutomobile">Onderweg</string>
   <string name="profileGroupPhone">Telefoon</string>
   <string name="profileGroupCalendar">Agenda</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
   <string name="profileGroupSMS">Sms</string>
   <string name="wildcardProfile">Anders</string>

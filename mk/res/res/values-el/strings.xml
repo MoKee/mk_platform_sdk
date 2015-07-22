@@ -25,8 +25,6 @@
   <string name="profileNameAutomobile">Αυτοκίνητο</string>
   <string name="profileGroupPhone">Τηλέφωνο</string>
   <string name="profileGroupCalendar">Ημερολόγιο</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Ηλεκτρονικό ταχυδρομείο</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Άλλο</string>
 </resources>

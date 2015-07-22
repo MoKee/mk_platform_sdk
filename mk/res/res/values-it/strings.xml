@@ -22,11 +22,7 @@
   <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silenzioso</string>
   <string name="profileNameNight">Notte</string>
-  <string name="profileNameAutomobile">Automobile</string>
   <string name="profileGroupPhone">Telefono</string>
   <string name="profileGroupCalendar">Calendario</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Email</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Altro</string>
 </resources>

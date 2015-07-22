@@ -29,4 +29,8 @@
   <string name="profileGroupEmail">Correu electrònic</string>
   <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Altres</string>
+  <string name="permlab_readPhoneLocation">llegir la ubicació</string>
+  <string name="permdesc_readPhoneLocation">Permet una aplicació per llegir informació sobre la ubicació del telèfon.</string>
+  <string name="permlab_writePhoneLocation">escriure la ubicació</string>
+  <string name="permdesc_writePhoneLocation">Permet un app canviar la ubicació del telèfon.</string>
 </resources>

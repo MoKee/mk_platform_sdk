@@ -25,7 +25,6 @@
   <string name="profileNameAutomobile">Auto</string>
   <string name="profileGroupPhone">Puhelin</string>
   <string name="profileGroupCalendar">Kalenteri</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Sähköposti</string>
   <string name="profileGroupSMS">Tekstiviesti</string>
   <string name="wildcardProfile">Muu</string>

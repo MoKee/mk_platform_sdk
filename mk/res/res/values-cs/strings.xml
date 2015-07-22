@@ -25,8 +25,6 @@
   <string name="profileNameAutomobile">Automobil</string>
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Kalendář</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Ostatní</string>
 </resources>

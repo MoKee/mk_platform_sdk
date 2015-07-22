@@ -25,8 +25,6 @@
   <string name="profileNameAutomobile">Samochód</string>
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Kalendarz</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Inny</string>
 </resources>

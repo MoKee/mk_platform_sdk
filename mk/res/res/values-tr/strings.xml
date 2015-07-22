@@ -25,8 +25,6 @@
   <string name="profileNameAutomobile">Otomobil</string>
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Takvim</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-posta</string>
-  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Diğer</string>
 </resources>
