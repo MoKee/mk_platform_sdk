@@ -17,16 +17,4 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee Järjestelmä</string>
-  <string name="profileNameDefault">Oletus</string>
-  <string name="profileNameWork">Työ</string>
-  <string name="profileNameHome">Koti</string>
-  <string name="profileNameSilent">Äänetön</string>
-  <string name="profileNameNight">Yö</string>
-  <string name="profileNameAutomobile">Auto</string>
-  <string name="profileGroupPhone">Puhelin</string>
-  <string name="profileGroupCalendar">Kalenteri</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Sähköposti</string>
-  <string name="profileGroupSMS">Tekstiviesti</string>
-  <string name="wildcardProfile">Muu</string>
 </resources>

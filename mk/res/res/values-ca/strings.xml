@@ -17,16 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Sistema de MoKee</string>
-  <string name="profileNameDefault">Predeterminat</string>
+  <string name="profileNameDefault">per defecte</string>
   <string name="profileNameWork">Feina</string>
-  <string name="profileNameHome">Casa</string>
+  <string name="profileNameHome">Personal</string>
   <string name="profileNameSilent">Silenci</string>
   <string name="profileNameNight">Nit</string>
-  <string name="profileNameAutomobile">Cotxe</string>
-  <string name="profileGroupPhone">Telèfon</string>
+  <string name="profileNameAutomobile">Automòbil</string>
+  <string name="profileGroupPhone">telefon</string>
   <string name="profileGroupCalendar">Calendari</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Correu electrònic</string>
+  <string name="profileGroupEmail">correu electrònic</string>
   <string name="profileGroupSMS">SMS</string>
-  <string name="wildcardProfile">Altres</string>
+  <string name="wildcardProfile">altres</string>
+  <string name="permlab_readPhoneLocation">llegir la ubicació</string>
+  <string name="permdesc_readPhoneLocation">Permet una aplicació per llegir informació sobre la ubicació del telèfon.</string>
+  <string name="permlab_writePhoneLocation">escriure la ubicació</string>
+  <string name="permdesc_writePhoneLocation">Permet un app canviar la ubicació del telèfon.</string>
 </resources>
