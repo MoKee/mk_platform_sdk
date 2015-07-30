@@ -25,6 +25,12 @@
   <string name="profileNameAutomobile">Аутомобил</string>
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календар</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Е-пошта</string>
+  <string name="profileGroupSMS">СМС</string>
   <string name="wildcardProfile">Друго</string>
+  <string name="permlab_readPhoneLocation">читање локације телефона</string>
+  <string name="permdesc_readPhoneLocation">Дозволити апликацијама да користе локацију телефона.</string>
+  <string name="permlab_writePhoneLocation">уписати локацију телефона</string>
+  <string name="permdesc_writePhoneLocation">Дозволити апликацијама измену локације телефона.</string>
 </resources>

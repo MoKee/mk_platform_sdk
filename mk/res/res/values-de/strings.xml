@@ -17,4 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee-System</string>
+  <string name="profileNameDefault">Standard</string>
+  <string name="profileNameWork">Arbeit</string>
+  <string name="profileNameHome">Zuhause</string>
+  <string name="profileNameSilent">Still</string>
+  <string name="profileNameNight">Nacht</string>
+  <string name="profileNameAutomobile">Auto</string>
+  <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar">Kalender</string>
+  <string name="profileGroupGmail">Google Mail</string>
+  <string name="profileGroupEmail">E-Mail</string>
+  <string name="profileGroupSMS">SMS</string>
+  <string name="wildcardProfile">Sonstige</string>
+  <string name="permlab_readPhoneLocation">Telefon Standort abrufen</string>
+  <string name="permdesc_readPhoneLocation">Ermöglicht einer App Informationen bezüglich des Telefon Standorts abzurufen.</string>
+  <string name="permlab_writePhoneLocation">Telefon Standort festhalten</string>
+  <string name="permdesc_writePhoneLocation">Erlaubt einer App den Telefon Standort zu ändern.</string>
 </resources>
