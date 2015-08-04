@@ -59,6 +59,7 @@ package mokee.app {
   }
 
   public static class Profile.ProfileTrigger implements android.os.Parcelable {
+    ctor public Profile.ProfileTrigger(int, java.lang.String, int, java.lang.String);
     method public int describeContents();
     method public java.lang.String getId();
     method public java.lang.String getName();
@@ -237,6 +238,16 @@ package mokee.profiles {
     ctor public ConnectionSettings.BooleanState();
     field public static final int STATE_DISALED = 0; // 0x0
     field public static final int STATE_ENABLED = 1; // 0x1
+  }
+
+  public final class LockSettings implements android.os.Parcelable {
+    ctor public LockSettings(android.os.Parcel);
+    ctor public LockSettings();
+    ctor public LockSettings(int);
+    method public int describeContents();
+    method public int getValue();
+    method public void setValue(int);
+    method public void writeToParcel(android.os.Parcel, int);
   }
 
   public final class RingModeSettings implements android.os.Parcelable {
