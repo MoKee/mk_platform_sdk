@@ -48,7 +48,6 @@
     <permission android:name="mokee.permission.MODIFY_SOUND_SETTINGS"
                 android:label="@string/permlab_modifySoundSettings"
                 android:description="@string/permdesc_modifySoundSettings"
-                android:icon="@drawable/ic_launcher_cyanogenmod"
                 android:protectionLevel="normal" />
 
     <application android:process="system"

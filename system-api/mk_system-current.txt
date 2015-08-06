@@ -53,13 +53,12 @@ package mokee.alarmclock {
 
   public class MoKeeAlarmClock {
     ctor public MoKeeAlarmClock();
-    method public static android.content.Intent createAlarmIntent();
+    method public static android.content.Intent createAlarmIntent(android.content.Context);
     field public static final java.lang.String ACTION_SET_ALARM_ENABLED = "mokee.alarmclock.SET_ALARM_ENABLED";
     field public static final java.lang.String EXTRA_ALARM_ID = "mokee.intent.extra.alarmclock.ID";
     field public static final java.lang.String EXTRA_ENABLED = "mokee.intent.extra.alarmclock.ENABLED";
     field public static final java.lang.String MODIFY_ALARMS_PERMISSION = "mokee.alarmclock.permission.MODIFY_ALARMS";
     field public static final java.lang.String READ_ALARMS_PERMISSION = "mokee.alarmclock.permission.READ_ALARMS";
-    field public static final java.lang.String WRITE_ALARMS_PERMISSION = "mokee.alarmclock.permission.WRITE_ALARMS";
   }
 
 }
@@ -196,6 +195,8 @@ package mokee.app {
     method public void setMobileDataEnabled(boolean);
     method public boolean setZenMode(int);
     method public void shutdownDevice();
+    field public static final java.lang.String MODIFY_NETWORK_SETTINGS_PERMISSION = "mokee.permission.MODIFY_NETWORK_SETTINGS";
+    field public static final java.lang.String MODIFY_SOUND_SETTINGS_PERMISSION = "mokee.permission.MODIFY_SOUND_SETTINGS";
     field public static final int ZEN_MODE_IMPORTANT_INTERRUPTIONS = 1; // 0x1
     field public static final int ZEN_MODE_NO_INTERRUPTIONS = 2; // 0x2
     field public static final int ZEN_MODE_OFF = 0; // 0x0
@@ -232,7 +233,8 @@ package mokee.platform {
 
   public static final class Manifest.permission {
     ctor public Manifest.permission();
-    field public static final java.lang.String MODIFY_SETTINGS = "mokee.permission.MODIFY_SETTINGS";
+    field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
+    field public static final java.lang.String MODIFY_SOUND_SETTINGS = "mokee.permission.MODIFY_SOUND_SETTINGS";
     field public static final java.lang.String READ_PHONE_LOCATION = "mokee.permission.READ_PHONE_LOCATION";
     field public static final java.lang.String WRITE_PHONE_LOCATION = "mokee.permission.WRITE_PHONE_LOCATION";
   }
