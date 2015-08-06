@@ -51,4 +51,16 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_SETTINGS_SERVICE = "mksettings";
+
+    /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link mokee.app.MKTelephonyManager} to manage the phone and
+     * data connection.
+     *
+     * @see android.content.Context#getSystemService
+     * @see mokee.app.MKTelephonyManager
+     *
+     * @hide
+     */
+    public static final String MK_TELEPHONY_MANAGER_SERVICE = "mktelephonymanager";
 }
