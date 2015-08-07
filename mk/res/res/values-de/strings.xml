@@ -17,6 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee-System</string>
+  <string name="permlab_modifyNetworkSettings">System-Netzwerkeinstellungen ändern</string>
+  <string name="permdesc_modifyNetworkSettings">Ermöglicht einer App eingeschränkten Zugriff auf die System-Netzwerkeinstellungen.</string>
+  <string name="permlab_modifySoundSettings">Ton Einstellungen</string>
+  <string name="permdesc_modifySoundSettings">Ermöglicht einer App eingeschränkten Zugriff auf die Ton Einstellungen.</string>
+  <string name="permlab_readMSPhoneState">Siehe den Gerätestatus und die Datenverbindung mit der Möglichkeit mehrfach SIM zu nutzen ein</string>
+  <string name="permdesc_readMSPhoneState">Ermöglicht einer App eingeschränkte Einsicht in den Gerätestatus und die Datenverbindung</string>
   <string name="profileNameDefault">Standard</string>
   <string name="profileNameWork">Arbeit</string>
   <string name="profileNameHome">Zuhause</string>
