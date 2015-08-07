@@ -23,4 +23,7 @@
     <java-symbol type="xml" name="profile_default" />
     <java-symbol type="string" name="wildcardProfile" />
 
+    <!-- Captchas -->
+    <java-symbol type="string" name="captchas_has_copied" />
+
 </resources>

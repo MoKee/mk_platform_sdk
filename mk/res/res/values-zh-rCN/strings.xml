@@ -33,4 +33,5 @@
   <string name="permdesc_readPhoneLocation">允许应用程序读取有关手机位置的信息</string>
   <string name="permlab_writePhoneLocation">写入手机位置</string>
   <string name="permdesc_writePhoneLocation">允许应用程序更改手机位置</string>
+  <string name="captchas_has_copied">已识别到验证码 %s 并自动复制到剪贴板，长按您需要填写的输入框即可进行粘贴操作。</string>
 </resources>
