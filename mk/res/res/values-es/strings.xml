@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="mokee_system_label">Sistema de MoKee</string>
+  <string name="mokee_system_label">Sistema MoKee</string>
   <string name="permlab_modifyNetworkSettings">cambiar configuración de red del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Permite a una aplicación hacer cambios a un conjunto restringido de configuraciones del sistema red.</string>
   <string name="permlab_modifySoundSettings">cambiar ajustes de sonido del sistema</string>
@@ -41,4 +41,5 @@
   <string name="permdesc_readPhoneLocation">Permite una aplicación leer información sobre la ubicación del teléfono.</string>
   <string name="permlab_writePhoneLocation">Escriba la ubicación del teléfono</string>
   <string name="permdesc_writePhoneLocation">Permite una aplicación cambiar la ubicación del teléfono.</string>
+  <string name="captchas_has_copied">El código de verificación es %s, ya copiado en el portapapeles, mantenga presionado el cuadro de texto para pegar.</string>
 </resources>

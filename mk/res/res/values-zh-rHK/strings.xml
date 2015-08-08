@@ -37,4 +37,5 @@
   <string name="permdesc_readPhoneLocation">允許應用程式讀取關於手機位置的資訊</string>
   <string name="permlab_writePhoneLocation">寫入電話位置</string>
   <string name="permdesc_writePhoneLocation">允許應用程式變更電話位置。</string>
+  <string name="captchas_has_copied">驗證碼「%s」經已複製到剪貼簿。</string>
 </resources>
