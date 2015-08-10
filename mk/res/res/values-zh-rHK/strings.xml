@@ -21,6 +21,10 @@
   <string name="permdesc_modifyNetworkSettings">允許應用程式對系統的網絡設定進行有限的修改。</string>
   <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
   <string name="permdesc_modifySoundSettings">允許應用程式對系統的聲音設定進行有限的修改。</string>
+  <string name="permlab_readMSPhoneState">在支援多張 SIM 咭的裝置上查看電話狀態和數據連綫</string>
+  <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
+  <string name="permlab_modifyMSPhoneState">在支援多張 SIM 咭的裝置上修改電話狀態和數據連綫</string>
+  <string name="permdesc_modifyMSPhoneState">允許應用程式修改支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
   <string name="profileNameDefault">預設</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住家</string>
