@@ -18,9 +18,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee 系統</string>
   <string name="permlab_modifyNetworkSettings">變更系統網絡設定</string>
-  <string name="permdesc_modifyNetworkSettings">允許應用程式對系統的網絡設定進行有限的修改。</string>
+  <string name="permdesc_modifyNetworkSettings">允許應用程式對有限的系統網絡設定進行修改。</string>
   <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
-  <string name="permdesc_modifySoundSettings">允許應用程式對系統的聲音設定進行有限的修改。</string>
+  <string name="permdesc_modifySoundSettings">允許應用程式對有限的系統聲音設定進行修改。</string>
   <string name="permlab_readMSPhoneState">在支援多張 SIM 咭的裝置上查看電話狀態和數據連綫</string>
   <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
   <string name="permlab_modifyMSPhoneState">在支援多張 SIM 咭的裝置上修改電話狀態和數據連綫</string>
