@@ -17,6 +17,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee систем</string>
+  <string name="permlab_modifyNetworkSettings">промена системских подешавања мреже</string>
+  <string name="permdesc_modifyNetworkSettings">Дозвољава апликацији промену системских мрежних подешавања.</string>
+  <string name="permlab_modifySoundSettings">подешавања системских тонова</string>
+  <string name="permdesc_modifySoundSettings">Дозвољава апликацији промену системских звучних подешавања.</string>
+  <string name="permlab_readMSPhoneState">преглед статуса телефона и мрежног повезивања са подршком за више SIM картица</string>
+  <string name="permdesc_readMSPhoneState">Дозволити апликацији преглед статуса телефона и мрежног повезивања са подршком за више SIM картица.</string>
+  <string name="permlab_modifyMSPhoneState">измена статуса телефона и мрежног повезивања са подршком за више SIM картица</string>
+  <string name="permdesc_modifyMSPhoneState">Дозвољава апликацији измену статуса телефона и мрежног повезивања са подршком за више SIM картица.</string>
   <string name="profileNameDefault">Подразумевано</string>
   <string name="profileNameWork">Посао</string>
   <string name="profileNameHome">Кући</string>
@@ -33,4 +41,5 @@
   <string name="permdesc_readPhoneLocation">Дозволити апликацијама да користе локацију телефона.</string>
   <string name="permlab_writePhoneLocation">уписати локацију телефона</string>
   <string name="permdesc_writePhoneLocation">Дозволити апликацијама измену локације телефона.</string>
+  <string name="captchas_has_copied">Верификациона шифра %s, је копирана, задржите да бисте налепили.</string>
 </resources>
