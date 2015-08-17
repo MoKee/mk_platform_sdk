@@ -25,13 +25,16 @@ import com.android.server.SystemService;
 import mokee.app.MKContextConstants;
 import mokee.hardware.IMKHardwareService;
 import mokee.hardware.MKHardwareManager;
+import mokee.hardware.DisplayMode;
 
 import java.io.File;
 
 import org.mokee.hardware.AdaptiveBacklight;
+import org.mokee.hardware.AutoContrast;
 import org.mokee.hardware.ColorEnhancement;
 import org.mokee.hardware.DisplayColorCalibration;
 import org.mokee.hardware.DisplayGammaCalibration;
+import org.mokee.hardware.DisplayModeControl;
 import org.mokee.hardware.HighTouchSensitivity;
 import org.mokee.hardware.KeyDisabler;
 import org.mokee.hardware.LongTermOrbits;
@@ -71,6 +74,11 @@ public class MKHardwareService extends SystemService {
         public String getSerialNumber();
 
         public boolean requireAdaptiveBacklightForSunlightEnhancement();
+
+        public DisplayMode[] getDisplayModes();
+        public DisplayMode getCurrentDisplayMode();
+        public DisplayMode getDefaultDisplayMode();
+        public boolean setDisplayMode(DisplayMode mode);
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -102,6 +110,10 @@ public class MKHardwareService extends SystemService {
                 mSupportedFeatures |= MKHardwareManager.FEATURE_VIBRATOR;
             if (TouchscreenHovering.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_TOUCH_HOVERING;
+            if (AutoContrast.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_AUTO_CONTRAST;
+            if (DisplayModeControl.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_DISPLAY_MODES;
         }
 
         public int getSupportedFeatures() {
@@ -124,6 +136,8 @@ public class MKHardwareService extends SystemService {
                     return TapToWake.isEnabled();
                 case MKHardwareManager.FEATURE_TOUCH_HOVERING:
                     return TouchscreenHovering.isEnabled();
+                case MKHardwareManager.FEATURE_AUTO_CONTRAST:
+                    return AutoContrast.isEnabled();
                 default:
                     Log.e(TAG, "feature " + feature + " is not a boolean feature");
                     return false;
@@ -146,6 +160,8 @@ public class MKHardwareService extends SystemService {
                     return TapToWake.setEnabled(enable);
                 case MKHardwareManager.FEATURE_TOUCH_HOVERING:
                     return TouchscreenHovering.setEnabled(enable);
+                case MKHardwareManager.FEATURE_AUTO_CONTRAST:
+                    return AutoContrast.setEnabled(enable);
                 default:
                     Log.e(TAG, "feature " + feature + " is not a boolean feature");
                     return false;
@@ -260,6 +276,22 @@ public class MKHardwareService extends SystemService {
 
         public boolean requireAdaptiveBacklightForSunlightEnhancement() {
             return SunlightEnhancement.isAdaptiveBacklightRequired();
+        }
+
+        public DisplayMode[] getDisplayModes() {
+            return DisplayModeControl.getAvailableModes();
+        }
+
+        public DisplayMode getCurrentDisplayMode() {
+            return DisplayModeControl.getCurrentMode();
+        }
+
+        public DisplayMode getDefaultDisplayMode() {
+            return DisplayModeControl.getDefaultMode();
+        }
+
+        public boolean setDisplayMode(DisplayMode mode) {
+            return DisplayModeControl.setMode(mode, true);
         }
     }
 
@@ -447,6 +479,50 @@ public class MKHardwareService extends SystemService {
                 return false;
             }
             return mMkHwImpl.requireAdaptiveBacklightForSunlightEnhancement();
+        }
+
+        @Override
+        public DisplayMode[] getDisplayModes() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES)) {
+                Log.e(TAG, "Display modes are not supported");
+                return null;
+            }
+            return mMkHwImpl.getDisplayModes();
+        }
+
+        @Override
+        public DisplayMode getCurrentDisplayMode() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES)) {
+                Log.e(TAG, "Display modes are not supported");
+                return null;
+            }
+            return mMkHwImpl.getCurrentDisplayMode();
+        }
+
+        @Override
+        public DisplayMode getDefaultDisplayMode() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES)) {
+                Log.e(TAG, "Display modes are not supported");
+                return null;
+            }
+            return mMkHwImpl.getDefaultDisplayMode();
+        }
+
+        @Override
+        public boolean setDisplayMode(DisplayMode mode) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES)) {
+                Log.e(TAG, "Display modes are not supported");
+                return false;
+            }
+            return mMkHwImpl.setDisplayMode(mode);
         }
     };
 }

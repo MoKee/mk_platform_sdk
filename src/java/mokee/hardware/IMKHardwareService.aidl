@@ -16,6 +16,8 @@
 
 package mokee.hardware;
 
+import mokee.hardware.DisplayMode;
+
 /** @hide */
 interface IMKHardwareService {
 
@@ -40,4 +42,9 @@ interface IMKHardwareService {
     String getSerialNumber();
 
     boolean requireAdaptiveBacklightForSunlightEnhancement();
+
+    DisplayMode[] getDisplayModes();
+    DisplayMode getCurrentDisplayMode();
+    DisplayMode getDefaultDisplayMode();
+    boolean setDisplayMode(in DisplayMode mode);
 }
