@@ -62,6 +62,12 @@
                 android:description="@string/permdesc_modifyMSPhoneState"
                 android:protectionLevel="normal" />
 
+    <!-- Allows an application access to the MK hardware abstraction framework -->
+    <permission android:name="mokee.permission.HARDWARE_ABSTRACTION_ACCESS"
+                android:label="@string/permlab_useHardwareFramework"
+                android:description="@string/permdesc_useHardwareFramework"
+                android:protectionLevel="system|signature" />
+
     <application android:process="system"
                  android:persistent="true"
                  android:hasCode="false"

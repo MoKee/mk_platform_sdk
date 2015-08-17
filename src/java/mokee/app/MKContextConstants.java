@@ -63,4 +63,16 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_TELEPHONY_MANAGER_SERVICE = "mktelephonymanager";
+
+    /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link mokee.hardware.MKHardwareManager} to manage the extended
+     * hardware features of the device.
+     *
+     * @see android.content.Context#getSystemService
+     * @see mokee.hardware.MKHardwareManager
+     *
+     * @hide
+     */
+    public static final String MK_HARDWARE_SERVICE = "mkhardware";
 }

@@ -35,7 +35,8 @@ LOCAL_MODULE := org.mokee.platform
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_JAVA_LIBRARIES := \
-    services
+    services \
+    org.mokee.hardware
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, $(mokee_src)) \
@@ -155,7 +156,7 @@ LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR:= build/tools/droiddoc/templates-sdk
 
 LOCAL_DROIDDOC_OPTIONS:= \
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_stubs_current_intermediates/src \
-        -stubpackages mokee.alarmclock:mokee.app:mokee.os:mokee.profiles:mokee.platform:org.mokee.platform \
+        -stubpackages mokee.alarmclock:mokee.app:mokee.hardware:mokee.os:mokee.profiles:mokee.platform:org.mokee.platform \
         -api $(INTERNAL_MK_PLATFORM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_REMOVED_API_FILE) \
         -nodocs \
@@ -184,7 +185,7 @@ LOCAL_MODULE := mk-system-api-stubs
 
 LOCAL_DROIDDOC_OPTIONS:=\
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_system_stubs_current_intermediates/src \
-        -stubpackages mokee.alarmclock:mokee.app:mokee.os:mokee.profiles:mokee.platform:org.mokee.platform \
+        -stubpackages mokee.alarmclock:mokee.app:mokee.hardware:mokee.os:mokee.profiles:mokee.platform:org.mokee.platform \
         -showAnnotation android.annotation.SystemApi \
         -api $(INTERNAL_MK_PLATFORM_SYSTEM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_SYSTEM_REMOVED_API_FILE) \
