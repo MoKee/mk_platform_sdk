@@ -78,7 +78,7 @@ public class MKHardwareService extends SystemService {
         public DisplayMode[] getDisplayModes();
         public DisplayMode getCurrentDisplayMode();
         public DisplayMode getDefaultDisplayMode();
-        public boolean setDisplayMode(DisplayMode mode);
+        public boolean setDisplayMode(DisplayMode mode, boolean makeDefault);
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -290,8 +290,8 @@ public class MKHardwareService extends SystemService {
             return DisplayModeControl.getDefaultMode();
         }
 
-        public boolean setDisplayMode(DisplayMode mode) {
-            return DisplayModeControl.setMode(mode, true);
+        public boolean setDisplayMode(DisplayMode mode, boolean makeDefault) {
+            return DisplayModeControl.setMode(mode, makeDefault);
         }
     }
 
@@ -515,14 +515,14 @@ public class MKHardwareService extends SystemService {
         }
 
         @Override
-        public boolean setDisplayMode(DisplayMode mode) {
+        public boolean setDisplayMode(DisplayMode mode, boolean makeDefault) {
             mContext.enforceCallingOrSelfPermission(
                     mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
             if (!isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES)) {
                 Log.e(TAG, "Display modes are not supported");
                 return false;
             }
-            return mMkHwImpl.setDisplayMode(mode);
+            return mMkHwImpl.setDisplayMode(mode, makeDefault);
         }
     };
 }
