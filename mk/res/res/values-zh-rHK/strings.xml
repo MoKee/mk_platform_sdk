@@ -25,6 +25,8 @@
   <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
   <string name="permlab_modifyMSPhoneState">在支援多張 SIM 咭的裝置上修改電話狀態和數據連綫</string>
   <string name="permdesc_modifyMSPhoneState">允許應用程式修改支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
+  <string name="permlab_useHardwareFramework">使用硬件框架</string>
+  <string name="permdesc_useHardwareFramework">允許應用程式存取 MK 硬件框架。</string>
   <string name="profileNameDefault">預設</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住家</string>

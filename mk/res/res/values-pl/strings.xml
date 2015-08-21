@@ -25,6 +25,8 @@
   <string name="permdesc_readMSPhoneState">Zezwala aplikacji na sprawdzenie stanu telefonu i połączeń danych ze wsparciem dla wielu kart SIM.</string>
   <string name="permlab_modifyMSPhoneState">modyfikacja stanu telefonu oraz połączeń danych z obsługą wielu kart SIM</string>
   <string name="permdesc_modifyMSPhoneState">Zezwala aplikacji na sprawdzenie stanu telefonu i połączeń danych ze wsparciem dla wielu kart SIM.</string>
+  <string name="permlab_useHardwareFramework">użyj sprzętowego frameworka</string>
+  <string name="permdesc_useHardwareFramework">Umożliwia aplikacji dostęp do sprzętowego frameworka MK.</string>
   <string name="profileNameDefault">Domyślny</string>
   <string name="profileNameWork">Praca</string>
   <string name="profileNameHome">Dom</string>
