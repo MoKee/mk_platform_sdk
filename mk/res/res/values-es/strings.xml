@@ -25,6 +25,8 @@
   <string name="permdesc_readMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
   <string name="permlab_modifyMSPhoneState">modificar el estado del teléfono y la conexión de datos con soporte para múltiples SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
+  <string name="permlab_useHardwareFramework">usar marco de hardware</string>
+  <string name="permdesc_useHardwareFramework">Permite que la aplicación acceda al marco de hardware de MK.</string>
   <string name="profileNameDefault">Predeterminado</string>
   <string name="profileNameWork">Trabajo</string>
   <string name="profileNameHome">Casa</string>
