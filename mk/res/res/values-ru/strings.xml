@@ -25,8 +25,6 @@
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
   <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
-  <string name="permlab_useHardwareFramework">взаимодействовать с оборудованием</string>
-  <string name="permdesc_useHardwareFramework">Приложение сможет получать доступ к аппаратной структуре MoKee.</string>
   <string name="profileNameDefault">Стандартный</string>
   <string name="profileNameWork">Работа</string>
   <string name="profileNameHome">Дом</string>
