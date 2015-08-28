@@ -65,6 +65,4 @@
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_writePhoneLocation">Allows an app to change the phone location.</string>
 
-    <!-- Captchas -->
-    <string name="captchas_has_copied">Verification code is %s, already copied to the clipboard, long press your input box to paste.</string>
 </resources>
