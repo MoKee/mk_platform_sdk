@@ -25,6 +25,8 @@
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
   <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
+  <string name="permlab_useHardwareFramework">Использовать аппаратный framework</string>
+  <string name="permdesc_useHardwareFramework">Разрешать приложениям использовать аппаратный MK framework.</string>
   <string name="profileNameDefault">Стандартный</string>
   <string name="profileNameWork">Работа</string>
   <string name="profileNameHome">Дом</string>
