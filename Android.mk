@@ -112,6 +112,13 @@ LOCAL_SRC_FILES := \
 # Included aidl files from mokee.app namespace
 LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
 
+mksdk_LOCAL_INTERMEDIATE_SOURCES := \
+    $(mk_platform_res)/mokee/platform/R.java \
+    $(mk_platform_res)/mokee/platform/Manifest.java
+
+LOCAL_INTERMEDIATE_SOURCES := \
+    $(mksdk_LOCAL_INTERMEDIATE_SOURCES)
+
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
