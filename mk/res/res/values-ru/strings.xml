@@ -43,5 +43,4 @@
   <string name="permdesc_readPhoneLocation">Позволить приложению получать информацию о местоположении телефона.</string>
   <string name="permlab_writePhoneLocation">Записать местоположение</string>
   <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
-  <string name="captchas_has_copied">Код подтверждения %s, скопирован в буфер обмена, нажмите и удерживайте палец в поле ввода, чтобы вставить текст.</string>
 </resources>

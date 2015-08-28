@@ -43,5 +43,4 @@
   <string name="permdesc_readPhoneLocation">Permite una aplicación leer información sobre la ubicación del teléfono.</string>
   <string name="permlab_writePhoneLocation">Escriba la ubicación del teléfono</string>
   <string name="permdesc_writePhoneLocation">Permite una aplicación cambiar la ubicación del teléfono.</string>
-  <string name="captchas_has_copied">El código de verificación es %s, ya copiado en el portapapeles, mantenga presionado el cuadro de texto para pegar.</string>
 </resources>
