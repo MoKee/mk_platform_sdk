@@ -17,12 +17,30 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Sistema MoKee</string>
+  <string name="permlab_modifyNetworkSettings">modificare le impostazioni di rete del sistema</string>
+  <string name="permdesc_modifyNetworkSettings">Consenti ad un app di apportare modifiche ad un ristretto insieme di impostazioni di rete del sistema.</string>
+  <string name="permlab_modifySoundSettings">modificare le impostazioni audio del sistema</string>
+  <string name="permdesc_modifySoundSettings">Consenti ad un app di apportare modifiche ad un ristretto insieme di impostazioni di rete del sistema.</string>
+  <string name="permlab_readMSPhoneState">visualizzare lo stato del telefono e la connessione dati con supporto a SIM multiple</string>
+  <string name="permdesc_readMSPhoneState">Consenti ad una applicazione di vedere lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
+  <string name="permlab_modifyMSPhoneState">modificare lo stato del telefono e la connessione dati con supporto a SIM multiple</string>
+  <string name="permdesc_modifyMSPhoneState">Consenti ad un app di modificare lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
+  <string name="permlab_useHardwareFramework">utilizzare l\'hardware framework</string>
+  <string name="permdesc_useHardwareFramework">Consenti ad un app di accedere al MK hardware framework.</string>
   <string name="profileNameDefault">Predefinito</string>
   <string name="profileNameWork">Lavoro</string>
   <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silenzioso</string>
   <string name="profileNameNight">Notte</string>
+  <string name="profileNameAutomobile">Automobile</string>
   <string name="profileGroupPhone">Telefono</string>
   <string name="profileGroupCalendar">Calendario</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">Email</string>
+  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Altro</string>
+  <string name="permlab_readPhoneLocation">leggi la posizione del telefono</string>
+  <string name="permdesc_readPhoneLocation">Consenti ad un app di leggere informazioni riguardo la posizione del telefono.</string>
+  <string name="permlab_writePhoneLocation">scrivi la posizione del telefono</string>
+  <string name="permdesc_writePhoneLocation">Consenti ad un app di cambiare la posizione del telefono.</string>
 </resources>
