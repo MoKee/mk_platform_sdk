@@ -51,7 +51,8 @@ import com.android.internal.R;
  *
  * To get the instance of this class, utilize ProfileManager#getInstance(Context context)
  *
- * This manager requires the android.permission.WRITE_SETTINGS permission.
+ * This manager requires the {@link mokee.platform.Manifest.permission.MODIFY_PROFILES}
+ * permission.
  *
  * @see mokee.app.Profile
  * @see mokee.app.ProfileGroup
