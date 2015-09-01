@@ -38,6 +38,7 @@ import org.mokee.hardware.DisplayModeControl;
 import org.mokee.hardware.HighTouchSensitivity;
 import org.mokee.hardware.KeyDisabler;
 import org.mokee.hardware.LongTermOrbits;
+import org.mokee.hardware.PersistentStorage;
 import org.mokee.hardware.SerialNumber;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.TapToWake;
@@ -79,6 +80,9 @@ public class MKHardwareService extends SystemService {
         public DisplayMode getCurrentDisplayMode();
         public DisplayMode getDefaultDisplayMode();
         public boolean setDisplayMode(DisplayMode mode, boolean makeDefault);
+
+        public boolean writePersistentBytes(String key, byte[] value);
+        public byte[] readPersistentBytes(String key);
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -114,6 +118,8 @@ public class MKHardwareService extends SystemService {
                 mSupportedFeatures |= MKHardwareManager.FEATURE_AUTO_CONTRAST;
             if (DisplayModeControl.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_DISPLAY_MODES;
+            if (PersistentStorage.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_PERSISTENT_STORAGE;
         }
 
         public int getSupportedFeatures() {
@@ -292,6 +298,14 @@ public class MKHardwareService extends SystemService {
 
         public boolean setDisplayMode(DisplayMode mode, boolean makeDefault) {
             return DisplayModeControl.setMode(mode, makeDefault);
+        }
+
+        public boolean writePersistentBytes(String key, byte[] value) {
+            return PersistentStorage.set(key, value);
+        }
+
+        public byte[] readPersistentBytes(String key) {
+            return PersistentStorage.get(key);
         }
     }
 
@@ -523,6 +537,28 @@ public class MKHardwareService extends SystemService {
                 return false;
             }
             return mMkHwImpl.setDisplayMode(mode, makeDefault);
+        }
+
+        @Override
+        public boolean writePersistentBytes(String key, byte[] value) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
+            if (!isSupported(MKHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
+                Log.e(TAG, "Persistent storage is not supported");
+                return false;
+            }
+            return mMkHwImpl.writePersistentBytes(key, value);
+        }
+
+        @Override
+        public byte[] readPersistentBytes(String key) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
+            if (!isSupported(MKHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
+                Log.e(TAG, "Persistent storage is not supported");
+                return null;
+            }
+            return mMkHwImpl.readPersistentBytes(key);
         }
     };
 }

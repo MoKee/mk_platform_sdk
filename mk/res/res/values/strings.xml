@@ -52,6 +52,10 @@
     <string name="permlab_read_alarms">access scheduled alarms</string>
     <string name="permdesc_read_alarms">Allows an app to read your scheduled alarms.</string>
 
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">manage persistent storage</string>
+    <string name="permdesc_managePersistentStorage">Allows an app to read or write properties which may persist thru a factory reset.</string>
+
     <!-- Profiles -->
     <!-- Names of default profiles. -->
     <string name="profileNameDefault">Default</string>
