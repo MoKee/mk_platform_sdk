@@ -17,6 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">MoKee Sistemi</string>
+  <string name="permlab_modifyNetworkSettings">sistemin ağ ayarlarını değiştirin</string>
+  <string name="permlab_modifySoundSettings">sistemin ses ayarlarını değiştirin</string>
   <string name="profileNameDefault">Varsayılan</string>
   <string name="profileNameWork">İş</string>
   <string name="profileNameHome">Ev</string>
@@ -25,6 +27,10 @@
   <string name="profileNameAutomobile">Otomobil</string>
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Takvim</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-posta</string>
+  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Diğer</string>
+  <string name="permlab_readPhoneLocation">telefon konumunu okuyun</string>
+  <string name="permlab_writePhoneLocation">telefon konumunu yaz</string>
 </resources>
