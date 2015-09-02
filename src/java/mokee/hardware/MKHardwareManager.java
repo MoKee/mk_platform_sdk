@@ -28,10 +28,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Manages access to mokee hardware extensions
+ * Manages access to MoKee hardware extensions
  *
+ *  <p>
+ *  This manager requires the HARDWARE_ABSTRACTION_ACCESS permission.
+ *  <p>
  *  To get the instance of this class, utilize MKHardwareManager#getInstance(Context context)
- *
  */
 public final class MKHardwareManager {
     private static final String TAG = "MKHardwareManager";

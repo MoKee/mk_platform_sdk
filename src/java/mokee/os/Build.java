@@ -88,7 +88,18 @@ public class Build {
         public static final int APRICOT = 1;
 
         /**
-         * July 2015 - ?: The second version of the platform sdk for MoKee OpenSource
+         * September 2015: The second version of the platform sdk for MoKee OpenSource
+         *
+         * <p>Applications targeting this or a later release will get these
+         * new features:</p>
+         * <ul>
+         * <li>Profiles API via {@link mokee.app.ProfileManager}
+         * <li>Hardware Abstraction Framework Access via
+         * {@link mokee.hardware.MKHardwareManager} (Not for use by 3rd parties)
+         * <li>MSIM API via {@link mokee.app.MKTelephonyManager}
+         * <li>Settings interface for partners via {@link mokee.app.SettingsManager}
+         * <li>AlarmClock API via {@link mokee.alarmclock.MoKeeAlarmClock}
+         * </ul>
          */
         public static final int BOYSENBERRY = 2;
     }

@@ -312,10 +312,10 @@ package mokee.platform {
     field public static final java.lang.String MODIFY_PROFILES = "mokee.permission.MODIFY_PROFILES";
     field public static final java.lang.String MODIFY_SOUND_SETTINGS = "mokee.permission.MODIFY_SOUND_SETTINGS";
     field public static final java.lang.String READ_ALARMS = "mokee.permission.READ_ALARMS";
+    field public static final java.lang.String READ_MSIM_PHONE_STATE = "mokee.permission.READ_MSIM_PHONE_STATE";
     field public static final java.lang.String WRITE_ALARMS = "mokee.permission.WRITE_ALARMS";
     field public static final java.lang.String READ_PHONE_LOCATION = "mokee.permission.READ_PHONE_LOCATION";
     field public static final java.lang.String WRITE_PHONE_LOCATION = "mokee.permission.WRITE_PHONE_LOCATION";
-    field public static final java.lang.String READ_MSIM_PHONE_STATE = "mokee.permission.READ_MSIM_PHONE_STATE";
   }
 
   public final class R {
