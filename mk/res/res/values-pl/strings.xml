@@ -25,8 +25,16 @@
   <string name="permdesc_readMSPhoneState">Zezwala aplikacji na sprawdzenie stanu telefonu i połączeń danych ze wsparciem dla wielu kart SIM.</string>
   <string name="permlab_modifyMSPhoneState">modyfikacja stanu telefonu oraz połączeń danych z obsługą wielu kart SIM</string>
   <string name="permdesc_modifyMSPhoneState">Zezwala aplikacji na sprawdzenie stanu telefonu i połączeń danych ze wsparciem dla wielu kart SIM.</string>
+  <string name="permlab_modifyProfiles">modyfikacja profili systemowych</string>
+  <string name="permdesc_modifyProfiles">Umożliwia aplikacji modyfikację profili systemowych</string>
   <string name="permlab_useHardwareFramework">użyj sprzętowego frameworka</string>
   <string name="permdesc_useHardwareFramework">Umożliwia aplikacji dostęp do sprzętowego frameworka MK.</string>
+  <string name="permlab_write_alarms">bezpośrednia zmiana alarmów</string>
+  <string name="permdesc_write_alarms">Pozwala aplikacji na dodawanie, zmianę czy usuwanie wszystkich twoich alarmów.</string>
+  <string name="permlab_manage_alarms">przełączanie zaplanowanych alarmów</string>
+  <string name="permdesc_manage_alarms">Umożliwia aplikacji włączanie lub wyłączanie twoich zaplanowanych alarmów.</string>
+  <string name="permlab_read_alarms">dostęp do zaplanowanych alarmów</string>
+  <string name="permdesc_read_alarms">Umożliwia aplikacji odczyt twoich zaplanowanych alarmów.</string>
   <string name="profileNameDefault">Domyślny</string>
   <string name="profileNameWork">Praca</string>
   <string name="profileNameHome">Dom</string>

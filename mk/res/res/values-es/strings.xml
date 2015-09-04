@@ -25,8 +25,16 @@
   <string name="permdesc_readMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
   <string name="permlab_modifyMSPhoneState">modificar el estado del teléfono y la conexión de datos con soporte para múltiples SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
+  <string name="permlab_modifyProfiles">modificar perfiles del sistema</string>
+  <string name="permdesc_modifyProfiles">Permitir que una aplicación modifique los perfiles del sistema</string>
   <string name="permlab_useHardwareFramework">usar marco de hardware</string>
   <string name="permdesc_useHardwareFramework">Permite que la aplicación acceda al marco de hardware de MK.</string>
+  <string name="permlab_write_alarms">cambiar directamente alarmas</string>
+  <string name="permdesc_write_alarms">Permitir a una aplicación agregar, modificar o eliminar todas sus alarmas.</string>
+  <string name="permlab_manage_alarms">activar alarmas programadas</string>
+  <string name="permdesc_manage_alarms">Permitir a una aplicación activar o desactivar sus alarmas programadas.</string>
+  <string name="permlab_read_alarms">acceso a alarmas programadas</string>
+  <string name="permdesc_read_alarms">Permitir a una aplicación leer sus alarmas programadas.</string>
   <string name="profileNameDefault">Predeterminado</string>
   <string name="profileNameWork">Trabajo</string>
   <string name="profileNameHome">Casa</string>

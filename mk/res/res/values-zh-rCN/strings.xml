@@ -25,8 +25,16 @@
   <string name="permdesc_readMSPhoneState">允许应用程序查看支持多SIM卡设备的电话状态和数据连接。</string>
   <string name="permlab_modifyMSPhoneState">在支持多SIM卡的设备上修改手机状态和数据连接</string>
   <string name="permdesc_modifyMSPhoneState">允许应用程序修改支持多SIM卡设备的电话状态和数据连接。</string>
+  <string name="permlab_modifyProfiles">修改系统配置文件</string>
+  <string name="permdesc_modifyProfiles">允许应用程序修改系统配置文件</string>
   <string name="permlab_useHardwareFramework">使用硬件框架</string>
   <string name="permdesc_useHardwareFramework">允许应用访问魔趣硬件框架</string>
+  <string name="permlab_write_alarms">直接更改闹钟</string>
+  <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除你的闹钟</string>
+  <string name="permlab_manage_alarms">切换计划的闹钟</string>
+  <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
+  <string name="permlab_read_alarms">访问计划的闹钟</string>
+  <string name="permdesc_read_alarms">允许应用程序读取您预定的闹钟。</string>
   <string name="profileNameDefault">默认</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住宅</string>

@@ -25,8 +25,16 @@
   <string name="permdesc_readMSPhoneState">Consenti ad una applicazione di vedere lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
   <string name="permlab_modifyMSPhoneState">modificare lo stato del telefono e la connessione dati con supporto a SIM multiple</string>
   <string name="permdesc_modifyMSPhoneState">Consenti ad un app di modificare lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
+  <string name="permlab_modifyProfiles">modifica profili di sistema</string>
+  <string name="permdesc_modifyProfiles">Consenti ad una applicazione di modificare i profili di sistema</string>
   <string name="permlab_useHardwareFramework">utilizzare l\'hardware framework</string>
   <string name="permdesc_useHardwareFramework">Consenti ad un app di accedere al MK hardware framework.</string>
+  <string name="permlab_write_alarms">cambiare direttamente gli allarmi</string>
+  <string name="permdesc_write_alarms">Consenti ad una applicazione di aggiungere, modificare o cancellare tutti i tuoi allarmi.</string>
+  <string name="permlab_manage_alarms">attiva/Disattiva allarmi programmati</string>
+  <string name="permdesc_manage_alarms">Consenti ad una applicazione di attivare o disattivare i tuoi allarmi programmati.</string>
+  <string name="permlab_read_alarms">accesso agli allarmi programmati</string>
+  <string name="permdesc_read_alarms">Consenti ad una applicazione di leggere i tuoi allarmi programmati.</string>
   <string name="profileNameDefault">Predefinito</string>
   <string name="profileNameWork">Lavoro</string>
   <string name="profileNameHome">Casa</string>
