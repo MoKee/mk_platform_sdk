@@ -43,14 +43,14 @@ public final class MKContextConstants {
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
-     * {@link mokee.app.SettingsManager} changing system settings.
+     * {@link mokee.app.PartnerInterface} interact with system settings.
      *
      * @see android.content.Context#getSystemService
-     * @see mokee.app.SettingsManager
+     * @see mokee.app.PartnerInterface
      *
      * @hide
      */
-    public static final String MK_SETTINGS_SERVICE = "mksettings";
+    public static final String MK_PARTNER_INTERFACE = "mkpartnerinterface";
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
