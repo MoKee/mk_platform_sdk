@@ -35,6 +35,7 @@
   <string name="permdesc_manage_alarms">Consenti ad una applicazione di attivare o disattivare i tuoi allarmi programmati.</string>
   <string name="permlab_read_alarms">accesso agli allarmi programmati</string>
   <string name="permdesc_read_alarms">Consenti ad una applicazione di leggere i tuoi allarmi programmati.</string>
+  <string name="permlab_managePersistentStorage">gestire lo storage persistente</string>
   <string name="profileNameDefault">Predefinito</string>
   <string name="profileNameWork">Lavoro</string>
   <string name="profileNameHome">Casa</string>
