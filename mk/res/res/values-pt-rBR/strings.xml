@@ -17,6 +17,26 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Sistema MoKee</string>
+  <string name="permlab_modifyNetworkSettings">alterar configurações de rede do sistema</string>
+  <string name="permdesc_modifyNetworkSettings">Permite que um app altere um conjunto restrito de configurações de rede do sistema.</string>
+  <string name="permlab_modifySoundSettings">alterar configurações de som do sistema</string>
+  <string name="permdesc_modifySoundSettings">Permite que um app altere um conjunto restrito de configurações de som do sistema.</string>
+  <string name="permlab_readMSPhoneState">ver o estado do telefone e a conexão de dados com suporte a múltiplos SIMs</string>
+  <string name="permdesc_readMSPhoneState">Permite que um app veja o estado do telefone e a conexão de dados com suporte a múltiplos SIMs.</string>
+  <string name="permlab_modifyMSPhoneState">modificar o estado do telefone e a conexão de dados com suporte a múltiplos SIMs</string>
+  <string name="permdesc_modifyMSPhoneState">Permite que um app modifique o estado do telefone e a conexão de dados com suporte a múltiplos SIMs.</string>
+  <string name="permlab_modifyProfiles">modificar perfis do sistema</string>
+  <string name="permdesc_modifyProfiles">Permite que um app modifique os perfis do sistema.</string>
+  <string name="permlab_useHardwareFramework">usar framework de hardware</string>
+  <string name="permdesc_useHardwareFramework">Permite que um app acesse o framework de hardware da MK.</string>
+  <string name="permlab_write_alarms">alterar diretamente alarmes</string>
+  <string name="permdesc_write_alarms">Permite que um app adicione, altere ou exclua todos os seus alarmes.</string>
+  <string name="permlab_manage_alarms">ativar alarmes programados</string>
+  <string name="permdesc_manage_alarms">Permite que um app ative ou desative seus alarmes programados.</string>
+  <string name="permlab_read_alarms">acessar alarmes programados</string>
+  <string name="permdesc_read_alarms">Permite que um app acesse seus alarmes programados.</string>
+  <string name="permlab_managePersistentStorage">gerenciar armazenamento persistente</string>
+  <string name="permdesc_managePersistentStorage">Permite que um app acesse e altere propriedades que possam persistir à um reset de fábrica.</string>
   <string name="profileNameDefault">Padrão</string>
   <string name="profileNameWork">Trabalho</string>
   <string name="profileNameHome">Casa</string>
@@ -25,6 +45,12 @@
   <string name="profileNameAutomobile">Automóvel</string>
   <string name="profileGroupPhone">Telefone</string>
   <string name="profileGroupCalendar">Calendário</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Outro</string>
+  <string name="permlab_readPhoneLocation">acessar localização do telefone</string>
+  <string name="permdesc_readPhoneLocation">Permite que um app acesse informações sobre a localização do telefone.</string>
+  <string name="permlab_writePhoneLocation">gravar localização do telefone</string>
+  <string name="permdesc_writePhoneLocation">Permite que um app altere a localização do telefone.</string>
 </resources>
