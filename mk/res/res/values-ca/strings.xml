@@ -17,6 +17,26 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Sistema de MoKee</string>
+  <string name="permlab_modifyNetworkSettings"></string>
+  <string name="permdesc_modifyNetworkSettings"></string>
+  <string name="permlab_modifySoundSettings"></string>
+  <string name="permdesc_modifySoundSettings"></string>
+  <string name="permlab_readMSPhoneState"></string>
+  <string name="permdesc_readMSPhoneState"></string>
+  <string name="permlab_modifyMSPhoneState"></string>
+  <string name="permdesc_modifyMSPhoneState"></string>
+  <string name="permlab_modifyProfiles"></string>
+  <string name="permdesc_modifyProfiles"></string>
+  <string name="permlab_useHardwareFramework"></string>
+  <string name="permdesc_useHardwareFramework"></string>
+  <string name="permlab_write_alarms"></string>
+  <string name="permdesc_write_alarms"></string>
+  <string name="permlab_manage_alarms"></string>
+  <string name="permdesc_manage_alarms"></string>
+  <string name="permlab_read_alarms"></string>
+  <string name="permdesc_read_alarms"></string>
+  <string name="permlab_managePersistentStorage"></string>
+  <string name="permdesc_managePersistentStorage"></string>
   <string name="profileNameDefault">Predeterminat</string>
   <string name="profileNameWork">Feina</string>
   <string name="profileNameHome">Casa</string>

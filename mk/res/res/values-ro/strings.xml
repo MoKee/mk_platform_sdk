@@ -16,10 +16,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="mokee_system_label"></string>
+  <string name="permlab_modifyNetworkSettings"></string>
+  <string name="permdesc_modifyNetworkSettings"></string>
+  <string name="permlab_modifySoundSettings"></string>
+  <string name="permdesc_modifySoundSettings"></string>
+  <string name="permlab_readMSPhoneState"></string>
+  <string name="permdesc_readMSPhoneState"></string>
+  <string name="permlab_modifyMSPhoneState"></string>
+  <string name="permdesc_modifyMSPhoneState"></string>
+  <string name="permlab_modifyProfiles"></string>
+  <string name="permdesc_modifyProfiles"></string>
+  <string name="permlab_useHardwareFramework"></string>
+  <string name="permdesc_useHardwareFramework"></string>
+  <string name="permlab_write_alarms"></string>
+  <string name="permdesc_write_alarms"></string>
+  <string name="permlab_manage_alarms"></string>
+  <string name="permdesc_manage_alarms"></string>
+  <string name="permlab_read_alarms"></string>
+  <string name="permdesc_read_alarms"></string>
+  <string name="permlab_managePersistentStorage"></string>
+  <string name="permdesc_managePersistentStorage"></string>
+  <string name="profileNameDefault"></string>
   <string name="profileNameWork">Serviciu</string>
   <string name="profileNameHome">Acasă</string>
   <string name="profileNameSilent">Silențios</string>
   <string name="profileNameNight">Noapte</string>
   <string name="profileNameAutomobile">Automobil</string>
   <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar"></string>
+  <string name="profileGroupGmail"></string>
+  <string name="profileGroupEmail"></string>
+  <string name="profileGroupSMS"></string>
+  <string name="wildcardProfile"></string>
+  <string name="permlab_readPhoneLocation"></string>
+  <string name="permdesc_readPhoneLocation"></string>
+  <string name="permlab_writePhoneLocation"></string>
+  <string name="permdesc_writePhoneLocation"></string>
 </resources>
