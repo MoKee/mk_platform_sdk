@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="mokee_system_label">Система MoKee</string>
+  <string name="mokee_system_label"></string>
   <string name="permlab_modifyNetworkSettings"></string>
   <string name="permdesc_modifyNetworkSettings"></string>
   <string name="permlab_modifySoundSettings"></string>
@@ -37,18 +37,18 @@
   <string name="permdesc_read_alarms"></string>
   <string name="permlab_managePersistentStorage"></string>
   <string name="permdesc_managePersistentStorage"></string>
-  <string name="profileNameDefault">Стандартний</string>
-  <string name="profileNameWork">Робота</string>
-  <string name="profileNameHome">Дім</string>
-  <string name="profileNameSilent">Без звуку</string>
-  <string name="profileNameNight">Ніч</string>
-  <string name="profileNameAutomobile">Автомобіль</string>
-  <string name="profileGroupPhone">Телефон</string>
-  <string name="profileGroupCalendar">Календар</string>
+  <string name="profileNameDefault"></string>
+  <string name="profileNameWork"></string>
+  <string name="profileNameHome"></string>
+  <string name="profileNameSilent"></string>
+  <string name="profileNameNight"></string>
+  <string name="profileNameAutomobile"></string>
+  <string name="profileGroupPhone"></string>
+  <string name="profileGroupCalendar"></string>
   <string name="profileGroupGmail"></string>
-  <string name="profileGroupEmail">Електронна пошта</string>
+  <string name="profileGroupEmail"></string>
   <string name="profileGroupSMS"></string>
-  <string name="wildcardProfile">Інший</string>
+  <string name="wildcardProfile"></string>
   <string name="permlab_readPhoneLocation"></string>
   <string name="permdesc_readPhoneLocation"></string>
   <string name="permlab_writePhoneLocation"></string>
