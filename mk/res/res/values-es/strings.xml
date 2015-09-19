@@ -35,6 +35,8 @@
   <string name="permdesc_manage_alarms">Permitir a una aplicación activar o desactivar sus alarmas programadas.</string>
   <string name="permlab_read_alarms">acceso a alarmas programadas</string>
   <string name="permdesc_read_alarms">Permitir a una aplicación leer sus alarmas programadas.</string>
+  <string name="permlab_managePersistentStorage">gestionar el almacenamiento persistente</string>
+  <string name="permdesc_managePersistentStorage">Permite a una aplicación leer o escribir propiedades que pueden persistir aún con un reinicio de fábrica.</string>
   <string name="profileNameDefault">Predeterminado</string>
   <string name="profileNameWork">Trabajo</string>
   <string name="profileNameHome">Casa</string>
