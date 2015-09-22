@@ -17,6 +17,7 @@
 package mokee.hardware;
 
 import mokee.hardware.DisplayMode;
+import mokee.hardware.IThermalListenerCallback;
 
 /** @hide */
 interface IMKHardwareService {
@@ -50,4 +51,8 @@ interface IMKHardwareService {
 
     boolean writePersistentBytes(String key, in byte[] bytes);
     byte[] readPersistentBytes(String key);
+
+    int getThermalState();
+    boolean registerThermalListener(IThermalListenerCallback callback);
+    boolean unRegisterThermalListener(IThermalListenerCallback callback);
 }
