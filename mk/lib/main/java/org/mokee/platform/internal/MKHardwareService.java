@@ -18,6 +18,8 @@ package org.mokee.platform.internal;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.IBinder;
+import android.os.RemoteCallbackList;
+import android.os.RemoteException;
 import android.util.Log;
 
 import com.android.server.SystemService;
@@ -26,6 +28,8 @@ import mokee.app.MKContextConstants;
 import mokee.hardware.IMKHardwareService;
 import mokee.hardware.MKHardwareManager;
 import mokee.hardware.DisplayMode;
+import mokee.hardware.IThermalListenerCallback;
+import mokee.hardware.ThermalListenerCallback;
 
 import java.io.File;
 
@@ -42,16 +46,20 @@ import org.mokee.hardware.PersistentStorage;
 import org.mokee.hardware.SerialNumber;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.TapToWake;
+import org.mokee.hardware.ThermalMonitor;
+import org.mokee.hardware.ThermalUpdateCallback;
 import org.mokee.hardware.TouchscreenHovering;
 import org.mokee.hardware.VibratorHW;
 
-public class MKHardwareService extends SystemService {
+public class MKHardwareService extends SystemService implements ThermalUpdateCallback {
 
     private static final boolean DEBUG = true;
     private static final String TAG = MKHardwareService.class.getSimpleName();
 
     private final Context mContext;
     private final MKHardwareInterface mMkHwImpl;
+    private int mCurrentThermalState;
+    private RemoteCallbackList<IThermalListenerCallback> mRemoteCallbackList;
 
     private interface MKHardwareInterface {
         public int getSupportedFeatures();
@@ -120,6 +128,8 @@ public class MKHardwareService extends SystemService {
                 mSupportedFeatures |= MKHardwareManager.FEATURE_DISPLAY_MODES;
             if (PersistentStorage.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_PERSISTENT_STORAGE;
+            if (ThermalMonitor.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_THERMAL_MONITOR;
         }
 
         public int getSupportedFeatures() {
@@ -144,6 +154,8 @@ public class MKHardwareService extends SystemService {
                     return TouchscreenHovering.isEnabled();
                 case MKHardwareManager.FEATURE_AUTO_CONTRAST:
                     return AutoContrast.isEnabled();
+                case MKHardwareManager.FEATURE_THERMAL_MONITOR:
+                    return ThermalMonitor.isEnabled();
                 default:
                     Log.e(TAG, "feature " + feature + " is not a boolean feature");
                     return false;
@@ -322,6 +334,26 @@ public class MKHardwareService extends SystemService {
 
     @Override
     public void onStart() {
+        if (ThermalMonitor.isSupported()) {
+            ThermalMonitor.initialize(this);
+            mRemoteCallbackList = new RemoteCallbackList<IThermalListenerCallback>();
+        }
+    }
+
+    @Override
+    public void setThermalState(int state) {
+        mCurrentThermalState = state;
+        int i = mRemoteCallbackList.beginBroadcast();
+        while (i > 0) {
+            i--;
+            try {
+                mRemoteCallbackList.getBroadcastItem(i).onThermalChanged(state);
+            } catch (RemoteException e) {
+                // The RemoteCallbackList will take care of removing
+                // the dead object for us.
+            }
+        }
+        mRemoteCallbackList.finishBroadcast();
     }
 
     private final IBinder mService = new IMKHardwareService.Stub() {
@@ -559,6 +591,36 @@ public class MKHardwareService extends SystemService {
                 return null;
             }
             return mMkHwImpl.readPersistentBytes(key);
+        }
+
+        @Override
+        public int getThermalState() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_THERMAL_MONITOR)) {
+                return mCurrentThermalState;
+            }
+            return ThermalListenerCallback.State.STATE_UNKNOWN;
+        }
+
+        @Override
+        public boolean registerThermalListener(IThermalListenerCallback callback) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_THERMAL_MONITOR)) {
+                return mRemoteCallbackList.register(callback);
+            }
+            return false;
+        }
+
+        @Override
+        public boolean unRegisterThermalListener(IThermalListenerCallback callback) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_THERMAL_MONITOR)) {
+                return mRemoteCallbackList.unregister(callback);
+            }
+            return false;
         }
     };
 }
