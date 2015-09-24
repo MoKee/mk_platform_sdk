@@ -58,7 +58,7 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
 
     private final Context mContext;
     private final MKHardwareInterface mMkHwImpl;
-    private int mCurrentThermalState;
+    private int mCurrentThermalState = ThermalListenerCallback.State.STATE_UNKNOWN;
     private RemoteCallbackList<IThermalListenerCallback> mRemoteCallbackList;
 
     private interface MKHardwareInterface {
