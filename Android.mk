@@ -234,7 +234,8 @@ LOCAL_DROIDDOC_OPTIONS := \
         -hdf sdk.rel.id $(mkplat_docs_docs_SDK_REL_ID) \
         -hdf sdk.preview 0 \
         -since $(MK_SRC_API_DIR)/1.txt 1 \
-        -since $(MK_SRC_API_DIR)/2.txt 2
+        -since $(MK_SRC_API_DIR)/2.txt 2 \
+        -since $(MK_SRC_API_DIR)/3.txt 3
 
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_DROIDDOC)

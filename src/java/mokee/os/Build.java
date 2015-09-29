@@ -36,7 +36,7 @@ public class Build {
      * {@link MK_VERSION_CODES}
      * @hide
      */
-    public static final int PARCELABLE_VERSION = MK_VERSION_CODES.BOYSENBERRY;
+    public static final int PARCELABLE_VERSION = MK_VERSION_CODES.CANTALOUPE;
 
     private static final SparseArray<String> sdkMap;
     static
@@ -44,6 +44,7 @@ public class Build {
         sdkMap = new SparseArray<String>();
         sdkMap.put(MK_VERSION_CODES.APRICOT, "Apricot");
         sdkMap.put(MK_VERSION_CODES.BOYSENBERRY, "Boysenberry");
+        sdkMap.put(MK_VERSION_CODES.CANTALOUPE, "Cantaloupe");
     }
 
     /** Various version strings. */
@@ -102,6 +103,11 @@ public class Build {
          * </ul>
          */
         public static final int BOYSENBERRY = 2;
+
+        /**
+         * TODO: Pending Q1 release
+         */
+        public static final int CANTALOUPE = 3;
     }
 
     /**
