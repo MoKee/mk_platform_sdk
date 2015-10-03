@@ -535,12 +535,12 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         @Override
         public boolean isSunlightEnhancementSelfManaged() {
             mContext.enforceCallingOrSelfPermission(
-                    cyanogenmod.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
-            if (!isSupported(CMHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT)) {
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT)) {
                 Log.e(TAG, "Sunlight enhancement is not supported");
                 return false;
             }
-            return mCmHwImpl.isSunlightEnhancementSelfManaged();
+            return mMkHwImpl.isSunlightEnhancementSelfManaged();
         }
 
         @Override
