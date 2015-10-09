@@ -309,8 +309,6 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.Secure.KEYBOARD_BRIGHTNESS);
             secureToMkSettingsMap.put(LegacyMKSettings.POWER_MENU_ACTIONS,
                     MKSettings.Secure.POWER_MENU_ACTIONS);
-            secureToMkSettingsMap.put(LegacyMKSettings.STATS_COLLECTION,
-                    MKSettings.Secure.STATS_COLLECTION);
             secureToMkSettingsMap.put(LegacyMKSettings.QS_SHOW_BRIGHTNESS_SLIDER,
                     MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER);
             secureToMkSettingsMap.put(LegacyMKSettings.QS_TILES,

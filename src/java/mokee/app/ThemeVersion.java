@@ -32,6 +32,7 @@ public class ThemeVersion {
     private static final int MK44 = 1;
     private static final int MK51_PRE_VERSIONING = 2;
 
+/*
     public static int getVersion() {
         int version;
         try {
@@ -203,4 +204,5 @@ public class ThemeVersion {
             return new ComponentVersion(id, component, name, minVersion, targetVersion);
         }
     }
+*/
 }
