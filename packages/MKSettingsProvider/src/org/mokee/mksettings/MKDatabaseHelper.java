@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
- * Copyright (c) 2015, The MoKee OpenSource Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,12 +19,20 @@ package org.mokee.mksettings;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteStatement;
 import android.os.Build;
 import android.os.Environment;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import mokee.providers.MKSettings;
 
@@ -59,8 +67,11 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
     private static final String DROP_INDEX_SQL_FORMAT = "DROP INDEX IF EXISTS %sIndex%d;";
 
+    private static final String MCC_PROP_NAME = "ro.prebundled.mcc";
+
     private Context mContext;
     private int mUserHandle;
+    private String mPublicSrcDir;
 
     /**
      * Gets the appropriate database path for a specific user
@@ -89,6 +100,14 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
         super(context, dbNameForUser(userId), null, DATABASE_VERSION);
         mContext = context;
         mUserHandle = userId;
+
+        try {
+            String packageName = mContext.getPackageName();
+            mPublicSrcDir = mContext.getPackageManager().getApplicationInfo(packageName, 0)
+                    .publicSourceDir;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -196,17 +215,59 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
         loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.ADVANCED_MODE,
                 R.bool.def_advanced_mode);
 
-        loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEFAULT_THEME_COMPONENTS,
-                R.string.def_theme_components);
+        loadRegionLockedStringSetting(db, MKTableNames.TABLE_SECURE,
+                MKSettings.Secure.DEFAULT_THEME_COMPONENTS, R.string.def_theme_components);
 
-        loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEFAULT_THEME_PACKAGE,
-                R.string.def_theme_package);
+        loadRegionLockedStringSetting(db, MKTableNames.TABLE_SECURE,
+                MKSettings.Secure.DEFAULT_THEME_PACKAGE, R.string.def_theme_package);
 
         loadIntegerSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR,
                 R.integer.def_force_show_navbar);
 
         loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_TILES,
                 R.string.def_qs_tiles);
+    }
+
+    /**
+     * Loads a region locked string setting into a database table. If the resource for the specific
+     * mcc is not found, the setting is loaded from the default resources.
+     * @param db The {@link SQLiteDatabase} to insert into.
+     * @param tableName The name of the table to insert into.
+     * @param name The name of the value to insert into the table.
+     * @param resId The name of the string resource.
+     */
+    private void loadRegionLockedStringSetting(SQLiteDatabase db, String tableName, String name,
+            int resId) {
+        String mcc = SystemProperties.get(MCC_PROP_NAME);
+        Resources customResources = null;
+
+        if (!TextUtils.isEmpty(mcc)) {
+            Configuration tempConfiguration = new Configuration();
+            boolean useTempConfig = false;
+
+            try {
+                tempConfiguration.mcc = Integer.parseInt(mcc);
+                useTempConfig = true;
+            } catch (NumberFormatException e) {
+                // not able to parse mcc, catch exception and exit out of this logic
+                e.printStackTrace();
+            }
+
+            if (useTempConfig) {
+                AssetManager assetManager = new AssetManager();
+
+                if (!TextUtils.isEmpty(mPublicSrcDir)) {
+                    assetManager.addAssetPath(mPublicSrcDir);
+                }
+
+                customResources = new Resources(assetManager, new DisplayMetrics(),
+                        tempConfiguration);
+            }
+        }
+
+        String value = customResources == null ? mContext.getResources().getString(resId)
+                : customResources.getString(resId);
+        loadSettingsForTable(db, tableName, name, value);
     }
 
     /**
