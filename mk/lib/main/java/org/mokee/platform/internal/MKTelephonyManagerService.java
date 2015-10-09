@@ -41,6 +41,7 @@ public class MKTelephonyManagerService extends SystemService {
     private static boolean localLOGD = Log.isLoggable(TAG, Log.DEBUG);
 
     private TelephonyManager mTelephonyManager;
+    private Context mContext;
     private final IBinder mService = new IMKTelephonyManager.Stub() {
 
         /**
@@ -177,6 +178,7 @@ public class MKTelephonyManagerService extends SystemService {
 
     public MKTelephonyManagerService(Context context) {
         super(context);
+        mContext = context;
     }
 
     @Override
