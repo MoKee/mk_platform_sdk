@@ -158,6 +158,119 @@ public class MKSettingsProvider extends ContentProvider {
         }
     }
 
+    /* @hide */
+    private static class LegacyMKSettings {
+        /**
+         * Whether to allow one finger quick settings expansion on the right side of the statusbar.
+         * @deprecated Use {@link android.provider.Settings.System#QS_QUICK_PULLDOWN} instead
+         * @hide
+         */
+        public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
+
+        /**
+         * Whether to enable "advanced mode" for the current user.
+         * Boolean setting. 0 = no, 1 = yes.
+         * @hide
+         */
+        public static final String ADVANCED_MODE = "advanced_mode";
+
+        /**
+         * The button brightness to be used while the screen is on or after a button press,
+         * depending on the value of {@link BUTTON_BACKLIGHT_TIMEOUT}.
+         * Valid value range is between 0 and {@link PowerManager#getMaximumButtonBrightness()}
+         * @hide
+         */
+        public static final String BUTTON_BRIGHTNESS = "button_brightness";
+
+        /**
+         * The time in ms to keep the button backlight on after pressing a button.
+         * A value of 0 will keep the buttons on for as long as the screen is on.
+         * @hide
+         */
+        public static final String BUTTON_BACKLIGHT_TIMEOUT = "button_backlight_timeout";
+
+        /**
+         * Default theme to use.  If empty, use holo.
+         * @hide
+         */
+        public static final String DEFAULT_THEME_PACKAGE = "default_theme_package";
+
+        /**
+         * A '|' delimited list of theme components to apply from the default theme on first boot.
+         * Components can be one or more of the "mods_XXXXXXX" found in
+         * {@link ThemesContract$ThemesColumns}.  Leaving this field blank assumes all components
+         * will be applied.
+         *
+         * ex: mods_icons|mods_overlays|mods_homescreen
+         *
+         * @hide
+         */
+        public static final String DEFAULT_THEME_COMPONENTS = "default_theme_components";
+
+        /**
+         * Developer options - Navigation Bar show switch
+         * @hide
+         */
+        public static final String DEV_FORCE_SHOW_NAVBAR = "dev_force_show_navbar";
+
+        /**
+         * The keyboard brightness to be used while the screen is on.
+         * Valid value range is between 0 and {@link PowerManager#getMaximumKeyboardBrightness()}
+         * @hide
+         */
+        public static final String KEYBOARD_BRIGHTNESS = "keyboard_brightness";
+
+        /**
+         * String to contain power menu actions
+         * @hide
+         */
+        public static final String POWER_MENU_ACTIONS = "power_menu_actions";
+
+        /**
+         * Whether to show the brightness slider in quick settings panel.
+         * @hide
+         */
+        public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
+
+        /**
+         * List of QS tile names
+         * @hide
+         */
+        public static final String QS_TILES = "sysui_qs_tiles";
+
+        /**
+         * Use "main" tiles on the first row of the quick settings panel
+         * 0 = no, 1 = yes
+         * @hide
+         */
+        public static final String QS_USE_MAIN_TILES = "sysui_qs_main_tiles";
+
+        /**
+         * Boolean value whether to link ringtone and notification volume
+         *
+         * @hide
+         */
+        public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
+
+        /**
+         * Custom navring actions
+         * @hide
+         */
+        public static final String[] NAVIGATION_RING_TARGETS = new String[] {
+                "navigation_ring_targets_0",
+                "navigation_ring_targets_1",
+                "navigation_ring_targets_2",
+        };
+
+        /**
+         * If an app does not have a specific theme set then it will use the 'default' theme+
+         * example: 'default' -> overlayPkgName: 'org.blue.theme'
+         *          'com.android.phone' -> 'com.red.theme'
+         *          'com.google.vending' -> 'com.white.theme'
+         */
+        public static final String THEME_PKG_CONFIGURATION_PERSISTENCE_PROPERTY = "themeConfig";
+    }
+
     /**
      * Migrates MK settings for a specific user.
      * @param userId The id of the user to run MK settings migration for.
@@ -168,7 +281,7 @@ public class MKSettingsProvider extends ContentProvider {
 
             // Migrate system settings
             HashMap<String, String> systemToMkSettingsMap = new HashMap<String, String>();
-            systemToMkSettingsMap.put(Settings.System.QS_QUICK_PULLDOWN,
+            systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_QUICK_QS_PULLDOWN,
                     MKSettings.System.QS_QUICK_PULLDOWN);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
@@ -177,41 +290,43 @@ public class MKSettingsProvider extends ContentProvider {
 
             // Migrate secure settings
             HashMap<String, String> secureToMkSettingsMap = new HashMap<String, String>();
-            secureToMkSettingsMap.put(Settings.Secure.ADVANCED_MODE,
+            secureToMkSettingsMap.put(LegacyMKSettings.ADVANCED_MODE,
                     MKSettings.Secure.ADVANCED_MODE);
-            secureToMkSettingsMap.put(Settings.Secure.BUTTON_BACKLIGHT_TIMEOUT,
+            secureToMkSettingsMap.put(LegacyMKSettings.BUTTON_BACKLIGHT_TIMEOUT,
                     MKSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT);
-            secureToMkSettingsMap.put(Settings.Secure.BUTTON_BRIGHTNESS,
+            secureToMkSettingsMap.put(LegacyMKSettings.BUTTON_BRIGHTNESS,
                     MKSettings.Secure.BUTTON_BRIGHTNESS);
-            secureToMkSettingsMap.put(Settings.Secure.DEFAULT_THEME_COMPONENTS,
+            secureToMkSettingsMap.put(LegacyMKSettings.DEFAULT_THEME_COMPONENTS,
                     MKSettings.Secure.DEFAULT_THEME_COMPONENTS);
-            secureToMkSettingsMap.put(Settings.Secure.DEFAULT_THEME_PACKAGE,
+            secureToMkSettingsMap.put(LegacyMKSettings.DEFAULT_THEME_PACKAGE,
                     MKSettings.Secure.DEFAULT_THEME_PACKAGE);
-            secureToMkSettingsMap.put(Settings.Secure.DEV_FORCE_SHOW_NAVBAR,
+            secureToMkSettingsMap.put(LegacyMKSettings.DEV_FORCE_SHOW_NAVBAR,
                     MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR);
             secureToMkSettingsMap.put(
-                    Configuration.THEME_PKG_CONFIGURATION_PERSISTENCE_PROPERTY,
+                    LegacyMKSettings.THEME_PKG_CONFIGURATION_PERSISTENCE_PROPERTY,
                             MKSettings.Secure.NAME_THEME_CONFIG);
-            secureToMkSettingsMap.put(Settings.Secure.KEYBOARD_BRIGHTNESS,
+            secureToMkSettingsMap.put(LegacyMKSettings.KEYBOARD_BRIGHTNESS,
                     MKSettings.Secure.KEYBOARD_BRIGHTNESS);
-            secureToMkSettingsMap.put(Settings.Secure.POWER_MENU_ACTIONS,
+            secureToMkSettingsMap.put(LegacyMKSettings.POWER_MENU_ACTIONS,
                     MKSettings.Secure.POWER_MENU_ACTIONS);
-            secureToMkSettingsMap.put(Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
+            secureToMkSettingsMap.put(LegacyMKSettings.STATS_COLLECTION,
+                    MKSettings.Secure.STATS_COLLECTION);
+            secureToMkSettingsMap.put(LegacyMKSettings.QS_SHOW_BRIGHTNESS_SLIDER,
                     MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER);
-            secureToMkSettingsMap.put(Settings.Secure.QS_TILES,
+            secureToMkSettingsMap.put(LegacyMKSettings.QS_TILES,
                     MKSettings.Secure.QS_TILES);
-            secureToMkSettingsMap.put(Settings.Secure.QS_USE_MAIN_TILES,
+            secureToMkSettingsMap.put(LegacyMKSettings.QS_USE_MAIN_TILES,
                     MKSettings.Secure.QS_USE_MAIN_TILES);
-            secureToMkSettingsMap.put(Settings.Secure.VOLUME_LINK_NOTIFICATION,
+            secureToMkSettingsMap.put(LegacyMKSettings.VOLUME_LINK_NOTIFICATION,
                     MKSettings.Secure.VOLUME_LINK_NOTIFICATION);
 
-            int navRingTargetsLength = Settings.Secure.NAVIGATION_RING_TARGETS.length;
+            int navRingTargetsLength = LegacyMKSettings.NAVIGATION_RING_TARGETS.length;
             int mkNavRingTargetsLength = MKSettings.Secure.NAVIGATION_RING_TARGETS.length;
             int minNavRingTargetsLength = navRingTargetsLength <= mkNavRingTargetsLength ?
                     navRingTargetsLength : mkNavRingTargetsLength;
 
             for (int i = 0; i < minNavRingTargetsLength; i++) {
-                systemToMkSettingsMap.put(Settings.Secure.NAVIGATION_RING_TARGETS[i],
+                systemToMkSettingsMap.put(LegacyMKSettings.NAVIGATION_RING_TARGETS[i],
                         MKSettings.Secure.NAVIGATION_RING_TARGETS[i]);
             }
 
