@@ -35,6 +35,9 @@
   <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
   <string name="permlab_read_alarms">访问计划的闹钟</string>
   <string name="permdesc_read_alarms">允许应用程序读取您预定的闹钟。</string>
+  <string name="permlab_writeSettings">修改魔趣系统设置</string>
+  <string name="permdesc_writeSettings">允许应用程序修改魔趣系统设置。</string>
+  <string name="permlab_writeSecureSettings">修改魔趣系统安全设置</string>
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
   <string name="permdesc_managePersistentStorage">允许应用程序的读取或写入，该操作可能会恢复出厂设置。</string>
   <string name="profileNameDefault">默认</string>
