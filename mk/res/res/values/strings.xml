@@ -19,10 +19,10 @@
     <string name="mokee_system_label">MoKee System</string>
 
     <string name="permlab_modifyNetworkSettings">change system network settings</string>
-    <string name="permdesc_modifyNetworkSettings">Allows an app to make changes to a restricted set of system network settings.</string>
+    <string name="permdesc_modifyNetworkSettings">Allows an app to make changes to the airplane mode and mobile data network settings.</string>
 
     <string name="permlab_modifySoundSettings">change system sound settings</string>
-    <string name="permdesc_modifySoundSettings">Allows an app to make changes to a restricted set of system sound settings.</string>
+    <string name="permdesc_modifySoundSettings">Allows an app to make changes to the interruption mode sound settings.</string>
 
     <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
     <string name="permlab_readMSPhoneState">view the phone state and data connection with support to multiple SIMs</string>
