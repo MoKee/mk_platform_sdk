@@ -366,21 +366,29 @@ package mokee.platform {
     field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
     field public static final java.lang.String MODIFY_PROFILES = "mokee.permission.MODIFY_PROFILES";
     field public static final java.lang.String MODIFY_SOUND_SETTINGS = "mokee.permission.MODIFY_SOUND_SETTINGS";
+    field public static final java.lang.String READ_PHONE_LOCATION = "mokee.permission.READ_PHONE_LOCATION";
+    field public static final java.lang.String WRITE_PHONE_LOCATION = "mokee.permission.WRITE_PHONE_LOCATION";
     field public static final java.lang.String READ_ALARMS = "mokee.permission.READ_ALARMS";
     field public static final java.lang.String READ_MSIM_PHONE_STATE = "mokee.permission.READ_MSIM_PHONE_STATE";
     field public static final java.lang.String WRITE_ALARMS = "mokee.permission.WRITE_ALARMS";
-    field public static final java.lang.String READ_PHONE_LOCATION = "mokee.permission.READ_PHONE_LOCATION";
-    field public static final java.lang.String WRITE_PHONE_LOCATION = "mokee.permission.WRITE_PHONE_LOCATION";
-    field public static final java.lang.String WRITE_SECURE_SETTINGS = "cyanogenmod.permission.WRITE_SECURE_SETTINGS";
-    field public static final java.lang.String WRITE_SETTINGS = "cyanogenmod.permission.WRITE_SETTINGS";
+    field public static final java.lang.String WRITE_SECURE_SETTINGS = "mokee.permission.WRITE_SECURE_SETTINGS";
+    field public static final java.lang.String WRITE_SETTINGS = "mokee.permission.WRITE_SETTINGS";
   }
 
   public final class R {
     ctor public R();
   }
 
+  public static final class R.array {
+    ctor public R.array();
+  }
+
   public static final class R.attr {
     ctor public R.attr();
+  }
+
+  public static final class R.bool {
+    ctor public R.bool();
   }
 
   public static final class R.drawable {
@@ -497,42 +505,42 @@ package mokee.profiles {
 
 }
 
-package cyanogenmod.providers {
+package mokee.providers {
 
-  public final class CMSettings {
-    ctor public CMSettings();
-    field public static final java.lang.String AUTHORITY = "cmsettings";
+  public final class MKSettings {
+    ctor public MKSettings();
+    field public static final java.lang.String AUTHORITY = "mksettings";
   }
 
-  public static class CMSettings.CMSettingNotFoundException extends android.util.AndroidException {
-    ctor public CMSettings.CMSettingNotFoundException(java.lang.String);
+  public static class MKSettings.MKSettingNotFoundException extends android.util.AndroidException {
+    ctor public MKSettings.MKSettingNotFoundException(java.lang.String);
   }
 
-  public static final class CMSettings.Global extends android.provider.Settings.NameValueTable {
-    ctor public CMSettings.Global();
+  public static final class MKSettings.Global extends android.provider.Settings.NameValueTable {
+    ctor public MKSettings.Global();
     method public static float getFloat(android.content.ContentResolver, java.lang.String, float);
-    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static int getInt(android.content.ContentResolver, java.lang.String, int);
-    method public static int getInt(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static int getInt(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static long getLong(android.content.ContentResolver, java.lang.String, long);
-    method public static long getLong(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static long getLong(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static java.lang.String getString(android.content.ContentResolver, java.lang.String);
     method public static boolean putFloat(android.content.ContentResolver, java.lang.String, float);
     method public static boolean putInt(android.content.ContentResolver, java.lang.String, int);
     method public static boolean putLong(android.content.ContentResolver, java.lang.String, long);
     method public static boolean putString(android.content.ContentResolver, java.lang.String, java.lang.String);
     field public static final android.net.Uri CONTENT_URI;
-    field public static final java.lang.String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_global_version";
+    field public static final java.lang.String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_global_version";
   }
 
-  public static final class CMSettings.Secure extends android.provider.Settings.NameValueTable {
-    ctor public CMSettings.Secure();
+  public static final class MKSettings.Secure extends android.provider.Settings.NameValueTable {
+    ctor public MKSettings.Secure();
     method public static float getFloat(android.content.ContentResolver, java.lang.String, float);
-    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static int getInt(android.content.ContentResolver, java.lang.String, int);
-    method public static int getInt(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static int getInt(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static long getLong(android.content.ContentResolver, java.lang.String, long);
-    method public static long getLong(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static long getLong(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static java.lang.String getString(android.content.ContentResolver, java.lang.String);
     method public static boolean putFloat(android.content.ContentResolver, java.lang.String, float);
     method public static boolean putInt(android.content.ContentResolver, java.lang.String, int);
@@ -540,24 +548,24 @@ package cyanogenmod.providers {
     method public static boolean putString(android.content.ContentResolver, java.lang.String, java.lang.String);
     field public static final android.net.Uri CONTENT_URI;
     field public static final java.lang.String NAME_THEME_CONFIG = "name_theme_config";
-    field public static final java.lang.String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_secure_version";
+    field public static final java.lang.String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_secure_version";
   }
 
-  public static final class CMSettings.System extends android.provider.Settings.NameValueTable {
-    ctor public CMSettings.System();
+  public static final class MKSettings.System extends android.provider.Settings.NameValueTable {
+    ctor public MKSettings.System();
     method public static float getFloat(android.content.ContentResolver, java.lang.String, float);
-    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static float getFloat(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static int getInt(android.content.ContentResolver, java.lang.String, int);
-    method public static int getInt(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static int getInt(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static long getLong(android.content.ContentResolver, java.lang.String, long);
-    method public static long getLong(android.content.ContentResolver, java.lang.String) throws cyanogenmod.providers.CMSettings.CMSettingNotFoundException;
+    method public static long getLong(android.content.ContentResolver, java.lang.String) throws mokee.providers.MKSettings.MKSettingNotFoundException;
     method public static java.lang.String getString(android.content.ContentResolver, java.lang.String);
     method public static boolean putFloat(android.content.ContentResolver, java.lang.String, float);
     method public static boolean putInt(android.content.ContentResolver, java.lang.String, int);
     method public static boolean putLong(android.content.ContentResolver, java.lang.String, long);
     method public static boolean putString(android.content.ContentResolver, java.lang.String, java.lang.String);
     field public static final android.net.Uri CONTENT_URI;
-    field public static final java.lang.String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_system_version";
+    field public static final java.lang.String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_system_version";
   }
 
 }

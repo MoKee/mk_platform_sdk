@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmsettings;
+package org.mokee.mksettings;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -25,22 +26,22 @@ import android.os.Environment;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.io.File;
 
 /**
- * The CMDatabaseHelper allows creation of a database to store CM specific settings for a user
+ * The MKDatabaseHelper allows creation of a database to store MK specific settings for a user
  * in System, Secure, and Global tables.
  */
-public class CMDatabaseHelper extends SQLiteOpenHelper{
-    private static final String TAG = "CMDatabaseHelper";
+public class MKDatabaseHelper extends SQLiteOpenHelper{
+    private static final String TAG = "MKDatabaseHelper";
     private static final boolean LOCAL_LOGV = false;
 
-    private static final String DATABASE_NAME = "cmsettings.db";
+    private static final String DATABASE_NAME = "mksettings.db";
     private static final int DATABASE_VERSION = 2;
 
-    static class CMTableNames {
+    static class MKTableNames {
         static final String TABLE_SYSTEM = "system";
         static final String TABLE_SECURE = "secure";
         static final String TABLE_GLOBAL = "global";
@@ -80,11 +81,11 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
     }
 
     /**
-     * Creates an instance of {@link CMDatabaseHelper}
+     * Creates an instance of {@link MKDatabaseHelper}
      * @param context
      * @param userId
      */
-    public CMDatabaseHelper(Context context, int userId) {
+    public MKDatabaseHelper(Context context, int userId) {
         super(context, dbNameForUser(userId), null, DATABASE_VERSION);
         mContext = context;
         mUserHandle = userId;
@@ -100,18 +101,18 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
         db.beginTransaction();
 
         try {
-            createDbTable(db, CMTableNames.TABLE_SYSTEM);
-            createDbTable(db, CMTableNames.TABLE_SECURE);
+            createDbTable(db, MKTableNames.TABLE_SYSTEM);
+            createDbTable(db, MKTableNames.TABLE_SECURE);
 
             if (mUserHandle == UserHandle.USER_OWNER) {
-                createDbTable(db, CMTableNames.TABLE_GLOBAL);
+                createDbTable(db, MKTableNames.TABLE_GLOBAL);
             }
 
             loadSettings(db);
 
             db.setTransactionSuccessful();
 
-            if (LOCAL_LOGV) Log.d(TAG, "Successfully created tables for cm settings db");
+            if (LOCAL_LOGV) Log.d(TAG, "Successfully created tables for mk settings db");
         } finally {
             db.endTransaction();
         }
@@ -154,13 +155,13 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
         if (upgradeVersion < newVersion) {
             Log.w(TAG, "Got stuck trying to upgrade db. Old version: " + oldVersion
                     + ", version stuck at: " +  upgradeVersion + ", new version: "
-                            + newVersion + ". Must wipe the cm settings provider.");
+                            + newVersion + ". Must wipe the mk settings provider.");
 
-            dropDbTable(db, CMTableNames.TABLE_SYSTEM);
-            dropDbTable(db, CMTableNames.TABLE_SECURE);
+            dropDbTable(db, MKTableNames.TABLE_SYSTEM);
+            dropDbTable(db, MKTableNames.TABLE_SECURE);
 
             if (mUserHandle == UserHandle.USER_OWNER) {
-                dropDbTable(db, CMTableNames.TABLE_GLOBAL);
+                dropDbTable(db, MKTableNames.TABLE_GLOBAL);
             }
 
             onCreate(db);
@@ -188,37 +189,24 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
      */
     private void loadSettings(SQLiteDatabase db) {
         // System
-        loadIntegerSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.QS_QUICK_PULLDOWN,
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.QS_QUICK_PULLDOWN,
                 R.integer.def_qs_quick_pulldown);
 
         // Secure
-        loadBooleanSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.ADVANCED_MODE,
+        loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.ADVANCED_MODE,
                 R.bool.def_advanced_mode);
 
-        loadStringSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.DEFAULT_THEME_COMPONENTS,
+        loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEFAULT_THEME_COMPONENTS,
                 R.string.def_theme_components);
 
-        loadStringSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.DEFAULT_THEME_PACKAGE,
+        loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEFAULT_THEME_PACKAGE,
                 R.string.def_theme_package);
 
-        loadIntegerSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR,
+        loadIntegerSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR,
                 R.integer.def_force_show_navbar);
 
-        loadStringSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.QS_TILES,
+        loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_TILES,
                 R.string.def_qs_tiles);
-
-        loadBooleanSetting(db, CMTableNames.TABLE_SECURE, CMSettings.Secure.STATS_COLLECTION,
-                R.bool.def_stats_collection);
-
-        // Global
-        if (mUserHandle == UserHandle.USER_OWNER) {
-            loadSettingsForTable(db, CMTableNames.TABLE_GLOBAL, CMSettings.Global.DEVICE_NAME,
-                    getDefaultDeviceName());
-
-            loadIntegerSetting(db, CMTableNames.TABLE_GLOBAL,
-                    CMSettings.Global.HEADS_UP_NOTIFICATIONS_ENABLED,
-                            R.integer.def_heads_up_enabled);
-        }
     }
 
     /**
@@ -276,12 +264,5 @@ public class CMDatabaseHelper extends SQLiteOpenHelper{
         contentValues.put(Settings.NameValueTable.VALUE, value);
 
         db.insertWithOnConflict(tableName, null, contentValues, SQLiteDatabase.CONFLICT_IGNORE);
-    }
-
-    /**
-     * @return Gets the default device name
-     */
-    private String getDefaultDeviceName() {
-        return mContext.getResources().getString(R.string.def_device_name, Build.MODEL);
     }
 }

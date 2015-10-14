@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.providers;
+package mokee.providers;
 
 import android.content.ContentResolver;
 import android.content.IContentProvider;
@@ -31,16 +32,16 @@ import android.util.Log;
 import java.util.HashMap;
 
 /**
- * CMSettings contains CM specific preferences in System, Secure, and Global.
+ * MKSettings contains MK specific preferences in System, Secure, and Global.
  */
-public final class CMSettings {
-    private static final String TAG = "CMSettings";
+public final class MKSettings {
+    private static final String TAG = "MKSettings";
     private static final boolean LOCAL_LOGV = false;
 
-    public static final String AUTHORITY = "cmsettings";
+    public static final String AUTHORITY = "mksettings";
 
-    public static class CMSettingNotFoundException extends AndroidException {
-        public CMSettingNotFoundException(String msg) {
+    public static class MKSettingNotFoundException extends AndroidException {
+        public MKSettingNotFoundException(String msg) {
             super(msg);
         }
     }
@@ -83,12 +84,12 @@ public final class CMSettings {
     public static final String CALL_METHOD_PUT_GLOBAL= "PUT_global";
 
     /**
-     * @hide - Private call() method on CMSettingsProvider to migrate CM settings
+     * @hide - Private call() method on MKSettingsProvider to migrate MK settings
      */
     public static final String CALL_METHOD_MIGRATE_SETTINGS = "migrate_settings";
 
     /**
-     * @hide - Private call() method on CMSettingsProvider to migrate CM settings for a user
+     * @hide - Private call() method on MKSettingsProvider to migrate MK settings for a user
      */
     public static final String CALL_METHOD_MIGRATE_SETTINGS_FOR_USER = "migrate_settings_for_user";
 
@@ -257,16 +258,16 @@ public final class CMSettings {
     }
 
     /**
-     * System settings, containing miscellaneous CM system preferences. This table holds simple
+     * System settings, containing miscellaneous MK system preferences. This table holds simple
      * name/value pairs. There are convenience functions for accessing individual settings entries.
      */
     public static final class System extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/system");
 
-        public static final String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_system_version";
+        public static final String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_system_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_CM_SETTING_VERSION,
+                SYS_PROP_MK_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_SYSTEM,
                 CALL_METHOD_PUT_SYSTEM);
@@ -352,29 +353,29 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          *
          * @return The setting's current value.
          */
         public static int getInt(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getIntForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static int getIntForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             try {
                 return Integer.parseInt(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -440,28 +441,28 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
          * @return The setting's current value.
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          */
         public static long getLong(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getLongForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static long getLongForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String valString = getStringForUser(cr, name, userId);
             try {
                 return Long.parseLong(valString);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -525,32 +526,32 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not a float.
          *
          * @return The setting's current value.
          */
         public static float getFloat(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getFloatForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static float getFloatForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             if (v == null) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
             try {
                 return Float.parseFloat(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -592,17 +593,17 @@ public final class CMSettings {
     }
 
     /**
-     * Secure settings, containing miscellaneous CM secure preferences. This
+     * Secure settings, containing miscellaneous MK secure preferences. This
      * table holds simple name/value pairs. There are convenience
      * functions for accessing individual settings entries.
      */
     public static final class Secure extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/secure");
 
-        public static final String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_secure_version";
+        public static final String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_secure_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_CM_SETTING_VERSION,
+                SYS_PROP_MK_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_SECURE,
                 CALL_METHOD_PUT_SECURE);
@@ -688,29 +689,29 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          *
          * @return The setting's current value.
          */
         public static int getInt(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getIntForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static int getIntForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             try {
                 return Integer.parseInt(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -776,28 +777,28 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
          * @return The setting's current value.
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          */
         public static long getLong(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getLongForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static long getLongForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String valString = getStringForUser(cr, name, userId);
             try {
                 return Long.parseLong(valString);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -861,32 +862,32 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not a float.
          *
          * @return The setting's current value.
          */
         public static float getFloat(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getFloatForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static float getFloatForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             if (v == null) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
             try {
                 return Float.parseFloat(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -1011,12 +1012,6 @@ public final class CMSettings {
         public static final String QS_USE_MAIN_TILES = "sysui_qs_main_tiles";
 
         /**
-         * Global stats collection
-         * @hide
-         */
-        public static final String STATS_COLLECTION = "stats_collection";
-
-        /**
          * Boolean value whether to link ringtone and notification volume
          *
          * @hide
@@ -1027,17 +1022,17 @@ public final class CMSettings {
     }
 
     /**
-     * Global settings, containing miscellaneous CM global preferences. This
+     * Global settings, containing miscellaneous MK global preferences. This
      * table holds simple name/value pairs. There are convenience
      * functions for accessing individual settings entries.
      */
     public static final class Global extends Settings.NameValueTable {
         public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/global");
 
-        public static final String SYS_PROP_CM_SETTING_VERSION = "sys.cm_settings_global_version";
+        public static final String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_global_version";
 
         private static final NameValueCache sNameValueCache = new NameValueCache(
-                SYS_PROP_CM_SETTING_VERSION,
+                SYS_PROP_MK_SETTING_VERSION,
                 CONTENT_URI,
                 CALL_METHOD_GET_GLOBAL,
                 CALL_METHOD_PUT_GLOBAL);
@@ -1123,29 +1118,29 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          *
          * @return The setting's current value.
          */
         public static int getInt(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getIntForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static int getIntForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             try {
                 return Integer.parseInt(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -1211,28 +1206,28 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
          * @return The setting's current value.
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not an integer.
          */
         public static long getLong(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getLongForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static long getLongForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String valString = getStringForUser(cr, name, userId);
             try {
                 return Long.parseLong(valString);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -1296,32 +1291,32 @@ public final class CMSettings {
          * <p>
          * This version does not take a default value.  If the setting has not
          * been set, or the string value is not a number,
-         * it throws {@link CMSettingNotFoundException}.
+         * it throws {@link MKSettingNotFoundException}.
          *
          * @param cr The ContentResolver to access.
          * @param name The name of the setting to retrieve.
          *
-         * @throws CMSettingNotFoundException Thrown if a setting by the given
+         * @throws MKSettingNotFoundException Thrown if a setting by the given
          * name can't be found or the setting value is not a float.
          *
          * @return The setting's current value.
          */
         public static float getFloat(ContentResolver cr, String name)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             return getFloatForUser(cr, name, UserHandle.myUserId());
         }
 
         /** @hide */
         public static float getFloatForUser(ContentResolver cr, String name, int userId)
-                throws CMSettingNotFoundException {
+                throws MKSettingNotFoundException {
             String v = getStringForUser(cr, name, userId);
             if (v == null) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
             try {
                 return Float.parseFloat(v);
             } catch (NumberFormatException e) {
-                throw new CMSettingNotFoundException(name);
+                throw new MKSettingNotFoundException(name);
             }
         }
 
@@ -1351,21 +1346,6 @@ public final class CMSettings {
         // endregion
 
         // region Global Settings
-
-        /**
-         * The name of the device
-         *
-         * @hide
-         */
-        public static final String DEVICE_NAME = "device_name";
-
-        /**
-         * Defines global heads up toggle. One of HEADS_UP_OFF, HEADS_UP_ON.
-         *
-         * @hide
-         */
-        public static final String HEADS_UP_NOTIFICATIONS_ENABLED =
-                "heads_up_notifications_enabled";
 
         // endregion
     }

@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmsettings;
+package org.mokee.mksettings;
 
 import android.app.ActivityManager;
 import android.content.BroadcastReceiver;
@@ -45,27 +46,27 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * The CMSettingsProvider serves as a {@link ContentProvider} for CM specific settings
+ * The MKSettingsProvider serves as a {@link ContentProvider} for MK specific settings
  */
-public class CMSettingsProvider extends ContentProvider {
-    private static final String TAG = "CMSettingsProvider";
+public class MKSettingsProvider extends ContentProvider {
+    private static final String TAG = "MKSettingsProvider";
     private static final boolean LOCAL_LOGV = false;
 
     private static final boolean USER_CHECK_THROWS = true;
 
-    private static final String PREF_HAS_MIGRATED_CM_SETTINGS = "has_migrated_cm_settings";
+    private static final String PREF_HAS_MIGRATED_MK_SETTINGS = "has_migrated_mk_settings";
 
     private static final Bundle NULL_SETTING = Bundle.forPair("value", null);
 
     // Each defined user has their own settings
-    protected final SparseArray<CMDatabaseHelper> mDbHelpers = new SparseArray<CMDatabaseHelper>();
+    protected final SparseArray<MKDatabaseHelper> mDbHelpers = new SparseArray<MKDatabaseHelper>();
 
     private static final int SYSTEM = 1;
     private static final int SECURE = 2;
@@ -81,17 +82,17 @@ public class CMSettingsProvider extends ContentProvider {
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
     static {
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_SYSTEM,
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_SYSTEM,
                 SYSTEM);
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_SECURE,
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_SECURE,
                 SECURE);
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_GLOBAL,
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_GLOBAL,
                 GLOBAL);
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_SYSTEM +
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_SYSTEM +
                 ITEM_MATCHER, SYSTEM_ITEM_NAME);
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_SECURE +
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_SECURE +
                 ITEM_MATCHER, SECURE_ITEM_NAME);
-        sUriMatcher.addURI(CMSettings.AUTHORITY, CMDatabaseHelper.CMTableNames.TABLE_GLOBAL +
+        sUriMatcher.addURI(MKSettings.AUTHORITY, MKDatabaseHelper.MKTableNames.TABLE_GLOBAL +
                 ITEM_MATCHER, GLOBAL_ITEM_NAME);
     }
 
@@ -101,7 +102,7 @@ public class CMSettingsProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        if (LOCAL_LOGV) Log.d(TAG, "Creating CMSettingsProvider");
+        if (LOCAL_LOGV) Log.d(TAG, "Creating MKSettingsProvider");
 
         mUserManager = UserManager.get(getContext());
 
@@ -109,7 +110,7 @@ public class CMSettingsProvider extends ContentProvider {
 
         mUriBuilder = new Uri.Builder();
         mUriBuilder.scheme(ContentResolver.SCHEME_CONTENT);
-        mUriBuilder.authority(CMSettings.AUTHORITY);
+        mUriBuilder.authority(MKSettings.AUTHORITY);
 
         mSharedPrefs = getContext().getSharedPreferences(TAG, Context.MODE_PRIVATE);
 
@@ -136,20 +137,20 @@ public class CMSettingsProvider extends ContentProvider {
     // region Migration Methods
 
     /**
-     * Migrates CM settings for all existing users if this has not been run before.
+     * Migrates MK settings for all existing users if this has not been run before.
      */
-    private void migrateCMSettingsForExistingUsersIfNeeded() {
-        boolean hasMigratedCMSettings = mSharedPrefs.getBoolean(PREF_HAS_MIGRATED_CM_SETTINGS,
+    private void migrateMKSettingsForExistingUsersIfNeeded() {
+        boolean hasMigratedMKSettings = mSharedPrefs.getBoolean(PREF_HAS_MIGRATED_MK_SETTINGS,
                 false);
 
-        if (!hasMigratedCMSettings) {
+        if (!hasMigratedMKSettings) {
             long startTime = System.currentTimeMillis();
 
             for (UserInfo user : mUserManager.getUsers()) {
-                migrateCMSettingsForUser(user.id);
+                migrateMKSettingsForUser(user.id);
             }
 
-            mSharedPrefs.edit().putBoolean(PREF_HAS_MIGRATED_CM_SETTINGS, true).commit();
+            mSharedPrefs.edit().putBoolean(PREF_HAS_MIGRATED_MK_SETTINGS, true).commit();
 
             // TODO: Add this as part of a boot message to the UI
             long timeDiffMillis = System.currentTimeMillis() - startTime;
@@ -158,91 +159,76 @@ public class CMSettingsProvider extends ContentProvider {
     }
 
     /**
-     * Migrates CM settings for a specific user.
-     * @param userId The id of the user to run CM settings migration for.
+     * Migrates MK settings for a specific user.
+     * @param userId The id of the user to run MK settings migration for.
      */
-    private void migrateCMSettingsForUser(int userId) {
+    private void migrateMKSettingsForUser(int userId) {
         synchronized (this) {
-            if (LOCAL_LOGV) Log.d(TAG, "CM settings will be migrated for user id: " + userId);
+            if (LOCAL_LOGV) Log.d(TAG, "MK settings will be migrated for user id: " + userId);
 
             // Migrate system settings
-            HashMap<String, String> systemToCmSettingsMap = new HashMap<String, String>();
-            systemToCmSettingsMap.put(Settings.System.QS_QUICK_PULLDOWN,
-                    CMSettings.System.QS_QUICK_PULLDOWN);
+            HashMap<String, String> systemToMkSettingsMap = new HashMap<String, String>();
+            systemToMkSettingsMap.put(Settings.System.QS_QUICK_PULLDOWN,
+                    MKSettings.System.QS_QUICK_PULLDOWN);
 
-            int rowsMigrated = migrateCMSettingsForTable(userId,
-                    CMDatabaseHelper.CMTableNames.TABLE_SYSTEM, systemToCmSettingsMap);
-            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM system table");
+            int rowsMigrated = migrateMKSettingsForTable(userId,
+                    MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK system table");
 
             // Migrate secure settings
-            HashMap<String, String> secureToCmSettingsMap = new HashMap<String, String>();
-            secureToCmSettingsMap.put(Settings.Secure.ADVANCED_MODE,
-                    CMSettings.Secure.ADVANCED_MODE);
-            secureToCmSettingsMap.put(Settings.Secure.BUTTON_BACKLIGHT_TIMEOUT,
-                    CMSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT);
-            secureToCmSettingsMap.put(Settings.Secure.BUTTON_BRIGHTNESS,
-                    CMSettings.Secure.BUTTON_BRIGHTNESS);
-            secureToCmSettingsMap.put(Settings.Secure.DEFAULT_THEME_COMPONENTS,
-                    CMSettings.Secure.DEFAULT_THEME_COMPONENTS);
-            secureToCmSettingsMap.put(Settings.Secure.DEFAULT_THEME_PACKAGE,
-                    CMSettings.Secure.DEFAULT_THEME_PACKAGE);
-            secureToCmSettingsMap.put(Settings.Secure.DEV_FORCE_SHOW_NAVBAR,
-                    CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR);
-            secureToCmSettingsMap.put(
+            HashMap<String, String> secureToMkSettingsMap = new HashMap<String, String>();
+            secureToMkSettingsMap.put(Settings.Secure.ADVANCED_MODE,
+                    MKSettings.Secure.ADVANCED_MODE);
+            secureToMkSettingsMap.put(Settings.Secure.BUTTON_BACKLIGHT_TIMEOUT,
+                    MKSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT);
+            secureToMkSettingsMap.put(Settings.Secure.BUTTON_BRIGHTNESS,
+                    MKSettings.Secure.BUTTON_BRIGHTNESS);
+            secureToMkSettingsMap.put(Settings.Secure.DEFAULT_THEME_COMPONENTS,
+                    MKSettings.Secure.DEFAULT_THEME_COMPONENTS);
+            secureToMkSettingsMap.put(Settings.Secure.DEFAULT_THEME_PACKAGE,
+                    MKSettings.Secure.DEFAULT_THEME_PACKAGE);
+            secureToMkSettingsMap.put(Settings.Secure.DEV_FORCE_SHOW_NAVBAR,
+                    MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR);
+            secureToMkSettingsMap.put(
                     Configuration.THEME_PKG_CONFIGURATION_PERSISTENCE_PROPERTY,
-                            CMSettings.Secure.NAME_THEME_CONFIG);
-            secureToCmSettingsMap.put(Settings.Secure.KEYBOARD_BRIGHTNESS,
-                    CMSettings.Secure.KEYBOARD_BRIGHTNESS);
-            secureToCmSettingsMap.put(Settings.Secure.POWER_MENU_ACTIONS,
-                    CMSettings.Secure.POWER_MENU_ACTIONS);
-            secureToCmSettingsMap.put(Settings.Secure.STATS_COLLECTION,
-                    CMSettings.Secure.STATS_COLLECTION);
-            secureToCmSettingsMap.put(Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
-                    CMSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER);
-            secureToCmSettingsMap.put(Settings.Secure.QS_TILES,
-                    CMSettings.Secure.QS_TILES);
-            secureToCmSettingsMap.put(Settings.Secure.QS_USE_MAIN_TILES,
-                    CMSettings.Secure.QS_USE_MAIN_TILES);
-            secureToCmSettingsMap.put(Settings.Secure.VOLUME_LINK_NOTIFICATION,
-                    CMSettings.Secure.VOLUME_LINK_NOTIFICATION);
+                            MKSettings.Secure.NAME_THEME_CONFIG);
+            secureToMkSettingsMap.put(Settings.Secure.KEYBOARD_BRIGHTNESS,
+                    MKSettings.Secure.KEYBOARD_BRIGHTNESS);
+            secureToMkSettingsMap.put(Settings.Secure.POWER_MENU_ACTIONS,
+                    MKSettings.Secure.POWER_MENU_ACTIONS);
+            secureToMkSettingsMap.put(Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
+                    MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER);
+            secureToMkSettingsMap.put(Settings.Secure.QS_TILES,
+                    MKSettings.Secure.QS_TILES);
+            secureToMkSettingsMap.put(Settings.Secure.QS_USE_MAIN_TILES,
+                    MKSettings.Secure.QS_USE_MAIN_TILES);
+            secureToMkSettingsMap.put(Settings.Secure.VOLUME_LINK_NOTIFICATION,
+                    MKSettings.Secure.VOLUME_LINK_NOTIFICATION);
 
             int navRingTargetsLength = Settings.Secure.NAVIGATION_RING_TARGETS.length;
-            int cmNavRingTargetsLength = CMSettings.Secure.NAVIGATION_RING_TARGETS.length;
-            int minNavRingTargetsLength = navRingTargetsLength <= cmNavRingTargetsLength ?
-                    navRingTargetsLength : cmNavRingTargetsLength;
+            int mkNavRingTargetsLength = MKSettings.Secure.NAVIGATION_RING_TARGETS.length;
+            int minNavRingTargetsLength = navRingTargetsLength <= mkNavRingTargetsLength ?
+                    navRingTargetsLength : mkNavRingTargetsLength;
 
             for (int i = 0; i < minNavRingTargetsLength; i++) {
-                systemToCmSettingsMap.put(Settings.Secure.NAVIGATION_RING_TARGETS[i],
-                        CMSettings.Secure.NAVIGATION_RING_TARGETS[i]);
+                systemToMkSettingsMap.put(Settings.Secure.NAVIGATION_RING_TARGETS[i],
+                        MKSettings.Secure.NAVIGATION_RING_TARGETS[i]);
             }
 
-            rowsMigrated = migrateCMSettingsForTable(userId,
-                    CMDatabaseHelper.CMTableNames.TABLE_SECURE, secureToCmSettingsMap);
-            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM secure table");
-
-            // Migrate global settings
-            if (userId == UserHandle.USER_OWNER) {
-                HashMap<String, String> globalToCmSettingsMap = new HashMap<String, String>();
-                globalToCmSettingsMap.put(Settings.Global.DEVICE_NAME,
-                        CMSettings.Global.DEVICE_NAME);
-                globalToCmSettingsMap.put(Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED,
-                        CMSettings.Global.HEADS_UP_NOTIFICATIONS_ENABLED);
-
-                rowsMigrated = migrateCMSettingsForTable(userId,
-                        CMDatabaseHelper.CMTableNames.TABLE_GLOBAL, globalToCmSettingsMap);
-                if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM global table");
-            }
+            rowsMigrated = migrateMKSettingsForTable(userId,
+                    MKDatabaseHelper.MKTableNames.TABLE_SECURE, secureToMkSettingsMap);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK secure table");
         }
     }
 
     /**
-     * Migrates CM settings for a specific table and user id.
-     * @param userId The id of the user to run CM settings migration for.
-     * @param tableName The name of the table to run CM settings migration on.
-     * @param settingsMap A mapping between key names in {@link Settings} and {@link CMSettings}
+     * Migrates MK settings for a specific table and user id.
+     * @param userId The id of the user to run MK settings migration for.
+     * @param tableName The name of the table to run MK settings migration on.
+     * @param settingsMap A mapping between key names in {@link Settings} and {@link MKSettings}
      * @return Number of rows migrated.
      */
-    private int migrateCMSettingsForTable(int userId, String tableName, HashMap<String,
+    private int migrateMKSettingsForTable(int userId, String tableName, HashMap<String,
             String> settingsMap) {
         ContentResolver contentResolver = getContext().getContentResolver();
         Set<Map.Entry<String, String>> entrySet = settingsMap.entrySet();
@@ -251,18 +237,18 @@ public class CMSettingsProvider extends ContentProvider {
         int migrateSettingsCount = 0;
         for (Map.Entry<String, String> keyPair : entrySet) {
             String settingsKey = keyPair.getKey();
-            String cmSettingsKey = keyPair.getValue();
+            String mkSettingsKey = keyPair.getValue();
             String settingsValue = null;
 
-            if (tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_SYSTEM)) {
+            if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_SYSTEM)) {
                 settingsValue = Settings.System.getStringForUser(contentResolver, settingsKey,
                         userId);
             }
-            else if (tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_SECURE)) {
+            else if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_SECURE)) {
                 settingsValue = Settings.Secure.getStringForUser(contentResolver, settingsKey,
                         userId);
             }
-            else if (tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_GLOBAL)) {
+            else if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_GLOBAL)) {
                 settingsValue = Settings.Global.getStringForUser(contentResolver, settingsKey,
                         userId);
             }
@@ -271,7 +257,7 @@ public class CMSettingsProvider extends ContentProvider {
                     + settingsValue);
 
             ContentValues contentValue = new ContentValues();
-            contentValue.put(Settings.NameValueTable.NAME, cmSettingsKey);
+            contentValue.put(Settings.NameValueTable.NAME, mkSettingsKey);
             contentValue.put(Settings.NameValueTable.VALUE, settingsValue);
             contentValues[migrateSettingsCount++] = contentValue;
         }
@@ -311,7 +297,7 @@ public class CMSettingsProvider extends ContentProvider {
 
         int callingUserId = UserHandle.getCallingUserId();
         if (args != null) {
-            int reqUser = args.getInt(CMSettings.CALL_METHOD_USER_KEY, callingUserId);
+            int reqUser = args.getInt(MKSettings.CALL_METHOD_USER_KEY, callingUserId);
             if (reqUser != callingUserId) {
                 callingUserId = ActivityManager.handleIncomingUser(Binder.getCallingPid(),
                         Binder.getCallingUid(), reqUser, false, true,
@@ -321,25 +307,25 @@ public class CMSettingsProvider extends ContentProvider {
         }
 
         // Migrate methods
-        if (CMSettings.CALL_METHOD_MIGRATE_SETTINGS.equals(method)) {
-            migrateCMSettingsForExistingUsersIfNeeded();
+        if (MKSettings.CALL_METHOD_MIGRATE_SETTINGS.equals(method)) {
+            migrateMKSettingsForExistingUsersIfNeeded();
 
             return null;
-        } else if (CMSettings.CALL_METHOD_MIGRATE_SETTINGS_FOR_USER.equals(method)) {
-            migrateCMSettingsForUser(callingUserId);
+        } else if (MKSettings.CALL_METHOD_MIGRATE_SETTINGS_FOR_USER.equals(method)) {
+            migrateMKSettingsForUser(callingUserId);
 
             return null;
         }
 
         // Get methods
-        if (CMSettings.CALL_METHOD_GET_SYSTEM.equals(method)) {
-            return lookupSingleValue(callingUserId, CMSettings.System.CONTENT_URI, request);
+        if (MKSettings.CALL_METHOD_GET_SYSTEM.equals(method)) {
+            return lookupSingleValue(callingUserId, MKSettings.System.CONTENT_URI, request);
         }
-        else if (CMSettings.CALL_METHOD_GET_SECURE.equals(method)) {
-            return lookupSingleValue(callingUserId, CMSettings.Secure.CONTENT_URI, request);
+        else if (MKSettings.CALL_METHOD_GET_SECURE.equals(method)) {
+            return lookupSingleValue(callingUserId, MKSettings.Secure.CONTENT_URI, request);
         }
-        else if (CMSettings.CALL_METHOD_GET_GLOBAL.equals(method)) {
-            return lookupSingleValue(callingUserId, CMSettings.Global.CONTENT_URI, request);
+        else if (MKSettings.CALL_METHOD_GET_GLOBAL.equals(method)) {
+            return lookupSingleValue(callingUserId, MKSettings.Global.CONTENT_URI, request);
         }
 
         // Put methods - new value is in the args bundle under the key named by
@@ -350,11 +336,11 @@ public class CMSettingsProvider extends ContentProvider {
         // Framework can't do automatic permission checking for calls, so we need
         // to do it here.
         if (getContext().checkCallingOrSelfPermission(
-                cyanogenmod.platform.Manifest.permission.WRITE_SETTINGS) !=
+                mokee.platform.Manifest.permission.WRITE_SETTINGS) !=
                 PackageManager.PERMISSION_GRANTED) {
             throw new SecurityException(
                     String.format("Permission denial: writing to settings requires %1$s",
-                            cyanogenmod.platform.Manifest.permission.WRITE_SETTINGS));
+                            mokee.platform.Manifest.permission.WRITE_SETTINGS));
         }
 
         // Put methods
@@ -362,14 +348,14 @@ public class CMSettingsProvider extends ContentProvider {
         values.put(Settings.NameValueTable.NAME, request);
         values.put(Settings.NameValueTable.VALUE, newValue);
 
-        if (CMSettings.CALL_METHOD_PUT_SYSTEM.equals(method)) {
-            insertForUser(callingUserId, CMSettings.System.CONTENT_URI, values);
+        if (MKSettings.CALL_METHOD_PUT_SYSTEM.equals(method)) {
+            insertForUser(callingUserId, MKSettings.System.CONTENT_URI, values);
         }
-        else if (CMSettings.CALL_METHOD_PUT_SECURE.equals(method)) {
-            insertForUser(callingUserId, CMSettings.Secure.CONTENT_URI, values);
+        else if (MKSettings.CALL_METHOD_PUT_SECURE.equals(method)) {
+            insertForUser(callingUserId, MKSettings.Secure.CONTENT_URI, values);
         }
-        else if (CMSettings.CALL_METHOD_PUT_GLOBAL.equals(method)) {
-            insertForUser(callingUserId, CMSettings.Global.CONTENT_URI, values);
+        else if (MKSettings.CALL_METHOD_PUT_GLOBAL.equals(method)) {
+            insertForUser(callingUserId, MKSettings.Global.CONTENT_URI, values);
         }
 
         return null;
@@ -432,9 +418,8 @@ public class CMSettingsProvider extends ContentProvider {
 
         int code = sUriMatcher.match(uri);
         String tableName = getTableNameFromUriMatchCode(code);
-        checkWritePermissions(tableName);
 
-        CMDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
+        MKDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
         SQLiteQueryBuilder queryBuilder = new SQLiteQueryBuilder();
@@ -503,7 +488,7 @@ public class CMSettingsProvider extends ContentProvider {
         String tableName = getTableNameFromUri(uri);
         checkWritePermissions(tableName);
 
-        CMDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
+        MKDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         db.beginTransaction();
@@ -560,7 +545,7 @@ public class CMSettingsProvider extends ContentProvider {
         String tableName = getTableNameFromUri(uri);
         checkWritePermissions(tableName);
 
-        CMDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
+        MKDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName, userId));
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         long rowId = db.insert(tableName, null, values);
@@ -592,7 +577,7 @@ public class CMSettingsProvider extends ContentProvider {
             checkWritePermissions(tableName);
 
             int callingUserId = UserHandle.getCallingUserId();
-            CMDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName,
+            MKDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName,
                     callingUserId));
 
             SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -609,7 +594,7 @@ public class CMSettingsProvider extends ContentProvider {
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
-        // NOTE: update() is never called by the front-end CMSettings API, and updates that
+        // NOTE: update() is never called by the front-end MKSettings API, and updates that
         // wind up affecting rows in Secure that are globally shared will not have the
         // intended effect (the update will be invisible to the rest of the system).
         // This should have no practical effect, since writes to the Secure db can only
@@ -626,7 +611,7 @@ public class CMSettingsProvider extends ContentProvider {
         checkWritePermissions(tableName);
 
         int callingUserId = UserHandle.getCallingUserId();
-        CMDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName,
+        MKDatabaseHelper dbHelper = getOrEstablishDatabase(getUserIdForTable(tableName,
                 callingUserId));
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -643,12 +628,12 @@ public class CMSettingsProvider extends ContentProvider {
     // endregion Content Provider Methods
 
     /**
-     * Tries to get a {@link CMDatabaseHelper} for the specified user and if it does not exist, a
-     * new instance of {@link CMDatabaseHelper} is created for the specified user and returned.
+     * Tries to get a {@link MKDatabaseHelper} for the specified user and if it does not exist, a
+     * new instance of {@link MKDatabaseHelper} is created for the specified user and returned.
      * @param callingUser
      * @return
      */
-    private CMDatabaseHelper getOrEstablishDatabase(int callingUser) {
+    private MKDatabaseHelper getOrEstablishDatabase(int callingUser) {
         if (callingUser >= android.os.Process.SYSTEM_UID) {
             if (USER_CHECK_THROWS) {
                 throw new IllegalArgumentException("Uid rather than user handle: " + callingUser);
@@ -659,7 +644,7 @@ public class CMSettingsProvider extends ContentProvider {
 
         long oldId = Binder.clearCallingIdentity();
         try {
-            CMDatabaseHelper dbHelper;
+            MKDatabaseHelper dbHelper;
             synchronized (this) {
                 dbHelper = mDbHelpers.get(callingUser);
             }
@@ -676,23 +661,23 @@ public class CMSettingsProvider extends ContentProvider {
     }
 
     /**
-     * Check if a {@link CMDatabaseHelper} exists for a user and if it doesn't, a new helper is
+     * Check if a {@link MKDatabaseHelper} exists for a user and if it doesn't, a new helper is
      * created and added to the list of tracked database helpers
      * @param userId
      */
     private void establishDbTracking(int userId) {
-        CMDatabaseHelper dbHelper;
+        MKDatabaseHelper dbHelper;
 
         synchronized (this) {
             dbHelper = mDbHelpers.get(userId);
             if (LOCAL_LOGV) {
-                Log.i(TAG, "Checking cm settings db helper for user " + userId);
+                Log.i(TAG, "Checking mk settings db helper for user " + userId);
             }
             if (dbHelper == null) {
                 if (LOCAL_LOGV) {
-                    Log.i(TAG, "Installing new cm settings db helper for user " + userId);
+                    Log.i(TAG, "Installing new mk settings db helper for user " + userId);
                 }
-                dbHelper = new CMDatabaseHelper(getContext(), userId);
+                dbHelper = new MKDatabaseHelper(getContext(), userId);
                 mDbHelpers.append(userId, dbHelper);
             }
         }
@@ -711,14 +696,14 @@ public class CMSettingsProvider extends ContentProvider {
      * @throws SecurityException if the caller is forbidden to write.
      */
     private void checkWritePermissions(String tableName) {
-        if ((CMDatabaseHelper.CMTableNames.TABLE_SECURE.equals(tableName) ||
-                CMDatabaseHelper.CMTableNames.TABLE_GLOBAL.equals(tableName)) &&
+        if ((MKDatabaseHelper.MKTableNames.TABLE_SECURE.equals(tableName) ||
+                MKDatabaseHelper.MKTableNames.TABLE_GLOBAL.equals(tableName)) &&
                 getContext().checkCallingOrSelfPermission(
-                        cyanogenmod.platform.Manifest.permission.WRITE_SECURE_SETTINGS) !=
+                        mokee.platform.Manifest.permission.WRITE_SECURE_SETTINGS) !=
                         PackageManager.PERMISSION_GRANTED) {
             throw new SecurityException(
-                    String.format("Permission denial: writing to cm secure settings requires %1$s",
-                            cyanogenmod.platform.Manifest.permission.WRITE_SECURE_SETTINGS));
+                    String.format("Permission denial: writing to mk secure settings requires %1$s",
+                            mokee.platform.Manifest.permission.WRITE_SECURE_SETTINGS));
         }
     }
 
@@ -763,13 +748,13 @@ public class CMSettingsProvider extends ContentProvider {
         switch (code) {
             case SYSTEM:
             case SYSTEM_ITEM_NAME:
-                return CMDatabaseHelper.CMTableNames.TABLE_SYSTEM;
+                return MKDatabaseHelper.MKTableNames.TABLE_SYSTEM;
             case SECURE:
             case SECURE_ITEM_NAME:
-                return CMDatabaseHelper.CMTableNames.TABLE_SECURE;
+                return MKDatabaseHelper.MKTableNames.TABLE_SECURE;
             case GLOBAL:
             case GLOBAL_ITEM_NAME:
-                return CMDatabaseHelper.CMTableNames.TABLE_GLOBAL;
+                return MKDatabaseHelper.MKTableNames.TABLE_GLOBAL;
             default:
                 throw new IllegalArgumentException("Invalid uri match code: " + code);
         }
@@ -783,25 +768,25 @@ public class CMSettingsProvider extends ContentProvider {
      * @return User id
      */
     private int getUserIdForTable(String tableName, int userId) {
-        return CMDatabaseHelper.CMTableNames.TABLE_GLOBAL.equals(tableName) ?
+        return MKDatabaseHelper.MKTableNames.TABLE_GLOBAL.equals(tableName) ?
                 UserHandle.USER_OWNER : userId;
     }
 
     /**
      * Modify setting version for an updated table before notifying of change. The
-     * {@link CMSettings} class uses these to provide client-side caches.
+     * {@link MKSettings} class uses these to provide client-side caches.
      * @param uri to send notifications for
      * @param userId
      */
     private void notifyChange(Uri uri, String tableName, int userId) {
         String property = null;
-        final boolean isGlobal = tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_GLOBAL);
-        if (tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_SYSTEM)) {
-            property = CMSettings.System.SYS_PROP_CM_SETTING_VERSION;
-        } else if (tableName.equals(CMDatabaseHelper.CMTableNames.TABLE_SECURE)) {
-            property = CMSettings.Secure.SYS_PROP_CM_SETTING_VERSION;
+        final boolean isGlobal = tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_GLOBAL);
+        if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_SYSTEM)) {
+            property = MKSettings.System.SYS_PROP_MK_SETTING_VERSION;
+        } else if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_SECURE)) {
+            property = MKSettings.Secure.SYS_PROP_MK_SETTING_VERSION;
         } else if (isGlobal) {
-            property = CMSettings.Global.SYS_PROP_CM_SETTING_VERSION;
+            property = MKSettings.Global.SYS_PROP_MK_SETTING_VERSION;
         }
 
         if (property != null) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 The CyanogenMod Project
+<!-- Copyright (C) 2015 The MoKee OpenSource Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.cyanogenmod.cmsettings"
+          package="org.mokee.mksettings"
           coreApp="true"
           android:sharedUserId="android.uid.system">
     <!-- It is necessary to be a system app in order to update table versions in SystemProperties for
-         CMSettings to know whether or not the client side cache is up to date. It is also necessary
+         MKSettings to know whether or not the client side cache is up to date. It is also necessary
          to run in the system process in order to start the content provider prior to running migration
-         for CM settings on user starting -->
+         for MK settings on user starting -->
 
     <uses-permission android:name="android.permission.MANAGE_USERS" />
 
@@ -31,11 +31,11 @@
                  android:allowClearUserData="false"
                  android:enabled="true">
 
-        <provider android:name="CMSettingsProvider"
-                  android:authorities="cmsettings"
+        <provider android:name="MKSettingsProvider"
+                  android:authorities="mksettings"
                   android:multiprocess="false"
                   android:exported="true"
-                  android:writePermission="cyanogenmod.permission.WRITE_SETTINGS"
+                  android:writePermission="mokee.permission.WRITE_SETTINGS"
                   android:singleUser="true"
                   android:initOrder="100" />
 

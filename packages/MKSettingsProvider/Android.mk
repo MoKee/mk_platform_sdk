@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The MoKee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,18 +17,20 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_TAGS := tests
+src_dir := src
+res_dir := res
 
-LOCAL_PACKAGE_NAME := CMSettingsProviderTests
-LOCAL_INSTRUMENTATION_FOR := CMSettingsProvider
+LOCAL_SRC_FILES := $(call all-java-files-under, $(src_dir))
+LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
-LOCAL_SRC_FILES := $(call all-subdir-java-files)
-
+LOCAL_PACKAGE_NAME := MKSettingsProvider
 LOCAL_CERTIFICATE := platform
-LOCAL_JAVA_LIBRARIES := android.test.runner
-LOCAL_PROGUARD_ENABLED := disabled
+LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.cyanogenmod.platform.sdk
+    org.mokee.platform.sdk
 
 include $(BUILD_PACKAGE)
+
+########################
+include $(call all-makefiles-under,$(LOCAL_PATH))

@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmsettings;
+package org.mokee.mksettings;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -25,25 +26,25 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.RemoteException;
 import android.util.Log;
-import cyanogenmod.providers.CMSettings;
+import mokee.providers.MKSettings;
 
 public class PreBootReceiver extends BroadcastReceiver{
-    private static final String TAG = "CMSettingsReceiver";
+    private static final String TAG = "MKSettingsReceiver";
     private static final boolean LOCAL_LOGV = false;
 
     @Override
     public void onReceive(Context context, Intent intent) {
         if (LOCAL_LOGV) {
-            Log.d(TAG, "Received pre boot intent. Attempting to migrate CM settings.");
+            Log.d(TAG, "Received pre boot intent. Attempting to migrate MK settings.");
         }
 
         ContentResolver contentResolver = context.getContentResolver();
         IContentProvider contentProvider = contentResolver.acquireProvider(
-                CMSettings.AUTHORITY);
+                MKSettings.AUTHORITY);
 
         try{
             contentProvider.call(contentResolver.getPackageName(),
-                    CMSettings.CALL_METHOD_MIGRATE_SETTINGS, null, null);
+                    MKSettings.CALL_METHOD_MIGRATE_SETTINGS, null, null);
 
             context.getPackageManager().setComponentEnabledSetting(
                     new ComponentName(context, getClass()),

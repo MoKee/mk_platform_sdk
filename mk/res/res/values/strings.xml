@@ -44,14 +44,6 @@
     <string name="permlab_write_alarms">directly change alarms</string>
     <string name="permdesc_write_alarms">Allows an app to add, modify or delete all of your alarms.</string>
 
-    <!-- Labels for the WRITE_SETTINGS permission -->
-    <string name="permlab_writeSettings">modify CM system settings</string>
-    <string name="permdesc_writeSettings">Allows an app to modify CM system settings.</string>
-
-    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-    <string name="permlab_writeSecureSettings">modify CM secure system settings</string>
-    <string name="permdesc_writeSecureSettings">Allows an app to modify CM secure system settings. Not for use by normal apps.</string>
-
     <!-- Labels for the MANAGE_ALARMS permission. -->
     <string name="permlab_manage_alarms">toggle scheduled alarms</string>
     <string name="permdesc_manage_alarms">Allows an app to turn on or off your scheduled alarms.</string>
@@ -59,6 +51,14 @@
     <!-- Labels for the READ_ALARMS permission. -->
     <string name="permlab_read_alarms">access scheduled alarms</string>
     <string name="permdesc_read_alarms">Allows an app to read your scheduled alarms.</string>
+
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">modify MK system settings</string>
+    <string name="permdesc_writeSettings">Allows an app to modify MK system settings.</string>
+
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">modify MK secure system settings</string>
+    <string name="permdesc_writeSecureSettings">Allows an app to modify MK secure system settings. Not for use by normal apps.</string>
 
     <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
     <string name="permlab_managePersistentStorage">manage persistent storage</string>
