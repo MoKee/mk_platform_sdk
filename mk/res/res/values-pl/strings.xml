@@ -35,6 +35,10 @@
   <string name="permdesc_manage_alarms">Umożliwia aplikacji włączanie lub wyłączanie twoich zaplanowanych alarmów.</string>
   <string name="permlab_read_alarms">dostęp do zaplanowanych alarmów</string>
   <string name="permdesc_read_alarms">Umożliwia aplikacji odczyt twoich zaplanowanych alarmów.</string>
+  <string name="permlab_writeSettings">modyfikacja ustawień systemu MK</string>
+  <string name="permdesc_writeSettings">Zezwala aplikacji na modyfikację ustawień systemu MK.</string>
+  <string name="permlab_writeSecureSettings">modyfikacja ustawień bezpieczeństwa systemu MK</string>
+  <string name="permdesc_writeSecureSettings">Zezwala aplikacji na modyfikację ustawień bezpieczeństwa systemu MK. Nie do użytku przez zwykłe aplikacje.</string>
   <string name="permlab_managePersistentStorage">zarządzanie magazynem trwałe</string>
   <string name="permdesc_managePersistentStorage">Pozwala aplikacji na odczyt lub zapis właściwości, które mogą utrzymać się po przywróceniu ustawień fabrycznych.</string>
   <string name="profileNameDefault">Domyślny</string>
