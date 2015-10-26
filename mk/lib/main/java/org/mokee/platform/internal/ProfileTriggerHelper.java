@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013-2014 The MoKee OpenSource Project
+ * Copyright (c) 2013-2015 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,11 +26,12 @@ import android.net.wifi.WifiManager;
 import android.net.wifi.WifiSsid;
 import android.net.wifi.WifiInfo;
 import android.os.Handler;
-import android.provider.Settings;
+
 import android.util.Log;
 
 import mokee.app.Profile;
 
+import mokee.providers.MKSettings;
 import org.mokee.platform.internal.ProfileManagerService;
 
 import java.util.UUID;
@@ -78,9 +79,9 @@ public class ProfileTriggerHelper extends BroadcastReceiver {
        // mIntentFilter.addAction(AudioManager.A2DP_ROUTE_CHANGED_ACTION);
         updateEnabled();
 
-        /* mContext.getContentResolver().registerContentObserver(
-                Settings.System.getUriFor(Settings.System.SYSTEM_PROFILES_ENABLED), false,
-                mSettingsObserver); */
+        mContext.getContentResolver().registerContentObserver(
+                MKSettings.System.getUriFor(MKSettings.System.SYSTEM_PROFILES_ENABLED), false,
+                mSettingsObserver);
     }
 
     public void updateEnabled() {
