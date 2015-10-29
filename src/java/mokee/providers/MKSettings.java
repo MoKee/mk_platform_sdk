@@ -1073,6 +1073,12 @@ public final class MKSettings {
          */
         public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
 
+        /**
+         * Whether newly installed apps should run with privacy guard by default
+         * @hide
+         */
+        public static final String PRIVACY_GUARD_DEFAULT = "privacy_guard_default";
+
         // endregion
     }
 
