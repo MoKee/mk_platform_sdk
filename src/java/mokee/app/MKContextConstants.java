@@ -75,4 +75,11 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_HARDWARE_SERVICE = "mkhardware";
+
+    /**
+     * Control device power profile and characteristics.
+     *
+     * @hide
+     */
+    public static final String MK_PERFORMANCE_SERVICE = "mkperformance";
 }

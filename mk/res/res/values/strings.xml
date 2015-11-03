@@ -93,4 +93,11 @@
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_writePhoneLocation">Allows an app to change the phone location.</string>
 
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">Power save</string>
+    <string name="perf_profile_bal">Balanced</string>
+    <string name="perf_profile_perf">Performance</string>
+    <string name="perf_profile_bias_power">Efficiency</string>
+    <string name="perf_profile_bias_perf">Quick</string>
+
 </resources>

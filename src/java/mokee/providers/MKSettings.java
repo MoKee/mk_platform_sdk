@@ -1173,6 +1173,18 @@ public final class MKSettings {
         @Deprecated
         public static final String BUGREPORT_IN_POWER_MENU = "bugreport_in_power_menu";
 
+        /**
+         * Performance profile
+         * @hide
+         */
+        public static final String PERFORMANCE_PROFILE = "performance_profile";
+
+        /**
+         * App-based performance profile selection
+         * @hide
+         */
+        public static final String APP_PERFORMANCE_PROFILES_ENABLED = "app_perf_profiles_enabled";
+
         // endregion
     }
 
