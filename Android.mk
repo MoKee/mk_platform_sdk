@@ -76,6 +76,7 @@ mk_framework_module := $(LOCAL_INSTALLED_MODULE)
 mk_framework_res_R_stamp := \
     $(call intermediates-dir-for,APPS,org.mokee.platform-res,,COMMON)/src/R.stamp
 $(full_classes_compiled_jar): $(mk_framework_res_R_stamp)
+$(built_dex_intermediate): $(mk_framework_res_R_stamp)
 
 $(mk_framework_module): | $(dir $(mk_framework_module))org.mokee.platform-res.apk
 
