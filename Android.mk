@@ -123,6 +123,35 @@ LOCAL_INTERMEDIATE_SOURCES := \
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
+# full target for use by platform apps
+#
+include $(CLEAR_VARS)
+
+LOCAL_MODULE:= org.mokee.platform.internal
+LOCAL_MODULE_TAGS := optional
+LOCAL_REQUIRED_MODULES := services
+
+LOCAL_SRC_FILES := \
+    $(call all-java-files-under, $(mokee_src)) \
+    $(call all-Iaidl-files-under, $(mokee_src)) \
+    $(call all-Iaidl-files-under, $(mokee_internal_src))
+
+# Included aidl files from mokee.app namespace
+LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
+
+mksdk_LOCAL_INTERMEDIATE_SOURCES := \
+    $(mk_platform_res)/mokee/platform/R.java \
+    $(mk_platform_res)/mokee/platform/Manifest.java \
+    $(mk_platform_res)/org/mokee/platform/internal/R.java \
+    $(mk_platform_res)/org/mokee/platform/internal/Manifest.java
+
+LOCAL_INTERMEDIATE_SOURCES := \
+    $(mksdk_LOCAL_INTERMEDIATE_SOURCES)
+
+$(full_target): $(mk_framework_built) $(gen)
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+
 # ===========================================================
 # Common Droiddoc vars
 mkplat_docs_src_files := \
