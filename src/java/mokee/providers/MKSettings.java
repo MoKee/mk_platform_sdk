@@ -733,6 +733,13 @@ public final class MKSettings {
          */
         public static final String VOLUME_KEYS_CONTROL_RING_STREAM =
                 "volume_keys_control_ring_stream";
+
+        /**
+         * boolean value. toggles using arrow key locations on nav bar
+         * as left and right dpad keys
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
     }
 
     /**
@@ -1266,6 +1273,11 @@ public final class MKSettings {
          */
         public static final String APP_PERFORMANCE_PROFILES_ENABLED = "app_perf_profiles_enabled";
 
+        /**
+         * Launch actions for left/right lockscreen targets
+         * @hide
+         */
+        public static final String LOCKSCREEN_TARGETS = "lockscreen_target_actions";
         // endregion
     }
 
