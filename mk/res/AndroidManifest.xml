@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright 2015, MoKee OpenSource Project
+ * Copyright 2015, MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@
                 android:label="@string/permlab_modifyNetworkSettings"
                 android:description="@string/permdesc_modifyNetworkSettings"
                 androidprv:allowViaWhitelist="true"
-                android:protectionLevel="system|signature" />
+                android:protectionLevel="signature|privileged" />
 
     <!-- Allows an app to make changes to the interruption mode sound settings -->
     <permission android:name="mokee.permission.MODIFY_SOUND_SETTINGS"
@@ -69,7 +69,7 @@
     <permission android:name="mokee.permission.HARDWARE_ABSTRACTION_ACCESS"
                 android:label="@string/permlab_useHardwareFramework"
                 android:description="@string/permdesc_useHardwareFramework"
-                android:protectionLevel="system|signature" />
+                android:protectionLevel="signature|privileged" />
 
     <!-- Allows an application to write to MK system settings -->
     <permission android:name="mokee.permission.WRITE_SETTINGS"
@@ -88,13 +88,13 @@
     <permission android:name="mokee.permission.WRITE_SECURE_SETTINGS"
                 android:label="@string/permlab_writeSecureSettings"
                 android:description="@string/permdesc_writeSecureSettings"
-                android:protectionLevel="signature|system|development" />
+                android:protectionLevel="signature|privileged|development" />
 
     <!-- Allows an application to write alarms to the default alarm clock application
         <p>Not for use by third-party applications. -->
     <permission android:name="mokee.permission.WRITE_ALARMS"
                 android:permissionGroup="android.permission-group.SYSTEM_CLOCK"
-                android:protectionLevel="system|signature"
+                android:protectionLevel="signature|privileged"
                 android:label="@string/permlab_write_alarms"
                 android:description="@string/permdesc_write_alarms"/>
 
@@ -117,7 +117,7 @@
     <permission android:name="mokee.permission.MANAGE_PERSISTENT_STORAGE"
                 android:label="@string/permlab_managePersistentStorage"
                 android:description="@string/permdesc_managePersistentStorage"
-                android:protectionLevel="system|signature" />
+                android:protectionLevel="signature|privileged" />
 
     <application android:process="system"
                  android:persistent="true"
