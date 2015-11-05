@@ -35,6 +35,10 @@
   <string name="permdesc_manage_alarms">Позволяет приложению отключать запланированной сигнализации.</string>
   <string name="permlab_read_alarms">доступ к расписанию сигнализации</string>
   <string name="permdesc_read_alarms">Позволяет приложению читать ваши регулярные сигнализации.</string>
+  <string name="permlab_writeSettings">изменить параметры системы МК</string>
+  <string name="permdesc_writeSettings">Позволяет приложению изменять параметры системы МК.</string>
+  <string name="permlab_writeSecureSettings">изменение настроек системы безопасности</string>
+  <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы МК. Не используется в обычных приложениях.</string>
   <string name="permlab_managePersistentStorage">Управление постоянного хранения</string>
   <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться thrοugh сброс.</string>
   <string name="profileNameDefault">Стандартный</string>
