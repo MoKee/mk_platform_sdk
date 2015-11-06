@@ -279,6 +279,12 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String RECENTS_LONG_PRESS_ACTIVITY = "recents_long_press_activity";
+
+        /**
+         * Navigation controls to Use
+         * @hide
+         */
+        public static final String NAV_BUTTONS = "nav_buttons";
     }
 
     /**
@@ -293,6 +299,8 @@ public class MKSettingsProvider extends ContentProvider {
             HashMap<String, String> systemToMkSettingsMap = new HashMap<String, String>();
             systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_QUICK_QS_PULLDOWN,
                     MKSettings.System.QS_QUICK_PULLDOWN);
+            systemToMkSettingsMap.put(LegacyMKSettings.NAV_BUTTONS,
+                    MKSettings.System.NAV_BUTTONS);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
@@ -327,7 +335,6 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.Secure.QS_USE_MAIN_TILES);
             secureToMkSettingsMap.put(LegacyMKSettings.VOLUME_LINK_NOTIFICATION,
                     MKSettings.Secure.VOLUME_LINK_NOTIFICATION);
-
             int navRingTargetsLength = LegacyMKSettings.NAVIGATION_RING_TARGETS.length;
             int mkNavRingTargetsLength = MKSettings.Secure.NAVIGATION_RING_TARGETS.length;
             int minNavRingTargetsLength = navRingTargetsLength <= mkNavRingTargetsLength ?
