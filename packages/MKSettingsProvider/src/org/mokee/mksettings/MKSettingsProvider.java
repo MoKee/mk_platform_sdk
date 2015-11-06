@@ -159,7 +159,7 @@ public class MKSettingsProvider extends ContentProvider {
     }
 
     /* @hide */
-    private static class LegacyMKSettings {
+    static class LegacyMKSettings {
         /**
          * Whether to allow one finger quick settings expansion on the right side of the statusbar.
          * @deprecated Use {@link android.provider.Settings.System#QS_QUICK_PULLDOWN} instead
@@ -269,6 +269,15 @@ public class MKSettingsProvider extends ContentProvider {
          *          'com.google.vending' -> 'com.white.theme'
          */
         public static final String THEME_PKG_CONFIGURATION_PERSISTENCE_PROPERTY = "themeConfig";
+
+        /**
+         * The global recents long press activity chosen by the user.
+         * This setting is stored as a flattened component name as
+         * per {@link ComponentName#flattenToString()}.
+         *
+         * @hide
+         */
+        public static final String RECENTS_LONG_PRESS_ACTIVITY = "recents_long_press_activity";
     }
 
     /**
@@ -327,6 +336,9 @@ public class MKSettingsProvider extends ContentProvider {
                 systemToMkSettingsMap.put(LegacyMKSettings.NAVIGATION_RING_TARGETS[i],
                         MKSettings.Secure.NAVIGATION_RING_TARGETS[i]);
             }
+
+            secureToMkSettingsMap.put(LegacyMKSettings.RECENTS_LONG_PRESS_ACTIVITY,
+                    MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY);
 
             rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SECURE, secureToMkSettingsMap);
