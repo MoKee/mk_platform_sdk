@@ -477,6 +477,18 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String BATTERY_LIGHT_FULL_COLOR = "battery_light_full_color";
+
+        /**
+         * Sprint MWI Quirk: Show message wait indicator notifications
+         * @hide
+         */
+        public static final String ENABLE_MWI_NOTIFICATION = "enable_mwi_notification";
+
+        /**
+         * Check the proximity sensor during wakeup
+         * @hide
+         */
+        public static final String PROXIMITY_ON_WAKE = "proximity_on_wake";
     }
 
     /**
@@ -529,16 +541,20 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.CAMERA_LAUNCH);
             systemToMkSettingsMap.put(LegacyMKSettings.SWAP_VOLUME_KEYS_ON_ROTATION,
                     MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION);
-            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_ENABLED,
+            systemToMkSettingsMap.put(LegacyMKSettings.BATTERY_LIGHT_ENABLED,
                     MKSettings.System.BATTERY_LIGHT_ENABLED);
-            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_PULSE,
+            systemToMkSettingsMap.put(LegacyMKSettings.BATTERY_LIGHT_PULSE,
                     MKSettings.System.BATTERY_LIGHT_PULSE);
-            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_LOW_COLOR,
+            systemToMkSettingsMap.put(LegacyMKSettings.BATTERY_LIGHT_LOW_COLOR,
                     MKSettings.System.BATTERY_LIGHT_LOW_COLOR);
-            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_MEDIUM_COLOR,
+            systemToMkSettingsMap.put(LegacyMKSettings.BATTERY_LIGHT_MEDIUM_COLOR,
                     MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR);
-            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_FULL_COLOR,
+            systemToMkSettingsMap.put(LegacyMKSettings.BATTERY_LIGHT_FULL_COLOR,
                     MKSettings.System.BATTERY_LIGHT_FULL_COLOR);
+            systemToMkSettingsMap.put(LegacyMKSettings.ENABLE_MWI_NOTIFICATION,
+                    MKSettings.System.ENABLE_MWI_NOTIFICATION);
+            systemToMkSettingsMap.put(LegacyMKSettings.PROXIMITY_ON_WAKE,
+                    MKSettings.System.PROXIMITY_ON_WAKE);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
