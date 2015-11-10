@@ -445,6 +445,38 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final int INCALL_POWER_BUTTON_BEHAVIOR_DEFAULT =
                 INCALL_POWER_BUTTON_BEHAVIOR_SCREEN_OFF;
+
+        /**
+         * Whether the battery light should be enabled (if hardware supports it)
+         * The value is boolean (1 or 0).
+         * @hide
+         */
+        public static final String BATTERY_LIGHT_ENABLED = "battery_light_enabled";
+
+        /**
+         * Whether the battery LED should repeatedly flash when the battery is low
+         * on charge. The value is boolean (1 or 0).
+         * @hide
+         */
+        public static final String BATTERY_LIGHT_PULSE = "battery_light_pulse";
+
+        /**
+         * What color to use for the battery LED while charging - low
+         * @hide
+         */
+        public static final String BATTERY_LIGHT_LOW_COLOR = "battery_light_low_color";
+
+        /**
+         * What color to use for the battery LED while charging - medium
+         * @hide
+         */
+        public static final String BATTERY_LIGHT_MEDIUM_COLOR = "battery_light_medium_color";
+
+        /**
+         * What color to use for the battery LED while charging - full
+         * @hide
+         */
+        public static final String BATTERY_LIGHT_FULL_COLOR = "battery_light_full_color";
     }
 
     /**
@@ -497,6 +529,16 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.CAMERA_LAUNCH);
             systemToMkSettingsMap.put(LegacyMKSettings.SWAP_VOLUME_KEYS_ON_ROTATION,
                     MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION);
+            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_ENABLED,
+                    MKSettings.System.BATTERY_LIGHT_ENABLED);
+            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_PULSE,
+                    MKSettings.System.BATTERY_LIGHT_PULSE);
+            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_LOW_COLOR,
+                    MKSettings.System.BATTERY_LIGHT_LOW_COLOR);
+            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_MEDIUM_COLOR,
+                    MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR);
+            systemToMkSettingsMap.put(LegacyCMSettings.BATTERY_LIGHT_FULL_COLOR,
+                    MKSettings.System.BATTERY_LIGHT_FULL_COLOR);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
