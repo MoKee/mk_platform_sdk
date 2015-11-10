@@ -566,6 +566,15 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final String DIALER_OPENCNAM_AUTH_TOKEN =
                 CMSettings.System.DIALER_OPENCNAM_AUTH_TOKEN;
+
+        /**
+         * Whether wifi settings will connect to access point automatically
+         * 0 = automatically
+         * 1 = manually
+         * @hide
+         */
+        public static final String WIFI_AUTO_CONNECT_TYPE =
+                CMSettings.System.WIFI_AUTO_CONNECT_TYPE;
     }
 
     /**
@@ -648,6 +657,8 @@ public class MKSettingsProvider extends ContentProvider {
                     CMSettings.System.DIALER_OPENCNAM_ACCOUNT_SID);
             systemToCmSettingsMap.put(LegacyCMSettings.DIALER_OPENCNAM_AUTH_TOKEN,
                     CMSettings.System.DIALER_OPENCNAM_AUTH_TOKEN);
+            systemToCmSettingsMap.put(LegacyCMSettings.WIFI_AUTO_CONNECT_TYPE,
+                    CMSettings.System.WIFI_AUTO_CONNECT_TYPE);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
