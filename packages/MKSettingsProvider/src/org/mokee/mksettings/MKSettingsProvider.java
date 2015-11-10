@@ -284,6 +284,62 @@ public class MKSettingsProvider extends ContentProvider {
                 MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY;
 
         /**
+         * Whether to display the ADB notification.
+         * @hide
+         */
+        public static final String ADB_NOTIFY = MKSettings.Secure.ADB_NOTIFY;
+
+        /**
+         * The TCP/IP port to run ADB on, or -1 for USB
+         * @hide
+         */
+        public static final String ADB_PORT = MKSettings.Secure.ADB_PORT;
+
+        /**
+         * The hostname for this device
+         * @hide
+         */
+        public static final String DEVICE_HOSTNAME = MKSettings.Secure.DEVICE_HOSTNAME;
+
+        /**
+         * Whether to allow killing of the foreground app by long-pressing the Back button
+         * @hide
+         */
+        public static final String KILL_APP_LONGPRESS_BACK =
+                MKSettings.Secure.KILL_APP_LONGPRESS_BACK;
+
+        /** Protected Components
+         * @hide
+         */
+        public static final String PROTECTED_COMPONENTS = "protected_components";
+
+        /**
+         * Stored color matrix for LiveDisplay. This is used to allow co-existence with
+         * display tuning done by DisplayAdjustmentUtils when hardware support isn't
+         * available.
+         * @hide
+         */
+        public static final String LIVE_DISPLAY_COLOR_MATRIX = "live_display_color_matrix";
+
+        /**
+         * Whether to include options in power menu for rebooting into recovery or bootloader
+         * @hide
+         */
+        public static final String ADVANCED_REBOOT = MKSettings.Secure.ADVANCED_REBOOT;
+
+        /**
+         * This will be set to the system's current theme API version when ThemeService starts.
+         * It is useful for when an upgrade from one version of MK to another occurs.
+         * For example, after a user upgrades from MK44 to MK50, the value of this field
+         * might be 19. ThemeService would then change the value to 21. This is useful
+         * when an API change breaks a theme. Themeservice can identify old themes and
+         * unapply them from the system.
+         * @hide
+         */
+        public static final String THEME_PREV_BOOT_API_LEVEL =
+                MKSettings.Secure.THEME_PREV_BOOT_API_LEVEL;
+
+        /**
          * Navigation controls to Use
          * @hide
          */
@@ -823,6 +879,21 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.Secure.INCALL_POWER_BUTTON_BEHAVIOR);
             secureToMkSettingsMap.put(LegacyMKSettings.INCALL_POWER_BUTTON_BEHAVIOR,
                     MKSettings.Secure.INCALL_POWER_BUTTON_BEHAVIOR);
+
+            secureToMkSettingsMap.put(LegacyMKSettings.ADB_NOTIFY, MKSettings.Secure.ADB_NOTIFY);
+            secureToMkSettingsMap.put(LegacyMKSettings.ADB_PORT, MKSettings.Secure.ADB_PORT);
+            secureToMkSettingsMap.put(LegacyMKSettings.DEVICE_HOSTNAME,
+                    MKSettings.Secure.DEVICE_HOSTNAME);
+            secureToMkSettingsMap.put(LegacyMKSettings.KILL_APP_LONGPRESS_BACK,
+                    MKSettings.Secure.KILL_APP_LONGPRESS_BACK);
+            secureToMkSettingsMap.put(LegacyMKSettings.PROTECTED_COMPONENTS,
+                    MKSettings.Secure.PROTECTED_COMPONENTS);
+            secureToMkSettingsMap.put(LegacyMKSettings.LIVE_DISPLAY_COLOR_MATRIX,
+                    MKSettings.Secure.LIVE_DISPLAY_COLOR_MATRIX);
+            secureToMkSettingsMap.put(LegacyMKSettings.ADVANCED_REBOOT,
+                    MKSettings.Secure.ADVANCED_REBOOT);
+            secureToMkSettingsMap.put(LegacyMKSettings.THEME_PREV_BOOT_API_LEVEL,
+                    MKSettings.Secure.THEME_PREV_BOOT_API_LEVEL);
 
             rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SECURE, secureToMkSettingsMap);
