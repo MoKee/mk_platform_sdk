@@ -634,28 +634,35 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String DOUBLE_TAP_SLEEP_GESTURE =
-                CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE;
+                MKSettings.System.DOUBLE_TAP_SLEEP_GESTURE;
 
         /**
          * Boolean value on whether to show weather in the statusbar
          * @hide
          */
         public static final String STATUS_BAR_SHOW_WEATHER =
-                CMSettings.System.STATUS_BAR_SHOW_WEATHER;
+                MKSettings.System.STATUS_BAR_SHOW_WEATHER;
 
         /**
          * Show search bar in recents
          * @hide
          */
         public static final String RECENTS_SHOW_SEARCH_BAR =
-                CMSettings.System.RECENTS_SHOW_SEARCH_BAR;
+                MKSettings.System.RECENTS_SHOW_SEARCH_BAR;
 
         /**
          * Whether navigation bar is placed on the left side in landscape mode
          * @hide
          */
         public static final String NAVBAR_LEFT_IN_LANDSCAPE =
-                CMSettings.System.NAVBAR_LEFT_IN_LANDSCAPE;
+                MKSettings.System.NAVBAR_LEFT_IN_LANDSCAPE;
+
+        /**
+         * Locale for secondary overlay on dialer for t9 search input
+         * @hide
+         */
+        public static final String T9_SEARCH_INPUT_LOCALE =
+                MKSettings.System.T9_SEARCH_INPUT_LOCALE;
     }
 
     /**
@@ -756,14 +763,16 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.DISPLAY_COLOR_ADJUSTMENT);
             systemToMkSettingsMap.put(LegacyMKSettings.LIVE_DISPLAY_HINTED,
                     MKSettings.System.LIVE_DISPLAY_HINTED);
-            systemToCmSettingsMap.put(LegacyCMSettings.DOUBLE_TAP_SLEEP_GESTURE,
-                    CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE);
-            systemToCmSettingsMap.put(LegacyCMSettings.STATUS_BAR_SHOW_WEATHER,
-                    CMSettings.System.STATUS_BAR_SHOW_WEATHER);
-            systemToCmSettingsMap.put(LegacyCMSettings.RECENTS_SHOW_SEARCH_BAR,
-                    CMSettings.System.RECENTS_SHOW_SEARCH_BAR);
-            systemToCmSettingsMap.put(LegacyCMSettings.NAVBAR_LEFT_IN_LANDSCAPE,
-                    CMSettings.System.NAVBAR_LEFT_IN_LANDSCAPE);
+            systemToMkSettingsMap.put(LegacyMKSettings.DOUBLE_TAP_SLEEP_GESTURE,
+                    MKSettings.System.DOUBLE_TAP_SLEEP_GESTURE);
+            systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_SHOW_WEATHER,
+                    MKSettings.System.STATUS_BAR_SHOW_WEATHER);
+            systemToMkSettingsMap.put(LegacyMKSettings.RECENTS_SHOW_SEARCH_BAR,
+                    MKSettings.System.RECENTS_SHOW_SEARCH_BAR);
+            systemToMkSettingsMap.put(LegacyMKSettings.NAVBAR_LEFT_IN_LANDSCAPE,
+                    MKSettings.System.NAVBAR_LEFT_IN_LANDSCAPE);
+            systemToMkSettingsMap.put(LegacyMKSettings.T9_SEARCH_INPUT_LOCALE,
+                    MKSettings.System.T9_SEARCH_INPUT_LOCALE);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
