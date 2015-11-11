@@ -635,6 +635,13 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final String DOUBLE_TAP_SLEEP_GESTURE =
                 CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE;
+
+        /**
+         * Boolean value on whether to show weather in the statusbar
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_WEATHER =
+                CMSettings.System.STATUS_BAR_SHOW_WEATHER;
     }
 
     /**
@@ -737,6 +744,8 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.LIVE_DISPLAY_HINTED);
             systemToCmSettingsMap.put(LegacyCMSettings.DOUBLE_TAP_SLEEP_GESTURE,
                     CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE);
+            systemToCmSettingsMap.put(LegacyCMSettings.STATUS_BAR_SHOW_WEATHER,
+                    CMSettings.System.STATUS_BAR_SHOW_WEATHER);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
