@@ -642,6 +642,13 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final String STATUS_BAR_SHOW_WEATHER =
                 CMSettings.System.STATUS_BAR_SHOW_WEATHER;
+
+        /**
+         * Show search bar in recents
+         * @hide
+         */
+        public static final String RECENTS_SHOW_SEARCH_BAR =
+                CMSettings.System.RECENTS_SHOW_SEARCH_BAR;
     }
 
     /**
@@ -746,6 +753,8 @@ public class MKSettingsProvider extends ContentProvider {
                     CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE);
             systemToCmSettingsMap.put(LegacyCMSettings.STATUS_BAR_SHOW_WEATHER,
                     CMSettings.System.STATUS_BAR_SHOW_WEATHER);
+            systemToCmSettingsMap.put(LegacyCMSettings.RECENTS_SHOW_SEARCH_BAR,
+                    CMSettings.System.RECENTS_SHOW_SEARCH_BAR);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
