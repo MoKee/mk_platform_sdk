@@ -628,6 +628,13 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String LIVE_DISPLAY_HINTED = MKSettings.System.LIVE_DISPLAY_HINTED;
+
+        /**
+         *  Enable statusbar double tap gesture on to put device to sleep
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_GESTURE =
+                CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE;
     }
 
     /**
@@ -728,6 +735,8 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.DISPLAY_COLOR_ADJUSTMENT);
             systemToMkSettingsMap.put(LegacyMKSettings.LIVE_DISPLAY_HINTED,
                     MKSettings.System.LIVE_DISPLAY_HINTED);
+            systemToCmSettingsMap.put(LegacyCMSettings.DOUBLE_TAP_SLEEP_GESTURE,
+                    CMSettings.System.DOUBLE_TAP_SLEEP_GESTURE);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
