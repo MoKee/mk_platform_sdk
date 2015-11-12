@@ -882,6 +882,54 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES =
                 MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES;
+
+        /**
+         * Whether to wake the display when plugging or unplugging the charger
+         *
+         * @hide
+         */
+        public static final String WAKE_WHEN_PLUGGED_OR_UNPLUGGED =
+                MKSettings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED;
+
+        /** {@hide} */
+        public static final String BLUETOOTH_A2DP_SRC_PRIORITY_PREFIX =
+                MKSettings.Global.BLUETOOTH_A2DP_SRC_PRIORITY_PREFIX;
+
+        /**
+         * Whether to sound when charger power is connected/disconnected
+         * @hide
+         */
+        public static final String POWER_NOTIFICATIONS_ENABLED =
+                MKSettings.Global.POWER_NOTIFICATIONS_ENABLED;
+
+        /**
+         * Whether to vibrate when charger power is connected/disconnected
+         * @hide
+         */
+        public static final String POWER_NOTIFICATIONS_VIBRATE =
+                MKSettings.Global.POWER_NOTIFICATIONS_VIBRATE;
+
+        /**
+         * URI for power notification sounds
+         * @hide
+         */
+        public static final String POWER_NOTIFICATIONS_RINGTONE =
+                MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE;
+
+        /**
+         * @hide
+         */
+        public static final String ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK =
+                MKSettings.Global.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK;
+
+        /**
+         * Whether the system auto-configure the priority of the wifi ap's or use
+         * the manual settings established by the user.
+         * <> 0 to autoconfigure, 0 to manual settings. Default is <> 0.
+         * @hide
+         */
+        public static final String WIFI_AUTO_PRIORITIES_CONFIGURATION =
+                MKSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION;
     }
 
     /**
@@ -1111,6 +1159,27 @@ public class MKSettingsProvider extends ContentProvider {
             rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SECURE, secureToMkSettingsMap);
             if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK secure table");
+
+            // Migrate global settings
+            HashMap<String, String> globalToMkSettingsMap = new HashMap<String, String>();
+            globalToMkSettingsMap.put(LegacyMKSettings.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
+                    MKSettings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
+            globalToMkSettingsMap.put(LegacyMKSettings.BLUETOOTH_A2DP_SRC_PRIORITY_PREFIX,
+                    MKSettings.Global.BLUETOOTH_A2DP_SRC_PRIORITY_PREFIX);
+            globalToMkSettingsMap.put(LegacyMKSettings.POWER_NOTIFICATIONS_ENABLED,
+                    MKSettings.Global.POWER_NOTIFICATIONS_ENABLED);
+            globalToMkSettingsMap.put(LegacyMKSettings.POWER_NOTIFICATIONS_VIBRATE,
+                    MKSettings.Global.POWER_NOTIFICATIONS_VIBRATE);
+            globalToMkSettingsMap.put(LegacyMKSettings.POWER_NOTIFICATIONS_RINGTONE,
+                    MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE);
+            globalToMkSettingsMap.put(LegacyMKSettings.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK,
+                    MKSettings.Global.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK);
+            globalToMkSettingsMap.put(LegacyMKSettings.WIFI_AUTO_PRIORITIES_CONFIGURATION,
+                    MKSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION);
+
+            rowsMigrated = migrateMKSettingsForTable(userId,
+                    CMDatabaseHelper.CMTableNames.TABLE_GLOBAL, globalToMkSettingsMap);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM global table");
         }
     }
 
