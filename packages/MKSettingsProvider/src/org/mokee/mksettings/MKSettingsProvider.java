@@ -719,6 +719,169 @@ public class MKSettingsProvider extends ContentProvider {
          */
         public static final String T9_SEARCH_INPUT_LOCALE =
                 MKSettings.System.T9_SEARCH_INPUT_LOCALE;
+
+        /**
+         * If all file types can be accepted over Bluetooth OBEX.
+         * @hide
+         */
+        public static final String BLUETOOTH_ACCEPT_ALL_FILES =
+                MKSettings.System.BLUETOOTH_ACCEPT_ALL_FILES;
+
+        /**
+         * Whether to scramble a pin unlock layout
+         * @hide
+         */
+        public static final String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT =
+                MKSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT;
+
+        /**
+         * @hide
+         */
+        public static final String SHOW_ALARM_ICON = MKSettings.System.SHOW_ALARM_ICON;
+
+        /**
+         * Whether to show the IME switcher in the status bar
+         * @hide
+         */
+        public static final String STATUS_BAR_IME_SWITCHER =
+                MKSettings.System.STATUS_BAR_IME_SWITCHER;
+
+        /**
+         * Whether to control brightness from status bar
+         *
+         * @hide
+         */
+        public static final String STATUS_BAR_BRIGHTNESS_CONTROL =
+                MKSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL;
+
+        /**
+         * Whether or not volume button music controls should be enabled to seek media tracks
+         * @hide
+         */
+        public static final String VOLBTN_MUSIC_CONTROLS =
+                MKSettings.System.VOLBTN_MUSIC_CONTROLS;
+
+        /**
+         * Use EdgeGesture Service for system gestures in PhoneWindowManager
+         * @hide
+         */
+        public static final String USE_EDGE_SERVICE_FOR_GESTURES =
+                MKSettings.System.USE_EDGE_SERVICE_FOR_GESTURES;
+
+        /**
+         * Show the pending notification counts as overlays on the status bar
+         * @hide
+         */
+        public static final String STATUS_BAR_NOTIF_COUNT =
+                MKSettings.System.STATUS_BAR_NOTIF_COUNT;
+
+        /**
+         * Call recording format value
+         * 0: AMR_WB
+         * 1: MPEG_4
+         * Default: 0
+         * @hide
+         */
+        public static final String CALL_RECORDING_FORMAT =
+                MKSettings.System.CALL_RECORDING_FORMAT;
+
+        /**
+         * Contains the notifications light maximum brightness to use.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL =
+                MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL;
+
+        /**
+         * Whether to use the all the LEDs for the notifications or just one.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE =
+                MKSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE;
+
+        /**
+         * Whether to allow notifications with the screen on or DayDreams.
+         * The value is boolean (1 or 0). Default will always be false.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_SCREEN_ON =
+                MKSettings.System.NOTIFICATION_LIGHT_SCREEN_ON;
+
+        /**
+         * What color to use for the notification LED by default
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR;
+
+        /**
+         * How long to flash the notification LED by default
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON;
+
+        /**
+         * How long to wait between flashes for the notification LED by default
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF;
+
+        /**
+         * What color to use for the missed call notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CALL_COLOR =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR;
+
+        /**
+         * How long to flash the missed call notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CALL_LED_ON =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON;
+
+        /**
+         * How long to wait between flashes for the missed call notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF;
+        /**
+         * What color to use for the voicemail notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR;
+
+        /**
+         * How long to flash the voicemail notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON;
+
+        /**
+         * How long to wait between flashes for the voicemail notification LED
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF;
+
+        /**
+         * Whether to use the custom LED values for the notification pulse LED.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE;
+
+        /**
+         * Which custom LED values to use for the notification pulse LED.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES =
+                MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES;
     }
 
     /**
@@ -829,6 +992,56 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.NAVBAR_LEFT_IN_LANDSCAPE);
             systemToMkSettingsMap.put(LegacyMKSettings.T9_SEARCH_INPUT_LOCALE,
                     MKSettings.System.T9_SEARCH_INPUT_LOCALE);
+            systemToMkSettingsMap.put(LegacyMKSettings.BLUETOOTH_ACCEPT_ALL_FILES,
+                    MKSettings.System.BLUETOOTH_ACCEPT_ALL_FILES);
+            systemToMkSettingsMap.put(LegacyMKSettings.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT,
+                    MKSettings.System.LOCKSCREEN_PIN_SCRAMBLE_LAYOUT);
+            systemToMkSettingsMap.put(LegacyMKSettings.SHOW_ALARM_ICON,
+                    MKSettings.System.SHOW_ALARM_ICON);
+            systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_IME_SWITCHER,
+                    MKSettings.System.STATUS_BAR_IME_SWITCHER);
+            systemToMkSettingsMap.put(LegacyMKSettings.QS_SHOW_BRIGHTNESS_SLIDER,
+                    MKSettings.System.QS_SHOW_BRIGHTNESS_SLIDER);
+            systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_BRIGHTNESS_CONTROL,
+                    MKSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL);
+            systemToMkSettingsMap.put(LegacyMKSettings.VOLBTN_MUSIC_CONTROLS,
+                    MKSettings.System.VOLBTN_MUSIC_CONTROLS);
+            systemToMkSettingsMap.put(LegacyMKSettings.SWAP_VOLUME_KEYS_ON_ROTATION,
+                    MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION);
+            systemToMkSettingsMap.put(LegacyMKSettings.USE_EDGE_SERVICE_FOR_GESTURES,
+                    MKSettings.System.USE_EDGE_SERVICE_FOR_GESTURES);
+            systemToMkSettingsMap.put(LegacyMKSettings.STATUS_BAR_NOTIF_COUNT,
+                    MKSettings.System.STATUS_BAR_NOTIF_COUNT);
+            systemToMkSettingsMap.put(LegacyMKSettings.CALL_RECORDING_FORMAT,
+                    MKSettings.System.CALL_RECORDING_FORMAT);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                    MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
+                    MKSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_SCREEN_ON,
+                    MKSettings.System.NOTIFICATION_LIGHT_SCREEN_ON);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_CALL_COLOR,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_COLOR);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_ON);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
+            systemToMkSettingsMap.put(LegacyMKSettings.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
+                    MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
