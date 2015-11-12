@@ -167,14 +167,14 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String STATUS_BAR_QUICK_QS_PULLDOWN =
-                CMSettings.System.QS_QUICK_PULLDOWN;
+                MKSettings.System.QS_QUICK_PULLDOWN;
 
         /**
          * Whether to enable "advanced mode" for the current user.
          * Boolean setting. 0 = no, 1 = yes.
          * @hide
          */
-        public static final String ADVANCED_MODE = CMSettings.Secure.ADVANCED_MODE;
+        public static final String ADVANCED_MODE = MKSettings.Secure.ADVANCED_MODE;
 
         /**
          * The button brightness to be used while the screen is on or after a button press,
@@ -182,7 +182,7 @@ public class MKSettingsProvider extends ContentProvider {
          * Valid value range is between 0 and {@link PowerManager#getMaximumButtonBrightness()}
          * @hide
          */
-        public static final String BUTTON_BRIGHTNESS = CMSettings.Secure.BUTTON_BRIGHTNESS;
+        public static final String BUTTON_BRIGHTNESS = MKSettings.Secure.BUTTON_BRIGHTNESS;
 
         /**
          * The time in ms to keep the button backlight on after pressing a button.
@@ -190,13 +190,13 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String BUTTON_BACKLIGHT_TIMEOUT =
-                CMSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT;
+                MKSettings.Secure.BUTTON_BACKLIGHT_TIMEOUT;
 
         /**
          * Default theme to use.  If empty, use holo.
          * @hide
          */
-        public static final String DEFAULT_THEME_PACKAGE = CMSettings.Secure.DEFAULT_THEME_PACKAGE;
+        public static final String DEFAULT_THEME_PACKAGE = MKSettings.Secure.DEFAULT_THEME_PACKAGE;
 
         /**
          * A '|' delimited list of theme components to apply from the default theme on first boot.
@@ -209,46 +209,46 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String DEFAULT_THEME_COMPONENTS =
-                CMSettings.Secure.DEFAULT_THEME_COMPONENTS;
+                MKSettings.Secure.DEFAULT_THEME_COMPONENTS;
 
         /**
          * Developer options - Navigation Bar show switch
          * @hide
          */
-        public static final String DEV_FORCE_SHOW_NAVBAR = CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR;
+        public static final String DEV_FORCE_SHOW_NAVBAR = MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR;
 
         /**
          * The keyboard brightness to be used while the screen is on.
          * Valid value range is between 0 and {@link PowerManager#getMaximumKeyboardBrightness()}
          * @hide
          */
-        public static final String KEYBOARD_BRIGHTNESS = CMSettings.Secure.KEYBOARD_BRIGHTNESS;
+        public static final String KEYBOARD_BRIGHTNESS = MKSettings.Secure.KEYBOARD_BRIGHTNESS;
 
         /**
          * String to contain power menu actions
          * @hide
          */
-        public static final String POWER_MENU_ACTIONS = CMSettings.Secure.POWER_MENU_ACTIONS;
+        public static final String POWER_MENU_ACTIONS = MKSettings.Secure.POWER_MENU_ACTIONS;
 
         /**
          * Whether to show the brightness slider in quick settings panel.
          * @hide
          */
         public static final String QS_SHOW_BRIGHTNESS_SLIDER =
-                CMSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER;
+                MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER;
 
         /**
          * List of QS tile names
          * @hide
          */
-        public static final String QS_TILES = CMSettings.Secure.QS_TILES;
+        public static final String QS_TILES = MKSettings.Secure.QS_TILES;
 
         /**
          * Use "main" tiles on the first row of the quick settings panel
          * 0 = no, 1 = yes
          * @hide
          */
-        public static final String QS_USE_MAIN_TILES = CMSettings.Secure.QS_USE_MAIN_TILES;
+        public static final String QS_USE_MAIN_TILES = MKSettings.Secure.QS_USE_MAIN_TILES;
 
         /**
          * Boolean value whether to link ringtone and notification volume
@@ -256,14 +256,14 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String VOLUME_LINK_NOTIFICATION =
-                CMSettings.Secure.VOLUME_LINK_NOTIFICATION;
+                MKSettings.Secure.VOLUME_LINK_NOTIFICATION;
 
         /**
          * Custom navring actions
          * @hide
          */
         public static final String[] NAVIGATION_RING_TARGETS =
-                CMSettings.Secure.NAVIGATION_RING_TARGETS;
+                MKSettings.Secure.NAVIGATION_RING_TARGETS;
 
         /**
          * If an app does not have a specific theme set then it will use the 'default' theme+
@@ -281,13 +281,13 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String RECENTS_LONG_PRESS_ACTIVITY =
-                CMSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY;
+                MKSettings.Secure.RECENTS_LONG_PRESS_ACTIVITY;
 
         /**
          * Navigation controls to Use
          * @hide
          */
-        public static final String NAV_BUTTONS = CMSettings.System.NAV_BUTTONS;
+        public static final String NAV_BUTTONS = MKSettings.System.NAV_BUTTONS;
 
         /**
          * Action to perform when the home key is long-pressed.
@@ -304,7 +304,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION =
-                CMSettings.System.KEY_HOME_LONG_PRESS_ACTION;
+                MKSettings.System.KEY_HOME_LONG_PRESS_ACTION;
 
         /**
          * Action to perform when the home key is double-tapped.
@@ -313,32 +313,32 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String KEY_HOME_DOUBLE_TAP_ACTION =
-                CMSettings.System.KEY_HOME_DOUBLE_TAP_ACTION;
+                MKSettings.System.KEY_HOME_DOUBLE_TAP_ACTION;
 
         /**
          * Whether to wake the screen with the back key, the value is boolean.
          * @hide
          */
-        public static final String BACK_WAKE_SCREEN = CMSettings.System.BACK_WAKE_SCREEN;
+        public static final String BACK_WAKE_SCREEN = MKSettings.System.BACK_WAKE_SCREEN;
 
         /**
          * Whether to wake the screen with the menu key, the value is boolean.
          * @hide
          */
-        public static final String MENU_WAKE_SCREEN = CMSettings.System.MENU_WAKE_SCREEN;
+        public static final String MENU_WAKE_SCREEN = MKSettings.System.MENU_WAKE_SCREEN;
 
         /**
          * Whether to wake the screen with the volume keys, the value is boolean.
          * @hide
          */
-        public static final String VOLUME_WAKE_SCREEN = CMSettings.System.VOLUME_WAKE_SCREEN;
+        public static final String VOLUME_WAKE_SCREEN = MKSettings.System.VOLUME_WAKE_SCREEN;
 
         /**
          * Action to perform when the menu key is pressed. (Default is 1)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
          * @hide
          */
-        public static final String KEY_MENU_ACTION = CMSettings.System.KEY_MENU_ACTION;
+        public static final String KEY_MENU_ACTION = MKSettings.System.KEY_MENU_ACTION;
 
         /**
          * Action to perform when the menu key is long-pressed.
@@ -347,14 +347,14 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String KEY_MENU_LONG_PRESS_ACTION =
-                CMSettings.System.KEY_MENU_LONG_PRESS_ACTION;
+                MKSettings.System.KEY_MENU_LONG_PRESS_ACTION;
 
         /**
          * Action to perform when the assistant (search) key is pressed. (Default is 3)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
          * @hide
          */
-        public static final String KEY_ASSIST_ACTION = CMSettings.System.KEY_ASSIST_ACTION;
+        public static final String KEY_ASSIST_ACTION = MKSettings.System.KEY_ASSIST_ACTION;
 
         /**
          * Action to perform when the assistant (search) key is long-pressed. (Default is 4)
@@ -362,14 +362,14 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String KEY_ASSIST_LONG_PRESS_ACTION =
-                CMSettings.System.KEY_ASSIST_LONG_PRESS_ACTION;
+                MKSettings.System.KEY_ASSIST_LONG_PRESS_ACTION;
 
         /**
          * Action to perform when the app switch key is pressed. (Default is 2)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
          * @hide
          */
-        public static final String KEY_APP_SWITCH_ACTION = CMSettings.System.KEY_APP_SWITCH_ACTION;
+        public static final String KEY_APP_SWITCH_ACTION = MKSettings.System.KEY_APP_SWITCH_ACTION;
 
         /**
          * Action to perform when the app switch key is long-pressed. (Default is 0)
@@ -377,45 +377,45 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String KEY_APP_SWITCH_LONG_PRESS_ACTION =
-                CMSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION;
+                MKSettings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION;
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
          * @hide
          */
-        public static final String HOME_WAKE_SCREEN = CMSettings.System.HOME_WAKE_SCREEN;
+        public static final String HOME_WAKE_SCREEN = MKSettings.System.HOME_WAKE_SCREEN;
 
         /**
          * Whether to wake the screen with the assist key, the value is boolean.
          * @hide
          */
-        public static final String ASSIST_WAKE_SCREEN = CMSettings.System.ASSIST_WAKE_SCREEN;
+        public static final String ASSIST_WAKE_SCREEN = MKSettings.System.ASSIST_WAKE_SCREEN;
 
         /**
          * Whether to wake the screen with the app switch key, the value is boolean.
          * @hide
          */
         public static final String APP_SWITCH_WAKE_SCREEN =
-                CMSettings.System.APP_SWITCH_WAKE_SCREEN;
+                MKSettings.System.APP_SWITCH_WAKE_SCREEN;
 
         /**
          * Whether to wake the screen with the camera key half-press.
          * @hide
          */
-        public static final String CAMERA_WAKE_SCREEN = CMSettings.System.CAMERA_WAKE_SCREEN;
+        public static final String CAMERA_WAKE_SCREEN = MKSettings.System.CAMERA_WAKE_SCREEN;
 
         /**
          * Whether or not to send device back to sleep if Camera button is released ("Peek")
          * @hide
          */
         public static final String CAMERA_SLEEP_ON_RELEASE =
-                CMSettings.System.CAMERA_SLEEP_ON_RELEASE;
+                MKSettings.System.CAMERA_SLEEP_ON_RELEASE;
 
         /**
          * Whether to launch secure camera app when key is longpressed
          * @hide
          */
-        public static final String CAMERA_LAUNCH = CMSettings.System.CAMERA_LAUNCH;
+        public static final String CAMERA_LAUNCH = MKSettings.System.CAMERA_LAUNCH;
 
         /**
          * Swap volume buttons when the screen is rotated
@@ -425,7 +425,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String SWAP_VOLUME_KEYS_ON_ROTATION =
-                CMSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION;
+                MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION;
 
         /**
          * What happens when the user presses the Power button while in-call
@@ -437,7 +437,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String INCALL_POWER_BUTTON_BEHAVIOR =
-                CMSettings.Secure.INCALL_POWER_BUTTON_BEHAVIOR;
+                MKSettings.Secure.INCALL_POWER_BUTTON_BEHAVIOR;
 
         /**
          * INCALL_POWER_BUTTON_BEHAVIOR value for "turn off screen".
@@ -463,69 +463,69 @@ public class MKSettingsProvider extends ContentProvider {
          * The value is boolean (1 or 0).
          * @hide
          */
-        public static final String BATTERY_LIGHT_ENABLED = CMSettings.System.BATTERY_LIGHT_ENABLED;
+        public static final String BATTERY_LIGHT_ENABLED = MKSettings.System.BATTERY_LIGHT_ENABLED;
 
         /**
          * Whether the battery LED should repeatedly flash when the battery is low
          * on charge. The value is boolean (1 or 0).
          * @hide
          */
-        public static final String BATTERY_LIGHT_PULSE = CMSettings.System.BATTERY_LIGHT_PULSE;
+        public static final String BATTERY_LIGHT_PULSE = MKSettings.System.BATTERY_LIGHT_PULSE;
 
         /**
          * What color to use for the battery LED while charging - low
          * @hide
          */
         public static final String BATTERY_LIGHT_LOW_COLOR =
-                CMSettings.System.BATTERY_LIGHT_LOW_COLOR;
+                MKSettings.System.BATTERY_LIGHT_LOW_COLOR;
 
         /**
          * What color to use for the battery LED while charging - medium
          * @hide
          */
         public static final String BATTERY_LIGHT_MEDIUM_COLOR =
-                CMSettings.System.BATTERY_LIGHT_MEDIUM_COLOR;
+                MKSettings.System.BATTERY_LIGHT_MEDIUM_COLOR;
 
         /**
          * What color to use for the battery LED while charging - full
          * @hide
          */
         public static final String BATTERY_LIGHT_FULL_COLOR =
-                CMSettings.System.BATTERY_LIGHT_FULL_COLOR;
+                MKSettings.System.BATTERY_LIGHT_FULL_COLOR;
 
         /**
          * Sprint MWI Quirk: Show message wait indicator notifications
          * @hide
          */
         public static final String ENABLE_MWI_NOTIFICATION =
-                CMSettings.System.ENABLE_MWI_NOTIFICATION;
+                MKSettings.System.ENABLE_MWI_NOTIFICATION;
 
         /**
          * Check the proximity sensor during wakeup
          * @hide
          */
-        public static final String PROXIMITY_ON_WAKE = CMSettings.System.PROXIMITY_ON_WAKE;
+        public static final String PROXIMITY_ON_WAKE = MKSettings.System.PROXIMITY_ON_WAKE;
 
         /**
          * Enable looking up of phone numbers of nearby places
          *
          * @hide
          */
-        public static final String ENABLE_FORWARD_LOOKUP = CMSettings.System.ENABLE_FORWARD_LOOKUP;
+        public static final String ENABLE_FORWARD_LOOKUP = MKSettings.System.ENABLE_FORWARD_LOOKUP;
 
         /**
          * Enable looking up of phone numbers of people
          *
          * @hide
          */
-        public static final String ENABLE_PEOPLE_LOOKUP = CMSettings.System.ENABLE_PEOPLE_LOOKUP;
+        public static final String ENABLE_PEOPLE_LOOKUP = MKSettings.System.ENABLE_PEOPLE_LOOKUP;
 
         /**
          * Enable looking up of information of phone numbers not in the contacts
          *
          * @hide
          */
-        public static final String ENABLE_REVERSE_LOOKUP = CMSettings.System.ENABLE_REVERSE_LOOKUP;
+        public static final String ENABLE_REVERSE_LOOKUP = MKSettings.System.ENABLE_REVERSE_LOOKUP;
 
         /**
          * The forward lookup provider
@@ -533,7 +533,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String FORWARD_LOOKUP_PROVIDER =
-                CMSettings.System.FORWARD_LOOKUP_PROVIDER;
+                MKSettings.System.FORWARD_LOOKUP_PROVIDER;
 
         /**
          * The people lookup provider
@@ -541,7 +541,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String PEOPLE_LOOKUP_PROVIDER =
-                CMSettings.System.PEOPLE_LOOKUP_PROVIDER;
+                MKSettings.System.PEOPLE_LOOKUP_PROVIDER;
 
         /**
          * The reverse lookup provider
@@ -549,7 +549,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String REVERSE_LOOKUP_PROVIDER =
-                CMSettings.System.REVERSE_LOOKUP_PROVIDER;
+                MKSettings.System.REVERSE_LOOKUP_PROVIDER;
 
         /**
          * The OpenCNAM paid account ID
@@ -557,7 +557,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String DIALER_OPENCNAM_ACCOUNT_SID =
-                CMSettings.System.DIALER_OPENCNAM_ACCOUNT_SID;
+                MKSettings.System.DIALER_OPENCNAM_ACCOUNT_SID;
 
         /**
          * The OpenCNAM authentication token
@@ -565,7 +565,7 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String DIALER_OPENCNAM_AUTH_TOKEN =
-                CMSettings.System.DIALER_OPENCNAM_AUTH_TOKEN;
+                MKSettings.System.DIALER_OPENCNAM_AUTH_TOKEN;
 
         /**
          * Whether wifi settings will connect to access point automatically
@@ -574,60 +574,60 @@ public class MKSettingsProvider extends ContentProvider {
          * @hide
          */
         public static final String WIFI_AUTO_CONNECT_TYPE =
-                CMSettings.System.WIFI_AUTO_CONNECT_TYPE;
+                MKSettings.System.WIFI_AUTO_CONNECT_TYPE;
 
         /**
          * Color temperature of the display during the day
          * @hide
          */
         public static final String DISPLAY_TEMPERATURE_DAY =
-                CMSettings.System.DISPLAY_TEMPERATURE_DAY;
+                MKSettings.System.DISPLAY_TEMPERATURE_DAY;
 
         /**
          * Color temperature of the display at night
          * @hide
          */
         public static final String DISPLAY_TEMPERATURE_NIGHT =
-                CMSettings.System.DISPLAY_TEMPERATURE_NIGHT;
+                MKSettings.System.DISPLAY_TEMPERATURE_NIGHT;
 
         /**
          * Display color temperature adjustment mode, one of DAY (default), NIGHT, or AUTO.
          * @hide
          */
         public static final String DISPLAY_TEMPERATURE_MODE =
-                CMSettings.System.DISPLAY_TEMPERATURE_MODE;
+                MKSettings.System.DISPLAY_TEMPERATURE_MODE;
 
         /**
          * Automatic outdoor mode
          * @hide
          */
         public static final String DISPLAY_AUTO_OUTDOOR_MODE =
-                CMSettings.System.DISPLAY_AUTO_OUTDOOR_MODE;
+                MKSettings.System.DISPLAY_AUTO_OUTDOOR_MODE;
 
         /**
          * Use display power saving features such as CABC or CABL
          * @hide
          */
-        public static final String DISPLAY_LOW_POWER = CMSettings.System.DISPLAY_LOW_POWER;
+        public static final String DISPLAY_LOW_POWER = MKSettings.System.DISPLAY_LOW_POWER;
 
         /**
          * Use color enhancement feature of display
          * @hide
          */
-        public static final String DISPLAY_COLOR_ENHANCE = CMSettings.System.DISPLAY_COLOR_ENHANCE;
+        public static final String DISPLAY_COLOR_ENHANCE = MKSettings.System.DISPLAY_COLOR_ENHANCE;
 
         /**
          * Manual display color adjustments (RGB values as floats, separated by spaces)
          * @hide
          */
         public static final String DISPLAY_COLOR_ADJUSTMENT =
-                CMSettings.System.DISPLAY_COLOR_ADJUSTMENT;
+                MKSettings.System.DISPLAY_COLOR_ADJUSTMENT;
 
         /**
          * Did we tell about how they can stop breaking their eyes?
          * @hide
          */
-        public static final String LIVE_DISPLAY_HINTED = CMSettings.System.LIVE_DISPLAY_HINTED;
+        public static final String LIVE_DISPLAY_HINTED = MKSettings.System.LIVE_DISPLAY_HINTED;
     }
 
     /**
@@ -694,40 +694,40 @@ public class MKSettingsProvider extends ContentProvider {
                     MKSettings.System.ENABLE_MWI_NOTIFICATION);
             systemToMkSettingsMap.put(LegacyMKSettings.PROXIMITY_ON_WAKE,
                     MKSettings.System.PROXIMITY_ON_WAKE);
-            systemToCmSettingsMap.put(LegacyCMSettings.ENABLE_FORWARD_LOOKUP,
-                    CMSettings.System.ENABLE_FORWARD_LOOKUP);
-            systemToCmSettingsMap.put(LegacyCMSettings.ENABLE_PEOPLE_LOOKUP,
-                    CMSettings.System.ENABLE_PEOPLE_LOOKUP);
-            systemToCmSettingsMap.put(LegacyCMSettings.ENABLE_REVERSE_LOOKUP,
-                    CMSettings.System.ENABLE_REVERSE_LOOKUP);
-            systemToCmSettingsMap.put(LegacyCMSettings.FORWARD_LOOKUP_PROVIDER,
-                    CMSettings.System.FORWARD_LOOKUP_PROVIDER);
-            systemToCmSettingsMap.put(LegacyCMSettings.PEOPLE_LOOKUP_PROVIDER,
-                    CMSettings.System.PEOPLE_LOOKUP_PROVIDER);
-            systemToCmSettingsMap.put(LegacyCMSettings.REVERSE_LOOKUP_PROVIDER,
-                    CMSettings.System.REVERSE_LOOKUP_PROVIDER);
-            systemToCmSettingsMap.put(LegacyCMSettings.DIALER_OPENCNAM_ACCOUNT_SID,
-                    CMSettings.System.DIALER_OPENCNAM_ACCOUNT_SID);
-            systemToCmSettingsMap.put(LegacyCMSettings.DIALER_OPENCNAM_AUTH_TOKEN,
-                    CMSettings.System.DIALER_OPENCNAM_AUTH_TOKEN);
-            systemToCmSettingsMap.put(LegacyCMSettings.WIFI_AUTO_CONNECT_TYPE,
-                    CMSettings.System.WIFI_AUTO_CONNECT_TYPE);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_TEMPERATURE_DAY,
-                    CMSettings.System.DISPLAY_TEMPERATURE_DAY);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_TEMPERATURE_NIGHT,
-                    CMSettings.System.DISPLAY_TEMPERATURE_NIGHT);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_TEMPERATURE_MODE,
-                    CMSettings.System.DISPLAY_TEMPERATURE_MODE);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_AUTO_OUTDOOR_MODE,
-                    CMSettings.System.DISPLAY_AUTO_OUTDOOR_MODE);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_LOW_POWER,
-                    CMSettings.System.DISPLAY_LOW_POWER);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_COLOR_ENHANCE,
-                    CMSettings.System.DISPLAY_COLOR_ENHANCE);
-            systemToCmSettingsMap.put(LegacyCMSettings.DISPLAY_COLOR_ADJUSTMENT,
-                    CMSettings.System.DISPLAY_COLOR_ADJUSTMENT);
-            systemToCmSettingsMap.put(LegacyCMSettings.LIVE_DISPLAY_HINTED,
-                    CMSettings.System.LIVE_DISPLAY_HINTED);
+            systemToMkSettingsMap.put(LegacyMKSettings.ENABLE_FORWARD_LOOKUP,
+                    MKSettings.System.ENABLE_FORWARD_LOOKUP);
+            systemToMkSettingsMap.put(LegacyMKSettings.ENABLE_PEOPLE_LOOKUP,
+                    MKSettings.System.ENABLE_PEOPLE_LOOKUP);
+            systemToMkSettingsMap.put(LegacyMKSettings.ENABLE_REVERSE_LOOKUP,
+                    MKSettings.System.ENABLE_REVERSE_LOOKUP);
+            systemToMkSettingsMap.put(LegacyMKSettings.FORWARD_LOOKUP_PROVIDER,
+                    MKSettings.System.FORWARD_LOOKUP_PROVIDER);
+            systemToMkSettingsMap.put(LegacyMKSettings.PEOPLE_LOOKUP_PROVIDER,
+                    MKSettings.System.PEOPLE_LOOKUP_PROVIDER);
+            systemToMkSettingsMap.put(LegacyMKSettings.REVERSE_LOOKUP_PROVIDER,
+                    MKSettings.System.REVERSE_LOOKUP_PROVIDER);
+            systemToMkSettingsMap.put(LegacyMKSettings.DIALER_OPENCNAM_ACCOUNT_SID,
+                    MKSettings.System.DIALER_OPENCNAM_ACCOUNT_SID);
+            systemToMkSettingsMap.put(LegacyMKSettings.DIALER_OPENCNAM_AUTH_TOKEN,
+                    MKSettings.System.DIALER_OPENCNAM_AUTH_TOKEN);
+            systemToMkSettingsMap.put(LegacyMKSettings.WIFI_AUTO_CONNECT_TYPE,
+                    MKSettings.System.WIFI_AUTO_CONNECT_TYPE);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_TEMPERATURE_DAY,
+                    MKSettings.System.DISPLAY_TEMPERATURE_DAY);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_TEMPERATURE_NIGHT,
+                    MKSettings.System.DISPLAY_TEMPERATURE_NIGHT);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_TEMPERATURE_MODE,
+                    MKSettings.System.DISPLAY_TEMPERATURE_MODE);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_AUTO_OUTDOOR_MODE,
+                    MKSettings.System.DISPLAY_AUTO_OUTDOOR_MODE);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_LOW_POWER,
+                    MKSettings.System.DISPLAY_LOW_POWER);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_COLOR_ENHANCE,
+                    MKSettings.System.DISPLAY_COLOR_ENHANCE);
+            systemToMkSettingsMap.put(LegacyMKSettings.DISPLAY_COLOR_ADJUSTMENT,
+                    MKSettings.System.DISPLAY_COLOR_ADJUSTMENT);
+            systemToMkSettingsMap.put(LegacyMKSettings.LIVE_DISPLAY_HINTED,
+                    MKSettings.System.LIVE_DISPLAY_HINTED);
 
             int rowsMigrated = migrateMKSettingsForTable(userId,
                     MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, systemToMkSettingsMap);
