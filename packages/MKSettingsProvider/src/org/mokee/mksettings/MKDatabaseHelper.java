@@ -239,10 +239,10 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
                 MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE,
                 R.string.def_power_notifications_ringtone);
 
-        loadIntegerSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
                 R.integer.def_notification_brightness_level);
 
-        loadBooleanSetting(db, CMTableNames.TABLE_SYSTEM, CMSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
+        loadBooleanSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
                 R.bool.def_notification_multiple_leds);
     }
 

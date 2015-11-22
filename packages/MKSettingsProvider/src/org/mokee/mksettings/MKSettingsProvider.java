@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
- * Copyright (c) 2015, The MoKee OpenSource Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -158,44 +158,43 @@ public class MKSettingsProvider extends ContentProvider {
     }
 
     /**
-     * Migrates CM settings for a specific user.
-     * @param userId The id of the user to run CM settings migration for.
+     * Migrates MK settings for a specific user.
+     * @param userId The id of the user to run MK settings migration for.
      */
-    private void migrateCMSettingsForUser(int userId) {
+    private void migrateMKSettingsForUser(int userId) {
         synchronized (this) {
-            if (LOCAL_LOGV) Log.d(TAG, "CM settings will be migrated for user id: " + userId);
+            if (LOCAL_LOGV) Log.d(TAG, "MK settings will be migrated for user id: " + userId);
 
             // Migrate system settings
-            int rowsMigrated = migrateCMSettingsForTable(userId,
-                    CMDatabaseHelper.CMTableNames.TABLE_SYSTEM, CMSettings.System.LEGACY_SYSTEM_SETTINGS);
-            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM system table");
+            int rowsMigrated = migrateMKSettingsForTable(userId,
+                    MKDatabaseHelper.MKTableNames.TABLE_SYSTEM, MKSettings.System.LEGACY_SYSTEM_SETTINGS);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK system table");
 
             // Migrate secure settings
-            rowsMigrated = migrateCMSettingsForTable(userId,
-                    CMDatabaseHelper.CMTableNames.TABLE_SECURE, CMSettings.Secure.LEGACY_SECURE_SETTINGS);
-            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM secure table");
+            rowsMigrated = migrateMKSettingsForTable(userId,
+                    MKDatabaseHelper.MKTableNames.TABLE_SECURE, MKSettings.Secure.LEGACY_SECURE_SETTINGS);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK secure table");
 
             // Migrate global settings
-            rowsMigrated = migrateCMSettingsForTable(userId,
-                    CMDatabaseHelper.CMTableNames.TABLE_GLOBAL, CMSettings.Global.LEGACY_GLOBAL_SETTINGS);
-            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to CM global table");
+            rowsMigrated = migrateMKSettingsForTable(userId,
+                    MKDatabaseHelper.MKTableNames.TABLE_GLOBAL, MKSettings.Global.LEGACY_GLOBAL_SETTINGS);
+            if (LOCAL_LOGV) Log.d(TAG, "Migrated " + rowsMigrated + " to MK global table");
         }
     }
 
     /**
-     * Migrates CM settings for a specific table and user id.
-     * @param userId The id of the user to run CM settings migration for.
-     * @param tableName The name of the table to run CM settings migration on.
-     * @param settings An array of keys to migrate from {@link Settings} to {@link CMSettings}
+     * Migrates MK settings for a specific table and user id.
+     * @param userId The id of the user to run MK settings migration for.
+     * @param tableName The name of the table to run MK settings migration on.
+     * @param settings An array of keys to migrate from {@link Settings} to {@link MKSettings}
      * @return Number of rows migrated.
      */
-    private int migrateCMSettingsForTable(int userId, String tableName, String[] settings) {
+    private int migrateMKSettingsForTable(int userId, String tableName, String[] settings) {
         ContentResolver contentResolver = getContext().getContentResolver();
         ContentValues[] contentValues = new ContentValues[settings.length];
 
         int migrateSettingsCount = 0;
         for (String settingsKey : settings) {
-            String cmSettingsKey = keyPair.getValue();
             String settingsValue = null;
 
             if (tableName.equals(MKDatabaseHelper.MKTableNames.TABLE_SYSTEM)) {
@@ -507,7 +506,7 @@ public class MKSettingsProvider extends ContentProvider {
 
         // Validate value if inserting int System table
         final String name = values.getAsString(Settings.NameValueTable.NAME);
-        if (CMDatabaseHelper.CMTableNames.TABLE_SYSTEM.equals(tableName)) {
+        if (MKDatabaseHelper.MKTableNames.TABLE_SYSTEM.equals(tableName)) {
             final String value = values.getAsString(Settings.NameValueTable.VALUE);
             validateSystemSettingNameValue(name, value);
         }
@@ -576,7 +575,7 @@ public class MKSettingsProvider extends ContentProvider {
 
         // Validate value if updating System table
         final String name = values.getAsString(Settings.NameValueTable.NAME);
-        if (CMDatabaseHelper.CMTableNames.TABLE_SYSTEM.equals(tableName)) {
+        if (MKDatabaseHelper.MKTableNames.TABLE_SYSTEM.equals(tableName)) {
             final String value = values.getAsString(Settings.NameValueTable.VALUE);
             validateSystemSettingNameValue(name, value);
         }
@@ -777,7 +776,7 @@ public class MKSettingsProvider extends ContentProvider {
     }
 
     private void validateSystemSettingNameValue(String name, String value) {
-        CMSettings.System.Validator validator = CMSettings.System.VALIDATORS.get(name);
+        MKSettings.System.Validator validator = MKSettings.System.VALIDATORS.get(name);
         if (validator == null) {
             throw new IllegalArgumentException("Invalid setting: " + name);
         }
