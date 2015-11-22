@@ -765,6 +765,16 @@ public final class MKSettings {
         // region System Settings
 
         /**
+         * Whether to show the headset icon in the status bar
+         * @hide
+         */
+        public static final String SHOW_HEADSET_ICON = "show_headset_icon";
+
+        /** @hide */
+        public static final Validator SHOW_HEADSET_ICON_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Quick Settings Quick Pulldown
          * 0 = off, 1 = right, 2 = left
          * @hide
@@ -1784,6 +1794,7 @@ public final class MKSettings {
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
+                MKSettings.System.SHOW_HEADSET_ICON,
                 MKSettings.System.QS_QUICK_PULLDOWN,
                 MKSettings.System.NAV_BUTTONS,
                 MKSettings.System.KEY_HOME_LONG_PRESS_ACTION,
@@ -1890,6 +1901,7 @@ public final class MKSettings {
         public static final Map<String, Validator> VALIDATORS =
                 new ArrayMap<String, Validator>();
         static {
+            VALIDATORS.put(SHOW_HEADSET_ICON, SHOW_HEADSET_ICON_VALIDATOR);
             VALIDATORS.put(QS_QUICK_PULLDOWN, QS_QUICK_PULLDOWN_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_PLAY_QUEUE, NOTIFICATION_PLAY_QUEUE_VALIDATOR);
             VALIDATORS.put(HIGH_TOUCH_SENSITIVITY_ENABLE,
@@ -2606,7 +2618,6 @@ public final class MKSettings {
                 MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR,
                 MKSettings.Secure.KEYBOARD_BRIGHTNESS,
                 MKSettings.Secure.POWER_MENU_ACTIONS,
-                MKSettings.Secure.STATS_COLLECTION,
                 MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
                 MKSettings.Secure.QS_TILES,
                 MKSettings.Secure.QS_USE_MAIN_TILES,
