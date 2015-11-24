@@ -64,6 +64,11 @@
     <string name="permlab_managePersistentStorage">manage persistent storage</string>
     <string name="permdesc_managePersistentStorage">Allows an app to read or write properties which may persist thrοugh a factory reset.</string>
 
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">add and remove applications to protected apps</string>
+    <string name="permdesc_protectedApp">Allows an application to be marked as protected
+        and can be locked</string>
+
     <!-- Profiles -->
     <!-- Names of default profiles. -->
     <string name="profileNameDefault">Default</string>

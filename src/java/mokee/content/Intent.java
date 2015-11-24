@@ -41,4 +41,29 @@ public class Intent {
      */
     public static final String EXTRA_RECENTS_LONG_PRESS_RELEASE =
             "mokee.intent.extra.RECENTS_LONG_PRESS_RELEASE";
+
+    /**
+     * Intent filter to update protected app component's settings
+     */
+    public static final String ACTION_PROTECTED = "mokee.intent.action.PACKAGE_PROTECTED";
+
+    /**
+     * Intent filter to notify change in state of protected application.
+     */
+    public static final String ACTION_PROTECTED_CHANGED =
+            "mokee.intent.action.PROTECTED_COMPONENT_UPDATE";
+
+    /**
+     * This field is part of the intent {@link #ACTION_PROTECTED_CHANGED}.
+     * Intent extra field for the state of protected application
+     */
+    public static final String EXTRA_PROTECTED_STATE =
+            "mokee.intent.extra.PACKAGE_PROTECTED_STATE";
+
+    /**
+     * This field is part of the intent {@link #ACTION_PROTECTED_CHANGED}.
+     * Intent extra field to indicate protected component value
+     */
+    public static final String EXTRA_PROTECTED_COMPONENTS =
+            "mokee.intent.extra.PACKAGE_PROTECTED_COMPONENTS";
 }
