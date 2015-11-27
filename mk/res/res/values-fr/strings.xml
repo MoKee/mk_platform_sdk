@@ -17,6 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Système MoKee</string>
+  <string name="permlab_modifyNetworkSettings">modifier les paramètres de réseau du système</string>
+  <string name="permdesc_modifyNetworkSettings">Autorise une application à effectuer des changements sur le mode avion et le réglage des données mobiles.</string>
   <string name="profileNameDefault">Défaut</string>
   <string name="profileNameWork">Bureau</string>
   <string name="profileNameHome">Maison</string>
