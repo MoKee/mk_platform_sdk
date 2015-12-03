@@ -523,9 +523,11 @@ public class MKSettingsProvider extends ContentProvider {
 
         // Validate value if inserting int System table
         final String name = values.getAsString(Settings.NameValueTable.NAME);
+        final String value = values.getAsString(Settings.NameValueTable.VALUE);
         if (MKDatabaseHelper.MKTableNames.TABLE_SYSTEM.equals(tableName)) {
-            final String value = values.getAsString(Settings.NameValueTable.VALUE);
             validateSystemSettingNameValue(name, value);
+        } else if (MKDatabaseHelper.MKTableNames.TABLE_SECURE.equals(tableName)) {
+            validateSecureSettingValue(name, value);
         }
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -592,9 +594,11 @@ public class MKSettingsProvider extends ContentProvider {
 
         // Validate value if updating System table
         final String name = values.getAsString(Settings.NameValueTable.NAME);
+        final String value = values.getAsString(Settings.NameValueTable.VALUE);
         if (MKDatabaseHelper.MKTableNames.TABLE_SYSTEM.equals(tableName)) {
-            final String value = values.getAsString(Settings.NameValueTable.VALUE);
             validateSystemSettingNameValue(name, value);
+        } else if (MKDatabaseHelper.MKTableNames.TABLE_SECURE.equals(tableName)) {
+            validateSecureSettingValue(name, value);
         }
 
         int callingUserId = UserHandle.getCallingUserId();
@@ -793,12 +797,23 @@ public class MKSettingsProvider extends ContentProvider {
     }
 
     private void validateSystemSettingNameValue(String name, String value) {
-        MKSettings.System.Validator validator = MKSettings.System.VALIDATORS.get(name);
+        MKSettings.Validator validator = MKSettings.System.VALIDATORS.get(name);
         if (validator == null) {
             throw new IllegalArgumentException("Invalid setting: " + name);
         }
 
         if (!validator.validate(value)) {
+            throw new IllegalArgumentException("Invalid value: " + value
+                    + " for setting: " + name);
+        }
+    }
+
+    private void validateSecureSettingValue(String name, String value) {
+        MKSettings.Validator validator = MKSettings.Secure.VALIDATORS.get(name);
+
+        // Not all secure settings have validators, but if a validator exists, the validate method
+        // should return true
+        if (validator != null && !validator.validate(value)) {
             throw new IllegalArgumentException("Invalid value: " + value
                     + " for setting: " + name);
         }
