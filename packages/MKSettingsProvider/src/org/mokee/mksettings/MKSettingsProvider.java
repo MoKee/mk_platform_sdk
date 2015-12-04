@@ -266,13 +266,16 @@ public class MKSettingsProvider extends ContentProvider {
 
         boolean hasMigratedMKSettings = mSharedPrefs.getBoolean(PREF_HAS_MIGRATED_MK_SETTINGS,
                 false);
-        if (!hasMigratedMKSettings) {
+        final ComponentName preBootReceiver = new ComponentName("org.mokee.mksettings",
+                "org.mokee.mksettings.PreBootReceiver");
+        final PackageManager packageManager = getContext().getPackageManager();
+        if (!hasMigratedMKSettings &&
+                packageManager.getComponentEnabledSetting(preBootReceiver)
+                        == PackageManager.COMPONENT_ENABLED_STATE_DISABLED ) {
             if (LOCAL_LOGV) {
                 Log.d(TAG, "Reenabling component preboot receiver");
             }
-            getContext().getPackageManager().setComponentEnabledSetting(
-                    new ComponentName("org.mokee.mksettings",
-                            "org.mokee.mksettings.PreBootReceiver"),
+            packageManager.setComponentEnabledSetting(preBootReceiver,
                     PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                     PackageManager.DONT_KILL_APP);
         }
