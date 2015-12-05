@@ -795,6 +795,17 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to show the traffic in the statusbar.
+         * @hide
+         * The value is int (0: Hide  or 1: Only Outgoing 2: Only Incoming 3: both).
+         */
+        public static final String STATUS_BAR_NETWORK_TRAFFIC_STYLE = "status_bar_network_traffic_style";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_NETWORK_TRAFFIC_STYLE_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 3);
+
+        /**
          * Quick Settings Quick Pulldown
          * 0 = off, 1 = right, 2 = left
          * @hide
@@ -1815,6 +1826,7 @@ public final class MKSettings {
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
                 MKSettings.System.SHOW_HEADSET_ICON,
+                MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
                 MKSettings.System.QS_QUICK_PULLDOWN,
                 MKSettings.System.NAV_BUTTONS,
                 MKSettings.System.KEY_HOME_LONG_PRESS_ACTION,
@@ -1922,6 +1934,7 @@ public final class MKSettings {
                 new ArrayMap<String, Validator>();
         static {
             VALIDATORS.put(SHOW_HEADSET_ICON, SHOW_HEADSET_ICON_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_NETWORK_TRAFFIC_STYLE, STATUS_BAR_NETWORK_TRAFFIC_STYLE_VALIDATOR);
             VALIDATORS.put(QS_QUICK_PULLDOWN, QS_QUICK_PULLDOWN_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_PLAY_QUEUE, NOTIFICATION_PLAY_QUEUE_VALIDATOR);
             VALIDATORS.put(HIGH_TOUCH_SENSITIVITY_ENABLE,
