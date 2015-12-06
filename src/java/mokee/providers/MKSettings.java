@@ -826,6 +826,16 @@ public final class MKSettings {
                 new InclusiveIntegerRangeValidator(0, 3);
 
         /**
+         * Height of navigation bar buttons
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
+        /** @hide */
+        public static final Validator NAVIGATION_BAR_HEIGHT_VALIDATOR =
+                new DiscreteValueValidator(new String[] {"56", "52", "48", "44", "40", "36", "32", "28", "24", "20", "0"});
+
+        /**
          * Quick Settings Quick Pulldown
          * 0 = off, 1 = right, 2 = left
          * @hide
@@ -1849,6 +1859,7 @@ public final class MKSettings {
                 MKSettings.System.SHOW_SU_ICON,
                 MKSettings.System.STATUS_BAR_CLOCK_SHOW_SECOND,
                 MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
+                MKSettings.System.NAVIGATION_BAR_HEIGHT,
                 MKSettings.System.QS_QUICK_PULLDOWN,
                 MKSettings.System.NAV_BUTTONS,
                 MKSettings.System.KEY_HOME_LONG_PRESS_ACTION,
@@ -1959,6 +1970,7 @@ public final class MKSettings {
             VALIDATORS.put(SHOW_SU_ICON, SHOW_SU_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK_SHOW_SECOND, STATUS_BAR_CLOCK_SHOW_SECOND_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_NETWORK_TRAFFIC_STYLE, STATUS_BAR_NETWORK_TRAFFIC_STYLE_VALIDATOR);
+            VALIDATORS.put(NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT_VALIDATOR);
             VALIDATORS.put(QS_QUICK_PULLDOWN, QS_QUICK_PULLDOWN_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_PLAY_QUEUE, NOTIFICATION_PLAY_QUEUE_VALIDATOR);
             VALIDATORS.put(HIGH_TOUCH_SENSITIVITY_ENABLE,
