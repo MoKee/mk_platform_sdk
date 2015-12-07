@@ -227,6 +227,9 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
         loadStringSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_TILES,
                 R.string.def_qs_tiles);
 
+        loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_USE_MAIN_TILES,
+                R.bool.def_def_sysui_qs_main_tiles);
+
         loadBooleanSetting(db, MKTableNames.TABLE_GLOBAL,
                 MKSettings.Global.POWER_NOTIFICATIONS_ENABLED,
                 R.bool.def_power_notifications_enabled);

@@ -41,6 +41,9 @@
          Comma-delimited, quick settings tiles. See QSConstants.java for a list of all available tiles -->
     <string name="def_qs_tiles">wifi,bt,cell,airplane,rotation,flashlight,location,cast,visualizer,hotspot,live_display</string>
 
+    <!-- Default for MKSettings.Secure.QS_USE_MAIN_TILES -->
+    <bool name="def_sysui_qs_main_tiles">true</bool>
+
     <!-- Defaults for Global -->
 
     <!-- Default for MKSettings.Global.DEVICE_NAME
