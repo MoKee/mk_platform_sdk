@@ -1776,6 +1776,19 @@ public final class MKSettings {
                 };
 
         /**
+         * Whether we automatically generate notification LED colors or just
+         * use the boring default.
+         *
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_COLOR_AUTO =
+                "notification_light_color_auto";
+
+        /** @hide */
+        public static final Validator NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -2017,6 +2030,8 @@ public final class MKSettings {
                     NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
                     NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_LIGHT_COLOR_AUTO,
+                    NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR);
         };
         // endregion
     }
