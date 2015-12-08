@@ -19,18 +19,18 @@
   <string name="mokee_system_label">MoKee-systeem</string>
   <string name="permlab_modifyNetworkSettings">netwerk systeeminstellingen wijzigen</string>
   <string name="permdesc_modifyNetworkSettings">Geeft toestemming aan een app om wijzigingen aan te brengen in vliegtuigmodus en aan de mobile data netwerk instellingen.</string>
-  <string name="permlab_modifySoundSettings">geluid van de steeminstellingen wijzigen</string>
+  <string name="permlab_modifySoundSettings">geluid van de systeeminstellingen wijzigen</string>
   <string name="permdesc_modifySoundSettings">Geeft toestemming aan een app om wijzigingen aan te brengen in de onderbreking modus van de geluidsinstellingen.</string>
-  <string name="permlab_readMSPhoneState">status weergave van de telefoon en data aansluiting met steun van meerdere SIMs</string>
-  <string name="permdesc_readMSPhoneState">Geeft toestemming aan een app om de telefoon status en de data connecties met steun van meerdere SIMs te zien.</string>
+  <string name="permlab_readMSPhoneState">status weergave van de telefoon- en dataverbinding bij gebruik van meerdere SIMs</string>
+  <string name="permdesc_readMSPhoneState">Geeft toestemming aan een app om de telefoon status en de dataverbinding bij gebruik van meerdere SIMs in te zien.</string>
   <string name="permlab_modifyMSPhoneState">wijzig de telefoon status en data connecties met steun van meerdere SIMs</string>
-  <string name="permdesc_modifyMSPhoneState">Geeft toestemming aan een app om de telefoon status en de data connecties met steun van meerdere SIMs te wijzigen.</string>
+  <string name="permdesc_modifyMSPhoneState">Geeft toestemming aan een app om de telefoon status en de dataverbindingen bij gebruik van meerdere SIMs te wijzigen.</string>
   <string name="permlab_modifyProfiles">systeemprofielen wijzigen</string>
   <string name="permdesc_modifyProfiles">Geeft toestemming aan een app om wijzigingen aan te brengen aan de systeemprofielen.</string>
   <string name="permlab_useHardwareFramework">hardware-framework gebruiken</string>
-  <string name="permdesc_useHardwareFramework">Geeft toestemming aan een app om toegang te krijgen tot de MK hardware-framework.</string>
+  <string name="permdesc_useHardwareFramework">Geeft toestemming aan een app om toegang te verkrijgen tot de MK hardware-framework.</string>
   <string name="permlab_write_alarms">rechtstreeks de alarmen wijzigen</string>
-  <string name="permdesc_write_alarms">Geeft toestemming aan een app om te bewerken of verwijderen van al uw alarmen.</string>
+  <string name="permdesc_write_alarms">Geeft toestemming aan een app voor het bewerken of verwijderen van al uw alarmen.</string>
   <string name="permlab_manage_alarms">geplande alarmen in-/ uitschakelen</string>
   <string name="permdesc_manage_alarms">Geeft toestemming aan een app om uw geplande alarmen in- of uit te schakelen.</string>
   <string name="permlab_read_alarms">toegang tot geplande alarmen</string>
@@ -53,8 +53,8 @@
   <string name="profileGroupEmail">E-mail</string>
   <string name="profileGroupSMS">Sms</string>
   <string name="wildcardProfile">Anders</string>
-  <string name="permlab_readPhoneLocation">lees de telefoon locatie</string>
-  <string name="permdesc_readPhoneLocation">Geeft toestemming aan een app om informatie af te lezen van de telefoon locatie.</string>
-  <string name="permlab_writePhoneLocation">schrijf de telefoon locatie</string>
-  <string name="permdesc_writePhoneLocation">Geeft toestemming aan een app om de locatie van de telefoon te wijzigingen.</string>
+  <string name="permlab_readPhoneLocation">lees toestel locatie</string>
+  <string name="permdesc_readPhoneLocation">Geeft toestemming aan een app om informatie af te lezen van de toestel locatie.</string>
+  <string name="permlab_writePhoneLocation">schrijf toestel locatie</string>
+  <string name="permdesc_writePhoneLocation">Geeft toestemming aan een app om de locatie van het toestel te wijzigingen.</string>
 </resources>
