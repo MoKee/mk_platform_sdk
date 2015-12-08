@@ -44,6 +44,9 @@
     <!-- Default for MKSettings.Secure.QS_USE_MAIN_TILES -->
     <bool name="def_sysui_qs_main_tiles">true</bool>
 
+    <!-- Default for MKSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED -->
+    <bool name="def_lockscreen_visualizer">true</bool>
+
     <!-- Defaults for Global -->
 
     <!-- Default for MKSettings.Global.DEVICE_NAME

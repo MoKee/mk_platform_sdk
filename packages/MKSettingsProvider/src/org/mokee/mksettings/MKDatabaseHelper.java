@@ -234,6 +234,9 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
         loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_USE_MAIN_TILES,
                 R.bool.def_sysui_qs_main_tiles);
+
+        loadBooleanSetting(db, MKTableNames.TABLE_SECURE,
+                MKSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED, R.bool.def_lockscreen_visualizer);
     }
 
     private void loadSystemSettings(SQLiteDatabase db) {

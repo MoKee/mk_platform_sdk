@@ -2668,6 +2668,12 @@ public final class MKSettings {
          */
         public static final String QS_LOCATION_ADVANCED = "qs_location_advanced";
 
+        /**
+         * Whether to show the keyguard visualizer.
+         * Boolean setting. 0 = off, 1 = on.
+         * @hide
+         */
+        public static final String LOCKSCREEN_VISUALIZER_ENABLED = "lockscreen_visualizer";
         // endregion
 
         /**
@@ -2705,7 +2711,9 @@ public final class MKSettings {
                 MKSettings.Secure.DEVELOPMENT_SHORTCUT,
                 MKSettings.Secure.PERFORMANCE_PROFILE,
                 MKSettings.Secure.APP_PERFORMANCE_PROFILES_ENABLED,
-                MKSettings.Secure.QS_LOCATION_ADVANCED};
+                MKSettings.Secure.QS_LOCATION_ADVANCED,
+                MKSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED,
+        };
 
         /**
          * @hide
