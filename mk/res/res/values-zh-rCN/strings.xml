@@ -17,10 +17,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">魔趣系统</string>
+  <string name="permlab_publishCustomTile">在快速设置面板中创建一个自定义瓷块</string>
+  <string name="permdesc_publishCustomTile">允许应用发布一个快速设置瓷片。</string>
   <string name="permlab_modifyNetworkSettings">更改系统的网络设置</string>
   <string name="permdesc_modifyNetworkSettings">允许应用程序对一组有限的系统的网络设置进行更改。</string>
   <string name="permlab_modifySoundSettings">更改系统声音设置</string>
   <string name="permdesc_modifySoundSettings">允许应用程序对一组有限的系统的声音设置进行更改。</string>
+  <string name="permlab_bindCustomTileListenerService">绑定到自定义瓷片侦听器服务</string>
+  <string name="permdesc_bindCustomTileListenerService">允许应用绑定到自定义瓷片侦听器服务的顶层界面。</string>
   <string name="permlab_readMSPhoneState">在支持多SIM卡的设备上查看电话状态和数据连接</string>
   <string name="permdesc_readMSPhoneState">允许应用程序查看支持多SIM卡设备的电话状态和数据连接。</string>
   <string name="permlab_modifyMSPhoneState">在支持多SIM卡的设备上修改手机状态和数据连接</string>
@@ -41,6 +45,7 @@
   <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不供使用正常的应用程序。</string>
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
   <string name="permdesc_managePersistentStorage">允许应用程序的读取或写入，该操作可能会恢复出厂设置。</string>
+  <string name="custom_tile_listener_binding_label">自定义瓷片侦听器</string>
   <string name="profileNameDefault">默认</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住宅</string>

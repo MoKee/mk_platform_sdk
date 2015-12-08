@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +15,16 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.UserHandle;
-import cyanogenmod.os.Build;
+import mokee.os.Build;
 
 /**
  * Class encapsulating a Custom Tile. Sent by the StatusBarManagerService to clients including
- * the status bar panel and any {@link cyanogenmod.app.CustomTileListenerService} clients.
+ * the status bar panel and any {@link mokee.app.CustomTileListenerService} clients.
  */
 public class StatusBarPanelCustomTile implements Parcelable {
 
@@ -88,7 +89,7 @@ public class StatusBarPanelCustomTile implements Parcelable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.CM_VERSION_CODES.APRICOT) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.APRICOT) {
             // default
             tmpPkg = in.readString();
             tmpOpPkg = in.readString();
@@ -105,7 +106,7 @@ public class StatusBarPanelCustomTile implements Parcelable {
             tmpPostTime = in.readLong();
         }
 
-        if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
             tmpResPkg = in.readString();
         }
 
@@ -143,8 +144,8 @@ public class StatusBarPanelCustomTile implements Parcelable {
         }
     };
 
-    /** The {@link cyanogenmod.app.CustomTile} supplied to
-     * {@link cyanogenmod.app.CMStatusBarManager#publishTile(int, cyanogenmod.app.CustomTile)}.
+    /** The {@link mokee.app.CustomTile} supplied to
+     * {@link mokee.app.MKStatusBarManager#publishTile(int, mokee.app.CustomTile)}.
      */
     public CustomTile getCustomTile() {
         return customTile;
@@ -212,12 +213,12 @@ public class StatusBarPanelCustomTile implements Parcelable {
         return pkg;
     }
 
-    /** The id supplied to CMStatusBarManager */
+    /** The id supplied to MKStatusBarManager */
     public int getId() {
         return id;
     }
 
-    /** The tag supplied to CMStatusBarManager or null if no tag was specified. */
+    /** The tag supplied to MKStatusBarManager or null if no tag was specified. */
     public String getTag() {
         return tag;
     }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
 parcelable StatusBarPanelCustomTile;
 

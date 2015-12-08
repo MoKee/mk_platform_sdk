@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -24,10 +25,10 @@ import android.os.UserHandle;
 import android.util.Log;
 import android.util.Slog;
 
-import cyanogenmod.app.ICMStatusBarManager;
+import mokee.app.IMKStatusBarManager;
 
 /**
- * The CMStatusBarManager allows you to publish and remove CustomTiles within the
+ * The MKStatusBarManager allows you to publish and remove CustomTiles within the
  * Quick Settings Panel.
  *
  * <p>
@@ -44,20 +45,20 @@ import cyanogenmod.app.ICMStatusBarManager;
  * this custom tile.
  *
  * <p>
- * To get the instance of this class, utilize CMStatusBarManager#getInstance(Context context)
+ * To get the instance of this class, utilize MKStatusBarManager#getInstance(Context context)
  *
- * @see cyanogenmod.app.CustomTile
+ * @see mokee.app.CustomTile
  */
-public class CMStatusBarManager {
-    private static final String TAG = "CMStatusBarManager";
+public class MKStatusBarManager {
+    private static final String TAG = "MKStatusBarManager";
     private static boolean localLOGV = false;
 
     private Context mContext;
 
-    private static ICMStatusBarManager sService;
+    private static IMKStatusBarManager sService;
 
-    private static CMStatusBarManager sCMStatusBarManagerInstance;
-    private CMStatusBarManager(Context context) {
+    private static MKStatusBarManager sMKStatusBarManagerInstance;
+    private MKStatusBarManager(Context context) {
         Context appContext = context.getApplicationContext();
         if (appContext != null) {
             mContext = appContext;
@@ -68,15 +69,15 @@ public class CMStatusBarManager {
     }
 
     /**
-     * Get or create an instance of the {@link cyanogenmod.app.CMStatusBarManager}
+     * Get or create an instance of the {@link mokee.app.MKStatusBarManager}
      * @param context
-     * @return {@link cyanogenmod.app.CMStatusBarManager}
+     * @return {@link mokee.app.MKStatusBarManager}
      */
-    public static CMStatusBarManager getInstance(Context context) {
-        if (sCMStatusBarManagerInstance == null) {
-            sCMStatusBarManagerInstance = new CMStatusBarManager(context);
+    public static MKStatusBarManager getInstance(Context context) {
+        if (sMKStatusBarManagerInstance == null) {
+            sMKStatusBarManagerInstance = new MKStatusBarManager(context);
         }
-        return sCMStatusBarManagerInstance;
+        return sMKStatusBarManagerInstance;
     }
 
     /**
@@ -84,7 +85,7 @@ public class CMStatusBarManager {
      * the same id has already been posted by your application and has not yet been removed, it
      * will be replaced by the updated information.
      *
-     * You will need the cyanogenmod.permission.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.permission.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param id An identifier for this customTile unique within your
@@ -101,18 +102,18 @@ public class CMStatusBarManager {
      * the same tag and id has already been posted by your application and has not yet been
      * removed, it will be replaced by the updated information.
      *
-     * You will need the cyanogenmod.permission.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.permission.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param tag A string identifier for this custom tile.  May be {@code null}.
      * @param id An identifier for this custom tile.  The pair (tag, id) must be unique
      *        within your application.
-     * @param customTile A {@link cyanogenmod.app.CustomTile} object describing what to
+     * @param customTile A {@link mokee.app.CustomTile} object describing what to
      *        show the user. Must not be null.
      */
     public void publishTile(String tag, int id, CustomTile customTile) {
         if (sService == null) {
-            Log.w(TAG, "not connected to CMStatusBarManagerService");
+            Log.w(TAG, "not connected to MKStatusBarManagerService");
             return;
         }
 
@@ -126,27 +127,27 @@ public class CMStatusBarManager {
                 Log.w(TAG, "notify: id corrupted: sent " + id + ", got back " + idOut[0]);
             }
         } catch (RemoteException e) {
-            Slog.w("CMStatusBarManager", "warning: no cm status bar service");
+            Slog.w("MKStatusBarManager", "warning: no mk status bar service");
         }
     }
 
     /**
-     * Similar to {@link cyanogenmod.app.CMStatusBarManager#publishTile(int id, cyanogenmod.app.CustomTile)},
+     * Similar to {@link mokee.app.MKStatusBarManager#publishTile(int id, mokee.app.CustomTile)},
      * however lets you specify a {@link android.os.UserHandle}
      *
-     * You will need the cyanogenmod.permission.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.permission.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param tag A string identifier for this custom tile.  May be {@code null}.
      * @param id An identifier for this custom tile.  The pair (tag, id) must be unique
      *        within your application.
-     * @param customTile A {@link cyanogenmod.app.CustomTile} object describing what to
+     * @param customTile A {@link mokee.app.CustomTile} object describing what to
      *        show the user. Must not be null.
      * @param user A user handle to publish the tile as.
      */
     public void publishTileAsUser(String tag, int id, CustomTile customTile, UserHandle user) {
         if (sService == null) {
-            Log.w(TAG, "not connected to CMStatusBarManagerService");
+            Log.w(TAG, "not connected to MKStatusBarManagerService");
             return;
         }
 
@@ -160,14 +161,14 @@ public class CMStatusBarManager {
                 Log.w(TAG, "notify: id corrupted: sent " + id + ", got back " + idOut[0]);
             }
         } catch (RemoteException e) {
-            Slog.w("CMStatusBarManager", "warning: no cm status bar service");
+            Slog.w("MKStatusBarManager", "warning: no mk status bar service");
         }
     }
 
     /**
      * Remove a custom tile that's currently published to the StatusBarPanel.
      *
-     * You will need the cyanogenmod.permission.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.permission.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param id The identifier for the custom tile to be removed.
@@ -179,7 +180,7 @@ public class CMStatusBarManager {
     /**
      * Remove a custom tile that's currently published to the StatusBarPanel.
      *
-     * You will need the cyanogenmod.platform.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.platform.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param tag The string identifier for the custom tile to be removed.
@@ -187,7 +188,7 @@ public class CMStatusBarManager {
      */
     public void removeTile(String tag, int id) {
         if (sService == null) {
-            Log.w(TAG, "not connected to CMStatusBarManagerService");
+            Log.w(TAG, "not connected to MKStatusBarManagerService");
             return;
         }
 
@@ -196,15 +197,15 @@ public class CMStatusBarManager {
         try {
             sService.removeCustomTileWithTag(pkg, tag, id, UserHandle.myUserId());
         } catch (RemoteException e) {
-            Slog.w("CMStatusBarManager", "warning: no cm status bar service");
+            Slog.w("MKStatusBarManager", "warning: no mk status bar service");
         }
     }
 
     /**
-     * Similar to {@link cyanogenmod.app.CMStatusBarManager#removeTile(String tag, int id)}
+     * Similar to {@link mokee.app.MKStatusBarManager#removeTile(String tag, int id)}
      * however lets you specific a {@link android.os.UserHandle}
      *
-     * You will need the cyanogenmod.platform.PUBLISH_CUSTOM_TILE
+     * You will need the mokee.platform.PUBLISH_CUSTOM_TILE
      * to utilize this functionality.
      *
      * @param tag The string identifier for the custom tile to be removed.
@@ -213,7 +214,7 @@ public class CMStatusBarManager {
      */
     public void removeTileAsUser(String tag, int id, UserHandle user) {
         if (sService == null) {
-            Log.w(TAG, "not connected to CMStatusBarManagerService");
+            Log.w(TAG, "not connected to MKStatusBarManagerService");
             return;
         }
 
@@ -226,13 +227,13 @@ public class CMStatusBarManager {
     }
 
     /** @hide */
-    public ICMStatusBarManager getService() {
+    public IMKStatusBarManager getService() {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(CMContextConstants.CM_STATUS_BAR_SERVICE);
+        IBinder b = ServiceManager.getService(MKContextConstants.MK_STATUS_BAR_SERVICE);
         if (b != null) {
-            sService = ICMStatusBarManager.Stub.asInterface(b);
+            sService = IMKStatusBarManager.Stub.asInterface(b);
             return sService;
         }
         return null;

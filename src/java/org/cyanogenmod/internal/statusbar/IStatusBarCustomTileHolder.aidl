@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
-package mokee.app;
+package org.cyanogenmod.internal.statusbar;
 
-parcelable CustomTile;
+import cyanogenmod.app.StatusBarPanelCustomTile;
+
+/** @hide */
+interface IStatusBarCustomTileHolder {
+    /** Fetch the held StatusBarPanelCustomTile. This method should only be called once per Holder */
+    StatusBarPanelCustomTile get();
+}

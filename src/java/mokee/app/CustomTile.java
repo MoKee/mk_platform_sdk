@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -26,14 +27,14 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
-import cyanogenmod.os.Build;
+import mokee.os.Build;
 
 import java.util.ArrayList;
 
 /**
  * A class that represents a quick settings tile
  *
- * <p>The {@link cyanogenmod.app.CustomTile.Builder} has been added to make it
+ * <p>The {@link mokee.app.CustomTile.Builder} has been added to make it
  * easier to construct CustomTiles.</p>
  */
 public class CustomTile implements Parcelable {
@@ -128,7 +129,7 @@ public class CustomTile implements Parcelable {
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
         // API release to help unravel this parcel
-        if (parcelableVersion >= Build.CM_VERSION_CODES.APRICOT) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.APRICOT) {
             if (parcel.readInt() != 0) {
                 this.onClick = PendingIntent.CREATOR.createFromParcel(parcel);
             }
@@ -150,7 +151,7 @@ public class CustomTile implements Parcelable {
             this.icon = parcel.readInt();
         }
 
-        if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
             this.resourcesPackageName = parcel.readString();
             this.collapsePanel = (parcel.readInt() == 1);
             if (parcel.readInt() != 0) {
@@ -167,7 +168,7 @@ public class CustomTile implements Parcelable {
 
     /**
      * Constructs a CustomTile object with default values.
-     * You might want to consider using {@link cyanogenmod.app.CustomTile.Builder} instead.
+     * You might want to consider using {@link mokee.app.CustomTile.Builder} instead.
      */
     public CustomTile()
     {
@@ -364,14 +365,14 @@ public class CustomTile implements Parcelable {
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
             // API release to help unravel this parcel
-            if (parcelableVersion >= Build.CM_VERSION_CODES.APRICOT) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.APRICOT) {
                 if (parcel.readInt() != 0) {
                     expandedItems = parcel.createTypedArray(ExpandedItem.CREATOR);
                 }
                 styleId = parcel.readInt();
             }
 
-            if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
                 if (parcel.readInt() != 0) {
                     contentViews = RemoteViews.CREATOR.createFromParcel(parcel);
                 }
@@ -661,7 +662,7 @@ public class CustomTile implements Parcelable {
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
             // API release to help unravel this parcel
-            if (parcelableVersion >= Build.CM_VERSION_CODES.APRICOT) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.APRICOT) {
                 if (parcel.readInt() != 0) {
                     onClickPendingIntent = PendingIntent.CREATOR.createFromParcel(parcel);
                 }
@@ -674,7 +675,7 @@ public class CustomTile implements Parcelable {
                 itemDrawableResourceId = parcel.readInt();
             }
 
-            if (parcelableVersion >= Build.CM_VERSION_CODES.BOYSENBERRY) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.BOYSENBERRY) {
                 if (parcel.readInt() != 0) {
                     itemBitmapResource = Bitmap.CREATOR.createFromParcel(parcel);
                 }
@@ -888,9 +889,9 @@ public class CustomTile implements Parcelable {
             };
 
     /**
-     * Builder class for {@link cyanogenmod.app.CustomTile} objects.
+     * Builder class for {@link mokee.app.CustomTile} objects.
      *
-     * Provides a convenient way to set the various fields of a {@link cyanogenmod.app.CustomTile}
+     * Provides a convenient way to set the various fields of a {@link mokee.app.CustomTile}
      *
      * <p>Example:
      *
@@ -929,7 +930,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set the label for the custom tile
          * @param label a string to be used for the custom tile label
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setLabel(String label) {
             mLabel = label;
@@ -939,7 +940,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set the label for the custom tile
          * @param id a string resource id to be used for the custom tile label
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setLabel(int id) {
             mLabel = mContext.getString(id);
@@ -949,7 +950,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set the content description for the custom tile
          * @param contentDescription a string to explain content
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setContentDescription(String contentDescription) {
             mContentDescription = contentDescription;
@@ -959,7 +960,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set the content description for the custom tile
          * @param id a string resource id to explain content
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setContentDescription(int id) {
             mContentDescription = mContext.getString(id);
@@ -969,7 +970,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set a {@link android.app.PendingIntent} to be fired on custom tile click
          * @param intent
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setOnClickIntent(PendingIntent intent) {
             mOnClick = intent;
@@ -980,7 +981,7 @@ public class CustomTile implements Parcelable {
          * Set a settings {@link android.content.Intent} to be fired on custom
          * tile detail pane click
          * @param intent
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setOnSettingsClickIntent(Intent intent) {
             mOnSettingsClick = intent;
@@ -990,7 +991,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set a {@link android.net.Uri} to be broadcasted in an intent on custom tile click
          * @param uri
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setOnClickUri(Uri uri) {
             mOnClickUri = uri;
@@ -1001,7 +1002,7 @@ public class CustomTile implements Parcelable {
          * Set an icon for the custom tile to be presented to the user
          *
          * @param drawableId
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setIcon(int drawableId) {
             mIcon = drawableId;
@@ -1014,7 +1015,7 @@ public class CustomTile implements Parcelable {
          * This will unset {@link #setIcon(int)} if utilized together.
          * @see CustomTile#remoteIcon
          * @param remoteIcon
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setIcon(Bitmap remoteIcon) {
             mIcon = 0; // empty
@@ -1025,7 +1026,7 @@ public class CustomTile implements Parcelable {
         /**
          * Set an {@link ExpandedStyle} to to be displayed when a user clicks the custom tile
          * @param expandedStyle
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setExpandedStyle(ExpandedStyle expandedStyle) {
             if (mExpandedStyle != expandedStyle) {
@@ -1041,7 +1042,7 @@ public class CustomTile implements Parcelable {
          * Set whether or not the Statusbar Panel should be collapsed when an
          * {@link #onClick} or {@link #onClickUri} event is fired.
          * @param bool
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder shouldCollapsePanel(boolean bool) {
             mCollapsePanel = bool;
@@ -1054,7 +1055,7 @@ public class CustomTile implements Parcelable {
          *
          * @see CustomTile#deleteIntent
          * @param intent
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder setDeleteIntent(PendingIntent intent) {
             mDeleteIntent = intent;
@@ -1065,7 +1066,7 @@ public class CustomTile implements Parcelable {
          * Indicates whether this tile has sensitive data that have to be hidden
          * on secure lockscreens.
          * @param bool
-         * @return {@link cyanogenmod.app.CustomTile.Builder}
+         * @return {@link mokee.app.CustomTile.Builder}
          */
         public Builder hasSensitiveData(boolean bool) {
             mSensitiveData = bool;
@@ -1073,8 +1074,8 @@ public class CustomTile implements Parcelable {
         }
 
         /**
-         * Create a {@link cyanogenmod.app.CustomTile} object
-         * @return {@link cyanogenmod.app.CustomTile}
+         * Create a {@link mokee.app.CustomTile} object
+         * @return {@link mokee.app.CustomTile}
          */
         public CustomTile build() {
             CustomTile tile = new CustomTile();

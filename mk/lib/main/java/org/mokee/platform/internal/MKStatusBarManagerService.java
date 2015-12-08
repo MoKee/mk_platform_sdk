@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.platform.internal;
+package org.mokee.platform.internal;
 
 import android.app.ActivityManager;
 import android.app.AppGlobals;
@@ -40,26 +41,26 @@ import android.util.Log;
 import android.util.Slog;
 
 import com.android.server.SystemService;
-import cyanogenmod.app.CMContextConstants;
-import cyanogenmod.app.CustomTile;
-import cyanogenmod.app.CustomTileListenerService;
-import cyanogenmod.app.StatusBarPanelCustomTile;
-import cyanogenmod.app.ICustomTileListener;
-import cyanogenmod.app.ICMStatusBarManager;
+import mokee.app.MKContextConstants;
+import mokee.app.CustomTile;
+import mokee.app.CustomTileListenerService;
+import mokee.app.StatusBarPanelCustomTile;
+import mokee.app.ICustomTileListener;
+import mokee.app.IMKStatusBarManager;
 
-import org.cyanogenmod.internal.statusbar.ExternalQuickSettingsRecord;
-import org.cyanogenmod.internal.statusbar.IStatusBarCustomTileHolder;
+import org.mokee.internal.statusbar.ExternalQuickSettingsRecord;
+import org.mokee.internal.statusbar.IStatusBarCustomTileHolder;
 
 import java.util.ArrayList;
 
-import org.cyanogenmod.platform.internal.R;
+import org.mokee.platform.internal.R;
 
 /**
  * Internal service which manages interactions with system ui elements
  * @hide
  */
-public class CMStatusBarManagerService extends SystemService {
-    private static final String TAG = "CMStatusBarManagerService";
+public class MKStatusBarManagerService extends SystemService {
+    private static final String TAG = "MKStatusBarManagerService";
 
     private Context mContext;
     private Handler mHandler = new Handler();
@@ -76,16 +77,16 @@ public class CMStatusBarManagerService extends SystemService {
     final ArrayMap<String, ExternalQuickSettingsRecord> mCustomTileByKey =
             new ArrayMap<String, ExternalQuickSettingsRecord>();
 
-    public CMStatusBarManagerService(Context context) {
+    public MKStatusBarManagerService(Context context) {
         super(context);
         mContext = context;
     }
 
     @Override
     public void onStart() {
-        Log.d(TAG, "registerCMStatusBar cmstatusbar: " + this);
+        Log.d(TAG, "registerMKStatusBar mkstatusbar: " + this);
         mCustomTileListeners = new CustomTileListeners();
-        publishBinderService(CMContextConstants.CM_STATUS_BAR_SERVICE, mService);
+        publishBinderService(MKContextConstants.MK_STATUS_BAR_SERVICE, mService);
 
         IntentFilter pkgFilter = new IntentFilter();
         pkgFilter.addAction(Intent.ACTION_PACKAGE_ADDED);
@@ -174,7 +175,7 @@ public class CMStatusBarManagerService extends SystemService {
         }
     };
 
-    private final IBinder mService = new ICMStatusBarManager.Stub() {
+    private final IBinder mService = new IMKStatusBarManager.Stub() {
         /**
          * @hide
          */
@@ -202,7 +203,7 @@ public class CMStatusBarManagerService extends SystemService {
          * Register a listener binder directly with the status bar manager.
          *
          * Only works with system callers. Apps should extend
-         * {@link cyanogenmod.app.CustomTileListenerService}.
+         * {@link mokee.app.CustomTileListenerService}.
          * @hide
          */
         @Override
@@ -520,13 +521,13 @@ public class CMStatusBarManagerService extends SystemService {
 
     private void enforceCustomTilePublish() {
         mContext.enforceCallingOrSelfPermission(
-                cyanogenmod.platform.Manifest.permission.PUBLISH_CUSTOM_TILE,
+                mokee.platform.Manifest.permission.PUBLISH_CUSTOM_TILE,
                 "StatusBarManagerService");
     }
 
     private void enforceBindCustomTileListener() {
         mContext.enforceCallingOrSelfPermission(
-                cyanogenmod.platform.Manifest.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE,
+                mokee.platform.Manifest.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE,
                 "StatusBarManagerService");
     }
 
@@ -538,7 +539,7 @@ public class CMStatusBarManagerService extends SystemService {
     public class CustomTileListeners extends ManagedServices {
 
         public CustomTileListeners() {
-            super(CMStatusBarManagerService.this.mContext, mHandler, mQSTileList, mUserProfiles);
+            super(MKStatusBarManagerService.this.mContext, mHandler, mQSTileList, mUserProfiles);
         }
 
         @Override
@@ -549,7 +550,7 @@ public class CMStatusBarManagerService extends SystemService {
             //TODO: Implement this in the future
             //c.secureSettingName = Settings.Secure.ENABLED_CUSTOM_TILE_LISTENERS;
             c.bindPermission =
-                    cyanogenmod.platform.Manifest.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE;
+                    mokee.platform.Manifest.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE;
             //TODO: Implement this in the future
             //c.settingsAction = Settings.ACTION_CUSTOM_TILE_LISTENER_SETTINGS;
             c.clientLabel = R.string.custom_tile_listener_binding_label;

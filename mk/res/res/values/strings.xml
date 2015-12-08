@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The MoKee Open Source Project
+     Copyright (C) 2015-2016 The MoKee Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,11 +18,17 @@
     <!-- Label for the MoKee system components when they are shown to the user. -->
     <string name="mokee_system_label">MoKee System</string>
 
+    <string name="permlab_publishCustomTile">create a custom tile within quick settings panel</string>
+    <string name="permdesc_publishCustomTile">Allows an app to publish a quick settings tile.</string>
+
     <string name="permlab_modifyNetworkSettings">change system network settings</string>
     <string name="permdesc_modifyNetworkSettings">Allows an app to make changes to the airplane mode and mobile data network settings.</string>
 
     <string name="permlab_modifySoundSettings">change system sound settings</string>
     <string name="permdesc_modifySoundSettings">Allows an app to make changes to the interruption mode sound settings.</string>
+
+    <string name="permlab_bindCustomTileListenerService">bind to a custom tile listener service</string>
+    <string name="permdesc_bindCustomTileListenerService">Allows the app to bind to the top-level interface of a custom tile listener service.</string>
 
     <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
     <string name="permlab_readMSPhoneState">view the phone state and data connection with support to multiple SIMs</string>
@@ -63,6 +69,9 @@
     <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
     <string name="permlab_managePersistentStorage">manage persistent storage</string>
     <string name="permdesc_managePersistentStorage">Allows an app to read or write properties which may persist thrοugh a factory reset.</string>
+
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">Custom tile listener</string>
 
     <!-- Labels for the PROTECTED_APP permission. -->
     <string name="permlab_protectedApp">add and remove applications to protected apps</string>

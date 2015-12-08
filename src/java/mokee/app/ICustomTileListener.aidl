@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
-import cyanogenmod.app.StatusBarPanelCustomTile;
+import mokee.app.StatusBarPanelCustomTile;
 
-import org.cyanogenmod.internal.statusbar.IStatusBarCustomTileHolder;
+import org.mokee.internal.statusbar.IStatusBarCustomTileHolder;
 
 /** @hide */
 oneway interface ICustomTileListener

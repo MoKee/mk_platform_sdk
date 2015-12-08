@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +15,15 @@
  * limitations under the License.
  */
 
-package cyanogenmod.app;
+package mokee.app;
 
 import android.content.ComponentName;
 
-import cyanogenmod.app.CustomTile;
-import cyanogenmod.app.ICustomTileListener;
+import mokee.app.CustomTile;
+import mokee.app.ICustomTileListener;
 
 /** @hide */
-interface ICMStatusBarManager {
+interface IMKStatusBarManager {
     // --- Methods below are for use by 3rd party applications to publish quick
     // settings tiles to the status bar panel
     // You need the PUBLISH_CUSTOM_TILE permission
