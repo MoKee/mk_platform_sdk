@@ -43,6 +43,7 @@ interface IMKHardwareService {
     String getSerialNumber();
 
     boolean requireAdaptiveBacklightForSunlightEnhancement();
+	boolean isSunlightEnhancementSelfManaged();
 
     DisplayMode[] getDisplayModes();
     DisplayMode getCurrentDisplayMode();
