@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015-2016, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.internal.statusbar;
+package org.mokee.internal.statusbar;
 
 import android.os.UserHandle;
 import com.android.internal.annotations.VisibleForTesting;
 
-import cyanogenmod.app.CustomTile;
-import cyanogenmod.app.StatusBarPanelCustomTile;
+import mokee.app.CustomTile;
+import mokee.app.StatusBarPanelCustomTile;
 
 /**
  * @hide

@@ -31,6 +31,16 @@ public final class MKContextConstants {
 
     /**
      * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link mokee.app.MKStatusBarManager} for informing the user of
+     * background events.
+     *
+     * @see android.content.Context#getSystemService
+     * @see mokee.app.MKStatusBarManager
+     */
+    public static final String MK_STATUS_BAR_SERVICE = "mkstatusbar";
+
+    /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
      * {@link mokee.app.ProfileManager} for informing the user of
      * background events.
      *
