@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Open Source Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License
  */
 
-package org.cyanogenmod.internal.util;
+package org.mokee.internal.util;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
@@ -39,8 +40,8 @@ import android.text.TextUtils;
 import android.util.SparseArray;
 
 import com.android.internal.telephony.PhoneConstants;
-import cyanogenmod.power.PerformanceManager;
-import cyanogenmod.providers.CMSettings;
+import mokee.power.PerformanceManager;
+import mokee.providers.MKSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -74,7 +75,7 @@ public class QSUtils {
     public static List<String> getDefaultTiles(Context context) {
         final List<String> tiles = new ArrayList<>();
         final String defaults = context.getString(
-               org.cyanogenmod.platform.internal.R.string.config_defaultQuickSettingsTiles);
+               org.mokee.platform.internal.R.string.config_defaultQuickSettingsTiles);
         if (!TextUtils.isEmpty(defaults)) {
             final String[] array = TextUtils.split(defaults, Pattern.quote(","));
             for (String item : array) {
@@ -216,8 +217,8 @@ public class QSUtils {
     public static boolean isQSTileEnabledForUser(
             Context context, String tileSpec, int userId) {
         final ContentResolver resolver = context.getContentResolver();
-        String order = CMSettings.Secure.getStringForUser(resolver,
-                CMSettings.Secure.QS_TILES, userId);
+        String order = MKSettings.Secure.getStringForUser(resolver,
+                MKSettings.Secure.QS_TILES, userId);
         return !TextUtils.isEmpty(order) && Arrays.asList(order.split(",")).contains(tileSpec);
     }
 
@@ -230,7 +231,7 @@ public class QSUtils {
         };
 
         ctx.getContentResolver().registerContentObserver(
-                CMSettings.Secure.getUriFor(CMSettings.Secure.QS_TILES),
+                MKSettings.Secure.getUriFor(MKSettings.Secure.QS_TILES),
                 false, observer, UserHandle.USER_ALL);
         return observer;
     }
