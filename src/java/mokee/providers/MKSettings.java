@@ -2539,6 +2539,12 @@ public final class MKSettings {
         public static final String PRIVACY_GUARD_DEFAULT = "privacy_guard_default";
 
         /**
+         * Whether a notification should be shown if privacy guard is enabled
+         * @hide
+         */
+        public static final String PRIVACY_GUARD_NOTIFICATION = "privacy_guard_notification";
+
+        /**
          * The global recents long press activity chosen by the user.
          * This setting is stored as a flattened component name as
          * per {@link ComponentName#flattenToString()}.
@@ -2695,6 +2701,7 @@ public final class MKSettings {
                 MKSettings.Secure.LOCKSCREEN_TARGETS,
                 MKSettings.Secure.RING_HOME_BUTTON_BEHAVIOR,
                 MKSettings.Secure.PRIVACY_GUARD_DEFAULT,
+                MKSettings.Secure.PRIVACY_GUARD_NOTIFICATION,
                 MKSettings.Secure.DEVELOPMENT_SHORTCUT,
                 MKSettings.Secure.PERFORMANCE_PROFILE,
                 MKSettings.Secure.APP_PERFORMANCE_PROFILES_ENABLED,
