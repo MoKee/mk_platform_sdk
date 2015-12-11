@@ -63,10 +63,6 @@ public class QSUtils {
         return QSConstants.STATIC_TILES_AVAILABLE.contains(tileSpec);
     }
 
-    public static boolean isDynamicQsTile(String tileSpec) {
-        return QSConstants.DYNAMIC_TILES_AVAILABLE.contains(tileSpec);
-    }
-
     @SuppressWarnings("unchecked")
     public static List<String> getAvailableTiles(Context context) {
         filterTiles(context);
@@ -134,10 +130,6 @@ public class QSUtils {
                     break;
                 case QSConstants.TILE_BATTERY_SAVER:
                     removeTile = deviceSupportsPowerProfiles(context);
-                    break;
-
-                case QSConstants.DYNAMIC_TILE_SU:
-                    removeTile = !supportsRootAccess();
                     break;
             }
             if (removeTile) {
