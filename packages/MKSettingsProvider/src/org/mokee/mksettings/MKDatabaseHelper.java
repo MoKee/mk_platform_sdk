@@ -207,10 +207,15 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
      * @param db The {@link SQLiteDatabase} to insert into.
      */
     private void loadSettings(SQLiteDatabase db) {
-        // System
-        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.QS_QUICK_PULLDOWN,
-                R.integer.def_qs_quick_pulldown);
+        loadSystemSettings(db);
+        loadSecureSettings(db);
+        // The global table only exists for the 'owner' user
+        if (mUserHandle == UserHandle.USER_OWNER) {
+            loadGlobalSettings(db);
+        }
+    }
 
+    private void loadSecureSettings(SQLiteDatabase db) {
         // Secure
         loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.ADVANCED_MODE,
                 R.bool.def_advanced_mode);
@@ -229,7 +234,22 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
         loadBooleanSetting(db, MKTableNames.TABLE_SECURE, MKSettings.Secure.QS_USE_MAIN_TILES,
                 R.bool.def_sysui_qs_main_tiles);
+    }
 
+    private void loadSystemSettings(SQLiteDatabase db) {
+        // System
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.QS_QUICK_PULLDOWN,
+                R.integer.def_qs_quick_pulldown);
+
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
+                R.integer.def_notification_brightness_level);
+
+        loadBooleanSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
+                R.bool.def_notification_multiple_leds);
+    }
+
+    private void loadGlobalSettings(SQLiteDatabase db) {
+        // Global
         loadBooleanSetting(db, MKTableNames.TABLE_GLOBAL,
                 MKSettings.Global.POWER_NOTIFICATIONS_ENABLED,
                 R.bool.def_power_notifications_enabled);
@@ -241,12 +261,6 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
         loadStringSetting(db, MKTableNames.TABLE_GLOBAL,
                 MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE,
                 R.string.def_power_notifications_ringtone);
-
-        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,
-                R.integer.def_notification_brightness_level);
-
-        loadBooleanSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE,
-                R.bool.def_notification_multiple_leds);
     }
 
     /**
