@@ -2655,6 +2655,13 @@ public final class MKSettings {
          * @hide
          */
         public static final String THEME_PREV_BOOT_API_LEVEL = "theme_prev_boot_api_level";
+
+        /**
+         * Whether detail view for the location tile is enabled
+         * @hide
+         */
+        public static final String QS_LOCATION_ADVANCED = "qs_location_advanced";
+
         // endregion
 
         /**
@@ -2690,7 +2697,8 @@ public final class MKSettings {
                 MKSettings.Secure.PRIVACY_GUARD_DEFAULT,
                 MKSettings.Secure.DEVELOPMENT_SHORTCUT,
                 MKSettings.Secure.PERFORMANCE_PROFILE,
-                MKSettings.Secure.APP_PERFORMANCE_PROFILES_ENABLED};
+                MKSettings.Secure.APP_PERFORMANCE_PROFILES_ENABLED,
+                MKSettings.Secure.QS_LOCATION_ADVANCED};
 
         /**
          * @hide
