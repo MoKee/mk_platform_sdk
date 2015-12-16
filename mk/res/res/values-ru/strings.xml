@@ -17,13 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Система MoKee</string>
-  <string name="permlab_modifyNetworkSettings">Изменить сетевые параметры системы</string>
-  <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в ограниченный набор параметров сети системы.</string>
-  <string name="permlab_modifySoundSettings">Изменить параметры звука системы</string>
+  <string name="permlab_modifyNetworkSettings">Настройка сетевых параметров системы</string>
+  <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в режиме \"Полета\" и настройках мобильной передачи данных.</string>
+  <string name="permlab_modifySoundSettings">Настройка параметров звука системы</string>
   <string name="permdesc_modifySoundSettings">Позволяет приложению внести изменения в ограниченный набор параметров звуковой системы.</string>
-  <string name="permlab_readMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
+  <string name="permlab_readMSPhoneState">Просмотр режима работы и передачи данных телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
-  <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
+  <string name="permlab_modifyMSPhoneState">Изменение режима работы и передачи данных телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
   <string name="permlab_modifyProfiles">изменить профиль системы</string>
   <string name="permdesc_modifyProfiles">Разрешает приложению изменять профили системы.</string>
