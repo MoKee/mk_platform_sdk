@@ -2526,13 +2526,6 @@ public final class MKSettings {
         public static final String QS_USE_MAIN_TILES = "sysui_qs_main_tiles";
 
         /**
-         * Boolean value whether to link ringtone and notification volume
-         *
-         * @hide
-         */
-        public static final String VOLUME_LINK_NOTIFICATION = "volume_link_notification";
-
-        /**
          * Whether newly installed apps should run with privacy guard by default
          * @hide
          */
@@ -2691,7 +2684,6 @@ public final class MKSettings {
                 MKSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
                 MKSettings.Secure.QS_TILES,
                 MKSettings.Secure.QS_USE_MAIN_TILES,
-                MKSettings.Secure.VOLUME_LINK_NOTIFICATION,
                 MKSettings.Secure.NAVIGATION_RING_TARGETS[0],
                 MKSettings.Secure.NAVIGATION_RING_TARGETS[1],
                 MKSettings.Secure.NAVIGATION_RING_TARGETS[2],
