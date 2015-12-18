@@ -1938,6 +1938,13 @@ public final class MKSettings {
         }
 
         /**
+         * @hide
+         */
+        public static boolean shouldInterceptSystemProvider(String key) {
+            return key.equals(System.SYSTEM_PROFILES_ENABLED);
+        }
+
+        /**
          * Mapping of validators for all system settings.  This map is used to validate both valid
          * keys as well as validating the values for those keys.
          *
@@ -2748,6 +2755,13 @@ public final class MKSettings {
         static {
             VALIDATORS.put(PROTECTED_COMPONENTS, PROTECTED_COMPONENTS_VALIDATOR);
         }
+
+        /**
+         * @hide
+         */
+        public static boolean shouldInterceptSystemProvider(String key) {
+            return false;
+        }
     }
 
     /**
@@ -3171,6 +3185,13 @@ public final class MKSettings {
          */
         public static boolean isLegacySetting(String key) {
             return ArrayUtils.contains(LEGACY_GLOBAL_SETTINGS, key);
+        }
+
+        /**
+         * @hide
+         */
+        public static boolean shouldInterceptSystemProvider(String key) {
+            return false;
         }
     }
 }
