@@ -74,9 +74,8 @@
     <string name="custom_tile_listener_binding_label">Custom tile listener</string>
 
     <!-- Labels for the PROTECTED_APP permission. -->
-    <string name="permlab_protectedApp">add and remove applications to protected apps</string>
-    <string name="permdesc_protectedApp">Allows an application to be marked as protected
-        and can be locked</string>
+    <string name="permlab_protectedApp">add and remove apps to protected apps</string>
+    <string name="permdesc_protectedApp">Allows an app to mark other apps as protected and lock them.</string>
 
     <!-- Profiles -->
     <!-- Names of default profiles. -->
