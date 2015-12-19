@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cyanogenmod.externalviews;
+package mokee.externalviews;
 
 import android.content.Context;
 import android.content.ComponentName;
@@ -23,7 +24,7 @@ public final class KeyguardExternalView extends ExternalView {
 
     public static final String EXTRA_PERMISSION_LIST = "permissions_list";
     public static final String CATEGORY_KEYGUARD_GRANT_PERMISSION
-            = "org.cyanogenmod.intent.category.KEYGUARD_GRANT_PERMISSION";
+            = "org.mokee.intent.category.KEYGUARD_GRANT_PERMISSION";
 
     public KeyguardExternalView(Context context, AttributeSet attrs) {
         super(context,attrs);
