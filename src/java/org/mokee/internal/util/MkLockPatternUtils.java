@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.internal.util;
+package org.mokee.internal.util;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -24,9 +24,9 @@ import android.text.TextUtils;
 
 import com.android.internal.widget.LockPatternUtils;
 
-import cyanogenmod.platform.Manifest;
+import mokee.platform.Manifest;
 
-public class CmLockPatternUtils extends LockPatternUtils {
+public class MkLockPatternUtils extends LockPatternUtils {
 
     /**
      * Third party keyguard component to be displayed within the keyguard
@@ -35,7 +35,7 @@ public class CmLockPatternUtils extends LockPatternUtils {
 
     private Context mContext;
 
-    public CmLockPatternUtils(Context context) {
+    public MkLockPatternUtils(Context context) {
         super(context);
         mContext = context;
     }
