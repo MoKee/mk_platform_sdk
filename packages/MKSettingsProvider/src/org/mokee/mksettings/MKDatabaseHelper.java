@@ -252,6 +252,9 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
         loadBooleanSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.SYSTEM_PROFILES_ENABLED,
                 R.bool.def_profiles_enabled);
+
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.ENABLE_PEOPLE_LOOKUP,
+                R.integer.def_people_lookup);
     }
 
     private void loadGlobalSettings(SQLiteDatabase db) {
