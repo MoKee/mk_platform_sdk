@@ -163,10 +163,10 @@ mkplat_docs_java_libraries := \
     org.mokee.platform.sdk
 
 # SDK version as defined
-mkplat_docs_SDK_VERSION := 0.1
+mkplat_docs_SDK_VERSION := 1.0
 
 # release version
-mkplat_docs_SDK_REL_ID := 0
+mkplat_docs_SDK_REL_ID := 4
 
 mkplat_docs_LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
@@ -179,8 +179,7 @@ intermediates.COMMON := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS), org.
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \
-    $(mkplat_docs_src_files) \
-    $(call all-java-files-under, $(library_src))
+    $(mkplat_docs_src_files)
 LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
 LOCAL_JAVA_LIBRARIES:= $(mkplat_docs_java_libraries)
 LOCAL_MODULE_CLASS:= $(mkplat_docs_LOCAL_MODULE_CLASS)
@@ -194,7 +193,8 @@ LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR:= build/tools/droiddoc/templates-sdk
 
 LOCAL_DROIDDOC_OPTIONS:= \
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_stubs_current_intermediates/src \
-        -stubpackages mokee.alarmclock:mokee.app:mokee.content:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:org.mokee.platform \
+        -stubpackages mokee.alarmclock:mokee.app:mokee.content:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power \
+        -exclude org.mokee.platform.internal \
         -api $(INTERNAL_MK_PLATFORM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_REMOVED_API_FILE) \
         -nodocs \
@@ -204,15 +204,16 @@ LOCAL_UNINSTALLABLE_MODULE := true
 
 include $(BUILD_DROIDDOC)
 
+# $(gen), i.e. framework.aidl, is also needed while building against the current stub.
 $(full_target): $(mk_framework_built) $(gen)
 $(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
+$(call dist-for-goals,sdk,$(INTERNAL_MK_PLATFORM_API_FILE))
 
 # ====  the system api stubs ===================================
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \
-    $(mkplat_docs_src_files) \
-    $(call all-java-files-under, $(library_src))
+    $(mkplat_docs_src_files)
 LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
 LOCAL_JAVA_LIBRARIES:= $(mkplat_docs_java_libraries)
 LOCAL_MODULE_CLASS:= $(mkplat_docs_LOCAL_MODULE_CLASS)
@@ -223,8 +224,9 @@ LOCAL_MODULE := mk-system-api-stubs
 
 LOCAL_DROIDDOC_OPTIONS:=\
         -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_system_stubs_current_intermediates/src \
-        -stubpackages mokee.alarmclock:mokee.app:mokee.content:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:org.mokee.platform \
+        -stubpackages mokee.alarmclock:mokee.app:mokee.content:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power \
         -showAnnotation android.annotation.SystemApi \
+        -exclude org.mokee.platform.internal \
         -api $(INTERNAL_MK_PLATFORM_SYSTEM_API_FILE) \
         -removedApi $(INTERNAL_MK_PLATFORM_SYSTEM_REMOVED_API_FILE) \
         -nodocs \
@@ -236,8 +238,10 @@ LOCAL_UNINSTALLABLE_MODULE := true
 
 include $(BUILD_DROIDDOC)
 
+# $(gen), i.e. framework.aidl, is also needed while building against the current stub.
 $(full_target): $(mk_framework_built) $(gen)
 $(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
+$(call dist-for-goals,sdk,$(INTERNAL_MK_PLATFORM_API_FILE))
 
 # Documentation
 # ===========================================================
@@ -253,13 +257,14 @@ LOCAL_ADDITONAL_JAVA_DIR := $(intermediates.COMMON)/src
 
 LOCAL_IS_HOST_MODULE := false
 LOCAL_ADDITIONAL_DEPENDENCIES := \
-    services
+    services \
+    org.mokee.hardware
 
 LOCAL_JAVA_LIBRARIES := $(mkplat_docs_java_libraries)
 
 LOCAL_DROIDDOC_OPTIONS := \
         -offlinemode \
-        -hidePackage org.mokee.platform.internal \
+        -exclude org.mokee.platform.internal \
         -hdf android.whichdoc offline \
         -hdf sdk.version $(mkplat_docs_docs_SDK_VERSION) \
         -hdf sdk.rel.id $(mkplat_docs_docs_SDK_REL_ID) \

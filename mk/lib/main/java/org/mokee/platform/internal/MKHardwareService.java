@@ -51,6 +51,7 @@ import org.mokee.hardware.ThermalUpdateCallback;
 import org.mokee.hardware.TouchscreenHovering;
 import org.mokee.hardware.VibratorHW;
 
+/** @hide */
 public class MKHardwareService extends SystemService implements ThermalUpdateCallback {
 
     private static final boolean DEBUG = true;
