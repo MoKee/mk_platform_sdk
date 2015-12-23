@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2015, The CyanogenMod Project
+ * Copyright (c) 2015, The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +15,11 @@
  * limitations under the License.
  */
 
-package cyanogenmod.externalviews;
+package mokee.externalviews;
 
 import android.graphics.Rect;
 
-import cyanogenmod.externalviews.IKeyguardExternalViewCallbacks;
+import mokee.externalviews.IKeyguardExternalViewCallbacks;
 
 /** @hide */
 interface IKeyguardExternalViewProvider
