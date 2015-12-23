@@ -21,7 +21,7 @@ import android.text.TextUtils;
 import android.util.SparseArray;
 
 /**
- * Information about the current MoKee OpenSource build, extracted from system properties.
+ * Information about the current MoKee Open Source build, extracted from system properties.
  */
 public class Build {
     /** Value used for when a build property is unknown. */
@@ -85,12 +85,12 @@ public class Build {
      */
     public static class MK_VERSION_CODES {
         /**
-         * June 2015: The first version of the platform sdk for MoKee OpenSource
+         * June 2015: The first version of the platform sdk for MoKee Open Source
          */
         public static final int APRICOT = 1;
 
         /**
-         * September 2015: The second version of the platform sdk for MoKee OpenSource
+         * September 2015: The second version of the platform sdk for MoKee Open Source
          *
          * <p>Applications targeting this or a later release will get these
          * new features:</p>
