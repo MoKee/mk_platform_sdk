@@ -241,7 +241,7 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
     private void loadSystemSettings(SQLiteDatabase db) {
         // System
-        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.QS_QUICK_PULLDOWN,
+        loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                 R.integer.def_qs_quick_pulldown);
 
         loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL,

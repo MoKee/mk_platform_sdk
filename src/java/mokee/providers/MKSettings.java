@@ -819,20 +819,8 @@ public final class MKSettings {
                 new DiscreteValueValidator(new String[] {"56", "52", "48", "44", "40", "36", "32", "28", "24", "20", "0"});
 
         /**
-         * Quick Settings Quick Pulldown
-         * 0 = off, 1 = right, 2 = left
-         * @hide
-         */
-        public static final String QS_QUICK_PULLDOWN = "qs_quick_pulldown";
-
-        /** @hide */
-        public static final Validator QS_QUICK_PULLDOWN_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
-
-        /**
          * Whether to attach a queue to media notifications.
          * 0 = 0ff, 1 = on
-         * @hide
          */
         public static final String NOTIFICATION_PLAY_QUEUE = "notification_play_queue";
 
@@ -842,7 +830,6 @@ public final class MKSettings {
         /**
          * Whether the HighTouchSensitivity is activated or not.
          * 0 = off, 1 = on
-         * @hide
          */
         public static final String HIGH_TOUCH_SENSITIVITY_ENABLE =
                 "high_touch_sensitivity_enable";
@@ -852,8 +839,8 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
-         * Show the pending notification counts as overlays on the status bar
-         * @hide
+         * Whether to enable system profiles feature
+         * 0 = off, 1 = on
          */
         public static final String SYSTEM_PROFILES_ENABLED = "system_profiles_enabled";
 
@@ -869,7 +856,6 @@ public final class MKSettings {
          * 2: show the clock in the center
          * 3: show the clock in the left position (LTR)
          * default: 1
-         * @hide
          */
         public static final String STATUS_BAR_CLOCK = "status_bar_clock";
 
@@ -883,7 +869,6 @@ public final class MKSettings {
          * 1: Small display (Froyo stock)
          * 2: No display (Gingerbread/ICS stock)
          * default: 2
-         * @hide
          */
         public static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
 
@@ -899,7 +884,6 @@ public final class MKSettings {
          * 5: Display the battery an icon in landscape mode
          * 6: Display the battery as plain text
          * default: 0
-         * @hide
          */
         public static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
@@ -912,7 +896,6 @@ public final class MKSettings {
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
          * 2: Display the battery percentage next to the icon
-         * @hide
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT =
                 "status_bar_show_battery_percent";
@@ -923,7 +906,7 @@ public final class MKSettings {
 
         /**
          * Whether the phone ringtone should be played in an increasing manner
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String INCREASING_RING = "increasing_ring";
 
@@ -932,7 +915,6 @@ public final class MKSettings {
 
         /**
          * Start volume fraction for increasing ring volume
-         * @hide
          */
         public static final String INCREASING_RING_START_VOLUME = "increasing_ring_start_vol";
 
@@ -942,7 +924,6 @@ public final class MKSettings {
 
         /**
          * Ramp up time (seconds) for increasing ring
-         * @hide
          */
         public static final String INCREASING_RING_RAMP_UP_TIME = "increasing_ring_ramp_up_time";
 
@@ -953,7 +934,6 @@ public final class MKSettings {
         /**
          * Volume Adjust Sounds Enable, This is the noise made when using volume hard buttons
          * Defaults to 1 - sounds enabled
-         * @hide
          */
         public static final String VOLUME_ADJUST_SOUNDS_ENABLED = "volume_adjust_sounds_enabled";
 
@@ -963,7 +943,6 @@ public final class MKSettings {
 
         /**
          * Navigation controls to Use
-         * @hide
          */
         public static final String NAV_BUTTONS = "nav_buttons";
 
@@ -974,7 +953,6 @@ public final class MKSettings {
 
         /**
          * Volume key controls ringtone or media sound stream
-         * @hide
          */
         public static final String VOLUME_KEYS_CONTROL_RING_STREAM =
                 "volume_keys_control_ring_stream";
@@ -986,7 +964,6 @@ public final class MKSettings {
         /**
          * boolean value. toggles using arrow key locations on nav bar
          * as left and right dpad keys
-         * @hide
          */
         public static final String NAVIGATION_BAR_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
 
@@ -1006,7 +983,6 @@ public final class MKSettings {
          * 6 - Launch Camera
          * 7 - Action Sleep
          * 8 - Last app
-         * @hide
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION = "key_home_long_press_action";
 
@@ -1018,7 +994,6 @@ public final class MKSettings {
          * Action to perform when the home key is double-tapped.
          * (Default can be configured via config_doubleTapOnHomeBehavior)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_HOME_DOUBLE_TAP_ACTION = "key_home_double_tap_action";
 
@@ -1028,7 +1003,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the back key, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String BACK_WAKE_SCREEN = "back_wake_screen";
 
@@ -1038,7 +1013,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the menu key, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String MENU_WAKE_SCREEN = "menu_wake_screen";
 
@@ -1048,7 +1023,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the volume keys, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String VOLUME_WAKE_SCREEN = "volume_wake_screen";
 
@@ -1059,7 +1034,6 @@ public final class MKSettings {
         /**
          * Action to perform when the menu key is pressed. (Default is 1)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_MENU_ACTION = "key_menu_action";
 
@@ -1071,7 +1045,6 @@ public final class MKSettings {
          * Action to perform when the menu key is long-pressed.
          * (Default is 0 on devices with a search key, 3 on devices without)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_MENU_LONG_PRESS_ACTION = "key_menu_long_press_action";
 
@@ -1082,7 +1055,6 @@ public final class MKSettings {
         /**
          * Action to perform when the assistant (search) key is pressed. (Default is 3)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_ASSIST_ACTION = "key_assist_action";
 
@@ -1093,7 +1065,6 @@ public final class MKSettings {
         /**
          * Action to perform when the assistant (search) key is long-pressed. (Default is 4)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_ASSIST_LONG_PRESS_ACTION = "key_assist_long_press_action";
 
@@ -1104,7 +1075,6 @@ public final class MKSettings {
         /**
          * Action to perform when the app switch key is pressed. (Default is 2)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_APP_SWITCH_ACTION = "key_app_switch_action";
 
@@ -1115,7 +1085,6 @@ public final class MKSettings {
         /**
          * Action to perform when the app switch key is long-pressed. (Default is 0)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
-         * @hide
          */
         public static final String KEY_APP_SWITCH_LONG_PRESS_ACTION = "key_app_switch_long_press_action";
 
@@ -1125,7 +1094,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String HOME_WAKE_SCREEN = "home_wake_screen";
 
@@ -1135,7 +1104,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the assist key, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String ASSIST_WAKE_SCREEN = "assist_wake_screen";
 
@@ -1145,7 +1114,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the app switch key, the value is boolean.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String APP_SWITCH_WAKE_SCREEN = "app_switch_wake_screen";
 
@@ -1155,7 +1124,7 @@ public final class MKSettings {
 
         /**
          * Whether to wake the screen with the camera key half-press.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String CAMERA_WAKE_SCREEN = "camera_wake_screen";
 
@@ -1165,7 +1134,7 @@ public final class MKSettings {
 
         /**
          * Whether or not to send device back to sleep if Camera button is released ("Peek")
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String CAMERA_SLEEP_ON_RELEASE = "camera_sleep_on_release";
 
@@ -1175,7 +1144,7 @@ public final class MKSettings {
 
         /**
          * Whether to launch secure camera app when key is longpressed
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String CAMERA_LAUNCH = "camera_launch";
 
@@ -1188,7 +1157,6 @@ public final class MKSettings {
          * 0 - Disabled
          * 1 - Enabled (screen is rotated by 90 or 180 degrees: phone, hybrid)
          * 2 - Enabled (screen is rotated by 180 or 270 degrees: tablet)
-         * @hide
          */
         public static final String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
 
@@ -1199,7 +1167,6 @@ public final class MKSettings {
         /**
          * Whether the battery light should be enabled (if hardware supports it)
          * The value is boolean (1 or 0).
-         * @hide
          */
         public static final String BATTERY_LIGHT_ENABLED = "battery_light_enabled";
 
@@ -1210,7 +1177,6 @@ public final class MKSettings {
         /**
          * Whether the battery LED should repeatedly flash when the battery is low
          * on charge. The value is boolean (1 or 0).
-         * @hide
          */
         public static final String BATTERY_LIGHT_PULSE = "battery_light_pulse";
 
@@ -1220,7 +1186,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the battery LED while charging - low
-         * @hide
          */
         public static final String BATTERY_LIGHT_LOW_COLOR = "battery_light_low_color";
 
@@ -1230,7 +1195,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the battery LED while charging - medium
-         * @hide
          */
         public static final String BATTERY_LIGHT_MEDIUM_COLOR = "battery_light_medium_color";
 
@@ -1240,7 +1204,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the battery LED while charging - full
-         * @hide
          */
         public static final String BATTERY_LIGHT_FULL_COLOR = "battery_light_full_color";
 
@@ -1260,7 +1223,7 @@ public final class MKSettings {
 
         /**
          * Check the proximity sensor during wakeup
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String PROXIMITY_ON_WAKE = "proximity_on_wake";
 
@@ -1270,8 +1233,7 @@ public final class MKSettings {
 
         /**
          * Enable looking up of phone numbers of nearby places
-         *
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String ENABLE_FORWARD_LOOKUP = "enable_forward_lookup";
 
@@ -1281,8 +1243,7 @@ public final class MKSettings {
 
         /**
          * Enable looking up of phone numbers of people
-         *
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String ENABLE_PEOPLE_LOOKUP = "enable_people_lookup";
 
@@ -1292,8 +1253,7 @@ public final class MKSettings {
 
         /**
          * Enable looking up of information of phone numbers not in the contacts
-         *
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String ENABLE_REVERSE_LOOKUP = "enable_reverse_lookup";
 
@@ -1302,9 +1262,7 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
-         * The forward lookup provider
-         *
-         * @hide
+         * The forward lookup provider to be utilized by the Dialer
          */
         public static final String FORWARD_LOOKUP_PROVIDER = "forward_lookup_provider";
 
@@ -1312,9 +1270,7 @@ public final class MKSettings {
         public static final Validator FORWARD_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
-         * The people lookup provider
-         *
-         * @hide
+         * The people lookup provider to be utilized by the Dialer
          */
         public static final String PEOPLE_LOOKUP_PROVIDER = "people_lookup_provider";
 
@@ -1322,9 +1278,7 @@ public final class MKSettings {
         public static final Validator PEOPLE_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
-         * The reverse lookup provider
-         *
-         * @hide
+         * The reverse lookup provider to be utilized by the Dialer
          */
         public static final String REVERSE_LOOKUP_PROVIDER = "reverse_lookup_provider";
 
@@ -1332,9 +1286,7 @@ public final class MKSettings {
         public static final Validator REVERSE_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
-         * The OpenCNAM paid account ID
-         *
-         * @hide
+         * The OpenCNAM paid account ID to be utilized by the Dialer
          */
         public static final String DIALER_OPENCNAM_ACCOUNT_SID = "dialer_opencnam_account_sid";
 
@@ -1343,9 +1295,7 @@ public final class MKSettings {
                 sAlwaysTrueValidator;
 
         /**
-         * The OpenCNAM authentication token
-         *
-         * @hide
+         * The OpenCNAM authentication token to be utilized by the Dialer
          */
         public static final String DIALER_OPENCNAM_AUTH_TOKEN = "dialer_opencnam_auth_token";
 
@@ -1355,7 +1305,6 @@ public final class MKSettings {
 
         /**
          * Color temperature of the display during the day
-         * @hide
          */
         public static final String DISPLAY_TEMPERATURE_DAY = "display_temperature_day";
 
@@ -1365,7 +1314,6 @@ public final class MKSettings {
 
         /**
          * Color temperature of the display at night
-         * @hide
          */
         public static final String DISPLAY_TEMPERATURE_NIGHT = "display_temperature_night";
 
@@ -1375,7 +1323,6 @@ public final class MKSettings {
 
         /**
          * Display color temperature adjustment mode, one of DAY (default), NIGHT, or AUTO.
-         * @hide
          */
         public static final String DISPLAY_TEMPERATURE_MODE = "display_temperature_mode";
 
@@ -1385,7 +1332,7 @@ public final class MKSettings {
 
         /**
          * Automatic outdoor mode
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String DISPLAY_AUTO_OUTDOOR_MODE = "display_auto_outdoor_mode";
 
@@ -1395,7 +1342,7 @@ public final class MKSettings {
 
         /**
          * Use display power saving features such as CABC or CABL
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String DISPLAY_LOW_POWER = "display_low_power";
 
@@ -1405,7 +1352,7 @@ public final class MKSettings {
 
         /**
          * Use color enhancement feature of display
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String DISPLAY_COLOR_ENHANCE = "display_color_enhance";
 
@@ -1415,7 +1362,6 @@ public final class MKSettings {
 
         /**
          * Manual display color adjustments (RGB values as floats, separated by spaces)
-         * @hide
          */
         public static final String DISPLAY_COLOR_ADJUSTMENT = "display_color_adjustment";
 
@@ -1449,7 +1395,7 @@ public final class MKSettings {
 
         /**
          *  Enable statusbar double tap gesture on to put device to sleep
-         * @hide
+         *  0 = 0ff, 1 = on
          */
         public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
 
@@ -1459,7 +1405,7 @@ public final class MKSettings {
 
         /**
          * Boolean value on whether to show weather in the statusbar
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String STATUS_BAR_SHOW_WEATHER = "status_bar_show_weather";
 
@@ -1469,7 +1415,7 @@ public final class MKSettings {
 
         /**
          * Show search bar in recents
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String RECENTS_SHOW_SEARCH_BAR = "recents_show_search_bar";
 
@@ -1479,7 +1425,7 @@ public final class MKSettings {
 
         /**
          * Whether navigation bar is placed on the left side in landscape mode
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String NAVBAR_LEFT_IN_LANDSCAPE = "navigation_bar_left";
 
@@ -1489,7 +1435,6 @@ public final class MKSettings {
 
         /**
          * Locale for secondary overlay on dialer for t9 search input
-         * @hide
          */
         public static final String T9_SEARCH_INPUT_LOCALE = "t9_search_input_locale";
 
@@ -1505,7 +1450,7 @@ public final class MKSettings {
 
         /**
          * If all file types can be accepted over Bluetooth OBEX.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String BLUETOOTH_ACCEPT_ALL_FILES =
                 "bluetooth_accept_all_files";
@@ -1516,7 +1461,7 @@ public final class MKSettings {
 
         /**
          * Whether to scramble a pin unlock layout
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT =
                 "lockscreen_scramble_pin_layout";
@@ -1526,7 +1471,8 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
-         * @hide
+         * Whether to show the alarm clock icon in the status bar.
+         * 0 = 0ff, 1 = on
          */
         public static final String SHOW_ALARM_ICON = "show_alarm_icon";
 
@@ -1536,7 +1482,7 @@ public final class MKSettings {
 
         /**
          * Whether to show the IME switcher in the status bar
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String STATUS_BAR_IME_SWITCHER = "status_bar_ime_switcher";
 
@@ -1544,19 +1490,19 @@ public final class MKSettings {
         public static final Validator STATUS_BAR_IME_SWITCHER_VALIDATOR =
                 sBooleanValidator;
 
-        /** Whether to allow one finger quick settings expansion on the right side of the statusbar.
-         *
-         * @hide
+        /**
+         * Whether to allow one finger quick settings expansion on the right side of the statusbar.
+         * 0 = 0ff, 1 = on
          */
-        public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "status_bar_quick_qs_pulldown";
+        public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
         /** @hide */
         public static final Validator STATUS_BAR_QUICK_QS_PULLDOWN_VALIDATOR =
                 sBooleanValidator;
 
-        /** Whether to show the brightness slider in quick settings panel.
-         *
-         * @hide
+        /**
+         * Whether to show the brightness slider in quick settings panel.
+         * 0 = 0ff, 1 = on
          */
         public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
 
@@ -1566,8 +1512,7 @@ public final class MKSettings {
 
         /**
          * Whether to control brightness from status bar
-         *
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
@@ -1577,7 +1522,7 @@ public final class MKSettings {
 
         /**
          * Whether or not volume button music controls should be enabled to seek media tracks
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
 
@@ -1587,7 +1532,7 @@ public final class MKSettings {
 
         /**
          * Use EdgeGesture Service for system gestures in PhoneWindowManager
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String USE_EDGE_SERVICE_FOR_GESTURES = "edge_service_for_gestures";
 
@@ -1597,7 +1542,6 @@ public final class MKSettings {
 
         /**
          * Show the pending notification counts as overlays on the status bar
-         * @hide
          */
         public static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
 
@@ -1610,7 +1554,6 @@ public final class MKSettings {
          * 0: AMR_WB
          * 1: MPEG_4
          * Default: 0
-         * @hide
          */
         public static final String CALL_RECORDING_FORMAT = "call_recording_format";
 
@@ -1621,7 +1564,6 @@ public final class MKSettings {
         /**
          * Contains the notifications light maximum brightness to use.
          * Values range from 1 to 255
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL =
                 "notification_light_brightness_level";
@@ -1632,7 +1574,7 @@ public final class MKSettings {
 
         /**
          * Whether to use the all the LEDs for the notifications or just one.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE =
                 "notification_light_multiple_leds_enable";
@@ -1644,7 +1586,6 @@ public final class MKSettings {
         /**
          * Whether to allow notifications with the screen on or DayDreams.
          * The value is boolean (1 or 0). Default will always be false.
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_SCREEN_ON =
                 "notification_light_screen_on_enable";
@@ -1655,7 +1596,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the notification LED by default
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_COLOR =
                 "notification_light_pulse_default_color";
@@ -1666,7 +1606,6 @@ public final class MKSettings {
 
         /**
          * How long to flash the notification LED by default
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_ON =
                 "notification_light_pulse_default_led_on";
@@ -1677,7 +1616,6 @@ public final class MKSettings {
 
         /**
          * How long to wait between flashes for the notification LED by default
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_DEFAULT_LED_OFF =
                 "notification_light_pulse_default_led_off";
@@ -1688,7 +1626,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the missed call notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CALL_COLOR =
                 "notification_light_pulse_call_color";
@@ -1699,7 +1636,6 @@ public final class MKSettings {
 
         /**
          * How long to flash the missed call notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CALL_LED_ON =
                 "notification_light_pulse_call_led_on";
@@ -1710,7 +1646,6 @@ public final class MKSettings {
 
         /**
          * How long to wait between flashes for the missed call notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CALL_LED_OFF =
                 "notification_light_pulse_call_led_off";
@@ -1721,7 +1656,6 @@ public final class MKSettings {
 
         /**
          * What color to use for the voicemail notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_COLOR =
                 "notification_light_pulse_vmail_color";
@@ -1732,7 +1666,6 @@ public final class MKSettings {
 
         /**
          * How long to flash the voicemail notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_ON =
                 "notification_light_pulse_vmail_led_on";
@@ -1743,7 +1676,6 @@ public final class MKSettings {
 
         /**
          * How long to wait between flashes for the voicemail notification LED
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_VMAIL_LED_OFF =
                 "notification_light_pulse_vmail_led_off";
@@ -1754,7 +1686,7 @@ public final class MKSettings {
 
         /**
          * Whether to use the custom LED values for the notification pulse LED.
-         * @hide
+         * 0 = 0ff, 1 = on
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE =
                 "notification_light_pulse_custom_enable";
@@ -1765,7 +1697,6 @@ public final class MKSettings {
 
         /**
          * Which custom LED values to use for the notification pulse LED.
-         * @hide
          */
         public static final String NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES =
                 "notification_light_pulse_custom_values";
@@ -1843,7 +1774,6 @@ public final class MKSettings {
                 MKSettings.System.STATUS_BAR_CLOCK_SHOW_SECOND,
                 MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
                 MKSettings.System.NAVIGATION_BAR_HEIGHT,
-                MKSettings.System.QS_QUICK_PULLDOWN,
                 MKSettings.System.NAV_BUTTONS,
                 MKSettings.System.KEY_HOME_LONG_PRESS_ACTION,
                 MKSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
@@ -1961,7 +1891,6 @@ public final class MKSettings {
             VALIDATORS.put(STATUS_BAR_CLOCK_SHOW_SECOND, STATUS_BAR_CLOCK_SHOW_SECOND_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_NETWORK_TRAFFIC_STYLE, STATUS_BAR_NETWORK_TRAFFIC_STYLE_VALIDATOR);
             VALIDATORS.put(NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT_VALIDATOR);
-            VALIDATORS.put(QS_QUICK_PULLDOWN, QS_QUICK_PULLDOWN_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_PLAY_QUEUE, NOTIFICATION_PLAY_QUEUE_VALIDATOR);
             VALIDATORS.put(HIGH_TOUCH_SENSITIVITY_ENABLE,
                     HIGH_TOUCH_SENSITIVITY_ENABLE_VALIDATOR);
