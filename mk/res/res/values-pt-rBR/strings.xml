@@ -35,6 +35,10 @@
   <string name="permdesc_manage_alarms">Permite que um app ative ou desative seus alarmes programados.</string>
   <string name="permlab_read_alarms">acessar alarmes programados</string>
   <string name="permdesc_read_alarms">Permite que um app acesse seus alarmes programados.</string>
+  <string name="permlab_writeSettings">modificar as configurações do sistema MK</string>
+  <string name="permdesc_writeSettings">Permite que um aplicativo modifique as configurações do sistema MK.</string>
+  <string name="permlab_writeSecureSettings">modificar configurações do sistema de segurança</string>
+  <string name="permdesc_writeSecureSettings">Permite que um aplicativo modifique as configurações do sistema segurança de MK. Não para uso de aplicativos normais.</string>
   <string name="permlab_managePersistentStorage">gerenciar armazenamento persistente</string>
   <string name="permdesc_managePersistentStorage">Permite que um app acesse e altere propriedades que possam persistir à um reset de fábrica.</string>
   <string name="profileNameDefault">Padrão</string>
