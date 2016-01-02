@@ -265,6 +265,7 @@ LOCAL_JAVA_LIBRARIES := $(mkplat_docs_java_libraries)
 LOCAL_DROIDDOC_OPTIONS := \
         -offlinemode \
         -exclude org.mokee.platform.internal \
+        -hidePackage org.mokee.platform.internal \
         -hdf android.whichdoc offline \
         -hdf sdk.version $(mkplat_docs_docs_SDK_VERSION) \
         -hdf sdk.rel.id $(mkplat_docs_docs_SDK_REL_ID) \
