@@ -2615,6 +2615,14 @@ public final class MKSettings {
          * @hide
          */
         public static final String LOCKSCREEN_VISUALIZER_ENABLED = "lockscreen_visualizer";
+
+        /**
+         * Whether the lock screen is currently enabled/disabled by SystemUI (the QS tile likely).
+         * Boolean settings. 0 = off. 1 = on.
+         * @hide
+         */
+        public static final String LOCKSCREEN_INTERNALLY_ENABLED = "lockscreen_internally_enabled";
+
         // endregion
 
         /**
