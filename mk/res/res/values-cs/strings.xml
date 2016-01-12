@@ -17,6 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Systém MoKee</string>
+  <string name="permlab_modifyNetworkSettings">změnit systémové nastastavení sítě</string>
+  <string name="permdesc_modifyNetworkSettings">Povolit aplikaci měnit režim v letadle a nastavení mobilní datové sítě.</string>
+  <string name="permlab_modifySoundSettings">změnit systémové nastavení zvuku</string>
+  <string name="permlab_readMSPhoneState">zobrazovat stav telefonu a datového připojení s podporou více SIM</string>
+  <string name="permlab_modifyMSPhoneState">upravovat stav telefonu a datového připojení s podporou více SIM</string>
+  <string name="permlab_modifyProfiles">úprava systémových profilů</string>
+  <string name="permdesc_modifyProfiles">Umožňuje aplikaci upravit systémové profily.</string>
+  <string name="permlab_useHardwareFramework">použít hardware framework</string>
+  <string name="permlab_write_alarms">přímo měnit budíky</string>
+  <string name="permlab_manage_alarms">zobrazit naplánované budíky</string>
+  <string name="permlab_read_alarms">přístup k naplánovaným budíkům</string>
+  <string name="permlab_writeSettings">změnit nastavení systému MK</string>
+  <string name="permlab_writeSecureSettings">změnit nastavení zabezpečení systému MK</string>
+  <string name="permlab_managePersistentStorage">spravovat permanetní úložiště</string>
   <string name="profileNameDefault">Výchozí</string>
   <string name="profileNameWork">Práce</string>
   <string name="profileNameHome">Doma</string>
@@ -25,6 +39,10 @@
   <string name="profileNameAutomobile">Automobil</string>
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Kalendář</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Ostatní</string>
+  <string name="permlab_readPhoneLocation">zjišťovat polohu zařízení</string>
+  <string name="permlab_writePhoneLocation">měnit polohu zařízení</string>
 </resources>
