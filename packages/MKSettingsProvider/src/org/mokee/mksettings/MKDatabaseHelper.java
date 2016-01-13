@@ -255,6 +255,15 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
         loadIntegerSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.ENABLE_PEOPLE_LOOKUP,
                 R.integer.def_people_lookup);
+
+
+        loadBooleanSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE,
+                R.bool.def_notification_pulse_custom_enable);
+
+        if (mContext.getResources().getBoolean(R.bool.def_notification_pulse_custom_enable)) {
+            loadStringSetting(db, MKTableNames.TABLE_SYSTEM, MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
+                    R.string.def_notification_pulse_custom_value);
+        }
     }
 
     private void loadGlobalSettings(SQLiteDatabase db) {
