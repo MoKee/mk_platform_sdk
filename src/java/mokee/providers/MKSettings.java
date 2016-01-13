@@ -768,6 +768,16 @@ public final class MKSettings {
         // region System Settings
 
         /**
+         * Force stop restricted app when leaving
+         * @hide
+         */
+        public static final String AEGIS_WARDEN_FORCE_STOP = "aegis_warden_force_stop";
+
+        /** @hide */
+        public static final Validator AEGIS_WARDEN_FORCE_STOP_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether to show the headset icon in the status bar
          * @hide
          */
@@ -1769,6 +1779,7 @@ public final class MKSettings {
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
+                MKSettings.System.AEGIS_WARDEN_FORCE_STOP,
                 MKSettings.System.SHOW_HEADSET_ICON,
                 MKSettings.System.SHOW_SU_ICON,
                 MKSettings.System.STATUS_BAR_CLOCK_SHOW_SECOND,
@@ -1886,6 +1897,7 @@ public final class MKSettings {
         public static final Map<String, Validator> VALIDATORS =
                 new ArrayMap<String, Validator>();
         static {
+            VALIDATORS.put(AEGIS_WARDEN_FORCE_STOP, AEGIS_WARDEN_FORCE_STOP_VALIDATOR);
             VALIDATORS.put(SHOW_HEADSET_ICON, SHOW_HEADSET_ICON_VALIDATOR);
             VALIDATORS.put(SHOW_SU_ICON, SHOW_SU_ICON_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK_SHOW_SECOND, STATUS_BAR_CLOCK_SHOW_SECOND_VALIDATOR);
