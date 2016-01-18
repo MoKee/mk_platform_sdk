@@ -46,6 +46,7 @@ public class Build {
         sdkMap.put(MK_VERSION_CODES.BOYSENBERRY, "Boysenberry");
         sdkMap.put(MK_VERSION_CODES.CANTALOUPE, "Cantaloupe");
         sdkMap.put(MK_VERSION_CODES.DRAGON_FRUIT, "Dragon Fruit");
+        sdkMap.put(MK_VERSION_CODES.ELDERBERRY, "Elderberry");
     }
 
     /** Various version strings. */
