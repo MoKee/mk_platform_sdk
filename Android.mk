@@ -193,7 +193,7 @@ mkplat_docs_java_libraries := \
 mkplat_docs_SDK_VERSION := 1.0
 
 # release version
-mkplat_docs_SDK_REL_ID := 4
+mkplat_docs_SDK_REL_ID := 5
 
 mkplat_docs_LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 
@@ -300,7 +300,8 @@ LOCAL_DROIDDOC_OPTIONS := \
         -since $(MK_SRC_API_DIR)/1.txt 1 \
         -since $(MK_SRC_API_DIR)/2.txt 2 \
         -since $(MK_SRC_API_DIR)/3.txt 3 \
-        -since $(MK_SRC_API_DIR)/4.txt 4
+        -since $(MK_SRC_API_DIR)/4.txt 4 \
+        -since $(MK_SRC_API_DIR)/5.txt 5
 
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_DROIDDOC)
