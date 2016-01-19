@@ -36,7 +36,7 @@ public class Build {
      * {@link MK_VERSION_CODES}
      * @hide
      */
-    public static final int PARCELABLE_VERSION = MK_VERSION_CODES.DRAGON_FRUIT;
+    public static final int PARCELABLE_VERSION = MK_VERSION_CODES.ELDERBERRY;
 
     private static final SparseArray<String> sdkMap;
     static
