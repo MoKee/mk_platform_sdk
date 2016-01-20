@@ -47,7 +47,7 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
     private static final boolean LOCAL_LOGV = false;
 
     private static final String DATABASE_NAME = "mksettings.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     static class MKTableNames {
         static final String TABLE_SYSTEM = "system";
@@ -169,6 +169,22 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             }
         }
 
+        if (upgradeVersion < 3) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT INTO secure(name,value)"
+                        + " VALUES(?,?);");
+                loadStringSetting(stmt, MKSettings.Secure.PROTECTED_COMPONENT_MANAGERS,
+                        R.string.def_protected_component_managers);
+                db.setTransactionSuccessful();
+            } finally {
+                if (stmt != null) stmt.close();
+                db.endTransaction();
+            }
+            upgradeVersion = 3;
+        }
+
         // *** Remember to update DATABASE_VERSION above!
 
         if (upgradeVersion < newVersion) {
@@ -237,6 +253,10 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
 
         loadBooleanSetting(db, MKTableNames.TABLE_SECURE,
                 MKSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED, R.bool.def_lockscreen_visualizer);
+
+        loadStringSetting(db, MKTableNames.TABLE_SECURE,
+                MKSettings.Secure.PROTECTED_COMPONENT_MANAGERS,
+                R.string.def_protected_component_managers);
     }
 
     private void loadSystemSettings(SQLiteDatabase db) {
@@ -381,5 +401,15 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
         contentValues.put(Settings.NameValueTable.VALUE, value);
 
         db.insertWithOnConflict(tableName, null, contentValues, SQLiteDatabase.CONFLICT_IGNORE);
+    }
+
+    private void loadSetting(SQLiteStatement stmt, String key, Object value) {
+        stmt.bindString(1, key);
+        stmt.bindString(2, value.toString());
+        stmt.execute();
+    }
+
+    private void loadStringSetting(SQLiteStatement stmt, String key, int resid) {
+        loadSetting(stmt, key, mContext.getResources().getString(resid));
     }
 }
