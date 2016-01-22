@@ -32,6 +32,7 @@ import mokee.hardware.IThermalListenerCallback;
 import mokee.hardware.ThermalListenerCallback;
 
 import java.io.File;
+import java.util.Arrays;
 
 import org.mokee.hardware.AdaptiveBacklight;
 import org.mokee.hardware.AutoContrast;
@@ -592,6 +593,15 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         public boolean writePersistentBytes(String key, byte[] value) {
             mContext.enforceCallingOrSelfPermission(
                     mokee.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
+            if (key == null || key.length() == 0 || key.length() > 64) {
+                Log.e(TAG, "Invalid key: " + key);
+                return false;
+            }
+            // A null value is delete
+            if (value != null && (value.length > 4096 || value.length == 0)) {
+                Log.e(TAG, "Invalid value: " + (value != null ? Arrays.toString(value) : null));
+                return false;
+            }
             if (!isSupported(MKHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
                 Log.e(TAG, "Persistent storage is not supported");
                 return false;
@@ -603,6 +613,10 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         public byte[] readPersistentBytes(String key) {
             mContext.enforceCallingOrSelfPermission(
                     mokee.platform.Manifest.permission.MANAGE_PERSISTENT_STORAGE, null);
+            if (key == null || key.length() == 0 || key.length() > 64) {
+                Log.e(TAG, "Invalid key: " + key);
+                return null;
+            }
             if (!isSupported(MKHardwareManager.FEATURE_PERSISTENT_STORAGE)) {
                 Log.e(TAG, "Persistent storage is not supported");
                 return null;
