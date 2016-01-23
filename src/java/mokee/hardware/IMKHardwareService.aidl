@@ -43,7 +43,6 @@ interface IMKHardwareService {
     String getSerialNumber();
 
     boolean requireAdaptiveBacklightForSunlightEnhancement();
-	boolean isSunlightEnhancementSelfManaged();
 
     DisplayMode[] getDisplayModes();
     DisplayMode getCurrentDisplayMode();
@@ -56,4 +55,5 @@ interface IMKHardwareService {
     int getThermalState();
     boolean registerThermalListener(IThermalListenerCallback callback);
     boolean unRegisterThermalListener(IThermalListenerCallback callback);
+    boolean isSunlightEnhancementSelfManaged();
 }
