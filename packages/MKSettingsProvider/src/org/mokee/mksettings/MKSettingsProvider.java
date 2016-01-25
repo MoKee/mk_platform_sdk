@@ -56,12 +56,12 @@ import java.util.Set;
  * The MKSettingsProvider serves as a {@link ContentProvider} for MK specific settings
  */
 public class MKSettingsProvider extends ContentProvider {
-    static final String TAG = "MKSettingsProvider";
+    public static final String TAG = "MKSettingsProvider";
     private static final boolean LOCAL_LOGV = false;
 
     private static final boolean USER_CHECK_THROWS = true;
 
-    static final String PREF_HAS_MIGRATED_MK_SETTINGS = "has_migrated_mkm_settings";
+    public static final String PREF_HAS_MIGRATED_MK_SETTINGS = "has_migrated_mkm_settings";
 
     private static final Bundle NULL_SETTING = Bundle.forPair("value", null);
 
