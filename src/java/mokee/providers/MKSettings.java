@@ -874,6 +874,22 @@ public final class MKSettings {
                 new InclusiveIntegerRangeValidator(0, 3);
 
         /**
+         * Whether the notification light will be allowed when in zen mode during downtime
+         */
+        public static final String ZEN_ALLOW_LIGHTS = "allow_lights";
+
+        /** @hide */
+        public static final Validator ZEN_ALLOW_LIGHTS_VALIDATOR = sBooleanValidator;
+
+        /**
+         * Whether the notification light will be allowed when in zen priority mode during downtime
+         */
+        public static final String ZEN_PRIORITY_ALLOW_LIGHTS = "zen_priority_allow_lights";
+
+        /** @hide */
+        public static final Validator ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR = sBooleanValidator;
+
+        /**
          * Display style of AM/PM next to clock in status bar
          * 0: Normal display (Eclair stock)
          * 1: Small display (Froyo stock)
@@ -1894,6 +1910,7 @@ public final class MKSettings {
                 MKSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
                 MKSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
                 MKSettings.System.HEADSET_CONNECT_PLAYER,
+                MKSettings.System.ZEN_ALLOW_LIGHTS,
         };
 
         /**
@@ -2045,6 +2062,8 @@ public final class MKSettings {
             VALIDATORS.put(NOTIFICATION_LIGHT_COLOR_AUTO,
                     NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR);
             VALIDATORS.put(HEADSET_CONNECT_PLAYER, HEADSET_CONNECT_PLAYER_VALIDATOR);
+            VALIDATORS.put(ZEN_ALLOW_LIGHTS, ZEN_ALLOW_LIGHTS_VALIDATOR);
+            VALIDATORS.put(ZEN_PRIORITY_ALLOW_LIGHTS, ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR);
         };
         // endregion
     }
