@@ -56,4 +56,6 @@ interface IMKHardwareService {
     boolean registerThermalListener(IThermalListenerCallback callback);
     boolean unRegisterThermalListener(IThermalListenerCallback callback);
     boolean isSunlightEnhancementSelfManaged();
+
+    String getUniqueDeviceId();
 }
