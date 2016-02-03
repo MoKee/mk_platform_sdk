@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="mokee_system_label">Система MoKee</string>
+  <string name="permlab_modifySoundSettings">змінити налаштування системних звуків</string>
   <string name="profileNameDefault">Стандартний</string>
   <string name="profileNameWork">Робота</string>
   <string name="profileNameHome">Дім</string>

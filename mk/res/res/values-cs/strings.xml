@@ -20,17 +20,27 @@
   <string name="permlab_modifyNetworkSettings">změnit systémové nastastavení sítě</string>
   <string name="permdesc_modifyNetworkSettings">Povolit aplikaci měnit režim v letadle a nastavení mobilní datové sítě.</string>
   <string name="permlab_modifySoundSettings">změnit systémové nastavení zvuku</string>
+  <string name="permdesc_modifySoundSettings">Umožňuje aplikaci provádět změny v nastavení zvuku režimu vyrušení.</string>
   <string name="permlab_readMSPhoneState">zobrazovat stav telefonu a datového připojení s podporou více SIM</string>
+  <string name="permdesc_readMSPhoneState">Umožňuje aplikaci zobrazit stav telefonu a datového připojení s podporou více SIM.</string>
   <string name="permlab_modifyMSPhoneState">upravovat stav telefonu a datového připojení s podporou více SIM</string>
+  <string name="permdesc_modifyMSPhoneState">Umožňuje aplikaci upravit stav telefonu a datového připojení s podporou více SIM.</string>
   <string name="permlab_modifyProfiles">úprava systémových profilů</string>
   <string name="permdesc_modifyProfiles">Umožňuje aplikaci upravit systémové profily.</string>
   <string name="permlab_useHardwareFramework">použít hardware framework</string>
+  <string name="permdesc_useHardwareFramework">Umožní aplikaci přistupovat přímo k hardware zařízení.</string>
   <string name="permlab_write_alarms">přímo měnit budíky</string>
+  <string name="permdesc_write_alarms">Umožňuje aplikaci přidat, upravit nebo odstranit všechny z budíků.</string>
   <string name="permlab_manage_alarms">zobrazit naplánované budíky</string>
+  <string name="permdesc_manage_alarms">Umožňuje aplikaci zapnout nebo vypnout naplánované budíky.</string>
   <string name="permlab_read_alarms">přístup k naplánovaným budíkům</string>
+  <string name="permdesc_read_alarms">Umožňuje aplikaci čtení Vašich naplánovaných budíků.</string>
   <string name="permlab_writeSettings">změnit nastavení systému MK</string>
+  <string name="permdesc_writeSettings">Umožňuje aplikaci měnit nastavení systému MK.</string>
   <string name="permlab_writeSecureSettings">změnit nastavení zabezpečení systému MK</string>
+  <string name="permdesc_writeSecureSettings">Umožňuje aplikaci změnit nastavení zabezpečení systému MK. Není určeno pro běžné aplikace.</string>
   <string name="permlab_managePersistentStorage">spravovat permanetní úložiště</string>
+  <string name="permdesc_managePersistentStorage">Umožňuje aplikaci číst a zapisovat vlastnosti, které mohou přetrvat i po obnově do továrního nastavení.</string>
   <string name="profileNameDefault">Výchozí</string>
   <string name="profileNameWork">Práce</string>
   <string name="profileNameHome">Doma</string>
@@ -44,5 +54,7 @@
   <string name="profileGroupSMS">SMS</string>
   <string name="wildcardProfile">Ostatní</string>
   <string name="permlab_readPhoneLocation">zjišťovat polohu zařízení</string>
+  <string name="permdesc_readPhoneLocation">Umožňuje aplikaci pro čtení informací o poloze telefonu.</string>
   <string name="permlab_writePhoneLocation">měnit polohu zařízení</string>
+  <string name="permdesc_writePhoneLocation">Umožňuje aplikaci změnit polohu.</string>
 </resources>
