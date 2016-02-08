@@ -1,4 +1,4 @@
-/**
+/**
  * Copyright (c) 2015, The MoKee Open Source Project
  * Copyright (c) 2015, The CyanogenMod Project
  *
@@ -2651,6 +2651,12 @@ public final class MKSettings {
          */
         public static final String LIVE_LOCK_SCREEN_ENABLED = "live_lock_screen_enabled";
 
+        /**
+         * Whether keyguard will direct show security view (0 = false, 1 = true)
+         * @hide
+         */
+        public static final String LOCK_PASS_TO_SECURITY_VIEW = "lock_screen_pass_to_security_view";
+
         // endregion
 
         /**
@@ -2689,6 +2695,7 @@ public final class MKSettings {
                 MKSettings.Secure.APP_PERFORMANCE_PROFILES_ENABLED,
                 MKSettings.Secure.QS_LOCATION_ADVANCED,
                 MKSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED,
+                MKSettings.Secure.LOCK_PASS_TO_SECURITY_VIEW
         };
 
         /**
