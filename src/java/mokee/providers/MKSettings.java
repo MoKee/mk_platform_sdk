@@ -1792,6 +1792,14 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
+         * Whether or not to launch default music player when headset is connected
+         */
+        public static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
+
+        /** @hide */
+        public static final Validator HEADSET_CONNECT_PLAYER_VALIDATOR = sBooleanValidator;
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -1885,6 +1893,7 @@ public final class MKSettings {
                 MKSettings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
                 MKSettings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
                 MKSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
+                MKSettings.System.HEADSET_CONNECT_PLAYER,
         };
 
         /**
@@ -2035,6 +2044,7 @@ public final class MKSettings {
                     NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_COLOR_AUTO,
                     NOTIFICATION_LIGHT_COLOR_AUTO_VALIDATOR);
+            VALIDATORS.put(HEADSET_CONNECT_PLAYER, HEADSET_CONNECT_PLAYER_VALIDATOR);
         };
         // endregion
     }
