@@ -3147,7 +3147,9 @@ public final class MKSettings {
         /**
          * Whether to sound when charger power is connected/disconnected
          * @hide
+         * @deprecated Use {@link android.provider.Settings.Global#CHARGING_SOUNDS_ENABLED} instead
          */
+        @Deprecated
         public static final String POWER_NOTIFICATIONS_ENABLED = "power_notifications_enabled";
 
         /**
@@ -3182,11 +3184,11 @@ public final class MKSettings {
          */
         public static final String[] LEGACY_GLOBAL_SETTINGS = new String[]{
                 MKSettings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
-                MKSettings.Global.POWER_NOTIFICATIONS_ENABLED,
                 MKSettings.Global.POWER_NOTIFICATIONS_VIBRATE,
                 MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE,
                 MKSettings.Global.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK,
-                MKSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION};
+                MKSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION
+        };
 
         /**
          * @hide
