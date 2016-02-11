@@ -45,6 +45,6 @@ $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/mksdk_
 # KeyguardExternalView uses a new interface which requires cleaning to avoid a runtime exception
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.mokee.platform_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.mokee.platform.sdk_intermediates)
-# Purge out the api stubs timestamp files (they're used as a dependency for checkapi-cm)
+# Purge out the api stubs timestamp files (they're used as a dependency for checkapi-mk)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/mk-api-stubs*)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/docs/mk-system-api-stubs*)
