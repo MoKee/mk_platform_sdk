@@ -12,6 +12,7 @@ package mokee.alarmclock {
     field public static final java.lang.String PROFILE = "profile";
     field public static final java.lang.String RINGTONE = "ringtone";
     field public static final java.lang.String VIBRATE = "vibrate";
+    field public static final java.lang.String WORKDAY = "workday";
   }
 
   public static abstract interface ClockContract.AlarmsColumns implements mokee.alarmclock.ClockContract.AlarmSettingColumns {
