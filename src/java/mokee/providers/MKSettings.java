@@ -1453,6 +1453,9 @@ public final class MKSettings {
                 new Validator() {
                     @Override
                     public boolean validate(String value) {
+                        if (TextUtils.isEmpty(value)) {
+                            return true;
+                        }
                         final Locale locale = new Locale(value);
                         return ArrayUtils.contains(Locale.getAvailableLocales(), locale);
                     }
