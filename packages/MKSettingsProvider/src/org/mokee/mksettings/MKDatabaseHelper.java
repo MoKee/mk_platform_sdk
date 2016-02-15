@@ -294,6 +294,9 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             loadBooleanSetting(stmt, MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                     R.bool.def_swap_volume_keys_on_rotation);
 
+            loadIntegerSetting(stmt, MKSettings.System.STATUS_BAR_BATTERY_STYLE,
+                    R.integer.def_battery_style);
+
             if (mContext.getResources().getBoolean(R.bool.def_notification_pulse_custom_enable)) {
                 loadStringSetting(stmt, MKSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_VALUES,
                         R.string.def_notification_pulse_custom_value);
