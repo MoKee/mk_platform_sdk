@@ -45,6 +45,7 @@ import org.mokee.hardware.KeyDisabler;
 import org.mokee.hardware.LongTermOrbits;
 import org.mokee.hardware.PersistentStorage;
 import org.mokee.hardware.SerialNumber;
+import org.mokee.hardware.SwapButtons;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.TapToWake;
 import org.mokee.hardware.ThermalMonitor;
@@ -119,6 +120,8 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
                 mSupportedFeatures |= MKHardwareManager.FEATURE_LONG_TERM_ORBITS;
             if (SerialNumber.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_SERIAL_NUMBER;
+            if (SwapButtons.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_SWAP_BUTTONS;
             if (SunlightEnhancement.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
             if (TapToWake.isSupported())
@@ -153,6 +156,8 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
                     return HighTouchSensitivity.isEnabled();
                 case MKHardwareManager.FEATURE_KEY_DISABLE:
                     return KeyDisabler.isActive();
+                case MKHardwareManager.FEATURE_SWAP_BUTTONS:
+                    return SwapButtons.isActive();
                 case MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT:
                     return SunlightEnhancement.isEnabled();
                 case MKHardwareManager.FEATURE_TAP_TO_WAKE:
@@ -179,6 +184,8 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
                     return HighTouchSensitivity.setEnabled(enable);
                 case MKHardwareManager.FEATURE_KEY_DISABLE:
                     return KeyDisabler.setActive(enable);
+                case MKHardwareManager.FEATURE_SWAP_BUTTONS:
+                    return SwapButtons.setActive(enable);
                 case MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT:
                     return SunlightEnhancement.setEnabled(enable);
                 case MKHardwareManager.FEATURE_TAP_TO_WAKE:

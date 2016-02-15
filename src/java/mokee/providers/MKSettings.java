@@ -2492,6 +2492,12 @@ public final class MKSettings {
         public static final String DEV_FORCE_SHOW_NAVBAR = "dev_force_show_navbar";
 
         /**
+         * Swap buttons
+         * @hide
+         */
+        public static final String SWAP_BUTTONS = "swap_buttons";
+
+        /**
          * The keyboard brightness to be used while the screen is on.
          * Valid value range is between 0 and {@link PowerManager#getMaximumKeyboardBrightness()}
          * @hide
