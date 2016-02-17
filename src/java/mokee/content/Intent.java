@@ -18,6 +18,8 @@
 
 package mokee.content;
 
+import android.Manifest;
+
 /**
  * MoKee Open Source specific intent definition class.
  */
@@ -66,4 +68,14 @@ public class Intent {
      */
     public static final String EXTRA_PROTECTED_COMPONENTS =
             "mokee.intent.extra.PACKAGE_PROTECTED_COMPONENTS";
+
+    /**
+     * Broadcast action: notify the system that the user has performed a gesture on the screen
+     * to launch the camera. Broadcast should be protected to receivers holding the
+     * {@link Manifest.permission#STATUS_BAR_SERVICE} permission.
+     * @hide
+     */
+    public static final String ACTION_SCREEN_CAMERA_GESTURE =
+            "mokee.intent.action.SCREEN_CAMERA_GESTURE";
+
 }

@@ -37,6 +37,8 @@
                 android:label="@string/permlab_writePhoneLocation"
                 android:description="@string/permdesc_writePhoneLocation" />
 
+    <protected-broadcast android:name="mokee.intent.action.SCREEN_CAMERA_GESTURE" />
+
     <!-- Must be required by an, to ensure that only the system can bind to it.
          @hide -->
     <permission android:name="mokee.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE"
