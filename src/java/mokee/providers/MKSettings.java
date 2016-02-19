@@ -1816,6 +1816,16 @@ public final class MKSettings {
         public static final Validator HEADSET_CONNECT_PLAYER_VALIDATOR = sBooleanValidator;
 
         /**
+         * Whether or not to vibrate when a touchscreen gesture is detected
+         */
+        public static final String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK =
+                "touchscreen_gesture_haptic_feedback";
+
+        /** @hide */
+        public static final Validator TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -1911,6 +1921,7 @@ public final class MKSettings {
                 MKSettings.System.NAVIGATION_BAR_MENU_ARROW_KEYS,
                 MKSettings.System.HEADSET_CONNECT_PLAYER,
                 MKSettings.System.ZEN_ALLOW_LIGHTS,
+                MKSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
         };
 
         /**
@@ -2064,6 +2075,8 @@ public final class MKSettings {
             VALIDATORS.put(HEADSET_CONNECT_PLAYER, HEADSET_CONNECT_PLAYER_VALIDATOR);
             VALIDATORS.put(ZEN_ALLOW_LIGHTS, ZEN_ALLOW_LIGHTS_VALIDATOR);
             VALIDATORS.put(ZEN_PRIORITY_ALLOW_LIGHTS, ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR);
+            VALIDATORS.put(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
+                    TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
         };
         // endregion
     }
