@@ -92,4 +92,18 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_PERFORMANCE_SERVICE = "mkperformance";
+
+    /**
+     * Controls changing and applying themes
+     *
+     * @hide
+     */
+    public static final String MK_THEME_SERVICE = "mkthemes";
+
+    /**
+     * Manages composed icons
+     *
+     * @hide
+     */
+    public static final String MK_ICON_CACHE_SERVICE = "mkiconcache";
 }
