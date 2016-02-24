@@ -38,6 +38,7 @@
                 android:description="@string/permdesc_writePhoneLocation" />
 
     <protected-broadcast android:name="mokee.intent.action.SCREEN_CAMERA_GESTURE" />
+    <protected-broadcast android:name="mokee.intent.action.INITIALIZE_MK_HARDWARE" />
 
     <!-- Must be required by an, to ensure that only the system can bind to it.
          @hide -->

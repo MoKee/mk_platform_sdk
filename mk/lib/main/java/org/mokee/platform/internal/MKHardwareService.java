@@ -16,7 +16,7 @@
 package org.mokee.platform.internal;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
@@ -345,6 +345,16 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         mContext = context;
         mMkHwImpl = getImpl(context);
         publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
+    }
+
+    @Override
+    public void onBootPhase(int phase) {
+        if (phase == PHASE_BOOT_COMPLETED) {
+            Intent intent = new Intent(mokee.content.Intent.ACTION_INITIALIZE_MK_HARDWARE);
+            intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+            mContext.sendBroadcast(intent,
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS);
+        }
     }
 
     @Override

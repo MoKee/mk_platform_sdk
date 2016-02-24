@@ -78,4 +78,15 @@ public class Intent {
     public static final String ACTION_SCREEN_CAMERA_GESTURE =
             "mokee.intent.action.SCREEN_CAMERA_GESTURE";
 
+    /**
+     * Broadcast action: perform any initialization required for MKHW services.
+     * Runs when the service receives the signal the device has booted, but
+     * should happen before {@link android.content.Intent#ACTION_BOOT_COMPLETED}.
+     *
+     * Requires {@link mokee.platform.Manifest.permission#HARDWARE_ABSTRACTION_ACCESS}.
+     * @hide
+     */
+    public static final String ACTION_INITIALIZE_MK_HARDWARE =
+            "mokee.intent.action.INITIALIZE_MK_HARDWARE";
+
 }
