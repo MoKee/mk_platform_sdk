@@ -578,6 +578,7 @@ package mokee.platform {
     field public static final java.lang.String WRITE_ALARMS = "mokee.permission.WRITE_ALARMS";
     field public static final java.lang.String WRITE_SECURE_SETTINGS = "mokee.permission.WRITE_SECURE_SETTINGS";
     field public static final java.lang.String WRITE_SETTINGS = "mokee.permission.WRITE_SETTINGS";
+    field public static final java.lang.String WRITE_THEMES = "mokee.permission.WRITE_THEMES";
   }
 
   public final class R {
