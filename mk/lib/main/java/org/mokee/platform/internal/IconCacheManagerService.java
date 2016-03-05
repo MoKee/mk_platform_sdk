@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.platform.internal;
+package org.mokee.platform.internal;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -24,10 +24,10 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 import com.android.server.SystemService;
-import cyanogenmod.app.CMContextConstants;
+import mokee.app.MKContextConstants;
 
-import org.cyanogenmod.internal.themes.IIconCacheManager;
-import org.cyanogenmod.internal.util.ThemeUtils;
+import org.mokee.internal.themes.IIconCacheManager;
+import org.mokee.internal.util.ThemeUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -49,8 +49,8 @@ public class IconCacheManagerService extends SystemService {
 
     @Override
     public void onStart() {
-        Log.d(TAG, "registerIconCache cmiconcache: " + this);
-        publishBinderService(CMContextConstants.CM_ICON_CACHE_SERVICE, mService);
+        Log.d(TAG, "registerIconCache mkiconcache: " + this);
+        publishBinderService(MKContextConstants.MK_ICON_CACHE_SERVICE, mService);
     }
 
     private void purgeIconCache() {

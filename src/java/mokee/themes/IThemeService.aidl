@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package cyanogenmod.themes;
+package mokee.themes;
 
-import cyanogenmod.themes.IThemeChangeListener;
-import cyanogenmod.themes.IThemeProcessingListener;
-import cyanogenmod.themes.ThemeChangeRequest;
+import mokee.themes.IThemeChangeListener;
+import mokee.themes.IThemeProcessingListener;
+import mokee.themes.ThemeChangeRequest;
 
 import java.util.Map;
 

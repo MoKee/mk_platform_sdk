@@ -94,39 +94,39 @@ public class Intent {
      * Could indicate that curently applied theme is malicious.
      * @hide
      */
-    public static final String ACTION_APP_FAILURE = "cyanogenmod.intent.action.APP_FAILURE";
+    public static final String ACTION_APP_FAILURE = "mokee.intent.action.APP_FAILURE";
 
     /**
      * Used to indicate that a theme package has been installed or un-installed.
      */
     public static final String CATEGORY_THEME_PACKAGE_INSTALLED_STATE_CHANGE =
-            "cyanogenmod.intent.category.THEME_PACKAGE_INSTALL_STATE_CHANGE";
+            "mokee.intent.category.THEME_PACKAGE_INSTALL_STATE_CHANGE";
 
     /**
      * Action sent from the provider when a theme has been fully installed.  Fully installed
      * means that the apk was installed by PackageManager and the theme resources were
-     * processed and cached by {@link org.cyanogenmod.platform.internal.ThemeManagerService}
-     * Requires the {@link  cyanogenmod.platform.Manifest.permission#READ_THEMES} permission to
+     * processed and cached by {@link org.mokee.platform.internal.ThemeManagerService}
+     * Requires the {@link  mokee.platform.Manifest.permission#READ_THEMES} permission to
      * receive this broadcast.
      */
     public static final String ACTION_THEME_INSTALLED =
-            "cyanogenmod.intent.action.THEME_INSTALLED";
+            "mokee.intent.action.THEME_INSTALLED";
 
     /**
      * Action sent from the provider when a theme has been updated.
-     * Requires the {@link cyanogenmod.platform.Manifest.permission#READ_THEMES} permission to
+     * Requires the {@link mokee.platform.Manifest.permission#READ_THEMES} permission to
      * receive this broadcast.
      */
     public static final String ACTION_THEME_UPDATED =
-            "cyanogenmod.intent.action.THEME_UPDATED";
+            "mokee.intent.action.THEME_UPDATED";
 
     /**
      * Action sent from the provider when a theme has been removed.
-     * Requires the {@link  cyanogenmod.platform.Manifest.permission#READ_THEMES} permission to
+     * Requires the {@link  mokee.platform.Manifest.permission#READ_THEMES} permission to
      * receive this broadcast.
      */
     public static final String ACTION_THEME_REMOVED =
-            "cyanogenmod.intent.action.THEME_REMOVED";
+            "mokee.intent.action.THEME_REMOVED";
 
     /**
      * Uri scheme used to broadcast the theme's package name when broadcasting

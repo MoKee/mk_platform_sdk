@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.internal.util;
+package org.mokee.internal.util;
 
 import android.app.WallpaperManager;
 import android.content.Context;
@@ -31,8 +31,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
-import cyanogenmod.providers.ThemesContract.PreviewColumns;
-import cyanogenmod.providers.ThemesContract.ThemesColumns;
+import mokee.providers.ThemesContract.PreviewColumns;
+import mokee.providers.ThemesContract.ThemesColumns;
 
 import libcore.io.IoUtils;
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2016 The CyanogenMod Project
+ * Copyright (C) 2014-2016 The FogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.platform.internal;
+package org.mokee.platform.internal;
 
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
@@ -54,18 +54,18 @@ import android.util.Log;
 
 import com.android.server.SystemService;
 
-import cyanogenmod.app.CMContextConstants;
-import cyanogenmod.providers.CMSettings;
-import cyanogenmod.providers.ThemesContract.MixnMatchColumns;
-import cyanogenmod.providers.ThemesContract.ThemesColumns;
-import cyanogenmod.themes.IThemeChangeListener;
-import cyanogenmod.themes.IThemeProcessingListener;
-import cyanogenmod.themes.IThemeService;
-import cyanogenmod.themes.ThemeChangeRequest;
+import mokee.app.MKContextConstants;
+import mokee.providers.MKSettings;
+import mokee.providers.ThemesContract.MixnMatchColumns;
+import mokee.providers.ThemesContract.ThemesColumns;
+import mokee.themes.IThemeChangeListener;
+import mokee.themes.IThemeProcessingListener;
+import mokee.themes.IThemeService;
+import mokee.themes.ThemeChangeRequest;
 
-import org.cyanogenmod.internal.util.ImageUtils;
-import org.cyanogenmod.internal.util.ThemeUtils;
-import org.cyanogenmod.platform.internal.AppsFailureReceiver;
+import org.mokee.internal.util.ImageUtils;
+import org.mokee.internal.util.ThemeUtils;
+import org.mokee.platform.internal.AppsFailureReceiver;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -83,9 +83,9 @@ import java.util.zip.ZipFile;
 import libcore.io.IoUtils;
 
 import static android.content.res.ThemeConfig.SYSTEM_DEFAULT;
-import static cyanogenmod.platform.Manifest.permission.ACCESS_THEME_MANAGER;
-import static org.cyanogenmod.internal.util.ThemeUtils.SYSTEM_THEME_PATH;
-import static org.cyanogenmod.internal.util.ThemeUtils.THEME_BOOTANIMATION_PATH;
+import static mokee.platform.Manifest.permission.ACCESS_THEME_MANAGER;
+import static org.mokee.internal.util.ThemeUtils.SYSTEM_THEME_PATH;
+import static org.mokee.internal.util.ThemeUtils.THEME_BOOTANIMATION_PATH;
 
 public class ThemeManagerService extends SystemService {
 
@@ -94,7 +94,7 @@ public class ThemeManagerService extends SystemService {
     private static final boolean DEBUG = false;
 
     private static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
-    private static final String CM_SETUPWIZARD_PACKAGE = "com.cyanogenmod.setupwizard";
+    private static final String MK_SETUPWIZARD_PACKAGE = "com.mokee.setupwizard";
     private static final String MANAGED_PROVISIONING_PACKAGE = "com.android.managedprovisioning";
 
     // Defines a min and max compatible api level for themes on this system.
@@ -236,7 +236,7 @@ public class ThemeManagerService extends SystemService {
 
     @Override
     public void onStart() {
-        publishBinderService(CMContextConstants.CM_THEME_SERVICE, mService);
+        publishBinderService(MKContextConstants.MK_THEME_SERVICE, mService);
         // listen for wallpaper changes
         IntentFilter filter = new IntentFilter(Intent.ACTION_WALLPAPER_CHANGED);
         mContext.registerReceiver(mWallpaperChangeReceiver, filter);
@@ -265,7 +265,7 @@ public class ThemeManagerService extends SystemService {
 
     private void registerAppsFailureReceiver() {
         IntentFilter filter = new IntentFilter();
-        filter.addAction(cyanogenmod.content.Intent.ACTION_APP_FAILURE);
+        filter.addAction(mokee.content.Intent.ACTION_APP_FAILURE);
         filter.addAction(ThemeUtils.ACTION_THEME_CHANGED);
         mContext.registerReceiver(new AppsFailureReceiver(), filter);
     }
@@ -359,9 +359,9 @@ public class ThemeManagerService extends SystemService {
         final ContentResolver resolver = mContext.getContentResolver();
         int recordedApiLevel = android.os.Build.VERSION.SDK_INT;
         try {
-            recordedApiLevel = CMSettings.Secure.getInt(resolver,
-                    CMSettings.Secure.THEME_PREV_BOOT_API_LEVEL);
-        } catch (CMSettings.CMSettingNotFoundException e) {
+            recordedApiLevel = MKSettings.Secure.getInt(resolver,
+                    MKSettings.Secure.THEME_PREV_BOOT_API_LEVEL);
+        } catch (MKSettings.MKSettingNotFoundException e) {
             recordedApiLevel = -1;
             Log.d(TAG, "Previous api level not found. First time booting?");
         }
@@ -373,8 +373,8 @@ public class ThemeManagerService extends SystemService {
 
     private void updateThemeApi() {
         final ContentResolver resolver = mContext.getContentResolver();
-        boolean success = CMSettings.Secure.putInt(resolver,
-                CMSettings.Secure.THEME_PREV_BOOT_API_LEVEL, android.os.Build.VERSION.SDK_INT);
+        boolean success = MKSettings.Secure.putInt(resolver,
+                MKSettings.Secure.THEME_PREV_BOOT_API_LEVEL, android.os.Build.VERSION.SDK_INT);
         if (!success) {
             Log.e(TAG, "Unable to store latest API level to secure settings");
         }
@@ -467,11 +467,11 @@ public class ThemeManagerService extends SystemService {
 
     private void doApplyDefaultTheme() {
         final ContentResolver resolver = mContext.getContentResolver();
-        final String defaultThemePkg = CMSettings.Secure.getString(resolver,
-                CMSettings.Secure.DEFAULT_THEME_PACKAGE);
+        final String defaultThemePkg = MKSettings.Secure.getString(resolver,
+                MKSettings.Secure.DEFAULT_THEME_PACKAGE);
         if (!TextUtils.isEmpty(defaultThemePkg)) {
-            String defaultThemeComponents = CMSettings.Secure.getString(resolver,
-                    CMSettings.Secure.DEFAULT_THEME_COMPONENTS);
+            String defaultThemeComponents = MKSettings.Secure.getString(resolver,
+                    MKSettings.Secure.DEFAULT_THEME_COMPONENTS);
             List<String> components;
             if (TextUtils.isEmpty(defaultThemeComponents)) {
                 components = ThemeUtils.getAllComponents();
@@ -873,7 +873,7 @@ public class ThemeManagerService extends SystemService {
     private boolean isSetupActivity(ResolveInfo info) {
         return GOOGLE_SETUPWIZARD_PACKAGE.equals(info.activityInfo.packageName) ||
                 MANAGED_PROVISIONING_PACKAGE.equals(info.activityInfo.packageName) ||
-                CM_SETUPWIZARD_PACKAGE.equals(info.activityInfo.packageName);
+                MK_SETUPWIZARD_PACKAGE.equals(info.activityInfo.packageName);
     }
 
     private boolean handlesThemeChanges(String pkgName, List<ResolveInfo> infos) {
@@ -1084,14 +1084,14 @@ public class ThemeManagerService extends SystemService {
      * Get the default theme package name
      * Historically this was done using {@link ThemeUtils#getDefaultThemePackageName(Context)} but
      * the setting that is queried in that method uses the AOSP settings provider but the setting
-     * is now in CMSettings.  Since {@link ThemeUtils} is in the core framework we cannot access
-     * CMSettings.
+     * is now in MKSettings.  Since {@link ThemeUtils} is in the core framework we cannot access
+     * MKSettings.
      * @param context
      * @return Default theme package name
      */
     private static String getDefaultThemePackageName(Context context) {
-        final String defaultThemePkg = CMSettings.Secure.getString(context.getContentResolver(),
-                CMSettings.Secure.DEFAULT_THEME_PACKAGE);
+        final String defaultThemePkg = MKSettings.Secure.getString(context.getContentResolver(),
+                MKSettings.Secure.DEFAULT_THEME_PACKAGE);
         if (!TextUtils.isEmpty(defaultThemePkg)) {
             PackageManager pm = context.getPackageManager();
             try {

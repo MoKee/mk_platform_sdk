@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.internal.themes;
+package mokee.themes;
 
-import android.graphics.Bitmap;
-
-/** @hide */
-interface IIconCacheManager {
-    boolean cacheComposedIcon(in Bitmap icon, String path);
-}
+parcelable ThemeChangeRequest;

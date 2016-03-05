@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.internal.util;
+package org.mokee.internal.util;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -39,8 +39,8 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 
 import android.view.WindowManager;
-import cyanogenmod.providers.CMSettings;
-import cyanogenmod.providers.ThemesContract.ThemesColumns;
+import mokee.providers.MKSettings;
+import mokee.providers.ThemesContract.ThemesColumns;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -91,7 +91,7 @@ public class ThemeUtils {
     }
 
     // Constants for theme change broadcast
-    public static final String ACTION_THEME_CHANGED = "org.cyanogenmod.intent.action.THEME_CHANGED";
+    public static final String ACTION_THEME_CHANGED = "org.mokee.intent.action.THEME_CHANGED";
     public static final String EXTRA_COMPONENTS = "components";
     public static final String EXTRA_REQUEST_TYPE = "request_type";
     public static final String EXTRA_UPDATE_TIME = "update_time";
@@ -142,8 +142,8 @@ public class ThemeUtils {
     public static final String FONT_XML  = "fonts.xml";
 
     public static String getDefaultThemePackageName(Context context) {
-        final String defaultThemePkg = CMSettings.Secure.getString(context.getContentResolver(),
-                CMSettings.Secure.DEFAULT_THEME_PACKAGE);
+        final String defaultThemePkg = MKSettings.Secure.getString(context.getContentResolver(),
+                MKSettings.Secure.DEFAULT_THEME_PACKAGE);
         if (!TextUtils.isEmpty(defaultThemePkg)) {
             PackageManager pm = context.getPackageManager();
             try {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.themes;
+package mokee.themes;
 
 import android.os.Handler;
 import android.os.IBinder;
@@ -24,8 +24,8 @@ import android.os.ServiceManager;
 import android.util.ArraySet;
 import android.util.Log;
 
-import cyanogenmod.app.CMContextConstants;
-import cyanogenmod.themes.ThemeChangeRequest.RequestType;
+import mokee.app.MKContextConstants;
+import mokee.themes.ThemeChangeRequest.RequestType;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -64,7 +64,7 @@ public class ThemeManager {
         if (sService != null) {
             return sService;
         }
-        IBinder b = ServiceManager.getService(CMContextConstants.CM_THEME_SERVICE);
+        IBinder b = ServiceManager.getService(MKContextConstants.MK_THEME_SERVICE);
         if (b != null) {
             sService = IThemeService.Stub.asInterface(b);
             return sService;

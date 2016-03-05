@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package cyanogenmod.themes;
+package mokee.themes;
 
 /** {@hide} */
-oneway interface IThemeChangeListener {
-    void onProgress(int progress);
-    void onFinish(boolean isSuccess);
+oneway interface IThemeProcessingListener {
+    void onFinishedProcessing(String pkgName);
 }
