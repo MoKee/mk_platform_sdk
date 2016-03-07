@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
   <string name="permlab_publishCustomTile">criar um bloco personalizado no painel de configurações rápidas</string>
   <string name="permdesc_publishCustomTile">Permite que um aplicativo publique um bloco nas configurações rápidas.</string>
@@ -25,50 +26,72 @@
   <string name="permdesc_modifySoundSettings">Permite que um app altere um conjunto restrito de configurações de som do sistema.</string>
   <string name="permlab_bindCustomTileListenerService">vincular a um bloco personalizado um serviço de escuta</string>
   <string name="permdesc_bindCustomTileListenerService">Permite que o aplicativo ligar a interface de nível superior de um serviço de escuta de bloco personalizado.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">ver o estado do telefone e a conexão de dados com suporte a múltiplos SIMs</string>
   <string name="permdesc_readMSPhoneState">Permite que um app veja o estado do telefone e a conexão de dados com suporte a múltiplos SIMs.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">modificar o estado do telefone e a conexão de dados com suporte a múltiplos SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Permite que um app modifique o estado do telefone e a conexão de dados com suporte a múltiplos SIMs.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">modificar perfis do sistema</string>
   <string name="permdesc_modifyProfiles">Permite que um app modifique os perfis do sistema.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">usar framework de hardware</string>
   <string name="permdesc_useHardwareFramework">Permite que um app acesse o framework de hardware da MK.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">alterar diretamente alarmes</string>
   <string name="permdesc_write_alarms">Permite que um app adicione, altere ou exclua todos os seus alarmes.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">ativar alarmes programados</string>
   <string name="permdesc_manage_alarms">Permite que um app ative ou desative seus alarmes programados.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">acessar alarmes programados</string>
   <string name="permdesc_read_alarms">Permite que um app acesse seus alarmes programados.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">modificar as configurações do sistema MK</string>
   <string name="permdesc_writeSettings">Permite que um aplicativo modifique as configurações do sistema MK.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">modificar configurações do sistema de segurança</string>
   <string name="permdesc_writeSecureSettings">Permite que um aplicativo modifique as configurações do sistema segurança de MK. Não para uso de aplicativos normais.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">gerenciar armazenamento persistente</string>
   <string name="permdesc_managePersistentStorage">Permite que um app acesse e altere propriedades que possam persistir à um reset de fábrica.</string>
+  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Bloco personalizado de escuta</string>
+  <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">adicionar e remover aplicativos para aplicativos protegidos</string>
   <string name="permdesc_protectedApp">Permite a um aplicativo marcar outros aplicativos como protegidas e bloqueá-los.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Padrão</string>
   <string name="profileNameWork">Trabalho</string>
   <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silêncio</string>
   <string name="profileNameNight">Noite</string>
   <string name="profileNameAutomobile">Automóvel</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefone</string>
   <string name="profileGroupCalendar">Calendário</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Outro</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">acessar localização do telefone</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Permite que um app acesse informações sobre a localização do telefone.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">gravar localização do telefone</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Permite que um app altere a localização do telefone.</string>
+  <!-- Performance profiles -->
   <string name="perf_profile_pwrsv">Economia de energia</string>
   <string name="perf_profile_bal">Equilibrado</string>
   <string name="perf_profile_perf">Desempenho</string>
   <string name="perf_profile_bias_power">Eficiência</string>
   <string name="perf_profile_bias_perf">Rápida</string>
+  <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automática</string>
   <string name="live_display_auto_summary">Ajusta automaticamente a cor da temperatura da tela depois do pôr e nascer do sol</string>
   <string name="live_display_off">Desligado</string>
@@ -80,6 +103,20 @@
   <string name="live_display_outdoor">Externo (sol intenso)</string>
   <string name="live_display_outdoor_summary">Apenas usar configurações do modo externo</string>
   <string name="live_display_hint">LiveDisplay pode te ajudar a reduzir cansaço dos olhos e ajudar você a dormir durante a noite. Clique aqui para testar!</string>
+  <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">tela de bloqueio de terceiros</string>
+  <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Permitir a um aplicativo ser usado como uma tela de bloqueio insegura.</string>
+  <!-- Device specific settings -->
+  <!-- Touchscreen gestures -->
+  <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">Extras</string>
+  <!-- Theme installation error notification -->
+  <!-- Theme reset notification -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>
