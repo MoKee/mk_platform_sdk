@@ -16,41 +16,60 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee систем</string>
   <string name="permlab_modifyNetworkSettings">промена системских подешавања мреже</string>
   <string name="permdesc_modifyNetworkSettings">Дозвољава апликацији промену системских мрежних подешавања.</string>
   <string name="permlab_modifySoundSettings">подешавања системских тонова</string>
   <string name="permdesc_modifySoundSettings">Дозвољава апликацији промену системских звучних подешавања.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">преглед статуса телефона и мрежног повезивања са подршком за више SIM картица</string>
   <string name="permdesc_readMSPhoneState">Дозволити апликацији преглед статуса телефона и мрежног повезивања са подршком за више SIM картица.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">измена статуса телефона и мрежног повезивања са подршком за више SIM картица</string>
   <string name="permdesc_modifyMSPhoneState">Дозвољава апликацији измену статуса телефона и мрежног повезивања са подршком за више SIM картица.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">Измена системских профила</string>
   <string name="permdesc_modifyProfiles">Дозволити апликацији измену системских профила.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">користи хардверски оквир</string>
   <string name="permdesc_useHardwareFramework">Дозвољава апликацији приступ MK хардверском оквиру.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">непосредна измена аларма</string>
   <string name="permdesc_write_alarms">Дозвољава апликацији додавање, измену или брисање аларма.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">Укључ./искључ. постављених аларма</string>
   <string name="permdesc_manage_alarms">Дозвољава апликацији искључ./укључ. задатих аларма.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">приступ задатим алармима</string>
   <string name="permdesc_read_alarms">Дозвољава апликацији преглед задатих аларма.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Управљање фиксним складиштем</string>
   <string name="permdesc_managePersistentStorage">Дозвољава апликацији читање и уписивање вредности која могу преживети фабрички ресет.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Подразумевано</string>
   <string name="profileNameWork">Посао</string>
   <string name="profileNameHome">Кући</string>
   <string name="profileNameSilent">Тишина</string>
   <string name="profileNameNight">Ноћ</string>
   <string name="profileNameAutomobile">Аутомобил</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календар</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Е-пошта</string>
   <string name="profileGroupSMS">СМС</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Друго</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">читање локације телефона</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Дозволити апликацијама да користе локацију телефона.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">уписати локацију телефона</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Дозволити апликацијама измену локације телефона.</string>
 </resources>

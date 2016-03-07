@@ -16,45 +16,64 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
   <string name="permlab_modifyNetworkSettings">modificare le impostazioni di rete del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Consenti ad un app di apportare modifiche ad un ristretto insieme di impostazioni di rete del sistema.</string>
   <string name="permlab_modifySoundSettings">modificare le impostazioni audio del sistema</string>
   <string name="permdesc_modifySoundSettings">Consenti ad un app di apportare modifiche ad un ristretto insieme di impostazioni di rete del sistema.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">visualizzare lo stato del telefono e la connessione dati con supporto a SIM multiple</string>
   <string name="permdesc_readMSPhoneState">Consenti ad una applicazione di vedere lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">modificare lo stato del telefono e la connessione dati con supporto a SIM multiple</string>
   <string name="permdesc_modifyMSPhoneState">Consenti ad un app di modificare lo stato del telefono e la connessione dati con supporto a SIM multiple.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">modifica profili di sistema</string>
   <string name="permdesc_modifyProfiles">Consenti ad una applicazione di modificare i profili di sistema</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">utilizzare l\'hardware framework</string>
   <string name="permdesc_useHardwareFramework">Consenti ad un app di accedere al MK hardware framework.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">cambiare direttamente gli allarmi</string>
   <string name="permdesc_write_alarms">Consenti ad una applicazione di aggiungere, modificare o cancellare tutti i tuoi allarmi.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">attiva/Disattiva allarmi programmati</string>
   <string name="permdesc_manage_alarms">Consenti ad una applicazione di attivare o disattivare i tuoi allarmi programmati.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">accesso agli allarmi programmati</string>
   <string name="permdesc_read_alarms">Consenti ad una applicazione di leggere i tuoi allarmi programmati.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">modificare le impostazioni di sistema MK</string>
   <string name="permdesc_writeSettings">Consentire ad un app di modificare le impostazioni di sistema MK.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">modificare le impostazioni di sistema sicure MK</string>
   <string name="permdesc_writeSecureSettings">Consentire ad un app di modificare le impostazioni di sistema sicure MK. Non per l\'uso da parte di apps normali.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">gestire lo storage persistente</string>
   <string name="permdesc_managePersistentStorage">Consenti ad un app di leggere o scrivere le proprietà che possono persistere attraverso un reset di fabbrica.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Predefinito</string>
   <string name="profileNameWork">Lavoro</string>
   <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silenzioso</string>
   <string name="profileNameNight">Notte</string>
   <string name="profileNameAutomobile">Automobile</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefono</string>
   <string name="profileGroupCalendar">Calendario</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Altro</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">leggi la posizione del telefono</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Consenti ad un app di leggere informazioni riguardo la posizione del telefono.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">scrivi la posizione del telefono</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Consenti ad un app di cambiare la posizione del telefono.</string>
 </resources>

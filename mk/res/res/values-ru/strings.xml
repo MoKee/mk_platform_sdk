@@ -16,45 +16,64 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
   <string name="permlab_modifyNetworkSettings">Настройка сетевых параметров системы</string>
   <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в режиме \"Полета\" и настройках мобильной передачи данных.</string>
   <string name="permlab_modifySoundSettings">Настройка параметров звука системы</string>
   <string name="permdesc_modifySoundSettings">Позволяет приложению внести изменения в ограниченный набор параметров звуковой системы.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Просмотр режима работы и передачи данных телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">Изменение режима работы и передачи данных телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">изменить профиль системы</string>
   <string name="permdesc_modifyProfiles">Разрешает приложению изменять профили системы.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Использовать аппаратный framework</string>
   <string name="permdesc_useHardwareFramework">Разрешать приложениям использовать аппаратный MK framework.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">напрямую изменить сигнализацию</string>
   <string name="permdesc_write_alarms">Позволяет приложению добавить, изменить или удалить все ваши тревоги.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">тумблер запланированных сигнализаций</string>
   <string name="permdesc_manage_alarms">Позволяет приложению отключать запланированной сигнализации.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">доступ к расписанию сигнализации</string>
   <string name="permdesc_read_alarms">Позволяет приложению читать ваши регулярные сигнализации.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">изменить параметры системы МК</string>
   <string name="permdesc_writeSettings">Позволяет приложению изменять параметры системы МК.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">изменение настроек системы безопасности</string>
   <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы МК. Не используется в обычных приложениях.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Управление постоянного хранения</string>
   <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться thrοugh сброс.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартный</string>
   <string name="profileNameWork">Работа</string>
   <string name="profileNameHome">Дом</string>
   <string name="profileNameSilent">Без звука</string>
   <string name="profileNameNight">Ночь</string>
   <string name="profileNameAutomobile">Автомобиль</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календарь</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Почта</string>
   <string name="profileGroupSMS">СМС</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Другой</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">Доступ к местоположению</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Позволить приложению получать информацию о местоположении телефона.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">Записать местоположение</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
 </resources>

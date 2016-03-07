@@ -16,45 +16,64 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Систэма MoKee</string>
   <string name="permlab_modifyNetworkSettings">Налады сеткавых параметраў сістэмы</string>
   <string name="permdesc_modifyNetworkSettings">Дазваляе прыкладанню ўнесці змены ў рэжыме \"Палёту\" і наладах мабільнай перадачы дадзеных.</string>
   <string name="permlab_modifySoundSettings">Налады параметраў гуку сістэмы</string>
   <string name="permdesc_modifySoundSettings">Дазваляе прыкладанню унесці змены ў абмежаваны набор параметраў гукавой сістэмы.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Прагляд рэжыму працы і перадачы дадзеных тэлефона з падтрымкай некалькіх SIM-карт</string>
   <string name="permdesc_readMSPhoneState">Дазваляе прыкладанню праглядваць стан тэлефона і дадзеныя падключэння тэлефона з падтрымкай некалькіх SIM-карт.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">Змена рэжыму працы і перадачы дадзеных тэлефона з падтрымкай некалькіх SIM-карт</string>
   <string name="permdesc_modifyMSPhoneState">Дазваляе прыкладанню змяняць стан тэлефона і дадзеныя падключэння тэлефона з падтрымкай некалькіх SIM-карт.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">змянiць профіль сістэмы</string>
   <string name="permdesc_modifyProfiles">Дазваляе прыкладанню змяняць змяняць профіль сістэмы.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Выкарыстоўваць апаратны framework</string>
   <string name="permdesc_useHardwareFramework">Дазваляе прыкладанню выкарыстоўваць апаратны MK framework.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">непасрэдна змяняць сігналы</string>
   <string name="permdesc_write_alarms">Дазваляе прыкладанню дадаваць, змяняць або выдаляць усе вашы сiгналы.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">уключыць/выключыць запланаваныя сiгналы</string>
   <string name="permdesc_manage_alarms">Дазваляе прыкладанню уключаць/выключаць запланаваныя сiгналы.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">доступ да запланаваных сiгналаў</string>
   <string name="permdesc_read_alarms">Дазваляе прыкладанню чытаць запланаваныя сiгналы.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">змянiць налады сістэмы МК</string>
   <string name="permdesc_writeSettings">Дазваляе прыкладанню змяняць налады сістэмы МК.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">змянiць налады бяспекi сістэмы МК</string>
   <string name="permdesc_writeSecureSettings">Дазваляе прыкладанню змянiць налады бяспекi сістэмы МК. Не выкарыстоўваецца звычайнымі прыкладаннямі.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Кіраванне пастаянным зховiшчам</string>
   <string name="permdesc_managePersistentStorage">Дазваляе прыкладанню чытаць або запiсваць уласцівасці, якія могуць захоўвацца пасля завадскога скiдвання.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартны</string>
   <string name="profileNameWork">Праца</string>
   <string name="profileNameHome">Дом</string>
   <string name="profileNameSilent">Ціхі рэжым</string>
   <string name="profileNameNight">Ноч</string>
   <string name="profileNameAutomobile">Аўтамабіль</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Тэлефон</string>
   <string name="profileGroupCalendar">Каляндар</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Іншы</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">Доступ да месцазнаходжання</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Дазваляе прыкладанню чытаць інфармацыю аб месцазнаходжаннi тэлефона.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">Запісаць месцазнаходжанне</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Дазволіць прыкладанням запісваць месцазнаходжанне тэлефона.</string>
 </resources>

@@ -16,45 +16,64 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Hệ thống MoKee</string>
   <string name="permlab_modifyNetworkSettings">thay đổi thiết đặt mạng hệ thống</string>
   <string name="permdesc_modifyNetworkSettings">Cho phép một ứng dụng thực hiện thay đổi chế độ máy bay và thiết lập mạng dữ liệu di động.</string>
   <string name="permlab_modifySoundSettings">thay đổi cài đặt âm thanh hệ thống</string>
   <string name="permdesc_modifySoundSettings">Cho phép một ứng dụng để thay đổi cài đặt chế độ ngắt âm thanh.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs</string>
   <string name="permdesc_readMSPhoneState">Cho phép một ứng dụng xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">thay đổi tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Cho phép một ứng dụng sửa tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">sửa đổi hồ sơ hệ thống</string>
   <string name="permdesc_modifyProfiles">Cho phép một ứng dụng để sửa đổi hồ sơ hệ thống.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">dùng khung làm việc phần cứng</string>
   <string name="permdesc_useHardwareFramework">Cho phép ứng dụng truy cập khung làm việc phần cứng Mk.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">trực tiếp thay đổi báo động hệ thống</string>
   <string name="permdesc_write_alarms">Cho phép một ứng dụng để thêm, chỉnh sửa hoặc xoá tất cả báo động hệ thống của bạn.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">chuyển đổi hệ thống báo động theo lịch trình</string>
   <string name="permdesc_manage_alarms">Cho phép một ứng dụng để bật hoặc tắt báo động theo lịch trình của bạn.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">truy cập vào hệ thống báo động theo lịch trình</string>
   <string name="permdesc_read_alarms">Cho phép một ứng dụng đọc báo động theo lịch trình của bạn.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">sửa đổi thiết đặt hệ thống MK</string>
   <string name="permdesc_writeSettings">Cho phép một ứng dụng sửa đổi hệ thống cài đặt MK.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">sửa đổi thiết đặt bảo mật hệ thống MK</string>
   <string name="permdesc_writeSecureSettings">Cho phép một ứng dụng để sửa đổi cài đặt bảo mật hệ thống MK. Không sử dụng bởi ứng dụng bình thường.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">quản lý lưu trữ liên tục</string>
   <string name="permdesc_managePersistentStorage">Cho phép một ứng dụng để đọc hoặc ghi các đặc tính mà có thể kéo dài quá trình máy đặt lại trạng thái xuất xưởng.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Mặc định</string>
   <string name="profileNameWork">Làm việc</string>
   <string name="profileNameHome">Nhà riêng</string>
   <string name="profileNameSilent">Im lặng</string>
   <string name="profileNameNight">Đêm</string>
   <string name="profileNameAutomobile">Trên ôtô</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Điện thoại</string>
   <string name="profileGroupCalendar">Lịch</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Thư điện tử</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Khác</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">đọc địa điểm điện thoại</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Cho phép một ứng dụng đọc thông tin về vị trí điện thoại.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">ghi địa điểm điện thoại</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Cho phép một ứng dụng thay đổi vị trí của điện thoại.</string>
 </resources>

@@ -16,45 +16,64 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee System</string>
   <string name="permlab_modifyNetworkSettings">Netzwerkeinstellungen ändern</string>
   <string name="permdesc_modifyNetworkSettings">Erlaubt einer App Änderungen an Flugmodus und Netzwerkeinstellungen der mobilen Daten.</string>
   <string name="permlab_modifySoundSettings">Toneinstellungen ändern</string>
   <string name="permdesc_modifySoundSettings">Erlaubt einer App den Zugriff auf die Toneinstellungen des Unterbrechungsmodus.</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Zeige Telefonstatus und Datenverbindung mit Unterstützung für mehrere SIMs</string>
   <string name="permdesc_readMSPhoneState">Erlaubt einer App, Telefonstatus und Datenverbindung mit Unterstützung für mehrere SIMs anzuzeigen.</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">Änderung des Telefonstatus und Datenverbindung mit Unterstützung für mehrere SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Erlaubt einer App, Telefonstatus und Datenverbindung für mehrere SIMs zu ändern.</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">Systemprofile ändern</string>
   <string name="permdesc_modifyProfiles">Erlaubt einer App, Systemprofile zu ändern.</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Benutze Hardwareframework</string>
   <string name="permdesc_useHardwareFramework">Erlaubt einer App Zugriff auf das Hardwareframework.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">Alarme direkt ändern</string>
   <string name="permdesc_write_alarms">Erlaubt einer App das Hinzufügen, Ändern oder Löschen von Alarmen.</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">Geplante Alarme umschalten</string>
   <string name="permdesc_manage_alarms">Erlaubt einer App geplante Alarme ein- oder auszuschalten.</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">Zeige geplante Alarme</string>
   <string name="permdesc_read_alarms">Ermöglicht einer App, geplante Alarme zu lesen.</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">Systemeinstellungen ändern</string>
   <string name="permdesc_writeSettings">Erlaubt einer App, Systemeinstellungen zu ändern.</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">Ändere Sicherheitssystemeinstellungen</string>
   <string name="permdesc_writeSecureSettings">Erlaubt einer App, Systemsicherheitseinstellungen zu ändern. Nicht für normale Apps.</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Persistenten Speicher verwalten</string>
   <string name="permdesc_managePersistentStorage">Erlaubt einer App das Lesen oder Schreiben von Eigenschaften, die zu einem Werksreset führen könnten.</string>
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Standard</string>
   <string name="profileNameWork">Arbeit</string>
   <string name="profileNameHome">Zuhause</string>
   <string name="profileNameSilent">Lautlos</string>
   <string name="profileNameNight">Nacht</string>
   <string name="profileNameAutomobile">Auto</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Google Mail</string>
   <string name="profileGroupEmail">E-Mail</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Sonstige</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">Standort des Telefons abrufen</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Erlaubt der App, Informationen zum Standort des Telefons abzurufen.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">Standort des Telefons ändern</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Ermöglicht einer App, den Standort des Telefons zu ändern.</string>
 </resources>

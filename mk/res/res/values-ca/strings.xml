@@ -16,21 +16,40 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema de MoKee</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <!-- Labels for the MODIFY_PROFILES permission. -->
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <!-- Labels for the WRITE_ALARMS permission. -->
+  <!-- Labels for the MANAGE_ALARMS permission. -->
+  <!-- Labels for the READ_ALARMS permission. -->
+  <!-- Labels for the WRITE_SETTINGS permission -->
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Predeterminat</string>
   <string name="profileNameWork">Feina</string>
   <string name="profileNameHome">Casa</string>
   <string name="profileNameSilent">Silenci</string>
   <string name="profileNameNight">Nit</string>
   <string name="profileNameAutomobile">Cotxe</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telèfon</string>
   <string name="profileGroupCalendar">Calendari</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Correu electrònic</string>
   <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Altres</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">llegir la ubicació</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Permet una aplicació per llegir informació sobre la ubicació del telèfon.</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">escriure la ubicació</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Permet un app canviar la ubicació del telèfon.</string>
 </resources>

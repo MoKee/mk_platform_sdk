@@ -16,15 +16,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Σύστημα MoKee</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">τροποποίηση των προφίλ συστήματος</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">χρήση του πλαισίου υλικού</string>
+  <string name="permdesc_useHardwareFramework">Επιτρέπει σε μια εφαρμογή την πρόσβαση στο πλαίσιο υλικού του MΚ.</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
+  <!-- Labels for the MANAGE_ALARMS permission. -->
+  <!-- Labels for the READ_ALARMS permission. -->
+  <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">τροποποίηση ρυθμίσεων συστήματος</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">τροποποίηση ασφαλών ρυθμίσεων συστήματος</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">Προεπιλογή</string>
   <string name="profileNameWork">Εργασία</string>
   <string name="profileNameHome">Σπίτι</string>
   <string name="profileNameSilent">Αθόρυβο</string>
   <string name="profileNameNight">Νύχτα</string>
   <string name="profileNameAutomobile">Αυτοκίνητο</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">Τηλέφωνο</string>
   <string name="profileGroupCalendar">Ημερολόγιο</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Ηλεκτρονικό ταχυδρομείο</string>
+  <string name="profileGroupSMS">SMS</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Άλλο</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>
