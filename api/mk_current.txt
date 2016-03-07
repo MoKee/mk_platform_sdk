@@ -569,6 +569,7 @@ package mokee.platform {
     field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
     field public static final java.lang.String MODIFY_PROFILES = "mokee.permission.MODIFY_PROFILES";
     field public static final java.lang.String MODIFY_SOUND_SETTINGS = "mokee.permission.MODIFY_SOUND_SETTINGS";
+    field public static final java.lang.String PERFORMANCE_ACCESS = "mokee.permission.PERFORMANCE_ACCESS";
     field public static final java.lang.String PROTECTED_APP = "mokee.permission.PROTECTED_APP";
     field public static final java.lang.String PUBLISH_CUSTOM_TILE = "mokee.permission.PUBLISH_CUSTOM_TILE";
     field public static final java.lang.String READ_ALARMS = "mokee.permission.READ_ALARMS";

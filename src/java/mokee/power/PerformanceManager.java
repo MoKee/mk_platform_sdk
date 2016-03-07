@@ -95,7 +95,8 @@ public class PerformanceManager {
         return sInstance;
     }
 
-    private static IPerformanceManager getService() {
+    /** @hide */
+    public static IPerformanceManager getService() {
         if (sService != null) {
             return sService;
         }
