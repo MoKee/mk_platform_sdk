@@ -16,47 +16,84 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee 系統</string>
   <string name="permlab_modifyNetworkSettings">變更系統網絡設定</string>
   <string name="permdesc_modifyNetworkSettings">允許應用程式對有限的系統網絡設定進行修改。</string>
   <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
   <string name="permdesc_modifySoundSettings">允許應用程式對有限的系統聲音設定進行修改。</string>
+  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">在支援多張 SIM 咭的裝置上查看電話狀態和數據連綫</string>
   <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
+  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">在支援多張 SIM 咭的裝置上修改電話狀態和數據連綫</string>
   <string name="permdesc_modifyMSPhoneState">允許應用程式修改支援多張 SIM 咭的裝置的電話狀態和數據連綫</string>
+  <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">修改系統設定檔</string>
   <string name="permdesc_modifyProfiles">允許應用程式修改系統設定檔</string>
+  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">使用硬件框架</string>
   <string name="permdesc_useHardwareFramework">允許應用程式存取 MK 硬件框架。</string>
+  <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">直接更改鬧鐘</string>
   <string name="permdesc_write_alarms">允許一個應用程式新增，修改或刪除你的鬧鐘。</string>
+  <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">切換已設定的鬧鐘</string>
   <string name="permdesc_manage_alarms">允許應用程式開關你已設定的鬧鐘。</string>
+  <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">存取已設定的鬧鐘</string>
   <string name="permdesc_read_alarms">允許應用程式讀取已設定的鬧鐘</string>
+  <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">修改 MK 系統設定</string>
   <string name="permdesc_writeSettings">允許應用程式修改 MK 系統設定。</string>
+  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">修改 MK 系統安全設定</string>
   <string name="permdesc_writeSecureSettings">允許應用程式修改 MK 系統安全設定。僅供偵錯使用。</string>
+  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">管理永久儲存</string>
   <string name="permdesc_managePersistentStorage">允許應用程式存取一些恢復原廠設定後仍可保持的屬性。</string>
+  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <!-- Labels for the PROTECTED_APP permission. -->
+  <!-- Profiles -->
+  <!-- Names of default profiles. -->
   <string name="profileNameDefault">預設</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住家</string>
   <string name="profileNameSilent">静音</string>
   <string name="profileNameNight">夜晚</string>
   <string name="profileNameAutomobile">汽車</string>
+  <!-- Names of application groups. -->
   <string name="profileGroupPhone">電話</string>
   <string name="profileGroupCalendar">行事曆</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">電郵</string>
   <string name="profileGroupSMS">短訊</string>
+  <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">其他</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">讀取電話位置</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">允許應用程式讀取關於手機位置的資訊</string>
+  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">寫入電話位置</string>
+  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">允許應用程式變更電話位置。</string>
+  <!-- Performance profiles -->
+  <!-- LiveDisplay strings -->
   <string name="live_display_off">關閉</string>
   <string name="live_display_night">夜晚</string>
+  <!-- Third party keyguard permission label -->
+  <!-- Third party keyguard permission description -->
+  <!-- Device specific settings -->
+  <!-- Touchscreen gestures -->
+  <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">附加選項</string>
+  <!-- Theme installation error notification -->
+  <!-- Theme reset notification -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>

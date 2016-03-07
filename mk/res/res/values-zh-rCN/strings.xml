@@ -106,4 +106,16 @@
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">第三方锁屏</string>
   <!-- Third party keyguard permission description -->
+  <!-- Device specific settings -->
+  <!-- Touchscreen gestures -->
+  <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">扩展组件</string>
+  <!-- Theme installation error notification -->
+  <!-- Theme reset notification -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>

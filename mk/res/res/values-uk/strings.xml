@@ -92,4 +92,16 @@
   <string name="live_display_hint">LiveDisplay може допомогти зменшити навантаження на очі та допомогти вам спати по ночах. Натисніть тут, щоб спробувати його!</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
+  <!-- Device specific settings -->
+  <!-- Touchscreen gestures -->
+  <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">Додатково</string>
+  <!-- Theme installation error notification -->
+  <!-- Theme reset notification -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>
