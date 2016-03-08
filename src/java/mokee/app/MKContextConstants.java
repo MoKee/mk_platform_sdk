@@ -110,6 +110,11 @@ public final class MKContextConstants {
     public static final String MK_ICON_CACHE_SERVICE = "mkiconcache";
 
     /**
+     * @hide
+     */
+    public static final String MK_LIVE_LOCK_SCREEN_SERVICE = "mklivelockscreen";
+
+    /**
      * Features supported by the MKSDK.
      */
     public static class Features {
@@ -168,5 +173,13 @@ public final class MKContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String PARTNER = "org.mokee.partner";
+
+        /*
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the Live lock screen
+         * feature.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String LIVE_LOCK_SCREEN = "org.mokee.livelockscreen";
     }
 }

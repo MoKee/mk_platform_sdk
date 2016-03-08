@@ -65,5 +65,6 @@
         <item>org.mokee.platform.internal.PerformanceManagerService</item>
         <item>org.mokee.platform.internal.ThemeManagerService</item>
         <item>org.mokee.platform.internal.IconCacheManagerService</item>
+        <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
     </string-array>
 </resources>
