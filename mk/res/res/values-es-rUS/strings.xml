@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
+  <string name="permlab_publishCustomTile">crear una ficha personalizada en el panel de configuración rápida</string>
   <string name="permlab_modifyNetworkSettings">cambiar configuración de red del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Permite una aplicación realizar cambios en el modo avión y configuración de la red de datos móviles.</string>
   <string name="permlab_modifySoundSettings">cambiar ajustes de sonido del sistema</string>
@@ -101,10 +102,15 @@
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Permite una aplicación ser utilizado como una pantalla de bloqueo inseguro.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Ajustes avanzados</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gestos</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Extras</string>
+  <string name="touchscreen_gesture_haptic_feedback">Respuesta táctil</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrar cuando se detecte un gesto</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Fallo al instalar el tema</string>
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

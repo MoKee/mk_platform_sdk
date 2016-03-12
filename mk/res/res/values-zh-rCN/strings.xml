@@ -106,16 +106,31 @@
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">第三方锁屏</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">允许应用程序使用不安全的屏幕锁定功能。</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">高级设置</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">手势操作</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">扩展组件</string>
+  <string name="touchscreen_gesture_haptic_feedback">触摸反馈</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">检测到手势时震动</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">主题安装失败</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> 安装失败</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">重置主题</string>
+  <string name="theme_reset_notification_message">多个应用崩溃，系统主题已恢复。</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">访问主题服务</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">允许应用程序访问主题服务。正常应用程序不应需要此权限。</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">读取主题信息</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">允许应用程序读取并确定已应用的主题。</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">修改主题</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">允许应用程序下载和更新主题</string>
 </resources>

@@ -19,6 +19,7 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
   <string name="permlab_publishCustomTile">Створити налаштовувану плитку в межах панелі швидкого доступу</string>
+  <string name="permdesc_publishCustomTile">Дозволяє додатку публікувати блок в швидких налаштуваннях.</string>
   <string name="permlab_modifyNetworkSettings">змінити налаштування мережі системи</string>
   <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і налаштуваннях мобільної передачі даних.</string>
   <string name="permlab_modifySoundSettings">змінити налаштування системних звуків</string>
@@ -39,16 +40,24 @@
   <string name="permlab_write_alarms">напряму змінювати сигналізації</string>
   <string name="permdesc_write_alarms">Дозволяє додаткам додавати, змінювати чи видаляти всі ваші тривоги.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">перемикач запланованих будильників</string>
+  <string name="permdesc_manage_alarms">Дозволяє додатку включати або вимикати заплановані будильники.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">доступ до запланованих будильників</string>
+  <string name="permdesc_read_alarms">Дозволяє додатку читати заплановані будильники.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">змінити налаштування системи МК</string>
   <string name="permdesc_writeSettings">Дозволяє додатку змінювати настройки системи MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">Змініть параметри безпеки системи МК</string>
+  <string name="permlab_writeSecureSettings">зміна параметрів безпеки системи МК</string>
+  <string name="permdesc_writeSecureSettings">Дозволяє додатку змінювати налаштування системи безпеки MK. Не використовуйте в звичайних додатках.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Керування постійним сховищем даних</string>
+  <string name="permdesc_managePersistentStorage">Дозволяє додатку зчитувати і записувати властивості, які можуть зберігатися навіть після відновлення заводських налаштувань.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">додавання та видалення додатків з захищених</string>
+  <string name="permdesc_protectedApp">Дозволяє додатку відмітити інші додатки як захищені і заблокувати їх.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартний</string>
@@ -72,6 +81,7 @@
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">записати місце розташування телефону</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Дозволяє додаткам записувати місце розташування телефону.</string>
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv">Енергозбереження</string>
   <string name="perf_profile_bal">Збалансований</string>
@@ -91,17 +101,34 @@
   <string name="live_display_outdoor_summary">Використовувати тільки параметри «На вулиці»</string>
   <string name="live_display_hint">LiveDisplay може допомогти зменшити навантаження на очі та допомогти вам спати по ночах. Натисніть тут, щоб спробувати його!</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">екран блокування сторонніх виробників</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Дозволяє додатку використовуватися в якості ненадійного блокування екрану.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Розширені налаштування</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Жести</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Додатково</string>
+  <string name="touchscreen_gesture_haptic_feedback">Вібро-відгук</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Вібрувати при захопленні жесту</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Не вдалося інсталювати тему</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не вдалося інсталювати</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Скинути налаштування теми</string>
+  <string name="theme_reset_notification_message">Через системні збої встановлена системна тема.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">доступ до служби тем</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Дозволяє програмі отримувати доступ до служби тем. Цей дозвіл не використовується звичайними програмами.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">читати дані про вашу тему</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Дозволяє додаткам читати дані про теми і
+       виявляти яку тему ви застосували.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">змінювати ваші теми</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Дозволяє додатку встановлювати нові теми і змінювати яку ви застосували.</string>
 </resources>

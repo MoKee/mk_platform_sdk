@@ -169,7 +169,7 @@ public final class MKHardwareManager {
     }
 
     /** @hide */
-    private static IMKHardwareService getService() {
+    public static IMKHardwareService getService() {
         if (sService != null) {
             return sService;
         }
