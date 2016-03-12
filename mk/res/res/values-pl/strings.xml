@@ -56,6 +56,7 @@
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">dodaj lub usuń aplikację z listy chronionych aplikacji</string>
+  <string name="permdesc_protectedApp">Umożliwia aplikacji zaznacz inne aplikacje jako chronione i je zablokować.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Domyślny</string>
@@ -102,15 +103,29 @@
   <string name="permlab_thirdPartyKeyguard">trzeci sposób blokady ekranu</string>
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Zaawansowane ustawienia</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gesty</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Dodatki</string>
+  <string name="touchscreen_gesture_haptic_feedback">Wibracja przy dotknięciu</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Wibruj gdy gest zostanie wykryty</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Instalacja motywu nieudana</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> nie udało się zainstalować</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Reset motywu</string>
+  <string name="theme_reset_notification_message">Domyślny motyw został przywrócony z powodu wielu awarii aplikacji.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">dostęp do usługi motywów</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Zezwala aplikacji na dostęp do usługi motywów. Nie wymagane przez standardowe aplikacje.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">odczytanie informacji o motywie</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Zezwala na odczyt motywów i ustalenie który został użyty.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">modyfikuj motyw</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Zezwalaj aplikacji dodać nowe motywy i modyfikować bierzący.</string>
 </resources>
