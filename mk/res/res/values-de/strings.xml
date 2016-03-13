@@ -102,15 +102,26 @@
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Erlaube einer unsicheren App als Sperrbildschirm zu verwenden.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Erweiterte Einstellungen</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gesten</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Extras</string>
+  <string name="touchscreen_gesture_haptic_feedback">Haptisches Feedback</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrieren, wenn eine Geste erkannt wurde</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Theme konnte nicht intalliert werden</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> konnte nicht installiert werden</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Design zurückgesetzt</string>
+  <string name="theme_reset_notification_message">Das Standard-Design wurde aufgrund mehrerer App Abstürze wiederhergestellt.</string>
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">Zugriff auf den Design-Dienst</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Ermöglicht einer App auf den Design-Dienst zuzugreifen. Wird für normale Apps nicht benötigt.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">Designs verändern</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>

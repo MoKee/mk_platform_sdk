@@ -18,9 +18,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistem MoKee</string>
+  <string name="permlab_modifyNetworkSettings">merubah setelan sistem jaringan</string>
+  <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
+  <string name="permlab_modifySoundSettings">mengubah setelan sistem suara</string>
+  <string name="permdesc_modifySoundSettings">Izinkan aplikasi untuk membuat perubahan pengaturan suara modus gangguan.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat telepon sambungan negara dan data dengan dukungan untuk beberapa SIMs.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <!-- Labels for the WRITE_ALARMS permission. -->
   <!-- Labels for the MANAGE_ALARMS permission. -->
