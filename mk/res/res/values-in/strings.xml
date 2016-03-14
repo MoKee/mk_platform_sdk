@@ -17,23 +17,63 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
+  <string name="mokee_system_label">MoKee Sistem</string>
+  <string name="permlab_modifyNetworkSettings">rubah setelan sistem jaringan</string>
+  <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
+  <string name="permlab_modifySoundSettings">mengubah setelan sistem suara</string>
+  <string name="permdesc_modifySoundSettings">Izinkan aplikasi untuk membuat perubahan pengaturan suara modus gangguan.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">lihat sambungan telepon dan data dengan dukungan untuk beberapa SIMs</string>
+  <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat telepon sambungan negara dan data dengan dukungan untuk beberapa SIMs.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">modifikasi sambungan telepon dan data dengan dukungan untuk beberapa SIMs</string>
+  <string name="permdesc_modifyMSPhoneState">Izinkan aplikasi untuk memodifikasi telepon sambungan data dengan dukungan untuk beberapa SIMs.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
+  <string name="permdesc_modifyProfiles">Izinkan aplikasi untuk memodifikasi profil sistem.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">gunakan hardware framework</string>
+  <string name="permdesc_useHardwareFramework">Izinkan app untuk mengakses hardware MK framework.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">langsung merubah alarm</string>
+  <string name="permdesc_write_alarms">Izinkan aplikasi untuk menambah, mengubah atau menghapus semua alarm anda.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">toggle jadwal alarm</string>
+  <string name="permdesc_manage_alarms">Izinkan aplikasi untuk mengaktifkan atau menonaktifkan jadwal alarm anda.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">akses jadwal alarm</string>
+  <string name="permdesc_read_alarms">Izinkan aplikasi untuk membaca jadwal alarm anda.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">modifikasi setelan sistem MK</string>
+  <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">modifikasi setelan sistem MK yang aman</string>
+  <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi pengaturan sistem aman MK. Tidak untuk digunakan oleh aplikasi yang normal.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <string name="permlab_managePersistentStorage">mengelola penyimpanan persisten</string>
+  <string name="permdesc_managePersistentStorage">Izinkan aplikasi untuk membaca atau menulis properti yang dapat bertahan thrοugh pabrik ulang.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Default</string>
+  <string name="profileNameDefault">Standar</string>
+  <string name="profileNameWork">Kerja</string>
+  <string name="profileNameHome">Rumah</string>
+  <string name="profileNameSilent">Diam</string>
+  <string name="profileNameNight">Malam</string>
+  <string name="profileNameAutomobile">Automobil</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telepon</string>
+  <string name="profileGroupCalendar">Kalender</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">Email</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Lainnya</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">baca lokasi telepon</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Izinkan aplikasi untuk membaca informasi tentang lokasi telepon.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">tulis lokasi telepon</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Memungkinkan aplikasi untuk mengubah lokasi telepon.</string>
 </resources>

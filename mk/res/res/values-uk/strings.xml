@@ -38,12 +38,20 @@
   <string name="permlab_write_alarms">напряму змінювати сигналізації</string>
   <string name="permdesc_write_alarms">Дозволяє додаткам додавати, змінювати чи видаляти всі ваші тривоги.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">перемикач запланованих будильників</string>
+  <string name="permdesc_manage_alarms">Дозволяє додатку включати або вимикати заплановані будильники.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">доступ до запланованих будильників</string>
+  <string name="permdesc_read_alarms">Дозволяє додатку читати заплановані будильники.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">змінити налаштування системи МК</string>
+  <string name="permlab_writeSettings">зміна налаштувань системи МК</string>
+  <string name="permdesc_writeSettings">Дозволяє додатку змінювати налаштування системи безпеки MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">зміна налаштувань системи безпеки MK</string>
+  <string name="permdesc_writeSecureSettings">Дозволяє додатку змінювати налаштування системи безпеки MK. Не використовуйте в звичайних додатках.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Керування постійним сховищем даних</string>
+  <string name="permdesc_managePersistentStorage">Дозволяє додатку зчитувати і записувати властивості, які можуть зберігатися навіть після відновлення заводських налаштувань.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартний</string>
@@ -67,4 +75,5 @@
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">записати місце розташування телефону</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Дозволяє додаткам записувати місце розташування телефону.</string>
 </resources>
