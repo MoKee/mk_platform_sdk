@@ -16,6 +16,8 @@
 
 package mokee.app;
 
+import android.annotation.SdkConstant;
+
 /**
  * @hide
  * TODO: We need to somehow make these managers accessible via getSystemService
@@ -106,4 +108,17 @@ public final class MKContextConstants {
      * @hide
      */
     public static final String MK_ICON_CACHE_SERVICE = "mkiconcache";
+
+    /**
+     * Features supported by the MKSDK.
+     */
+    public static class Features {
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the hardware abstraction
+         * framework service utilized by the cmsdk.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String HARDWARE_ABSTRACTION = "org.mokee.hardware";
+    }
 }

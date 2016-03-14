@@ -344,7 +344,13 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         super(context);
         mContext = context;
         mMkHwImpl = getImpl(context);
-        publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
+        if (context.getPackageManager().hasSystemFeature(
+                MKContextConstants.Features.HARDWARE_ABSTRACTION)) {
+            publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
+        } else {
+            Log.wtf(TAG, "MK hardware service started by system server but feature xml not" +
+                    " declared. Not publishing binder service!");
+        }
     }
 
     @Override
