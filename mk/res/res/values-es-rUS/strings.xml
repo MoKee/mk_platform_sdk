@@ -129,4 +129,6 @@
   <string name="permlab_writeThemes">modificar tus temas</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Permite que la aplicación añada nuevos temas y modifique el tema actual.</string>
+  <!-- Performance manager permission title -->
+  <!-- Performance manager permission description -->
 </resources>

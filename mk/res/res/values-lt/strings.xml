@@ -60,7 +60,9 @@
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefonas</string>
   <string name="profileGroupCalendar">Kalendorius</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">El. paštas</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Kita</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -70,6 +72,10 @@
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">Išjungti</string>
+  <string name="live_display_day">Diena</string>
+  <string name="live_display_day_summary">Naudoti tik dienos nustatymus</string>
+  <string name="live_display_night">Naktis</string>
+  <string name="live_display_night_summary">Naudoti tik nakties nustatymus</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
@@ -83,4 +89,6 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Performance manager permission title -->
+  <!-- Performance manager permission description -->
 </resources>

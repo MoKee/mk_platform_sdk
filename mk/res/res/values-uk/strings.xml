@@ -131,4 +131,6 @@
   <string name="permlab_writeThemes">змінювати ваші теми</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Дозволяє додатку встановлювати нові теми і змінювати яку ви застосували.</string>
+  <!-- Performance manager permission title -->
+  <!-- Performance manager permission description -->
 </resources>
