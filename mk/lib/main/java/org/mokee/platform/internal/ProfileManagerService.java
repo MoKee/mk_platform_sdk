@@ -169,7 +169,13 @@ public class ProfileManagerService extends SystemService {
         super(context);
         mContext = context;
         mHandler = new Handler(mHandlerCallback);
-        publishBinderService(MKContextConstants.MK_PROFILE_SERVICE, mService);
+        if (context.getPackageManager().hasSystemFeature(
+                MKContextConstants.Features.PROFILES)) {
+            publishBinderService(MKContextConstants.MK_PROFILE_SERVICE, mService);
+        } else {
+            Log.wtf(TAG, "MK profile service started by system server but feature xml not" +
+                    " declared. Not publishing binder service!");
+        }
     }
 
     @Override
