@@ -116,9 +116,17 @@ public final class MKContextConstants {
         /**
          * Feature for {@link PackageManager#getSystemAvailableFeatures} and
          * {@link PackageManager#hasSystemFeature}: The device includes the hardware abstraction
-         * framework service utilized by the cmsdk.
+         * framework service utilized by the mksdk.
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String HARDWARE_ABSTRACTION = "org.mokee.hardware";
+
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the mk status bar service
+         * utilzed by the mksdk.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String STATUSBAR = "org.mokee.statusbar";
     }
 }

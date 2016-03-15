@@ -84,6 +84,12 @@ public class MKStatusBarManagerService extends SystemService {
 
     @Override
     public void onStart() {
+        if (!mContext.getPackageManager().hasSystemFeature(
+                MKContextConstants.Features.STATUSBAR)) {
+            Log.wtf(TAG, "MK statusbar service started by system server but feature xml not" +
+                    " declared. Not publishing binder service!");
+            return;
+        }
         Log.d(TAG, "registerMKStatusBar mkstatusbar: " + this);
         mCustomTileListeners = new CustomTileListeners();
         publishBinderService(MKContextConstants.MK_STATUS_BAR_SERVICE, mService);
