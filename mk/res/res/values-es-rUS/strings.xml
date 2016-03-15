@@ -55,6 +55,7 @@
   <string name="permdesc_managePersistentStorage">Permite a una aplicación leer o escribir propiedades que pueden persistir aún con un reinicio de fábrica.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">agregar y quitar aplicaciones a aplicaciones protegidas</string>
   <string name="permdesc_protectedApp">Permite una aplicación marcar otras aplicaciones protegidas y bloquearlas.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
@@ -85,6 +86,7 @@
   <string name="perf_profile_bal">Balanceado</string>
   <string name="perf_profile_perf">Rendimiento</string>
   <string name="perf_profile_bias_power">Eficiencia</string>
+  <string name="perf_profile_bias_perf">Rápido</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatico</string>
   <string name="live_display_auto_summary">Ajustar automáticamente la temperatura del color de la pantalla después del atardecer y el amanecer</string>
@@ -111,11 +113,20 @@
   <string name="touchscreen_gesture_haptic_feedback_summary">Vibrar cuando se detecte un gesto</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Fallo al instalar el tema</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> error al instalar</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Reiniciar Tema</string>
+  <string name="theme_reset_notification_message">Tema del sistema ha sido restaurado debido a múltiples cierres de la aplicación.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">acceso al servicio de temas</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Permite que la aplicación acceda al servicio de temas. Nunca debería ser necesario para aplicaciones normales.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">leer la información de tu tema</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Permite la aplicación lea tus temas y determine qué tema se aplica.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">modificar tus temas</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Permite que la aplicación añada nuevos temas y modifique el tema actual.</string>
 </resources>
