@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The MoKee OpenSource Project
+ * Copyright (C) 2015-2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,6 +50,7 @@ import org.mokee.hardware.TapToWake;
 import org.mokee.hardware.ThermalMonitor;
 import org.mokee.hardware.ThermalUpdateCallback;
 import org.mokee.hardware.TouchscreenHovering;
+import org.mokee.hardware.UniqueDeviceId;
 import org.mokee.hardware.VibratorHW;
 
 public class MKHardwareService extends SystemService implements ThermalUpdateCallback {
@@ -82,6 +83,7 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         public long getLtoDownloadInterval();
 
         public String getSerialNumber();
+        public String getUniqueDeviceId();
 
         public boolean requireAdaptiveBacklightForSunlightEnhancement();
 
@@ -131,6 +133,8 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
                 mSupportedFeatures |= MKHardwareManager.FEATURE_PERSISTENT_STORAGE;
             if (ThermalMonitor.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_THERMAL_MONITOR;
+            if (UniqueDeviceId.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_UNIQUE_DEVICE_ID;
         }
 
         public int getSupportedFeatures() {
@@ -291,6 +295,10 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
 
         public String getSerialNumber() {
             return SerialNumber.getSerialNumber();
+        }
+
+        public String getUniqueDeviceId() {
+            return UniqueDeviceId.getUniqueDeviceId();
         }
 
         public boolean requireAdaptiveBacklightForSunlightEnhancement() {
@@ -515,6 +523,17 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
                 return null;
             }
             return mMkHwImpl.getSerialNumber();
+        }
+
+        @Override
+        public String getUniqueDeviceId() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_UNIQUE_DEVICE_ID)) {
+                Log.e(TAG, "Unique device ID is not supported");
+                return null;
+            }
+            return mMkHwImpl.getUniqueDeviceId();
         }
 
         @Override

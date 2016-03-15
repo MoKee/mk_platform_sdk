@@ -55,4 +55,6 @@ interface IMKHardwareService {
     int getThermalState();
     boolean registerThermalListener(IThermalListenerCallback callback);
     boolean unRegisterThermalListener(IThermalListenerCallback callback);
+
+    String getUniqueDeviceId();
 }
