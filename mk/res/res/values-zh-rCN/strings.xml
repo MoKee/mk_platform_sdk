@@ -134,5 +134,7 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">允许应用程序下载和更新主题</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">访问性能管理器</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">允许应用访问性能管理器。普通应用通常不需要此权限。</string>
 </resources>

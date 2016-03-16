@@ -134,5 +134,7 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Izinkan aplikasi untuk memasukkan tema baru dan mengubah tema yang telah anda terapkan.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">akses mengelola performa</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Izinkan aplikasi untuk akses layanan performa. Seharusnya tidak diperlukan untuk aplikasi normal.</string>
 </resources>
