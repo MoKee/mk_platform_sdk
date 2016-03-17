@@ -330,7 +330,7 @@ package mokee.app {
     method public void updateProfile(mokee.app.Profile);
     field public static final java.lang.String ACTION_PROFILE_PICKER = "mokee.platform.intent.action.PROFILE_PICKER";
     field public static final java.lang.String EXTRA_LAST_PROFILE_NAME = "lastName";
-    field public static final java.lang.String EXTRA_LAST_PROFILE_UUID = "uuid";
+    field public static final java.lang.String EXTRA_LAST_PROFILE_UUID = "lastUuid";
     field public static final java.lang.String EXTRA_PROFILES_STATE = "profile_state";
     field public static final java.lang.String EXTRA_PROFILE_DIALOG_THEME = "mokee.platform.intent.extra.profile.DIALOG_THEME";
     field public static final java.lang.String EXTRA_PROFILE_EXISTING_UUID = "mokee.platform.extra.profile.EXISTING_UUID";
