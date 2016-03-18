@@ -19,10 +19,13 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
   <string name="permlab_publishCustomTile">Создать пользовательскую плитку на Панели быстрых настроек</string>
+  <string name="permdesc_publishCustomTile">Позволяет приложению публиковать плитку быстрых настроек.</string>
   <string name="permlab_modifyNetworkSettings">Изменить сетевые параметры системы</string>
   <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в ограниченный набор параметров сети системы.</string>
   <string name="permlab_modifySoundSettings">Изменить параметры звука системы</string>
   <string name="permdesc_modifySoundSettings">Позволяет приложению внести изменения в ограниченный набор параметров звуковой системы.</string>
+  <string name="permlab_bindCustomTileListenerService">привязка к службе просмотра пользовательских плиток</string>
+  <string name="permdesc_bindCustomTileListenerService">Позволяет приложению связать интерфейс верхнего уровня с службой пользовательских плиток.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
@@ -54,7 +57,10 @@
   <string name="permlab_managePersistentStorage">Управление постоянного хранения</string>
   <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться thrοugh сброс.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Наблюдает за пользовательскими плитками</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">Добавление и удаление приложений для защищенных приложений</string>
+  <string name="permdesc_protectedApp">Разрешает приложению отмечать другие как защищенные и закрепить их.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартный</string>
@@ -80,31 +86,55 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Экономия энергии</string>
+  <string name="perf_profile_bal">Сбалансированный</string>
+  <string name="perf_profile_perf">Производительный</string>
+  <string name="perf_profile_bias_power">Эффективный</string>
   <string name="perf_profile_bias_perf">Быстрый</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматический</string>
   <string name="live_display_auto_summary">Автоматически регулировать температуру цвета экрана после заката и восхода солнца</string>
   <string name="live_display_off">Отключить</string>
+  <string name="live_display_off_summary">Отключить все настройки</string>
   <string name="live_display_day">День</string>
   <string name="live_display_day_summary">Использовать только дневные параметры</string>
   <string name="live_display_night">Ночь</string>
   <string name="live_display_night_summary">Использовать только ночные параметры</string>
   <string name="live_display_outdoor">Улица (солнце)</string>
   <string name="live_display_outdoor_summary">Использовать только параметры улицы</string>
+  <string name="live_display_hint">LiveDisplay помогает снизить напряжение глаз и улучшает ночной сон. Нажмите здесь, чтобы попробовать!</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">сторонние блокировщики экрана</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Разрешить приложению использоваться как блокировщик экрана.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Расширенные настройки</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Жесты</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Дополнения</string>
+  <string name="touchscreen_gesture_haptic_feedback">Виброотклик</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Вибрировать при обнаружении жеста</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Не удалось установить тему</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не удалось установить</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Сброс темы</string>
+  <string name="theme_reset_notification_message">Из-за сбоев приложений восстановлена стандартная тема.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">разрешения для темы</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Приложение сможет получать доступ к службе тем. Это разрешение не используется обычными приложениями.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">прочитайте информацию о вашей теме</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Приложение сможет считывать темы оформления и определять, какая тема сейчас применена.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">Изменение тем</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Приложение сможет осуществлять установку новых тем оформления и изменять текущую тему.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">Разрешения менеджера производительности</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Приложение сможет получать доступ к службе производительности. Это разрешение не используется обычными приложениями.</string>
 </resources>

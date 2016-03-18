@@ -73,7 +73,7 @@
   <string name="profileGroupPhone">Telepon</string>
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Surel</string>
+  <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Lainnya</string>
