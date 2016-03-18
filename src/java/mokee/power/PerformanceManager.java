@@ -134,7 +134,7 @@ public class PerformanceManager {
     }
 
     /**
-     * Returns the number of supported profiles, zero if unsupported
+     * Returns the number of supported profiles, -1 if unsupported
      * This is queried via the PowerHAL.
      */
     public int getNumberOfProfiles() {
