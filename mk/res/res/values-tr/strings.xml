@@ -19,15 +19,23 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee Sistemi</string>
   <string name="permlab_modifyNetworkSettings">sistemin ağ ayarlarını değiştirin</string>
+  <string name="permdesc_modifyNetworkSettings">Uçak modunda ve mobil veri ağ ayarlarında bir uygulamaya değişiklik yapması için izin verir.</string>
   <string name="permlab_modifySoundSettings">sistemin ses ayarlarını değiştirin</string>
+  <string name="permdesc_modifySoundSettings">Kesinti modu ses ayarlarında bir uygulamaya değişiklik yapması için izin verir.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">Çoklu SIM desteği ile telefon durumunu ve veri bağlantısına bakın</string>
+  <string name="permdesc_readMSPhoneState">Telefon durumunu ve veri bağlantısını birden fazla sim desteği ile görmek için bir uygulamaya izin verir.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">Çoklu SIM desteği ile telefon durumunu ve veri bağlantısını değiştir</string>
+  <string name="permdesc_modifyMSPhoneState">Telefon durumunu ve veri bağlantısını birden fazla sim desteği ile görmek için bir uygulamaya izin verir.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <!-- Labels for the WRITE_ALARMS permission. -->
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permdesc_read_alarms">Alarm düzenlemelerinizi okuması için bir uygulamaya izin verir.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">MK sistem ayarlarını değiştir</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <!-- Profiles -->
