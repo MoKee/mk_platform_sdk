@@ -79,23 +79,51 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Permet à une application de changer la localisation du téléphone.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Économie d\'énergie</string>
+  <string name="perf_profile_bal">Équilibré</string>
+  <string name="perf_profile_perf">Performance</string>
+  <string name="perf_profile_bias_power">Efficacité</string>
+  <string name="perf_profile_bias_perf">Rapide</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatique</string>
+  <string name="live_display_auto_summary">Ajuster automatiquement la température de couleur de l\'écran après le coucher et le lever du soleil</string>
   <string name="live_display_off">Désactivé</string>
+  <string name="live_display_off_summary">Désactiver tous les réglages</string>
+  <string name="live_display_day">Jour</string>
+  <string name="live_display_day_summary">Utiliser les paramètres de jour seulement</string>
   <string name="live_display_night">Nuit</string>
+  <string name="live_display_night_summary">Utiliser les paramètres de nuit seulement</string>
+  <string name="live_display_outdoor">Extérieur (plein soleil)</string>
+  <string name="live_display_outdoor_summary">Utiliser les paramètres du mode extérieur seulement</string>
+  <string name="live_display_hint">LiveDisplay peut aider à réduire la fatigue oculaire et vous aider à dormir la nuit. Cliquez ici pour l\'essayer !</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Parmètres avancés</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gestes</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Bonus</string>
+  <string name="touchscreen_gesture_haptic_feedback">Retour tactile</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrer quand un geste est détecté</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Impossible d\'installer le thème</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> impossible d\'installer</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Réinitialisation du thème</string>
+  <string name="theme_reset_notification_message">Thème système restauré en raison de multiples problèmes d\'application.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Permet à l\'application d\'accéder au service de thème. Ne devrait jamais être nécessaire pour des applications normales.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">lire les informations du thème</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Permet à l\'application de lire vos thèmes et de déterminer quel thème vous avez appliqué.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">modifier vos thèmes</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Permet à l\'application d\'insérer de nouveaux thèmes et à modifier le thème que vous avez appliqué.</string>
   <!-- Performance manager permission title -->
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Permet à l\'application d\'accéder au service de performance. Ne devrait jamais être nécessaire pour des applications normales.</string>
 </resources>

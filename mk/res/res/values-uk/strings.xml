@@ -24,6 +24,8 @@
   <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і налаштуваннях мобільної передачі даних.</string>
   <string name="permlab_modifySoundSettings">змінити налаштування системних звуків</string>
   <string name="permdesc_modifySoundSettings">Дозволяє додатку вносити зміни налаштувань звуку в режимі переривань.</string>
+  <string name="permlab_bindCustomTileListenerService">прив\'язати до служби налаштування плиток користувача</string>
+  <string name="permdesc_bindCustomTileListenerService">Дозволяє додатку зв\'язати інтерфейс верхнього рівня з службою плиток користувача.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Перегляд режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
   <string name="permdesc_readMSPhoneState">Дозволяє додатку відстежувати стан і дані підключення телефону з підтримкою декількох SIM-карт.</string>
@@ -55,6 +57,7 @@
   <string name="permlab_managePersistentStorage">Керування постійним сховищем даних</string>
   <string name="permdesc_managePersistentStorage">Дозволяє додатку зчитувати і записувати властивості, які можуть зберігатися навіть після відновлення заводських налаштувань.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Налаштування плиток користувача</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">додавання та видалення додатків з захищених</string>
   <string name="permdesc_protectedApp">Дозволяє додатку відмітити інші додатки як захищені і заблокувати їх.</string>
@@ -132,5 +135,7 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Дозволяє додатку встановлювати нові теми і змінювати яку ви застосували.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">дозвіл менеджера продуктивності</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Дозволяє програмі отримувати доступ до продуктивності. Цей дозвіл не потрібен звичайним додаткам.</string>
 </resources>
