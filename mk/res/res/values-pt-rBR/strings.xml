@@ -134,5 +134,7 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Permite que um app insira novos temas e modifique o tema que você aplicou.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">acessar o gerenciador de desempenho</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Permite que um aplicativo tenha acesso ao serviço de desempenho. Nunca deverá ser necessário para aplicativos normais.</string>
 </resources>

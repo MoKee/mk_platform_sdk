@@ -18,6 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">魔趣系統</string>
+  <string name="permlab_modifyNetworkSettings">變更系統的網路設置</string>
+  <string name="permdesc_modifyNetworkSettings">允許應用程式對飛機模式和移動資料網路設置進行更改。</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->

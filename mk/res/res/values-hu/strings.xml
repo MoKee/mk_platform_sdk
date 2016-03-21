@@ -18,6 +18,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee rendszer</string>
+  <string name="permlab_publishCustomTile">hozzon létre egy egyéni csempét a gyors beállítások panelen belül</string>
+  <string name="permdesc_publishCustomTile">Alkalmazás számára engedélyezi, hogy gyors beállítások csempét hozzon létre.</string>
+  <string name="permlab_modifyNetworkSettings">rendszer hálózati beállításainak módosítása</string>
+  <string name="permdesc_modifyNetworkSettings">Engedélyt ad az alkalmazász számára, hogy befolyásolja a repülőgép üzemmódot és a mobilinternet beállításait.</string>
+  <string name="permlab_modifySoundSettings">rendszer hangbeállításainak módosítása</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
