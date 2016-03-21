@@ -115,6 +115,18 @@ public final class MKContextConstants {
     public static final String MK_LIVE_LOCK_SCREEN_SERVICE = "mklivelockscreen";
 
     /**
+     * Use with {@link android.content.Context#getSystemService} to retrieve a
+     * {@link mokee.weather.MKWeatherManager} to manage the weather service
+     * settings and request weather updates
+     *
+     * @see android.content.Context#getSystemService
+     * @see mokee.weather.MKWeatherManager
+     *
+     * @hide
+     */
+    public static final String MK_WEATHER_SERVICE = "mkweather";
+
+    /**
      * Features supported by the MKSDK.
      */
     public static class Features {
@@ -181,5 +193,13 @@ public final class MKContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String LIVE_LOCK_SCREEN = "org.mokee.livelockscreen";
+
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the mk weather weather
+         * service utilized by the mksdk.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String WEATHER_SERVICES = "org.mokee.weather";
     }
 }

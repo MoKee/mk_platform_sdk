@@ -66,5 +66,6 @@
         <item>org.mokee.platform.internal.ThemeManagerService</item>
         <item>org.mokee.platform.internal.IconCacheManagerService</item>
         <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
+        <item>org.mokee.platform.internal.MKWeatherManagerService</item>
     </string-array>
 </resources>

@@ -24,7 +24,7 @@ LOCAL_PATH := $(call my-dir)
 mk_platform_res := APPS/org.mokee.platform-res_intermediates/src
 
 # List of packages used in mk-api-stubs and mk-system-api-stubs
-mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:mokee.themes:mokee.util
+mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:mokee.themes:mokee.util:mokee.weather:mokee.weatherservice
 
 # The MoKee Platform Framework Library
 # ============================================================
