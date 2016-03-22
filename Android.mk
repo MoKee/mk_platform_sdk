@@ -132,32 +132,25 @@ $(built_dex_intermediate): $(mk_framework_res_R_stamp)
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
-# the sdk as a jar for publish, not built as part of full target
+# the sdk as an aar for publish, not built as part of full target
 # DO NOT LINK AGAINST THIS IN BUILD
 # ============================================================
 include $(CLEAR_VARS)
 
-LOCAL_MODULE:= org.mokee.platform.sdk.jar
-LOCAL_MODULE_TAGS := optional
-LOCAL_REQUIRED_MODULES := services
+LOCAL_MODULE := org.mokee.platform.sdk.aar
+
 LOCAL_JACK_ENABLED := disabled
 
-LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(mokee_sdk_src)) \
-    $(call all-Iaidl-files-under, $(mokee_sdk_src)) \
-    $(call all-Iaidl-files-under, $(mokee_sdk_internal_src))
+# just need to define this, $(TOP)/dummy should not exist
+LOCAL_SRC_FILES := $(call all-java-files-under, dummy)
 
-# Included aidl files from mokee.app namespace
-LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/sdk/src/java
+LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, sdk/res/res)
+LOCAL_MANIFEST_FILE := sdk/AndroidManifest.xml
 
-mksdk_LOCAL_INTERMEDIATE_SOURCES := \
-    $(mk_platform_res)/mokee/platform/R.java \
-    $(mk_platform_res)/mokee/platform/Manifest.java
-
-LOCAL_INTERMEDIATE_SOURCES := \
-    $(mksdk_LOCAL_INTERMEDIATE_SOURCES)
+LOCAL_STATIC_JAVA_LIBRARIES := org.mokee.platform.sdk
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
+$(LOCAL_MODULE) : $(built_aar)
 
 # full target for use by platform apps
 #
