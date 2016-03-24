@@ -31,6 +31,7 @@
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
   <!-- Names of default profiles. -->
+  <string name="profileNameDefault">Implicit</string>
   <string name="profileNameWork">Serviciu</string>
   <string name="profileNameHome">Acasă</string>
   <string name="profileNameSilent">Silențios</string>
@@ -45,6 +46,7 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_off">Oprit</string>
   <string name="live_display_night">Noapte</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
