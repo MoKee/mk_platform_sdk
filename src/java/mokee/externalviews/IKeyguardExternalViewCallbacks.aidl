@@ -25,4 +25,6 @@ interface IKeyguardExternalViewCallbacks {
     boolean requestDismissAndStartActivity(in Intent intent);
     oneway void collapseNotificationPanel();
     oneway void setInteractivity(boolean isInteractive);
+    oneway void onAttachedToWindow();
+    oneway void onDetachedFromWindow();
 }
