@@ -186,8 +186,13 @@ public class MKTelephonyManagerService extends SystemService {
         if (localLOGD) {
             Log.d(TAG, "MK telephony manager service start: " + this);
         }
-        publishBinderService(MKContextConstants.MK_TELEPHONY_MANAGER_SERVICE, mService);
-
+        if (mContext.getPackageManager().hasSystemFeature(
+                MKContextConstants.Features.TELEPHONY)) {
+            publishBinderService(MKContextConstants.MK_TELEPHONY_MANAGER_SERVICE, mService);
+        } else {
+            Log.wtf(TAG, "MK telephony service started by system server but feature xml not" +
+                    " declared. Not publishing binder service!");
+        }
         mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
     }
 

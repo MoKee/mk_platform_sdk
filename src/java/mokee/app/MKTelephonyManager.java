@@ -26,6 +26,8 @@ import android.util.Slog;
 
 import java.util.List;
 
+import mokee.app.MKContextConstants;
+
 /**
  * The MKTelephonyManager allows you to view and manage the phone state and
  * the data connection, with multiple SIMs support.
@@ -55,6 +57,13 @@ public class MKTelephonyManager {
             mContext = context;
         }
         sService = getService();
+
+        if (context.getPackageManager().hasSystemFeature(MKContextConstants.Features.TELEPHONY)
+                && sService == null) {
+            throw new RuntimeException("Unable to get MKTelephonyManagerService. " +
+                    "The service either crashed, was not started, or the interface has been " +
+                    "called to early in SystemServer init");
+        }
     }
 
     /**
