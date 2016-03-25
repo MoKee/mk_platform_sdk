@@ -79,7 +79,12 @@ public class PerformanceManager {
 
     private PerformanceManager(Context context) {
         sService = getService();
-
+        if (context.getPackageManager().hasSystemFeature(
+                MKContextConstants.Features.PERFORMANCE) && sService == null) {
+            throw new RuntimeException("Unable to get PerformanceManagerService. The service" +
+                    " either crashed, was not started, or the interface has been called to early" +
+                    " in SystemServer init");
+        }
         try {
             if (sService != null) {
                 mNumberOfProfiles = sService.getNumberOfProfiles();
