@@ -33,7 +33,7 @@
   <string name="permdesc_modifyProfiles">앱이 시스템 프로파일을 수정할 수 있습니다.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">하드웨어 프레임워크 사용</string>
-  <string name="permdesc_useHardwareFramework">앱이 MK 하드웨어 프레임워크에 접근할 수 있도록 허용합니다.</string>
+  <string name="permdesc_useHardwareFramework">앱이 CM 하드웨어 프레임워크에 접근할 수 있도록 허용합니다.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">직접 변경 경보</string>
   <string name="permdesc_write_alarms">추가, 수정 또는 삭제 모든 당신의 경보의 애플 리 케이 션을 수 있습니다.</string>
