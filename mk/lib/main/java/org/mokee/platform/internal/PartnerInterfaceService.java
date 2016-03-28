@@ -61,7 +61,7 @@ public class PartnerInterfaceService extends SystemService {
         super(context);
         mContext = context;
         if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.PERFORMANCE)) {
+                MKContextConstants.Features.PARTNER)) {
             publishBinderService(MKContextConstants.MK_PARTNER_INTERFACE, mService);
         } else {
             Log.wtf(TAG, "MK partner service started by system server but feature xml not" +
