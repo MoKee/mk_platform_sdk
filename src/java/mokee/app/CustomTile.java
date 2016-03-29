@@ -29,6 +29,9 @@ import android.util.Log;
 import android.widget.RemoteViews;
 import mokee.os.Build;
 
+import cyanogenmod.os.Concierge;
+import cyanogenmod.os.Concierge.ParcelInfo;
+
 import java.util.ArrayList;
 
 /**
@@ -129,11 +132,9 @@ public class CustomTile implements Parcelable {
      * Unflatten the CustomTile from a parcel.
      */
     public CustomTile(Parcel parcel) {
-        // Read parcelable version, make sure to define explicit changes
-        // within {@link Build.PARCELABLE_VERSION);
-        int parcelableVersion = parcel.readInt();
-        int parcelableSize = parcel.readInt();
-        int startPosition = parcel.dataPosition();
+        // Read parcelable version via the Concierge
+        ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
+        int parcelableVersion = parcelInfo.getParcelVersion();
 
         // Pattern here is that all new members should be added to the end of
         // the writeToParcel method. Then we step through each version, until the latest
@@ -178,7 +179,8 @@ public class CustomTile implements Parcelable {
             }
         }
 
-        parcel.setDataPosition(startPosition + parcelableSize);
+        // Complete parcel info for the concierge
+        parcelInfo.complete();
     }
 
     /**
@@ -268,15 +270,8 @@ public class CustomTile implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel out, int flags) {
-        // Write parcelable version, make sure to define explicit changes
-        // within {@link Build.PARCELABLE_VERSION);
-        out.writeInt(Build.PARCELABLE_VERSION);
-
-        // Inject a placeholder that will store the parcel size from this point on
-        // (not including the size itself).
-        int sizePosition = out.dataPosition();
-        out.writeInt(0);
-        int startPosition = out.dataPosition();
+        // Tell the concierge to prepare the parcel
+        ParcelInfo parcelInfo = Concierge.prepareParcel(out);
 
         // ==== APRICOT =====
         if (onClick != null) {
@@ -342,11 +337,8 @@ public class CustomTile implements Parcelable {
             out.writeInt(0);
         }
 
-        // Go back and write size
-        int parcelableSize = out.dataPosition() - startPosition;
-        out.setDataPosition(sizePosition);
-        out.writeInt(parcelableSize);
-        out.setDataPosition(startPosition + parcelableSize);
+        // Complete the parcel info for the concierge
+        parcelInfo.complete();
     }
 
     /**
@@ -383,11 +375,9 @@ public class CustomTile implements Parcelable {
         private int styleId;
 
         private ExpandedStyle(Parcel parcel) {
-            // Read parcelable version, make sure to define explicit changes
-            // within {@link Build.PARCELABLE_VERSION);
-            int parcelableVersion = parcel.readInt();
-            int parcelableSize = parcel.readInt();
-            int startPosition = parcel.dataPosition();
+            // Read parcelable version via the Concierge
+            ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
+            int parcelableVersion = parcelInfo.getParcelVersion();
 
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
@@ -405,7 +395,8 @@ public class CustomTile implements Parcelable {
                 }
             }
 
-            parcel.setDataPosition(startPosition + parcelableSize);
+            // Complete parcel info for the concierge
+            parcelInfo.complete();
         }
 
         /**
@@ -474,15 +465,8 @@ public class CustomTile implements Parcelable {
 
         @Override
         public void writeToParcel(Parcel parcel, int i) {
-            // Write parcelable version, make sure to define explicit changes
-            // within {@link Build.PARCELABLE_VERSION);
-            parcel.writeInt(Build.PARCELABLE_VERSION);
-
-            // Inject a placeholder that will store the parcel size from this point on
-            // (not including the size itself).
-            int sizePosition = parcel.dataPosition();
-            parcel.writeInt(0);
-            int startPosition = parcel.dataPosition();
+            // Tell the concierge to prepare the parcel
+            ParcelInfo parcelInfo = Concierge.prepareParcel(parcel);
 
             // ==== APRICOT ====
             if (expandedItems != null) {
@@ -501,11 +485,8 @@ public class CustomTile implements Parcelable {
                 parcel.writeInt(0);
             }
 
-            // Go back and write size
-            int parcelableSize = parcel.dataPosition() - startPosition;
-            parcel.setDataPosition(sizePosition);
-            parcel.writeInt(parcelableSize);
-            parcel.setDataPosition(startPosition + parcelableSize);
+            // Complete the parcel info for the concierge
+            parcelInfo.complete();
         }
 
         @Override
@@ -680,11 +661,9 @@ public class CustomTile implements Parcelable {
          * Unflatten the ExpandedItem from a parcel.
          */
         protected ExpandedItem(Parcel parcel) {
-            // Read parcelable version, make sure to define explicit changes
-            // within {@link Build.PARCELABLE_VERSION);
-            int parcelableVersion = parcel.readInt();
-            int parcelableSize = parcel.readInt();
-            int startPosition = parcel.dataPosition();
+            // Read parcelable version via the Concierge
+            ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
+            int parcelableVersion = parcelInfo.getParcelVersion();
 
             // Pattern here is that all new members should be added to the end of
             // the writeToParcel method. Then we step through each version, until the latest
@@ -708,7 +687,8 @@ public class CustomTile implements Parcelable {
                 }
             }
 
-            parcel.setDataPosition(startPosition + parcelableSize);
+            // Complete parcel info for the concierge
+            parcelInfo.complete();
         }
 
         @Override
@@ -718,15 +698,8 @@ public class CustomTile implements Parcelable {
 
         @Override
         public void writeToParcel(Parcel out, int flags) {
-            // Write parcelable version, make sure to define explicit changes
-            // within {@link Build.PARCELABLE_VERSION);
-            out.writeInt(Build.PARCELABLE_VERSION);
-
-            // Inject a placeholder that will store the parcel size from this point on
-            // (not including the size itself).
-            int sizePosition = out.dataPosition();
-            out.writeInt(0);
-            int startPosition = out.dataPosition();
+            // Tell the concierge to prepare the parcel
+            ParcelInfo parcelInfo = Concierge.prepareParcel(out);
 
             // ==== APRICOT ====
             if (onClickPendingIntent != null) {
@@ -757,11 +730,8 @@ public class CustomTile implements Parcelable {
                 out.writeInt(0);
             }
 
-            // Go back and write size
-            int parcelableSize = out.dataPosition() - startPosition;
-            out.setDataPosition(sizePosition);
-            out.writeInt(parcelableSize);
-            out.setDataPosition(startPosition + parcelableSize);
+            // Complete the parcel info for the concierge
+            parcelInfo.complete();
         }
 
         @Override

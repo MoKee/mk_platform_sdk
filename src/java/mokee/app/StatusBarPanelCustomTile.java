@@ -20,7 +20,11 @@ package mokee.app;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.UserHandle;
+
 import mokee.os.Build;
+
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
 
 /**
  * Class encapsulating a Custom Tile. Sent by the StatusBarManagerService to clients including
@@ -68,11 +72,9 @@ public class StatusBarPanelCustomTile implements Parcelable {
 
 
     public StatusBarPanelCustomTile(Parcel in) {
-        // Read parcelable version, make sure to define explicit changes
-        // within {@link Build.PARCELABLE_VERSION);
-        int parcelableVersion = in.readInt();
-        int parcelableSize = in.readInt();
-        int startPosition = in.dataPosition();
+        // Read parcelable version via the Concierge
+        ParcelInfo parcelInfo = Concierge.receiveParcel(in);
+        int parcelableVersion = parcelInfo.getParcelVersion();
 
         // tmp variables for final
         String tmpResPkg = null;
@@ -123,7 +125,8 @@ public class StatusBarPanelCustomTile implements Parcelable {
         this.postTime = tmpPostTime;
         this.key = key();
 
-        in.setDataPosition(startPosition + parcelableSize);
+        // Complete parcel info for the concierge
+        parcelInfo.complete();
     }
 
     private String key() {
@@ -158,15 +161,8 @@ public class StatusBarPanelCustomTile implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel out, int flags) {
-        // Write parcelable version, make sure to define explicit changes
-        // within {@link Build.PARCELABLE_VERSION);
-        out.writeInt(Build.PARCELABLE_VERSION);
-
-        // Inject a placeholder that will store the parcel size from this point on
-        // (not including the size itself).
-        int sizePosition = out.dataPosition();
-        out.writeInt(0);
-        int startPosition = out.dataPosition();
+        // Tell the concierge to prepare the parcel
+        ParcelInfo parcelInfo = Concierge.prepareParcel(out);
 
         // ==== APRICOT ===
         out.writeString(this.pkg);
@@ -187,11 +183,8 @@ public class StatusBarPanelCustomTile implements Parcelable {
         // ==== BOYSENBERRY =====
         out.writeString(this.resPkg);
 
-        // Go back and write size
-        int parcelableSize = out.dataPosition() - startPosition;
-        out.setDataPosition(sizePosition);
-        out.writeInt(parcelableSize);
-        out.setDataPosition(startPosition + parcelableSize);
+        // Complete the parcel info for the concierge
+        parcelInfo.complete();
     }
 
     @Override
