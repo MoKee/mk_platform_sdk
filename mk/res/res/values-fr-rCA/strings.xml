@@ -18,6 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Système MoKee</string>
+  <string name="permlab_publishCustomTile">créer une tuile personnalisée dans le panneau de configuration rapide</string>
+  <string name="permdesc_publishCustomTile">Permettre à une application de publier rapidement quelques paramètres.</string>
   <string name="permlab_modifyNetworkSettings">modifier les paramètres de réseau du système</string>
   <string name="permdesc_modifyNetworkSettings">Autorise une application à effectuer des changements sur le mode avion et le réglage des données mobiles.</string>
   <string name="permlab_modifySoundSettings">modifier les paramètres système de son</string>
@@ -54,6 +56,7 @@
   <string name="permdesc_managePersistentStorage">Permet une application lire ou écrire des propriétés qui peuvent persister malgré une réinitialisation.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">ajouter et supprimer des applications aux applications protégées</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Défaut</string>
@@ -113,6 +116,7 @@
   <string name="theme_reset_notification_title">Réinitialisation du thème</string>
   <string name="theme_reset_notification_message">Thème système restauré en raison de multiples problèmes d\'application.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">accès au service du thème</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_accessThemeService">Permet à l\'application d\'accéder au service de thème. Ne devrait jamais être nécessaire pour des applications normales.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -124,6 +128,7 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Permet à l\'application d\'insérer de nouveaux thèmes et à modifier le thème que vous avez appliqué.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">accès au gestionnaire des performances</string>
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Permet à l\'application d\'accéder au service de performance. Ne devrait jamais être nécessaire pour des applications normales.</string>
 </resources>
