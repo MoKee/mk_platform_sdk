@@ -1216,7 +1216,7 @@ package mokee.themes {
     method public void requestThemeChange(java.util.Map<java.lang.String, java.lang.String>);
     method public void requestThemeChange(java.util.Map<java.lang.String, java.lang.String>, boolean);
     method public void requestThemeChange(mokee.themes.ThemeChangeRequest, boolean);
-    method public void unregisterProcessingListener(mokee.themes.ThemeManager.ThemeChangeListener);
+    method public void unregisterProcessingListener(mokee.themes.ThemeManager.ThemeProcessingListener);
     method public void unregisterThemeChangeListener(mokee.themes.ThemeManager.ThemeChangeListener);
   }
 
