@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
-import cyanogenmod.weather.RequestInfo;
-import cyanogenmod.weather.WeatherInfo;
-import cyanogenmod.weather.WeatherLocation;
-
-import java.util.List;
+import mokee.weather.IWeatherServiceProviderChangeListener;
+import mokee.weather.RequestInfo;
 
 /** @hide */
-oneway interface IRequestInfoListener {
-    void onWeatherRequestCompleted(in RequestInfo requestInfo, int state,
-        in WeatherInfo weatherInfo);
-    void onLookupCityRequestCompleted(in RequestInfo requestInfo,
-        in List<WeatherLocation> weatherLocation);
+interface IMKWeatherManager {
+    oneway void updateWeather(in RequestInfo info);
+    oneway void lookupCity(in RequestInfo info);
+    oneway void registerWeatherServiceProviderChangeListener(
+        in IWeatherServiceProviderChangeListener listener);
+    oneway void unregisterWeatherServiceProviderChangeListener(
+        in IWeatherServiceProviderChangeListener listener);
+    String getActiveWeatherServiceProviderLabel();
 }

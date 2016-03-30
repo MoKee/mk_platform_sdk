@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
-parcelable WeatherLocation;
+/** @hide */
+oneway interface IWeatherServiceProviderChangeListener {
+    void onWeatherServiceProviderChanged(String providerLabel);
+}

@@ -14,18 +14,6 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weatherservice;
 
-import cyanogenmod.weather.IWeatherServiceProviderChangeListener;
-import cyanogenmod.weather.RequestInfo;
-
-/** @hide */
-interface ICMWeatherManager {
-    oneway void updateWeather(in RequestInfo info);
-    oneway void lookupCity(in RequestInfo info);
-    oneway void registerWeatherServiceProviderChangeListener(
-        in IWeatherServiceProviderChangeListener listener);
-    oneway void unregisterWeatherServiceProviderChangeListener(
-        in IWeatherServiceProviderChangeListener listener);
-    String getActiveWeatherServiceProviderLabel();
-}
+parcelable ServiceRequestResult;

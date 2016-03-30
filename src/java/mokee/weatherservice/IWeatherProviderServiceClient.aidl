@@ -14,9 +14,13 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weatherservice;
+
+import mokee.weather.RequestInfo;
+import mokee.weatherservice.ServiceRequestResult;
 
 /** @hide */
-oneway interface IWeatherServiceProviderChangeListener {
-    void onWeatherServiceProviderChanged(String providerLabel);
+oneway interface IWeatherProviderServiceClient {
+    void setServiceRequestState(in RequestInfo requestInfo, in ServiceRequestResult result,
+        int state);
 }

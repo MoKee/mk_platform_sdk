@@ -35,8 +35,8 @@ import mokee.profiles.LockSettings;
 import mokee.profiles.RingModeSettings;
 import mokee.profiles.StreamSettings;
 
-import cyanogenmod.os.Concierge;
-import cyanogenmod.os.Concierge.ParcelInfo;
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

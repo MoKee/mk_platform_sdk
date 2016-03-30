@@ -29,8 +29,8 @@ import android.util.Log;
 import android.widget.RemoteViews;
 import mokee.os.Build;
 
-import cyanogenmod.os.Concierge;
-import cyanogenmod.os.Concierge.ParcelInfo;
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
 
 import java.util.ArrayList;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
 import android.annotation.NonNull;
 import android.content.ComponentName;
@@ -25,7 +25,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.ArraySet;
-import cyanogenmod.app.CMContextConstants;
+import mokee.app.MKContextConstants;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,10 +37,10 @@ import java.util.Set;
 /**
  * Provides access to the weather services in the device.
  */
-public class CMWeatherManager {
+public class MKWeatherManager {
 
-    private static ICMWeatherManager sWeatherManagerService;
-    private static CMWeatherManager sInstance;
+    private static IMKWeatherManager sWeatherManagerService;
+    private static MKWeatherManager sInstance;
     private Context mContext;
     private Map<RequestInfo,WeatherUpdateRequestListener> mWeatherUpdateRequestListeners
             = Collections.synchronizedMap(new HashMap<RequestInfo,WeatherUpdateRequestListener>());
@@ -49,7 +49,7 @@ public class CMWeatherManager {
     private Handler mHandler;
     private Set<WeatherServiceProviderChangeListener> mProviderChangedListeners = new ArraySet<>();
 
-    private static final String TAG = CMWeatherManager.class.getSimpleName();
+    private static final String TAG = MKWeatherManager.class.getSimpleName();
 
     /**
      * Weather update request state: Successfully completed
@@ -86,38 +86,38 @@ public class CMWeatherManager {
     public static final int LOOKUP_REQUEST_NO_MATCH_FOUND = -101;
 
 
-    private CMWeatherManager(Context context) {
+    private MKWeatherManager(Context context) {
         Context appContext = context.getApplicationContext();
         mContext = (appContext != null) ? appContext : context;
         sWeatherManagerService = getService();
 
         if (context.getPackageManager().hasSystemFeature(
-                CMContextConstants.Features.WEATHER_SERVICES) && (sWeatherManagerService == null)) {
-            throw new RuntimeException("Unable to bind the CMWeatherManagerService");
+                MKContextConstants.Features.WEATHER_SERVICES) && (sWeatherManagerService == null)) {
+            throw new RuntimeException("Unable to bind the MKWeatherManagerService");
         }
         mHandler = new Handler(appContext.getMainLooper());
     }
 
     /**
-     * Gets or creates an instance of the {@link cyanogenmod.weather.CMWeatherManager}
+     * Gets or creates an instance of the {@link mokee.weather.MKWeatherManager}
      * @param context
-     * @return {@link CMWeatherManager}
+     * @return {@link MKWeatherManager}
      */
-    public static CMWeatherManager getInstance(Context context) {
+    public static MKWeatherManager getInstance(Context context) {
         if (sInstance == null) {
-            sInstance = new CMWeatherManager(context);
+            sInstance = new MKWeatherManager(context);
         }
         return sInstance;
     }
 
     /** @hide */
-    public static ICMWeatherManager getService() {
+    public static IMKWeatherManager getService() {
         if (sWeatherManagerService != null) {
             return sWeatherManagerService;
         }
-        IBinder binder = ServiceManager.getService(CMContextConstants.CM_WEATHER_SERVICE);
+        IBinder binder = ServiceManager.getService(MKContextConstants.MK_WEATHER_SERVICE);
         if (binder != null) {
-            sWeatherManagerService = ICMWeatherManager.Stub.asInterface(binder);
+            sWeatherManagerService = IMKWeatherManager.Stub.asInterface(binder);
             return sWeatherManagerService;
         }
         return null;
@@ -153,7 +153,7 @@ public class CMWeatherManager {
      * Forces the weather service to request the latest weather information for the provided
      * WeatherLocation. This is the preferred method for requesting a weather update.
      *
-     * @param weatherLocation A {@link cyanogenmod.weather.WeatherLocation} that was previously
+     * @param weatherLocation A {@link mokee.weather.WeatherLocation} that was previously
      *                        obtained by calling
      *                        {@link #lookupCity(String, LookupCityRequestListener)}
      * @param listener {@link WeatherUpdateRequestListener} To be notified once the active weather
@@ -183,7 +183,7 @@ public class CMWeatherManager {
      * @param city The city name
      * @param listener {@link LookupCityRequestListener} To be notified once the request has been
      *                                                  completed. Upon success, a list of
-     *                                                  {@link cyanogenmod.weather.WeatherLocation}
+     *                                                  {@link mokee.weather.WeatherLocation}
      *                                                  will be provided
      */
     public void lookupCity(@NonNull String city, @NonNull LookupCityRequestListener listener) {

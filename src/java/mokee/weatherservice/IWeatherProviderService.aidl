@@ -14,6 +14,15 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weatherservice;
+package mokee.weatherservice;
 
-parcelable ServiceRequestResult;
+import mokee.weatherservice.IWeatherProviderServiceClient;
+import mokee.weather.RequestInfo;
+
+/** @hide */
+oneway interface IWeatherProviderService {
+    void processWeatherUpdateRequest(in RequestInfo request);
+    void processCityNameLookupRequest(in RequestInfo request);
+    void setServiceClient(in IWeatherProviderServiceClient client);
+    void cancelOngoingRequests();
+}

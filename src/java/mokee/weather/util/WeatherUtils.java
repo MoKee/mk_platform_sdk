@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather.util;
+package mokee.weather.util;
 
 
-import cyanogenmod.providers.WeatherContract;
+import mokee.providers.WeatherContract;
 
 import java.text.DecimalFormat;
 

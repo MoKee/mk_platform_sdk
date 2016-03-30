@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
 import android.location.Location;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import cyanogenmod.os.Build;
-import cyanogenmod.os.Concierge;
-import cyanogenmod.os.Concierge.ParcelInfo;
-import cyanogenmod.providers.WeatherContract;
+import mokee.os.Build;
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
+import mokee.providers.WeatherContract;
 
 /**
  * This class holds the information of a request submitted to the active weather provider service
@@ -108,8 +108,8 @@ public final class RequestInfo implements Parcelable {
          * Sets the unit in which the temperature will be reported if the request is honored.
          * Valid values are:
          * <ul>
-         * {@link cyanogenmod.providers.WeatherContract.WeatherColumns.TempUnit#CELSIUS}
-         * {@link cyanogenmod.providers.WeatherContract.WeatherColumns.TempUnit#FAHRENHEIT}
+         * {@link mokee.providers.WeatherContract.WeatherColumns.TempUnit#CELSIUS}
+         * {@link mokee.providers.WeatherContract.WeatherColumns.TempUnit#FAHRENHEIT}
          * </ul>
          * Any other value will generate an IllegalArgumentException. If the temperature unit is not
          * set, the default will be degrees Fahrenheit
@@ -171,7 +171,7 @@ public final class RequestInfo implements Parcelable {
         ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
         int parcelableVersion = parcelInfo.getParcelVersion();
 
-        if (parcelableVersion >= Build.CM_VERSION_CODES.ELDERBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.ELDERBERRY) {
             mKey = parcel.readInt();
             mRequestType = parcel.readInt();
             switch (mRequestType) {
@@ -212,7 +212,7 @@ public final class RequestInfo implements Parcelable {
     }
 
     /**
-     * @return the {@link cyanogenmod.weather.WeatherLocation} if this is a request by weather
+     * @return the {@link mokee.weather.WeatherLocation} if this is a request by weather
      * location, null otherwise
      */
     public WeatherLocation getWeatherLocation() {

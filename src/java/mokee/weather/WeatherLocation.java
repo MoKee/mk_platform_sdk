@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import cyanogenmod.os.Build;
-import cyanogenmod.os.Concierge;
-import cyanogenmod.os.Concierge.ParcelInfo;
+import mokee.os.Build;
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
 
 /**
  * A class representing a geographical location that a weather service provider can use to
@@ -99,7 +99,7 @@ public final class WeatherLocation implements Parcelable{
         ParcelInfo parcelInfo = Concierge.receiveParcel(in);
         int parcelableVersion = parcelInfo.getParcelVersion();
 
-        if (parcelableVersion >= Build.CM_VERSION_CODES.ELDERBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.ELDERBERRY) {
             mKey = in.readInt();
             mCityId = in.readString();
             mCity = in.readString();

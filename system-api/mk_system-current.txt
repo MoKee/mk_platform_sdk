@@ -1049,7 +1049,7 @@ package mokee.providers {
 
   public class WeatherContract {
     ctor public WeatherContract();
-    field public static final java.lang.String AUTHORITY = "com.cyanogenmod.weather";
+    field public static final java.lang.String AUTHORITY = "com.mokee.weather";
     field public static final android.net.Uri AUTHORITY_URI;
   }
 
@@ -1247,32 +1247,32 @@ package mokee.util {
 
 }
 
-package cyanogenmod.weather {
+package mokee.weather {
 
-  public class CMWeatherManager {
+  public class MKWeatherManager {
     method public java.lang.String getActiveWeatherServiceProviderLabel();
-    method public static cyanogenmod.weather.CMWeatherManager getInstance(android.content.Context);
-    method public void lookupCity(java.lang.String, cyanogenmod.weather.CMWeatherManager.LookupCityRequestListener);
-    method public void registerWeatherServiceProviderChangeListener(cyanogenmod.weather.CMWeatherManager.WeatherServiceProviderChangeListener);
-    method public void requestWeatherUpdate(android.location.Location, cyanogenmod.weather.CMWeatherManager.WeatherUpdateRequestListener);
-    method public void requestWeatherUpdate(cyanogenmod.weather.WeatherLocation, cyanogenmod.weather.CMWeatherManager.WeatherUpdateRequestListener);
-    method public void unregisterWeatherServiceProviderChangeListener(cyanogenmod.weather.CMWeatherManager.WeatherServiceProviderChangeListener);
+    method public static mokee.weather.MKWeatherManager getInstance(android.content.Context);
+    method public void lookupCity(java.lang.String, mokee.weather.MKWeatherManager.LookupCityRequestListener);
+    method public void registerWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
+    method public void requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public void requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public void unregisterWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
     field public static final int WEATHER_REQUEST_ALREADY_IN_PROGRESS = -3; // 0xfffffffd
     field public static final int WEATHER_REQUEST_COMPLETED = 1; // 0x1
     field public static final int WEATHER_REQUEST_FAILED = -2; // 0xfffffffe
     field public static final int WEATHER_REQUEST_SUBMITTED_TOO_SOON = -1; // 0xffffffff
   }
 
-  public static abstract interface CMWeatherManager.LookupCityRequestListener {
-    method public abstract void onLookupCityRequestCompleted(java.util.ArrayList<cyanogenmod.weather.WeatherLocation>);
+  public static abstract interface MKWeatherManager.LookupCityRequestListener {
+    method public abstract void onLookupCityRequestCompleted(java.util.ArrayList<mokee.weather.WeatherLocation>);
   }
 
-  public static abstract interface CMWeatherManager.WeatherServiceProviderChangeListener {
+  public static abstract interface MKWeatherManager.WeatherServiceProviderChangeListener {
     method public abstract void onWeatherServiceProviderChanged(java.lang.String);
   }
 
-  public static abstract interface CMWeatherManager.WeatherUpdateRequestListener {
-    method public abstract void onWeatherRequestCompleted(int, cyanogenmod.weather.WeatherInfo);
+  public static abstract interface MKWeatherManager.WeatherUpdateRequestListener {
+    method public abstract void onWeatherRequestCompleted(int, mokee.weather.WeatherInfo);
   }
 
   public final class RequestInfo implements android.os.Parcelable {
@@ -1281,9 +1281,9 @@ package cyanogenmod.weather {
     method public android.location.Location getLocation();
     method public int getRequestType();
     method public int getTemperatureUnit();
-    method public cyanogenmod.weather.WeatherLocation getWeatherLocation();
+    method public mokee.weather.WeatherLocation getWeatherLocation();
     method public void writeToParcel(android.os.Parcel, int);
-    field public static final android.os.Parcelable.Creator<cyanogenmod.weather.RequestInfo> CREATOR;
+    field public static final android.os.Parcelable.Creator<mokee.weather.RequestInfo> CREATOR;
     field public static final int TYPE_GEO_LOCATION_REQ = 1; // 0x1
     field public static final int TYPE_LOOKUP_CITY_NAME_REQ = 3; // 0x3
     field public static final int TYPE_WEATHER_LOCATION_REQ = 2; // 0x2
@@ -1294,7 +1294,7 @@ package cyanogenmod.weather {
     method public java.lang.String getCity();
     method public java.lang.String getCityId();
     method public int getConditionCode();
-    method public java.util.ArrayList<cyanogenmod.weather.WeatherInfo.DayForecast> getForecasts();
+    method public java.util.ArrayList<mokee.weather.WeatherInfo.DayForecast> getForecasts();
     method public float getHumidity();
     method public float getTemperature();
     method public int getTemperatureUnit();
@@ -1303,18 +1303,18 @@ package cyanogenmod.weather {
     method public float getWindSpeed();
     method public int getWindSpeedUnit();
     method public void writeToParcel(android.os.Parcel, int);
-    field public static final android.os.Parcelable.Creator<cyanogenmod.weather.WeatherInfo> CREATOR;
+    field public static final android.os.Parcelable.Creator<mokee.weather.WeatherInfo> CREATOR;
   }
 
   public static class WeatherInfo.Builder {
     ctor public WeatherInfo.Builder(long);
-    method public cyanogenmod.weather.WeatherInfo build();
-    method public cyanogenmod.weather.WeatherInfo.Builder setCity(java.lang.String, java.lang.String);
-    method public cyanogenmod.weather.WeatherInfo.Builder setForecast(java.util.ArrayList<cyanogenmod.weather.WeatherInfo.DayForecast>);
-    method public cyanogenmod.weather.WeatherInfo.Builder setHumidity(float);
-    method public cyanogenmod.weather.WeatherInfo.Builder setTemperature(float, int);
-    method public cyanogenmod.weather.WeatherInfo.Builder setWeatherCondition(int);
-    method public cyanogenmod.weather.WeatherInfo.Builder setWind(float, float, int);
+    method public mokee.weather.WeatherInfo build();
+    method public mokee.weather.WeatherInfo.Builder setCity(java.lang.String, java.lang.String);
+    method public mokee.weather.WeatherInfo.Builder setForecast(java.util.ArrayList<mokee.weather.WeatherInfo.DayForecast>);
+    method public mokee.weather.WeatherInfo.Builder setHumidity(float);
+    method public mokee.weather.WeatherInfo.Builder setTemperature(float, int);
+    method public mokee.weather.WeatherInfo.Builder setWeatherCondition(int);
+    method public mokee.weather.WeatherInfo.Builder setWind(float, float, int);
   }
 
   public static class WeatherInfo.DayForecast implements android.os.Parcelable {
@@ -1323,15 +1323,15 @@ package cyanogenmod.weather {
     method public float getHigh();
     method public float getLow();
     method public void writeToParcel(android.os.Parcel, int);
-    field public static final android.os.Parcelable.Creator<cyanogenmod.weather.WeatherInfo.DayForecast> CREATOR;
+    field public static final android.os.Parcelable.Creator<mokee.weather.WeatherInfo.DayForecast> CREATOR;
   }
 
   public static class WeatherInfo.DayForecast.Builder {
     ctor public WeatherInfo.DayForecast.Builder();
-    method public cyanogenmod.weather.WeatherInfo.DayForecast build();
-    method public cyanogenmod.weather.WeatherInfo.DayForecast.Builder setHigh(float);
-    method public cyanogenmod.weather.WeatherInfo.DayForecast.Builder setLow(float);
-    method public cyanogenmod.weather.WeatherInfo.DayForecast.Builder setWeatherCondition(int);
+    method public mokee.weather.WeatherInfo.DayForecast build();
+    method public mokee.weather.WeatherInfo.DayForecast.Builder setHigh(float);
+    method public mokee.weather.WeatherInfo.DayForecast.Builder setLow(float);
+    method public mokee.weather.WeatherInfo.DayForecast.Builder setWeatherCondition(int);
   }
 
   public final class WeatherLocation implements android.os.Parcelable {
@@ -1342,39 +1342,39 @@ package cyanogenmod.weather {
     method public java.lang.String getCountryId();
     method public java.lang.String getPostalCode();
     method public void writeToParcel(android.os.Parcel, int);
-    field public static final android.os.Parcelable.Creator<cyanogenmod.weather.WeatherLocation> CREATOR;
+    field public static final android.os.Parcelable.Creator<mokee.weather.WeatherLocation> CREATOR;
   }
 
   public static class WeatherLocation.Builder {
     ctor public WeatherLocation.Builder(java.lang.String, java.lang.String);
-    method public cyanogenmod.weather.WeatherLocation build();
-    method public cyanogenmod.weather.WeatherLocation.Builder setCountry(java.lang.String, java.lang.String);
-    method public cyanogenmod.weather.WeatherLocation.Builder setPostalCode(java.lang.String);
+    method public mokee.weather.WeatherLocation build();
+    method public mokee.weather.WeatherLocation.Builder setCountry(java.lang.String, java.lang.String);
+    method public mokee.weather.WeatherLocation.Builder setPostalCode(java.lang.String);
   }
 
 }
 
-package cyanogenmod.weatherservice {
+package mokee.weatherservice {
 
   public final class ServiceRequest {
-    method public void complete(cyanogenmod.weatherservice.ServiceRequestResult);
+    method public void complete(mokee.weatherservice.ServiceRequestResult);
     method public void fail();
-    method public cyanogenmod.weather.RequestInfo getRequestInfo();
+    method public mokee.weather.RequestInfo getRequestInfo();
   }
 
   public final class ServiceRequestResult implements android.os.Parcelable {
     method public int describeContents();
-    method public java.util.ArrayList<cyanogenmod.weather.WeatherLocation> getLocationLookupList();
-    method public cyanogenmod.weather.WeatherInfo getWeatherInfo();
+    method public java.util.ArrayList<mokee.weather.WeatherLocation> getLocationLookupList();
+    method public mokee.weather.WeatherInfo getWeatherInfo();
     method public void writeToParcel(android.os.Parcel, int);
-    field public static final android.os.Parcelable.Creator<cyanogenmod.weatherservice.ServiceRequestResult> CREATOR;
+    field public static final android.os.Parcelable.Creator<mokee.weatherservice.ServiceRequestResult> CREATOR;
   }
 
   public static class ServiceRequestResult.Builder {
     ctor public ServiceRequestResult.Builder();
-    method public cyanogenmod.weatherservice.ServiceRequestResult build();
-    method public cyanogenmod.weatherservice.ServiceRequestResult.Builder setLocationLookupList(java.util.ArrayList<cyanogenmod.weather.WeatherLocation>);
-    method public cyanogenmod.weatherservice.ServiceRequestResult.Builder setWeatherInfo(cyanogenmod.weather.WeatherInfo);
+    method public mokee.weatherservice.ServiceRequestResult build();
+    method public mokee.weatherservice.ServiceRequestResult.Builder setLocationLookupList(java.util.ArrayList<mokee.weather.WeatherLocation>);
+    method public mokee.weatherservice.ServiceRequestResult.Builder setWeatherInfo(mokee.weather.WeatherInfo);
   }
 
   public abstract class WeatherProviderService extends android.app.Service {
@@ -1383,10 +1383,10 @@ package cyanogenmod.weatherservice {
     method public final android.os.IBinder onBind(android.content.Intent);
     method protected void onConnected();
     method protected void onDisconnected();
-    method protected abstract void onRequestCancelled(cyanogenmod.weatherservice.ServiceRequest);
-    method protected abstract void onRequestSubmitted(cyanogenmod.weatherservice.ServiceRequest);
-    field public static final java.lang.String SERVICE_INTERFACE = "cyanogenmod.weatherservice.WeatherProviderService";
-    field public static final java.lang.String SERVICE_META_DATA = "cyanogenmod.weatherservice";
+    method protected abstract void onRequestCancelled(mokee.weatherservice.ServiceRequest);
+    method protected abstract void onRequestSubmitted(mokee.weatherservice.ServiceRequest);
+    field public static final java.lang.String SERVICE_INTERFACE = "mokee.weatherservice.WeatherProviderService";
+    field public static final java.lang.String SERVICE_META_DATA = "mokee.weatherservice";
   }
 
 }

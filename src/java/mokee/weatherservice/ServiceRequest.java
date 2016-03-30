@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weatherservice;
+package mokee.weatherservice;
 
 import android.annotation.NonNull;
 import android.os.RemoteException;
-import cyanogenmod.weather.CMWeatherManager;
-import cyanogenmod.weather.RequestInfo;
+import mokee.weather.MKWeatherManager;
+import mokee.weather.RequestInfo;
 
 /**
  * This class represents a request submitted by the system to the active weather provider service
@@ -42,7 +42,7 @@ public final class ServiceRequest {
 
     /**
      * Obtains the request information
-     * @return {@link cyanogenmod.weather.RequestInfo}
+     * @return {@link mokee.weather.RequestInfo}
      */
     public RequestInfo getRequestInfo() {
         return mInfo;
@@ -63,17 +63,17 @@ public final class ServiceRequest {
                              + " contain a valid WeatherInfo object");
                         }
                         mClient.setServiceRequestState(mInfo, result,
-                                CMWeatherManager.WEATHER_REQUEST_COMPLETED);
+                                MKWeatherManager.WEATHER_REQUEST_COMPLETED);
                         break;
                     case RequestInfo.TYPE_LOOKUP_CITY_NAME_REQ:
                         if (result.getLocationLookupList() == null) {
                             //In case the user decided to mark this request as completed with an
                             //empty list. It's not necessarily a failure
                             mClient.setServiceRequestState(mInfo, null,
-                                    CMWeatherManager.LOOKUP_REQUEST_NO_MATCH_FOUND);
+                                    MKWeatherManager.LOOKUP_REQUEST_NO_MATCH_FOUND);
                         } else {
                             mClient.setServiceRequestState(mInfo, result,
-                                    CMWeatherManager.LOOKUP_REQUEST_COMPLETED);
+                                    MKWeatherManager.LOOKUP_REQUEST_COMPLETED);
                         }
                         break;
                 }
@@ -94,11 +94,11 @@ public final class ServiceRequest {
                     case RequestInfo.TYPE_GEO_LOCATION_REQ:
                     case RequestInfo.TYPE_WEATHER_LOCATION_REQ:
                         mClient.setServiceRequestState(mInfo, null,
-                                CMWeatherManager.WEATHER_REQUEST_FAILED);
+                                MKWeatherManager.WEATHER_REQUEST_FAILED);
                         break;
                     case RequestInfo.TYPE_LOOKUP_CITY_NAME_REQ:
                         mClient.setServiceRequestState(mInfo, null,
-                                CMWeatherManager.LOOKUP_REQUEST_FAILED);
+                                MKWeatherManager.LOOKUP_REQUEST_FAILED);
                         break;
                 }
             } catch (RemoteException e) {

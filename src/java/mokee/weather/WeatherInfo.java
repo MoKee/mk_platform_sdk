@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package mokee.weather;
 
 import android.annotation.NonNull;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import cyanogenmod.os.Build;
-import cyanogenmod.os.Concierge;
-import cyanogenmod.os.Concierge.ParcelInfo;
-import cyanogenmod.providers.WeatherContract;
-import cyanogenmod.weatherservice.ServiceRequest;
-import cyanogenmod.weatherservice.ServiceRequestResult;
+import mokee.os.Build;
+import mokee.os.Concierge;
+import mokee.os.Concierge.ParcelInfo;
+import mokee.providers.WeatherContract;
+import mokee.weatherservice.ServiceRequest;
+import mokee.weatherservice.ServiceRequestResult;
 
 import java.util.ArrayList;
 
 /**
  * This class represents the weather information that a
- * {@link cyanogenmod.weatherservice.WeatherProviderService} will use to update the weather content
+ * {@link mokee.weatherservice.WeatherProviderService} will use to update the weather content
  * provider. A weather provider service will be called by the system to process an update
  * request at any time. If the service successfully processes the request, then the weather provider
  * service is responsible of calling
@@ -257,7 +257,7 @@ public final class WeatherInfo implements Parcelable {
     }
 
     /**
-     * @return List of {@link cyanogenmod.weather.WeatherInfo.DayForecast}
+     * @return List of {@link mokee.weather.WeatherInfo.DayForecast}
      */
     public ArrayList<DayForecast> getForecasts() {
         return mForecastList;
@@ -268,7 +268,7 @@ public final class WeatherInfo implements Parcelable {
         ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
         int parcelableVersion = parcelInfo.getParcelVersion();
 
-        if (parcelableVersion >= Build.CM_VERSION_CODES.ELDERBERRY) {
+        if (parcelableVersion >= Build.MK_VERSION_CODES.ELDERBERRY) {
             mKey = parcel.readInt();
             mCityId = parcel.readString();
             mCity = parcel.readString();
@@ -446,7 +446,7 @@ public final class WeatherInfo implements Parcelable {
             ParcelInfo parcelInfo = Concierge.receiveParcel(parcel);
             int parcelableVersion = parcelInfo.getParcelVersion();
 
-            if (parcelableVersion >= Build.CM_VERSION_CODES.ELDERBERRY) {
+            if (parcelableVersion >= Build.MK_VERSION_CODES.ELDERBERRY) {
                 mKey = parcel.readInt();
                 mLow = parcel.readFloat();
                 mHigh = parcel.readFloat();

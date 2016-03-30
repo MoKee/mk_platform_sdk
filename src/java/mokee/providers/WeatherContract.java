@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cyanogenmod.providers;
+package mokee.providers;
 
 import android.net.Uri;
 
@@ -26,7 +26,7 @@ public class WeatherContract {
     /**
      * The authority of the weather content provider
      */
-    public static final String AUTHORITY = "com.cyanogenmod.weather";
+    public static final String AUTHORITY = "com.mokee.weather";
 
     /**
      * A content:// style uri to the authority for the weather provider
