@@ -69,6 +69,16 @@ public final class MKSettings {
      */
     public static final String ACTION_DATA_USAGE = "mokee.settings.ACTION_DATA_USAGE";
 
+    /**
+     * Activity Action: Show LiveDisplay settings
+     * <p>
+     * Input: Nothing.
+     * <p>
+     * Output: Nothing.
+     */
+    public static final String ACTION_LIVEDISPLAY_SETTINGS =
+            "mokee.settings.LIVEDISPLAY_SETTINGS";
+
     // region Call Methods
 
     /**
@@ -1380,10 +1390,15 @@ public final class MKSettings {
          * Use display power saving features such as CABC or CABL
          * 0 = 0ff, 1 = on
          */
-        public static final String DISPLAY_LOW_POWER = "display_low_power";
+        public static final String DISPLAY_CABC = "display_low_power";
+
+        /**
+         * @deprecated
+         */
+        public static final String DISPLAY_LOW_POWER = DISPLAY_CABC;
 
         /** @hide */
-        public static final Validator DISPLAY_LOW_POWER_VALIDATOR =
+        public static final Validator DISPLAY_CABC_VALIDATOR =
                 sBooleanValidator;
 
         /**
@@ -1394,6 +1409,16 @@ public final class MKSettings {
 
         /** @hide */
         public static final Validator DISPLAY_COLOR_ENHANCE_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Use auto contrast optimization feature of display
+         * 0 = 0ff, 1 = on
+         */
+        public static final String DISPLAY_AUTO_CONTRAST = "display_auto_contrast";
+
+        /** @hide */
+        public static final Validator DISPLAY_AUTO_CONTRAST_VALIDATOR =
                 sBooleanValidator;
 
         /**
@@ -1883,7 +1908,7 @@ public final class MKSettings {
                 MKSettings.System.DISPLAY_TEMPERATURE_NIGHT,
                 MKSettings.System.DISPLAY_TEMPERATURE_MODE,
                 MKSettings.System.DISPLAY_AUTO_OUTDOOR_MODE,
-                MKSettings.System.DISPLAY_LOW_POWER,
+                MKSettings.System.DISPLAY_CABC,
                 MKSettings.System.DISPLAY_COLOR_ENHANCE,
                 MKSettings.System.DISPLAY_COLOR_ADJUSTMENT,
                 MKSettings.System.LIVE_DISPLAY_HINTED,
@@ -2027,8 +2052,9 @@ public final class MKSettings {
             VALIDATORS.put(DISPLAY_TEMPERATURE_DAY, DISPLAY_TEMPERATURE_DAY_VALIDATOR);
             VALIDATORS.put(DISPLAY_TEMPERATURE_NIGHT, DISPLAY_TEMPERATURE_NIGHT_VALIDATOR);
             VALIDATORS.put(DISPLAY_TEMPERATURE_MODE, DISPLAY_TEMPERATURE_MODE_VALIDATOR);
+            VALIDATORS.put(DISPLAY_AUTO_CONTRAST, DISPLAY_AUTO_CONTRAST_VALIDATOR);
             VALIDATORS.put(DISPLAY_AUTO_OUTDOOR_MODE, DISPLAY_AUTO_OUTDOOR_MODE_VALIDATOR);
-            VALIDATORS.put(DISPLAY_LOW_POWER, DISPLAY_LOW_POWER_VALIDATOR);
+            VALIDATORS.put(DISPLAY_CABC, DISPLAY_CABC_VALIDATOR);
             VALIDATORS.put(DISPLAY_COLOR_ENHANCE, DISPLAY_COLOR_ENHANCE_VALIDATOR);
             VALIDATORS.put(DISPLAY_COLOR_ADJUSTMENT, DISPLAY_COLOR_ADJUSTMENT_VALIDATOR);
             VALIDATORS.put(LIVE_DISPLAY_HINTED, LIVE_DISPLAY_HINTED_VALIDATOR);

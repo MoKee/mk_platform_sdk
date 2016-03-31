@@ -127,6 +127,13 @@ public final class MKContextConstants {
     public static final String MK_WEATHER_SERVICE = "mkweather";
 
     /**
+     * Manages display color adjustments
+     *
+     * @hide
+     */
+    public static final String MK_LIVEDISPLAY_SERVICE = "mklivedisplay";
+
+    /**
      * Features supported by the MKSDK.
      */
     public static class Features {
@@ -201,5 +208,13 @@ public final class MKContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String WEATHER_SERVICES = "org.mokee.weather";
+
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the LiveDisplay service
+         * utilized by the mksdk.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String LIVEDISPLAY = "org.mokee.livedisplay";
     }
 }
