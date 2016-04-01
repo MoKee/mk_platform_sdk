@@ -122,7 +122,24 @@ public class Build {
         public static final int DRAGON_FRUIT = 4;
 
         /**
-         * Future M Release - 2nd quarter 2016
+         * April 2016: The 5th iteration of the platform sdk for MoKee Open Source
+         *
+         * <p>Applications targeting this or a later version will get access to these
+         * new features!</p>
+         * <li>Weather request api to fetch weather data from providers on the device
+         * {@link mokee.weather.MKWeatherManager}</li>
+         * <li>Weather provider api to provide weather data to any listener on the device
+         * {@link mokee.weatherservice.WeatherProviderService}</li>
+         * <li>Extended capabilities of the {@link mokee.externalviews.KeyguardExternalView}
+         * interfaces to provide immersive and interactive experiences on the lockscreen.</li>
+         * <li>Themes interfaces have found a new home in the mksdk, thus we allow access
+         * to 3rd parties requesting theme changes on the platform via
+         * {@link mokee.themes.ThemeManager} and
+         * {@link mokee.themes.ThemeChangeRequest}</li>
+         * <li>Full access to the {@link mokee.providers.ThemesContract} and provider</li>
+         * <li>Parceling helper class {@link mokee.os.Concierge} to help with parcel
+         * headers and protocol revisions</li>
+         * </ul>
          */
         public static final int ELDERBERRY = 5;
     }
