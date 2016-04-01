@@ -36,6 +36,7 @@ public class Build {
         sdkMap.put(MK_VERSION_CODES.CANTALOUPE, "Cantaloupe");
         sdkMap.put(MK_VERSION_CODES.DRAGON_FRUIT, "Dragon Fruit");
         sdkMap.put(MK_VERSION_CODES.ELDERBERRY, "Elderberry");
+        sdkMap.put(MK_VERSION_CODES.FIG, "Fig");
     }
 
     /** Various version strings. */
@@ -142,6 +143,11 @@ public class Build {
          * </ul>
          */
         public static final int ELDERBERRY = 5;
+
+        /**
+         * Future Release - 3rd quarter 2016
+         */
+        public static final int FIG = 6;
     }
 
     /**
