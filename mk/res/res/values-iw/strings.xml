@@ -149,4 +149,5 @@
   <string name="permlab_accessLiveLockScreenServiceProvider">לגשת לשירות מסך נעילה בשידור חי</string>
   <!-- Live lock screen manager service provider permission description -->
   <string name="permdesc_accessLiveLockScreenServiceProvider">מאפשר יישום לגשת למנהל מסך הנעילה בשידור חי.</string>
+  <!-- Weather Service strings -->
 </resources>
