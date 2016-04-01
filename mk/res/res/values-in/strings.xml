@@ -137,4 +137,10 @@
   <string name="permlab_perfAccess">akses mengelola performa</string>
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Izinkan aplikasi untuk akses layanan performa. Seharusnya tidak diperlukan untuk aplikasi normal.</string>
+  <!-- Access live lock screen manager service permission label -->
+  <!-- Access live lock screen manager service permission description -->
+  <!-- Privileged access live lock screen manager service permission label -->
+  <!-- Privileged access live lock screen manager service permission description -->
+  <!-- Live lock screen manager service provider permission label -->
+  <!-- Live lock screen manager service provider permission description -->
 </resources>

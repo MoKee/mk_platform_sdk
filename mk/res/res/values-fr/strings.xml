@@ -131,4 +131,10 @@
   <string name="permlab_perfAccess">accès au gestionnaire des performances</string>
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Permet à l\'application d\'accéder au service de performance. Ne devrait jamais être nécessaire pour des applications normales.</string>
+  <!-- Access live lock screen manager service permission label -->
+  <!-- Access live lock screen manager service permission description -->
+  <!-- Privileged access live lock screen manager service permission label -->
+  <!-- Privileged access live lock screen manager service permission description -->
+  <!-- Live lock screen manager service provider permission label -->
+  <!-- Live lock screen manager service provider permission description -->
 </resources>

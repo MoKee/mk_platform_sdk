@@ -137,4 +137,10 @@
   <string name="permlab_perfAccess">訪問性能管理器</string>
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">允許應用程式存取性能主題服務。一般應用程式並不需要此權限。</string>
+  <!-- Access live lock screen manager service permission label -->
+  <!-- Access live lock screen manager service permission description -->
+  <!-- Privileged access live lock screen manager service permission label -->
+  <!-- Privileged access live lock screen manager service permission description -->
+  <!-- Live lock screen manager service provider permission label -->
+  <!-- Live lock screen manager service provider permission description -->
 </resources>

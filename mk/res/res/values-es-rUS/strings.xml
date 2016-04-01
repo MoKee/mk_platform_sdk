@@ -131,4 +131,10 @@
   <string name="permdesc_writeThemesDesc">Permite que la aplicación añada nuevos temas y modifique el tema actual.</string>
   <!-- Performance manager permission title -->
   <!-- Performance manager permission description -->
+  <!-- Access live lock screen manager service permission label -->
+  <!-- Access live lock screen manager service permission description -->
+  <!-- Privileged access live lock screen manager service permission label -->
+  <!-- Privileged access live lock screen manager service permission description -->
+  <!-- Live lock screen manager service provider permission label -->
+  <!-- Live lock screen manager service provider permission description -->
 </resources>
