@@ -27,4 +27,5 @@ interface IKeyguardExternalViewCallbacks {
     oneway void setInteractivity(boolean isInteractive);
     oneway void onAttachedToWindow();
     oneway void onDetachedFromWindow();
+    oneway void slideLockscreenIn();
 }
