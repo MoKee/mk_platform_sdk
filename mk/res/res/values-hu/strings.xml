@@ -34,10 +34,25 @@
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Alapértelmezés</string>
+  <string name="profileNameWork">Munkahely</string>
+  <string name="profileNameHome">Otthon</string>
+  <string name="profileNameSilent">Néma</string>
+  <string name="profileNameNight">Éjszakai</string>
+  <string name="profileNameAutomobile">Autó</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar">Naptár</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Egyéb</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">telefon helyzetéhez való hozzáférés</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Engedélyezi, hogy az alkalmazás hozzáférjen a telefon helyzetéhez.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">telefon helyzetének megadása</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Engedélyezi az alkalmazásnak, hogy megváltoztassa a telefon helyzetét.</string>
 </resources>
