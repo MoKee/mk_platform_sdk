@@ -30,8 +30,8 @@ mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews
 # ============================================================
 include $(CLEAR_VARS)
 
-mokee_src := src/java/mokee
-mokee_internal_src := src/java/org/mokee/internal
+mokee_sdk_src := sdk/src/java/mokee
+mokee_sdk_internal_src := sdk/src/java/org/mokee/internal
 library_src := mk/lib/main/java
 
 LOCAL_MODULE := org.mokee.platform
@@ -42,8 +42,8 @@ LOCAL_JAVA_LIBRARIES := \
     org.mokee.hardware
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(mokee_src)) \
-    $(call all-java-files-under, $(mokee_internal_src)) \
+    $(call all-java-files-under, $(mokee_sdk_src)) \
+    $(call all-java-files-under, $(mokee_sdk_internal_src)) \
     $(call all-java-files-under, $(library_src))
 
 ## READ ME: ########################################################
@@ -57,8 +57,8 @@ LOCAL_SRC_FILES := \
 ##
 ## READ ME: ########################################################
 LOCAL_SRC_FILES += \
-    $(call all-Iaidl-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_internal_src))
+    $(call all-Iaidl-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_internal_src))
 
 mkplat_LOCAL_INTERMEDIATE_SOURCES := \
     $(mk_platform_res)/mokee/platform/R.java \
@@ -69,7 +69,7 @@ LOCAL_INTERMEDIATE_SOURCES := \
     $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
 
 # Include aidl files from mokee.app namespace as well as internal src aidl files
-LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
+LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/sdk/src/java
 
 include $(BUILD_JAVA_LIBRARY)
 mk_framework_module := $(LOCAL_INSTALLED_MODULE)
@@ -109,12 +109,12 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := services
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_internal_src))
+    $(call all-java-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_internal_src))
 
 # Included aidl files from mokee.app namespace
-LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
+LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/sdk/src/java
 
 mksdk_LOCAL_INTERMEDIATE_SOURCES := \
     $(mk_platform_res)/mokee/platform/R.java \
@@ -143,12 +143,12 @@ LOCAL_REQUIRED_MODULES := services
 LOCAL_JACK_ENABLED := disabled
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_internal_src))
+    $(call all-java-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_internal_src))
 
 # Included aidl files from mokee.app namespace
-LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
+LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/sdk/src/java
 
 mksdk_LOCAL_INTERMEDIATE_SOURCES := \
     $(mk_platform_res)/mokee/platform/R.java \
@@ -168,13 +168,13 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := services
 
 LOCAL_SRC_FILES := \
-    $(call all-java-files-under, $(mokee_src)) \
-    $(call all-java-files-under, $(mokee_internal_src)) \
-    $(call all-Iaidl-files-under, $(mokee_src)) \
-    $(call all-Iaidl-files-under, $(mokee_internal_src))
+    $(call all-java-files-under, $(mokee_sdk_src)) \
+    $(call all-java-files-under, $(mokee_sdk_internal_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_src)) \
+    $(call all-Iaidl-files-under, $(mokee_sdk_internal_src))
 
 # Included aidl files from mokee.app namespace
-LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/src/java
+LOCAL_AIDL_INCLUDES := $(LOCAL_PATH)/sdk/src/java
 
 mksdk_LOCAL_INTERMEDIATE_SOURCES := \
     $(mk_platform_res)/mokee/platform/R.java \
@@ -192,8 +192,8 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 # ===========================================================
 # Common Droiddoc vars
 mkplat_docs_src_files := \
-    $(call all-java-files-under, $(mokee_src)) \
-    $(call all-html-files-under, $(mokee_src))
+    $(call all-java-files-under, $(mokee_sdk_src)) \
+    $(call all-html-files-under, $(mokee_sdk_src))
 
 mkplat_docs_java_libraries := \
     org.mokee.platform.sdk
