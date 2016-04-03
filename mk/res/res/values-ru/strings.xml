@@ -55,7 +55,7 @@
   <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы МК. Не используется в обычных приложениях.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Управление постоянного хранения</string>
-  <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться thrοugh сброс.</string>
+  <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться после заводского сброса.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Наблюдает за пользовательскими плитками</string>
   <!-- Labels for the PROTECTED_APP permission. -->
@@ -138,10 +138,32 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Приложение сможет получать доступ к службе производительности. Это разрешение не используется обычными приложениями.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">доступ к сервису живого экрана блокировки</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Разрешает приложению доступ к сервису живого экрана блокировки.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">доступ к сервису живого экрана блокировки</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Разрешить системным приложениям доступ к службе живого экрана блокировки.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">предоставить службу живого экрана блокировки</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Разрешает приложению предоставить службу живого экрана блокировки.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">чтение погоды</string>
+  <string name="permdesc_weather_read">Позволяет приложению читать данные поставщика погоды.</string>
+  <string name="permlab_weather_write">обновить поставщика погоды</string>
+  <string name="permdesc_weather_write">Позволяет приложению обновлять данные поставщика погоды.</string>
+  <string name="permlab_weather_bind">назначить службой поставщика погоды</string>
+  <string name="permdesc_weather_bind">Позволяет приложению быть службой поставщика погоды.</string>
+  <string name="permlab_weather_access_mgr">доступ к службе погоды</string>
+  <string name="permdesc_weather_access_mgr">Разрешает приложению доступ к поставщику погоды в системе МK. Не используется в обычных приложениях.</string>
+  <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">изменять БД использования данных</string>
+  <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Разрешить запись в БД использования данных</string>
+  <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">чтение БД использования данных</string>
+  <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Разрешить доступ на четние из БД использования данных</string>
 </resources>

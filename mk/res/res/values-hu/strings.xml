@@ -38,22 +38,46 @@
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Alapértelmezés</string>
+  <string name="profileNameWork">Munkahely</string>
+  <string name="profileNameHome">Otthon</string>
+  <string name="profileNameSilent">Néma</string>
+  <string name="profileNameNight">Éjszakai</string>
+  <string name="profileNameAutomobile">Autó</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar">Naptár</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Egyéb</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">telefon helyzetéhez való hozzáférés</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Engedélyezi, hogy az alkalmazás hozzáférjen a telefon helyzetéhez.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">telefon helyzetének megadása</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Engedélyezi az alkalmazásnak, hogy megváltoztassa a telefon helyzetét.</string>
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_off">Ki</string>
+  <string name="live_display_night">Éjszakai</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Kézmozdulatok</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Extrák</string>
+  <string name="touchscreen_gesture_haptic_feedback">Rezgés visszajelzés</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Rezgés amikor egy gesztust érzékel</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Téma telepítése sikertelen</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g>telepítése sikertelen</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Téma viszaállítása</string>
+  <string name="theme_reset_notification_message">Több alkalmazás összeomlása miatt a rendszer téma visszaállításra került.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -69,4 +93,8 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <!-- DataUsageProvider write permission title -->
+  <!-- DataUsageProvider write permission description -->
+  <!-- DataUsageProvider read permission title -->
+  <!-- DataUsageProvider read permission description -->
 </resources>
