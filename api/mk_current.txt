@@ -1299,12 +1299,13 @@ package mokee.util {
 package mokee.weather {
 
   public class MKWeatherManager {
+    method public void cancelRequest(mokee.weather.RequestInfo);
     method public java.lang.String getActiveWeatherServiceProviderLabel();
     method public static mokee.weather.MKWeatherManager getInstance(android.content.Context);
-    method public void lookupCity(java.lang.String, mokee.weather.MKWeatherManager.LookupCityRequestListener);
+    method public mokee.weather.RequestInfo lookupCity(java.lang.String, mokee.weather.MKWeatherManager.LookupCityRequestListener);
     method public void registerWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
-    method public void requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
-    method public void requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public mokee.weather.RequestInfo requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public mokee.weather.RequestInfo requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
     method public void unregisterWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
     field public static final int WEATHER_REQUEST_ALREADY_IN_PROGRESS = -3; // 0xfffffffd
     field public static final int WEATHER_REQUEST_COMPLETED = 1; // 0x1
