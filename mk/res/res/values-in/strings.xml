@@ -151,10 +151,19 @@
   <string name="permdesc_accessLiveLockScreenServiceProvider">Memungkinkan layanan untuk memberikan pelayanan manager layar kunci nyata.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">membaca cuaca</string>
+  <string name="permdesc_weather_read">Memungkinkan aplikasi untuk membaca konten dari penyedia cuaca.</string>
   <string name="permlab_weather_write">memperbarui cuaca</string>
+  <string name="permdesc_weather_write">Memungkinkan aplikasi untuk memperbarui isi dari penyedia cuaca.</string>
+  <string name="permlab_weather_bind">mengikat sebagai penyedia layanan cuaca</string>
+  <string name="permdesc_weather_bind">Memungkinkan aplikasi untuk diidentifikasi sebagai penyedia layanan cuaca.</string>
   <string name="permlab_weather_access_mgr">akses layanan cuaca</string>
+  <string name="permdesc_weather_access_mgr">Memungkinkan aplikasi untuk mengakses layanan cuaca di sistem. Tidak pernah diperlukan untuk aplikasi normal.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modifikasi data penggunaan db</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Memungkinkan akses menulis ke DataUsage db</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">membaca data penggunaan db</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Memungkinkan membaca akses ke DataUsage db</string>
 </resources>

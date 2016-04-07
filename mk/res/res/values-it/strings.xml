@@ -108,23 +108,43 @@
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Consente ad un app di essere usata come insicura nella schermata di blocco.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Impostazioni avanzate</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gestures</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Extra</string>
+  <string name="touchscreen_gesture_haptic_feedback">Vibrazione</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Vibra quando viene rilevata una gesture</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Installazione del tema fallita</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> non è stato installato</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Reimposta tema</string>
+  <string name="theme_reset_notification_message">Tema di sistema ripristinato a causa di molteplici crash delle app.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">accesso al servizio temi</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Permetti ad un\'applicazione di accedere al servizio temi. Non dovrebbe essere necessario per un\'app normale.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">leggi le informazioni del tema</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Permetti all\'app di leggere i tuoi temi e di determinare quale hai applicato.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">modifica i tuoi temi</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Permetti all\'app di inserire nuovi temi e modificare quale tema hai applicato.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">accesso al gestione delle prestazioni</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Permetti ad un\'applicazione di accedere al servizio performance. Non dovrebbe essere necessario per un\'app normale.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">servizio di gestione accesso al blocco schermo live</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Consente a un\'applicazione accedere al servizio di gestione del blocco schermo live.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">servizio di gestione accesso al blocco schermo live</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Consente alle applicazioni di sistema accedere al servizio di gestione del blocco schermo live.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
