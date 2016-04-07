@@ -176,9 +176,7 @@ public class KeyguardExternalView extends View implements ViewTreeObserver.OnPre
 
         @Override
         public void collapseNotificationPanel() throws RemoteException {
-            if (mCallback != null) {
-                mCallback.collapseNotificationPanel();
-            }
+            /* collapseNotificationPanel is deprecated so do nothing */
         }
 
         @Override
@@ -477,7 +475,6 @@ public class KeyguardExternalView extends View implements ViewTreeObserver.OnPre
     public interface KeyguardExternalViewCallbacks {
         boolean requestDismiss();
         boolean requestDismissAndStartActivity(Intent intent);
-        void collapseNotificationPanel();
         void providerDied();
         void slideLockscreenIn();
     }
