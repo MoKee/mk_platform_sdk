@@ -1351,13 +1351,13 @@ package mokee.util {
 package mokee.weather {
 
   public class MKWeatherManager {
-    method public void cancelRequest(mokee.weather.RequestInfo);
+    method public void cancelRequest(int);
     method public java.lang.String getActiveWeatherServiceProviderLabel();
     method public static mokee.weather.MKWeatherManager getInstance(android.content.Context);
-    method public mokee.weather.RequestInfo lookupCity(java.lang.String, mokee.weather.MKWeatherManager.LookupCityRequestListener);
+    method public int lookupCity(java.lang.String, mokee.weather.MKWeatherManager.LookupCityRequestListener);
     method public void registerWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
-    method public mokee.weather.RequestInfo requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
-    method public mokee.weather.RequestInfo requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public int requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
+    method public int requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
     method public void unregisterWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
     field public static final int WEATHER_REQUEST_ALREADY_IN_PROGRESS = -3; // 0xfffffffd
     field public static final int WEATHER_REQUEST_COMPLETED = 1; // 0x1
@@ -1366,7 +1366,7 @@ package mokee.weather {
   }
 
   public static abstract interface MKWeatherManager.LookupCityRequestListener {
-    method public abstract void onLookupCityRequestCompleted(java.util.ArrayList<mokee.weather.WeatherLocation>);
+    method public abstract void onLookupCityRequestCompleted(java.util.List<mokee.weather.WeatherLocation>);
   }
 
   public static abstract interface MKWeatherManager.WeatherServiceProviderChangeListener {
@@ -1395,7 +1395,7 @@ package mokee.weather {
     method public int describeContents();
     method public java.lang.String getCity();
     method public int getConditionCode();
-    method public java.util.ArrayList<mokee.weather.WeatherInfo.DayForecast> getForecasts();
+    method public java.util.List<mokee.weather.WeatherInfo.DayForecast> getForecasts();
     method public double getHumidity();
     method public double getTemperature();
     method public int getTemperatureUnit();
@@ -1412,7 +1412,7 @@ package mokee.weather {
   public static class WeatherInfo.Builder {
     ctor public WeatherInfo.Builder(java.lang.String, double, int);
     method public mokee.weather.WeatherInfo build();
-    method public mokee.weather.WeatherInfo.Builder setForecast(java.util.ArrayList<mokee.weather.WeatherInfo.DayForecast>);
+    method public mokee.weather.WeatherInfo.Builder setForecast(java.util.List<mokee.weather.WeatherInfo.DayForecast>);
     method public mokee.weather.WeatherInfo.Builder setHumidity(double);
     method public mokee.weather.WeatherInfo.Builder setTimestamp(long);
     method public mokee.weather.WeatherInfo.Builder setTodaysHigh(double);
@@ -1451,8 +1451,10 @@ package mokee.weather {
 
   public static class WeatherLocation.Builder {
     ctor public WeatherLocation.Builder(java.lang.String, java.lang.String);
+    ctor public WeatherLocation.Builder(java.lang.String);
     method public mokee.weather.WeatherLocation build();
-    method public mokee.weather.WeatherLocation.Builder setCountry(java.lang.String, java.lang.String);
+    method public mokee.weather.WeatherLocation.Builder setCountry(java.lang.String);
+    method public mokee.weather.WeatherLocation.Builder setCountryId(java.lang.String);
     method public mokee.weather.WeatherLocation.Builder setPostalCode(java.lang.String);
     method public mokee.weather.WeatherLocation.Builder setState(java.lang.String);
   }
@@ -1469,7 +1471,7 @@ package mokee.weatherservice {
 
   public final class ServiceRequestResult implements android.os.Parcelable {
     method public int describeContents();
-    method public java.util.ArrayList<mokee.weather.WeatherLocation> getLocationLookupList();
+    method public java.util.List<mokee.weather.WeatherLocation> getLocationLookupList();
     method public mokee.weather.WeatherInfo getWeatherInfo();
     method public void writeToParcel(android.os.Parcel, int);
     field public static final android.os.Parcelable.Creator<mokee.weatherservice.ServiceRequestResult> CREATOR;
@@ -1477,9 +1479,9 @@ package mokee.weatherservice {
 
   public static class ServiceRequestResult.Builder {
     ctor public ServiceRequestResult.Builder();
+    ctor public ServiceRequestResult.Builder(mokee.weather.WeatherInfo);
+    ctor public ServiceRequestResult.Builder(java.util.List<mokee.weather.WeatherLocation>);
     method public mokee.weatherservice.ServiceRequestResult build();
-    method public mokee.weatherservice.ServiceRequestResult.Builder setLocationLookupList(java.util.ArrayList<mokee.weather.WeatherLocation>);
-    method public mokee.weatherservice.ServiceRequestResult.Builder setWeatherInfo(mokee.weather.WeatherInfo);
   }
 
   public abstract class WeatherProviderService extends android.app.Service {
