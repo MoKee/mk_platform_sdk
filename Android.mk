@@ -147,6 +147,10 @@ LOCAL_SRC_FILES := $(call all-java-files-under, dummy)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, sdk/res/res)
 LOCAL_MANIFEST_FILE := sdk/AndroidManifest.xml
 
+mksdk_exclude_files := 'mokee/library'
+LOCAL_JAR_EXCLUDE_PACKAGES := $(mksdk_exclude_files)
+LOCAL_JAR_EXCLUDE_FILES := none
+
 LOCAL_STATIC_JAVA_LIBRARIES := org.mokee.platform.sdk
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
