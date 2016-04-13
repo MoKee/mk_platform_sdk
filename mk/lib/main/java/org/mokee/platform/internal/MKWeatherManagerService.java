@@ -31,7 +31,6 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
-import android.os.SystemClock;
 import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Slog;
@@ -58,16 +57,9 @@ import java.util.List;
 public class MKWeatherManagerService extends SystemService{
 
     private static final String TAG = MKWeatherManagerService.class.getSimpleName();
-    /**
-     * How long clients will have to wait until a new weather update request can be honored
-     * TODO Allow weather service providers to specify this threshold
-     */
-    private static final long REQUEST_THRESHOLD_MILLIS = 1000L * 60L * 10L;
 
     private IWeatherProviderService mWeatherProviderService;
     private boolean mIsWeatherProviderServiceBound;
-    private long mLastWeatherUpdateRequestTimestamp = -REQUEST_THRESHOLD_MILLIS;
-    private boolean mIsProcessingRequest = false;
     private Object mMutex = new Object();
     private Context mContext;
     private final RemoteCallbackList<IWeatherServiceProviderChangeListener> mProviderChangeListeners
@@ -78,12 +70,16 @@ public class MKWeatherManagerService extends SystemService{
             = new IWeatherProviderServiceClient.Stub() {
         @Override
         public void setServiceRequestState(RequestInfo requestInfo,
-                ServiceRequestResult result, int state) {
+                ServiceRequestResult result, int status) {
             synchronized (mMutex) {
 
                 if (requestInfo == null) {
                     //Invalid request info object
-                    mIsProcessingRequest = false;
+                    return;
+                }
+
+                if (!isValidRequestInfoStatus(status)) {
+                    //Invalid request status
                     return;
                 }
 
@@ -93,19 +89,14 @@ public class MKWeatherManagerService extends SystemService{
                 switch (requestType) {
                     case RequestInfo.TYPE_WEATHER_BY_GEO_LOCATION_REQ:
                     case RequestInfo.TYPE_WEATHER_BY_WEATHER_LOCATION_REQ:
-                        if (!isValidRequestInfoState(requestType, state)) {
-                            //We received an invalid state, silently disregard the request
-                            mIsProcessingRequest = false;
-                            return;
-                        }
                         WeatherInfo weatherInfo = null;
-                        if (state == MKWeatherManager.WEATHER_REQUEST_COMPLETED) {
+                        if (status == MKWeatherManager.RequestStatus.COMPLETED) {
                             weatherInfo = (result != null) ? result.getWeatherInfo() : null;
                             if (weatherInfo == null) {
                                 //This should never happen! WEATHER_REQUEST_COMPLETED is set
                                 //only if the weatherinfo object was not null when the request
                                 //was marked as completed
-                                state = MKWeatherManager.WEATHER_REQUEST_FAILED;
+                                status = MKWeatherManager.RequestStatus.FAILED;
                             } else {
                                 if (!requestInfo.isQueryOnlyWeatherRequest()) {
                                     final long identity = Binder.clearCallingIdentity();
@@ -119,7 +110,8 @@ public class MKWeatherManagerService extends SystemService{
                         }
                         if (isValidListener(listener)) {
                             try {
-                                listener.onWeatherRequestCompleted(requestInfo, state, weatherInfo);
+                                listener.onWeatherRequestCompleted(requestInfo, status,
+                                        weatherInfo);
                             } catch (RemoteException e) {
                             }
                         }
@@ -128,40 +120,25 @@ public class MKWeatherManagerService extends SystemService{
                         if (isValidListener(listener)) {
                             try {
                                 //Result might be null if the provider marked the request as failed
-                                listener.onLookupCityRequestCompleted(requestInfo,
+                                listener.onLookupCityRequestCompleted(requestInfo, status,
                                         result != null ? result.getLocationLookupList() : null);
                             } catch (RemoteException e) {
                             }
                         }
                         break;
                 }
-                mIsProcessingRequest = false;
             }
         }
     };
 
-    private boolean isValidRequestInfoState(int requestType, int state) {
-        switch (requestType) {
-            case RequestInfo.TYPE_WEATHER_BY_GEO_LOCATION_REQ:
-            case RequestInfo.TYPE_WEATHER_BY_WEATHER_LOCATION_REQ:
-                switch (state) {
-                    case MKWeatherManager.WEATHER_REQUEST_COMPLETED:
-                    case MKWeatherManager.WEATHER_REQUEST_SUBMITTED_TOO_SOON:
-                    case MKWeatherManager.WEATHER_REQUEST_FAILED:
-                    case MKWeatherManager.WEATHER_REQUEST_ALREADY_IN_PROGRESS:
-                        return true;
-                    default:
-                        return false;
-                }
-            case RequestInfo.TYPE_LOOKUP_CITY_NAME_REQ:
-                switch (state) {
-                    case MKWeatherManager.LOOKUP_REQUEST_COMPLETED:
-                    case MKWeatherManager.LOOKUP_REQUEST_FAILED:
-                    case MKWeatherManager.LOOKUP_REQUEST_NO_MATCH_FOUND:
-                        return true;
-                    default:
-                        return false;
-                }
+    private boolean isValidRequestInfoStatus(int state) {
+        switch (state) {
+            case MKWeatherManager.RequestStatus.COMPLETED:
+            case MKWeatherManager.RequestStatus.ALREADY_IN_PROGRESS:
+            case MKWeatherManager.RequestStatus.FAILED:
+            case MKWeatherManager.RequestStatus.NO_MATCH_FOUND:
+            case MKWeatherManager.RequestStatus.SUBMITTED_TOO_SOON:
+                return true;
             default:
                 return false;
         }
@@ -271,36 +248,14 @@ public class MKWeatherManagerService extends SystemService{
         }
     }
 
-    private boolean canProcessWeatherUpdateRequest(RequestInfo info, long currentTimeMillis) {
+    private boolean canProcessWeatherUpdateRequest(RequestInfo info) {
         final IRequestInfoListener listener = info.getRequestListener();
-
-        if ((mLastWeatherUpdateRequestTimestamp + REQUEST_THRESHOLD_MILLIS) > currentTimeMillis) {
-            if (listener != null && listener.asBinder().pingBinder()) {
-                try {
-                    listener.onWeatherRequestCompleted(info,
-                            MKWeatherManager.WEATHER_REQUEST_SUBMITTED_TOO_SOON, null);
-                } catch (RemoteException e) {
-                }
-            }
-            return false;
-        }
-
-        if (mIsProcessingRequest) {
-            if (listener != null && listener.asBinder().pingBinder()) {
-                try {
-                    listener.onWeatherRequestCompleted(info,
-                            MKWeatherManager.WEATHER_REQUEST_ALREADY_IN_PROGRESS, null);
-                } catch (RemoteException e) {
-                }
-            }
-            return false;
-        }
 
         if (!mIsWeatherProviderServiceBound) {
             if (listener != null && listener.asBinder().pingBinder()) {
                 try {
                     listener.onWeatherRequestCompleted(info,
-                            MKWeatherManager.WEATHER_REQUEST_FAILED, null);
+                            MKWeatherManager.RequestStatus.FAILED, null);
                 } catch (RemoteException e) {
                 }
             }
@@ -310,12 +265,7 @@ public class MKWeatherManagerService extends SystemService{
     }
 
     private synchronized void processWeatherUpdateRequest(RequestInfo info) {
-        final long currentTimeMillis = SystemClock.elapsedRealtime();
-
-        if (!canProcessWeatherUpdateRequest(info, currentTimeMillis)) return;
-
-        mLastWeatherUpdateRequestTimestamp = currentTimeMillis;
-        mIsProcessingRequest = true;
+        if (!canProcessWeatherUpdateRequest(info)) return;
         try {
             mWeatherProviderService.processWeatherUpdateRequest(info);
         } catch (RemoteException e) {
@@ -327,13 +277,13 @@ public class MKWeatherManagerService extends SystemService{
             final IRequestInfoListener listener = info.getRequestListener();
             if (listener != null && listener.asBinder().pingBinder()) {
                 try {
-                    listener.onLookupCityRequestCompleted(info, null);
+                    listener.onLookupCityRequestCompleted(info,
+                            MKWeatherManager.RequestStatus.FAILED, null);
                 } catch (RemoteException e) {
                 }
             }
             return;
         }
-
         try {
             mWeatherProviderService.processCityNameLookupRequest(info);
         } catch(RemoteException e){
@@ -368,9 +318,6 @@ public class MKWeatherManagerService extends SystemService{
         public void onServiceDisconnected(ComponentName name) {
             mWeatherProviderService = null;
             mIsWeatherProviderServiceBound = false;
-            //We can't talk to the current service anyway...
-            mIsProcessingRequest = false;
-            mLastWeatherUpdateRequestTimestamp = -REQUEST_THRESHOLD_MILLIS;
             Slog.d(TAG, "Connection with " + name.flattenToString() + " has been closed");
         }
     };
@@ -543,16 +490,17 @@ public class MKWeatherManagerService extends SystemService{
 
     private synchronized void disconnectClient() {
         if (mIsWeatherProviderServiceBound) {
-            if (mIsProcessingRequest) {
-                try {
-                    mWeatherProviderService.cancelOngoingRequests();
-                } catch (RemoteException e) {
-                }
-                mIsProcessingRequest = false;
+            //let's cancel any pending request
+            try {
+                mWeatherProviderService.cancelOngoingRequests();
+            } catch (RemoteException e) {
+                Slog.d(TAG, "Error occurred while trying to cancel ongoing requests");
             }
+            //Disconnect from client
             try {
                 mWeatherProviderService.setServiceClient(null);
             } catch (RemoteException e) {
+                Slog.d(TAG, "Error occurred while disconnecting client");
             }
 
             getContext().unbindService(mWeatherServiceProviderConnection);

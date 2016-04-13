@@ -1360,14 +1360,19 @@ package mokee.weather {
     method public int requestWeatherUpdate(android.location.Location, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
     method public int requestWeatherUpdate(mokee.weather.WeatherLocation, mokee.weather.MKWeatherManager.WeatherUpdateRequestListener);
     method public void unregisterWeatherServiceProviderChangeListener(mokee.weather.MKWeatherManager.WeatherServiceProviderChangeListener);
-    field public static final int WEATHER_REQUEST_ALREADY_IN_PROGRESS = -3; // 0xfffffffd
-    field public static final int WEATHER_REQUEST_COMPLETED = 1; // 0x1
-    field public static final int WEATHER_REQUEST_FAILED = -2; // 0xfffffffe
-    field public static final int WEATHER_REQUEST_SUBMITTED_TOO_SOON = -1; // 0xffffffff
   }
 
   public static abstract interface MKWeatherManager.LookupCityRequestListener {
-    method public abstract void onLookupCityRequestCompleted(java.util.List<mokee.weather.WeatherLocation>);
+    method public abstract void onLookupCityRequestCompleted(int, java.util.List<mokee.weather.WeatherLocation>);
+  }
+
+  public static class MKWeatherManager.RequestStatus {
+    ctor public MKWeatherManager.RequestStatus();
+    field public static final int ALREADY_IN_PROGRESS = -3; // 0xfffffffd
+    field public static final int COMPLETED = 1; // 0x1
+    field public static final int FAILED = -1; // 0xffffffff
+    field public static final int NO_MATCH_FOUND = -4; // 0xfffffffc
+    field public static final int SUBMITTED_TOO_SOON = -2; // 0xfffffffe
   }
 
   public static abstract interface MKWeatherManager.WeatherServiceProviderChangeListener {
@@ -1468,6 +1473,7 @@ package mokee.weatherservice {
     method public void complete(mokee.weatherservice.ServiceRequestResult);
     method public void fail();
     method public mokee.weather.RequestInfo getRequestInfo();
+    method public void reject(int);
   }
 
   public final class ServiceRequestResult implements android.os.Parcelable {
