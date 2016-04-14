@@ -30,8 +30,12 @@
   <string name="permdesc_modifyMSPhoneState">Telefon durumunu ve veri bağlantısını birden fazla sim desteği ile görmek için bir uygulamaya izin verir.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">donanım altyapısını kullan</string>
+  <string name="permdesc_useHardwareFramework">Uygulamanın MK donanım altyapısına erişimine izin verir.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permdesc_write_alarms">Alarm ekleme, düzenleme veya alarmlarınızın hepsini silmesi için bir uygulamaya izin verir.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">planlanmış alarmları sabitle</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <string name="permdesc_read_alarms">Alarm düzenlemelerinizi okuması için bir uygulamaya izin verir.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
