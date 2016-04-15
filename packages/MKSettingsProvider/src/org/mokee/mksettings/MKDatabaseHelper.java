@@ -47,7 +47,7 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
     private static final boolean LOCAL_LOGV = false;
 
     private static final String DATABASE_NAME = "mksettings.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     public static class MKTableNames {
         public static final String TABLE_SYSTEM = "system";
@@ -183,6 +183,23 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
                 db.endTransaction();
             }
             upgradeVersion = 3;
+        }
+
+        if (upgradeVersion < 4) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT INTO secure(name,value)"
+                        + " VALUES(?,?);");
+                loadSetting(stmt, MKSettings.Secure.MK_SETUP_WIZARD_COMPLETED,
+                        Settings.Global.getString(mContext.getContentResolver(),
+                                Settings.Global.DEVICE_PROVISIONED));
+                db.setTransactionSuccessful();
+            } finally {
+                if (stmt != null) stmt.close();
+                db.endTransaction();
+            }
+            upgradeVersion = 4;
         }
 
         // *** Remember to update DATABASE_VERSION above!
