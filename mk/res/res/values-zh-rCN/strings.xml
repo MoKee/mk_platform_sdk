@@ -166,4 +166,5 @@
   <string name="permlab_dataUsageRead">读取数据使用 db</string>
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">允许读取访问权限 DataUsage db</string>
+  <!-- LiveDisplay manager permission -->
 </resources>
