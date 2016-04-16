@@ -166,4 +166,5 @@
   <string name="permlab_dataUsageRead">чтение БД использования данных</string>
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">Разрешить доступ на четние из БД использования данных</string>
+  <!-- LiveDisplay manager permission -->
 </resources>

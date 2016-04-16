@@ -24,6 +24,8 @@
   <string name="permdesc_modifyNetworkSettings">Zezwala aplikacji na wprowadzanie zmian w ograniczony sposób ustawień sieci systemu.</string>
   <string name="permlab_modifySoundSettings">zmiana ustawień dźwięku systemu</string>
   <string name="permdesc_modifySoundSettings">Zezwala aplikacji na wprowadzanie zmian w ograniczony sposób ustawień dźwięku systemu.</string>
+  <string name="permlab_bindCustomTileListenerService">powiązać z płytki niestandardowe usługi odbiornika</string>
+  <string name="permdesc_bindCustomTileListenerService">Pozwala aplikacji powiązać interfejsu najwyższego poziomu usług niestandardowych dachówka słuchacza.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">widok stanu telefonu oraz połączeń danych z obsługą wielu kart SIM</string>
   <string name="permdesc_readMSPhoneState">Zezwala aplikacji na sprawdzenie stanu telefonu i połączeń danych ze wsparciem dla wielu kart SIM.</string>
@@ -55,6 +57,7 @@
   <string name="permlab_managePersistentStorage">zarządzanie magazynem trwałe</string>
   <string name="permdesc_managePersistentStorage">Pozwala aplikacji na odczyt lub zapis właściwości, które mogą utrzymać się po przywróceniu ustawień fabrycznych.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Niestandardowe kafelki słuchacza</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">dodaj lub usuń aplikację z listy chronionych aplikacji</string>
   <string name="permdesc_protectedApp">Umożliwia aplikacji zaznacz inne aplikacje jako chronione i je zablokować.</string>
@@ -103,6 +106,7 @@
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">trzeci sposób blokady ekranu</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Umożliwia aplikacji działanie jako niezabezpieczona blokada ekranu.</string>
   <!-- Device specific settings -->
   <string name="device_settings_app_name">Zaawansowane ustawienia</string>
   <!-- Touchscreen gestures -->
@@ -144,4 +148,5 @@
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
+  <!-- LiveDisplay manager permission -->
 </resources>
