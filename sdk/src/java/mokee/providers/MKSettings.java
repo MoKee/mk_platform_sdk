@@ -1452,7 +1452,7 @@ public final class MKSettings {
 
         /** @hide */
         public static final Validator LIVE_DISPLAY_HINTED_VALIDATOR =
-                sBooleanValidator;
+                new InclusiveIntegerRangeValidator(-3, 1);
 
         /**
          *  Enable statusbar double tap gesture on to put device to sleep
