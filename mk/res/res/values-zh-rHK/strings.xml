@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">戶外 （陽光）</string>
   <string name="live_display_outdoor_summary">僅使用戶外設置</string>
   <string name="live_display_hint">LiveDisplay可以幫助減輕眼睛疲勞和並幫助熒幕的可讀性。</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay 關閉。</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay ︰ 自動模式。</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay ︰ 日間模式。</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay ︰ 夜間模式。</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay ︰ 室外模式。</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay 關閉。</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 改為自動模式。</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 改為日間模式。</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 改為夜間模式。</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 改為戶外模式。</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">協助廠商鎖定螢幕</string>
   <!-- Third party keyguard permission description -->
@@ -138,18 +148,35 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">允許應用程式存取性能主題服務。一般應用程式並不需要此權限。</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">訪問活動閉屏管理服務</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">允許應用程序訪問活動閉屏管理服務。</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">訪問活動閉屏管理服務</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">允許系統應用程式訪問活動閉屏管理服務。</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">提供活動閉屏管理服務</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">允許服務提供活動閉屏管理服務。</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">讀取天氣</string>
+  <string name="permdesc_weather_read">允許應用程式讀取天氣信息。</string>
   <string name="permlab_weather_write">更新天氣提供程式</string>
+  <string name="permdesc_weather_write">允許應用程式更新的天氣更新源。</string>
+  <string name="permlab_weather_bind">綁定天氣更新源</string>
+  <string name="permdesc_weather_bind">允許應用程式設定為天氣更新源</string>
   <string name="permlab_weather_access_mgr">存取天氣服務</string>
+  <string name="permdesc_weather_access_mgr">允許應用程式訪問系統中的天氣服務，對普通應用程式不應有些需求。</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">修改數據使用 db</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">允許讀寫訪問 DataUsage db</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">讀寫數據使用 db</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">允許讀寫訪問權限 DataUsage db</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">管理 LiveDisplay 設定</string>
+  <string name="permdesc_manageLiveDisplay">允許一個應用程式來配置先進的顯示設定。</string>
 </resources>

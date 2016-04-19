@@ -56,6 +56,7 @@
   <string name="permdesc_managePersistentStorage">Erlaubt einer App das Lesen oder Schreiben von Eigenschaften, die zu einem Werksreset führen könnten.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permdesc_protectedApp">Erlaubt einer App eine andere App als geschützt zu markieren und sperrt diese.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Standard</string>
@@ -98,6 +99,12 @@
   <string name="live_display_outdoor">Nur Außen-Modus verwenden (helle Sonne)</string>
   <string name="live_display_outdoor_summary">Nur Außen Einstellungen verwenden</string>
   <string name="live_display_hint">LiveDisplay entlastet Ihre Augen und lässt Sie nachts besser schlafen. Klicken Sie hier, um es auszuprobieren!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay Aus.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: Auto-Modus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay wechselt zu Auto-Modus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay wechselt zu Tag-Modus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay auf Nacht-Modus geändert.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay auf Draussen-Modus geändert.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Erlaube einer unsicheren App als Sperrbildschirm zu verwenden.</string>

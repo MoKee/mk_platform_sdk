@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">نظام موكي</string>
+  <string name="permlab_publishCustomTile">انشاء ايقونات متخصصة في لوحة الاعدادات السريعة</string>
   <string name="permlab_modifyNetworkSettings">تغيير إعدادات شبكة الاتصال</string>
   <string name="permdesc_modifyNetworkSettings">السماح لأي تطبيق بإجراء تغييرات على وضع الطائرة وإعدادات شبكة البيانات المتنقلة.</string>
   <string name="permlab_modifySoundSettings">تغيير إعدادات نظام الصوت</string>
