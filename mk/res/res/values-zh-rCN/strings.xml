@@ -42,7 +42,7 @@
   <string name="permlab_write_alarms">直接更改闹钟</string>
   <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除你的闹钟</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">切换计划的闹钟</string>
+  <string name="permlab_manage_alarms">更改已设定的闹钟</string>
   <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">访问计划的闹钟</string>
@@ -65,9 +65,9 @@
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">默认</string>
   <string name="profileNameWork">工作</string>
-  <string name="profileNameHome">住宅</string>
+  <string name="profileNameHome">主页</string>
   <string name="profileNameSilent">静音</string>
-  <string name="profileNameNight">夜晚</string>
+  <string name="profileNameNight">夜间</string>
   <string name="profileNameAutomobile">汽车</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">电话</string>
@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">户外模式（强光）</string>
   <string name="live_display_outdoor_summary">仅使用户外模式</string>
   <string name="live_display_hint">LiveDisplay能帮助你减缓用眼疲劳并在晚上能帮助你入睡。点此试用。</string>
+  <string name="accessibility_quick_settings_live_display_off">关闭增强显示</string>
+  <string name="accessibility_quick_settings_live_display_auto">增强显示：自动模式</string>
+  <string name="accessibility_quick_settings_live_display_day">增强显示：日间模式</string>
+  <string name="accessibility_quick_settings_live_display_night">增强显示：夜间模式</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">增强显示：户外模式</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">增强显示已关闭</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">增强显示已切换为自动模式</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">增强显示已切换为日间模式</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">增强显示已切换为夜间模式</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">增强显示已切换为户外模式</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">第三方锁屏</string>
   <!-- Third party keyguard permission description -->
@@ -167,4 +177,6 @@
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">允许读取访问权限 DataUsage db</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">设置增强显示</string>
+  <string name="permdesc_manageLiveDisplay">允许应用调整高级显示设置</string>
 </resources>
