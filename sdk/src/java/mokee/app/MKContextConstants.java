@@ -133,6 +133,14 @@ public final class MKContextConstants {
      */
     public static final String MK_LIVEDISPLAY_SERVICE = "mklivedisplay";
 
+
+    /**
+     * Manages enhanced audio functionality
+     *
+     * @hide
+     */
+    public static final String MK_AUDIO_SERVICE = "mkaudio";
+
     /**
      * Features supported by the MKSDK.
      */
@@ -216,5 +224,13 @@ public final class MKContextConstants {
          */
         @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
         public static final String LIVEDISPLAY = "org.mokee.livedisplay";
+
+        /**
+         * Feature for {@link PackageManager#getSystemAvailableFeatures} and
+         * {@link PackageManager#hasSystemFeature}: The device includes the MK audio extensions
+         * utilized by the mksdk.
+         */
+        @SdkConstant(SdkConstant.SdkConstantType.FEATURE)
+        public static final String AUDIO = "org.mokee.audio";
     }
 }

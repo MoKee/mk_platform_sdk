@@ -74,5 +74,6 @@
         <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
         <item>org.mokee.platform.internal.MKWeatherManagerService</item>
         <item>org.mokee.platform.internal.display.LiveDisplayService</item>
+        <item>org.mokee.platform.internal.MKAudioService</item>
     </string-array>
 </resources>
