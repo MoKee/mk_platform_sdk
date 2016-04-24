@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">На вулиці (яскраве сонце)</string>
   <string name="live_display_outdoor_summary">Використовувати тільки параметри «На вулиці»</string>
   <string name="live_display_hint">LiveDisplay може допомогти зменшити навантаження на очі та допомогти вам спати по ночах. Натисніть тут, щоб спробувати його!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay вимкнений.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: автоматичний режим.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: денний режим.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: нічний режим.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим на відкритому повітрі.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay вимкнено.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay змінились до автоматичного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay змінились до денного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay змінились до нічного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay змінились до режиму на відкритому повітрі.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">екран блокування сторонніх виробників</string>
   <!-- Third party keyguard permission description -->
@@ -139,15 +149,23 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Дозволяє програмі отримувати доступ до продуктивності. Цей дозвіл не потрібен звичайним додаткам.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">доступ до сервісу живого екрану блокування</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Дозволяє додатку доступ до сервісу живого екрану блокування.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">доступ до сервісу живого екрана блокування</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Дозволити системним додаткам доступ до служби живого екрана блокування.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">читати погоду</string>
+  <string name="permlab_weather_write">оновити провайдера погоди</string>
+  <string name="permlab_weather_access_mgr">доступ до служби погоди</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">Керування параметрами LiveDisplay</string>
 </resources>
