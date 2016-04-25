@@ -20,6 +20,7 @@ import static mokee.hardware.LiveDisplayManager.FEATURE_MANAGED_OUTDOOR_MODE;
 import static mokee.hardware.LiveDisplayManager.MODE_DAY;
 import static mokee.hardware.LiveDisplayManager.MODE_FIRST;
 import static mokee.hardware.LiveDisplayManager.MODE_LAST;
+import static mokee.hardware.LiveDisplayManager.MODE_OFF;
 import static mokee.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 import android.app.Notification;
@@ -358,13 +359,20 @@ public class LiveDisplayService extends SystemService {
 
         @Override
         public int getMode() {
-            return mModeObserver.getMode();
+            if (mConfig.hasModeSupport()) {
+                return mModeObserver.getMode();
+            } else {
+                return MODE_OFF;
+            }
         }
 
         @Override
         public boolean setMode(int mode) {
             mContext.enforceCallingOrSelfPermission(
                     mokee.platform.Manifest.permission.MANAGE_LIVEDISPLAY, null);
+            if (!mConfig.hasModeSupport()) {
+                return false;
+            }
             return mModeObserver.setMode(mode);
         }
 
