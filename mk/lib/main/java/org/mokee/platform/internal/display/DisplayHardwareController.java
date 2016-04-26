@@ -48,6 +48,7 @@ public class DisplayHardwareController extends LiveDisplayFeature {
     private final boolean mUseColorAdjustment;
     private final boolean mUseColorEnhancement;
     private final boolean mUseCABC;
+    private final boolean mUseDisplayModes;
 
     // default values
     private final boolean mDefaultAutoContrast;
@@ -93,6 +94,10 @@ public class DisplayHardwareController extends LiveDisplayFeature {
 
         mUseColorAdjustment = mHardware
                 .isSupported(MKHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION);
+
+        mUseDisplayModes = mHardware
+                .isSupported(MKHardwareManager.FEATURE_DISPLAY_MODES);
+
         if (mUseColorAdjustment) {
             mMaxColor = mHardware.getDisplayColorCalibrationMax();
             copyColors(getColorAdjustment(), mColorAdjustment);
@@ -139,7 +144,11 @@ public class DisplayHardwareController extends LiveDisplayFeature {
         if (mUseColorAdjustment) {
             caps.set(LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT);
         }
-        return mUseAutoContrast || mUseColorEnhancement || mUseCABC || mUseColorAdjustment;
+        if (mUseDisplayModes) {
+            caps.set(LiveDisplayManager.FEATURE_DISPLAY_MODES);
+        }
+        return mUseAutoContrast || mUseColorEnhancement || mUseCABC || mUseColorAdjustment ||
+            mUseDisplayModes;
     }
 
     @Override
@@ -191,6 +200,7 @@ public class DisplayHardwareController extends LiveDisplayFeature {
         pw.println("  mUseColorAdjustment=" + mUseColorAdjustment);
         pw.println("  mUseColorEnhancement="  + mUseColorEnhancement);
         pw.println("  mUseCABC=" + mUseCABC);
+        pw.println("  mUseDisplayModes=" + mUseDisplayModes);
         pw.println();
         pw.println("  DisplayHardwareController State:");
         pw.println("    mAutoContrast=" + isAutoContrastEnabled());
