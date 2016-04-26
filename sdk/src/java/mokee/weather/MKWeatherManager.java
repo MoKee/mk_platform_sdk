@@ -25,6 +25,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.ArraySet;
+import android.util.Log;
 import mokee.app.MKContextConstants;
 import mokee.providers.MKSettings;
 import mokee.providers.WeatherContract;
@@ -90,7 +91,7 @@ public class MKWeatherManager {
 
         if (context.getPackageManager().hasSystemFeature(
                 MKContextConstants.Features.WEATHER_SERVICES) && (sWeatherManagerService == null)) {
-            throw new RuntimeException("Unable to bind the MKWeatherManagerService");
+            Log.wtf(TAG, "Unable to bind the MKWeatherManagerService");
         }
         mHandler = new Handler(appContext.getMainLooper());
     }

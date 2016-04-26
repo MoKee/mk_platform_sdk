@@ -62,7 +62,7 @@ import java.util.Map;
 import java.util.UUID;
 
 /** @hide */
-public class ProfileManagerService extends SystemService {
+public class ProfileManagerService extends MKSystemService {
 
     private static final String TAG = "MKProfileService";
     // Enable the below for detailed logging of this class
@@ -176,6 +176,11 @@ public class ProfileManagerService extends SystemService {
             Log.wtf(TAG, "MK profile service started by system server but feature xml not" +
                     " declared. Not publishing binder service!");
         }
+    }
+
+    @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.PROFILES;
     }
 
     @Override

@@ -53,7 +53,7 @@ import java.util.List;
  *
  * @hide
  */
-public class LiveLockScreenServiceBroker extends SystemService {
+public class LiveLockScreenServiceBroker extends MKSystemService {
     private static final String TAG = LiveLockScreenServiceBroker.class.getSimpleName();
     private static final boolean DEBUG = false;
 
@@ -236,16 +236,14 @@ public class LiveLockScreenServiceBroker extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.LIVE_LOCK_SCREEN;
+    }
+
+    @Override
     public void onStart() {
         if (DEBUG) Slog.d(TAG, "service started");
-        if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.LIVE_LOCK_SCREEN)) {
-            publishBinderService(MKContextConstants.MK_LIVE_LOCK_SCREEN_SERVICE,
-                    new BinderService());
-        } else {
-            Slog.wtf(TAG, "MK live lock screen service started by system server but feature xml " +
-                    "not declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_LIVE_LOCK_SCREEN_SERVICE, new BinderService());
     }
 
     @Override

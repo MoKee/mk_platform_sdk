@@ -41,7 +41,7 @@ import mokee.power.PerformanceManagerInternal;
 import mokee.providers.MKSettings;
 
 /** @hide */
-public class PerformanceManagerService extends SystemService {
+public class PerformanceManagerService extends MKSystemService {
 
     private static final String TAG = "PerformanceManager";
 
@@ -105,14 +105,13 @@ public class PerformanceManagerService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.PERFORMANCE;
+    }
+
+    @Override
     public void onStart() {
-        if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.PERFORMANCE)) {
-            publishBinderService(MKContextConstants.MK_PERFORMANCE_SERVICE, mBinder);
-        } else {
-            Log.wtf(TAG, "MK performance service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_PERFORMANCE_SERVICE, mBinder);
         publishLocalService(PerformanceManagerInternal.class, new LocalService());
     }
 

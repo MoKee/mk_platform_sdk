@@ -66,7 +66,7 @@
     <!-- Default wi-fi direct name -->
     <string name="config_wifiDirectName" translatable="false"></string>
 
-    <!-- Defines external services to be started by the SystemServer at boot. The service itself
+    <!-- Defines external services to be started by the MKSystemServer at boot. The service itself
          should publish as a binder services in its onStart -->
     <string-array name="config_externalMKServices">
         <item>org.mokee.platform.internal.MKStatusBarManagerService</item>
@@ -82,4 +82,7 @@
         <item>org.mokee.platform.internal.display.LiveDisplayService</item>
         <item>org.mokee.platform.internal.MKAudioService</item>
     </string-array>
+
+    <!-- The MKSystemServer class that is invoked from Android's SystemServer -->
+    <string name="config_externalSystemServer" translatable="false">org.mokee.platform.internal.MKSystemServer</string>
 </resources>

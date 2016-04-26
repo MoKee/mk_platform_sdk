@@ -130,7 +130,7 @@ public class LiveDisplayManager {
 
         if (!context.getPackageManager().hasSystemFeature(
                 MKContextConstants.Features.LIVEDISPLAY) || !checkService()) {
-            throw new RuntimeException("Unable to get LiveDisplayService. The service either" +
+            Log.wtf(TAG, "Unable to get LiveDisplayService. The service either" +
                     " crashed, was not started, or the interface has been called to early in" +
                     " SystemServer init");
         }

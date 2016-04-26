@@ -55,6 +55,7 @@ import com.android.server.twilight.TwilightState;
 
 import org.mokee.internal.util.QSConstants;
 import org.mokee.internal.util.QSUtils;
+import org.mokee.platform.internal.MKSystemService;
 import org.mokee.platform.internal.R;
 
 import java.io.FileDescriptor;
@@ -80,7 +81,7 @@ import mokee.providers.MKSettings;
  * and calibration. It interacts with MKHardwareService to relay
  * changes down to the lower layers.
  */
-public class LiveDisplayService extends SystemService {
+public class LiveDisplayService extends MKSystemService {
 
     private static final String TAG = "LiveDisplay";
 
@@ -148,14 +149,13 @@ public class LiveDisplayService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.LIVEDISPLAY;
+    }
+
+    @Override
     public void onStart() {
-        if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.LIVEDISPLAY)) {
-            publishBinderService(MKContextConstants.MK_LIVEDISPLAY_SERVICE, mBinder);
-        } else {
-            Log.wtf(TAG, "MK LiveDisplay service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_LIVEDISPLAY_SERVICE, mBinder);
     }
 
     @Override

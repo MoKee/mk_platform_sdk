@@ -54,7 +54,7 @@ import mokee.weatherservice.ServiceRequestResult;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MKWeatherManagerService extends SystemService{
+public class MKWeatherManagerService extends MKSystemService {
 
     private static final String TAG = MKWeatherManagerService.class.getSimpleName();
 
@@ -219,6 +219,11 @@ public class MKWeatherManagerService extends SystemService{
     public MKWeatherManagerService(Context context) {
         super(context);
         mContext = context;
+    }
+
+    @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.WEATHER_SERVICES;
     }
 
     @Override

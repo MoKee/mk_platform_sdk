@@ -35,7 +35,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /** @hide */
-public class IconCacheManagerService extends SystemService {
+public class IconCacheManagerService extends MKSystemService {
     private static final String TAG = IconCacheManagerService.class.getSimpleName();
 
     private static final long MAX_ICON_CACHE_SIZE = 33554432L; // 32MB
@@ -50,14 +50,14 @@ public class IconCacheManagerService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.THEMES;
+    }
+
+    @Override
     public void onStart() {
         Log.d(TAG, "registerIconCache mkiconcache: " + this);
-        if (mContext.getPackageManager().hasSystemFeature(MKContextConstants.Features.THEMES)) {
-            publishBinderService(MKContextConstants.MK_ICON_CACHE_SERVICE, mService);
-        } else {
-            Log.wtf(TAG, "IconCache service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_ICON_CACHE_SERVICE, mService);
     }
 
     private void purgeIconCache() {

@@ -60,7 +60,7 @@ public class MKTelephonyManager {
 
         if (context.getPackageManager().hasSystemFeature(MKContextConstants.Features.TELEPHONY)
                 && sService == null) {
-            throw new RuntimeException("Unable to get MKTelephonyManagerService. " +
+            Log.wtf(TAG, "Unable to get MKTelephonyManagerService. " +
                     "The service either crashed, was not started, or the interface has been " +
                     "called to early in SystemServer init");
         }

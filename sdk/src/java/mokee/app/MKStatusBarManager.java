@@ -69,7 +69,7 @@ public class MKStatusBarManager {
 
         if (context.getPackageManager().hasSystemFeature(
                 mokee.app.MKContextConstants.Features.STATUSBAR) && sService == null) {
-            throw new RuntimeException("Unable to get MKStatusBarService. The service either" +
+            Log.wtf(TAG, "Unable to get MKStatusBarService. The service either" +
                     " crashed, was not started, or the interface has been called to early in" +
                     " SystemServer init");
         }

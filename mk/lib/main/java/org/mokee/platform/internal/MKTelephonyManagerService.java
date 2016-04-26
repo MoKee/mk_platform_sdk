@@ -36,7 +36,7 @@ import mokee.app.IMKTelephonyManager;
  *
  * @hide
  */
-public class MKTelephonyManagerService extends SystemService {
+public class MKTelephonyManagerService extends MKSystemService {
     private static final String TAG = "MKTelephonyManagerSrv";
     private static boolean localLOGD = Log.isLoggable(TAG, Log.DEBUG);
 
@@ -182,17 +182,16 @@ public class MKTelephonyManagerService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.TELEPHONY;
+    }
+
+    @Override
     public void onStart() {
         if (localLOGD) {
             Log.d(TAG, "MK telephony manager service start: " + this);
         }
-        if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.TELEPHONY)) {
-            publishBinderService(MKContextConstants.MK_TELEPHONY_MANAGER_SERVICE, mService);
-        } else {
-            Log.wtf(TAG, "MK telephony service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_TELEPHONY_MANAGER_SERVICE, mService);
         mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
     }
 

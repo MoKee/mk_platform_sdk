@@ -157,7 +157,7 @@ public final class MKHardwareManager {
 
         if (context.getPackageManager().hasSystemFeature(
                 MKContextConstants.Features.HARDWARE_ABSTRACTION) && !checkService()) {
-            throw new RuntimeException("Unable to get MKHardwareService. The service either" +
+            Log.wtf(TAG, "Unable to get MKHardwareService. The service either" +
                     " crashed, was not started, or the interface has been called to early in" +
                     " SystemServer init");
         }

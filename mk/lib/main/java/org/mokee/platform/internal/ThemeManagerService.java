@@ -92,7 +92,7 @@ import static mokee.platform.Manifest.permission.ACCESS_THEME_MANAGER;
 import static org.mokee.internal.util.ThemeUtils.SYSTEM_THEME_PATH;
 import static org.mokee.internal.util.ThemeUtils.THEME_BOOTANIMATION_PATH;
 
-public class ThemeManagerService extends SystemService {
+public class ThemeManagerService extends MKSystemService {
 
     private static final String TAG = ThemeManagerService.class.getName();
 
@@ -242,13 +242,13 @@ public class ThemeManagerService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.THEMES;
+    }
+
+    @Override
     public void onStart() {
-        if (mContext.getPackageManager().hasSystemFeature(MKContextConstants.Features.THEMES)) {
-            publishBinderService(MKContextConstants.MK_THEME_SERVICE, mService);
-        } else {
-            Log.wtf(TAG, "Theme service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_THEME_SERVICE, mService);
         // listen for wallpaper changes
         IntentFilter filter = new IntentFilter(Intent.ACTION_WALLPAPER_CHANGED);
         mContext.registerReceiver(mWallpaperChangeReceiver, filter);

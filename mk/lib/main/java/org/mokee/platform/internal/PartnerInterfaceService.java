@@ -48,7 +48,7 @@ import java.security.interfaces.RSAPublicKey;
 
 /** @hide */
 
-public class PartnerInterfaceService extends SystemService {
+public class PartnerInterfaceService extends MKSystemService {
 
     private static final String TAG = "MKSettingsService";
 
@@ -60,13 +60,12 @@ public class PartnerInterfaceService extends SystemService {
     public PartnerInterfaceService(Context context) {
         super(context);
         mContext = context;
-        if (mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.PARTNER)) {
-            publishBinderService(MKContextConstants.MK_PARTNER_INTERFACE, mService);
-        } else {
-            Log.wtf(TAG, "MK partner service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_PARTNER_INTERFACE, mService);
+    }
+
+    @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.PARTNER;
     }
 
     @Override

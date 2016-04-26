@@ -37,7 +37,7 @@ import mokee.media.MKAudioManager;
 import mokee.media.IMKAudioService;
 import mokee.platform.Manifest;
 
-public class MKAudioService extends SystemService {
+public class MKAudioService extends MKSystemService {
 
     private static final String TAG = "MKAudioService";
     private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
@@ -56,14 +56,12 @@ public class MKAudioService extends SystemService {
     }
 
     @Override
-    public void onStart() {
-        if (!mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.AUDIO)) {
-            Log.wtf(TAG, "MK Audio service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-            return;
-        }
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.AUDIO;
+    }
 
+    @Override
+    public void onStart() {
         if (!NativeHelper.isNativeLibraryAvailable()) {
             Log.wtf(TAG, "MK Audio service started by system server by native library is" +
                     "unavailable. Service will be unavailable.");

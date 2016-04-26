@@ -59,7 +59,7 @@ import org.mokee.platform.internal.R;
  * Internal service which manages interactions with system ui elements
  * @hide
  */
-public class MKStatusBarManagerService extends SystemService {
+public class MKStatusBarManagerService extends MKSystemService {
     private static final String TAG = "MKStatusBarManagerService";
 
     private Context mContext;
@@ -83,13 +83,12 @@ public class MKStatusBarManagerService extends SystemService {
     }
 
     @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.STATUSBAR;
+    }
+
+    @Override
     public void onStart() {
-        if (!mContext.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.STATUSBAR)) {
-            Log.wtf(TAG, "MK statusbar service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-            return;
-        }
         Log.d(TAG, "registerMKStatusBar mkstatusbar: " + this);
         mCustomTileListeners = new CustomTileListeners();
         publishBinderService(MKContextConstants.MK_STATUS_BAR_SERVICE, mService);

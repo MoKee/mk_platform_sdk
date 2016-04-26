@@ -54,7 +54,7 @@ import org.mokee.hardware.UniqueDeviceId;
 import org.mokee.hardware.VibratorHW;
 
 /** @hide */
-public class MKHardwareService extends SystemService implements ThermalUpdateCallback {
+public class MKHardwareService extends MKSystemService implements ThermalUpdateCallback {
 
     private static final boolean DEBUG = true;
     private static final String TAG = MKHardwareService.class.getSimpleName();
@@ -344,13 +344,12 @@ public class MKHardwareService extends SystemService implements ThermalUpdateCal
         super(context);
         mContext = context;
         mMkHwImpl = getImpl(context);
-        if (context.getPackageManager().hasSystemFeature(
-                MKContextConstants.Features.HARDWARE_ABSTRACTION)) {
-            publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
-        } else {
-            Log.wtf(TAG, "MK hardware service started by system server but feature xml not" +
-                    " declared. Not publishing binder service!");
-        }
+        publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
+    }
+
+    @Override
+    public String getFeatureDeclaration() {
+        return MKContextConstants.Features.HARDWARE_ABSTRACTION;
     }
 
     @Override
