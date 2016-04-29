@@ -1,0 +1,3 @@
+# Ignore MoKee Open Source SDK access to private resources
+-dontwarn mokee.**
+-dontnote mokee.**
