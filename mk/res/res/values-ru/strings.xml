@@ -167,4 +167,5 @@
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">Разрешить доступ на четние из БД использования данных</string>
   <!-- LiveDisplay manager permission -->
+  <!-- MKAudioService - observe session changes permission -->
 </resources>

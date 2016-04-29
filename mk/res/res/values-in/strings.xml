@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">Luar ruangan (matahari terang)</string>
   <string name="live_display_outdoor_summary">Gunakan hanya di luar ruangan saja</string>
   <string name="live_display_hint">LiveDisplay dapat membantu mengurangi kelelahan mata dan membantu anda tidur di malam hari. Klik di sini untuk mencobanya!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay mati.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: otomatis.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: siang.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: malam.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: diluar.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay dimatikan.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay dirubah ke mode otomatis.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay dirubah ke mode siang hari.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay dirubah ke mode malam hari.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay dirubah ke mode diluar ruangan.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">kunci layar pihak ketiga</string>
   <!-- Third party keyguard permission description -->
@@ -167,4 +177,7 @@
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">Memungkinkan membaca akses ke DataUsage db</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">kelola setelan LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Memungkinkan aplikasi untuk mengkonfigurasi setelan tampilan cerdas.</string>
+  <!-- MKAudioService - observe session changes permission -->
 </resources>

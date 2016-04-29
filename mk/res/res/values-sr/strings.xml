@@ -106,4 +106,5 @@
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
+  <!-- MKAudioService - observe session changes permission -->
 </resources>

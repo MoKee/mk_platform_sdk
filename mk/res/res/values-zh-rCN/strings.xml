@@ -179,4 +179,5 @@
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">设置增强显示</string>
   <string name="permdesc_manageLiveDisplay">允许应用调整高级显示设置</string>
+  <!-- MKAudioService - observe session changes permission -->
 </resources>
