@@ -113,7 +113,7 @@ org_mokee_platform_internal_MKAudioService_listAudioSessions(JNIEnv *env, jobjec
     if (status != NO_ERROR) {
         ALOGE("AudioSystem::listAudioSessions error %d", status);
     } else {
-        ALOGV("AudioSystem::listAudioSessions count=%d", sessions.size());
+        ALOGV("AudioSystem::listAudioSessions count=%zu", sessions.size());
     }
 
     jint jStatus = nativeToJavaStatus(status);
