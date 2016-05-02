@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">Улица (солнце)</string>
   <string name="live_display_outdoor_summary">Использовать только параметры улицы</string>
   <string name="live_display_hint">LiveDisplay помогает снизить напряжение глаз и улучшает ночной сон. Нажмите здесь, чтобы попробовать!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay выкл.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: авто.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: дневной режим.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: ночной режим.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим улицы.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay изменен на режим auto.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay изменен на дневной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay изменен на ночной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay изменен на режим улицы.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">сторонние блокировщики экрана</string>
   <!-- Third party keyguard permission description -->
@@ -167,5 +177,7 @@
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">Разрешить доступ на четние из БД использования данных</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">Управление параметрами LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Позволяет приложению управлять расширенными параметрами дисплея.</string>
   <!-- MKAudioService - observe session changes permission -->
 </resources>

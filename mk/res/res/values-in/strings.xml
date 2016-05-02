@@ -180,4 +180,6 @@
   <string name="permlab_manageLiveDisplay">kelola setelan LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Memungkinkan aplikasi untuk mengkonfigurasi setelan tampilan cerdas.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">mengamati perubahan sesi audio</string>
+  <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati stream audio untuk diciptakan dan dihancurkan.</string>
 </resources>
