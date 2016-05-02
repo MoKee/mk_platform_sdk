@@ -138,6 +138,8 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">lire la météo</string>
+  <string name="permlab_weather_bind">associer comme service de fournisseur de météo</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
