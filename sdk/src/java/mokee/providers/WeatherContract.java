@@ -57,6 +57,12 @@ public class WeatherContract {
 
 
         /**
+         * A Valid {@link WeatherCode}
+         * <P>Type: TEXT</P>
+         */
+        public static final String CURRENT_AQI = "aqi";
+
+        /**
          * A localized string mapped to the current weather condition code. Note that, if no
          * locale is found, the string will be in english
          * <P>Type: TEXT</P>

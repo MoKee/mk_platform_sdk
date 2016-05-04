@@ -349,6 +349,7 @@ public class MKWeatherManagerService extends SystemService{
         contentValues.put(WeatherColumns.CURRENT_TEMPERATURE, wi.getTemperature());
         contentValues.put(WeatherColumns.CURRENT_TEMPERATURE_UNIT, wi.getTemperatureUnit());
         contentValues.put(WeatherColumns.CURRENT_CONDITION_CODE, wi.getConditionCode());
+        contentValues.put(WeatherColumns.CURRENT_AQI, wi.getAqi());
         contentValues.put(WeatherColumns.CURRENT_HUMIDITY, wi.getHumidity());
         contentValues.put(WeatherColumns.CURRENT_WIND_SPEED, wi.getWindSpeed());
         contentValues.put(WeatherColumns.CURRENT_WIND_DIRECTION, wi.getWindDirection());

@@ -45,6 +45,7 @@ public final class WeatherInfo implements Parcelable {
 
     private String mCity;
     private int mConditionCode;
+    private String mAqi;
     private double mTemperature;
     private int mTempUnit;
     private double mTodaysHighTemp;
@@ -65,6 +66,7 @@ public final class WeatherInfo implements Parcelable {
     public static class Builder {
         private String mCity;
         private int mConditionCode = WeatherContract.WeatherColumns.WeatherCode.NOT_AVAILABLE;
+        private String mAqi;
         private double mTemperature;
         private int mTempUnit;
         private double mTodaysHighTemp = Double.NaN;
@@ -168,6 +170,14 @@ public final class WeatherInfo implements Parcelable {
         }
 
         /**
+         * @param api The weather aqi.
+         */
+        public Builder setAqi(String aqi) {
+            mAqi = aqi;
+            return this;
+        }
+
+        /**
          * @param forecasts A valid array list of {@link DayForecast} objects. Attempting to pass
          *                  null will get you an IllegalArgumentException'
          * @return The {@link Builder} instance
@@ -215,6 +225,7 @@ public final class WeatherInfo implements Parcelable {
             WeatherInfo info = new WeatherInfo();
             info.mCity = this.mCity;
             info.mConditionCode = this.mConditionCode;
+            info.mAqi = this.mAqi;
             info.mTemperature = this.mTemperature;
             info.mTempUnit = this.mTempUnit;
             info.mHumidity = this.mHumidity;
@@ -273,6 +284,13 @@ public final class WeatherInfo implements Parcelable {
      */
     public int getConditionCode() {
         return mConditionCode;
+    }
+
+    /**
+     * @return weather aqi
+     */
+    public String getAqi() {
+        return mAqi;
     }
 
     /**
@@ -356,6 +374,7 @@ public final class WeatherInfo implements Parcelable {
             mKey = parcel.readString();
             mCity = parcel.readString();
             mConditionCode = parcel.readInt();
+            mAqi = parcel.readString();
             mTemperature = parcel.readDouble();
             mTempUnit = parcel.readInt();
             mHumidity = parcel.readDouble();
@@ -391,6 +410,7 @@ public final class WeatherInfo implements Parcelable {
         dest.writeString(mKey);
         dest.writeString(mCity);
         dest.writeInt(mConditionCode);
+        dest.writeString(mAqi);
         dest.writeDouble(mTemperature);
         dest.writeInt(mTempUnit);
         dest.writeDouble(mHumidity);
@@ -604,6 +624,7 @@ public final class WeatherInfo implements Parcelable {
         StringBuilder builder = new StringBuilder()
             .append(" City Name: ").append(mCity)
             .append(" Condition Code: ").append(mConditionCode)
+            .append(" Aqi: ").append(mAqi)
             .append(" Temperature: ").append(mTemperature)
             .append(" Temperature Unit: ").append(mTempUnit)
             .append(" Humidity: ").append(mHumidity)
