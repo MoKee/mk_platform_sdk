@@ -1163,6 +1163,7 @@ package mokee.providers {
     field public static final java.lang.String CURRENT_CONDITION = "condition";
     field public static final java.lang.String CURRENT_CONDITION_CODE = "condition_code";
     field public static final java.lang.String CURRENT_AQI = "aqi";
+    field public static final java.lang.String CURRENT_UV = "uv";
     field public static final java.lang.String CURRENT_HUMIDITY = "humidity";
     field public static final java.lang.String CURRENT_TEMPERATURE = "temperature";
     field public static final java.lang.String CURRENT_TEMPERATURE_UNIT = "temperature_unit";
@@ -1403,6 +1404,7 @@ package mokee.weather {
     method public java.lang.String getCity();
     method public int getConditionCode();
     method public java.lang.String getAqi();
+    method public java.lang.String getUv();
     method public java.util.List<mokee.weather.WeatherInfo.DayForecast> getForecasts();
     method public double getHumidity();
     method public double getTemperature();
@@ -1427,6 +1429,7 @@ package mokee.weather {
     method public mokee.weather.WeatherInfo.Builder setTodaysLow(double);
     method public mokee.weather.WeatherInfo.Builder setWeatherCondition(int);
     method public mokee.weather.WeatherInfo.Builder setAqi(String);
+    method public mokee.weather.WeatherInfo.Builder setUv(String);
     method public mokee.weather.WeatherInfo.Builder setWind(double, double, int);
   }
 

@@ -46,6 +46,7 @@ public final class WeatherInfo implements Parcelable {
     private String mCity;
     private int mConditionCode;
     private String mAqi;
+    private String mUv;
     private double mTemperature;
     private int mTempUnit;
     private double mTodaysHighTemp;
@@ -67,6 +68,7 @@ public final class WeatherInfo implements Parcelable {
         private String mCity;
         private int mConditionCode = WeatherContract.WeatherColumns.WeatherCode.NOT_AVAILABLE;
         private String mAqi;
+        private String mUv;
         private double mTemperature;
         private int mTempUnit;
         private double mTodaysHighTemp = Double.NaN;
@@ -170,10 +172,18 @@ public final class WeatherInfo implements Parcelable {
         }
 
         /**
-         * @param api The weather aqi.
+         * @param api The weather air quality index.
          */
         public Builder setAqi(String aqi) {
             mAqi = aqi;
+            return this;
+        }
+
+        /**
+         * @param api The weather uv index.
+         */
+        public Builder setUv(String uv) {
+            mUv = uv;
             return this;
         }
 
@@ -226,6 +236,7 @@ public final class WeatherInfo implements Parcelable {
             info.mCity = this.mCity;
             info.mConditionCode = this.mConditionCode;
             info.mAqi = this.mAqi;
+            info.mUv = this.mUv;
             info.mTemperature = this.mTemperature;
             info.mTempUnit = this.mTempUnit;
             info.mHumidity = this.mHumidity;
@@ -287,10 +298,17 @@ public final class WeatherInfo implements Parcelable {
     }
 
     /**
-     * @return weather aqi
+     * @return weather air quality index
      */
     public String getAqi() {
         return mAqi;
+    }
+
+    /**
+     * @return weather uv index
+     */
+    public String getUv() {
+        return mUv;
     }
 
     /**
@@ -375,6 +393,7 @@ public final class WeatherInfo implements Parcelable {
             mCity = parcel.readString();
             mConditionCode = parcel.readInt();
             mAqi = parcel.readString();
+            mUv = parcel.readString();
             mTemperature = parcel.readDouble();
             mTempUnit = parcel.readInt();
             mHumidity = parcel.readDouble();
@@ -411,6 +430,7 @@ public final class WeatherInfo implements Parcelable {
         dest.writeString(mCity);
         dest.writeInt(mConditionCode);
         dest.writeString(mAqi);
+        dest.writeString(mUv);
         dest.writeDouble(mTemperature);
         dest.writeInt(mTempUnit);
         dest.writeDouble(mHumidity);
@@ -625,6 +645,7 @@ public final class WeatherInfo implements Parcelable {
             .append(" City Name: ").append(mCity)
             .append(" Condition Code: ").append(mConditionCode)
             .append(" Aqi: ").append(mAqi)
+            .append(" Uv: ").append(mUv)
             .append(" Temperature: ").append(mTemperature)
             .append(" Temperature Unit: ").append(mTempUnit)
             .append(" Humidity: ").append(mHumidity)

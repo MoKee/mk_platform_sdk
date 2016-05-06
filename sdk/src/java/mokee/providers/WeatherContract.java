@@ -57,10 +57,16 @@ public class WeatherContract {
 
 
         /**
-         * A Valid {@link WeatherCode}
+         * Air quality index
          * <P>Type: TEXT</P>
          */
         public static final String CURRENT_AQI = "aqi";
+
+        /**
+         * Uv index
+         * <P>Type: TEXT</P>
+         */
+        public static final String CURRENT_UV = "uv";
 
         /**
          * A localized string mapped to the current weather condition code. Note that, if no
