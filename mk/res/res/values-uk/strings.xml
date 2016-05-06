@@ -169,4 +169,5 @@
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">Керування параметрами LiveDisplay</string>
   <!-- MKAudioService - observe session changes permission -->
+  <!-- QuickSettings: Themes tile -->
 </resources>
