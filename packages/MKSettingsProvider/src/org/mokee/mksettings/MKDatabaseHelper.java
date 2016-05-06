@@ -47,7 +47,7 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
     private static final boolean LOCAL_LOGV = false;
 
     private static final String DATABASE_NAME = "mksettings.db";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
     public static class MKTableNames {
         public static final String TABLE_SYSTEM = "system";
@@ -202,6 +202,22 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             upgradeVersion = 4;
         }
 
+        if (upgradeVersion < 5) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT INTO global(name,value)"
+                        + " VALUES(?,?);");
+                loadIntegerSetting(stmt, MKSettings.Global.WEATHER_TEMPERATURE_UNIT,
+                        R.integer.def_temperature_unit);
+                db.setTransactionSuccessful();
+            } finally {
+                if (stmt != null) stmt.close();
+                db.endTransaction();
+            }
+            upgradeVersion = 5;
+        }
+
         // *** Remember to update DATABASE_VERSION above!
 
         if (upgradeVersion < newVersion) {
@@ -340,6 +356,9 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             loadStringSetting(stmt,
                     MKSettings.Global.POWER_NOTIFICATIONS_RINGTONE,
                     R.string.def_power_notifications_ringtone);
+
+            loadIntegerSetting(stmt, MKSettings.Global.WEATHER_TEMPERATURE_UNIT,
+                    R.integer.def_temperature_unit);
         } finally {
             if (stmt != null) stmt.close();
         }
