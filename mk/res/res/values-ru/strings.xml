@@ -181,4 +181,6 @@
   <string name="permdesc_manageLiveDisplay">Позволяет приложению управлять расширенными параметрами дисплея.</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Темы</string>
+  <string name="qs_themes_content_description">Настроить тему</string>
 </resources>
