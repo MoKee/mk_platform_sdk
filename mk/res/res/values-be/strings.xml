@@ -18,6 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Систэма MoKee</string>
+  <string name="permlab_publishCustomTile">Стварыць карыстацкую плітку на Панэлі хуткіх налад</string>
+  <string name="permdesc_publishCustomTile">Дазваляе прыкладанню публікаваць плітку хуткіх налад.</string>
   <string name="permlab_modifyNetworkSettings">Налады сеткавых параметраў сістэмы</string>
   <string name="permdesc_modifyNetworkSettings">Дазваляе прыкладанню ўнесці змены ў рэжыме \"Палёту\" і наладах мабільнай перадачы дадзеных.</string>
   <string name="permlab_modifySoundSettings">Налады параметраў гуку сістэмы</string>
@@ -79,13 +81,18 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Дазволіць прыкладанням запісваць месцазнаходжанне тэлефона.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_bal">Збалансаваны</string>
+  <string name="perf_profile_perf">Прадукцыйнасць</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Аўтаматычна</string>
   <string name="live_display_off">Выключыць</string>
+  <string name="live_display_day">Дзень</string>
   <string name="live_display_night">Ноч</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Жэсты</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Дапаўненні</string>
   <!-- Theme installation error notification -->
@@ -112,4 +119,5 @@
   <!-- LiveDisplay manager permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Скiны</string>
 </resources>

@@ -180,6 +180,8 @@
   <string name="permlab_manageLiveDisplay">Управление параметрами LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Позволяет приложению управлять расширенными параметрами дисплея.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">наблюдать за изменениями аудио сессии</string>
+  <string name="permdesc_observe_audio_sessions">Позволяет приложению наблюдать за создаваемыми и разрушающимися аудиопотоками.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Темы</string>
   <string name="qs_themes_content_description">Настроить тему</string>

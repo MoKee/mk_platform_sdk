@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Systém MoKee</string>
+  <string name="permlab_publishCustomTile">vytvořit vlastní dlaždici do panelu rychlého nastavení</string>
   <string name="permlab_modifyNetworkSettings">změnit systémové nastastavení sítě</string>
   <string name="permdesc_modifyNetworkSettings">Povolit aplikaci měnit režim v letadle a nastavení mobilní datové sítě.</string>
   <string name="permlab_modifySoundSettings">změnit systémové nastavení zvuku</string>
@@ -79,9 +80,26 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Umožňuje aplikaci změnit polohu.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Úsporný</string>
+  <string name="perf_profile_bal">Vyvážený</string>
+  <string name="perf_profile_perf">Výkon</string>
+  <string name="perf_profile_bias_power">Efektivita</string>
+  <string name="perf_profile_bias_perf">Rychlý</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatický</string>
+  <string name="live_display_auto_summary">Automaticky nastavit teplotu barev obrazovky po západu slunce</string>
   <string name="live_display_off">Vypnuto</string>
+  <string name="live_display_off_summary">Zakázat všechny úpravy</string>
+  <string name="live_display_day">Den</string>
   <string name="live_display_night">Noc</string>
+  <string name="live_display_night_summary">Použít pouze noční nastavení</string>
+  <string name="live_display_outdoor">Outdoor (jasné slunce)</string>
+  <string name="live_display_outdoor_summary">Použít pouze venkovní nastavení</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay vypnuto.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatický režim.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: denní režim.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: noční režim.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: venkovní mód.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
@@ -105,11 +123,15 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permdesc_weather_read">Umožňuje aplikaci číst obsah od poskytovatele počasí.</string>
+  <string name="permdesc_weather_write">Umožňuje aplikaci aktualizovat obsah počasí poskytovatele.</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">spravovat nastavení LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Umožňuje aplikaci nakonfigurovat upřesňující nastavení.</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
 </resources>

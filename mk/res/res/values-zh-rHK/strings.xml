@@ -181,4 +181,6 @@
   <string name="permdesc_manageLiveDisplay">允許一個應用程式來配置先進的顯示設定。</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">主題</string>
+  <string name="qs_themes_content_description">自訂您的主題</string>
 </resources>

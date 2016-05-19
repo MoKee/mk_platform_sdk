@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">Externo (sol intenso)</string>
   <string name="live_display_outdoor_summary">Apenas usar configurações do modo externo</string>
   <string name="live_display_hint">LiveDisplay pode te ajudar a reduzir cansaço dos olhos e ajudar você a dormir durante a noite. Clique aqui para testar!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay off.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: modo automatico.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo dia.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo noite.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modo ar livre.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay desligado.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay alterado para o modo automatico.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay alterado para o modo dia.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay alterado para modo noite.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay alterado para modo ar livre.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">tela de bloqueio de terceiros</string>
   <!-- Third party keyguard permission description -->
@@ -138,12 +148,17 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Permite que um aplicativo tenha acesso ao serviço de desempenho. Nunca deverá ser necessário para aplicativos normais.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">acesso ao gerenciador do serviço da Tela de bloqueio animada</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Permite que um aplicativo acesse o serviço de gerenciamento da tela de bloqueio animada.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">acesso ao gerenciador do serviço da Tela de bloqueio animada</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Permite que aplicativos do sistema acessem o serviço de gerenciamento da tela de bloqueio animada.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_write">atualiza o provedor de tempo</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
