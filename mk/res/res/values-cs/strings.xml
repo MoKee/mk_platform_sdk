@@ -19,6 +19,7 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Systém MoKee</string>
   <string name="permlab_publishCustomTile">vytvořit vlastní dlaždici do panelu rychlého nastavení</string>
+  <string name="permdesc_publishCustomTile">Umožňuje aplikaci publikovat rychlé nastavení dlaždice.</string>
   <string name="permlab_modifyNetworkSettings">změnit systémové nastastavení sítě</string>
   <string name="permdesc_modifyNetworkSettings">Povolit aplikaci měnit režim v letadle a nastavení mobilní datové sítě.</string>
   <string name="permlab_modifySoundSettings">změnit systémové nastavení zvuku</string>
@@ -103,19 +104,34 @@
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Rozšířené nastavení</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gesta</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Doplňky</string>
+  <string name="touchscreen_gesture_haptic_feedback">Hmatová odezva</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrace, pokud je správně určeno gesto</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Instalace motivu se nezdařila</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> instalace se nezdařila</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Obnovit motiv</string>
+  <string name="theme_reset_notification_message">Systémový motiv byl obnoven kvůli selhávajícím aplikacím.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">přístup ke službě motivů</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Umožnit aplikaci přístup ke službě motivů. Pro normální aplikace by toto oprávnění nemělo být nikdy požadováno.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">číst informace o tématu</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Umožňuje načíst motivy a určit, který motiv je použit.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">upravit vaše témata</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Umožnit aplikacím vytvářet nová témata a nastavit používané téma.</string>
   <!-- Performance manager permission title -->
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Umožňuje přístup ke svítilně. Toto oprávnění by neměla vyžadovat žádná normální aplikace.</string>
   <!-- Access live lock screen manager service permission label -->
   <!-- Access live lock screen manager service permission description -->
   <!-- Privileged access live lock screen manager service permission label -->
