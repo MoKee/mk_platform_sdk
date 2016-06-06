@@ -2851,6 +2851,12 @@ public final class MKSettings {
          */
         public static final String LOCK_SCREEN_BLUR_ENABLED = "lock_screen_blur_enabled";
 
+        /**
+         * Whether to display weather information on the lock screen
+         * @hide
+         */
+        public static final String LOCK_SCREEN_WEATHER_ENABLED = "lock_screen_weather_enabled";
+
 
         // endregion
 
