@@ -147,6 +147,7 @@
   <!-- Weather Service strings -->
   <string name="permdesc_weather_read">Umožňuje aplikaci číst obsah od poskytovatele počasí.</string>
   <string name="permdesc_weather_write">Umožňuje aplikaci aktualizovat obsah počasí poskytovatele.</string>
+  <string name="permdesc_weather_access_mgr">Umožnit aplikaci přístup ke službě počasí v systému. Pro normální aplikace by toto oprávnění nemělo být nikdy požadováno.</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
