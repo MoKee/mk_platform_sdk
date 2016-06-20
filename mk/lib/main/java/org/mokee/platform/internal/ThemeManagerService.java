@@ -485,8 +485,7 @@ public class ThemeManagerService extends MKSystemService {
 
     private void doApplyDefaultTheme() {
         final ContentResolver resolver = mContext.getContentResolver();
-        final String defaultThemePkg = MKSettings.Secure.getString(resolver,
-                MKSettings.Secure.DEFAULT_THEME_PACKAGE);
+        final String defaultThemePkg = ThemeUtils.getDefaultThemePackageName(mContext);
         if (!TextUtils.isEmpty(defaultThemePkg)) {
             String defaultThemeComponents = MKSettings.Secure.getString(resolver,
                     MKSettings.Secure.DEFAULT_THEME_COMPONENTS);
