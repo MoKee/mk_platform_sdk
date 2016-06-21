@@ -152,4 +152,5 @@
   <!-- LiveDisplay manager permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_content_description">Customise your theme</string>
 </resources>
