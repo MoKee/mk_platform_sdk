@@ -19,14 +19,9 @@ package org.mokee.platform.internal;
 import android.content.Context;
 import android.util.Slog;
 import com.android.server.LocalServices;
-import com.android.server.SystemService;
 import com.android.server.SystemServiceManager;
-import mokee.app.MKContextConstants;
 
-import org.mokee.platform.internal.display.LiveDisplayService;
-
-import java.util.HashMap;
-import java.util.Map;
+import org.mokee.platform.internal.common.MKSystemServiceHelper;
 
 /**
  * Base MK System Server which handles the starting and states of various MK

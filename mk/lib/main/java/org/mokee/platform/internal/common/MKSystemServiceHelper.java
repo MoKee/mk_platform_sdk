@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package org.mokee.platform.internal;
+package org.mokee.platform.internal.common;
 
 import android.content.Context;
+import org.mokee.platform.internal.MKSystemService;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
