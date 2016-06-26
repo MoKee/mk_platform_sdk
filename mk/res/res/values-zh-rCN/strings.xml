@@ -181,6 +181,7 @@
   <string name="permdesc_manageLiveDisplay">允许应用调整高级显示设置</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">读取AudioSession设置</string>
+  <string name="permdesc_observe_audio_sessions">允许应用查验音频流被创建和销毁。</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">主题</string>
   <string name="qs_themes_content_description">自定义主题</string>
