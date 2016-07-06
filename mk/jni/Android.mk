@@ -18,7 +18,6 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    src/org_mokee_platform_internal_MKAudioService.cpp \
     src/org_mokee_platform_internal_PerformanceManagerService.cpp \
     src/onload.cpp
 

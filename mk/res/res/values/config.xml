@@ -88,7 +88,7 @@
         <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
         <item>org.mokee.platform.internal.MKWeatherManagerService</item>
         <item>org.mokee.platform.internal.display.LiveDisplayService</item>
-        <item>org.mokee.platform.internal.MKAudioService</item>
+        <item>org.mokee.platform.internal.MKAudioServiceBroker</item>
     </string-array>
 
     <!-- The MKSystemServer class that is invoked from Android's SystemServer -->
