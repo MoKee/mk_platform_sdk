@@ -99,6 +99,9 @@
   <string name="live_display_outdoor">Exteriores (sol brillante)</string>
   <string name="live_display_outdoor_summary">Usar solo configuraciones de exteriores</string>
   <string name="live_display_hint">LiveDisplay puede ayudarte a reducir la fatiga ocular y a dormir por la noche. Pulsa aquí para probarlo!</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automático.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo de día.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo de noche.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">pantalla de bloqueo de terceros</string>
   <!-- Third party keyguard permission description -->
