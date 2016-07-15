@@ -250,6 +250,11 @@
     <permission android:name="mokee.permission.BIND_CORE_SERVICE"
                 android:protectionLevel="signature|privileged" />
 
+    <!-- Not meant for third parties.
+         @hide -->
+    <permission android:name="mokee.permission.SEND_PROTECTED_THEME_BROADCAST"
+                android:protectionLevel="signature|privileged" />
+
     <application android:process="system"
                  android:persistent="true"
                  android:hasCode="false"

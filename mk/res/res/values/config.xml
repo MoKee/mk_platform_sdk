@@ -83,8 +83,8 @@
         <item>org.mokee.platform.internal.MKTelephonyManagerService</item>
         <item>org.mokee.platform.internal.MKHardwareService</item>
         <item>org.mokee.platform.internal.PerformanceManagerService</item>
-        <item>org.mokee.platform.internal.ThemeManagerService</item>
-        <item>org.mokee.platform.internal.IconCacheManagerService</item>
+        <item>org.mokee.platform.internal.ThemeManagerServiceBroker</item>
+        <item>org.mokee.platform.internal.IconCacheManagerServiceBroker</item>
         <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
         <item>org.mokee.platform.internal.MKWeatherManagerService</item>
         <item>org.mokee.platform.internal.display.LiveDisplayService</item>
