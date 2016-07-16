@@ -98,7 +98,7 @@
         <item>org.mokee.platform.internal.ThemeManagerServiceBroker</item>
         <item>org.mokee.platform.internal.IconCacheManagerServiceBroker</item>
         <item>org.mokee.platform.internal.LiveLockScreenServiceBroker</item>
-        <item>org.mokee.platform.internal.MKWeatherManagerService</item>
+        <item>org.mokee.platform.internal.WeatherManagerServiceBroker</item>
         <item>org.mokee.platform.internal.display.LiveDisplayService</item>
         <item>org.mokee.platform.internal.MKAudioServiceBroker</item>
     </string-array>
