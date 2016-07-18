@@ -36,6 +36,7 @@ import java.util.Arrays;
 
 import org.mokee.hardware.AdaptiveBacklight;
 import org.mokee.hardware.AutoContrast;
+import org.mokee.hardware.ColorBalance;
 import org.mokee.hardware.ColorEnhancement;
 import org.mokee.hardware.DisplayColorCalibration;
 import org.mokee.hardware.DisplayGammaCalibration;
@@ -96,6 +97,11 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
 
         public boolean writePersistentBytes(String key, byte[] value);
         public byte[] readPersistentBytes(String key);
+
+        public int getColorBalanceMin();
+        public int getColorBalanceMax();
+        public int getColorBalance();
+        public boolean setColorBalance(int value);
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -137,6 +143,8 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 mSupportedFeatures |= MKHardwareManager.FEATURE_THERMAL_MONITOR;
             if (UniqueDeviceId.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_UNIQUE_DEVICE_ID;
+            if (ColorBalance.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_COLOR_BALANCE;
         }
 
         public int getSupportedFeatures() {
@@ -333,6 +341,22 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
 
         public byte[] readPersistentBytes(String key) {
             return PersistentStorage.get(key);
+        }
+
+        public int getColorBalanceMin() {
+            return ColorBalance.getMinValue();
+        }
+
+        public int getColorBalanceMax() {
+            return ColorBalance.getMaxValue();
+        }
+
+        public int getColorBalance() {
+            return ColorBalance.getValue();
+        }
+
+        public boolean setColorBalance(int value) {
+            return ColorBalance.setValue(value);
         }
     }
 
@@ -684,6 +708,46 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                     mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
             if (isSupported(MKHardwareManager.FEATURE_THERMAL_MONITOR)) {
                 return mRemoteCallbackList.unregister(callback);
+            }
+            return false;
+        }
+
+        @Override
+        public int getColorBalanceMin() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_COLOR_BALANCE)) {
+                return mMkHwImpl.getColorBalanceMin();
+            }
+            return 0;
+        }
+
+        @Override
+        public int getColorBalanceMax() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_COLOR_BALANCE)) {
+                return mMkHwImpl.getColorBalanceMax();
+            }
+            return 0;
+        }
+
+        @Override
+        public int getColorBalance() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_COLOR_BALANCE)) {
+                return mMkHwImpl.getColorBalance();
+            }
+            return 0;
+        }
+
+        @Override
+        public boolean setColorBalance(int value) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_COLOR_BALANCE)) {
+                return mMkHwImpl.setColorBalance(value);
             }
             return false;
         }
