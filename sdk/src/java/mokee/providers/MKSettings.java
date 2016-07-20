@@ -1888,6 +1888,31 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
+         * The current custom picture adjustment values as a delimited string
+         */
+        public static final String DISPLAY_PICTURE_ADJUSTMENT =
+                "display_picture_adjustment";
+
+        /** @hide */
+        public static final Validator DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR =
+                new Validator() {
+                    @Override
+                    public boolean validate(String value) {
+                        if (TextUtils.isEmpty(value)) {
+                            return true;
+                        }
+                        final String[] sp = TextUtils.split(value, ",");
+                        for (String s : sp) {
+                            final String[] sp2 = TextUtils.split(s, ":");
+                            if (sp2.length != 2) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                };
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -2149,6 +2174,8 @@ public final class MKSettings {
             VALIDATORS.put(ZEN_PRIORITY_ALLOW_LIGHTS, ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR);
             VALIDATORS.put(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
                     TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
+            VALIDATORS.put(DISPLAY_PICTURE_ADJUSTMENT,
+                    DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR);
         };
         // endregion
     }

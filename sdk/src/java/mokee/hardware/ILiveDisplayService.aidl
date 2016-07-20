@@ -17,6 +17,7 @@
 
 package mokee.hardware;
 
+import mokee.hardware.HSIC;
 import mokee.hardware.LiveDisplayConfig;
 
 /** @hide */
@@ -48,4 +49,8 @@ interface ILiveDisplayService {
 
     boolean isAutomaticOutdoorModeEnabled();
     boolean setAutomaticOutdoorModeEnabled(boolean enabled);
+
+    HSIC getPictureAdjustment();
+    HSIC getDefaultPictureAdjustment();
+    boolean setPictureAdjustment(in HSIC adj);
 }

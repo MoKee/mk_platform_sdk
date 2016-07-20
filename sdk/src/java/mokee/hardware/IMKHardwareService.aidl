@@ -17,6 +17,7 @@
 package mokee.hardware;
 
 import mokee.hardware.DisplayMode;
+import mokee.hardware.HSIC;
 import mokee.hardware.IThermalListenerCallback;
 
 /** @hide */
@@ -63,4 +64,10 @@ interface IMKHardwareService {
     int getColorBalanceMax();
     int getColorBalance();
     boolean setColorBalance(int value);
+
+    HSIC getPictureAdjustment();
+    HSIC getDefaultPictureAdjustment();
+    boolean setPictureAdjustment(in HSIC hsic);
+    float[] getPictureAdjustmentRanges();
+
 }

@@ -22,6 +22,7 @@ import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.util.ArrayMap;
 import android.util.Log;
+import android.util.Range;
 
 import com.android.server.SystemService;
 
@@ -31,10 +32,12 @@ import mokee.hardware.MKHardwareManager;
 import mokee.hardware.DisplayMode;
 import mokee.hardware.IThermalListenerCallback;
 import mokee.hardware.ThermalListenerCallback;
+import mokee.hardware.HSIC;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.mokee.hardware.AdaptiveBacklight;
 import org.mokee.hardware.AutoContrast;
@@ -47,6 +50,7 @@ import org.mokee.hardware.HighTouchSensitivity;
 import org.mokee.hardware.KeyDisabler;
 import org.mokee.hardware.LongTermOrbits;
 import org.mokee.hardware.PersistentStorage;
+import org.mokee.hardware.PictureAdjustment;
 import org.mokee.hardware.SerialNumber;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.TapToWake;
@@ -108,6 +112,11 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
         public int getColorBalanceMax();
         public int getColorBalance();
         public boolean setColorBalance(int value);
+
+        public HSIC getPictureAdjustment();
+        public HSIC getDefaultPictureAdjustment();
+        public boolean setPictureAdjustment(HSIC hsic);
+        public List<Range<Float>> getPictureAdjustmentRanges();
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -151,6 +160,8 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 mSupportedFeatures |= MKHardwareManager.FEATURE_UNIQUE_DEVICE_ID;
             if (ColorBalance.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_COLOR_BALANCE;
+            if (PictureAdjustment.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_PICTURE_ADJUSTMENT;
         }
 
         public int getSupportedFeatures() {
@@ -363,6 +374,21 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
 
         public boolean setColorBalance(int value) {
             return ColorBalance.setValue(value);
+        }
+
+        public HSIC getPictureAdjustment() { return PictureAdjustment.getHSIC(); }
+
+        public HSIC getDefaultPictureAdjustment() { return PictureAdjustment.getDefaultHSIC(); }
+
+        public boolean setPictureAdjustment(HSIC hsic) { return PictureAdjustment.setHSIC(hsic); }
+
+        public List<Range<Float>> getPictureAdjustmentRanges() {
+            return Arrays.asList(
+                    PictureAdjustment.getHueRange(),
+                    PictureAdjustment.getSaturationRange(),
+                    PictureAdjustment.getIntensityRange(),
+                    PictureAdjustment.getContrastRange(),
+                    PictureAdjustment.getSaturationThresholdRange());
         }
     }
 
@@ -793,6 +819,52 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 return mMkHwImpl.setColorBalance(value);
             }
             return false;
+        }
+
+        @Override
+        public HSIC getPictureAdjustment() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_PICTURE_ADJUSTMENT)) {
+                return mMkHwImpl.getPictureAdjustment();
+            }
+            return new HSIC(0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+        }
+
+        @Override
+        public HSIC getDefaultPictureAdjustment() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_PICTURE_ADJUSTMENT)) {
+                return mMkHwImpl.getDefaultPictureAdjustment();
+            }
+            return new HSIC(0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+        }
+
+        @Override
+        public boolean setPictureAdjustment(HSIC hsic) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_PICTURE_ADJUSTMENT) && hsic != null) {
+                return mMkHwImpl.setPictureAdjustment(hsic);
+            }
+            return false;
+        }
+
+        @Override
+        public float[] getPictureAdjustmentRanges() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (isSupported(MKHardwareManager.FEATURE_COLOR_BALANCE)) {
+                final List<Range<Float>> r = mMkHwImpl.getPictureAdjustmentRanges();
+                return new float[] {
+                        r.get(0).getLower(), r.get(0).getUpper(),
+                        r.get(1).getLower(), r.get(1).getUpper(),
+                        r.get(2).getLower(), r.get(2).getUpper(),
+                        r.get(3).getLower(), r.get(3).getUpper(),
+                        r.get(4).getUpper(), r.get(4).getUpper() };
+            }
+            return new float[10];
         }
     };
 }
