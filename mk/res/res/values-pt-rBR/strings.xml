@@ -157,10 +157,19 @@
   <string name="permdesc_accessLiveLockScreenServicePrivate">Permite que aplicativos do sistema acessem o serviço de gerenciamento da tela de bloqueio animada.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Permite que um serviço forneça o serviço de Gerenciador de tela de bloqueio ao vivo.</string>
   <!-- Weather Service strings -->
+  <string name="permdesc_weather_read">Permite que um aplicativo leia o conteúdo do provedor de tempo.</string>
   <string name="permlab_weather_write">atualiza o provedor de tempo</string>
+  <string name="permdesc_weather_write">Permite que um aplicativo atualize o conteúdo do provedor de tempo.</string>
+  <string name="permlab_weather_bind">vincular-se como um serviço de provedor de tempo</string>
+  <string name="permdesc_weather_bind">Permite que um aplicativo seja identificado como um serviço de provedor de tempo.</string>
+  <string name="permlab_weather_access_mgr">acesso ao serviço de clima</string>
+  <string name="permdesc_weather_access_mgr">Permite que um aplicativo acesse o serviço de clima do sistema. Nunca deverá ser necessário para aplicações normais.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modificar os dados de uso do banco de dados</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Permite que um aplicativo atualize o conteúdo de uso de dados do banco de dados.</string>
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
