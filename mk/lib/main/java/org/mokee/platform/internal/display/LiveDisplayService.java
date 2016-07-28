@@ -152,6 +152,11 @@ public class LiveDisplayService extends MKSystemService {
     }
 
     @Override
+    public boolean isCoreService() {
+        return false;
+    }
+
+    @Override
     public void onStart() {
         publishBinderService(MKContextConstants.MK_LIVEDISPLAY_SERVICE, mBinder);
     }
