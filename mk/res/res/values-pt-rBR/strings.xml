@@ -156,9 +156,11 @@
   <!-- Privileged access live lock screen manager service permission description -->
   <string name="permdesc_accessLiveLockScreenServicePrivate">Permite que aplicativos do sistema acessem o serviço de gerenciamento da tela de bloqueio animada.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">fornecer diretamente o serviço de gerenciador de tela de bloqueio</string>
   <!-- Live lock screen manager service provider permission description -->
   <string name="permdesc_accessLiveLockScreenServiceProvider">Permite que um serviço forneça o serviço de Gerenciador de tela de bloqueio ao vivo.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">ler tempo</string>
   <string name="permdesc_weather_read">Permite que um aplicativo leia o conteúdo do provedor de tempo.</string>
   <string name="permlab_weather_write">atualiza o provedor de tempo</string>
   <string name="permdesc_weather_write">Permite que um aplicativo atualize o conteúdo do provedor de tempo.</string>
@@ -171,8 +173,16 @@
   <!-- DataUsageProvider write permission description -->
   <string name="permdesc_dataUsageWrite">Permite que um aplicativo atualize o conteúdo de uso de dados do banco de dados.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">ler dados de uso de dados</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Permite que um aplicativo leia o conteúdo da base de dados de uso de dados.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">gerenciar configurações de LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Permite que um aplicativo configure as definições de visualização avançada.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">observar as alterações da sessão de áudio</string>
+  <string name="permdesc_observe_audio_sessions">Permite que um aplicativo observe os fluxos de áudio sendo criado e destruído.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Temas</string>
+  <string name="qs_themes_content_description">Personalizar o seu tema</string>
 </resources>

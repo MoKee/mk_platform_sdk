@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">All\'aperto (sole)</string>
   <string name="live_display_outdoor_summary">Usa solo le impostazioni all\'aperto</string>
   <string name="live_display_hint">LiveDisplay può aiutare a ridurre l\'affaticamento degli occhi e aiuta a dormire la notte. Clicca qui per provarlo!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay spento.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: modalità automatica.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modalità giorno.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modalità notte.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modalità esterna.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay spento.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay cambiato in modalità automatica.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay cambiato in modalità giorno.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay cambiato in modalità notte.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay cambiato in modalità esterna.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">schermata di blocco di terze parti</string>
   <!-- Third party keyguard permission description -->
@@ -146,14 +156,33 @@
   <!-- Privileged access live lock screen manager service permission description -->
   <string name="permdesc_accessLiveLockScreenServicePrivate">Consente alle applicazioni di sistema accedere al servizio di gestione del blocco schermo live.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">servizio di gestione accesso al blocco schermo live</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Consente a un\'applicazione ad accedere al servizio di gestione del blocco schermo live.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">leggi il tempo</string>
+  <string name="permdesc_weather_read">Consente ad un\'app di leggere il contenuto del provider meteo.</string>
+  <string name="permlab_weather_write">aggiornamento provider meteo</string>
+  <string name="permdesc_weather_write">Consente ad un\'app di aggiornare il contenuto del provider meteo.</string>
+  <string name="permlab_weather_bind">associare un servizio provider meteo</string>
+  <string name="permdesc_weather_bind">Consente ad un\'app di essere identificata come un servizio di provider meteo.</string>
   <string name="permlab_weather_access_mgr">accesso al servizio meteo</string>
+  <string name="permdesc_weather_access_mgr">Permetti ad un\'applicazione di accedere al servizio meteo nel sistema. Non dovrebbe essere necessario per le normali applicazioni.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modifica l\'utilizzo dei dati del database</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Consente ad un\'app di aggiornare il contenuto di utilizzo dei dati del database.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">leggi l\'utilizzo dei dati del database</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Consente ad un\'app di leggere i contenuti di utilizzo dei dati del database.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">gestire le impostazioni di LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Consente di configurare le impostazioni di visualizzazione avanzate di un\'app.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">osserva i cambiamenti di sessione audio</string>
+  <string name="permdesc_observe_audio_sessions">Consente all\'applicazione di creare e distruggere i flussi audio.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Temi</string>
+  <string name="qs_themes_content_description">Personalizza il tuo tema</string>
 </resources>
