@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
+import android.util.ArrayMap;
 import android.util.Log;
 
 import com.android.server.SystemService;
@@ -32,6 +33,7 @@ import mokee.hardware.IThermalListenerCallback;
 import mokee.hardware.ThermalListenerCallback;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.mokee.hardware.AdaptiveBacklight;
@@ -64,6 +66,10 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
     private final MKHardwareInterface mMkHwImpl;
     private int mCurrentThermalState = ThermalListenerCallback.State.STATE_UNKNOWN;
     private RemoteCallbackList<IThermalListenerCallback> mRemoteCallbackList;
+
+    private final ArrayMap<String, String> mDisplayModeMappings =
+            new ArrayMap<String, String>();
+    private final boolean mFilterDisplayModes;
 
     private interface MKHardwareInterface {
         public int getSupportedFeatures();
@@ -369,6 +375,19 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
         mContext = context;
         mMkHwImpl = getImpl(context);
         publishBinderService(MKContextConstants.MK_HARDWARE_SERVICE, mService);
+
+        final String[] mappings = mContext.getResources().getStringArray(
+                org.mokee.platform.internal.R.array.config_displayModeMappings);
+        if (mappings != null && mappings.length > 0) {
+            for (String mapping : mappings) {
+                String[] split = mapping.split(":");
+                if (split.length == 2) {
+                    mDisplayModeMappings.put(split[0], split[1]);
+                }
+            }
+        }
+        mFilterDisplayModes = mContext.getResources().getBoolean(
+                org.mokee.platform.internal.R.bool.config_filterDisplayModes);
     }
 
     @Override
@@ -408,6 +427,19 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
             }
         }
         mRemoteCallbackList.finishBroadcast();
+    }
+
+    private DisplayMode remapDisplayMode(DisplayMode in) {
+        if (in == null) {
+            return null;
+        }
+        if (mDisplayModeMappings.containsKey(in.name)) {
+            return new DisplayMode(in.id, mDisplayModeMappings.get(in.name));
+        }
+        if (!mFilterDisplayModes) {
+            return in;
+        }
+        return null;
     }
 
     private final IBinder mService = new IMKHardwareService.Stub() {
@@ -611,7 +643,18 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 Log.e(TAG, "Display modes are not supported");
                 return null;
             }
-            return mMkHwImpl.getDisplayModes();
+            final DisplayMode[] modes = mMkHwImpl.getDisplayModes();
+            if (modes == null) {
+                return null;
+            }
+            final ArrayList<DisplayMode> remapped = new ArrayList<DisplayMode>();
+            for (DisplayMode mode : modes) {
+                DisplayMode r = remapDisplayMode(mode);
+                if (r != null) {
+                    remapped.add(r);
+                }
+            }
+            return remapped.toArray(new DisplayMode[remapped.size()]);
         }
 
         @Override
@@ -622,7 +665,7 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 Log.e(TAG, "Display modes are not supported");
                 return null;
             }
-            return mMkHwImpl.getCurrentDisplayMode();
+            return remapDisplayMode(mMkHwImpl.getCurrentDisplayMode());
         }
 
         @Override
@@ -633,7 +676,7 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 Log.e(TAG, "Display modes are not supported");
                 return null;
             }
-            return mMkHwImpl.getDefaultDisplayMode();
+            return remapDisplayMode(mMkHwImpl.getDefaultDisplayMode());
         }
 
         @Override
