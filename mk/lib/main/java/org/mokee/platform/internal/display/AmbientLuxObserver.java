@@ -39,6 +39,7 @@ public class AmbientLuxObserver {
     private final SensorManager mSensorManager;
 
     private final float mThresholdLux;
+    private final float mHysteresisLux;
     private final int mThresholdDuration;
 
     private boolean mLightSensorEnabled = false;
@@ -62,9 +63,10 @@ public class AmbientLuxObserver {
     }
 
     public AmbientLuxObserver(Context context, Looper looper,
-            float thresholdLux, int thresholdDuration) {
+            float thresholdLux, float hysteresisLux, int thresholdDuration) {
         mLuxHandler = new AmbientLuxHandler(looper);
         mThresholdLux = thresholdLux;
+        mHysteresisLux = hysteresisLux;
         mThresholdDuration = thresholdDuration;
         mRingBuffer = new TimedMovingAverageRingBuffer(thresholdDuration);
 
@@ -104,7 +106,9 @@ public class AmbientLuxObserver {
                                        " mAmbientLux=" + mAmbientLux);
                         }
 
-                        direction = mAmbientLux >= mThresholdLux ? HIGH : LOW;
+                        final float threshold = mState == HIGH
+                                ? mThresholdLux - mHysteresisLux : mThresholdLux;
+                        direction = mAmbientLux >= threshold ? HIGH : LOW;
                         if (mState != direction) {
                             mState = direction;
                             if (mCallback != null) {
