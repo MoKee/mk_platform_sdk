@@ -67,5 +67,6 @@
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <!-- MKAudioService - observe session changes permission -->
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
 </resources>

@@ -156,6 +156,7 @@
   <string name="permlab_manageLiveDisplay">spravovat nastavení LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Umožňuje aplikaci nakonfigurovat upřesňující nastavení.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Motivy vzhledu</string>
   <string name="qs_themes_content_description">Vlastní nastavení šablony</string>

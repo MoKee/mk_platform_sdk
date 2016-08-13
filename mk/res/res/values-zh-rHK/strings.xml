@@ -182,6 +182,7 @@
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">觀察音訊片段改變</string>
   <string name="permdesc_observe_audio_sessions">允許應用程式來觀察音訊流被創建和銷毀。</string>
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">主題</string>
   <string name="qs_themes_content_description">自訂您的主題</string>

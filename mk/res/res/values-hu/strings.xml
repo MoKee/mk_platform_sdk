@@ -182,6 +182,7 @@
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">audió munkamenet változásainak figyelése</string>
   <string name="permdesc_observe_audio_sessions">Lehetővé teszi egy alkalmazás számára, hogy megfigyelje az audió adások létrehozásást és megsemmisítését.</string>
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Témák</string>
   <string name="qs_themes_content_description">Témád testreszabása</string>

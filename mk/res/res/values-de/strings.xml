@@ -161,6 +161,7 @@
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">LiveDisplay Einstellungen verwalten</string>
   <!-- MKAudioService - observe session changes permission -->
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Themen</string>
   <string name="qs_themes_content_description">Ihr Design anpassen</string>
