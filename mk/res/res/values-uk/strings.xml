@@ -183,6 +183,9 @@
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">спостерігати за змінами аудіо сесії</string>
   <string name="permdesc_observe_audio_sessions">Дозволяти програмі створювати і знищувати аудіопотоки.</string>
+  <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">керувати змінами аудіо сесії</string>
+  <string name="permdesc_manage_audio_sessions">Дозволяє програмі надсилати оновлення аудіопотоку.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Теми</string>
   <string name="qs_themes_content_description">Налаштувати тему</string>

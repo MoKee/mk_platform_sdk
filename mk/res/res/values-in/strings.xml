@@ -182,6 +182,9 @@
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">mengamati perubahan sesi audio</string>
   <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati arus audio untuk diciptakan dan dihancurkan.</string>
+  <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">mengelola perubahan sesi audio</string>
+  <string name="permdesc_manage_audio_sessions">Izinkan app untuk mengirim update audio steaming.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Tema</string>
   <string name="qs_themes_content_description">Kustomisasi tema anda</string>

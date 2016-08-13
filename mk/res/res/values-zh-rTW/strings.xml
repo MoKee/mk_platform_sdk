@@ -180,5 +180,6 @@
   <string name="permlab_manageLiveDisplay">管理 LiveDisplay 設定</string>
   <string name="permdesc_manageLiveDisplay">允許一個應用程式來配置先進的顯示設定。</string>
   <!-- MKAudioService - observe session changes permission -->
+  <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
 </resources>
