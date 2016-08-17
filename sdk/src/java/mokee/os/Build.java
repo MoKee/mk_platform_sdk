@@ -127,6 +127,7 @@ public class Build {
          *
          * <p>Applications targeting this or a later version will get access to these
          * new features!</p>
+         * <ul>
          * <li>Weather request api to fetch weather data from providers on the device
          * {@link mokee.weather.MKWeatherManager}</li>
          * <li>Weather provider api to provide weather data to any listener on the device
@@ -145,7 +146,21 @@ public class Build {
         public static final int ELDERBERRY = 5;
 
         /**
-         * Future Release - 3rd quarter 2016
+         * August 2016: The 6th iteration of the platform sdk for CyanogenMod
+         *
+         * <p>Applications targeting this or a later version will get access to these
+         * new features!</p>
+         * <ul>
+         * <li>Ability to query and color balance ranges from the
+         * {@link mokee.hardware.MKHardwareManager}, as well as do picture adjustment</li>
+         * <li>Extended capabilities of the LiveDisplay interfaces, now providing
+         * {@link mokee.hardware.LiveDisplayConfig} and a dedicated
+         * {@link mokee.hardware.LiveDisplayManager}</li>
+         * <li>Added new settings, such as LOCKSCREEN_ROTATION and DISPLAY_LOW_POWER
+         * to {@link mokee.providers.MKSettings}</li>
+         * </ul>
+         *
+         * Signing out, Adnan \u270C
          */
         public static final int FIG = 6;
     }
