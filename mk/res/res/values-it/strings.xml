@@ -183,6 +183,8 @@
   <string name="permlab_observe_audio_sessions">osserva i cambiamenti di sessione audio</string>
   <string name="permdesc_observe_audio_sessions">Consente all\'applicazione di creare e distruggere i flussi audio.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">osserva i cambiamenti di sessione audio</string>
+  <string name="permdesc_manage_audio_sessions">Consente a un\'applicazione di inviare gli aggiornamenti del flusso audio.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Temi</string>
   <string name="qs_themes_content_description">Personalizza il tuo tema</string>

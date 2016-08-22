@@ -103,6 +103,16 @@
   <string name="live_display_outdoor">Na zewnątrz (jasne słońce)</string>
   <string name="live_display_outdoor_summary">Użyj wyłącznie ustawienia Na Zewnątrz</string>
   <string name="live_display_hint">LiveDisplay może zredukować zmęczenie oczu oraz może pomóc zasnąć w nocy. Kliknij aby wypróbować!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay wył.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: tryb auto.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: tryb dzienny.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: tryb nocny.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: tryb \"na zewnatrz\".</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay wyłączony.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay zmieniony na tryb auto.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay zmieniony na tryb dzienny.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay zmieniony na tryb nocny.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay zmieniony na tryb \"za zewnatrz\".</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">trzeci sposób blokady ekranu</string>
   <!-- Third party keyguard permission description -->
@@ -144,12 +154,22 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">czytaj pogode</string>
+  <string name="permdesc_weather_read">Umożliwia aplikacji odczyt zawartości od dostawcy pogody.</string>
+  <string name="permlab_weather_write">Aktualizacja dostawcy pogody</string>
+  <string name="permdesc_weather_write">Umożliwia aplikacji aktualizowanie zawartości od dostawcy pogody.</string>
+  <string name="permlab_weather_access_mgr">dostęp do serwisu pogodowego</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">zarządzanie ustawieniami LiveDisplay</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">Zarządzanie zmianami w sesji audio</string>
+  <string name="permdesc_manage_audio_sessions">Umożliwia aplikacji wysyłanie aktualizacji strumienia audio.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Tematy</string>
+  <string name="qs_themes_content_description">Dostosowywanie motywu</string>
 </resources>

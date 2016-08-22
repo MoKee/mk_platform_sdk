@@ -19,10 +19,13 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
   <string name="permlab_publishCustomTile">crear una ficha personalizada en el panel de configuración rápida</string>
+  <string name="permdesc_publishCustomTile">Permite una aplicación publicar una ficha de configuración rapida.</string>
   <string name="permlab_modifyNetworkSettings">cambiar configuración de red del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Permite una aplicación realizar cambios en el modo avión y configuración de la red de datos móviles.</string>
   <string name="permlab_modifySoundSettings">cambiar ajustes de sonido del sistema</string>
   <string name="permdesc_modifySoundSettings">Permite a una aplicación hacer cambios a un conjunto restringido de configuraciones de los sonidos del sistema.</string>
+  <string name="permlab_bindCustomTileListenerService">enlazar a un servicio de escucha personalizado</string>
+  <string name="permdesc_bindCustomTileListenerService">Permite la aplicación enlazar a la interfaz de nivel superior de un servicio de escucha personalizado.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs</string>
   <string name="permdesc_readMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
@@ -54,6 +57,7 @@
   <string name="permlab_managePersistentStorage">gestionar el almacenamiento persistente</string>
   <string name="permdesc_managePersistentStorage">Permite a una aplicación leer o escribir propiedades que pueden persistir aún con un reinicio de fábrica.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Escucha personalizado</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">agregar y quitar aplicaciones a aplicaciones protegidas</string>
   <string name="permdesc_protectedApp">Permite una aplicación marcar otras aplicaciones protegidas y bloquearlas.</string>
@@ -99,9 +103,16 @@
   <string name="live_display_outdoor">Exteriores (sol brillante)</string>
   <string name="live_display_outdoor_summary">Usar solo configuraciones de exteriores</string>
   <string name="live_display_hint">LiveDisplay puede ayudarte a reducir la fatiga ocular y a dormir por la noche. Pulsa aquí para probarlo!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay apagado.</string>
   <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automático.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo de día.</string>
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo de noche.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modo al aire libre.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay apagado.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay cambiado a modo automático.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay cambiado a modo día.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay cambiado a modo noche.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay cambiado a modo aire libre.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">pantalla de bloqueo de terceros</string>
   <!-- Third party keyguard permission description -->
@@ -133,20 +144,48 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Permite que la aplicación añada nuevos temas y modifique el tema actual.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">acceso al manejo de rendimiento</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Permite que la aplicación acceda al servicio de temas. Nunca debería ser necesario para aplicaciones normales.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">acceso a administrador de servicio live lock screen</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Permite una aplicación acceder el servicio de administrador de live lock screen.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">acceso a administrador de servicio live lock screen</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Permite a aplicaciones de sistema acceso al administrador de live lock screen.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">proporcionar servicio de administrador de live lock screen</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Permite un servicio proporcionar el servicio de administrador de live lock screen.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">leer el tiempo</string>
+  <string name="permdesc_weather_read">Permite una aplicación leer contenido desde el proveedor de tiempo.</string>
+  <string name="permlab_weather_write">actualización el proveedor del tiempo</string>
+  <string name="permdesc_weather_write">Permite una aplicación actualizar el contenido del proveedor de tiempo.</string>
+  <string name="permlab_weather_bind">enlazar como un servicio de proveedor de tiempo</string>
+  <string name="permdesc_weather_bind">Permite una aplicación a ser identificado como un servicio de proveedor de tiempo.</string>
+  <string name="permlab_weather_access_mgr">acceso al servicio de tiempo</string>
+  <string name="permdesc_weather_access_mgr">Permite una aplicación acceder al servicio de tiempo en el sistema. Nunca debe ser necesario para aplicaciones normales.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modificar el uso de datos de la base de datos</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Permite una aplicación para actualizar el contenido de la base de datos sobre el uso de datos.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">leer uso de datos de la base de datos</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Permite una aplicación leer el contenido de la base de datos sobre el uso de datos.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">administrar la configuración de LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Permite a una aplicación a configurar las opciones avanzadas de la pantalla.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">observar los cambios de sesión de audio</string>
+  <string name="permdesc_observe_audio_sessions">Permite una aplicación observar secuencias de audio siendo creado y destruido.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">administrar los cambios de sesión de audio</string>
+  <string name="permdesc_manage_audio_sessions">Permite una aplicación para enviar actualizaciones de audio stream.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Temas</string>
+  <string name="qs_themes_content_description">Personaliza tu tema</string>
 </resources>
