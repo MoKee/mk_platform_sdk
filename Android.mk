@@ -23,7 +23,7 @@ LOCAL_PATH := $(call my-dir)
 # R.java file as a prerequisite.
 mk_platform_res := APPS/org.mokee.platform-res_intermediates/src
 
-# List of packages used in mk-api-stubs and mk-system-api-stubs
+# List of packages used in mk-api-stubs
 mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:mokee.themes:mokee.util:mokee.weather:mokee.weatherservice
 
 # The MoKee Platform Framework Library
@@ -209,7 +209,7 @@ mkplat_docs_LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 mkplat_docs_LOCAL_DROIDDOC_SOURCE_PATH := \
     $(mkplat_docs_src_files)
 
-intermediates.COMMON := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS), org.mokee.platform.sdk,,COMMON)
+intermediates.COMMON := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS),org.mokee.platform.sdk,,COMMON)
 
 # ====  the api stubs and current.xml ===========================
 include $(CLEAR_VARS)
@@ -244,38 +244,6 @@ $(full_target): $(mk_framework_built) $(gen)
 $(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
 $(call dist-for-goals,sdk,$(INTERNAL_MK_PLATFORM_API_FILE))
 
-# ====  the system api stubs ===================================
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES:= \
-    $(mkplat_docs_src_files)
-LOCAL_INTERMEDIATE_SOURCES:= $(mkplat_LOCAL_INTERMEDIATE_SOURCES)
-LOCAL_JAVA_LIBRARIES:= $(mkplat_docs_java_libraries)
-LOCAL_MODULE_CLASS:= $(mkplat_docs_LOCAL_MODULE_CLASS)
-LOCAL_DROIDDOC_SOURCE_PATH:= $(mkplat_docs_LOCAL_DROIDDOC_SOURCE_PATH)
-LOCAL_ADDITIONAL_JAVA_DIR:= $(intermediates.COMMON)/src
-
-LOCAL_MODULE := mk-system-api-stubs
-
-LOCAL_DROIDDOC_OPTIONS:=\
-        -stubs $(TARGET_OUT_COMMON_INTERMEDIATES)/JAVA_LIBRARIES/mksdk_system_stubs_current_intermediates/src \
-        -stubpackages $(mk_stub_packages) \
-        -showAnnotation android.annotation.SystemApi \
-        -exclude org.mokee.platform.internal \
-        -api $(INTERNAL_MK_PLATFORM_SYSTEM_API_FILE) \
-        -removedApi $(INTERNAL_MK_PLATFORM_SYSTEM_REMOVED_API_FILE) \
-        -nodocs
-
-LOCAL_DROIDDOC_CUSTOM_TEMPLATE_DIR:= build/tools/droiddoc/templates-sdk
-
-LOCAL_UNINSTALLABLE_MODULE := true
-
-include $(BUILD_DROIDDOC)
-
-# $(gen), i.e. framework.aidl, is also needed while building against the current stub.
-$(full_target): $(mk_framework_built) $(gen)
-$(INTERNAL_MK_PLATFORM_API_FILE): $(full_target)
-$(call dist-for-goals,sdk,$(INTERNAL_MK_PLATFORM_API_FILE))
 
 # Documentation
 # ===========================================================

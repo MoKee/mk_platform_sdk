@@ -236,17 +236,20 @@ public class MKTelephonyManagerService extends MKSystemService {
             Log.d(TAG, "Setting the subscription " + subId + " to inactive (false) or active (true): " + state);
         }
 
+        /*
         if (state) {
             SubscriptionManager.activateSubId(subId);
         } else {
             SubscriptionManager.deactivateSubId(subId);
         }
+        */
     }
 
     private boolean isDataConnectionSelectedOnSub(int subId) {
         boolean validSubscriptionId = SubscriptionManager.isValidSubscriptionId(subId);
 
         if (validSubscriptionId) {
+            /*
             if (subId == SubscriptionManager.getDefaultDataSubId()) {
                 if (localLOGD) {
                     Log.d(TAG, "Data connection selected for subscription " + subId);
@@ -258,6 +261,8 @@ public class MKTelephonyManagerService extends MKSystemService {
                 }
                 return false;
             }
+            */
+            return true;
         } else {
             Log.w(TAG, "Invalid subscription identifier: " + subId);
             return false;

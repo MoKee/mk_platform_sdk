@@ -103,7 +103,7 @@ public class WeatherManagerServiceBroker extends BrokerableMKSystemService<IMKWe
 
     @Override
     protected IMKWeatherManager getDefaultImplementation() {
-        return new IMKWeatherManager.NoOp();
+        return null;
     }
 
     @Override
