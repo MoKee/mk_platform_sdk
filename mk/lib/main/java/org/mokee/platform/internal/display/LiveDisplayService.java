@@ -46,13 +46,13 @@ import android.view.Display;
 import com.android.internal.util.ArrayUtils;
 import com.android.server.LocalServices;
 import com.android.server.ServiceThread;
-import com.android.server.pm.UserContentObserver;
 import com.android.server.twilight.TwilightListener;
 import com.android.server.twilight.TwilightManager;
 import com.android.server.twilight.TwilightState;
 
 import org.mokee.internal.util.QSConstants;
 import org.mokee.internal.util.QSUtils;
+import org.mokee.platform.internal.common.UserContentObserver;
 import org.mokee.platform.internal.MKSystemService;
 import org.mokee.platform.internal.R;
 
