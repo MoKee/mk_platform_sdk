@@ -15,9 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- We don't want to publish private symbols in mokee.R as part of the
-         SDK.  Instead, put them here. -->
-    <private-symbols package="org.mokee.platform.internal" />
 
     <java-symbol type="string" name="custom_tile_listener_binding_label" />
 
