@@ -24,7 +24,7 @@ LOCAL_PATH := $(call my-dir)
 mk_platform_res := APPS/org.mokee.platform-res_intermediates/src
 
 # List of packages used in mk-api-stubs
-mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews:mokee.hardware:mokee.media:mokee.os:mokee.profiles:mokee.providers:mokee.platform:mokee.power:mokee.themes:mokee.util:mokee.weather:mokee.weatherservice
+mk_stub_packages := mokee.alarmclock:mokee.app:mokee.content:mokee.externalviews:mokee.hardware:mokee.media:mokee.os:mokee.preference:mokee.profiles:mokee.providers:mokee.platform:mokee.power:mokee.themes:mokee.util:mokee.weather:mokee.weatherservice
 
 # The MoKee Platform Framework Library
 # ============================================================
@@ -37,9 +37,14 @@ library_src := mk/lib/main/java
 LOCAL_MODULE := org.mokee.platform
 LOCAL_MODULE_TAGS := optional
 
+mksdk_LOCAL_JAVA_LIBRARIES := \
+    android-support-v7-preference \
+    android-support-v14-preference
+
 LOCAL_JAVA_LIBRARIES := \
     services \
-    org.mokee.hardware
+    org.mokee.hardware \
+    $(mksdk_LOCAL_JAVA_LIBRARIES)
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, $(mokee_sdk_src)) \
@@ -124,6 +129,9 @@ mksdk_LOCAL_INTERMEDIATE_SOURCES := \
 LOCAL_INTERMEDIATE_SOURCES := \
     $(mksdk_LOCAL_INTERMEDIATE_SOURCES)
 
+LOCAL_JAVA_LIBRARIES := \
+    $(mksdk_LOCAL_JAVA_LIBRARIES)
+
 # Make sure that R.java and Manifest.java are built before we build
 # the source for this library.
 mk_framework_res_R_stamp := \
@@ -184,6 +192,9 @@ mksdk_LOCAL_INTERMEDIATE_SOURCES := \
 
 LOCAL_INTERMEDIATE_SOURCES := \
     $(mksdk_LOCAL_INTERMEDIATE_SOURCES)
+
+LOCAL_JAVA_LIBRARIES := \
+    $(mksdk_LOCAL_JAVA_LIBRARIES)
 
 $(full_target): $(mk_framework_built) $(gen)
 include $(BUILD_STATIC_JAVA_LIBRARY)

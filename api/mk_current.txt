@@ -780,6 +780,46 @@ package mokee.power {
 
 }
 
+package mokee.preference {
+
+  public class MKGlobalSettingSwitchPreference extends SwitchPreference {
+    ctor public MKGlobalSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKGlobalSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public MKGlobalSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+  public class MKSecureSettingSwitchPreference extends SwitchPreference {
+    ctor public MKSecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKSecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public MKSecureSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+  public class MKSystemSettingSwitchPreference extends SwitchPreference {
+    ctor public MKSystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKSystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public MKSystemSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+  public class SystemSettingSwitchPreference extends SwitchPreference {
+    ctor public SystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public SystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public SystemSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+}
+
 package mokee.profiles {
 
   public final class AirplaneModeSettings implements android.os.Parcelable {
