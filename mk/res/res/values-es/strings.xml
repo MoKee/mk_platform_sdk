@@ -19,6 +19,7 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
   <string name="permlab_publishCustomTile">crear una ficha personalizada en el panel de configuración rápida</string>
+  <string name="permdesc_publishCustomTile">Permitir que la aplicación publique una ficha de configuración rápida.</string>
   <string name="permlab_modifyNetworkSettings">cambiar configuración de red del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Permite a una aplicación hacer cambios a un conjunto restringido de configuraciones del sistema red.</string>
   <string name="permlab_modifySoundSettings">cambiar ajustes de sonido del sistema</string>
@@ -99,9 +100,16 @@
   <string name="live_display_outdoor">Exteriores (sol brillante)</string>
   <string name="live_display_outdoor_summary">Usar solo configuraciones de exteriores</string>
   <string name="live_display_hint">LiveDisplay puede ayudarte a reducir la fatiga ocular y a dormir por la noche. Pulsa aquí para probarlo!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay apagado.</string>
   <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automático.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay: modo de día.</string>
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: modo de noche.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: modo al aire libre.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay fue apagado.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay cambió a modo automático.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay cambió a modo diurno.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay cambió a modo nocturno.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay cambió a modo al aire libre.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">pantalla de bloqueo de terceros</string>
   <!-- Third party keyguard permission description -->
@@ -133,7 +141,9 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Permite que la aplicación añada nuevos temas y modifique el tema actual.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">acceso al gestor de rendimiento</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Permitir que la aplicación acceda al gestor de rendimiento. No debería ser necesario para aplicaciones normales.</string>
   <!-- Access live lock screen manager service permission label -->
   <!-- Access live lock screen manager service permission description -->
   <!-- Privileged access live lock screen manager service permission label -->
@@ -141,12 +151,32 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">leer el tiempo</string>
+  <string name="permdesc_weather_read">Permitir que la aplicación lea contenido del proveedor del tiempo.</string>
+  <string name="permlab_weather_write">actualizar el proveedor del tiempo</string>
+  <string name="permdesc_weather_write">Permitir que la aplicación actualice el contenido del proveedor de tiempo.</string>
+  <string name="permlab_weather_bind">enlazar como un servicio de proveedor del tiempo</string>
+  <string name="permdesc_weather_bind">Permitir que la aplicación sea identificada como un servicio de proveedor del tiempo.</string>
+  <string name="permlab_weather_access_mgr">acceder al servicio del tiempo</string>
+  <string name="permdesc_weather_access_mgr">Permitir que la aplicación acceda al servicio de tiempo del sistema. Nunca debe ser necesario para aplicaciones normales.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modificar base de datos de uso de datos</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Permitir que la aplicación actualice el contenido de la base de datos de uso de datos.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">leer base de datos de uso de datos</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Permitir que la aplicación lea el contenido de la base de datos de uso de datos.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">gestionar la configuración de LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Permitir que la aplicación configure las opciones avanzadas de la pantalla.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">observar los cambios de sesión audio</string>
+  <string name="permdesc_observe_audio_sessions">Permitir que la aplicación pueda observar los flujos de audio que se crean y se destruyen.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">getionar los cambios de sesión audio</string>
+  <string name="permdesc_manage_audio_sessions">Permitir que la aplicación pueda enviar actualizaciones de flujos de audio.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Temas</string>
+  <string name="qs_themes_content_description">Personaliza tu tema</string>
 </resources>
