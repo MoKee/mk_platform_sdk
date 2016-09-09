@@ -16,9 +16,8 @@
 
 package mokee.app;
 
+import mokee.app.IStatusBarCustomTileHolder;
 import mokee.app.StatusBarPanelCustomTile;
-
-import org.mokee.internal.statusbar.IStatusBarCustomTileHolder;
 
 /** @hide */
 oneway interface ICustomTileListener

@@ -28,9 +28,8 @@ import android.os.ServiceManager;
 import android.util.Log;
 
 import mokee.app.ICustomTileListener;
+import mokee.app.IStatusBarCustomTileHolder;
 import mokee.app.IMKStatusBarManager;
-
-import org.mokee.internal.statusbar.IStatusBarCustomTileHolder;
 
 /**
  * A service that receives calls from the system when new custom tiles are

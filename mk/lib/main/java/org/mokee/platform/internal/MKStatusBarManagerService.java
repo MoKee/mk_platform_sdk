@@ -41,15 +41,16 @@ import android.util.Log;
 import android.util.Slog;
 
 import com.android.server.SystemService;
+
 import mokee.app.MKContextConstants;
 import mokee.app.CustomTile;
 import mokee.app.CustomTileListenerService;
 import mokee.app.StatusBarPanelCustomTile;
 import mokee.app.ICustomTileListener;
 import mokee.app.IMKStatusBarManager;
+import mokee.app.IStatusBarCustomTileHolder;
 
 import org.mokee.internal.statusbar.ExternalQuickSettingsRecord;
-import org.mokee.internal.statusbar.IStatusBarCustomTileHolder;
 
 import java.util.ArrayList;
 
