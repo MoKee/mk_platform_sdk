@@ -16,11 +16,6 @@
  */
 package org.mokee.platform.internal.display;
 
-import static mokee.hardware.LiveDisplayManager.MODE_AUTO;
-import static mokee.hardware.LiveDisplayManager.MODE_DAY;
-import static mokee.hardware.LiveDisplayManager.MODE_NIGHT;
-import static mokee.hardware.LiveDisplayManager.MODE_OFF;
-
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
 import android.content.Context;
@@ -32,7 +27,7 @@ import android.util.Range;
 import android.util.Slog;
 import android.view.animation.LinearInterpolator;
 
-import com.android.server.twilight.TwilightState;
+import org.mokee.platform.internal.display.TwilightTracker.TwilightState;
 
 import java.io.PrintWriter;
 import java.util.BitSet;
@@ -41,6 +36,11 @@ import mokee.hardware.MKHardwareManager;
 import mokee.hardware.LiveDisplayManager;
 import mokee.providers.MKSettings;
 import mokee.util.ColorUtils;
+
+import static mokee.hardware.LiveDisplayManager.MODE_AUTO;
+import static mokee.hardware.LiveDisplayManager.MODE_DAY;
+import static mokee.hardware.LiveDisplayManager.MODE_NIGHT;
+import static mokee.hardware.LiveDisplayManager.MODE_OFF;
 
 public class ColorTemperatureController extends LiveDisplayFeature {
 
@@ -284,6 +284,34 @@ public class ColorTemperatureController extends LiveDisplayFeature {
     }
 
     /**
+     * Where is the sun anyway? This calculation determines day or night, and scales
+     * the value around sunset/sunrise for a smooth transition.
+     *
+     * @param now
+     * @param sunset
+     * @param sunrise
+     * @return float between 0 and 1
+     */
+    private static float adj(long now, long sunset, long sunrise) {
+        if (sunset < 0 || sunrise < 0
+                || now < sunset || now > (sunrise + TWILIGHT_ADJUSTMENT_TIME)) {
+            return 1.0f;
+        }
+
+        if (now <= (sunset + TWILIGHT_ADJUSTMENT_TIME)) {
+            return MathUtils.lerp(1.0f, 0.0f,
+                    (float) (now - sunset) / TWILIGHT_ADJUSTMENT_TIME);
+        }
+
+        if (now >= sunrise) {
+            return MathUtils.lerp(1.0f, 0.0f,
+                    (float) ((sunrise + TWILIGHT_ADJUSTMENT_TIME) - now) / TWILIGHT_ADJUSTMENT_TIME);
+        }
+
+        return 0.0f;
+    }
+
+    /**
      * Determine the color temperature we should use for the display based on
      * the position of the sun.
      *
@@ -294,7 +322,9 @@ public class ColorTemperatureController extends LiveDisplayFeature {
         final TwilightState twilight = getTwilight();
 
         if (twilight != null) {
-            adjustment = twilight.getAmount();
+            final long now = System.currentTimeMillis();
+            adjustment = adj(now, twilight.getYesterdaySunset(), twilight.getTodaySunrise()) *
+                    adj(now, twilight.getTodaySunset(), twilight.getTomorrowSunrise());
         }
 
         return (int)MathUtils.lerp(mNightTemperature, mDayTemperature, adjustment);

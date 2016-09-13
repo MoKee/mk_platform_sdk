@@ -16,11 +16,6 @@
  */
 package org.mokee.platform.internal.display;
 
-import static org.mokee.platform.internal.display.LiveDisplayService.ALL_CHANGED;
-import static org.mokee.platform.internal.display.LiveDisplayService.DISPLAY_CHANGED;
-import static org.mokee.platform.internal.display.LiveDisplayService.MODE_CHANGED;
-import static org.mokee.platform.internal.display.LiveDisplayService.TWILIGHT_CHANGED;
-
 import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
@@ -28,15 +23,19 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.util.Log;
 
-import com.android.server.twilight.TwilightState;
-
 import org.mokee.platform.internal.common.UserContentObserver;
 import org.mokee.platform.internal.display.LiveDisplayService.State;
+import org.mokee.platform.internal.display.TwilightTracker.TwilightState;
 
 import java.io.PrintWriter;
 import java.util.BitSet;
 
 import mokee.providers.MKSettings;
+
+import static org.mokee.platform.internal.display.LiveDisplayService.ALL_CHANGED;
+import static org.mokee.platform.internal.display.LiveDisplayService.DISPLAY_CHANGED;
+import static org.mokee.platform.internal.display.LiveDisplayService.MODE_CHANGED;
+import static org.mokee.platform.internal.display.LiveDisplayService.TWILIGHT_CHANGED;
 
 public abstract class LiveDisplayFeature {
 
