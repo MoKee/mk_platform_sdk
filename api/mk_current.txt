@@ -791,6 +791,15 @@ package mokee.preference {
     method protected boolean persistBoolean(boolean);
   }
 
+  public class MKSecureSettingListPreference extends ListPreference {
+    ctor public MKSecureSettingListPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKSecureSettingListPreference(android.content.Context, android.util.AttributeSet);
+    method public int getIntValue(int);
+    method protected java.lang.String getPersistedString(java.lang.String);
+    method protected boolean isPersisted();
+    method protected boolean persistString(java.lang.String);
+  }
+
   public class MKSecureSettingSwitchPreference extends SwitchPreference {
     ctor public MKSecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public MKSecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
@@ -798,6 +807,15 @@ package mokee.preference {
     method protected boolean getPersistedBoolean(boolean);
     method protected boolean isPersisted();
     method protected boolean persistBoolean(boolean);
+  }
+
+  public class MKSystemSettingListPreference extends ListPreference {
+    ctor public MKSystemSettingListPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKSystemSettingListPreference(android.content.Context, android.util.AttributeSet);
+    method public int getIntValue(int);
+    method protected java.lang.String getPersistedString(java.lang.String);
+    method protected boolean isPersisted();
+    method protected boolean persistString(java.lang.String);
   }
 
   public class MKSystemSettingSwitchPreference extends SwitchPreference {
