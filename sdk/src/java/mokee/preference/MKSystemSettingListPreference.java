@@ -17,13 +17,12 @@
 package mokee.preference;
 
 import android.content.Context;
-import android.support.v7.preference.ListPreference;
 import android.util.AttributeSet;
 
 import mokee.providers.MKSettings;
 
 
-public class MKSystemSettingListPreference extends ListPreference {
+public class MKSystemSettingListPreference extends SelfRemovingListPreference {
     public MKSystemSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }

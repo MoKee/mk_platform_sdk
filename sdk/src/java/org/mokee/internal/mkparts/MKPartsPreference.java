@@ -20,15 +20,16 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.support.v7.preference.Preference;
 import android.util.AttributeSet;
+
+import mokee.preference.SelfRemovingPreference;
 
 import static org.mokee.internal.mkparts.PartsList.ACTION_PART;
 import static org.mokee.internal.mkparts.PartsList.ACTION_PART_CHANGED;
 import static org.mokee.internal.mkparts.PartsList.EXTRA_PART;
 import static org.mokee.internal.mkparts.PartsList.EXTRA_PART_KEY;
 
-public class MKPartsPreference extends Preference {
+public class MKPartsPreference extends SelfRemovingPreference {
 
     private static final String TAG = "MKPartsPreference";
 
@@ -40,6 +41,10 @@ public class MKPartsPreference extends Preference {
         mPart = PartsList.getPartInfo(context, getKey());
         if (mPart == null) {
             throw new RuntimeException("Part not found: " + getKey());
+        }
+
+        if (!mPart.isAvailable()) {
+            setAvailable(false);
         }
 
         Intent i = new Intent(ACTION_PART);

@@ -18,12 +18,12 @@
 package mokee.preference;
 
 import android.content.Context;
-import android.support.v14.preference.SwitchPreference;
 import android.util.AttributeSet;
 
 import mokee.providers.MKSettings;
 
-public class MKSecureSettingSwitchPreference extends SwitchPreference {
+public class MKSecureSettingSwitchPreference extends SelfRemovingSwitchPreference {
+
     public MKSecureSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
@@ -33,7 +33,7 @@ public class MKSecureSettingSwitchPreference extends SwitchPreference {
     }
 
     public MKSecureSettingSwitchPreference(Context context) {
-        super(context, null);
+        super(context);
     }
 
     @Override
