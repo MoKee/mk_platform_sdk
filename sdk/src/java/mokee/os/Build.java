@@ -147,7 +147,7 @@ public class Build {
         public static final int ELDERBERRY = 5;
 
         /**
-         * August 2016: The 6th iteration of the platform sdk for CyanogenMod
+         * August 2016: The 6th iteration of the platform sdk for MoKee Open Source
          *
          * <p>Applications targeting this or a later version will get access to these
          * new features!</p>
