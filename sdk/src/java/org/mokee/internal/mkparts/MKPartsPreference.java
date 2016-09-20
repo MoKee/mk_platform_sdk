@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The mokee Project
+ * Copyright (C) 2016 The CyanogenMod Project
  * Copyright (C) 2016 The MoKee Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
