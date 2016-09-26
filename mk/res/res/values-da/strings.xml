@@ -54,7 +54,9 @@
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Andet</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">læs telefonens placering</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Tillad at en app kan læse oplysninger om telefonens placering.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance profiles -->
@@ -65,19 +67,26 @@
   <string name="perf_profile_bias_perf">Hurtig</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatisk</string>
+  <string name="live_display_auto_summary">Automatisk justere farvetemperaturen på skærmen efter solnedgang og solopgang</string>
   <string name="live_display_off">Fra</string>
   <string name="live_display_off_summary">Deaktiver alle justeringer</string>
   <string name="live_display_day">Dag</string>
+  <string name="live_display_day_summary">Brug kun dag indstillinger</string>
   <string name="live_display_night">Nat</string>
+  <string name="live_display_night_summary">Brug kun nat indstillinger</string>
+  <string name="live_display_outdoor">Udendørs (lyst)</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
   <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_haptic_feedback">Berøringsvibration</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kunne ikke installeres</string>
   <!-- Theme reset notification -->
   <string name="theme_reset_notification_title">Nulstil tema</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">tilgå tematjenesten</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -95,6 +104,7 @@
   <string name="permlab_weather_read">tilgå vejret</string>
   <string name="permdesc_weather_read">Tillad at en app kan læse indhold fra vejr-udbyderen.</string>
   <string name="permlab_weather_write">opdater vejr-udbyder</string>
+  <string name="permlab_weather_access_mgr">tilgå vejrtjenesten</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->

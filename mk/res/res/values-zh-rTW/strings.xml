@@ -63,7 +63,7 @@
   <string name="permdesc_protectedApp">允許應用程式標記受保護的其他應用程式並將它們鎖定。</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">默認位置</string>
+  <string name="profileNameDefault">預設位置</string>
   <string name="profileNameWork">工作</string>
   <string name="profileNameHome">住家</string>
   <string name="profileNameSilent">静音</string>
@@ -182,4 +182,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">主題</string>
+  <string name="qs_themes_content_description">自訂您的主題</string>
 </resources>
