@@ -22,6 +22,7 @@ import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.telephony.TelephonyManager;
@@ -97,24 +98,30 @@ public class ConstraintsHelper {
         }
 
         TypedArray a = mContext.getResources().obtainAttributes(mAttrs,
-                R.styleable.cm_SelfRemovingPreference);
+                R.styleable.mk_SelfRemovingPreference);
 
         try {
 
+            // Check if the current user is an owner
+            boolean rOwner = a.getBoolean(R.styleable.mk_SelfRemovingPreference_requiresOwner, false);
+            if (rOwner && UserHandle.myUserId() != UserHandle.USER_OWNER) {
+                return false;
+            }
+
             // Check if a specific package is installed
-            String rPackage = a.getString(R.styleable.cm_SelfRemovingPreference_requiresPackage);
+            String rPackage = a.getString(R.styleable.mk_SelfRemovingPreference_requiresPackage);
             if (rPackage != null && !isPackageInstalled(mContext, rPackage, false)) {
                 return false;
             }
 
             // Check if a system feature is available
-            String rFeature = a.getString(R.styleable.cm_SelfRemovingPreference_requiresFeature);
+            String rFeature = a.getString(R.styleable.mk_SelfRemovingPreference_requiresFeature);
             if (rFeature != null && !hasSystemFeature(mContext, rFeature)) {
                 return false;
             }
 
             // Check a boolean system property
-            String rProperty = a.getString(R.styleable.cm_SelfRemovingPreference_requiresProperty);
+            String rProperty = a.getString(R.styleable.mk_SelfRemovingPreference_requiresProperty);
             if (rProperty != null) {
                 String value = SystemProperties.get(rProperty);
                 if (value == null || !Boolean.parseBoolean(value)) {
@@ -124,7 +131,7 @@ public class ConstraintsHelper {
 
             // Check a config resource. This can be a bool or a string. A null string
             // fails the constraint.
-           TypedValue tv = a.peekValue(R.styleable.cm_SelfRemovingPreference_requiresConfig);
+           TypedValue tv = a.peekValue(R.styleable.mk_SelfRemovingPreference_requiresConfig);
             if (tv != null) {
                 if (tv.type == TypedValue.TYPE_STRING) {
                     if (tv.resourceId != 0) {
