@@ -24,7 +24,10 @@
   <string name="permdesc_modifyNetworkSettings">Позволява да направите промени в самолетен режим и настройки на мобилните данни.</string>
   <string name="permlab_modifySoundSettings">промяна на системните настройки на звука</string>
   <string name="permdesc_modifySoundSettings">Позволява да направите промени в настройките на режим прекъсване на звука.</string>
+  <string name="permlab_bindCustomTileListenerService">потребителски панел за услуги</string>
+  <string name="permdesc_bindCustomTileListenerService">Позволява приложението да се използва интерфейс на най-високо ниво на слушане.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">позволява да видите на телефона състоянието и данните за връзка с поддръжка на много SIM</string>
   <string name="permdesc_readMSPhoneState">Позволява да видите на телефона състоянието и данните за връзка с поддръжка на много SIM.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">позволява да видите на телефона състоянието и данните за връзка с поддръжка на много SIM</string>
@@ -52,49 +55,137 @@
   <string name="permdesc_writeSecureSettings">Позволява ви да променяте настройки за сигурност. Не се използва с нормални приложения.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">управление на памет за съхранение</string>
+  <string name="permdesc_managePersistentStorage">Позволява да четете и пишете по системните файлове, което може да доведе до заводски настройки.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Потребителско слушане</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">добавяне и премахване на приложения към защитени</string>
+  <string name="permdesc_protectedApp">Позволява ви да маркирате приложения към защитени и да ги заключите.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Основен</string>
+  <string name="profileNameWork">Работа</string>
+  <string name="profileNameHome">Вкъщи</string>
+  <string name="profileNameSilent">Безшумно</string>
+  <string name="profileNameNight">Нощ</string>
+  <string name="profileNameAutomobile">Автомобил</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Телефон</string>
+  <string name="profileGroupCalendar">Календар</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">Имейл</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Други</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">достъп до местоположение</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Позволява да се получи информация за местоположението на телефона.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">достъп до местоположение</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Позволете на приложението достъп до местоположение.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Пестящ енергия</string>
+  <string name="perf_profile_bal">Балансиран</string>
+  <string name="perf_profile_perf">Производителен</string>
+  <string name="perf_profile_bias_power">Ефективен</string>
+  <string name="perf_profile_bias_perf">Бърз</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Автоматичен</string>
+  <string name="live_display_auto_summary">Автоматична настройка на цветовата температура на екрана след залез и изгрев</string>
   <string name="live_display_off">Изкл</string>
+  <string name="live_display_off_summary">Забрани всички корекции</string>
+  <string name="live_display_day">Ден</string>
+  <string name="live_display_day_summary">Използвайте само настройките за ден</string>
+  <string name="live_display_night">Нощ</string>
+  <string name="live_display_night_summary">Използвайте само настройките за нощ</string>
+  <string name="live_display_outdoor">На открито (ясно слънце)</string>
+  <string name="live_display_outdoor_summary">Използвайте само настройките на открито</string>
+  <string name="live_display_hint">LiveDisplay може да помогне за намаляване умората на очите и ви помогне да спите през нощта. Щракнете тук, за изпробване!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay изкл.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: автоматичен режим.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: дневен режим.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: нощен режим.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим на открито.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay изключен.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay променен на автоматичен режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay променен на дневен режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay променен на нощен режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay променя на режим открито.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">заключване на екрана от външна програма</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Разрешава да използвате приложението за заключване.</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Настройки за напреднали</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Жестове</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Допълнително</string>
+  <string name="touchscreen_gesture_haptic_feedback">Вибрация при докосване</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Вибриране при засичане на жест</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Неуспешно инсталиране на тема</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не успя да се инсталира</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Нулиране на тема</string>
+  <string name="theme_reset_notification_message">Възстановена е темата по подразбиране, поради грешка в програмата.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">Достъп до услуги на теми</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Позволява на приложението достъп до услугите на Теми. Обикновено не е необходимо при обикновените приложения.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">Повече информация за тема</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Позволява на приложението да определи коя тема сте приложили.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">Променете вашите теми</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Позволява на приложението да вмъкне нови теми и да променя приложените вече. </string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">Достъп до мениджър на бързодействие</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Позволява на приложението достъп до услугите на Теми. Обикновено не е необходимо при обикновените приложения.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">Достъп до услуги на заключване с жив тапет</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Достъп до услуги на заключване с жив тапет. </string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">Достъп до услуги на заключване с жив тапет</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Позволява на системни приложения достъп до услуги на заключване с жив тапет </string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">Достъп до услуги на заключване с жив тапет</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Достъп до услуги на заключване с жив тапет. </string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">Четене прогноза за време</string>
+  <string name="permdesc_weather_read">Позволява да се чете съдържанието от доставчика на времето.</string>
+  <string name="permlab_weather_write">Актуализиране на информация за времето</string>
+  <string name="permdesc_weather_write">Позволява да се чете съдържанието от доставчика на времето.</string>
+  <string name="permlab_weather_bind">Свръзва с този доставчик на прогноза. </string>
+  <string name="permdesc_weather_bind">Задаване като доставчик за услуги на времето. </string>
+  <string name="permlab_weather_access_mgr">Достъп до услуги за времето</string>
+  <string name="permdesc_weather_access_mgr">Позволява на приложението достъп до услугите на времето. Обикновено не е необходимо при нормално ползване. </string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">Промени информация за база данни</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Позволява да се чете съдържанието от доставчика на времето.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">Чете информация за времето</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Позволява да се чете съдържанието от доставчика на времето.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">управление на настройките за LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Позволява ви да конфигурирате разширени настройки.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">Следи за промени в аудио сесиите</string>
+  <string name="permdesc_observe_audio_sessions">Позволява следенето на аудио стриймове или тяхното създаване и прекъсване. </string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">Следи за промени в аудио сесиите</string>
+  <string name="permdesc_manage_audio_sessions">Позволява изпращане на ъпдейт за стриймове. </string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Теми</string>
+  <string name="qs_themes_content_description">Персонализиране на темата</string>
 </resources>
