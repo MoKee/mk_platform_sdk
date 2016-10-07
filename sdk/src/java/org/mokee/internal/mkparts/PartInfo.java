@@ -37,6 +37,9 @@ public class PartInfo implements Parcelable {
 
     private boolean mAvailable = true;
 
+    /* for search provider */
+    private int mXmlRes = 0;
+
     public PartInfo(String name, String title, String summary) {
         mName = name;
         mTitle = title;
@@ -57,6 +60,7 @@ public class PartInfo implements Parcelable {
         mFragmentClass = parcel.readString();
         mIconRes = parcel.readInt();
         mAvailable = parcel.readInt() == 1;
+        mXmlRes = parcel.readInt();
     }
 
     public String getName() {
@@ -91,6 +95,10 @@ public class PartInfo implements Parcelable {
 
     public void setAvailable(boolean available) { mAvailable = available; }
 
+    public int getXmlRes() { return mXmlRes; }
+
+    public void setXmlRes(int xmlRes) { mXmlRes = xmlRes; }
+
     public void updateFrom(PartInfo other) {
         if (other == null) {
             return;
@@ -103,12 +111,13 @@ public class PartInfo implements Parcelable {
         setFragmentClass(other.getFragmentClass());
         setIconRes(other.getIconRes());
         setAvailable(other.isAvailable());
+        setXmlRes(other.getXmlRes());
     }
 
     @Override
     public String toString() {
-        return String.format("PartInfo=[ name=%s title=%s summary=%s fragment=%s ]",
-                mName, mTitle, mSummary, mFragmentClass);
+        return String.format("PartInfo=[ name=%s title=%s summary=%s fragment=%s xmlRes=%x ]",
+                mName, mTitle, mSummary, mFragmentClass, mXmlRes);
     }
 
     @Override
@@ -126,7 +135,7 @@ public class PartInfo implements Parcelable {
         out.writeString(mFragmentClass);
         out.writeInt(mIconRes);
         out.writeInt(mAvailable ? 1 : 0);
-
+        out.writeInt(mXmlRes);
         parcelInfo.complete();
     }
 
@@ -136,9 +145,7 @@ public class PartInfo implements Parcelable {
 
     public Intent getIntentForActivity() {
         Intent i = new Intent(getAction());
-        ComponentName cn = new ComponentName(PartsList.MKPARTS_PACKAGE,
-                PartsList.MKPARTS_PACKAGE + ".PartsActivity");
-        i.setComponent(cn);
+        i.setComponent(PartsList.MKPARTS_ACTIVITY);
         return i;
     }
 
