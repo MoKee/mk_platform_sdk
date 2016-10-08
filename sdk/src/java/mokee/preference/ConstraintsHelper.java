@@ -30,6 +30,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
+import mokee.hardware.MKHardwareManager;
 import mokee.platform.R;
 
 
@@ -116,8 +117,15 @@ public class ConstraintsHelper {
 
             // Check if a system feature is available
             String rFeature = a.getString(R.styleable.mk_SelfRemovingPreference_requiresFeature);
-            if (rFeature != null && !hasSystemFeature(mContext, rFeature)) {
-                return false;
+            if (rFeature != null) {
+                if (rFeature.startsWith("mkhardware:")) {
+                    if (!MKHardwareManager.getInstance(mContext).isSupported(
+                            rFeature.substring("mkhardware:".length()))) {
+                        return false;
+                    }
+                } else if (!hasSystemFeature(mContext, rFeature)) {
+                    return false;
+                }
             }
 
             // Check a boolean system property
