@@ -24,7 +24,6 @@ import android.util.AttributeSet;
 
 import mokee.preference.SelfRemovingPreference;
 
-import static org.mokee.internal.mkparts.PartsList.ACTION_PART;
 import static org.mokee.internal.mkparts.PartsList.ACTION_PART_CHANGED;
 import static org.mokee.internal.mkparts.PartsList.EXTRA_PART;
 import static org.mokee.internal.mkparts.PartsList.EXTRA_PART_KEY;
@@ -47,9 +46,7 @@ public class MKPartsPreference extends SelfRemovingPreference {
             setAvailable(false);
         }
 
-        Intent i = new Intent(ACTION_PART);
-        i.putExtra(EXTRA_PART_KEY, mPart.getName());
-        setIntent(i);
+        setIntent(mPart.getIntentForActivity());
         update();
     }
 

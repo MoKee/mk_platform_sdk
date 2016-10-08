@@ -45,13 +45,13 @@ import static com.android.internal.R.styleable.Preference_title;
 
 public class PartsList {
 
-    public static final String ACTION_PART = "org.mokee.mkparts.PART";
     public static final String ACTION_PART_CHANGED = "org.mokee.mkparts.PART_CHANGED";
 
     public static final String EXTRA_PART = "part";
     public static final String EXTRA_PART_KEY = "key";
 
-    public static final String mkparts_PACKAGE = "org.mokee.mkparts";
+    public static final String MKPARTS_PACKAGE = "org.mokee.mkparts";
+    public static final String PARTS_ACTION_PREFIX = MKPARTS_PACKAGE + ".parts";
 
     private static final Map<String, PartInfo> sParts = new ArrayMap<String, PartInfo>();
 
@@ -65,11 +65,11 @@ public class PartsList {
 
             final PackageManager pm = context.getPackageManager();
             try {
-                final Resources r = pm.getResourcesForApplication(mkparts_PACKAGE);
+                final Resources r = pm.getResourcesForApplication(MKPARTS_PACKAGE);
                 if (r == null) {
                     return;
                 }
-                int resId = r.getIdentifier("parts_catalog", "xml", mkparts_PACKAGE);
+                int resId = r.getIdentifier("parts_catalog", "xml", MKPARTS_PACKAGE);
                 if (resId > 0) {
                     loadPartsFromResourceLocked(r, resId, sParts);
                 }
