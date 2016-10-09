@@ -1976,7 +1976,6 @@ public final class MKSettings {
                 MKSettings.System.QS_SHOW_BRIGHTNESS_SLIDER,
                 MKSettings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
                 MKSettings.System.VOLBTN_MUSIC_CONTROLS,
-                MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                 MKSettings.System.USE_EDGE_SERVICE_FOR_GESTURES,
                 MKSettings.System.STATUS_BAR_NOTIF_COUNT,
                 MKSettings.System.CALL_RECORDING_FORMAT,
