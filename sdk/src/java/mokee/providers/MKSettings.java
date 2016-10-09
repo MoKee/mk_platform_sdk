@@ -1216,6 +1216,16 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
+         * Show icon when stylus is used
+         * The value is boolean (1 or 0).
+         */
+        public static final String STYLUS_ICON_ENABLED = "stylus_icon_enabled";
+
+        /** @hide */
+        public static final Validator STYLUS_ICON_ENABLED_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Swap volume buttons when the screen is rotated
          * 0 - Disabled
          * 1 - Enabled (screen is rotated by 90 or 180 degrees: phone, hybrid)
@@ -1940,6 +1950,7 @@ public final class MKSettings {
                 MKSettings.System.CAMERA_WAKE_SCREEN,
                 MKSettings.System.CAMERA_SLEEP_ON_RELEASE,
                 MKSettings.System.CAMERA_LAUNCH,
+                MKSettings.System.STYLUS_ICON_ENABLED,
                 MKSettings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
                 MKSettings.System.BATTERY_LIGHT_ENABLED,
                 MKSettings.System.BATTERY_LIGHT_PULSE,
@@ -2090,6 +2101,7 @@ public final class MKSettings {
             VALIDATORS.put(CAMERA_WAKE_SCREEN, CAMERA_WAKE_SCREEN_VALIDATOR);
             VALIDATORS.put(CAMERA_SLEEP_ON_RELEASE, CAMERA_SLEEP_ON_RELEASE_VALIDATOR);
             VALIDATORS.put(CAMERA_LAUNCH, CAMERA_LAUNCH_VALIDATOR);
+            VALIDATORS.put(STYLUS_ICON_ENABLED, STYLUS_ICON_ENABLED_VALIDATOR);
             VALIDATORS.put(SWAP_VOLUME_KEYS_ON_ROTATION,
                     SWAP_VOLUME_KEYS_ON_ROTATION_VALIDATOR);
             VALIDATORS.put(BATTERY_LIGHT_ENABLED, BATTERY_LIGHT_ENABLED_VALIDATOR);
