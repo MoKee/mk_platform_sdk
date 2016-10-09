@@ -88,6 +88,17 @@ public class WeatherManagerServiceBroker extends BrokerableMKSystemService<IMKWe
     }
 
     @Override
+    public void onBootPhase(int phase) {
+        // Do nothing. We need userland apps to be fully up and running.
+        // We will connect in onUnlockUser instead.
+    }
+
+    @Override
+    public void onUnlockUser(int userHandle) {
+        tryConnecting();
+    }
+
+    @Override
     public String getFeatureDeclaration() {
         return MKContextConstants.Features.WEATHER_SERVICES;
     }
