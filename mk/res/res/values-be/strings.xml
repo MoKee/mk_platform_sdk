@@ -24,6 +24,7 @@
   <string name="permdesc_modifyNetworkSettings">Дазваляе прыкладанню ўнесці змены ў рэжыме \"Палёту\" і наладах мабільнай перадачы дадзеных.</string>
   <string name="permlab_modifySoundSettings">Налады параметраў гуку сістэмы</string>
   <string name="permdesc_modifySoundSettings">Дазваляе прыкладанню унесці змены ў абмежаваны набор параметраў гукавой сістэмы.</string>
+  <string name="permlab_bindCustomTileListenerService">прывязка да службы прагляду плітак карыстальніка</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Прагляд рэжыму працы і перадачы дадзеных тэлефона з падтрымкай некалькіх SIM-карт</string>
   <string name="permdesc_readMSPhoneState">Дазваляе прыкладанню праглядваць стан тэлефона і дадзеныя падключэння тэлефона з падтрымкай некалькіх SIM-карт.</string>
