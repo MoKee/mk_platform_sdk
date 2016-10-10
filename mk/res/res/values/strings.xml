@@ -235,4 +235,8 @@
     <!-- Privacy Guard -->
     <string name="privacy_guard_manager_title">Privacy Guard</string>
 
+    <!-- Permissions used by MKParts -->
+    <string name="permlab_manageParts">manage remote settings</string>
+    <string name="permdesc_manageParts">Allows an app to manage MoKee settings</string>
+
 </resources>
