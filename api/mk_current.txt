@@ -703,6 +703,7 @@ package mokee.platform {
     field public static final java.lang.String LIVE_LOCK_SCREEN_MANAGER_ACCESS = "mokee.permission.LIVE_LOCK_SCREEN_MANAGER_ACCESS";
     field public static final java.lang.String MANAGE_ALARMS = "mokee.permission.MANAGE_ALARMS";
     field public static final java.lang.String MANAGE_LIVEDISPLAY = "mokee.permission.MANAGE_LIVEDISPLAY";
+    field public static final java.lang.String MANAGE_PARTS = "mokee.permission.MANAGE_PARTS";
     field public static final java.lang.String MANAGE_PERSISTENT_STORAGE = "mokee.permission.MANAGE_PERSISTENT_STORAGE";
     field public static final java.lang.String MODIFY_MSIM_PHONE_STATE = "mokee.permission.MODIFY_MSIM_PHONE_STATE";
     field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
