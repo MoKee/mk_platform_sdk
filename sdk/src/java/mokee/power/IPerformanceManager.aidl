@@ -17,6 +17,8 @@
 
 package mokee.power;
 
+import mokee.power.PerformanceProfile;
+
 /** @hide */
 interface IPerformanceManager {
 
@@ -28,5 +30,9 @@ interface IPerformanceManager {
 
     int getNumberOfProfiles();
 
-    boolean getProfileHasAppProfiles(int profile);
+    PerformanceProfile[] getPowerProfiles();
+
+    PerformanceProfile getPowerProfileById(int profile);
+
+    PerformanceProfile getActivePowerProfile();
 }
