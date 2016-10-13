@@ -703,6 +703,7 @@ package mokee.platform {
     field public static final java.lang.String LIVE_LOCK_SCREEN_MANAGER_ACCESS = "mokee.permission.LIVE_LOCK_SCREEN_MANAGER_ACCESS";
     field public static final java.lang.String MANAGE_ALARMS = "mokee.permission.MANAGE_ALARMS";
     field public static final java.lang.String MANAGE_LIVEDISPLAY = "mokee.permission.MANAGE_LIVEDISPLAY";
+    field public static final java.lang.String MANAGE_PARTS = "mokee.permission.MANAGE_PARTS";
     field public static final java.lang.String MANAGE_PERSISTENT_STORAGE = "mokee.permission.MANAGE_PERSISTENT_STORAGE";
     field public static final java.lang.String MODIFY_MSIM_PHONE_STATE = "mokee.permission.MODIFY_MSIM_PHONE_STATE";
     field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
@@ -774,11 +775,15 @@ package mokee.platform {
 package mokee.power {
 
   public class PerformanceManager {
+    method public mokee.power.PerformanceProfile getActivePowerProfile();
     method public static mokee.power.PerformanceManager getInstance(android.content.Context);
     method public int getNumberOfProfiles();
     method public int getPowerProfile();
+    method public mokee.power.PerformanceProfile getPowerProfile(int);
+    method public java.util.SortedSet<mokee.power.PerformanceProfile> getPowerProfiles();
     method public boolean getProfileHasAppProfiles(int);
     method public boolean setPowerProfile(int);
+    method public boolean setPowerProfile(mokee.power.PerformanceProfile);
     field public static final java.lang.String POWER_PROFILE_CHANGED = "mokee.power.PROFILE_CHANGED";
     field public static final int PROFILE_BALANCED = 1; // 0x1
     field public static final int PROFILE_BIAS_PERFORMANCE = 4; // 0x4
@@ -786,6 +791,19 @@ package mokee.power {
     field public static final int PROFILE_HIGH_PERFORMANCE = 2; // 0x2
     field public static final int PROFILE_POWER_SAVE = 0; // 0x0
     field public static final java.lang.String TAG = "PerformanceManager";
+  }
+
+  public class PerformanceProfile implements java.lang.Comparable android.os.Parcelable {
+    ctor public PerformanceProfile(int, float, java.lang.String, java.lang.String, boolean);
+    method public int compareTo(mokee.power.PerformanceProfile);
+    method public int describeContents();
+    method public java.lang.String getDescription();
+    method public int getId();
+    method public java.lang.String getName();
+    method public float getWeight();
+    method public boolean isBoostEnabled();
+    method public void writeToParcel(android.os.Parcel, int);
+    field public static final android.os.Parcelable.Creator<mokee.power.PerformanceProfile> CREATOR;
   }
 
 }
@@ -1129,6 +1147,7 @@ package mokee.providers {
     field public static final java.lang.String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
     field public static final java.lang.String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     field public static final java.lang.String STATUS_BAR_SHOW_WEATHER = "status_bar_show_weather";
+    field public static final java.lang.String STYLUS_ICON_ENABLED = "stylus_icon_enabled";
     field public static final java.lang.String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
     field public static final java.lang.String SYSTEM_PROFILES_ENABLED = "system_profiles_enabled";
     field public static final java.lang.String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_system_version";
