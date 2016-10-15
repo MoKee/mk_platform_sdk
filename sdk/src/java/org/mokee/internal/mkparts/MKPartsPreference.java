@@ -17,15 +17,16 @@
 package org.mokee.internal.mkparts;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.util.AttributeSet;
 
-import mokee.preference.SelfRemovingPreference;
+import mokee.preference.RemotePreference;
 
 /**
  * A link to a remote preference screen which can be used with a minimum amount
  * of information. Supports summary updates asynchronously.
  */
-public class MKPartsPreference extends SelfRemovingPreference implements PartInfo.RemotePart {
+public class MKPartsPreference extends RemotePreference {
 
     private static final String TAG = "MKPartsPreference";
 
@@ -33,38 +34,51 @@ public class MKPartsPreference extends SelfRemovingPreference implements PartInf
 
     private final Context mContext;
 
-    public MKPartsPreference(Context context, AttributeSet attrs) {
-        super(context, attrs, com.android.internal.R.attr.preferenceScreenStyle);
+    public MKPartsPreference(Context context, AttributeSet attrs,
+                            int defStyle, int defStyleRes) {
+        super(context, attrs, defStyle, defStyleRes);
         mContext = context;
         mPart = PartsList.get(context).getPartInfo(getKey());
         if (mPart == null) {
             throw new RuntimeException("Part not found: " + getKey());
         }
 
-        if (!mPart.isAvailable()) {
-            setAvailable(false);
-        }
-
+        updatePreference();
         setIntent(mPart.getIntentForActivity());
+    }
 
-        onRefresh(context, mPart);
+    public MKPartsPreference(Context context, AttributeSet attrs, int defStyle) {
+        this(context, attrs, defStyle, 0);
+    }
+
+    public MKPartsPreference(Context context, AttributeSet attrs) {
+        this(context, attrs, com.android.internal.R.attr.preferenceScreenStyle);
     }
 
     @Override
-    public void onAttached() {
-        super.onAttached();
-        mPart.registerRemote(mContext, this);
+    public void onRemoteUpdated(Bundle bundle) {
+        if (bundle.containsKey(PartsList.EXTRA_PART)) {
+            PartInfo update = bundle.getParcelable(PartsList.EXTRA_PART);
+            if (update != null) {
+                mPart.updateFrom(update);
+                updatePreference();
+            }
+        }
     }
 
     @Override
-    public void onDetached() {
-        super.onDetached();
-        mPart.unregisterRemote(mContext, this);
+    protected String getRemoteKey(Bundle metaData) {
+        // remote key is the same as ours
+        return getKey();
     }
 
-    @Override
-    public void onRefresh(Context context, PartInfo info) {
-        setTitle(mPart.getTitle());
-        setSummary((CharSequence) mPart.getSummary());
+    private void updatePreference() {
+        if (isAvailable() != mPart.isAvailable()) {
+            setAvailable(mPart.isAvailable());
+        }
+        if (isAvailable()) {
+            setTitle(mPart.getTitle());
+            setSummary(mPart.getSummary());
+        }
     }
 }

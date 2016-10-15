@@ -16,7 +16,6 @@
  */
 package org.mokee.internal.mkparts;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -184,18 +183,6 @@ public class PartInfo implements Parcelable {
         Intent i = new Intent(getAction());
         i.setComponent(PartsList.MKPARTS_ACTIVITY);
         return i;
-    }
-
-    public interface RemotePart {
-        public void onRefresh(Context context, PartInfo info);
-    }
-
-    public void registerRemote(Context context, final RemotePart remote) {
-        PartsList.get(context).registerRemotePart(mName, remote);
-    }
-
-    public void unregisterRemote(Context context, final RemotePart remote) {
-        PartsList.get(context).unregisterRemotePart(mName, remote);
     }
 
     public static final Parcelable.Creator<PartInfo> CREATOR = new Parcelable.Creator<PartInfo>() {
