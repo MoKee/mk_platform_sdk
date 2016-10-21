@@ -148,9 +148,13 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Umożliwia aplikacji dostęp do usługi wydajności. Nie powinno być potrzebne zwykłym aplikacjom.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">dostęp do menadżera usługi blokady ekranu</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Umożliwia aplikacji dostęp do usługi menedżera blokady ekranu.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">dostęp do menadżera usługi blokady ekranu</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Umożliwia aplikacjom systemowym dostęp do menadżera usługi blokady ekranu.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
@@ -160,8 +164,10 @@
   <string name="permdesc_weather_write">Umożliwia aplikacji aktualizowanie zawartości od dostawcy pogody.</string>
   <string name="permlab_weather_access_mgr">dostęp do serwisu pogodowego</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modyfikowanie danych użycia bazy danych</string>
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">czytaj dane użycia bazy danych</string>
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">zarządzanie ustawieniami LiveDisplay</string>
