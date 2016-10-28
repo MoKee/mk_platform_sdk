@@ -34,6 +34,7 @@
   <string name="permlab_writeSettings">modificar as definições do sistema MK</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <string name="permlab_managePersistentStorage">gerir armazenamento persistente</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
