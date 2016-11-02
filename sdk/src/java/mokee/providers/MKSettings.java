@@ -931,7 +931,7 @@ public final class MKSettings {
          * 0: Normal display (Eclair stock)
          * 1: Small display (Froyo stock)
          * 2: No display (Gingerbread/ICS stock)
-         * default: 2
+         * default: 0
          */
         public static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
 
