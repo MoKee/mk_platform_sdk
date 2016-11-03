@@ -57,6 +57,7 @@
   <string name="permdesc_managePersistentStorage">Дазваляе прыкладанню чытаць або запiсваць уласцівасці, якія могуць захоўвацца пасля завадскога скiдвання.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">дадайце ці выдаліце прыкладанні якія трэба сцерагчы</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Па змаўчанні</string>
