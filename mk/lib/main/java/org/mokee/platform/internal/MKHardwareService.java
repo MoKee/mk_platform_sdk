@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
+import android.os.UserHandle;
 import android.util.ArrayMap;
 import android.util.Log;
 import android.util.Range;
@@ -426,7 +427,7 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
         if (phase == PHASE_BOOT_COMPLETED) {
             Intent intent = new Intent(mokee.content.Intent.ACTION_INITIALIZE_MK_HARDWARE);
             intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
-            mContext.sendBroadcast(intent,
+            mContext.sendBroadcastAsUser(intent, UserHandle.ALL,
                     mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS);
         }
     }
