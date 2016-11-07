@@ -18,14 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
-  <string name="permlab_publishCustomTile">Создать пользовательскую плитку на Панели быстрых настроек</string>
-  <string name="permdesc_publishCustomTile">Позволяет приложению публиковать плитку быстрых настроек.</string>
+  <string name="permlab_publishCustomTile">создать пользовательскую плитку на панели быстрых настроек</string>
+  <string name="permdesc_publishCustomTile">Позволить риложению разместить плитку быстрых настроек.</string>
   <string name="permlab_modifyNetworkSettings">Изменить сетевые параметры системы</string>
-  <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в ограниченный набор параметров сети системы.</string>
+  <string name="permdesc_modifyNetworkSettings">Позволить приложению внести изменения в ограниченный набор параметров мобильной сети системы.</string>
   <string name="permlab_modifySoundSettings">Изменить параметры звука системы</string>
   <string name="permdesc_modifySoundSettings">Позволяет приложению внести изменения в ограниченный набор параметров звуковой системы.</string>
   <string name="permlab_bindCustomTileListenerService">привязка к службе просмотра пользовательских плиток</string>
-  <string name="permdesc_bindCustomTileListenerService">Позволяет приложению связать интерфейс верхнего уровня с службой пользовательских плиток.</string>
+  <string name="permdesc_bindCustomTileListenerService">Позволить приложению связать интерфейс верхнего уровня со службой пользовательских плиток.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
