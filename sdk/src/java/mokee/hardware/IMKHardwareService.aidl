@@ -1,5 +1,6 @@
 /**
- * Copyright (c) 2015, The MoKee Open Source Project
+ * Copyright (c) 2015-2017, The MoKee Open Source Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +20,7 @@ package mokee.hardware;
 import mokee.hardware.DisplayMode;
 import mokee.hardware.HSIC;
 import mokee.hardware.IThermalListenerCallback;
+import mokee.hardware.TouchscreenGesture;
 
 /** @hide */
 interface IMKHardwareService {
@@ -70,4 +72,6 @@ interface IMKHardwareService {
     boolean setPictureAdjustment(in HSIC hsic);
     float[] getPictureAdjustmentRanges();
 
+    TouchscreenGesture[] getTouchscreenGestures();
+    boolean setTouchscreenGestureEnabled(in TouchscreenGesture gesture, boolean state);
 }

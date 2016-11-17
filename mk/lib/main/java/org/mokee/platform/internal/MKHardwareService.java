@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2015-2016 The MoKee Open Source Project
+ * Copyright (C) 2015-2017 The MoKee Open Source Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +35,7 @@ import mokee.hardware.DisplayMode;
 import mokee.hardware.IThermalListenerCallback;
 import mokee.hardware.ThermalListenerCallback;
 import mokee.hardware.HSIC;
+import mokee.hardware.TouchscreenGesture;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -56,6 +58,7 @@ import org.mokee.hardware.SerialNumber;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.ThermalMonitor;
 import org.mokee.hardware.ThermalUpdateCallback;
+import org.mokee.hardware.TouchscreenGestures;
 import org.mokee.hardware.TouchscreenHovering;
 import org.mokee.hardware.UniqueDeviceId;
 import org.mokee.hardware.VibratorHW;
@@ -117,6 +120,9 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
         public HSIC getDefaultPictureAdjustment();
         public boolean setPictureAdjustment(HSIC hsic);
         public List<Range<Float>> getPictureAdjustmentRanges();
+
+        public TouchscreenGesture[] getTouchscreenGestures();
+        public boolean setTouchscreenGestureEnabled(TouchscreenGesture gesture, boolean state);
     }
 
     private class LegacyMKHardware implements MKHardwareInterface {
@@ -160,6 +166,8 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 mSupportedFeatures |= MKHardwareManager.FEATURE_COLOR_BALANCE;
             if (PictureAdjustment.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_PICTURE_ADJUSTMENT;
+            if (TouchscreenGestures.isSupported())
+                mSupportedFeatures |= MKHardwareManager.FEATURE_TOUCHSCREEN_GESTURES;
         }
 
         public int getSupportedFeatures() {
@@ -383,6 +391,14 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                     PictureAdjustment.getIntensityRange(),
                     PictureAdjustment.getContrastRange(),
                     PictureAdjustment.getSaturationThresholdRange());
+        }
+
+        public TouchscreenGesture[] getTouchscreenGestures() {
+            return TouchscreenGestures.getAvailableGestures();
+        }
+
+        public boolean setTouchscreenGestureEnabled(TouchscreenGesture gesture, boolean state) {
+            return TouchscreenGestures.setGestureEnabled(gesture, state);
         }
     }
 
@@ -859,6 +875,28 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                         r.get(4).getUpper(), r.get(4).getUpper() };
             }
             return new float[10];
+        }
+
+        @Override
+        public TouchscreenGesture[] getTouchscreenGestures() {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_TOUCHSCREEN_GESTURES)) {
+                Log.e(TAG, "Touchscreen gestures are not supported");
+                return null;
+            }
+            return mMkHwImpl.getTouchscreenGestures();
+        }
+
+        @Override
+        public boolean setTouchscreenGestureEnabled(TouchscreenGesture gesture, boolean state) {
+            mContext.enforceCallingOrSelfPermission(
+                    mokee.platform.Manifest.permission.HARDWARE_ABSTRACTION_ACCESS, null);
+            if (!isSupported(MKHardwareManager.FEATURE_TOUCHSCREEN_GESTURES)) {
+                Log.e(TAG, "Touchscreen gestures are not supported");
+                return false;
+            }
+            return mMkHwImpl.setTouchscreenGestureEnabled(gesture, state);
         }
     };
 }

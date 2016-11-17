@@ -465,6 +465,7 @@ package mokee.hardware {
     method public deprecated int getDisplayGammaCalibrationMax();
     method public deprecated int getDisplayGammaCalibrationMin();
     method public mokee.hardware.DisplayMode[] getDisplayModes();
+    method public mokee.hardware.TouchscreenGesture[] getTouchscreenGestures();
     method public static mokee.hardware.MKHardwareManager getInstance(android.content.Context);
     method public java.lang.String getLtoDestination();
     method public long getLtoDownloadInterval();
@@ -494,6 +495,7 @@ package mokee.hardware {
     method public deprecated boolean setDisplayGammaCalibration(int, int[]);
     method public boolean setDisplayMode(mokee.hardware.DisplayMode, boolean);
     method public boolean setPictureAdjustment(mokee.hardware.HSIC);
+    method public boolean setTouchscreenGestureEnabled(mokee.hardware.TouchscreenGesture, boolean);
     method public boolean setVibratorIntensity(int);
     method public boolean unRegisterThermalListener(mokee.hardware.ThermalListenerCallback);
     method public boolean writePersistentBytes(java.lang.String, byte[]);
@@ -516,6 +518,7 @@ package mokee.hardware {
     field public static final deprecated int FEATURE_TAP_TO_WAKE = 512; // 0x200
     field public static final int FEATURE_THERMAL_MONITOR = 32768; // 0x8000
     field public static final int FEATURE_TOUCH_HOVERING = 2048; // 0x800
+    field public static final int FEATURE_TOUCHSCREEN_GESTURES = 524288; // 0x80000
     field public static final int FEATURE_UNIQUE_DEVICE_ID = 65536; // 0x10000
     field public static final int FEATURE_VIBRATOR = 1024; // 0x400
   }
@@ -542,6 +545,15 @@ package mokee.hardware {
     method public int[] toRGB();
     method public static mokee.hardware.HSIC unflattenFrom(java.lang.String) throws java.lang.NumberFormatException;
     method public void writeToParcel(android.os.Parcel, int);
+  }
+
+  public class TouchscreenGesture implements android.os.Parcelable {
+    ctor public TouchscreenGesture(int, java.lang.String, int);
+    method public int describeContents();
+    method public void writeToParcel(android.os.Parcel, int);
+    field public final int id;
+    field public final java.lang.String name;
+    field public final int keycode;
   }
 
   public abstract interface IThermalListenerCallback implements android.os.IInterface {
