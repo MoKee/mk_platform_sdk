@@ -53,7 +53,6 @@ import org.mokee.hardware.PersistentStorage;
 import org.mokee.hardware.PictureAdjustment;
 import org.mokee.hardware.SerialNumber;
 import org.mokee.hardware.SunlightEnhancement;
-import org.mokee.hardware.TapToWake;
 import org.mokee.hardware.ThermalMonitor;
 import org.mokee.hardware.ThermalUpdateCallback;
 import org.mokee.hardware.TouchscreenHovering;
@@ -142,8 +141,6 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                 mSupportedFeatures |= MKHardwareManager.FEATURE_SERIAL_NUMBER;
             if (SunlightEnhancement.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
-            if (TapToWake.isSupported())
-                mSupportedFeatures |= MKHardwareManager.FEATURE_TAP_TO_WAKE;
             if (VibratorHW.isSupported())
                 mSupportedFeatures |= MKHardwareManager.FEATURE_VIBRATOR;
             if (TouchscreenHovering.isSupported())
@@ -180,8 +177,6 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                     return KeyDisabler.isActive();
                 case MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT:
                     return SunlightEnhancement.isEnabled();
-                case MKHardwareManager.FEATURE_TAP_TO_WAKE:
-                    return TapToWake.isEnabled();
                 case MKHardwareManager.FEATURE_TOUCH_HOVERING:
                     return TouchscreenHovering.isEnabled();
                 case MKHardwareManager.FEATURE_AUTO_CONTRAST:
@@ -206,8 +201,6 @@ public class MKHardwareService extends MKSystemService implements ThermalUpdateC
                     return KeyDisabler.setActive(enable);
                 case MKHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT:
                     return SunlightEnhancement.setEnabled(enable);
-                case MKHardwareManager.FEATURE_TAP_TO_WAKE:
-                    return TapToWake.setEnabled(enable);
                 case MKHardwareManager.FEATURE_TOUCH_HOVERING:
                     return TouchscreenHovering.setEnabled(enable);
                 case MKHardwareManager.FEATURE_AUTO_CONTRAST:
