@@ -18,15 +18,24 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee sistem</string>
+  <string name="permlab_modifySoundSettings">spremenite nastavitve zvoka sistema</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <!-- Labels for the WRITE_ALARMS permission. -->
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">vklopi načrtovane alarne</string>
+  <string name="permdesc_manage_alarms">Omogoča aplikaciji izklop vsek načrtovanih alarmov.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">dostop do načrtovanih alarmov</string>
+  <string name="permdesc_read_alarms">Omogoča aplikaciji, da prebere načrtovane alarme.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">spremeni MK sistemske nastavitve</string>
+  <string name="permdesc_writeSettings">Omogoči aplikaciji speminjanje MK sistemskih nastavitev.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">spremeni MK varne sistemske nastavitve</string>
+  <string name="permdesc_writeSecureSettings">Omogoči aplikaciji speminjanje MK varnih sistemskih nastavitev. Ni za uporabo z normalnimi aplikacijami.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
@@ -51,13 +60,42 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Omogoči aplikacijam prebrati informacije o lokaciji telefona.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">preberi lokacijo telefona</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Omogoča app spremeniti lokacijo telefona.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Varčevanje porabe</string>
+  <string name="perf_profile_bal">Uravnovešeno</string>
+  <string name="perf_profile_perf">Odzivnost</string>
+  <string name="perf_profile_bias_power">Učinkovitost</string>
+  <string name="perf_profile_bias_perf">Hitro</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Samodejno</string>
+  <string name="live_display_auto_summary">Samodejno spremeni barvno temperaturo zaslona po sončnem zahod in vzhodu</string>
+  <string name="live_display_off">Izklopljen</string>
+  <string name="live_display_off_summary">Onemogočite vse prilagoditve</string>
+  <string name="live_display_day">Dan</string>
+  <string name="live_display_day_summary">Uporabite samo dnevne nastavitve</string>
+  <string name="live_display_night">Noč</string>
+  <string name="live_display_night_summary">Uporabite samo nočne nastavitve</string>
+  <string name="live_display_outdoor">ZunaJ (močno sonce)</string>
+  <string name="live_display_outdoor_summary">Uporabi samo nastavitve za zunaj</string>
+  <string name="live_display_hint">LiveDisplay lahko pomaga zmanjšati obremenitev oči in vam pomaga spati ponoči. Kliknite tukaj, da ga preizkusite!</string>
+  <string name="accessibility_quick_settings_live_display_off">ŽiviZaslon izklopljen.</string>
+  <string name="accessibility_quick_settings_live_display_auto">ŽiviZaslon: samodejno.</string>
+  <string name="accessibility_quick_settings_live_display_day">ŽiviZaslon: dnevni način.</string>
+  <string name="accessibility_quick_settings_live_display_night">ŽiviZaslon: nočni način.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">ŽiviZaslon: zunaj.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">ŽiviZaslon je izklopljen.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">ŽiviZaslon spremenjen na samodejno.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">ŽiviZaslon spremenjen na dnevni način.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">ŽiviZaslon spremenjen na nočni način.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">ŽiviZaslon spremenjen na zunaj.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Vzorec za odklepanje</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Dodatki</string>
   <!-- Theme installation error notification -->
@@ -85,4 +123,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Predloge</string>
+  <string name="qs_themes_content_description">Prilagodi svojo predlogo</string>
 </resources>

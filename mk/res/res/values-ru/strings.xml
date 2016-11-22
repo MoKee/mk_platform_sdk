@@ -33,14 +33,14 @@
   <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
   <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">изменить профиль системы</string>
-  <string name="permdesc_modifyProfiles">Разрешает приложению изменять профили системы.</string>
+  <string name="permlab_modifyProfiles">изменить профили системы</string>
+  <string name="permdesc_modifyProfiles">Позволить приложению изменять профили системы.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Использовать аппаратный framework</string>
   <string name="permdesc_useHardwareFramework">Разрешать приложениям использовать аппаратный MK framework.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">напрямую изменить сигнализацию</string>
-  <string name="permdesc_write_alarms">Позволяет приложению добавить, изменить или удалить все ваши тревоги.</string>
+  <string name="permdesc_write_alarms">Позволяет приложению добавлять, изменять или удалять все ваши события.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">тумблер запланированных сигнализаций</string>
   <string name="permdesc_manage_alarms">Позволяет приложению отключать запланированной сигнализации.</string>
@@ -55,7 +55,7 @@
   <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы МК. Не используется в обычных приложениях.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Управление постоянного хранения</string>
-  <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться после заводского сброса.</string>
+  <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись параметров, которые могут сохраняться после заводского сброса.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Наблюдает за пользовательскими плитками</string>
   <!-- Labels for the PROTECTED_APP permission. -->
@@ -67,7 +67,7 @@
   <string name="profileNameWork">Работа</string>
   <string name="profileNameHome">Дом</string>
   <string name="profileNameSilent">Без звука</string>
-  <string name="profileNameNight">Ночь</string>
+  <string name="profileNameNight">Ночной</string>
   <string name="profileNameAutomobile">Автомобиль</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
@@ -82,11 +82,11 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_readPhoneLocation">Позволить приложению получать информацию о местоположении телефона.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">Записать местоположение</string>
+  <string name="permlab_writePhoneLocation">записать местоположение телефона</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
+  <string name="permdesc_writePhoneLocation">Позволить приложению изменять местоположение телефона.</string>
   <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">Экономия энергии</string>
+  <string name="perf_profile_pwrsv">Энергосбережение</string>
   <string name="perf_profile_bal">Сбалансированный</string>
   <string name="perf_profile_perf">Производительный</string>
   <string name="perf_profile_bias_power">Эффективный</string>
@@ -109,7 +109,7 @@
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: ночной режим.</string>
   <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим улицы.</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay изменен на режим auto.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay изменен на авто режим.</string>
   <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay изменен на дневной режим.</string>
   <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay изменен на ночной режим.</string>
   <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay изменен на режим улицы.</string>
