@@ -47,6 +47,16 @@
     <protected-broadcast android:name="mokee.intent.action.UPDATE_PREFERENCE" />
     <protected-broadcast android:name="mokee.intent.action.REFRESH_PREFERENCE" />
 
+    <!-- Defined in MKCenter -->
+    <protected-broadcast android:name="com.mokee.center.action.DOWNLOAD_COMPLETED" />
+    <protected-broadcast android:name="com.mokee.center.action.DOWNLOAD_START" />
+    <protected-broadcast android:name="com.mokee.center.action.DOWNLOAD_STARTED" />
+    <protected-broadcast android:name="com.mokee.center.action.NOTIFICATION_CLICKED" />
+    <protected-broadcast android:name="com.mokee.center.action.UPDATE_CHECK_FINISHED" />
+
+    <!-- Defined in MKParts -->
+    <protected-broadcast android:name="cn.jpush.android.intent.TAG_ALIAS_CALLBACK" />
+
     <!-- Must be required by an, to ensure that only the system can bind to it.
          @hide -->
     <permission android:name="mokee.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE"
