@@ -33,7 +33,7 @@
   <string name="permdesc_modifyProfiles">Allows an app to modify system profiles.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">use hardware framework</string>
-  <string name="permdesc_useHardwareFramework">Allows an app access to the MK hardware framework.</string>
+  <string name="permdesc_useHardwareFramework">Allows an app access to the CM hardware framework.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">directly change alarms</string>
   <string name="permdesc_write_alarms">Allows an app to add, modify or delete all of your alarms.</string>
@@ -79,6 +79,7 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Allows an app to change the phone location.</string>
   <!-- Performance profiles -->
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">Off</string>
   <string name="live_display_night">Night</string>
@@ -113,4 +114,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

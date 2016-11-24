@@ -18,6 +18,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKeeシステム</string>
+  <string name="permlab_publishCustomTile">クイック設定パネルに新しいタイルを設定する</string>
+  <string name="permdesc_publishCustomTile">クイック設定パネルを変更することをアプリケーションに許可します。</string>
+  <string name="permdesc_modifyNetworkSettings">機内モードとモバイルデータ設定の変更をアプリケーションに許可します。</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
@@ -48,6 +51,7 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Performance profiles -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">オフ</string>
@@ -83,4 +87,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

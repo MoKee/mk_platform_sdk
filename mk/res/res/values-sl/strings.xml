@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
+  <string name="mokee_system_label">MoKee sistem</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
@@ -31,19 +32,64 @@
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
   <!-- Names of default profiles. -->
+  <string name="profileNameDefault">Privzeto</string>
+  <string name="profileNameWork">Služba</string>
+  <string name="profileNameHome">Doma</string>
+  <string name="profileNameSilent">Tiho</string>
+  <string name="profileNameNight">Noč</string>
+  <string name="profileNameAutomobile">Avto</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telefon</string>
+  <string name="profileGroupCalendar">Koledar</string>
+  <string name="profileGroupGmail">Gmail</string>
+  <string name="profileGroupEmail">E-pošta</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Drugo</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">preberi lokacijo telefona</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Omogoči aplikacijam prebrati informacije o lokaciji telefona.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">preberi lokacijo telefona</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Omogoča app spremeniti lokacijo telefona.</string>
+  <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Varčevanje porabe</string>
+  <string name="perf_profile_bal">Uravnovešeno</string>
+  <string name="perf_profile_perf">Odzivnost</string>
+  <string name="perf_profile_bias_power">Učinkovitost</string>
+  <string name="perf_profile_bias_perf">Hitro</string>
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Samodejno</string>
+  <string name="live_display_auto_summary">Samodejno spremeni barvno temperaturo zaslona po sončnem zahod in vzhodu</string>
+  <string name="live_display_off">Izklopljen</string>
+  <string name="live_display_off_summary">Onemogočite vse prilagoditve</string>
+  <string name="live_display_day">Dan</string>
+  <string name="live_display_day_summary">Uporabite samo dnevne nastavitve</string>
+  <string name="live_display_night">Noč</string>
+  <string name="live_display_night_summary">Uporabite samo nočne nastavitve</string>
+  <string name="live_display_outdoor">ZunaJ (močno sonce)</string>
+  <string name="live_display_outdoor_summary">Uporabi samo nastavitve za zunaj</string>
+  <string name="live_display_hint">LiveDisplay lahko pomaga zmanjšati obremenitev oči in vam pomaga spati ponoči. Kliknite tukaj, da ga preizkusite!</string>
+  <string name="accessibility_quick_settings_live_display_off">ŽiviZaslon izklopljen.</string>
+  <string name="accessibility_quick_settings_live_display_auto">ŽiviZaslon: samodejno.</string>
+  <string name="accessibility_quick_settings_live_display_day">ŽiviZaslon: dnevni način.</string>
+  <string name="accessibility_quick_settings_live_display_night">ŽiviZaslon: nočni način.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">ŽiviZaslon: zunaj.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">ŽiviZaslon je izklopljen.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">ŽiviZaslon spremenjen na samodejno.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">ŽiviZaslon spremenjen na dnevni način.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">ŽiviZaslon spremenjen na nočni način.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">ŽiviZaslon spremenjen na zunaj.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Vzorec za odklepanje</string>
   <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">Dodatki</string>
   <!-- Theme installation error notification -->
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -69,4 +115,8 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Predloge</string>
+  <string name="qs_themes_content_description">Prilagodi svojo predlogo</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Продуктивність</string>
   <string name="perf_profile_bias_power">Ефективність</string>
   <string name="perf_profile_bias_perf">Швидкий</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматичний</string>
   <string name="live_display_auto_summary">Автоматично підбирати температуру кольору екрана після заходу і сходу сонця</string>
@@ -189,4 +190,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Теми</string>
   <string name="qs_themes_content_description">Налаштувати тему</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

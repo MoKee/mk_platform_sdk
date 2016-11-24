@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Перформансе</string>
   <string name="perf_profile_bias_power">Ефикасност</string>
   <string name="perf_profile_bias_perf">Брзо</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatski</string>
   <string name="live_display_auto_summary">Аутоматски подеси температуру боја екрана након заласка и изласка сунца</string>
@@ -157,4 +158,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

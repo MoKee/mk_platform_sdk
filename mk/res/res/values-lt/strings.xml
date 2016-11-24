@@ -60,15 +60,14 @@
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefonas</string>
   <string name="profileGroupCalendar">Kalendorius</string>
-  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">El. paštas</string>
-  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Kita</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <!-- Performance profiles -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">Išjungti</string>
@@ -81,6 +80,7 @@
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
   <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">Priedai</string>
   <!-- Theme installation error notification -->
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -106,4 +106,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

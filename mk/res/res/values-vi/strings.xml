@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Hiệu năng</string>
   <string name="perf_profile_bias_power">Hiệu quả</string>
   <string name="perf_profile_bias_perf">Nhanh chóng</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Tự động</string>
   <string name="live_display_auto_summary">Tự động điều chỉnh nhiệt màu của màn hình sau khi mặt trời lặn và mặt trời mọc</string>
@@ -188,4 +189,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Chủ đề</string>
   <string name="qs_themes_content_description">Tùy chỉnh các chủ đề của bạn</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

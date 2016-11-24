@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Teljesítmény</string>
   <string name="perf_profile_bias_power">Hatékonyság</string>
   <string name="perf_profile_bias_perf">Gyors</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatikus</string>
   <string name="live_display_auto_summary">Automatikusan beállítja a képernyő színhőmérsékletét naplemente és napkelte után</string>
@@ -186,4 +187,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Témák</string>
   <string name="qs_themes_content_description">Témád testreszabása</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

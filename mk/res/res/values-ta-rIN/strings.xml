@@ -53,6 +53,7 @@
   <string name="perf_profile_pwrsv">மின்சார சேமிப்பு</string>
   <string name="perf_profile_bal">சமப்படுத்தப்பட்ட</string>
   <string name="perf_profile_perf">செயற்திறன்</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">அணை</string>
   <string name="live_display_day">பகல்</string>
@@ -88,4 +89,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

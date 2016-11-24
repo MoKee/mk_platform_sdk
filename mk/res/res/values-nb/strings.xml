@@ -60,6 +60,7 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Tillat at et program endrer telefonens plassering.</string>
   <!-- Performance profiles -->
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">Av</string>
   <string name="live_display_night">Natt</string>
@@ -97,4 +98,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Temaer</string>
   <string name="qs_themes_content_description">Tilpasse temaet</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

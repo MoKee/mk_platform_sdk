@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Desempenho</string>
   <string name="perf_profile_bias_power">Eficiência</string>
   <string name="perf_profile_bias_perf">Rápida</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automática</string>
   <string name="live_display_auto_summary">Ajusta automaticamente a cor da temperatura da tela depois do pôr e nascer do sol</string>
@@ -188,4 +189,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Temas</string>
   <string name="qs_themes_content_description">Personalizar o seu tema</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>
