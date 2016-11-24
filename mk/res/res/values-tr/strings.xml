@@ -71,6 +71,7 @@
   <string name="permlab_writePhoneLocation">telefon konumunu yaz</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance profiles -->
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_off">Kapat</string>
   <string name="live_display_night">Gece</string>
@@ -121,4 +122,6 @@ uyguladığınız temayı değiştirmesine izin verir.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Temalar</string>
   <string name="qs_themes_content_description">Temanızı özelleştirin</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

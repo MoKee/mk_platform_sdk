@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">ביצועים</string>
   <string name="perf_profile_bias_power">יעילות</string>
   <string name="perf_profile_bias_perf">מהירות</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">אוטומטי</string>
   <string name="live_display_auto_summary">התאם אוטומטית את צבעי המסך לזמני היום</string>
@@ -158,4 +159,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

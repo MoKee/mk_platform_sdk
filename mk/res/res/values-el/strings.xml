@@ -64,6 +64,7 @@
   <string name="perf_profile_perf">Απόδοση</string>
   <string name="perf_profile_bias_power">Αποδοτικότητα</string>
   <string name="perf_profile_bias_perf">Σύντομη</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Αυτόματο</string>
   <string name="live_display_auto_summary">Ρυθμίζει αυτόματα τη θερμοκρασία χρώματος της οθόνης μετά από το ηλιοβασίλεμα και την ανατολή του ηλίου</string>
@@ -120,4 +121,6 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

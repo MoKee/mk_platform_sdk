@@ -88,6 +88,7 @@
   <string name="perf_profile_perf">Leistung</string>
   <string name="perf_profile_bias_power">Effizienz</string>
   <string name="perf_profile_bias_perf">Schnell</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatisch</string>
   <string name="live_display_auto_summary">Farbtemperatur des Bildschirms nach Sonnenaufgang &amp; Sonnenuntergang automatisch anpassen</string>
@@ -166,4 +167,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Themen</string>
   <string name="qs_themes_content_description">Ihr Design anpassen</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

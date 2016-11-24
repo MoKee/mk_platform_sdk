@@ -74,7 +74,7 @@
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
+  <string name="profileGroupSMS">Pesan Singkat</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Lainnya</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Kinerja</string>
   <string name="perf_profile_bias_power">Efisiensi</string>
   <string name="perf_profile_bias_perf">Cepat</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Otomatis</string>
   <string name="live_display_auto_summary">Otomatis menyesuaikan suhu warna layar setelah sunset dan sunrise</string>
@@ -188,4 +189,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Tema</string>
   <string name="qs_themes_content_description">Kustomisasi tema anda</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

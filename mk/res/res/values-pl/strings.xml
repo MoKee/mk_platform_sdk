@@ -91,6 +91,7 @@
   <string name="perf_profile_perf">Wysoka wydajność</string>
   <string name="perf_profile_bias_power">Wydajność</string>
   <string name="perf_profile_bias_perf">Szybkie</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatyczne</string>
   <string name="live_display_auto_summary">Automatycznie dopasuj temperaturę kolorów ekranu po zachodzie i wschodnie słońca</string>
@@ -148,9 +149,13 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Umożliwia aplikacji dostęp do usługi wydajności. Nie powinno być potrzebne zwykłym aplikacjom.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">dostęp do menadżera usługi blokady ekranu</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Umożliwia aplikacji dostęp do usługi menedżera blokady ekranu.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">dostęp do menadżera usługi blokady ekranu</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Umożliwia aplikacjom systemowym dostęp do menadżera usługi blokady ekranu.</string>
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
@@ -160,8 +165,10 @@
   <string name="permdesc_weather_write">Umożliwia aplikacji aktualizowanie zawartości od dostawcy pogody.</string>
   <string name="permlab_weather_access_mgr">dostęp do serwisu pogodowego</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">modyfikowanie danych użycia bazy danych</string>
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">czytaj dane użycia bazy danych</string>
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">zarządzanie ustawieniami LiveDisplay</string>
@@ -172,4 +179,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Tematy</string>
   <string name="qs_themes_content_description">Dostosowywanie motywu</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>

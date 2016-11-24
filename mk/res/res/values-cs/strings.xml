@@ -87,6 +87,7 @@
   <string name="perf_profile_perf">Výkon</string>
   <string name="perf_profile_bias_power">Efektivita</string>
   <string name="perf_profile_bias_perf">Rychlý</string>
+  <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatický</string>
   <string name="live_display_auto_summary">Automaticky nastavit teplotu barev obrazovky po západu slunce</string>
@@ -160,4 +161,6 @@
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Motivy vzhledu</string>
   <string name="qs_themes_content_description">Vlastní nastavení šablony</string>
+  <!-- Privacy Guard -->
+  <!-- Permissions used by remote preferences -->
 </resources>
