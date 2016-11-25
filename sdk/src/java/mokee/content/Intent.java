@@ -142,4 +142,18 @@ public class Intent {
     public static final String ACTION_OPEN_LIVE_LOCKSCREEN_SETTINGS =
             "mokee.intent.action.OPEN_LIVE_LOCKSCREEN_SETTINGS";
 
+    /**
+     * Broadcast action: lid state changed
+     * @hide
+     */
+    public static final String ACTION_LID_STATE_CHANGED =
+            "mokee.intent.action.LID_STATE_CHANGED";
+
+    /**
+     * This field is part of the intent {@link #ACTION_LID_STATE_CHANGED}.
+     * Intent extra field for the state of lid/cover
+     * @hide
+     */
+    public static final String EXTRA_LID_STATE =
+            "mokee.intent.extra.LID_STATE";
 }
