@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Efisiensi</string>
   <string name="perf_profile_bias_perf">Cepat</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Maksimum penghematan daya. Mengurangi kinerja perangkat, mematikan latar belakang tugas dan data, mematikan animasi, dan mengurangi laju bingkai tampilan</string>
+  <string name="perf_profile_bal_summary">Keseimbangan kinerja dan daya karakteristik optimal</string>
+  <string name="perf_profile_perf_summary">Mode kinerja tinggi. Berguna untuk aplikasi yang memerlukan latency rendah dan throughput tinggi ketika konsumsi daya tidak perhatian</string>
+  <string name="perf_profile_bias_power_summary">Mendukung penghematan daya. Batas maksimum power CPU dan mengoptimalkan untuk penghematan biaya latensi lebih tinggi daya</string>
+  <string name="perf_profile_bias_perf_summary">Mendukung kinerja. Mengurangi latensi dengan konsumsi daya yang sedikit meningkat</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Otomatis</string>
   <string name="live_display_auto_summary">Otomatis menyesuaikan suhu warna layar setelah sunset dan sunrise</string>
@@ -190,5 +195,8 @@
   <string name="qs_themes_label">Tema</string>
   <string name="qs_themes_content_description">Kustomisasi tema anda</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Penjaga Privasi</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">mengelola pengaturan jarak jauh</string>
+  <string name="permdesc_manageRemotePrefs">Memungkinkan aplikasi untuk mengelola pengaturan jarak jauh</string>
 </resources>

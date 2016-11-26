@@ -172,6 +172,7 @@
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">zarządzanie ustawieniami LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Umożliwia aplikacji, aby skonfigurować zaawansowane ustawienia wyświetlania.</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_manage_audio_sessions">Zarządzanie zmianami w sesji audio</string>

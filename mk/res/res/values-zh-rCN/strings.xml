@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">效率模式</string>
   <string name="perf_profile_bias_perf">快速</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">最大限度节约电池用量。降低设备性能，禁用后台任务和数据，禁用动画效果，降低显示的帧率。</string>
+  <string name="perf_profile_bal_summary">平衡性能与功耗</string>
+  <string name="perf_profile_perf_summary">高性能模式。当功耗不是主要的考虑因素时，适用于需要低延迟和高吞吐量的应用</string>
+  <string name="perf_profile_bias_power_summary">节能优先。以较高延迟为代价，限制 CPU 的处理能力，产生延迟更高的节能效果</string>
+  <string name="perf_profile_bias_perf_summary">性能优先。产生较高功耗从而降低延迟</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">自动</string>
   <string name="live_display_auto_summary">清晨和傍晚自动调节屏幕色温</string>
@@ -190,5 +195,8 @@
   <string name="qs_themes_label">主题</string>
   <string name="qs_themes_content_description">自定义主题</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">隐私保护</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">管理远程设置</string>
+  <string name="permdesc_manageRemotePrefs">允许应用管理远程设置</string>
 </resources>

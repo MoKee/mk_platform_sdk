@@ -190,5 +190,6 @@
   <string name="qs_themes_label">Thèmes</string>
   <string name="qs_themes_content_description">Personnaliser votre thème</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Protection des données</string>
   <!-- Permissions used by remote preferences -->
 </resources>

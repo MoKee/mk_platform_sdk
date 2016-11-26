@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Eficiência</string>
   <string name="perf_profile_bias_perf">Rápida</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Economia de energia máxima. Reduz o desempenho do dispositivo, desabilita dados e tarefas em segundo plano, desabilita animações e reduz a taxa de quadros da exposição</string>
+  <string name="perf_profile_bal_summary">Balanço de desempenho ótimo e características de potência</string>
+  <string name="perf_profile_perf_summary">Modo de alto desempenho. Útil para aplicações que requerem baixa latência e a taxa de transferência mais alta, quando o consumo de energia não é uma preocupação</string>
+  <string name="perf_profile_bias_power_summary">Favorece a economia de energia. Limitar a potência máxima de CPU e otimizar o custo maior latência de economia de energia</string>
+  <string name="perf_profile_bias_perf_summary">Favorecem o desempenho. Reduz a latência com consumo de energia ligeiramente aumentado</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automática</string>
   <string name="live_display_auto_summary">Ajusta automaticamente a cor da temperatura da tela depois do pôr e nascer do sol</string>
@@ -190,5 +195,8 @@
   <string name="qs_themes_label">Temas</string>
   <string name="qs_themes_content_description">Personalizar o seu tema</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Privacy Guard</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">gerenciar configurações remotas</string>
+  <string name="permdesc_manageRemotePrefs">Permite que um aplicativo gerencie configurações remotas</string>
 </resources>

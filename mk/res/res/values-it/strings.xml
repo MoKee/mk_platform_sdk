@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Efficienza</string>
   <string name="perf_profile_bias_perf">Rapido</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Massimo risparmio energetico. Riduce le performance, disabilita i processi in background, disabilita le animazioni e riduce la frequenza d\'aggiornamento del display</string>
+  <string name="perf_profile_bal_summary">Bilanciamento di prestazioni ottimali e autonomia residua</string>
+  <string name="perf_profile_perf_summary">Modalità alte prestazioni. Utile per applicazioni che richiedono massime prestazioni quando il consumo di batteria non è un problema</string>
+  <string name="perf_profile_bias_power_summary">Massimo risparmio energetico. Limita la potenza della CPU, prestazioni più basse per ottimizzare l\'autonomia</string>
+  <string name="perf_profile_bias_perf_summary">Massime performance. Velocizza al massimo le applicazioni al costo di un consumo energetico più elevato</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatico</string>
   <string name="live_display_auto_summary">Regola automaticamente la temperatura del colore dello schermo dopo il tramonto e l\'alba</string>
@@ -190,5 +195,8 @@
   <string name="qs_themes_label">Temi</string>
   <string name="qs_themes_content_description">Personalizza il tuo tema</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Impostazioni Privacy</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">gestisci impostazioni remote</string>
+  <string name="permdesc_manageRemotePrefs">Consenti a una app di gestire le impostazioni remote</string>
 </resources>

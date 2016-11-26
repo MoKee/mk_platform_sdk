@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">效率</string>
   <string name="perf_profile_bias_perf">快速</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">最大省電。 降低裝置效能、停用背景工作和資料、停用動畫，並降低顯示幀速率</string>
+  <string name="perf_profile_bal_summary">平衡最佳效能和功率</string>
+  <string name="perf_profile_perf_summary">高效能模式。 當功耗不是主要的考慮因素時，適用於需要低延遲和高用量的應用程式</string>
+  <string name="perf_profile_bias_power_summary">偏向省電。 限制最大 CPU 功耗，並以更高的延遲為主最佳化省電</string>
+  <string name="perf_profile_bias_perf_summary">偏向效能。 減少延遲、稍微增加功耗</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">自動</string>
   <string name="live_display_auto_summary">在日落和日出後自動調節螢幕的顏色溫度</string>
@@ -190,5 +195,8 @@
   <string name="qs_themes_label">主題</string>
   <string name="qs_themes_content_description">自訂您的主題</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">隱私守衛</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">管理遠端設定</string>
+  <string name="permdesc_manageRemotePrefs">允許應用程式來管理遠端設定</string>
 </resources>
