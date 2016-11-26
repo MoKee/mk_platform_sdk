@@ -21,7 +21,7 @@
   <string name="permlab_publishCustomTile">在快速设置面板中创建一个自定义瓷块</string>
   <string name="permdesc_publishCustomTile">允许应用发布一个快速设置瓷片。</string>
   <string name="permlab_modifyNetworkSettings">更改系统的网络设置</string>
-  <string name="permdesc_modifyNetworkSettings">允许应用程序对一组有限的系统的网络设置进行更改。</string>
+  <string name="permdesc_modifyNetworkSettings">机油问答</string>
   <string name="permlab_modifySoundSettings">更改系统声音设置</string>
   <string name="permdesc_modifySoundSettings">允许应用程序对一组有限的系统的声音设置进行更改。</string>
   <string name="permlab_bindCustomTileListenerService">绑定到自定义瓷片侦听器服务</string>
