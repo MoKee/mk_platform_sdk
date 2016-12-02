@@ -703,8 +703,8 @@ package mokee.platform {
     field public static final java.lang.String LIVE_LOCK_SCREEN_MANAGER_ACCESS = "mokee.permission.LIVE_LOCK_SCREEN_MANAGER_ACCESS";
     field public static final java.lang.String MANAGE_ALARMS = "mokee.permission.MANAGE_ALARMS";
     field public static final java.lang.String MANAGE_LIVEDISPLAY = "mokee.permission.MANAGE_LIVEDISPLAY";
-    field public static final java.lang.String MANAGE_PARTS = "mokee.permission.MANAGE_PARTS";
     field public static final java.lang.String MANAGE_PERSISTENT_STORAGE = "mokee.permission.MANAGE_PERSISTENT_STORAGE";
+    field public static final java.lang.String MANAGE_REMOTE_PREFERENCES = "mokee.permission.MANAGE_REMOTE_PREFERENCES";
     field public static final java.lang.String MODIFY_MSIM_PHONE_STATE = "mokee.permission.MODIFY_MSIM_PHONE_STATE";
     field public static final java.lang.String MODIFY_NETWORK_SETTINGS = "mokee.permission.MODIFY_NETWORK_SETTINGS";
     field public static final java.lang.String MODIFY_PROFILES = "mokee.permission.MODIFY_PROFILES";
@@ -738,6 +738,9 @@ package mokee.platform {
 
   public static final class R.attr {
     ctor public R.attr();
+    field public static final int minSummaryLines = 1057030154; // 0x3f01000a
+    field public static final int replacesKey = 1057030153; // 0x3f010009
+    field public static final int requiresAction = 1057030152; // 0x3f010008
     field public static final int requiresConfig = 1057030148; // 0x3f010004
     field public static final int requiresFeature = 1057030147; // 0x3f010003
     field public static final int requiresOwner = 1057030150; // 0x3f010006
@@ -837,6 +840,15 @@ package mokee.preference {
     method protected boolean persistBoolean(boolean);
   }
 
+  public class MKSystemSettingDropDownPreference extends mokee.preference.SelfRemovingDropDownPreference {
+    ctor public MKSystemSettingDropDownPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public MKSystemSettingDropDownPreference(android.content.Context, android.util.AttributeSet);
+    method public int getIntValue(int);
+    method protected java.lang.String getPersistedString(java.lang.String);
+    method protected boolean isPersisted();
+    method protected boolean persistString(java.lang.String);
+  }
+
   public class MKSystemSettingListPreference extends mokee.preference.SelfRemovingListPreference {
     ctor public MKSystemSettingListPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public MKSystemSettingListPreference(android.content.Context, android.util.AttributeSet);
@@ -855,13 +867,48 @@ package mokee.preference {
     method protected boolean persistBoolean(boolean);
   }
 
-  public class ConstraintsHelper {
-    ctor public ConstraintsHelper(android.content.Context, android.util.AttributeSet, Preference);
-    method public void applyConstraints();
-    method public static boolean hasSystemFeature(android.content.Context, java.lang.String);
-    method public static boolean isDozeAvailable(android.content.Context);
-    method public static boolean isPackageInstalled(android.content.Context, java.lang.String, boolean);
-    method public static boolean isVoiceCapable(android.content.Context);
+  public class RemotePreference extends mokee.preference.SelfRemovingPreference {
+    ctor public RemotePreference(android.content.Context, android.util.AttributeSet, int, int);
+    ctor public RemotePreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public RemotePreference(android.content.Context, android.util.AttributeSet);
+    method public android.content.Intent getReceiverIntent();
+    method protected java.lang.String getRemoteKey(android.os.Bundle);
+    method public void onAttached();
+    method public void onDetached();
+    method public void onRemoteUpdated(android.os.Bundle);
+    field public static final java.lang.String ACTION_REFRESH_PREFERENCE = "mokee.intent.action.REFRESH_PREFERENCE";
+    field public static final java.lang.String ACTION_UPDATE_PREFERENCE = "mokee.intent.action.UPDATE_PREFERENCE";
+    field public static final java.lang.String EXTRA_ENABLED = ":mk:pref_enabled";
+    field public static final java.lang.String EXTRA_KEY = ":mk:pref_key";
+    field public static final java.lang.String EXTRA_SUMMARY = ":mk:pref_summary";
+    field public static final java.lang.String META_REMOTE_KEY = "org.cyanogenmod.settings.summary.key";
+    field public static final java.lang.String META_REMOTE_RECEIVER = "org.cyanogenmod.settings.summary.receiver";
+    field protected final android.content.Context mContext;
+  }
+
+  public class RemotePreferenceUpdater extends android.content.BroadcastReceiver {
+    ctor public RemotePreferenceUpdater();
+    method protected boolean fillResultExtras(android.content.Context, java.lang.String, android.os.Bundle);
+    method protected java.lang.String getSummary(android.content.Context, java.lang.String);
+    method public static void notifyChanged(android.content.Context, java.lang.String);
+    method public void onReceive(android.content.Context, android.content.Intent);
+  }
+
+  public class SecureSettingSwitchPreference extends mokee.preference.SelfRemovingSwitchPreference {
+    ctor public SecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public SecureSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public SecureSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+  public class SelfRemovingDropDownPreference extends DropDownPreference {
+    ctor public SelfRemovingDropDownPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public SelfRemovingDropDownPreference(android.content.Context, android.util.AttributeSet);
+    ctor public SelfRemovingDropDownPreference(android.content.Context);
+    method public boolean isAvailable();
+    method public void onBindViewHolder(PreferenceViewHolder);
     method public void setAvailable(boolean);
   }
 
@@ -869,24 +916,44 @@ package mokee.preference {
     ctor public SelfRemovingListPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public SelfRemovingListPreference(android.content.Context, android.util.AttributeSet);
     ctor public SelfRemovingListPreference(android.content.Context);
+    method public boolean isAvailable();
     method public void onBindViewHolder(PreferenceViewHolder);
-    method protected void setAvailable(boolean);
+    method public void setAvailable(boolean);
   }
 
   public class SelfRemovingPreference extends Preference {
+    ctor public SelfRemovingPreference(android.content.Context, android.util.AttributeSet, int, int);
     ctor public SelfRemovingPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public SelfRemovingPreference(android.content.Context, android.util.AttributeSet);
     ctor public SelfRemovingPreference(android.content.Context);
+    method public boolean isAvailable();
     method public void onBindViewHolder(PreferenceViewHolder);
-    method protected void setAvailable(boolean);
+    method public void setAvailable(boolean);
   }
 
   public class SelfRemovingSwitchPreference extends SwitchPreference {
     ctor public SelfRemovingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public SelfRemovingSwitchPreference(android.content.Context, android.util.AttributeSet);
     ctor public SelfRemovingSwitchPreference(android.content.Context);
+    method public boolean isAvailable();
     method public void onBindViewHolder(PreferenceViewHolder);
-    method protected void setAvailable(boolean);
+    method public void setAvailable(boolean);
+  }
+
+  public class SettingsHelper {
+    method public static synchronized mokee.preference.SettingsHelper get(android.content.Context);
+    method public boolean getBoolean(android.net.Uri, boolean);
+    method public int getInt(android.net.Uri, int);
+    method public java.lang.String getString(android.net.Uri);
+    method public void putBoolean(android.net.Uri, boolean);
+    method public void putInt(android.net.Uri, int);
+    method public void putString(android.net.Uri, java.lang.String);
+    method public void startWatching(mokee.preference.SettingsHelper.OnSettingsChangeListener, android.net.Uri...);
+    method public void stopWatching(mokee.preference.SettingsHelper.OnSettingsChangeListener);
+  }
+
+  public static abstract interface SettingsHelper.OnSettingsChangeListener {
+    method public abstract void onSettingsChanged(android.net.Uri);
   }
 
   public class SystemSettingSwitchPreference extends mokee.preference.SelfRemovingSwitchPreference {
@@ -1156,6 +1223,7 @@ package mokee.providers {
     field public static final java.lang.String USE_EDGE_SERVICE_FOR_GESTURES = "edge_service_for_gestures";
     field public static final java.lang.String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
     field public static final java.lang.String VOLUME_ADJUST_SOUNDS_ENABLED = "volume_adjust_sounds_enabled";
+    field public static final java.lang.String VOLUME_ANSWER_CALL = "volume_answer_call";
     field public static final java.lang.String VOLUME_KEYS_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
     field public static final java.lang.String VOLUME_WAKE_SCREEN = "volume_wake_screen";
     field public static final java.lang.String ZEN_ALLOW_LIGHTS = "allow_lights";
