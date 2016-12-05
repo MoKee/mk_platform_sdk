@@ -18,10 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee-systeem</string>
+  <string name="permlab_publishCustomTile">Maak een aangepaste tegel in snelle instellingen</string>
+  <string name="permdesc_publishCustomTile">Staat een app toe om een snelle instelling tegel te maken.</string>
   <string name="permlab_modifyNetworkSettings">netwerk systeeminstellingen wijzigen</string>
   <string name="permdesc_modifyNetworkSettings">Geeft toestemming aan een app om wijzigingen aan te brengen in vliegtuigmodus en aan de mobile data netwerk instellingen.</string>
   <string name="permlab_modifySoundSettings">geluid van de steeminstellingen wijzigen</string>
   <string name="permdesc_modifySoundSettings">Geeft toestemming aan een app om wijzigingen aan te brengen in de onderbreking modus van de geluidsinstellingen.</string>
+  <string name="permlab_bindCustomTileListenerService">koppelen met een aangepaste tegel listener-service</string>
+  <string name="permdesc_bindCustomTileListenerService">Laat de app om te binden aan de bovenste interface van de service van een aangepaste tegel-listener.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">status weergave van de telefoon en data aansluiting met steun van meerdere SIMs</string>
   <string name="permdesc_readMSPhoneState">Geeft toestemming aan een app om de telefoon status en de data connecties met steun van meerdere SIMs te zien.</string>
@@ -53,7 +57,10 @@
   <string name="permlab_managePersistentStorage">blijvende opslag beheren</string>
   <string name="permdesc_managePersistentStorage">Geeft toestemming aan een app om te lezen of schrijven van de eigenschappen, dit kan een fabriek reset veroorzaken.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Aangepaste tegel luisteraar</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">toevoegen en verwijderen van apps aan beschermde apps</string>
+  <string name="permdesc_protectedApp">Kan een app om te markeren van andere apps als beschermd en vergrendelen.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Standaard</string>
@@ -79,41 +86,117 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Geeft toestemming aan een app om de locatie van de telefoon te wijzigingen.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Batterij besparing</string>
+  <string name="perf_profile_bal">Gebalanceerd</string>
+  <string name="perf_profile_perf">Prestaties</string>
+  <string name="perf_profile_bias_power">Efficiëntie</string>
+  <string name="perf_profile_bias_perf">Snel</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Maximale energiebesparing. Vermindert Apparaatprestaties, achtergrondtaken en gegevens uitgeschakeld, schakelt animaties en vermindert de framesnelheid weergeven</string>
+  <string name="perf_profile_bal_summary">Balans van optimale prestaties en kenmerken.</string>
+  <string name="perf_profile_perf_summary">Hoge prestaties-modus. Handig voor toepassingen waarbij lage latentie en hoogste doorvoersnelheid wanneer stroomverbruik niet een zorg is</string>
+  <string name="perf_profile_bias_power_summary">Het voordeel van energiebesparing. Maximale CPU-vermogen beperken en optimaliseren om energie te besparen ten koste van hogere latency</string>
+  <string name="perf_profile_bias_perf_summary">Het voordeel van prestaties. Latentie met een licht verhoogd energieverbruik vermindert</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatisch</string>
+  <string name="live_display_auto_summary">Automatisch instellen van de kleurtemperatuur van scherm na zonsondergang en zonsopgang</string>
   <string name="live_display_off">Uit</string>
+  <string name="live_display_off_summary">Alle wijzigingen uitschakelen</string>
+  <string name="live_display_day">Dag</string>
+  <string name="live_display_day_summary">Gerbuik alleen dag instellingen</string>
   <string name="live_display_night">Nacht</string>
+  <string name="live_display_night_summary">Alleen nacht instellingen gebruiken</string>
+  <string name="live_display_outdoor">Buitenshuis (heldere zon)</string>
+  <string name="live_display_outdoor_summary">Gebruik alleen buitenshuis instellingen</string>
+  <string name="live_display_hint">LiveDisplay kan u helpen bij verminderen van vermoeide ogen en helpt bij het slapen. Klik hier om het uit te proberen!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay uit.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto-modus.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: dag modus.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: Nachtmodus.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: buiten modus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay is uitgeschakeld.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay gewijzigd in Automodus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay gewijzigd in dag modus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay gewijzigd in Nachtmodus.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay veranderd naar buiten modus.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">third party lock screen</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Activeerd voor third party lock screen</string>
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Geavanceerde instellingen</string>
   <!-- Touchscreen gestures -->
+  <string name="screen_gestures_panel_title">Gebaren</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Extra\'s</string>
+  <string name="touchscreen_gesture_haptic_feedback">Trilsignaal feedback</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Trillen door een gebaar</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Thema installeren mislukt</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kan niet worden geïnstalleerd</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Thema opnieuw instellen</string>
+  <string name="theme_reset_notification_message">Systeemthema hersteld als gevolg van meerdere app crashes.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">toegang tot themaservice</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Geeft een applicatie toegang tot de thema service. Dit zou nooit nodig moeten zijn voor normale applicaties.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">Raadpleeg thema-info</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Staat de app toe informatie over uw thema\'s te lezen en te bepalen welke thema u hebt toegepast.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">wijzig uw thema\'s</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Hiermee kan de app nieuwe thema\'s invoegen en wijzigen welk thema u hebt toegepast.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">toegang prestaties manager</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Hiermee kan de app toegang krijgen tot de zaklampservice. Dit zou niet vereist moeten zijn voor normale apps.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">Toegangsdienst live lock scherm manager</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Activeerd een app voor toegang tot de live lock scherm manager-service.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">Toegangsdienst live lock scherm manager</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Staat systeem apps toe voor de live lock scherm manager-service.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">live lock scherm manager dienstverlening</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Hiermee kan een service bieden van de levende lock scherm manager-service.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">weer lezen</string>
+  <string name="permdesc_weather_read">Staat het lezen van een weer provider te lezen.</string>
+  <string name="permlab_weather_write">update weer provider</string>
+  <string name="permdesc_weather_write">staat een app toe de weer info aan te passen.</string>
+  <string name="permlab_weather_bind">Als een provider-service weer binden</string>
+  <string name="permdesc_weather_bind">Staat een app toe zich te identificeren als weer provider.</string>
+  <string name="permlab_weather_access_mgr">weer toegangsdienst</string>
+  <string name="permdesc_weather_access_mgr">Geeft de app toegang tot de weer service. dit is niet. odig voor standaard apps.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">Wijzig database van uw data verbruik </string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Staat een app toe wijzigingen aan de brengen aan de database van uw gegevens verbruik</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">Lees de database van uw gegevens verbruik</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Staat een app toe de gegevens te lezen van de gegevens verbruik database.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">LiveDisplay-instellingen beheren</string>
+  <string name="permdesc_manageLiveDisplay">Staat een app toe wijzigingen. aan te brengen aan de advanced display instellingen</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">observeer de wijzigingen van audio </string>
+  <string name="permdesc_observe_audio_sessions">staat een app toe: audio streams te observeren die gemaakt worden of stuk zijn.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">audio sessie wijzigingen beheren</string>
+  <string name="permdesc_manage_audio_sessions">Sta een app toe updates te zenden naar audio stream.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Thema \'s</string>
+  <string name="qs_themes_content_description">Pas uw thema aan</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Privacybescherming</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">instellingen voor externe verbindingen beheren</string>
+  <string name="permdesc_manageRemotePrefs">een app toestaan wijzigingen te maken aan externe verbindingen </string>
 </resources>

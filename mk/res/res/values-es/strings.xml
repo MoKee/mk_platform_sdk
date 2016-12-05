@@ -18,12 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
-  <string name="permlab_publishCustomTile">crear una ficha personalizada en el panel de configuración rápida</string>
+  <string name="permlab_publishCustomTile">crear un toggle personalizado en el panel de configuración rápida</string>
   <string name="permdesc_publishCustomTile">Permitir que la aplicación publique una ficha de configuración rápida.</string>
   <string name="permlab_modifyNetworkSettings">cambiar configuración de red del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Permite a una aplicación hacer cambios a un conjunto restringido de configuraciones del sistema red.</string>
   <string name="permlab_modifySoundSettings">cambiar ajustes de sonido del sistema</string>
   <string name="permdesc_modifySoundSettings">Permite a una aplicación hacer cambios a un conjunto restringido de configuraciones de sonido del sistema.</string>
+  <string name="permlab_bindCustomTileListenerService">enlazar a un toggle personalizado de servicio de escucha</string>
+  <string name="permdesc_bindCustomTileListenerService">Permite que la aplicación se vincule a la interfaz superior de un toggle personalizado de servicio de escucha.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs</string>
   <string name="permdesc_readMSPhoneState">Permite a una aplicación ver el estado del teléfono y la conexión de datos con soporte para múltiples SIMs.</string>
@@ -55,6 +57,7 @@
   <string name="permlab_managePersistentStorage">gestionar el almacenamiento persistente</string>
   <string name="permdesc_managePersistentStorage">Permite a una aplicación leer o escribir propiedades que pueden persistir aún con un reinicio de fábrica.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Toggle personalizado de escucha</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">agregar y quitar aplicaciones a aplicaciones protegidas</string>
   <string name="permdesc_protectedApp">Permite una aplicación marcar otras aplicaciones protegidas y bloquearlas.</string>
@@ -89,6 +92,11 @@
   <string name="perf_profile_bias_power">Eficiencia</string>
   <string name="perf_profile_bias_perf">Rápido</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Máximo ahorro de energía. Reduce el rendimiento del dispositivo, desactiva datos y tareas en segundo plano, desactiva las animaciones y reduce la velocidad de fotogramas de la pantalla</string>
+  <string name="perf_profile_bal_summary">Equilibrio de rendimiento optimo y características de energía</string>
+  <string name="perf_profile_perf_summary">Modo de alto rendimiento. Útil para aplicaciones que requieren baja latencia y mayor rendimiento, cuando el consumo de energía no es una preocupación</string>
+  <string name="perf_profile_bias_power_summary">Favorecer ahorro de energía. Limitar la potencia máxima del CPU y optimizar para poder ahorrar energía a costa de mayor latencia</string>
+  <string name="perf_profile_bias_perf_summary">Favorecer el rendimiento. Reduce la latencia con un consumo de energía ligeramente mayor</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatico</string>
   <string name="live_display_auto_summary">Ajustar automáticamente la temperatura del color de la pantalla después del atardecer y el amanecer</string>
@@ -146,11 +154,17 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Permitir que la aplicación acceda al gestor de rendimiento. No debería ser necesario para aplicaciones normales.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">acceso al servicio encargado del bloqueo de pantalla viva</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Permite que una aplicación acceda al servicio encargado del bloqueo de pantalla viva.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">acceso al servicio encargado del bloqueo de pantalla viva</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Permite que una aplicación del sistema acceda al servicio encargado del bloqueo de pantalla viva.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">proporcionar servicio encargado del bloqueo de pantalla viva</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Permite a un servicio proveer el servicio encargado del bloqueo de pantalla viva.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">leer el tiempo</string>
   <string name="permdesc_weather_read">Permitir que la aplicación lea contenido del proveedor del tiempo.</string>
@@ -181,5 +195,8 @@
   <string name="qs_themes_label">Temas</string>
   <string name="qs_themes_content_description">Personaliza tu tema</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Proteger Privacidad</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">administrar la configuración remota</string>
+  <string name="permdesc_manageRemotePrefs">Permite a una aplicación administrar la configuración remota</string>
 </resources>

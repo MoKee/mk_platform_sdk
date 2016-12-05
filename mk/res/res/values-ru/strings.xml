@@ -95,6 +95,8 @@
   <string name="perf_profile_pwrsv_summary">Максимальное энергосбережение. Снижение производительности устройства, отключение фоновых задач и передачи данных, отключение анимации и уменьшение частоты кадров дисплея</string>
   <string name="perf_profile_bal_summary">Баланс производительности и мощности</string>
   <string name="perf_profile_perf_summary">Режим высокой производительности. Полезно для приложений, требующих высокую производительность</string>
+  <string name="perf_profile_bias_power_summary">Режим энергосбережения. Ограничивает максимальные частоты процессора и оптимизирует энергосбережение во времени ожидания</string>
+  <string name="perf_profile_bias_perf_summary">Режим производительности. Уменьшает время ожидания с небольшим увлечением потребляемой мощности</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматический</string>
   <string name="live_display_auto_summary">Автоматически регулировать температуру цвета экрана после заката и восхода солнца</string>
@@ -195,4 +197,6 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Менеджер защиты личных данных</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">управление удаленными настройками</string>
+  <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удаленными настройками</string>
 </resources>

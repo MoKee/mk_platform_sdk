@@ -21,12 +21,24 @@
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">urejanje sistemskih profilov</string>
+  <string name="permdesc_modifyProfiles">Omogoča aplikaciji urejanje sistemskih profilov.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">uporabi strojni framework</string>
+  <string name="permdesc_useHardwareFramework">Omogoča aplikaciji dostop do MK strojnega frameworka.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">neposredno spremeni alarme</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permdesc_manage_alarms">Omogoča aplikaciji vklop/izklop načrtovanih alarmov.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">dostop do načrtovanih alarmov</string>
+  <string name="permdesc_read_alarms">Omogoča aplikaciji, da prebere načrtovane alarme.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">spremeni MK sistemske nastavitve</string>
+  <string name="permdesc_writeSettings">Omogoča aplikaciji speminjanje MK sistemskih nastavitev.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">spremeni MK varne sistemske nastavitve</string>
+  <string name="permdesc_writeSecureSettings">Omogoči aplikaciji speminjanje MK varnih sistemskih nastavitev. Ni za uporabo z normalnimi aplikacijami.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
@@ -86,12 +98,18 @@
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Napredne nastavitve</string>
   <!-- Touchscreen gestures -->
   <string name="screen_gestures_panel_title">Vzorec za odklepanje</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Dodatki</string>
+  <string name="touchscreen_gesture_haptic_feedback">Haptične povratne informacije</string>
+  <string name="touchscreen_gesture_haptic_feedback_summary">Zatresi, ko prepoznaš potezo</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Namestitev teme je spodletela</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> ni uspelo namestiti</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Ponastavitev teme</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -107,6 +125,7 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_write">posodobi ponudnike vremena</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
