@@ -22,8 +22,13 @@
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">urejanje sistemskih profilov</string>
+  <string name="permdesc_modifyProfiles">Omogoča aplikaciji urejanje sistemskih profilov.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">uporabi strojni framework</string>
+  <string name="permdesc_useHardwareFramework">Omogoča aplikaciji dostop do MK strojnega frameworka.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">neposredno spremeni alarme</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">vklopi načrtovane alarne</string>
   <string name="permdesc_manage_alarms">Omogoča aplikaciji izklop vsek načrtovanih alarmov.</string>
