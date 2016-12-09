@@ -57,6 +57,7 @@
 
     <!-- Defined in MKParts -->
     <protected-broadcast android:name="cn.jpush.android.intent.TAG_ALIAS_CALLBACK" />
+    <protected-broadcast android:name="cn.jpush.android.intent.CONNECTION" />
 
     <!-- Must be required by an, to ensure that only the system can bind to it.
          @hide -->
