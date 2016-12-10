@@ -19,7 +19,7 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Système MoKee</string>
   <string name="permlab_publishCustomTile">créer une tuile personnalisée dans le panneau de configuration rapide</string>
-  <string name="permdesc_publishCustomTile">Permettre à une application de publier rapidement quelques paramètres.</string>
+  <string name="permdesc_publishCustomTile">Permettre à une application de publier une tuile dans les paramètres rapides.</string>
   <string name="permlab_modifyNetworkSettings">modifier les paramètres de réseau du système</string>
   <string name="permdesc_modifyNetworkSettings">Autorise une application à effectuer des changements sur le mode avion et le réglage des données mobiles.</string>
   <string name="permlab_modifySoundSettings">modifier les paramètres système de son</string>
@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Efficacité</string>
   <string name="perf_profile_bias_perf">Rapide</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Économies d’énergie maximales. Réduit les performances de l’appareil, désactive les données et les tâches en arrière-plan, et désactive les animations et réduit la fréquence d’affichage</string>
+  <string name="perf_profile_bal_summary">Équilibre entre performances optimales et autonomie</string>
+  <string name="perf_profile_perf_summary">Mode haute performance. Utile pour les applications nécessitant une latence faible et un débit élevé lorsque la consommation d’énergie n’est pas un problème</string>
+  <string name="perf_profile_bias_power_summary">Préférer l\'autonomie. Limiter la puissance maximale du processeur et optimiser l\'autonomie au détriment d\'une latence plus élevée</string>
+  <string name="perf_profile_bias_perf_summary">Préférer la performance. Réduit la latence avec une légère augmentation de la consommation</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatique</string>
   <string name="live_display_auto_summary">Ajuster automatiquement la température de couleur de l\'écran après le coucher et le lever du soleil</string>
@@ -192,4 +197,6 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Protection des données</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">gérer les paramètres de contrôle</string>
+  <string name="permdesc_manageRemotePrefs">Autoriser une application à gérer les paramètres distants</string>
 </resources>
