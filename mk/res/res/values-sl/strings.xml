@@ -99,14 +99,6 @@
   <string name="accessibility_quick_settings_live_display_changed_outdoor">ŽiviZaslon spremenjen na zunaj.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Napredne nastavitve</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Vzorec za odklepanje</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Dodatki</string>
-  <string name="touchscreen_gesture_haptic_feedback">Haptične povratne informacije</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Zatresi, ko prepoznaš potezo</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Namestitev teme je spodletela</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> ni uspelo namestiti</string>

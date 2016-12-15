@@ -118,14 +118,6 @@
   <string name="permlab_thirdPartyKeyguard">harmadik féltől származó záróképernyő</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Lehetővé teszi egy alkalmazás számára, hogy bizonytalan záróképernyőként legyen használva.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Haladó beállítások</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Kézmozdulatok</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Extrák</string>
-  <string name="touchscreen_gesture_haptic_feedback">Rezgés visszajelzés</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Rezgés amikor egy gesztust érzékel</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Téma telepítése sikertelen</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g>telepítése sikertelen</string>

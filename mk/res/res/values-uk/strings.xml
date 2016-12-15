@@ -92,6 +92,8 @@
   <string name="perf_profile_bias_power">Ефективність</string>
   <string name="perf_profile_bias_perf">Швидкий</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Максимальне збереження енергії. Знижує продуктивність пристрою, вимикає фонові процеси і дані, вимикає анімації, та зменшує відображення частоти кадрів</string>
+  <string name="perf_profile_bal_summary">Баланс енергетичних характеристик і оптимальної продуктивності</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматичний</string>
   <string name="live_display_auto_summary">Автоматично підбирати температуру кольору екрана після заходу і сходу сонця</string>
@@ -118,14 +120,6 @@
   <string name="permlab_thirdPartyKeyguard">екран блокування сторонніх виробників</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Дозволяє додатку використовуватися в якості ненадійного блокування екрану.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Розширені налаштування</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Жести</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Додатково</string>
-  <string name="touchscreen_gesture_haptic_feedback">Вібро-відгук</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Вібрувати при захопленні жесту</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Не вдалося інсталювати тему</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не вдалося інсталювати</string>

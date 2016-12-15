@@ -123,14 +123,6 @@
   <string name="permlab_thirdPartyKeyguard">third party lock screen</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Activeerd voor third party lock screen</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Geavanceerde instellingen</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Gebaren</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Extra\'s</string>
-  <string name="touchscreen_gesture_haptic_feedback">Trilsignaal feedback</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Trillen door een gebaar</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Thema installeren mislukt</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kan niet worden geïnstalleerd</string>

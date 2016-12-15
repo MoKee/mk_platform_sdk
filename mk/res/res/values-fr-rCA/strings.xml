@@ -123,14 +123,6 @@
   <string name="permlab_thirdPartyKeyguard">écran de verrouillage tiers</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Autoriser une application à être utilisé comme un écran de verrouillage non sécurisé.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Parmètres avancés</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Gestes</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Bonus</string>
-  <string name="touchscreen_gesture_haptic_feedback">Retour tactile</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Vibrer quand un geste est détecté</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Impossible d\'installer le thème</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> impossible d\'installer</string>

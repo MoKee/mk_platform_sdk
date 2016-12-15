@@ -108,14 +108,6 @@
   <string name="permlab_thirdPartyKeyguard">מסך נעילה חיצוני</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">אפשר לישום להחליף את המסך נעילה.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">הגדרות מתקדמות</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">מחוות</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">תוספות</string>
-  <string name="touchscreen_gesture_haptic_feedback">משוב ברטט</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">רטוט כאשר זוהתה מחווה</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">התקנת ערכת הנושא נכשלה</string>
   <string name="theme_install_error_message">התקנת <xliff:g id="theme">%1$s </xliff:g> נכשלה</string>

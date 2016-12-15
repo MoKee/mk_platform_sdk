@@ -123,14 +123,6 @@
   <string name="permlab_thirdPartyKeyguard">сторонние блокировщики экрана</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Разрешить приложению использоваться как блокировщик экрана.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Расширенные настройки</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Жесты</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Дополнения</string>
-  <string name="touchscreen_gesture_haptic_feedback">Виброотклик</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Вибрировать при обнаружении жеста</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Не удалось установить тему</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не удалось установить</string>

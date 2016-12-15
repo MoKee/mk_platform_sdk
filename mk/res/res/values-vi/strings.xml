@@ -118,14 +118,6 @@
   <string name="permlab_thirdPartyKeyguard">màn hình khóa của bên thứ ba</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Cho phép một ứng dụng được sử dụng như một màn hình khóa không an toàn.</string>
-  <!-- Device specific settings -->
-  <string name="device_settings_app_name">Cài đặt nâng cao</string>
-  <!-- Touchscreen gestures -->
-  <string name="screen_gestures_panel_title">Cử chỉ</string>
-  <!-- Touchscreen gesture haptic feedback -->
-  <string name="touchscreen_gesture_extras">Tính năng bổ sung</string>
-  <string name="touchscreen_gesture_haptic_feedback">Thông tin phản hồi Haptic</string>
-  <string name="touchscreen_gesture_haptic_feedback_summary">Báo rung khi một cử chỉ đã được phát hiện</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Không thể cài đặt chủ đề</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> không cài đặt</string>
