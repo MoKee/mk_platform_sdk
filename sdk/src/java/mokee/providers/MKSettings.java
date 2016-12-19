@@ -815,36 +815,6 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
-         * Whether to show the headset icon in the status bar
-         * @hide
-         */
-        public static final String SHOW_HEADSET_ICON = "show_headset_icon";
-
-        /** @hide */
-        public static final Validator SHOW_HEADSET_ICON_VALIDATOR =
-                sBooleanValidator;
-
-        /**
-         * Whether to show the su icon in the status bar
-         * @hide
-         */
-        public static final String SHOW_SU_ICON = "show_su_icon";
-
-        /** @hide */
-        public static final Validator SHOW_SU_ICON_VALIDATOR =
-                sBooleanValidator;
-
-        /**
-         * Whether to show the time accurate to the second in the status bar
-         * @hide
-         */
-        public static final String STATUS_BAR_CLOCK_SHOW_SECOND = "status_bar_clock_show_second";
-
-        /** @hide */
-        public static final Validator STATUS_BAR_CLOCK_SHOW_SECOND_VALIDATOR =
-                sBooleanValidator;
-
-        /**
          * Whether to show the traffic in the status bar
          * @hide
          * The value is int (0: Hide  or 1: Only Outgoing 2: Only Incoming 3: both).
@@ -1950,9 +1920,6 @@ public final class MKSettings {
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
                 MKSettings.System.AEGIS_WARDEN_FORCE_STOP,
-                MKSettings.System.SHOW_HEADSET_ICON,
-                MKSettings.System.SHOW_SU_ICON,
-                MKSettings.System.STATUS_BAR_CLOCK_SHOW_SECOND,
                 MKSettings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
                 MKSettings.System.NAVIGATION_BAR_HEIGHT,
                 MKSettings.System.NAV_BUTTONS,
@@ -2079,9 +2046,6 @@ public final class MKSettings {
                 new ArrayMap<String, Validator>();
         static {
             VALIDATORS.put(AEGIS_WARDEN_FORCE_STOP, AEGIS_WARDEN_FORCE_STOP_VALIDATOR);
-            VALIDATORS.put(SHOW_HEADSET_ICON, SHOW_HEADSET_ICON_VALIDATOR);
-            VALIDATORS.put(SHOW_SU_ICON, SHOW_SU_ICON_VALIDATOR);
-            VALIDATORS.put(STATUS_BAR_CLOCK_SHOW_SECOND, STATUS_BAR_CLOCK_SHOW_SECOND_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_NETWORK_TRAFFIC_STYLE, STATUS_BAR_NETWORK_TRAFFIC_STYLE_VALIDATOR);
             VALIDATORS.put(NAVIGATION_BAR_HEIGHT, NAVIGATION_BAR_HEIGHT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_PLAY_QUEUE, NOTIFICATION_PLAY_QUEUE_VALIDATOR);
