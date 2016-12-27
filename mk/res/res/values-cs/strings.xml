@@ -98,6 +98,7 @@
   <string name="live_display_night_summary">Použít pouze noční nastavení</string>
   <string name="live_display_outdoor">Outdoor (jasné slunce)</string>
   <string name="live_display_outdoor_summary">Použít pouze venkovní nastavení</string>
+  <string name="live_display_hint">LiveDisplay může pomoci snížit namáhání očí a pomáhá vám v noci spát. Chcete to vyzkoušet!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay vypnuto.</string>
   <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatický režim.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay: denní režim.</string>
