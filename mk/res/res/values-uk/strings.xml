@@ -18,19 +18,19 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
-  <string name="permlab_publishCustomTile">Створити налаштовувану плитку в межах панелі швидкого доступу</string>
+  <string name="permlab_publishCustomTile">створити налаштовувану плитку в межах панелі швидкого доступу</string>
   <string name="permdesc_publishCustomTile">Дозволяє додатку публікувати блок в швидких налаштуваннях.</string>
   <string name="permlab_modifyNetworkSettings">змінити налаштування мережі системи</string>
-  <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і налаштуваннях мобільної передачі даних.</string>
+  <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і в налаштуваннях мобільної передачі даних.</string>
   <string name="permlab_modifySoundSettings">змінити налаштування системних звуків</string>
   <string name="permdesc_modifySoundSettings">Дозволяє додатку вносити зміни налаштувань звуку в режимі переривань.</string>
   <string name="permlab_bindCustomTileListenerService">прив\'язати до служби налаштування плиток користувача</string>
   <string name="permdesc_bindCustomTileListenerService">Дозволяє додатку зв\'язати інтерфейс верхнього рівня з службою плиток користувача.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">Перегляд режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
+  <string name="permlab_readMSPhoneState">перегляд режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
   <string name="permdesc_readMSPhoneState">Дозволяє додатку відстежувати стан і дані підключення телефону з підтримкою декількох SIM-карт.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">Зміна режима роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
+  <string name="permlab_modifyMSPhoneState">зміна режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
   <string name="permdesc_modifyMSPhoneState">Дозволяє додатку змінювати стан і дані підключення телефону з підтримкою декількох SIM-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">змінити системний профіль</string>
@@ -94,6 +94,9 @@
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv_summary">Максимальне збереження енергії. Знижує продуктивність пристрою, вимикає фонові процеси і дані, вимикає анімації, та зменшує відображення частоти кадрів</string>
   <string name="perf_profile_bal_summary">Баланс енергетичних характеристик і оптимальної продуктивності</string>
+  <string name="perf_profile_perf_summary">Режим високої продуктивності. Корисно для додатків, що вимагають низьку затримку і найвищу пропускну здатність, коли енергоспоживання не має значення</string>
+  <string name="perf_profile_bias_power_summary">Сприяє економії енергії. Обмеження максимальної потужності процесора і оптимізація для енергозбереження за рахунок вищої затримки</string>
+  <string name="perf_profile_bias_perf_summary">Продуктивність. Зменшує час затримки з трохи збільшеним енергоспоживання</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматичний</string>
   <string name="live_display_auto_summary">Автоматично підбирати температуру кольору екрана після заходу і сходу сонця</string>
@@ -185,5 +188,8 @@
   <string name="qs_themes_label">Теми</string>
   <string name="qs_themes_content_description">Налаштувати тему</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Сторож Приватності</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">керування віддаленими параметрами</string>
+  <string name="permdesc_manageRemotePrefs">Дозволяє додатку керувати налаштуваннями віддаленого підключення</string>
 </resources>
