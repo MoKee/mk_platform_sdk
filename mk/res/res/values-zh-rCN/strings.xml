@@ -52,7 +52,7 @@
   <string name="permdesc_writeSettings">允许应用程序修改魔趣系统设置。</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">修改魔趣系统安全设置</string>
-  <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不供使用正常的应用程序。</string>
+  <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不适用于一般的应用程序。</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
   <string name="permdesc_managePersistentStorage">允许应用程序的读取或写入，该操作可能会恢复出厂设置。</string>
@@ -167,7 +167,7 @@
   <string name="permlab_weather_bind">绑定天气更新源</string>
   <string name="permdesc_weather_bind">允许应用设定为天气更新源</string>
   <string name="permlab_weather_access_mgr">访问天气服务</string>
-  <string name="permdesc_weather_access_mgr">允许应用程序访问系统中的天气服务，对普通应用不应有些需求。</string>
+  <string name="permdesc_weather_access_mgr">允许应用程序访问天气服务，普通应用通常不需要此权限。</string>
   <!-- DataUsageProvider write permission title -->
   <string name="permlab_dataUsageWrite">修改数据使用 db</string>
   <!-- DataUsageProvider write permission description -->
