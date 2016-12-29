@@ -57,6 +57,8 @@
   <string name="permdesc_managePersistentStorage">Umožňuje aplikaci číst a zapisovat vlastnosti, které mohou přetrvat i po obnově do továrního nastavení.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">přidávat a odebírat aplikace do chráněných</string>
+  <string name="permdesc_protectedApp">Umožňuje aplikaci označit jiné aplikace jako chráněné a zamknout je.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Výchozí</string>

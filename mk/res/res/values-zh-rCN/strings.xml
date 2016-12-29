@@ -52,7 +52,7 @@
   <string name="permdesc_writeSettings">允许应用程序修改魔趣系统设置。</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">修改魔趣系统安全设置</string>
-  <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不供使用正常的应用程序。</string>
+  <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不适用于一般的应用程序。</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
   <string name="permdesc_managePersistentStorage">允许应用程序的读取或写入，该操作可能会恢复出厂设置。</string>
@@ -93,10 +93,10 @@
   <string name="perf_profile_bias_perf">快速</string>
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv_summary">最大限度节约电池用量。降低设备性能，禁用后台任务和数据，禁用动画效果，降低显示的帧率。</string>
-  <string name="perf_profile_bal_summary">平衡性能与功耗</string>
-  <string name="perf_profile_perf_summary">高性能模式。当功耗不是主要的考虑因素时，适用于需要低延迟和高吞吐量的应用</string>
-  <string name="perf_profile_bias_power_summary">节能优先。以较高延迟为代价，限制 CPU 的处理能力，产生延迟更高的节能效果</string>
-  <string name="perf_profile_bias_perf_summary">性能优先。产生较高功耗从而降低延迟</string>
+  <string name="perf_profile_bal_summary">平衡设备的性能与功耗。</string>
+  <string name="perf_profile_perf_summary">高性能模式。在不考虑功耗的情况下，适用于需要低延迟和高吞吐量的应用。</string>
+  <string name="perf_profile_bias_power_summary">节能优先。以较高延迟为代价，限制 CPU 的处理能力，从而达到节能的目的。</string>
+  <string name="perf_profile_bias_perf_summary">性能优先。通过产生较高的功耗从而降低延迟。</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">自动</string>
   <string name="live_display_auto_summary">清晨和傍晚自动调节屏幕色温</string>
@@ -132,7 +132,7 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_accessThemeService">访问主题服务</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">允许应用程序访问主题服务。正常应用程序不应需要此权限。</string>
+  <string name="permdesc_accessThemeService">允许应用程序访问主题服务。普通应用通常不需要此权限。</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">读取主题信息</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

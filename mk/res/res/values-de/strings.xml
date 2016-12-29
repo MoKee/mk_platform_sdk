@@ -166,5 +166,6 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Datenschutz</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">Remote-Einstellungen verwalten</string>
   <string name="permdesc_manageRemotePrefs">Erlaubt einer App, Remoteeinstellungen zu verwalten</string>
 </resources>
