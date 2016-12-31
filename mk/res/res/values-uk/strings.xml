@@ -20,38 +20,38 @@
   <string name="mokee_system_label">Система MoKee</string>
   <string name="permlab_publishCustomTile">Створити налаштовувану плитку в межах панелі швидкого доступу</string>
   <string name="permdesc_publishCustomTile">Дозволяє додатку публікувати блок в швидких налаштуваннях.</string>
-  <string name="permlab_modifyNetworkSettings">змінити налаштування мережі системи</string>
-  <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і налаштуваннях мобільної передачі даних.</string>
+  <string name="permlab_modifyNetworkSettings">змінити мережеві налаштування системи</string>
+  <string name="permdesc_modifyNetworkSettings">Дозволяє додатку вносити зміни в режимі \"Політ\" і в налаштуваннях мобільної передачі даних.</string>
   <string name="permlab_modifySoundSettings">змінити налаштування системних звуків</string>
   <string name="permdesc_modifySoundSettings">Дозволяє додатку вносити зміни налаштувань звуку в режимі переривань.</string>
-  <string name="permlab_bindCustomTileListenerService">прив\'язати до служби налаштування плиток користувача</string>
+  <string name="permlab_bindCustomTileListenerService">прив\'язака до служби плиток користувача</string>
   <string name="permdesc_bindCustomTileListenerService">Дозволяє додатку зв\'язати інтерфейс верхнього рівня з службою плиток користувача.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">Перегляд режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
   <string name="permdesc_readMSPhoneState">Дозволяє додатку відстежувати стан і дані підключення телефону з підтримкою декількох SIM-карт.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">Зміна режима роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
+  <string name="permlab_modifyMSPhoneState">зміна режиму роботи та передачі даних телефону з підтримкою декількох SIM-карт</string>
   <string name="permdesc_modifyMSPhoneState">Дозволяє додатку змінювати стан і дані підключення телефону з підтримкою декількох SIM-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">змінити системний профіль</string>
+  <string name="permlab_modifyProfiles">змінити системні профілі</string>
   <string name="permdesc_modifyProfiles">Дозволяє додатку змінювати системні профілі.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">використовувати апаратний framework</string>
   <string name="permdesc_useHardwareFramework">Дозволити додатку доступ до використання апаратного framework.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">напряму змінювати сигналізації</string>
-  <string name="permdesc_write_alarms">Дозволяє додаткам додавати, змінювати чи видаляти всі ваші тривоги.</string>
+  <string name="permlab_write_alarms">напряму змінювати будильники</string>
+  <string name="permdesc_write_alarms">Дозволяє додаткам додавати, змінювати чи видаляти всі ваші будильники.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">перемикач запланованих будильників</string>
-  <string name="permdesc_manage_alarms">Дозволяє додатку включати або вимикати заплановані будильники.</string>
+  <string name="permdesc_manage_alarms">Дозволяє додатку вмикати або вимикати заплановані будильники.</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">доступ до запланованих будильників</string>
   <string name="permdesc_read_alarms">Дозволяє додатку читати заплановані будильники.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">змінити налаштування системи МК</string>
-  <string name="permdesc_writeSettings">Дозволяє додатку змінювати настройки системи MK.</string>
+  <string name="permdesc_writeSettings">Дозволяє додатку змінювати налаштування системи MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">зміна параметрів безпеки системи МК</string>
+  <string name="permlab_writeSecureSettings">зміна налаштувань безпеки системи МК</string>
   <string name="permdesc_writeSecureSettings">Дозволяє додатку змінювати налаштування системи безпеки MK. Не використовуйте в звичайних додатках.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Керування постійним сховищем даних</string>
@@ -59,8 +59,8 @@
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Налаштування плиток користувача</string>
   <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">додавання та видалення додатків з захищених</string>
-  <string name="permdesc_protectedApp">Дозволяє додатку відмітити інші додатки як захищені і заблокувати їх.</string>
+  <string name="permlab_protectedApp">додавання та видалення додатків із захищених</string>
+  <string name="permdesc_protectedApp">Дозволяє додатку позначити інші додатки як захищені і заблокувати їх.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартний</string>
@@ -97,22 +97,22 @@
   <string name="live_display_off">Вимкнути</string>
   <string name="live_display_off_summary">Вимкнути всі налаштування</string>
   <string name="live_display_day">День</string>
-  <string name="live_display_day_summary">Використовувати тільки денні параметри</string>
+  <string name="live_display_day_summary">Використовувати тільки денні налаштування</string>
   <string name="live_display_night">Ніч</string>
-  <string name="live_display_night_summary">Використовувати тільки нічні параметри</string>
+  <string name="live_display_night_summary">Використовувати тільки нічні налаштування</string>
   <string name="live_display_outdoor">На вулиці (яскраве сонце)</string>
-  <string name="live_display_outdoor_summary">Використовувати тільки параметри «На вулиці»</string>
+  <string name="live_display_outdoor_summary">Використовувати тільки налаштування «На вулиці»</string>
   <string name="live_display_hint">LiveDisplay може допомогти зменшити навантаження на очі та допомогти вам спати по ночах. Натисніть тут, щоб спробувати його!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay вимкнений.</string>
   <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: автоматичний режим.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay: денний режим.</string>
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: нічний режим.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим на відкритому повітрі.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим на вулиці.</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay вимкнено.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay змінились до автоматичного режиму.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay змінились до денного режиму.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay змінились до нічного режиму.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay змінились до режиму на відкритому повітрі.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay змінився до автоматичного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay змінився до денного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay змінився до нічного режиму.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay змінився до режиму на вулиці.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">екран блокування сторонніх виробників</string>
   <!-- Third party keyguard permission description -->
@@ -123,7 +123,7 @@
   <string name="screen_gestures_panel_title">Жести</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Додатково</string>
-  <string name="touchscreen_gesture_haptic_feedback">Вібро-відгук</string>
+  <string name="touchscreen_gesture_haptic_feedback">Вібровідгук</string>
   <string name="touchscreen_gesture_haptic_feedback_summary">Вібрувати при захопленні жесту</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Не вдалося інсталювати тему</string>
@@ -134,43 +134,42 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_accessThemeService">доступ до служби тем</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Дозволяє програмі отримувати доступ до служби тем. Цей дозвіл не використовується звичайними програмами.</string>
+  <string name="permdesc_accessThemeService">Дозволяє додатку отримувати доступ до служби тем. Цей дозвіл не використовується звичайними додатками.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">читати дані про вашу тему</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Дозволяє додаткам читати дані про теми і
-       виявляти яку тему ви застосували.</string>
+  <string name="permdesc_readThemesDesc">Дозволяє додаткам читати дані про теми і виявляти яку тему ви застосували.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writeThemes">змінювати ваші теми</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Дозволяє додатку встановлювати нові теми і змінювати яку ви застосували.</string>
+  <string name="permdesc_writeThemesDesc">Дозволяє додатку встановлювати нові теми і змінювати ту, яку ви застосували.</string>
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">дозвіл менеджера продуктивності</string>
   <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Дозволяє програмі отримувати доступ до продуктивності. Цей дозвіл не потрібен звичайним додаткам.</string>
+  <string name="permdesc_perfAccessDesc">Дозволяє додатку отримувати доступ до продуктивності. Цей дозвіл не потрібен звичайним додаткам.</string>
   <!-- Access live lock screen manager service permission label -->
   <string name="permlab_accessLiveLockScreenService">доступ до сервісу живого екрану блокування</string>
   <!-- Access live lock screen manager service permission description -->
   <string name="permdesc_accessLiveLockScreenService">Дозволяє додатку доступ до сервісу живого екрану блокування.</string>
   <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">доступ до сервісу живого екрана блокування</string>
+  <string name="permlab_accessLiveLockScreenServicePrivate">доступ до сервісу живого екрану блокування</string>
   <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Дозволити системним додаткам доступ до служби живого екрана блокування.</string>
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Дозволити системним додаткам доступ до служби живого екрану блокування.</string>
   <!-- Live lock screen manager service provider permission label -->
   <string name="permlab_accessLiveLockScreenServiceProvider">Забезпечити послугу LiveLockScreen</string>
   <!-- Live lock screen manager service provider permission description -->
   <string name="permdesc_accessLiveLockScreenServiceProvider">Досволити послугу для забезпечення live lock screen manager.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">читати погоду</string>
-  <string name="permdesc_weather_read">Дозволити програмі читати контент з надавача погоди.</string>
+  <string name="permdesc_weather_read">Дозволити додатку читати контент з надавача погоди.</string>
   <string name="permlab_weather_write">оновити провайдера погоди</string>
-  <string name="permdesc_weather_write">Дозволяє додатком оновлювати дані постачальника погоди.</string>
+  <string name="permdesc_weather_write">Дозволяє додатку оновлювати дані провайдера погоди.</string>
   <string name="permlab_weather_bind">Використовувати як провайдера погоди</string>
-  <string name="permdesc_weather_bind">Дозволяє програмі бути службою постачальника погоди.</string>
+  <string name="permdesc_weather_bind">Дозволяє додатку бути службою провайдера погоди.</string>
   <string name="permlab_weather_access_mgr">доступ до служби погоди</string>
-  <string name="permdesc_weather_access_mgr">Дозволити програмі доступ до послуги погоди в системі. Це ніколи не потрібно для звичайних програм.</string>
+  <string name="permdesc_weather_access_mgr">Дозволити додатку доступ до послуги погоди в системі. Це ніколи не потрібно для звичайних програм.</string>
   <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">изменять БД использования данных</string>
+  <string name="permlab_dataUsageWrite">змінювати БД використання даних</string>
   <!-- DataUsageProvider write permission description -->
   <string name="permdesc_dataUsageWrite">Дозволити запис у БД використання даних.</string>
   <!-- DataUsageProvider read permission title -->
@@ -178,8 +177,8 @@
   <!-- DataUsageProvider read permission description -->
   <string name="permdesc_dataUsageRead">Дозволити доступ на читання з БД використання даних.</string>
   <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">Керування параметрами LiveDisplay</string>
-  <string name="permdesc_manageLiveDisplay">Дозволяє додатком керувати розширеними параметрами дисплея.</string>
+  <string name="permlab_manageLiveDisplay">керування налаштуваннями LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Дозволяє додатку керувати розширеними налаштуваннями дисплея.</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">спостерігати за змінами аудіо сесії</string>
   <string name="permdesc_observe_audio_sessions">Дозволяти програмі створювати і знищувати аудіопотоки.</string>
