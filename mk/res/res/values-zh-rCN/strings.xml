@@ -40,7 +40,7 @@
   <string name="permdesc_useHardwareFramework">允许应用访问魔趣硬件框架</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">直接更改闹钟</string>
-  <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除你的闹钟</string>
+  <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除您的闹钟</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">更改已设定的闹钟</string>
   <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
@@ -102,7 +102,7 @@
   <string name="live_display_night_summary">仅使用夜间模式</string>
   <string name="live_display_outdoor">户外模式（强光）</string>
   <string name="live_display_outdoor_summary">仅使用户外模式</string>
-  <string name="live_display_hint">LiveDisplay能帮助你减缓用眼疲劳并在晚上能帮助你入睡。点此试用。</string>
+  <string name="live_display_hint">LiveDisplay 能帮助您缓解用眼疲劳并在晚上帮助您入睡。点此试用。</string>
   <string name="accessibility_quick_settings_live_display_off">关闭增强显示</string>
   <string name="accessibility_quick_settings_live_display_auto">增强显示：自动模式</string>
   <string name="accessibility_quick_settings_live_display_day">增强显示：日间模式</string>
