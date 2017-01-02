@@ -28,10 +28,10 @@
   <string name="permdesc_bindCustomTileListenerService">允许应用绑定到自定义瓷片侦听器服务的顶层界面。</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">在支持多SIM卡的设备上查看电话状态和数据连接</string>
-  <string name="permdesc_readMSPhoneState">允许应用程序查看支持多SIM卡设备的电话状态和数据连接。</string>
+  <string name="permdesc_readMSPhoneState">允许应用程序在支持多SIM卡的设备上查看电话状态和数据连接。</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">在支持多SIM卡的设备上修改手机状态和数据连接</string>
-  <string name="permdesc_modifyMSPhoneState">允许应用程序修改支持多SIM卡设备的电话状态和数据连接。</string>
+  <string name="permdesc_modifyMSPhoneState">允许应用程序在支持多SIM卡的设备上修改电话状态和数据连接。</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">修改系统配置文件</string>
   <string name="permdesc_modifyProfiles">允许应用程序修改系统配置文件</string>
@@ -40,7 +40,7 @@
   <string name="permdesc_useHardwareFramework">允许应用访问魔趣硬件框架</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">直接更改闹钟</string>
-  <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除你的闹钟</string>
+  <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除您的闹钟</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">更改已设定的闹钟</string>
   <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
@@ -108,7 +108,7 @@
   <string name="live_display_night_summary">仅使用夜间模式</string>
   <string name="live_display_outdoor">户外模式（强光）</string>
   <string name="live_display_outdoor_summary">仅使用户外模式</string>
-  <string name="live_display_hint">LiveDisplay能帮助你减缓用眼疲劳并在晚上能帮助你入睡。点此试用。</string>
+  <string name="live_display_hint">LiveDisplay 能帮助您缓解用眼疲劳并在晚上帮助您入睡。点此试用。</string>
   <string name="accessibility_quick_settings_live_display_off">关闭增强显示</string>
   <string name="accessibility_quick_settings_live_display_auto">增强显示：自动模式</string>
   <string name="accessibility_quick_settings_live_display_day">增强显示：日间模式</string>
@@ -165,7 +165,7 @@
   <string name="permlab_weather_bind">绑定天气更新源</string>
   <string name="permdesc_weather_bind">允许应用设定为天气更新源</string>
   <string name="permlab_weather_access_mgr">访问天气服务</string>
-  <string name="permdesc_weather_access_mgr">允许应用程序访问系统中的天气服务，对普通应用不应有些需求。</string>
+  <string name="permdesc_weather_access_mgr">允许应用程序访问系统中的天气服务。普通应用通常不需要此权限。</string>
   <!-- DataUsageProvider write permission title -->
   <string name="permlab_dataUsageWrite">修改数据使用 db</string>
   <!-- DataUsageProvider write permission description -->

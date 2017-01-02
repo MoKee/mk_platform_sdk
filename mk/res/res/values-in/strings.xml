@@ -63,7 +63,7 @@
   <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Standar</string>
+  <string name="profileNameDefault">Bawaan</string>
   <string name="profileNameWork">Kerja</string>
   <string name="profileNameHome">Utama</string>
   <string name="profileNameSilent">Diam</string>
@@ -99,7 +99,7 @@
   <string name="perf_profile_bias_perf_summary">Mendukung kinerja. Mengurangi latensi dengan konsumsi daya yang sedikit meningkat</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Otomatis</string>
-  <string name="live_display_auto_summary">Otomatis menyesuaikan suhu warna layar setelah sunset dan sunrise</string>
+  <string name="live_display_auto_summary">Otomatis mengatur temperatur warna layar setelah matahari terbenam dan matahari terbit</string>
   <string name="live_display_off">Mati</string>
   <string name="live_display_off_summary">Matikan semua penyesuaian</string>
   <string name="live_display_day">Hari</string>
