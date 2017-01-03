@@ -63,12 +63,12 @@
   <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Standar</string>
+  <string name="profileNameDefault">Bawaan</string>
   <string name="profileNameWork">Kerja</string>
   <string name="profileNameHome">Utama</string>
   <string name="profileNameSilent">Diam</string>
   <string name="profileNameNight">Malam</string>
-  <string name="profileNameAutomobile">Bergerak otomatis</string>
+  <string name="profileNameAutomobile">Mobil</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telepon</string>
   <string name="profileGroupCalendar">Kalender</string>
@@ -104,10 +104,10 @@
   <string name="live_display_outdoor_summary">Gunakan hanya di luar ruangan saja</string>
   <string name="live_display_hint">LiveDisplay dapat membantu mengurangi kelelahan mata dan membantu anda tidur di malam hari. Klik di sini untuk mencobanya!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay mati.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mode otomatis.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mode siang.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: mode malam.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: mode diluar.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: otomatis.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: siang.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: malam.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: diluar.</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay dimatikan.</string>
   <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay dirubah ke mode otomatis.</string>
   <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay dirubah ke mode siang hari.</string>
