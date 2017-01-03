@@ -18,8 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistem MoKee</string>
-  <string name="permlab_publishCustomTile">membuat ubin kustom dalam panel setelan cepat</string>
-  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan ubin pengaturan cepat.</string>
+  <string name="permlab_publishCustomTile">membuat tile kustom dalam panel setelan cepat</string>
+  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan tile panel cepat.</string>
   <string name="permlab_modifyNetworkSettings">merubah setelan jaringan sistem</string>
   <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
   <string name="permlab_modifySoundSettings">mengubah setelan suara sistem</string>
@@ -37,7 +37,7 @@
   <string name="permdesc_modifyProfiles">Izinkan aplikasi untuk memodifikasi profil sistem.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">gunakan kerangka kerja perangkat keras</string>
-  <string name="permdesc_useHardwareFramework">Izinkan app untuk mengakses kerangka kerja perangkat keras MK.</string>
+  <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses perangkat keras MK.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">langsung merubah alarm</string>
   <string name="permdesc_write_alarms">Izinkan aplikasi untuk menambah, mengubah atau menghapus semua alarm anda.</string>
@@ -51,7 +51,7 @@
   <string name="permlab_writeSettings">modifikasi setelan sistem MK</string>
   <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">modifikasi setelan sistem MK yang aman</string>
+  <string name="permlab_writeSecureSettings">modifikasi setelan sistem aman MK</string>
   <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi pengaturan sistem aman MK. Tidak untuk digunakan oleh aplikasi yang normal.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">mengelola penyimpanan yang tetap</string>
