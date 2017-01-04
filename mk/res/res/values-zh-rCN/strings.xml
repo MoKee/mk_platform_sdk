@@ -134,7 +134,7 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_accessThemeService">访问主题服务</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">允许应用程序访问主题服务。正常应用程序不应需要此权限。</string>
+  <string name="permdesc_accessThemeService">允许应用程序访问主题服务。普通应用通常不需要此权限。</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">读取主题信息</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
