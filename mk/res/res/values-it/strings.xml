@@ -18,8 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistema MoKee</string>
-  <string name="permlab_publishCustomTile">creare un riquadro personalizzato all\'interno del pannello impostazioni rapide</string>
-  <string name="permdesc_publishCustomTile">Consente di pubblicare un riquadro Impostazioni rapide di un app.</string>
+  <string name="permlab_publishCustomTile">creare un tile personalizzato all\'interno del pannello impostazioni rapide</string>
+  <string name="permdesc_publishCustomTile">Consenti ad un\'app di pubblicare un tile nelle impostazioni rapide.</string>
   <string name="permlab_modifyNetworkSettings">modificare le impostazioni di rete del sistema</string>
   <string name="permdesc_modifyNetworkSettings">Consenti ad un app di apportare modifiche ad un ristretto insieme di impostazioni di rete del sistema.</string>
   <string name="permlab_modifySoundSettings">modificare le impostazioni audio del sistema</string>
