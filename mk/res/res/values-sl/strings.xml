@@ -100,17 +100,22 @@
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">Napredne nastavitve</string>
   <!-- Touchscreen gestures -->
   <string name="screen_gestures_panel_title">Vzorec za odklepanje</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Dodatki</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Namestitev teme je spodletela</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Ponastavitev teme</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">prebere info o temi</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">spreminjanje tem</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance manager permission title -->
   <!-- Performance manager permission description -->
@@ -121,6 +126,7 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_write">posodobi ponudnike vremena</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
