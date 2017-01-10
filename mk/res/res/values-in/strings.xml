@@ -18,14 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistem MoKee</string>
-  <string name="permlab_publishCustomTile">membuat tile kustom dalam panel setelan cepat</string>
-  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan tile panel setelan cepat.</string>
+  <string name="permlab_publishCustomTile">membuat ikon kustom dalam panel setelan cepat</string>
+  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan ikon ke panel setelan cepat.</string>
   <string name="permlab_modifyNetworkSettings">merubah setelan jaringan sistem</string>
   <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
   <string name="permlab_modifySoundSettings">mengubah setelan suara sistem</string>
   <string name="permdesc_modifySoundSettings">Izinkan aplikasi untuk membuat perubahan pengaturan suara modus gangguan.</string>
-  <string name="permlab_bindCustomTileListenerService">mengikat ke layanan pendengar kustom ubin</string>
-  <string name="permdesc_bindCustomTileListenerService">Izinkan aplikasi untuk mengikat ke antarmuka tingkat atas layanan dari pendengar kustom ubin.</string>
+  <string name="permlab_bindCustomTileListenerService">mengikat ke layanan pendengar ikon kustom</string>
+  <string name="permdesc_bindCustomTileListenerService">Izinkan aplikasi untuk mengikat ke antarmuka tingkat atas layanan dari pendengar ikon kustom.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">lihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
   <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
@@ -57,7 +57,7 @@
   <string name="permlab_managePersistentStorage">mengelola penyimpanan yang tetap</string>
   <string name="permdesc_managePersistentStorage">Izinkan aplikasi untuk membaca atau menulis properti yang dapat bertahan melalui pengaturan ulang pabrik.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Pendengar kustom ubin</string>
+  <string name="custom_tile_listener_binding_label">Daftar ikon kustom</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">menambah dan menghapus aplikasi untuk dilindungi apps</string>
   <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
