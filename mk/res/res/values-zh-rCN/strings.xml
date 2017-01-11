@@ -18,23 +18,23 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">魔趣系统</string>
-  <string name="permlab_publishCustomTile">在快速设置面板中创建一个自定义瓷块</string>
-  <string name="permdesc_publishCustomTile">允许应用发布一个快速设置瓷片。</string>
-  <string name="permlab_modifyNetworkSettings">更改系统的网络设置</string>
-  <string name="permdesc_modifyNetworkSettings">机油问答</string>
+  <string name="permlab_publishCustomTile">在快速设置面板中创建一个自定义图块</string>
+  <string name="permdesc_publishCustomTile">允许应用建立一个快速设置图块。</string>
+  <string name="permlab_modifyNetworkSettings">更改系统网络设置</string>
+  <string name="permdesc_modifyNetworkSettings">允许应用修改飞行模式和数据连接。</string>
   <string name="permlab_modifySoundSettings">更改系统声音设置</string>
-  <string name="permdesc_modifySoundSettings">允许应用程序对一组有限的系统的声音设置进行更改。</string>
-  <string name="permlab_bindCustomTileListenerService">绑定到自定义瓷片侦听器服务</string>
-  <string name="permdesc_bindCustomTileListenerService">允许应用绑定到自定义瓷片侦听器服务的顶层界面。</string>
+  <string name="permdesc_modifySoundSettings">允许应用更改中断模式的声音设置。</string>
+  <string name="permlab_bindCustomTileListenerService">绑定到自定义图块监听服务</string>
+  <string name="permdesc_bindCustomTileListenerService">允许应用绑定到自定义图块监听服务的顶层界面。</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">在支持多SIM卡的设备上查看电话状态和数据连接</string>
-  <string name="permdesc_readMSPhoneState">允许应用程序查看支持多SIM卡设备的电话状态和数据连接。</string>
+  <string name="permdesc_readMSPhoneState">允许应用程序在支持多SIM卡的设备上查看电话状态和数据连接。</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">在支持多SIM卡的设备上修改手机状态和数据连接</string>
-  <string name="permdesc_modifyMSPhoneState">允许应用程序修改支持多SIM卡设备的电话状态和数据连接。</string>
+  <string name="permlab_modifyMSPhoneState">在支持多SIM卡的设备上修改电话状态和数据连接</string>
+  <string name="permdesc_modifyMSPhoneState">允许应用在支持多SIM卡的设备上修改电话状态和数据连接。</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">修改系统配置文件</string>
-  <string name="permdesc_modifyProfiles">允许应用程序修改系统配置文件</string>
+  <string name="permdesc_modifyProfiles">允许应用修改系统配置文件</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">使用硬件框架</string>
   <string name="permdesc_useHardwareFramework">允许应用访问魔趣硬件框架</string>
@@ -43,29 +43,29 @@
   <string name="permdesc_write_alarms">允许一个应用程序来添加、 修改或删除您的闹钟</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">更改已设定的闹钟</string>
-  <string name="permdesc_manage_alarms">允许应用程序打开或关闭您预定的闹钟。</string>
+  <string name="permdesc_manage_alarms">允许应用打开或关闭您预定的闹钟。</string>
   <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">访问计划的闹钟</string>
-  <string name="permdesc_read_alarms">允许应用程序读取您预定的闹钟。</string>
+  <string name="permlab_read_alarms">访问预定的闹钟</string>
+  <string name="permdesc_read_alarms">允许应用读取您预定的闹钟。</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">修改魔趣系统设置</string>
-  <string name="permdesc_writeSettings">允许应用程序修改魔趣系统设置。</string>
+  <string name="permdesc_writeSettings">允许应用修改魔趣系统设置。</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">修改魔趣系统安全设置</string>
   <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不适用于一般的应用程序。</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
-  <string name="permdesc_managePersistentStorage">允许应用程序的读取或写入，该操作可能会恢复出厂设置。</string>
+  <string name="permdesc_managePersistentStorage">允许应用读取或写入，该操作可能会恢复出厂设置。</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">自定义瓷片侦听器</string>
+  <string name="custom_tile_listener_binding_label">自定义图块监听</string>
   <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">编辑受保护的应用程序</string>
+  <string name="permlab_protectedApp">添加或移除受保护的应用</string>
   <string name="permdesc_protectedApp">允许应用标记受保护的应用并锁定它们。</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">默认</string>
   <string name="profileNameWork">工作</string>
-  <string name="profileNameHome">主页</string>
+  <string name="profileNameHome">住宅</string>
   <string name="profileNameSilent">静音</string>
   <string name="profileNameNight">夜间</string>
   <string name="profileNameAutomobile">汽车</string>
@@ -78,9 +78,9 @@
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">其他</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">读取手机位置</string>
+  <string name="permlab_readPhoneLocation">读取电话位置</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">允许应用程序读取有关手机位置的信息</string>
+  <string name="permdesc_readPhoneLocation">允许应用读取有关电话位置的信息</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">写入手机位置</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -90,15 +90,15 @@
   <string name="perf_profile_bal">平衡模式</string>
   <string name="perf_profile_perf">性能模式</string>
   <string name="perf_profile_bias_power">效率模式</string>
-  <string name="perf_profile_bias_perf">快速</string>
+  <string name="perf_profile_bias_perf">快速模式</string>
   <!-- LiveDisplay strings -->
-  <string name="live_display_auto">自动</string>
+  <string name="live_display_auto">自动模式</string>
   <string name="live_display_auto_summary">清晨和傍晚自动调节屏幕色温</string>
   <string name="live_display_off">关闭</string>
   <string name="live_display_off_summary">禁用所有调节</string>
   <string name="live_display_day">日间模式</string>
   <string name="live_display_day_summary">仅使用日间模式</string>
-  <string name="live_display_night">夜间</string>
+  <string name="live_display_night">夜间模式</string>
   <string name="live_display_night_summary">仅使用夜间模式</string>
   <string name="live_display_outdoor">户外模式（强光）</string>
   <string name="live_display_outdoor_summary">仅使用户外模式</string>
@@ -116,7 +116,7 @@
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">第三方锁屏</string>
   <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">允许应用程序使用不安全的屏幕锁定功能。</string>
+  <string name="permdesc_thirdPartyKeyguard">允许应用被用作非安全的锁屏。</string>
   <!-- Device specific settings -->
   <string name="device_settings_app_name">高级设置</string>
   <!-- Touchscreen gestures -->
@@ -160,28 +160,28 @@
   <!-- Live lock screen manager service provider permission description -->
   <string name="permdesc_accessLiveLockScreenServiceProvider">允许服务提供活动锁屏管理服务。</string>
   <!-- Weather Service strings -->
-  <string name="permlab_weather_read">读取天气</string>
-  <string name="permdesc_weather_read">允许应用程序读取天气信息。</string>
+  <string name="permlab_weather_read">读取天气信息</string>
+  <string name="permdesc_weather_read">允许应用读取天气信息。</string>
   <string name="permlab_weather_write">更新天气更新源</string>
-  <string name="permdesc_weather_write">允许应用程序更新的天气更新源。</string>
+  <string name="permdesc_weather_write">允许应用更新天气源信息。</string>
   <string name="permlab_weather_bind">绑定天气更新源</string>
-  <string name="permdesc_weather_bind">允许应用设定为天气更新源</string>
+  <string name="permdesc_weather_bind">允许应用设定为天气源服务</string>
   <string name="permlab_weather_access_mgr">访问天气服务</string>
   <string name="permdesc_weather_access_mgr">允许应用程序访问天气服务，普通应用通常不需要此权限。</string>
   <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">修改数据使用 db</string>
+  <string name="permlab_dataUsageWrite">修改数据使用库</string>
   <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">允许写访问 DataUsage db</string>
+  <string name="permdesc_dataUsageWrite">允许应用更新数据使用库</string>
   <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">读取数据使用 db</string>
+  <string name="permlab_dataUsageRead">读取数据使用库</string>
   <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">允许读取访问权限 DataUsage db</string>
+  <string name="permdesc_dataUsageRead">允许应用读取数据使用库</string>
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">设置增强显示</string>
   <string name="permdesc_manageLiveDisplay">允许应用调整高级显示设置</string>
   <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">读取AudioSession设置</string>
-  <string name="permdesc_observe_audio_sessions">允许应用查验音频流被创建和销毁。</string>
+  <string name="permlab_observe_audio_sessions">读取音频会话设置</string>
+  <string name="permdesc_observe_audio_sessions">允许应用检查正在被创建和销毁的音频流。</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_manage_audio_sessions">管理音频会话变更</string>
   <string name="permdesc_manage_audio_sessions">允许应用发送音频流更新。</string>
