@@ -20,15 +20,33 @@
   <string name="mokee_system_label">MoKeeシステム</string>
   <string name="permlab_publishCustomTile">クイック設定パネルに新しいタイルを設定する</string>
   <string name="permdesc_publishCustomTile">クイック設定パネルを変更することをアプリケーションに許可します。</string>
+  <string name="permlab_modifyNetworkSettings">システムのネットワーク設定の変更</string>
   <string name="permdesc_modifyNetworkSettings">機内モードとモバイルデータ設定の変更をアプリケーションに許可します。</string>
+  <string name="permlab_modifySoundSettings">システムのサウンド設定の変更</string>
+  <string name="permdesc_modifySoundSettings">アプリが割り込みモードのサウンド設定の変更を許可する。</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示</string>
+  <string name="permdesc_readMSPhoneState">アプリに複数のSIMカードをサポートした電話の状態とデータ接続を表示することを許可</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を変更</string>
+  <string name="permdesc_modifyMSPhoneState">アプリに複数のSIMカードをサポートした電話の状態とデータ接続を表示することを許可</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">システムプロファイルの変更</string>
+  <string name="permdesc_modifyProfiles">アプリにシステムプロファイルの変更を許可</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">ハードウェアフレームワークの使用</string>
+  <string name="permdesc_useHardwareFramework">アプリにMKハードウェアフレームワークへのアクセスを許可</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">アラームを直接変更</string>
+  <string name="permdesc_write_alarms">アプリにアラームの追加、変更または削除することを許可</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">スケジュールされたアラームの切り替え</string>
+  <string name="permdesc_manage_alarms">アプリにスケジュールされたアラームのオンまたはオフすることを許可</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">スケジュールされたアラームにアクセス</string>
+  <string name="permdesc_read_alarms">アプリにスケジュールされたアラームの読み取りを許可</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">MKシステム設定の変更</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
