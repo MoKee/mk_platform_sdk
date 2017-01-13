@@ -18,8 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Sistem MoKee</string>
-  <string name="permlab_publishCustomTile">membuat ikon kustom dalam panel setelan cepat</string>
-  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan ikon ke panel setelan cepat.</string>
+  <string name="permlab_publishCustomTile">membuat tile kustom dalam panel setelan cepat</string>
+  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan tile panel setelan cepat.</string>
   <string name="permlab_modifyNetworkSettings">merubah setelan jaringan sistem</string>
   <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
   <string name="permlab_modifySoundSettings">mengubah setelan suara sistem</string>
