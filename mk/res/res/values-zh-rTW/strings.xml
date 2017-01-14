@@ -54,10 +54,10 @@
   <string name="permlab_writeSecureSettings">修改 MK 系統安全設定</string>
   <string name="permdesc_writeSecureSettings">允許應用程式修改 MK 系統安全設定。僅供偵錯使用。</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">管理永久儲存</string>
+  <string name="permlab_managePersistentStorage">管理永久儲存空間</string>
   <string name="permdesc_managePersistentStorage">允許應用程式存取一些恢復原廠設定後仍可保持的屬性。</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">自訂瓷磚攔截器</string>
+  <string name="custom_tile_listener_binding_label">自訂瓷磚偵聽器</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">增加或刪除受保護的應用程式</string>
   <string name="permdesc_protectedApp">允許應用程式將其他應用程式標註為受保護的並將其鎖定。</string>
@@ -71,7 +71,7 @@
   <string name="profileNameAutomobile">汽車</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">電話</string>
-  <string name="profileGroupCalendar">行事曆</string>
+  <string name="profileGroupCalendar">日曆</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">電郵</string>
   <string name="profileGroupSMS">簡訊</string>
@@ -106,14 +106,14 @@
   <string name="live_display_day_summary">僅在日間使用設定</string>
   <string name="live_display_night">夜晚</string>
   <string name="live_display_night_summary">僅在夜間使用設定</string>
-  <string name="live_display_outdoor">戶外 （陽光）</string>
+  <string name="live_display_outdoor">戶外 (陽光)</string>
   <string name="live_display_outdoor_summary">僅使用戶外設定</string>
   <string name="live_display_hint">LiveDisplay 有助於你減緩用眼疲勞並在晚上能幫助你入睡。點此試用。</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay 關閉。</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay ︰ 自動模式。</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay ︰ 日間模式。</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay ︰ 夜間模式。</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay ︰ 室外模式。</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay︰自動模式。</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay︰日間模式。</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜間模式。</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：室外模式。</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay 關閉。</string>
   <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 改為自動模式。</string>
   <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 改為日間模式。</string>
@@ -140,7 +140,7 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writeThemes">變更佈景主題</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">允許應用程式來插入新的主題，並修改您已應用的主題。</string>
+  <string name="permdesc_writeThemesDesc">允許應用程式來插入新的主題，並修改您已套用的主題。</string>
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">讀取效能管理員</string>
   <!-- Performance manager permission description -->
@@ -152,11 +152,11 @@
   <!-- Privileged access live lock screen manager service permission label -->
   <string name="permlab_accessLiveLockScreenServicePrivate">讀取活動鎖定畫面管理服務</string>
   <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">允許系統應用程式訪問活動鎖定畫面管理服務。</string>
+  <string name="permdesc_accessLiveLockScreenServicePrivate">允許系統應用程式存取活動鎖定畫面幕管理員服務。</string>
   <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">提供活動鎖定畫面管理服務</string>
+  <string name="permlab_accessLiveLockScreenServiceProvider">提供活動鎖定畫面管理員服務</string>
   <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">允許服務提供活動鎖定畫面管理服務。</string>
+  <string name="permdesc_accessLiveLockScreenServiceProvider">允許服務提供活動鎖定畫面管理員服務。</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">讀取天氣</string>
   <string name="permdesc_weather_read">允許應用程式讀取天氣資訊。</string>
@@ -179,7 +179,7 @@
   <string name="permdesc_manageLiveDisplay">允許應用程式配置進階顯示設定。</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">觀察音頻會話變化</string>
-  <string name="permdesc_observe_audio_sessions">允許應用程式來觀察音訊串流被創建和銷毀。</string>
+  <string name="permdesc_observe_audio_sessions">允許應用程式察看音訊串流的建立和銷毀。</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_manage_audio_sessions">管理音訊會話變化</string>
   <string name="permdesc_manage_audio_sessions">允許應用程式傳送音訊串流更新。</string>
