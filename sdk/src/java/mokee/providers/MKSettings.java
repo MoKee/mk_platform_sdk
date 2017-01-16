@@ -1422,8 +1422,9 @@ public final class MKSettings {
         public static final String DISPLAY_CABC = "display_low_power";
 
         /**
-         * @deprecated
+         * @deprecated Use {@link mokee.providers.MKSettings.System#DISPLAY_CABC} instead
          */
+        @Deprecated
         public static final String DISPLAY_LOW_POWER = DISPLAY_CABC;
 
         /** @hide */

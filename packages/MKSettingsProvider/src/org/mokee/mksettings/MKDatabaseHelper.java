@@ -252,7 +252,7 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
                     }
                     db.setTransactionSuccessful();
                 } catch (SQLiteDoneException ex) {
-                    // CMSettings.System.STATUS_BAR_CLOCK is not set
+                    // MKSettings.System.STATUS_BAR_CLOCK is not set
                 } finally {
                     if (stmt != null) stmt.close();
                     db.endTransaction();
