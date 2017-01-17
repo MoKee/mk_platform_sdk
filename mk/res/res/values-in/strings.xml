@@ -27,8 +27,8 @@
   <string name="permlab_bindCustomTileListenerService">mengikat ke layanan pendengar ikon kustom</string>
   <string name="permdesc_bindCustomTileListenerService">Izinkan aplikasi untuk mengikat ke antarmuka tingkat atas layanan dari pendengar ikon kustom.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">lihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
-  <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
+  <string name="permlab_readMSPhoneState">lihat sambungan telepon dan data dengan dukungan untuk beberapa SIMs</string>
+  <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat telepon sambungan negara dan data dengan dukungan untuk beberapa SIMs.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">modifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
   <string name="permdesc_modifyMSPhoneState">Izinkan aplikasi untuk memodifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
@@ -36,8 +36,8 @@
   <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
   <string name="permdesc_modifyProfiles">Izinkan aplikasi untuk memodifikasi profil sistem.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">gunakan kerangka kerja perangkat keras</string>
-  <string name="permdesc_useHardwareFramework">Izinkan app untuk mengakses kerangka kerja perangkat keras MK.</string>
+  <string name="permlab_useHardwareFramework">gunakan hardware framework</string>
+  <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses perangkat keras MK.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">langsung merubah alarm</string>
   <string name="permdesc_write_alarms">Izinkan aplikasi untuk menambah, mengubah atau menghapus semua alarm anda.</string>
@@ -51,7 +51,7 @@
   <string name="permlab_writeSettings">modifikasi setelan sistem MK</string>
   <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem MK.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">modifikasi setelan sistem MK yang aman</string>
+  <string name="permlab_writeSecureSettings">modifikasi setelan sistem aman MK</string>
   <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi pengaturan sistem aman MK. Tidak untuk digunakan oleh aplikasi yang normal.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">mengelola penyimpanan yang tetap</string>
@@ -59,7 +59,7 @@
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Daftar ikon kustom</string>
   <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">menambah dan menghapus aplikasi untuk dilindungi apps</string>
+  <string name="permlab_protectedApp">tambah dan hapus aplikasi untuk dilindungi</string>
   <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
@@ -73,7 +73,7 @@
   <string name="profileGroupPhone">Telepon</string>
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Lainnya</string>
@@ -93,7 +93,7 @@
   <string name="perf_profile_bias_perf">Cepat</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Otomatis</string>
-  <string name="live_display_auto_summary">Otomatis menyesuaikan suhu warna layar setelah sunset dan sunrise</string>
+  <string name="live_display_auto_summary">Otomatis mengatur temperatur warna layar setelah matahari terbenam dan matahari terbit</string>
   <string name="live_display_off">Mati</string>
   <string name="live_display_off_summary">Matikan semua penyesuaian</string>
   <string name="live_display_day">Siang</string>
@@ -148,13 +148,13 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Izinkan aplikasi untuk akses layanan kinerja. Seharusnya tidak diperlukan untuk aplikasi normal.</string>
   <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">akses manajer layanan layar kunci hidup</string>
+  <string name="permlab_accessLiveLockScreenService">akses layanan layar kunci nyata</string>
   <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
+  <string name="permdesc_accessLiveLockScreenService">Memungkinkan aplikasi untuk mengakses layanan layar kunci nyata.</string>
   <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">akses manajer layanan layar kunci hidup</string>
+  <string name="permlab_accessLiveLockScreenServicePrivate">akses layanan layar kunci nyata</string>
   <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Memungkinkan aplikasi untuk mengakses layanan layar kunci hidup.</string>
   <!-- Live lock screen manager service provider permission label -->
   <string name="permlab_accessLiveLockScreenServiceProvider">memberikan manajer layanan layar kunci nyata</string>
   <!-- Live lock screen manager service provider permission description -->

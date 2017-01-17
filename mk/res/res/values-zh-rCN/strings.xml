@@ -55,7 +55,7 @@
   <string name="permdesc_writeSecureSettings">允许应用程序修改魔趣系统安全设置。不适用于一般的应用程序。</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">持久性管理存储</string>
-  <string name="permdesc_managePersistentStorage">允许应用读取或写入，该操作可能会恢复出厂设置。</string>
+  <string name="permdesc_managePersistentStorage">允许应用读取或写入，该操作在恢复出厂设置后可能仍会有效。</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">自定义图块监听</string>
   <!-- Labels for the PROTECTED_APP permission. -->
