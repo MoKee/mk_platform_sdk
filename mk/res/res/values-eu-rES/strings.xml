@@ -51,6 +51,7 @@
   <!-- Performance profiles -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_night">Gaua</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Theme installation error notification -->

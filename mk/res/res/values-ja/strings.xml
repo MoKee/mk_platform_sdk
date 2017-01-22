@@ -69,7 +69,7 @@
   <string name="profileGroupCalendar">カレンダー</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">メール</string>
-  <string name="profileGroupSMS">SMS</string>
+  <string name="profileGroupSMS">メッセージ</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">その他</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

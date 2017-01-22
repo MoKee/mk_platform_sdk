@@ -60,7 +60,9 @@
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Telefonas</string>
   <string name="profileGroupCalendar">Kalendorius</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">El. paštas</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Kita</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

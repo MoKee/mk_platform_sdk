@@ -28,6 +28,7 @@
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">alterar diretamente os alarmes</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">alternar alarmes agendados</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">modificar as definições do sistema MK</string>
@@ -57,6 +58,7 @@
   <!-- Performance profiles -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_night">Noite</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Theme installation error notification -->
