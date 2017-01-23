@@ -17,7 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">MoKee Sistemi</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
@@ -32,25 +31,14 @@
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">İlkin</string>
-  <string name="profileNameWork">İş</string>
-  <string name="profileNameHome">Ev</string>
-  <string name="profileNameSilent">Səssiz</string>
-  <string name="profileNameNight">Gecə</string>
-  <string name="profileNameAutomobile">Avtomobil</string>
   <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Telefon</string>
-  <string name="profileGroupCalendar">Təqvim</string>
-  <string name="profileGroupEmail">E-poçt</string>
   <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Digər</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
-  <string name="live_display_night">Gecə</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
