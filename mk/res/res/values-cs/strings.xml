@@ -156,6 +156,7 @@
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">čtení dat využití databáze</string>
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">spravovat nastavení LiveDisplay</string>

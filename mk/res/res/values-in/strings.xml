@@ -65,7 +65,7 @@
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Bawaan</string>
   <string name="profileNameWork">Kerja</string>
-  <string name="profileNameHome">Utama</string>
+  <string name="profileNameHome">Beranda</string>
   <string name="profileNameSilent">Diam</string>
   <string name="profileNameNight">Malam</string>
   <string name="profileNameAutomobile">Mobil</string>
@@ -123,7 +123,7 @@
   <string name="screen_gestures_panel_title">Gerakan</string>
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">Ekstra</string>
-  <string name="touchscreen_gesture_haptic_feedback">Umpan balik Getar</string>
+  <string name="touchscreen_gesture_haptic_feedback">Umpan balik haptic</string>
   <string name="touchscreen_gesture_haptic_feedback_summary">Bergetar ketika gambaran terdeteksi</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Gagal memasang tema</string>
@@ -161,13 +161,13 @@
   <string name="permdesc_accessLiveLockScreenServiceProvider">Izinkan layanan untuk memberikan manajer layanan layar kunci hidup.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">membaca cuaca</string>
-  <string name="permdesc_weather_read">Izinkan aplikasi untuk membaca isi dari penyedia cuaca.</string>
-  <string name="permlab_weather_write">pembaharuan penyedia cuaca</string>
-  <string name="permdesc_weather_write">Izinkan aplikasi untuk memperbarui isi dari penyedia cuaca.</string>
+  <string name="permdesc_weather_read">Memungkinkan aplikasi untuk membaca konten dari penyedia cuaca.</string>
+  <string name="permlab_weather_write">perbarui penyedia cuaca</string>
+  <string name="permdesc_weather_write">Memungkinkan aplikasi untuk memperbarui isi dari penyedia cuaca.</string>
   <string name="permlab_weather_bind">mengikat sebagai penyedia layanan cuaca</string>
-  <string name="permdesc_weather_bind">Iizinkan aplikasi untuk diidentifikasi sebagai penyedia layanan cuaca.</string>
+  <string name="permdesc_weather_bind">Memungkinkan aplikasi untuk diidentifikasi sebagai penyedia layanan cuaca.</string>
   <string name="permlab_weather_access_mgr">akses layanan cuaca</string>
-  <string name="permdesc_weather_access_mgr">Izinkan aplikasi untuk mengakses layanan cuaca di sistem. Tidak pernah diperlukan untuk aplikasi normal.</string>
+  <string name="permdesc_weather_access_mgr">Memungkinkan aplikasi untuk mengakses layanan cuaca di sistem. Tidak pernah diperlukan untuk aplikasi normal.</string>
   <!-- DataUsageProvider write permission title -->
   <string name="permlab_dataUsageWrite">memodifikasi penggunaan data database</string>
   <!-- DataUsageProvider write permission description -->
@@ -181,7 +181,7 @@
   <string name="permdesc_manageLiveDisplay">Izinkan aplikasi untuk mengkonfigurasi pengaturan tampilan lanjutan.</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">mengamati perubahan sesi audio</string>
-  <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati arus audio untuk diciptakan dan dihancurkan.</string>
+  <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati stream audio untuk diciptakan dan dihancurkan.</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_manage_audio_sessions">mengelola perubahan sesi audio</string>
   <string name="permdesc_manage_audio_sessions">Izinkan app untuk mengirim update audio steaming.</string>
