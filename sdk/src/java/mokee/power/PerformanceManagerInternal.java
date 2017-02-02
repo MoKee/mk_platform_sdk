@@ -25,6 +25,4 @@ public interface PerformanceManagerInternal {
     void activityResumed(Intent intent);
 
     void cpuBoost(int duration);
-
-    void launchBoost(int pid, String packageName);
 }
