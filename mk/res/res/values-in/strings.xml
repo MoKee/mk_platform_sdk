@@ -65,7 +65,7 @@
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Bawaan</string>
   <string name="profileNameWork">Kerja</string>
-  <string name="profileNameHome">Utama</string>
+  <string name="profileNameHome">Rumah</string>
   <string name="profileNameSilent">Diam</string>
   <string name="profileNameNight">Malam</string>
   <string name="profileNameAutomobile">Mobil</string>
@@ -74,7 +74,7 @@
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">Pesan Singkat</string>
+  <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Lainnya</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
