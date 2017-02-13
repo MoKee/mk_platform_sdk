@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">Систэма MoKee</string>
+  <string name="mokee_system_label">Сістэма MoKee</string>
   <string name="permlab_publishCustomTile">Стварыць карыстацкую плітку на Панэлі хуткіх налад</string>
   <string name="permdesc_publishCustomTile">Дазваляе прыкладанню публікаваць плітку хуткіх налад.</string>
   <string name="permlab_modifyNetworkSettings">Налады сеткавых параметраў сістэмы</string>
@@ -140,7 +140,7 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writeThemes">Змяненне тэм</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Прыкладанне зможа ажыццяўляць ўстаноўку новых тэм афармлення і змяняць бягучую тэму.</string>
+  <string name="permdesc_writeThemesDesc">Прыкладанне зможа ажыццяўляць усталёўку новых тэм афармлення і змяняць бягучую тэму.</string>
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">Дазвол мэнэджара прадукцыйнасці</string>
   <!-- Performance manager permission description -->

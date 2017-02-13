@@ -64,11 +64,11 @@
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Стандартный</string>
-  <string name="profileNameWork">Работа</string>
-  <string name="profileNameHome">Дом</string>
+  <string name="profileNameWork">На работе</string>
+  <string name="profileNameHome">Дома</string>
   <string name="profileNameSilent">Без звука</string>
   <string name="profileNameNight">Ночь</string>
-  <string name="profileNameAutomobile">Автомобиль</string>
+  <string name="profileNameAutomobile">В автомобиле</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календарь</string>
