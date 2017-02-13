@@ -19,9 +19,9 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Сістэма MoKee</string>
   <string name="permlab_publishCustomTile">Стварыць карыстацкую плітку на Панэлі хуткіх налад</string>
-  <string name="permdesc_publishCustomTile">Дазваляе прыкладанню публікаваць плітку хуткіх налад.</string>
+  <string name="permdesc_publishCustomTile">Дазваляе праграме публікаваць плітку хуткіх налад.</string>
   <string name="permlab_modifyNetworkSettings">Налады сеткавых параметраў сістэмы</string>
-  <string name="permdesc_modifyNetworkSettings">Дазваляе прыкладанню ўнесці змены ў рэжыме \"Палёту\" і наладах мабільнай перадачы дадзеных.</string>
+  <string name="permdesc_modifyNetworkSettings">Дазваляе праграме ўнесці змены ў рэжыме \"Палёту\" і наладах мабільнай перадачы дадзеных.</string>
   <string name="permlab_modifySoundSettings">Налады параметраў гуку сістэмы</string>
   <string name="permdesc_modifySoundSettings">Дазваляе прыкладанню унесці змены ў абмежаваны набор параметраў гукавой сістэмы.</string>
   <string name="permlab_bindCustomTileListenerService">прывязка да службы прагляду плітак карыстальніка</string>
@@ -34,7 +34,7 @@
   <string name="permdesc_modifyMSPhoneState">Дазваляе прыкладанню змяняць стан тэлефона і дадзеныя падключэння тэлефона з падтрымкай некалькіх SIM-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">змянiць профіль сістэмы</string>
-  <string name="permdesc_modifyProfiles">Дазваляе прыкладанню змяняць змяняць профіль сістэмы.</string>
+  <string name="permdesc_modifyProfiles">Дазваляе прыкладанню змяняць профіль сістэмы.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Выкарыстоўваць апаратны framework</string>
   <string name="permdesc_useHardwareFramework">Дазваляе прыкладанню выкарыстоўваць апаратны MK framework.</string>
@@ -54,7 +54,7 @@
   <string name="permlab_writeSecureSettings">змянiць налады бяспекi сістэмы МК</string>
   <string name="permdesc_writeSecureSettings">Дазваляе прыкладанню змянiць налады бяспекi сістэмы МК. Не выкарыстоўваецца звычайнымі прыкладаннямі.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">Кіраванне пастаянным зховiшчам</string>
+  <string name="permlab_managePersistentStorage">кіраванне пастаянным сховiшчам</string>
   <string name="permdesc_managePersistentStorage">Дазваляе прыкладанню чытаць або запiсваць уласцівасці, якія могуць захоўвацца пасля завадскога скiдвання.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Назірае за карыстацкімі пліткамі</string>
@@ -76,7 +76,7 @@
   <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Іншы</string>
+  <string name="wildcardProfile">Iншае</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">Доступ да месцазнаходжання</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -92,7 +92,7 @@
   <string name="perf_profile_bias_power">Эфектыўны</string>
   <string name="perf_profile_bias_perf">Хуткі</string>
   <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Аўтаматычна</string>
+  <string name="live_display_auto">Аўтаматычны</string>
   <string name="live_display_auto_summary">Аўтаматычна рэгуляваць тэмпературу колеру экрана пасля заходу і ўсходу сонца</string>
   <string name="live_display_off">Выключыць</string>
   <string name="live_display_off_summary">Адключыць усе налады</string>
@@ -138,11 +138,11 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">прачытайце інфармацыю аб вашай тэме</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Дазваляе прыкладанням счытваць тэмы афармлення і вызначаць, якая тэма зараз ўжытая.</string>
+  <string name="permdesc_readThemesDesc">Дазваляе прыкладанням счытваць тэмы афармлення і вызначаць, якая тэма зараз ужытая.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writeThemes">змяненне тэм</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Прыкладанне зможа ажыццяўляць ўстаноўку новых тэм афармлення і змяняць бягучую тэму.</string>
+  <string name="permdesc_writeThemesDesc">Прыкладанне зможа ажыццяўляць усталёўку новых тэм афармлення і змяняць бягучую тэму.</string>
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">дазвол мэнэджара прадукцыйнасці</string>
   <!-- Performance manager permission description -->
@@ -171,7 +171,7 @@
   <!-- DataUsageProvider write permission title -->
   <string name="permlab_dataUsageWrite">змяняць Бд выкарыстання дадзеных</string>
   <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">Дазволіць запіс у Бд выкарыстання дадзеных.</string>
+  <string name="permdesc_dataUsageWrite">Дазволіць запіс у БД выкарыстання дадзеных.</string>
   <!-- DataUsageProvider read permission title -->
   <string name="permlab_dataUsageRead">чытанне БД выкарыстання дадзеных</string>
   <!-- DataUsageProvider read permission description -->
@@ -186,6 +186,6 @@
   <string name="permlab_manage_audio_sessions">назіраць за зменамі аўдыё сесіі</string>
   <string name="permdesc_manage_audio_sessions">Дазволіць дадатку абнаўляць аўдыёпаток.</string>
   <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">Скiны</string>
+  <string name="qs_themes_label">Тэмы</string>
   <string name="qs_themes_content_description">Наладзіць тэму</string>
 </resources>
