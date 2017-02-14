@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Hiệu quả</string>
   <string name="perf_profile_bias_perf">Nhanh chóng</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Tiết kiệm năng lượng tối đa. Giảm hiệu suất thiết bị, tắt dữ liệu và tác vụ chạy nền, tắt hoạt ảnh, và giảm tỷ lệ khung hình hiển thị</string>
+  <string name="perf_profile_bal_summary">Cân bằng giữa hiệu suất và tiêu thụ năng lượng</string>
+  <string name="perf_profile_perf_summary">Chế độ hiệu suất cao. Hữu dụng cho các ứng dụng đòi hỏi độ trễ thấp và băng thông cao nhất khi không quan tâm đến việc tiêu thụ năng lượng</string>
+  <string name="perf_profile_bias_power_summary">Ưu tiên tiết kiệm pin. Hạn chế tối đa điện năng CPU và tối ưu hóa điện năng để tiết kiệm năng lượng, nhưng làm độ trễ cao hơn</string>
+  <string name="perf_profile_bias_perf_summary">Ưu tiên hiệu suất. Làm giảm độ trễ với điện năng tiêu thụ gia tăng không đáng kể</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Tự động</string>
   <string name="live_display_auto_summary">Tự động điều chỉnh nhiệt màu của màn hình sau khi mặt trời lặn và mặt trời mọc</string>
@@ -182,5 +187,8 @@
   <string name="qs_themes_label">Chủ đề</string>
   <string name="qs_themes_content_description">Tùy chỉnh các chủ đề của bạn</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Privacy Guard</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">quản lý cài đặt từ xa</string>
+  <string name="permdesc_manageRemotePrefs">Cho phép một ứng dụng quản lý cài đặt từ xa</string>
 </resources>
