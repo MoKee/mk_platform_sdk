@@ -2880,8 +2880,10 @@ public final class MKSettings {
          * Set to 0 when we enter the MK Setup Wizard.
          * Set to 1 when we exit the MK Setup Wizard.
          *
+         * @deprecated
          * @hide
          */
+        @Deprecated
         public static final String MK_SETUP_WIZARD_COMPLETED = "mk_setup_wizard_completed";
 
         /**
