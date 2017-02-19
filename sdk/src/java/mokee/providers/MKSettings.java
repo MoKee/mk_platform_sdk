@@ -2881,7 +2881,8 @@ public final class MKSettings {
          * Set to 0 when we enter the MK Setup Wizard.
          * Set to 1 when we exit the MK Setup Wizard.
          *
-         * @deprecated
+         * @deprecated Use {@link Secure#USER_SETUP_COMPLETE} or
+         *             {@link Settings.Global#DEVICE_PROVISIONED} instead
          * @hide
          */
         @Deprecated
