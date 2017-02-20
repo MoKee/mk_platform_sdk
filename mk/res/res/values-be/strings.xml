@@ -34,7 +34,7 @@
   <string name="permdesc_modifyMSPhoneState">Дазваляе прыкладанню змяняць стан тэлефона і дадзеныя падключэння тэлефона з падтрымкай некалькіх SIM-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">змянiць профіль сістэмы</string>
-  <string name="permdesc_modifyProfiles">Дазваляе прыкладанню змяняць профіль сістэмы.</string>
+  <string name="permdesc_modifyProfiles">Дазваляе праграме змяняць профіль сістэмы.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">Выкарыстоўваць апаратны framework</string>
   <string name="permdesc_useHardwareFramework">Дазваляе прыкладанню выкарыстоўваць апаратны MK framework.</string>
@@ -52,15 +52,15 @@
   <string name="permdesc_writeSettings">Дазваляе прыкладанню змяняць налады сістэмы МК.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">змянiць налады бяспекi сістэмы МК</string>
-  <string name="permdesc_writeSecureSettings">Дазваляе прыкладанню змянiць налады бяспекi сістэмы МК. Не выкарыстоўваецца звычайнымі прыкладаннямі.</string>
+  <string name="permdesc_writeSecureSettings">Дазваляе праграме змянiць налады бяспекi сістэмы МК. Не выкарыстоўваецца звычайнымі праграмамі.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">кіраванне пастаянным сховiшчам</string>
-  <string name="permdesc_managePersistentStorage">Дазваляе прыкладанню чытаць або запiсваць уласцівасці, якія могуць захоўвацца пасля завадскога скiдвання.</string>
+  <string name="permdesc_managePersistentStorage">Дазваляе праграме чытаць або запiсваць уласцівасці, якія могуць захоўвацца пасля завадскога скiдвання.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Назірае за карыстацкімі пліткамі</string>
   <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">дадайце ці выдаліце прыкладанні якія трэба сцерагчы</string>
-  <string name="permdesc_protectedApp">Дазваляе дадатку адзначаць іншыя як абароненыя і замацаваць іх.</string>
+  <string name="permlab_protectedApp">дадайце ці выдаліце праграмы якія трэба сцерагчы</string>
+  <string name="permdesc_protectedApp">Дазваляе праграме адзначаць іншыя як абароненыя і блакаваць іх.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Па змаўчанні</string>
