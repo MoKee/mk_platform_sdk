@@ -31,15 +31,29 @@
   <!-- Labels for the PROTECTED_APP permission. -->
   <!-- Profiles -->
   <!-- Names of default profiles. -->
+  <string name="profileNameDefault">နဂိုမှုလအတိုင်း</string>
+  <string name="profileNameWork">အလုပ်</string>
+  <string name="profileNameHome">အိမ်</string>
+  <string name="profileNameSilent">အသံတိတ်</string>
+  <string name="profileNameNight">ည</string>
+  <string name="profileNameAutomobile">ကား</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">ဖုန်း</string>
+  <string name="profileGroupCalendar">ပြက္ခဒိန်</string>
+  <string name="profileGroupGmail">ဂျီမေးလ်</string>
+  <string name="profileGroupEmail">အီးမေးလ်</string>
+  <string name="profileGroupSMS">စာတို</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">အခြား</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Performance profiles -->
+  <string name="perf_profile_bal">မျှခြေ</string>
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_night">ည</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Theme installation error notification -->
