@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Hatékonyság</string>
   <string name="perf_profile_bias_perf">Gyors</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Maximális energiatakarékosság. Csökkenti a készülék teljesítményét, kikapcsolja a háttérfeladatokat és -adatokat, letiltja az animációkat, és csökkenti a kijelző képfrissítését</string>
+  <string name="perf_profile_bal_summary">Egyensúly az optimális teljesítmény és az energiafogyasztás között</string>
+  <string name="perf_profile_perf_summary">Nagy teljesítményű üzemmód. Hasznos az alacsony késleltetést és nagy teljesítményt igénylő alkalmazásokhoz, amikor a fogyasztás nem számít</string>
+  <string name="perf_profile_bias_power_summary">Energiatakarékosság előnyben részesítése. Korlátozza a maximális CPU teljesítményt és optimalizálja az energiatakarékosságot a nagyobb késleltetés árán</string>
+  <string name="perf_profile_bias_perf_summary">Teljesítmény előnyben részesítése. Enyhén megnövekedett energiafogyasztással csökkenti a késleltetést</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Automatikus</string>
   <string name="live_display_auto_summary">Automatikusan beállítja a képernyő színhőmérsékletét naplemente és napkelte után</string>
@@ -176,9 +181,12 @@
   <string name="permlab_observe_audio_sessions">audió munkamenet változásainak figyelése</string>
   <string name="permdesc_observe_audio_sessions">Lehetővé teszi egy alkalmazás számára, hogy megfigyelje az audió adások létrehozásást és megsemmisítését.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permdesc_manage_audio_sessions">Lehetővé teszi, hogy egy app-hoz audio stream-frissítéseket küldj.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Témák</string>
   <string name="qs_themes_content_description">Témád testreszabása</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Adatvédelmi beállítások</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">távoli beállítások kezelése</string>
 </resources>
