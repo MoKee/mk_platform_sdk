@@ -56,8 +56,9 @@
     <protected-broadcast android:name="com.mokee.center.action.UPDATE_CHECK_FINISHED" />
 
     <!-- Defined in MKParts -->
-    <protected-broadcast android:name="cn.jpush.android.intent.TAG_ALIAS_CALLBACK" />
     <protected-broadcast android:name="cn.jpush.android.intent.CONNECTION" />
+    <protected-broadcast android:name="cn.jpush.android.intent.TAG_ALIAS_CALLBACK" />
+    <protected-broadcast android:name="cn.jpush.im.android.action.IM_RESPONSE" />
 
     <!-- Defined in Masquerade -->
     <protected-broadcast android:name="masquerade.substratum.STATUS_CHANGED" />
