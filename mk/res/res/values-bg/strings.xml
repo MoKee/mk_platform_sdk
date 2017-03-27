@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Ефективен</string>
   <string name="perf_profile_bias_perf">Бърз</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Максимална енергийна ефективност. Намалява ефективността на устройството, забранява задачи във фонов режим, анимациите, намалява честотата на опресняване и употребата на данни</string>
+  <string name="perf_profile_bal_summary">Баланс на оптимална производителност и енергийна ефективност</string>
+  <string name="perf_profile_perf_summary">Режим на висока производителност. Подходящ за приложения, изискващи ниска латентност и най-високата производителност, когато консумацията на енергия не е проблем</string>
+  <string name="perf_profile_bias_power_summary">Приемлива икономия на енергия. Ограничава максималната мощност на CPU и оптимизира енергоспестяването с цената на по-висока латентност</string>
+  <string name="perf_profile_bias_perf_summary">Приемлива производителност. Намалява латентността за сметка на леко повишена консумация на енергия</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Автоматичен</string>
   <string name="live_display_auto_summary">Автоматична настройка на цветовата температура на екрана след залез и изгрев</string>
@@ -182,5 +187,8 @@
   <string name="qs_themes_label">Теми</string>
   <string name="qs_themes_content_description">Персонализиране на темата</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Защитен режим</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">управление на отдалечени настройки</string>
+  <string name="permdesc_manageRemotePrefs">Позволява на приложението да управлява отдалечени настройки</string>
 </resources>
