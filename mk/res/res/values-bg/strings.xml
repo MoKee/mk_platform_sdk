@@ -19,9 +19,9 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee система</string>
   <string name="permlab_publishCustomTile">създаване на собствен панел с бързи настройки</string>
-  <string name="permdesc_publishCustomTile">Позволява да задавате бързи настройки.</string>
+  <string name="permdesc_publishCustomTile">Позволява на приложението да задава плочка за бързи настройки.</string>
   <string name="permlab_modifyNetworkSettings">промяна на системните мрежови настройки</string>
-  <string name="permdesc_modifyNetworkSettings">Позволява да направите промени в самолетен режим и настройки на мобилните данни.</string>
+  <string name="permdesc_modifyNetworkSettings">Позволява на приложението да прави промени в самолетен режим и настройки на мобилните данни.</string>
   <string name="permlab_modifySoundSettings">промяна на системните настройки на звука</string>
   <string name="permdesc_modifySoundSettings">Позволява да направите промени в настройките на режим прекъсване на звука.</string>
   <string name="permlab_bindCustomTileListenerService">потребителски панел за услуги</string>
