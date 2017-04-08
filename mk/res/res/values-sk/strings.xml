@@ -19,6 +19,8 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Systém MoKee</string>
   <string name="permlab_publishCustomTile">vytvoriť vlastnú dlaždicu do panela rychlych nastavení</string>
+  <string name="permdesc_publishCustomTile">Umožňuje aplikácii publikovať dlaždice rýchlych nastavení.</string>
+  <string name="permlab_modifyNetworkSettings">zmeniť systémové nastastavenia siete</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
