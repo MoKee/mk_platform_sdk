@@ -21,62 +21,174 @@
   <string name="permlab_publishCustomTile">vytvoriť vlastnú dlaždicu do panela rychlych nastavení</string>
   <string name="permdesc_publishCustomTile">Umožňuje aplikácii publikovať dlaždice rýchlych nastavení.</string>
   <string name="permlab_modifyNetworkSettings">zmeniť systémové nastastavenia siete</string>
+  <string name="permdesc_modifyNetworkSettings">Povoliť aplikácii meniť režim v lietadle a nastavenia mobilnej dátovej siete.</string>
+  <string name="permlab_modifySoundSettings">zmeniť systémové nastavenia zvuku</string>
+  <string name="permdesc_modifySoundSettings">Umožňuje aplikácii zmeniť nastavenia zvuku v režime prerušenia.</string>
+  <string name="permlab_bindCustomTileListenerService">naviazanie na službu zoznamu vlastných dlaždíc</string>
+  <string name="permdesc_bindCustomTileListenerService">Umožňuje aplikácii naviazať sa na najvyššej úrovni na rozhranie služby vlastných dlaždíc.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">zobrazovať stav telefónu a dátového pripojenia s podporou viacerých SIM</string>
+  <string name="permdesc_readMSPhoneState">Umožňuje aplikácii zobrazovať stav telefónu a dátového pripojenia s podporou viacerých SIM.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">upravovať stav telefónu a dátového pripojenia s podporou viacerých SIM</string>
+  <string name="permdesc_modifyMSPhoneState">Umožňuje aplikácii upravovať stav telefónu a dátového pripojenia s podporou viacerých SIM.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">úprava systémových profilov</string>
+  <string name="permdesc_modifyProfiles">Umožňuje aplikácii upravovať systémové profily.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">používať hardvérový framework</string>
+  <string name="permdesc_useHardwareFramework">Umožňuje aplikácii pristupovať k hardvérovému frameworku MK.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">priamo meniť oznámenia</string>
+  <string name="permdesc_write_alarms">Umožňuje aplikácii pridať, zmeniť alebo odstrániť všetky vaše oznámenia.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">zobraziť naplánované oznámenia</string>
+  <string name="permdesc_manage_alarms">Umožňuje aplikácii zapnúť nebo vypnúť naplánované oznámenia.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">prístup k naplánovanýn oznámeniam</string>
+  <string name="permdesc_read_alarms">Umožňuje aplikácii čítať vaše naplánované oznámenia.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">zmeniť nastavenia systému MK</string>
+  <string name="permdesc_writeSettings">Umožňuje aplikácii zmeniť MK systémové nastavenia.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">zmeniť nastavenia zabezpečenia systému MK</string>
+  <string name="permdesc_writeSecureSettings">Umožňuje aplikácii zmeniť nastavenia zabezpečenia systému MK. Nie je určené pre bežné aplikácie.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <string name="permlab_managePersistentStorage">spravovať trvalý ukladací priestor</string>
+  <string name="permdesc_managePersistentStorage">Umožňuje aplikácii čítať alebo zapisovať vlastnosti, ktoré môžu pretrvať i po obnove do továrenských nastavení.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Zoznam vlastných dlaždíc</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">pridávať alebo odstráňovať aplikácie do oznamu chránených aplikácií</string>
+  <string name="permdesc_protectedApp">Umožňuje aplikácii označiť iné aplikácie ako chránené a zamknúť ich.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Predvolený</string>
+  <string name="profileNameWork">Práca</string>
+  <string name="profileNameHome">Domov</string>
+  <string name="profileNameSilent">Tichý</string>
+  <string name="profileNameNight">Noc</string>
   <string name="profileNameAutomobile">Automobil</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telefón</string>
   <string name="profileGroupCalendar">Kalendár</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Email</string>
   <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
+  <string name="wildcardProfile">Ostatné</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">zisťovať polohu zariadenia</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Umožňuje aplikácii čítať informácie o polohe telefónu.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">meniť polohu zariadenia</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Umožňuje aplikácii zmeniť polohu telefónu.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Úsporný</string>
+  <string name="perf_profile_bal">Vyvážený</string>
+  <string name="perf_profile_perf">Výkonný</string>
+  <string name="perf_profile_bias_power">Efektívny</string>
+  <string name="perf_profile_bias_perf">Rýchly</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Maximálna úspora energie. Znižuje výkon zariadenia, zakáže dáta, úlohy na pozadí, animáciu a zníži snímkovaciu frekvenciu</string>
+  <string name="perf_profile_bal_summary">Rovnováha optimálneho výkonu a výkonových charakteristík</string>
+  <string name="perf_profile_perf_summary">Režim vysokého výkonu. Užitočné pre aplikácie vyžadujúce nízku latenciu a najvyššiu priepustnosť, keď spotreba energie nie je v centre záujmu</string>
+  <string name="perf_profile_bias_power_summary">Preferovanie úspory energie. Obmedzenie maximálneho výkonu procesora, optimalizácia úspory energie za cenu vyššiej latencie</string>
+  <string name="perf_profile_bias_perf_summary">Preferovanie výkonu. Znižuje latenciu a jemne zvyšuje spotrebu energie</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatický</string>
+  <string name="live_display_auto_summary">Automaticky upraviť teplotu farieb obrazovky po západe a východe slnka</string>
+  <string name="live_display_off">Vypnuté</string>
+  <string name="live_display_off_summary">Zakázať všetky úpravy</string>
+  <string name="live_display_day">Deň</string>
+  <string name="live_display_day_summary">Použite len nastavenia pre deň</string>
+  <string name="live_display_night">Noc</string>
+  <string name="live_display_night_summary">Použite len nastavenia pre noc</string>
+  <string name="live_display_outdoor">Vonku (jasné slnko)</string>
+  <string name="live_display_outdoor_summary">Použite len nastavenia vonku</string>
+  <string name="live_display_hint">LiveDisplay môže pomôcť znížiť únavu a pomôže vám v noci spať. Kliknite sem a vyskúšajte si to!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay vypnutý.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automatický režim.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: denný režim.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nočný režim.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: režim vonku.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay je vypnutý.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay sa zmenil na automatický režim.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay sa zmenil na denný režim.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay sa zmenil na nočný režim.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay sa zmenil na režim vonku.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">obrazovka uzamknutia tretej strany</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Umožňuje aplikácii aby bola použitá ako nezabezpečená obrazovka uzamknutia.</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Inštalácia témy zlyhala</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> sa nepodarilo nainštalovať</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Obnoviť tému</string>
+  <string name="theme_reset_notification_message">Systémová téma sa obnovila z dôvodu viacerých pádov aplikácií.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">prístup k službe tém</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Umožňuje aplikácii prístup k službe na správu tém. Toto povolenie nie je bežné pre štandardné aplikácie.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">čítať informácie vašej témy</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Umožňuje aplikácii čítať vaše témy a určiť, ktorú tému ste použili.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">upraviť vaše témy</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Umožňuje aplikácii vkladať nové témy a upraviť tému, ktorú ste použili.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">prístup k správe výkonu</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Umožňuje aplikácii prístup k správe výkou. Toto povolenie nie je bežné pre štandardné aplikácie.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">prístup k správe živej obrazovky uzamknutia</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Umožňuje aplikácii prístup k správe živej obrazovky uzamknutia.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">prístup k správe živej obrazovky uzamknutia</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Umožňuje aplikácii prístup k správe živej obrazovky uzamknutia.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">poskytnutie správy živej obrazovky uzamknutia</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Umožňuje službe poskytovať správu živej obrazovky uzamknutia.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">čítať počasie</string>
+  <string name="permdesc_weather_read">Umožňuje aplikácii čítať obsah od poskytovateľa počasia.</string>
+  <string name="permlab_weather_write">aktualizovať počasie od poskytovateľa</string>
+  <string name="permdesc_weather_write">Umožňuje aplikácii aktualizovať obsah počasia od poskytovateľa.</string>
+  <string name="permlab_weather_bind">určiť poskytovateľa meteorologickej služby</string>
+  <string name="permdesc_weather_bind">Umožňuje aplikácii identifikovať sa ako poskytovateľa služby počasia.</string>
+  <string name="permlab_weather_access_mgr">prístup k službe predpovede počasia</string>
+  <string name="permdesc_weather_access_mgr">Umožňuje aplikácii prístup k službe predpovede počasia. Toto povolenie nie je bežné pre štandardné aplikácie.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">upravovať údaje o používaní databázy</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Umožňuje aplikácii upravovať údaje o používaní databázy.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">čítať údaje o používaní databázy</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Umožňuje aplikácii čítať údaje o používaní databázy.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">spravovať nastavenia LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Umožňuje aplikácii meniť rozšírené nastavenia obrazovky.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">pozorovať zmeny zvukových relácií</string>
+  <string name="permdesc_observe_audio_sessions">Umožňuje aplikácii pozorovať ako sú vytvárané a ukončované zvukové relácie.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">riadiť zmeny zvukových relácií</string>
+  <string name="permdesc_manage_audio_sessions">Umožňuje aplikácii odosielať aktualizácie zvukový relácií.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Témy vzhľadu</string>
+  <string name="qs_themes_content_description">Vlastné nastavenie témy</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Ochrana súkromia</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">spravovať nastavenia vzdialeného prístupu</string>
+  <string name="permdesc_manageRemotePrefs">Umožňuje aplikácii spravovať nastavenia vzdialeného prístupu</string>
 </resources>
