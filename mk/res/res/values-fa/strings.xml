@@ -45,6 +45,7 @@
   <!-- Device specific settings -->
   <!-- Touchscreen gestures -->
   <!-- Touchscreen gesture haptic feedback -->
+  <string name="touchscreen_gesture_extras">افزونه ها</string>
   <!-- Theme installation error notification -->
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

@@ -25,6 +25,7 @@
   <string name="permlab_modifySoundSettings">změnit systémové nastavení zvuku</string>
   <string name="permdesc_modifySoundSettings">Umožňuje aplikaci provádět změny v nastavení zvuku režimu vyrušení.</string>
   <string name="permlab_bindCustomTileListenerService">navázání na službu pro poslouchání oznámení</string>
+  <string name="permdesc_bindCustomTileListenerService">Umožňuje aplikaci navázat na nejvyšší úroveň rozhraní služby vlastních dlaždic.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">zobrazovat stav telefonu a datového připojení s podporou více SIM</string>
   <string name="permdesc_readMSPhoneState">Umožňuje aplikaci zobrazit stav telefonu a datového připojení s podporou více SIM.</string>
@@ -56,6 +57,7 @@
   <string name="permlab_managePersistentStorage">spravovat permanetní úložiště</string>
   <string name="permdesc_managePersistentStorage">Umožňuje aplikaci číst a zapisovat vlastnosti, které mohou přetrvat i po obnově do továrního nastavení.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Seznam vlastních dlaždic</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">přidávat a odebírat aplikace do chráněných</string>
   <string name="permdesc_protectedApp">Umožňuje aplikaci označit jiné aplikace jako chráněné a zamknout je.</string>
@@ -112,7 +114,9 @@
   <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay změněn na noční režim.</string>
   <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay změněn na venkovní režim.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">zamykací obrazovka třetí strany</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Umožňuje aplikaci, aby byla použita jako nezabezpečená zamykací obrazovka.</string>
   <!-- Device specific settings -->
   <string name="device_settings_app_name">Rozšířené nastavení</string>
   <!-- Touchscreen gestures -->
@@ -140,29 +144,47 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Umožnit aplikacím vytvářet nová témata a nastavit používané téma.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">přístup ke správě výkonu</string>
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Umožňuje přístup ke svítilně. Toto oprávnění by neměla vyžadovat žádná normální aplikace.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">přístup ke správě živé zamykací obrazovky</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Umožňuje aplikaci přístup ke správě živé zamykací obrazovky.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">přístup ke správě živé zamykací obrazovky</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Umožňuje systémovým aplikacím přístup ke správě živé zamykací obrazovky.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">poskytnutí správy živé zamykací obrazovky</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Umožňuje službě poskytovat správu živé zamykací obrazovky.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">číst počasí</string>
   <string name="permdesc_weather_read">Umožňuje aplikaci číst obsah od poskytovatele počasí.</string>
+  <string name="permlab_weather_write">aktualizace počasí od poskytovatele</string>
   <string name="permdesc_weather_write">Umožňuje aplikaci aktualizovat obsah počasí poskytovatele.</string>
+  <string name="permlab_weather_bind">určit poskytovatele služby počasí</string>
+  <string name="permdesc_weather_bind">Umožňuje aplikaci identifikovat se jako služba poskytovatele počasí.</string>
+  <string name="permlab_weather_access_mgr">přístup ke službě počasí</string>
   <string name="permdesc_weather_access_mgr">Umožnit aplikaci přístup ke službě počasí v systému. Pro normální aplikace by toto oprávnění nemělo být nikdy požadováno.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">úprava údajů o používání databáze</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Umožňuje aplikaci aktualizovat obsah databáze využití dat.</string>
   <!-- DataUsageProvider read permission title -->
   <string name="permlab_dataUsageRead">čtení dat využití databáze</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Umožňuje aplikaci číst obsah z databáze využití dat.</string>
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">spravovat nastavení LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Umožňuje aplikaci nakonfigurovat upřesňující nastavení.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">sledovat změny zvukových relací</string>
+  <string name="permdesc_observe_audio_sessions">Umožňuje aplikaci sledovat vytváření a ukončování zvukových relací.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">řídit změny zvukových relací</string>
+  <string name="permdesc_manage_audio_sessions">Umožňuje aplikaci odesílat aktualizace zvukových relací.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Motivy vzhledu</string>
   <string name="qs_themes_content_description">Vlastní nastavení šablony</string>
