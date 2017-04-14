@@ -18,18 +18,49 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee Järjestelmä</string>
+  <string name="permlab_publishCustomTile">Luo kustomoituja pikavalintoja tilapalkkiin</string>
+  <string name="permdesc_publishCustomTile">Sallii sovelluksen julkaista pikavalintoja.</string>
+  <string name="permlab_modifyNetworkSettings">muuta järjestelmän verkkoasetuksia</string>
+  <string name="permdesc_modifyNetworkSettings">Sallii sovellusten tehdä muutoksia lentokonetilaan sekä tiedonsiirron asetuksiin.</string>
+  <string name="permlab_modifySoundSettings">muuta järjestelmän ääniasetuksia</string>
+  <string name="permdesc_modifySoundSettings">Sallii sovelluksen tehdä muutoksia ääniasetuksiin.</string>
+  <string name="permlab_bindCustomTileListenerService">sido ilmoituskuuntelijapalveluun</string>
+  <string name="permdesc_bindCustomTileListenerService">Salli sovelluksen sitoa ylimpään tasoon</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">katso tuki monelle SIM-kortille</string>
+  <string name="permdesc_readMSPhoneState">katso tuki monelle SIM-kortille.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">katso tuki monelle SIM-kortille</string>
+  <string name="permdesc_modifyMSPhoneState">katso tuki monelle SIM-kortille.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
+  <string name="permlab_modifyProfiles">muokkaa järjestelmän profiileja</string>
+  <string name="permdesc_modifyProfiles">Sallii sovelluksen muokata järjestelmän profiileja.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+  <string name="permlab_useHardwareFramework">käytä laitteiston kehystä</string>
+  <string name="permdesc_useHardwareFramework">Sallii sovelluksen pääsyn MK-laitteiston kehykseen.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
+  <string name="permlab_write_alarms">muuta suoraan hälytyksiä</string>
+  <string name="permdesc_write_alarms">Sallii sovelluksen lisätä, muokata tai poistaa hälytyksiä.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
+  <string name="permlab_manage_alarms">kytke ajastettuja hälytyksiä</string>
+  <string name="permdesc_manage_alarms">Salli sovelluksen kytkeä päälle tai pois ajastettuja hälytyksiä.</string>
   <!-- Labels for the READ_ALARMS permission. -->
+  <string name="permlab_read_alarms">pääsy ajastettuihin hälytyksiin</string>
+  <string name="permdesc_read_alarms">Salli sovelluksen kytkeä päälle tai pois ajastettuja hälytyksiä.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
+  <string name="permlab_writeSettings">muokkaa järjestelmän asetuksia</string>
+  <string name="permdesc_writeSettings">Tämä käyttöoikeus sallii sovelluksen muokata järjestelmäasetuksia.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+  <string name="permlab_writeSecureSettings">muokkaa järjestelmän asetuksia</string>
+  <string name="permdesc_writeSecureSettings">Sallii sovelluksen muokata MK turvajärjestelmäasetuksia. Ei käytössä tavallisille sovelluksille.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+  <string name="permlab_managePersistentStorage">hallitse tallennustilaa</string>
+  <string name="permdesc_managePersistentStorage">Sallii soveluksen kirjoittaa tai lukea jotka asetuksia tehdaspalautuksen jälkeen.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Pikavalinnan kuuntelija</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">lisää ja poista suojattuihin sovelluksiin</string>
+  <string name="permdesc_protectedApp">Sallii sovelluksen merkitä muihin sovelluksiin ja lukita ne.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Oletus</string>
@@ -41,25 +72,53 @@
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Puhelin</string>
   <string name="profileGroupCalendar">Kalenteri</string>
+  <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">Sähköposti</string>
   <string name="profileGroupSMS">Tekstiviesti</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Muu</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readPhoneLocation">lue puhelimen sijaintia</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readPhoneLocation">Sallii sovelluksen luka puhelimen sijaintia.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writePhoneLocation">lue puhelimen sijaintia</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writePhoneLocation">Antaa sovelluksen muuttaa puhelimen sijaintia.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Virransäästö</string>
+  <string name="perf_profile_bal">Tasapainoitettu</string>
+  <string name="perf_profile_perf">Suorityskyky</string>
+  <string name="perf_profile_bias_power">Tehokkuus</string>
+  <string name="perf_profile_bias_perf">Nopea</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Suurin virransäästö heikentää laitteen suorityskykyä</string>
+  <string name="perf_profile_bal_summary">Tasapainota optimaalisen suorituskyvyn suhteen</string>
+  <string name="perf_profile_perf_summary">Korkea suorityskyky, käytä kun tarvitset puhelimesta kaiken irti.</string>
+  <string name="perf_profile_bias_power_summary">Suosi virransäästöä, rajoita maksimi CPU tehoa optimoidaksesi virransäästöä.</string>
+  <string name="perf_profile_bias_perf_summary">Suosii suorityskykä. Vähentää latenssia sekä hieman lisää virrankulutusta</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automaattinen</string>
+  <string name="live_display_auto_summary">Säädä automaattisesti näytön väri auringonlaskun ja nousun mukaan</string>
+  <string name="live_display_off">Pois</string>
+  <string name="live_display_off_summary">Poista kaikki mukautukset</string>
+  <string name="live_display_day">Päivä</string>
+  <string name="live_display_day_summary">Käytä vain päivällä</string>
   <string name="live_display_night">Yö</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay pois.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: yö-tila.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: ulkoilma-tila.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay pois käytöstä.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay muuttui ulkoilma-tilaan.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">kolmannen osapuolen lukitusnäyttö</string>
   <!-- Third party keyguard permission description -->
   <!-- Theme installation error notification -->
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">lue teeman tiedot</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -80,6 +139,7 @@
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Teemat</string>
   <!-- Privacy Guard -->
   <!-- Permissions used by remote preferences -->
 </resources>
