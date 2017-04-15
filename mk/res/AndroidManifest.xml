@@ -63,6 +63,10 @@
     <!-- Defined in Masquerade -->
     <protected-broadcast android:name="projekt.substratum.APP_CRASHED" />
 
+    <!-- Defined in Qualcomm Apps -->
+    <protected-broadcast android:name="qualcomm.intent.action.ACTION_AUDIO_STATE_CHANGED" />
+    <protected-broadcast android:name="com.qualcomm.intent.action.ACTION_UNSOL_RESPONSE_OEM_HOOK_RAW" />
+
     <!-- Must be required by an, to ensure that only the system can bind to it.
          @hide -->
     <permission android:name="mokee.permission.BIND_CUSTOM_TILE_LISTENER_SERVICE"
