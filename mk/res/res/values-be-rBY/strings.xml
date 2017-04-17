@@ -92,7 +92,7 @@
   <string name="perf_profile_bias_power">Эфектыўны</string>
   <string name="perf_profile_bias_perf">Хуткі</string>
   <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Максімальнае энергазберажэнне. Зніжэнне прадукцыйнасці прылады, адключэнне фонавых задач і перадачы дадзеных, адключэнне анімацыі і памяншэнне частоты кадраў дысплея</string>
+  <string name="perf_profile_pwrsv_summary">Максімальнае энергазберажэнне. Зніжэнне прадукцыйнасці прылады, адключэнне фонавых задач і перадачы дадзеных, адключэнне анімацыі і памяншэнне частаты кадраў дысплэя</string>
   <string name="perf_profile_bal_summary">Баланс прадукцыйнасці і магутнасці</string>
   <string name="perf_profile_perf_summary">Рэжым высокай прадукцыйнасці. Карысна для прыкладанняў, якія патрабуюць высокую прадукцыйнасць</string>
   <string name="perf_profile_bias_power_summary">Рэжым энергазберажэння. Абмяжоўвае максімальныя частоты працэсара і аптымізуе энергазберажэнне ў часе чакання</string>

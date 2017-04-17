@@ -39,14 +39,14 @@
   <string name="permlab_useHardwareFramework">používať hardvérový framework</string>
   <string name="permdesc_useHardwareFramework">Umožňuje aplikácii pristupovať k hardvérovému frameworku MK.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">priamo meniť oznámenia</string>
-  <string name="permdesc_write_alarms">Umožňuje aplikácii pridať, zmeniť alebo odstrániť všetky vaše oznámenia.</string>
+  <string name="permlab_write_alarms">priamo meniť výstrahy</string>
+  <string name="permdesc_write_alarms">Umožňuje aplikácii pridať, zmeniť alebo odstrániť všetky vaše výstrahy.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">zobraziť naplánované oznámenia</string>
-  <string name="permdesc_manage_alarms">Umožňuje aplikácii zapnúť nebo vypnúť naplánované oznámenia.</string>
+  <string name="permlab_manage_alarms">zobraziť naplánované výstrahy</string>
+  <string name="permdesc_manage_alarms">Umožňuje aplikácii zapnúť nebo vypnúť naplánované výstrahy.</string>
   <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">prístup k naplánovanýn oznámeniam</string>
-  <string name="permdesc_read_alarms">Umožňuje aplikácii čítať vaše naplánované oznámenia.</string>
+  <string name="permlab_read_alarms">prístup k naplánovanýn výstrahám</string>
+  <string name="permdesc_read_alarms">Umožňuje aplikácii čítať vaše naplánované výstrahy.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">zmeniť nastavenia systému MK</string>
   <string name="permdesc_writeSettings">Umožňuje aplikácii zmeniť MK systémové nastavenia.</string>
@@ -63,7 +63,7 @@
   <string name="permdesc_protectedApp">Umožňuje aplikácii označiť iné aplikácie ako chránené a zamknúť ich.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Predvolený</string>
+  <string name="profileNameDefault">Predvolené</string>
   <string name="profileNameWork">Práca</string>
   <string name="profileNameHome">Domov</string>
   <string name="profileNameSilent">Tichý</string>
@@ -98,7 +98,7 @@
   <string name="perf_profile_bias_power_summary">Preferovanie úspory energie. Obmedzenie maximálneho výkonu procesora, optimalizácia úspory energie za cenu vyššiej latencie</string>
   <string name="perf_profile_bias_perf_summary">Preferovanie výkonu. Znižuje latenciu a jemne zvyšuje spotrebu energie</string>
   <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Automatický</string>
+  <string name="live_display_auto">Automaticky</string>
   <string name="live_display_auto_summary">Automaticky upraviť teplotu farieb obrazovky po západe a východe slnka</string>
   <string name="live_display_off">Vypnuté</string>
   <string name="live_display_off_summary">Zakázať všetky úpravy</string>

@@ -105,41 +105,75 @@
   <string name="live_display_day">Päivä</string>
   <string name="live_display_day_summary">Käytä vain päivällä</string>
   <string name="live_display_night">Yö</string>
+  <string name="live_display_night_summary">Käytä vain yö-asetuksia</string>
+  <string name="live_display_outdoor">Ulkoilma (kirkas aurinko)</string>
+  <string name="live_display_outdoor_summary">Käytä vain ulkoilma-asetuksia</string>
+  <string name="live_display_hint">LiveDisplay voi auttaa vähentämään silmien rasitusta ja auttaa nukkumaan yöllä. Klikkaa tästä jos haluat kokeilla!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay pois.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automaattinen.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: päivä-tila.</string>
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: yö-tila.</string>
   <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: ulkoilma-tila.</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay pois käytöstä.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay muutettiin automaattitilaan.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay muutettiin päivä-tilaan.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay muutettiin Yö-tilaan.</string>
   <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay muuttui ulkoilma-tilaan.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">kolmannen osapuolen lukitusnäyttö</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Sallii sovelluksen käytettäväksi turvattomassa lukitusnäytössä.</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Teeman asennus epäonnistui</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> ei voitu asentaa</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Teeman resetointi</string>
+  <string name="theme_reset_notification_message">Järjestelmän teema palautettu lukuisten sovellusvirheiden vuoksi.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">pääsy teemapalveluun</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Sallii sovelluksen päästä teemapalveluun. Tavalliset sovellukset eivät koskaan tarvitse tätä.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">lue teeman tiedot</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Sallii sovelluksen lukea teemojasi ja tunnistaa käytössä olevan teeman.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">muokkaa teemoja</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Sallii sovelluksen asettaa uusia teemoja ja muokata käytössä olevaa teemaa.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">pääsy suorityskyvyn hallintaan</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Sallii sovelluksen pääsyn lampun palveluun. Tavalliset sovellukset eivät koskaan tarvitse tätä.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">pääsy lukitusnäytön hallintaan</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Sallii sovelluksen pääsyn lukitusnäytön hallintaan.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">pääsy lukitusnäytön hallintaan</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Sallii järjestelmä sovelluksien pääsyn lukitusnäytön hallintaan.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">tarjoa lukitusnäytön hallintapavelua</string>
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Sallii sovelluksen päivittää data-tietokannan sisältöä.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">lue datan käyttö-tietokantaa</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Sallii sovelluksen lukea data-tietokannan sisältöä.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">hallitse LiveDisplay asetuksia</string>
+  <string name="permdesc_manageLiveDisplay">Sallii sovelluksen muuttaa näytön lisäasetuksia.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">ääniyhteyden muutokset</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Teemat</string>
+  <string name="qs_themes_content_description">Muokkaa teemaasi</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Yksityisyyden suojaus</string>
   <!-- Permissions used by remote preferences -->
 </resources>
