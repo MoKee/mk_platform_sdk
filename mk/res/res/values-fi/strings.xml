@@ -110,7 +110,7 @@
   <string name="live_display_outdoor_summary">Käytä vain ulkoilma-asetuksia</string>
   <string name="live_display_hint">LiveDisplay voi auttaa vähentämään silmien rasitusta ja auttaa nukkumaan yöllä. Klikkaa tästä jos haluat kokeilla!</string>
   <string name="accessibility_quick_settings_live_display_off">LiveDisplay pois.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: automaattinen.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: Automaattinen.</string>
   <string name="accessibility_quick_settings_live_display_day">LiveDisplay: päivä-tila.</string>
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: yö-tila.</string>
   <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: ulkoilma-tila.</string>
@@ -156,8 +156,18 @@
   <!-- Live lock screen manager service provider permission label -->
   <string name="permlab_accessLiveLockScreenServiceProvider">tarjoa lukitusnäytön hallintapavelua</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Sallii sovelluksen tarjota lukitusnäytön palvelu.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">lue Sää</string>
+  <string name="permdesc_weather_read">Sallii sovelluksen lukea sääpalvelun sisältöä.</string>
+  <string name="permlab_weather_write">lisää sääpalveluntarjoaja</string>
+  <string name="permdesc_weather_write">Sallii sovelluksen päivittää sääpalveluntarjoajia.</string>
+  <string name="permlab_weather_bind">ehtojen sääpalveluun sitominen</string>
+  <string name="permdesc_weather_bind">Sallii sovelluksen toimia sääpalveluntarjoajana.</string>
+  <string name="permlab_weather_access_mgr">pääsy sääpalveluun</string>
+  <string name="permdesc_weather_access_mgr">Sallii sovelluksen pääsyn sääalveluun. Tavalliset sovellukset eivät koskaan tarvitse tätä.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">muokkaa datan käyttö-tietokantaa</string>
   <!-- DataUsageProvider write permission description -->
   <string name="permdesc_dataUsageWrite">Sallii sovelluksen päivittää data-tietokannan sisältöä.</string>
   <!-- DataUsageProvider read permission title -->
@@ -169,11 +179,16 @@
   <string name="permdesc_manageLiveDisplay">Sallii sovelluksen muuttaa näytön lisäasetuksia.</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_observe_audio_sessions">ääniyhteyden muutokset</string>
+  <string name="permdesc_observe_audio_sessions">Allows an app to observe audio streams being created and destroyed.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">ääniyhteyden muutokset</string>
+  <string name="permdesc_manage_audio_sessions">Sallii sovelluksen lähettää äänivirta päivityksiä.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Teemat</string>
   <string name="qs_themes_content_description">Muokkaa teemaasi</string>
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Yksityisyyden suojaus</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">hallitse etäkäytön asetuksia</string>
+  <string name="permdesc_manageRemotePrefs">Sallii sovellluksen hallita etäasetuksia</string>
 </resources>
