@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee 系統</string>
-  <string name="permlab_publishCustomTile">創建自訂平鋪內快速設置面板</string>
+  <string name="permlab_publishCustomTile">在快速設定板面中建立一個自訂瓷磚</string>
   <string name="permdesc_publishCustomTile">允許應用程式發佈快速設置平鋪。</string>
   <string name="permlab_modifyNetworkSettings">變更系統網絡設定</string>
   <string name="permdesc_modifyNetworkSettings">允許應用程式對有限的系統網絡設定進行修改。</string>
