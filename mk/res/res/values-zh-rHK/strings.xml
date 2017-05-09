@@ -21,7 +21,7 @@
   <string name="permlab_publishCustomTile">在快速設定板面中建立一個自訂瓷磚</string>
   <string name="permdesc_publishCustomTile">允許應用程式建立快速設定瓷磚。</string>
   <string name="permlab_modifyNetworkSettings">變更系統網絡設定</string>
-  <string name="permdesc_modifyNetworkSettings">允許應用程式對有限的系統網絡設定進行修改。</string>
+  <string name="permdesc_modifyNetworkSettings">允許應用程式修改飛航模式和流動數據網絡設定。</string>
   <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
   <string name="permdesc_modifySoundSettings">允許應用程式對有限的系統聲音設定進行修改。</string>
   <string name="permlab_bindCustomTileListenerService">綁定到自訂平鋪攔截器服務</string>
