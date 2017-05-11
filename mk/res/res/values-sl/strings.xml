@@ -18,6 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee sistem</string>
+  <string name="permdesc_publishCustomTile">Omogoča aplikaciji, objavo hitrih nastavitv ploščice.</string>
   <string name="permlab_modifyNetworkSettings">spremeni omrežne nastavitve sistema</string>
   <string name="permdesc_modifyNetworkSettings">Omogoča aplikaciji, da lahko spremeni letalski način in nastavitve mobilnih podatkov.</string>
   <string name="permlab_modifySoundSettings">spremenite nastavitve zvoka sistema</string>
@@ -54,6 +55,7 @@
   <string name="permdesc_managePersistentStorage">Omogoča aplikaciji, da prebere ali prepiše lastnosti, ki so lahko prisotne pri resetiranju na tovarniške nastavitve.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permdesc_protectedApp">Omogoča aplikaciji označitev drugih aplikacij kot zaščitene in jih zaklene.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">Privzeto</string>
@@ -85,6 +87,7 @@
   <string name="perf_profile_bias_power">Učinkovitost</string>
   <string name="perf_profile_bias_perf">Hitro</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Največje varčevanje z energijo, zmanjša zmogljivost naprave</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Samodejno</string>
   <string name="live_display_auto_summary">Samodejno spremeni barvno temperaturo zaslona po sončnem zahod in vzhodu</string>
@@ -114,8 +117,11 @@
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> ni uspelo namestiti</string>
   <!-- Theme reset notification -->
   <string name="theme_reset_notification_title">Ponastavitev teme</string>
+  <string name="theme_reset_notification_message">Sistemska tema se je obnovila zaradi napake v aplikacijah.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">dostop do storitev tem</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Omogoči aplikaciji dostop do storitev tem. Normalne app te storitve ne potrebujejo.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">prebere info o temi</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
