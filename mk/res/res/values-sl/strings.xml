@@ -88,6 +88,10 @@
   <string name="perf_profile_bias_perf">Hitro</string>
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv_summary">Največje varčevanje z energijo, zmanjša zmogljivost naprave</string>
+  <string name="perf_profile_bal_summary">Uravnotežena optimalna zmogljivost in poraba energije</string>
+  <string name="perf_profile_perf_summary">Visokozmogljivi način. Koristno za aplikacije, ki zahtevajo nizko latenco in najvišjo prepustnost, ko poraba ni skrb</string>
+  <string name="perf_profile_bias_power_summary">Blago varčevanje z energijo. Omeji največjo moč CPU in optimizira varčevanje energije na račun višje latence</string>
+  <string name="perf_profile_bias_perf_summary">Delovanju v prid. Zmanjšuje latenco z rahlo povečano porabo</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Samodejno</string>
   <string name="live_display_auto_summary">Samodejno spremeni barvno temperaturo zaslona po sončnem zahod in vzhodu</string>
@@ -125,9 +129,11 @@
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readThemes">prebere info o temi</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Omogoča aplikaciji, da prebere vaše teme in ugotoviti, katero temo uporabljate.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writeThemes">spreminjanje tem</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Omogoča aplikaciji, da namesti nove teme ali spremeni trenutno, ki jo uporabljate.</string>
   <!-- Performance manager permission title -->
   <!-- Performance manager permission description -->
   <!-- Access live lock screen manager service permission label -->
@@ -152,5 +158,6 @@
   <string name="qs_themes_label">Predloge</string>
   <string name="qs_themes_content_description">Prilagodi svojo predlogo</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Varovanje zasebnosti</string>
   <!-- Permissions used by remote preferences -->
 </resources>
