@@ -39,7 +39,7 @@
   <string name="permlab_write_alarms">neposredno spremeni alarme</string>
   <string name="permdesc_write_alarms">Omogoča aplikaciji, da lahko doda, spremeni ali izbriše vse alarme.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">vklopi načrtovane alarne</string>
+  <string name="permlab_manage_alarms">vklopi načrtovane alarme</string>
   <string name="permdesc_manage_alarms">Omogoča aplikaciji vklop/izklop načrtovanih alarmov.</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">dostop do načrtovanih alarmov</string>
@@ -152,6 +152,7 @@
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">upravljanje nastavitev LiveDisplay</string>
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
