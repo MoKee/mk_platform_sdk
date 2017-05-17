@@ -81,12 +81,19 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">携帯電話の位置情報の変更をアプリケーションに許可</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">節電</string>
+  <string name="perf_profile_bal">バランス</string>
+  <string name="perf_profile_perf">パフォーマンス</string>
+  <string name="perf_profile_bias_power">効率的</string>
+  <string name="perf_profile_bias_perf">クイック</string>
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">自動</string>
   <string name="live_display_off">オフ</string>
   <string name="live_display_night">夜</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Device specific settings -->
+  <string name="device_settings_app_name">詳細設定</string>
   <!-- Touchscreen gestures -->
   <!-- Touchscreen gesture haptic feedback -->
   <string name="touchscreen_gesture_extras">その他</string>
