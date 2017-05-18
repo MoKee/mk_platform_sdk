@@ -54,6 +54,7 @@
     <protected-broadcast android:name="com.mokee.center.action.NOTIFICATION_CLICKED" />
     <protected-broadcast android:name="com.mokee.center.action.ON_NEW_INTENT" />
     <protected-broadcast android:name="com.mokee.center.action.UPDATE_CHECK_FINISHED" />
+    <protected-broadcast android:name="com.mokee.center.action.VERIFY_REQUEST" />
 
     <!-- Defined in MKParts -->
     <protected-broadcast android:name="cn.jpush.android.intent.CONNECTION" />
