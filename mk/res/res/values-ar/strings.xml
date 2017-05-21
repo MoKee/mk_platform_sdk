@@ -19,10 +19,12 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">نظام موكي</string>
   <string name="permlab_publishCustomTile">انشاء ايقونات متخصصة في لوحة الاعدادات السريعة</string>
+  <string name="permdesc_publishCustomTile">السماح لتطبيق نشر مربع إعدادات سريعة.</string>
   <string name="permlab_modifyNetworkSettings">تغيير إعدادات شبكة الاتصال</string>
   <string name="permdesc_modifyNetworkSettings">السماح لأي تطبيق بإجراء تغييرات على وضع الطائرة وإعدادات شبكة البيانات المتنقلة.</string>
   <string name="permlab_modifySoundSettings">تغيير إعدادات نظام الصوت</string>
   <string name="permdesc_modifySoundSettings">السماح لأي تطبيق بتغيير اعدادات الصوت الى نمط المقاطعة.</string>
+  <string name="permlab_bindCustomTileListenerService">ربط إلى خدمة مستمع مخصصة</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">عرض اتصال الدولة وبيانات الهاتف مع دعم متعدد الشرائح</string>
   <string name="permdesc_readMSPhoneState">السماح لأي تطبيق لعرض حالة الاتصال وبيانات الهاتف مع دعم الشرائح المتعددة.</string>
