@@ -92,7 +92,7 @@
   <string name="perf_profile_bias_power">Effizienz</string>
   <string name="perf_profile_bias_perf">Schnell</string>
   <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Maximale Energieeinsparung. Reduziert Geräteleistung, schaltet Hintergrundaufgaben - und Daten aus, schaltet Animationen aus und reduziert Bildrate</string>
+  <string name="perf_profile_pwrsv_summary">Maximale Energieeinsparung reduziert die Geräteleistung</string>
   <string name="perf_profile_bal_summary">Optimale balance von Leistung und Energiescharakteristiken</string>
   <string name="perf_profile_perf_summary">Hoher Leistungs-Modus. Nützlich für Anwendungen, die eine geringe Latenzzeit und einen hohen Durchsatz erfordern, wenn der Stromverbrauch keine Rolle spielt</string>
   <string name="perf_profile_bias_power_summary">Energieeinsparungen. Begrenzen Sie maximale CPU-Leistung und optimieren Sie auf Kosten der höheren Latenzzeit die Stromeinsparung</string>

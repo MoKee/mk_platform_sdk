@@ -55,7 +55,7 @@
   <string name="permdesc_writeSecureSettings">Lehetővé teszi egy alkalmazás számára hogy módosítsa az MK biztonsági rendszerbeállításait. Nem vonatkozik normál alkalmazásokra.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">tartós tárhely kezelése</string>
-  <string name="permdesc_managePersistentStorage">Lehetővé teszi egy alkalmazás számára olyan tulajdonságok olvasását vagy írását, melyek esetében fennálhat a gyári visszaállítás esete.</string>
+  <string name="permdesc_managePersistentStorage">Lehetővé teszi egy alkalmazás számára olyan tulajdonságok olvasását vagy írását, melyek esetében fennállhat a gyári visszaállítás esete.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">Egyéni figyelő a csempéken</string>
   <!-- Labels for the PROTECTED_APP permission. -->
@@ -63,7 +63,7 @@
   <string name="permdesc_protectedApp">Lehetővé teszi egy alkalmazásnak, hogy megjelöljön más alkalmazásokat védettként és zárolja azokat.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Alapértelmezés</string>
+  <string name="profileNameDefault">Alapértelmezett</string>
   <string name="profileNameWork">Munkahely</string>
   <string name="profileNameHome">Otthon</string>
   <string name="profileNameSilent">Néma</string>
