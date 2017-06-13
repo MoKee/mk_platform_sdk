@@ -153,8 +153,13 @@
   <!-- DataUsageProvider read permission description -->
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">upravljanje nastavitev LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Omogoča konfiguracijo naprednih nastavitev zaslona.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">opazovanje sprememb zvočne seje</string>
+  <string name="permdesc_observe_audio_sessions">Omogoča opazovanje avdio pretokov, ustvarjanje in uničenje.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">upravljanje sprememb zvočnih sej</string>
+  <string name="permdesc_manage_audio_sessions">Omogoča pošiljati posodobitve za zvočni tok.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Predloge</string>
   <string name="qs_themes_content_description">Prilagodi svojo predlogo</string>
