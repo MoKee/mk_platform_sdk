@@ -87,10 +87,22 @@
   <string name="perf_profile_bias_power">効率的</string>
   <string name="perf_profile_bias_perf">クイック</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_bal_summary">最適な性能と電力消費のバランス</string>
+  <string name="perf_profile_perf_summary">高性能モード。 低消費電力ではなくパフォーマンスを優先し電力消費が増加します。</string>
+  <string name="perf_profile_bias_power_summary">省電力を優先します。 最大CPUパワーを制限し、省電力モードに最適化する</string>
+  <string name="perf_profile_bias_perf_summary">パフォーマンスを優先する。 消費電力と待ち時間を短縮</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">自動</string>
+  <string name="live_display_auto_summary">日の出と日の入りの画面の色温度を自動的に調整</string>
   <string name="live_display_off">オフ</string>
+  <string name="live_display_off_summary">すべての調整を無効にする</string>
+  <string name="live_display_day">日</string>
+  <string name="live_display_day_summary">日付け設定のみ使用</string>
   <string name="live_display_night">夜</string>
+  <string name="live_display_night_summary">夜間設定のみ使用</string>
+  <string name="accessibility_quick_settings_live_display_off">ライブディスプレイOFF</string>
+  <string name="accessibility_quick_settings_live_display_auto">ライブディスプレイ：自動モード</string>
+  <string name="accessibility_quick_settings_live_display_day">ライブディスプレイ：Dayモード</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
   <!-- Theme installation error notification -->

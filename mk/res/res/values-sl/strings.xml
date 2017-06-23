@@ -135,7 +135,9 @@
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writeThemesDesc">Omogoča aplikaciji, da namesti nove teme ali spremeni trenutno, ki jo uporabljate.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">dostop do upravitelja zmogljivosti</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Omogoča dostop do storitev zmogljivosti. Normalne aplikacije te storitve ne potrebujejo.</string>
   <!-- Access live lock screen manager service permission label -->
   <!-- Access live lock screen manager service permission description -->
   <!-- Privileged access live lock screen manager service permission label -->
@@ -144,7 +146,9 @@
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">prebere vreme</string>
+  <string name="permdesc_weather_read">Dovoli branje vsebine ponudnika vremena.</string>
   <string name="permlab_weather_write">posodobi ponudnike vremena</string>
+  <string name="permdesc_weather_write">Dovoli posodobitev vsebine ponudnika vremena.</string>
   <string name="permlab_weather_access_mgr">dostop do vremenskih storitev</string>
   <string name="permdesc_weather_access_mgr">Omogpči app dostop do vremenskih storitev v sistemu. Normalne app te storitve ne potrebujejo.</string>
   <!-- DataUsageProvider write permission title -->
