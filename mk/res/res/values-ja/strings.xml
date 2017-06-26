@@ -24,6 +24,7 @@
   <string name="permdesc_modifyNetworkSettings">機内モードとモバイルデータ設定の変更をアプリケーションに許可します。</string>
   <string name="permlab_modifySoundSettings">システムのサウンド設定の変更</string>
   <string name="permdesc_modifySoundSettings">割り込みモードサウンド設定の変更をアプリケーションに許可</string>
+  <string name="permlab_bindCustomTileListenerService">通知リスナーサービスにバインド</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示</string>
   <string name="permdesc_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示することをアプリケーションに許可</string>
