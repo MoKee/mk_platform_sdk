@@ -18,11 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKee sistem</string>
+  <string name="permlab_publishCustomTile">ustvari ploščico po meri v hitrih nastavitvah</string>
   <string name="permdesc_publishCustomTile">Omogoča aplikaciji, objavo hitrih nastavitv ploščice.</string>
   <string name="permlab_modifyNetworkSettings">spremeni omrežne nastavitve sistema</string>
   <string name="permdesc_modifyNetworkSettings">Omogoča aplikaciji, da lahko spremeni letalski način in nastavitve mobilnih podatkov.</string>
   <string name="permlab_modifySoundSettings">spremenite nastavitve zvoka sistema</string>
   <string name="permdesc_modifySoundSettings">Omogoča aplikaciji, da lahko spremeni nastavitve načina prekinitve zvoka.</string>
+  <string name="permlab_bindCustomTileListenerService">pripni na ploščo poslušalca</string>
+  <string name="permdesc_bindCustomTileListenerService">Dovoli aplikaciji pripeti na najvišji nivo vmesnika plošče poslušalca.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">vpogled v stanje podatkovne povezave telefona s podporo za več SIM kartic</string>
   <string name="permdesc_readMSPhoneState">Omogoča aplikaciji, vpogled v stanje podatkovne povezave telefona s podporo za več SIM kartic.</string>
@@ -54,7 +57,9 @@
   <string name="permlab_managePersistentStorage">upravljanje obstoječih shramb</string>
   <string name="permdesc_managePersistentStorage">Omogoča aplikaciji, da prebere ali prepiše lastnosti, ki so lahko prisotne pri resetiranju na tovarniške nastavitve.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+  <string name="custom_tile_listener_binding_label">Poslušalec ploščic po meri</string>
   <!-- Labels for the PROTECTED_APP permission. -->
+  <string name="permlab_protectedApp">dodaj in odstrani aplikacije za zaščito drugih aplikacij</string>
   <string name="permdesc_protectedApp">Omogoča aplikaciji označitev drugih aplikacij kot zaščitene in jih zaklene.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
@@ -115,7 +120,9 @@
   <string name="accessibility_quick_settings_live_display_changed_night">ŽiviZaslon spremenjen na nočni način.</string>
   <string name="accessibility_quick_settings_live_display_changed_outdoor">ŽiviZaslon spremenjen na zunaj.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">zunanji zaklenjeni zaslon</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Dovoli aplikaciji, da se uporablja kot nezaščiten zaklenjen zaslon.</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Namestitev teme je spodletela</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> ni uspelo namestiti</string>
@@ -139,22 +146,34 @@
   <!-- Performance manager permission description -->
   <string name="permdesc_perfAccessDesc">Omogoča dostop do storitev zmogljivosti. Normalne aplikacije te storitve ne potrebujejo.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">dostop do upravljalca zaklenjenega zaslona</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Dovoli aplikaciji dostop do upravljalca zaklenjenega zaslona.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">dostop do upravljalca zaklenjenega zaslona</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Dovoli aplikaciji dostop do upravljalca zaklenjenega zaslona.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">zagotavljanje upravljanja zaklenjenega zaslona</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Dovoli storitvi zagotavljanje upravljanja zaklenjenega zaslona.</string>
   <!-- Weather Service strings -->
   <string name="permlab_weather_read">prebere vreme</string>
   <string name="permdesc_weather_read">Dovoli branje vsebine ponudnika vremena.</string>
   <string name="permlab_weather_write">posodobi ponudnike vremena</string>
   <string name="permdesc_weather_write">Dovoli posodobitev vsebine ponudnika vremena.</string>
+  <string name="permlab_weather_bind">poveži kot zagotavljanje storitve vremena</string>
+  <string name="permdesc_weather_bind">Dovoli aplikaciji, da je prepoznana kot ponudnik storitve vremena.</string>
   <string name="permlab_weather_access_mgr">dostop do vremenskih storitev</string>
   <string name="permdesc_weather_access_mgr">Omogpči app dostop do vremenskih storitev v sistemu. Normalne app te storitve ne potrebujejo.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">uredi podatkovno zbirko porabe podatkov</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Dovoli aplikaciji posodobitev vsebine podatkovne zbirke porabe podatkov.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">preberi podatkovno zbirko porabe podatkov</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Dovoli aplikaciji branje vsebine iz podatkovne zbirke porabe podatkov.</string>
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">upravljanje nastavitev LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Omogoča konfiguracijo naprednih nastavitev zaslona.</string>
