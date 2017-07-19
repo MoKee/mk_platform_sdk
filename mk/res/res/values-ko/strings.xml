@@ -183,4 +183,5 @@
   <string name="qs_themes_content_description">테마 사용자 정의</string>
   <!-- Privacy Guard -->
   <!-- Permissions used by remote preferences -->
+  <string name="permdesc_manageRemotePrefs">앱이 원격 설정을 관리할 수 있도록 허용합니다</string>
 </resources>
