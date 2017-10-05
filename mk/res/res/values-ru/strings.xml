@@ -68,7 +68,7 @@
   <string name="profileNameHome">Дома</string>
   <string name="profileNameSilent">Без звука</string>
   <string name="profileNameNight">Ночь</string>
-  <string name="profileNameAutomobile">В автомобиле</string>
+  <string name="profileNameAutomobile">За рулем</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календарь</string>
