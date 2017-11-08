@@ -1952,6 +1952,44 @@ public final class MKSettings {
                 };
 
         /**
+         * Mapping of fingerprint shortcuts
+         *
+         * format:
+         *   fingerId:packageName/className\n
+         */
+        public static final String FINGERPRINT_SHORTCUTS =
+                "fingerprint_shortcuts";
+
+        /** @hide */
+        public static final Validator FINGERPRINT_SHORTCUTS_VALIDATOR =
+                new Validator() {
+                    @Override
+                    public boolean validate(String value) {
+                        if (TextUtils.isEmpty(value)) {
+                            return true;
+                        }
+                        for (String line : value.split("\n")) {
+                            final String[] mapping = line.split(":");
+                            if (mapping.length != 2) {
+                                return false;
+                            }
+
+                            int fingerId = -1;
+                            try {
+                                fingerId = Integer.parseInt(mapping[0]);
+                            } catch (Exception e) {
+                                return false;
+                            }
+
+                            if (fingerId == -1) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                };
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -2217,6 +2255,7 @@ public final class MKSettings {
                     TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
             VALIDATORS.put(DISPLAY_PICTURE_ADJUSTMENT,
                     DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR);
+            VALIDATORS.put(FINGERPRINT_SHORTCUTS, FINGERPRINT_SHORTCUTS_VALIDATOR);
         };
         // endregion
     }
