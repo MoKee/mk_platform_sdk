@@ -1990,6 +1990,16 @@ public final class MKSettings {
                 };
 
         /**
+         * Whether or not to show charging speed in lockscreen
+         */
+        public static final String SHOW_CHARGING_SPEED =
+                "show_charging_speed";
+
+        /** @hide */
+        public static final Validator SHOW_CHARGING_SPEED_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -2256,6 +2266,7 @@ public final class MKSettings {
             VALIDATORS.put(DISPLAY_PICTURE_ADJUSTMENT,
                     DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR);
             VALIDATORS.put(FINGERPRINT_SHORTCUTS, FINGERPRINT_SHORTCUTS_VALIDATOR);
+            VALIDATORS.put(SHOW_CHARGING_SPEED, SHOW_CHARGING_SPEED_VALIDATOR);
         };
         // endregion
     }
