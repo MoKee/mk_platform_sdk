@@ -465,6 +465,7 @@ package mokee.hardware {
     method public deprecated int getDisplayGammaCalibrationMax();
     method public deprecated int getDisplayGammaCalibrationMin();
     method public mokee.hardware.DisplayMode[] getDisplayModes();
+    method public mokee.hardware.TouchscreenGesture[] getTouchscreenGestures();
     method public static mokee.hardware.MKHardwareManager getInstance(android.content.Context);
     method public java.lang.String getLtoDestination();
     method public long getLtoDownloadInterval();
@@ -494,6 +495,7 @@ package mokee.hardware {
     method public deprecated boolean setDisplayGammaCalibration(int, int[]);
     method public boolean setDisplayMode(mokee.hardware.DisplayMode, boolean);
     method public boolean setPictureAdjustment(mokee.hardware.HSIC);
+    method public boolean setTouchscreenGestureEnabled(mokee.hardware.TouchscreenGesture, boolean);
     method public boolean setVibratorIntensity(int);
     method public boolean unRegisterThermalListener(mokee.hardware.ThermalListenerCallback);
     method public boolean writePersistentBytes(java.lang.String, byte[]);
@@ -513,9 +515,10 @@ package mokee.hardware {
     field public static final int FEATURE_PICTURE_ADJUSTMENT = 262144; // 0x40000
     field public static final int FEATURE_SERIAL_NUMBER = 128; // 0x80
     field public static final int FEATURE_SUNLIGHT_ENHANCEMENT = 256; // 0x100
-    field public static final int FEATURE_TAP_TO_WAKE = 512; // 0x200
+    field public static final deprecated int FEATURE_TAP_TO_WAKE = 512; // 0x200
     field public static final int FEATURE_THERMAL_MONITOR = 32768; // 0x8000
     field public static final int FEATURE_TOUCH_HOVERING = 2048; // 0x800
+    field public static final int FEATURE_TOUCHSCREEN_GESTURES = 524288; // 0x80000
     field public static final int FEATURE_UNIQUE_DEVICE_ID = 65536; // 0x10000
     field public static final int FEATURE_VIBRATOR = 1024; // 0x400
   }
@@ -542,6 +545,15 @@ package mokee.hardware {
     method public int[] toRGB();
     method public static mokee.hardware.HSIC unflattenFrom(java.lang.String) throws java.lang.NumberFormatException;
     method public void writeToParcel(android.os.Parcel, int);
+  }
+
+  public class TouchscreenGesture implements android.os.Parcelable {
+    ctor public TouchscreenGesture(int, java.lang.String, int);
+    method public int describeContents();
+    method public void writeToParcel(android.os.Parcel, int);
+    field public final int id;
+    field public final java.lang.String name;
+    field public final int keycode;
   }
 
   public abstract interface IThermalListenerCallback implements android.os.IInterface {
@@ -862,6 +874,15 @@ package mokee.preference {
     ctor public MKSystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
     ctor public MKSystemSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
     ctor public MKSystemSettingSwitchPreference(android.content.Context);
+    method protected boolean getPersistedBoolean(boolean);
+    method protected boolean isPersisted();
+    method protected boolean persistBoolean(boolean);
+  }
+
+  public class GlobalSettingSwitchPreference extends mokee.preference.SelfRemovingSwitchPreference {
+    ctor public GlobalSettingSwitchPreference(android.content.Context, android.util.AttributeSet, int);
+    ctor public GlobalSettingSwitchPreference(android.content.Context, android.util.AttributeSet);
+    ctor public GlobalSettingSwitchPreference(android.content.Context);
     method protected boolean getPersistedBoolean(boolean);
     method protected boolean isPersisted();
     method protected boolean persistBoolean(boolean);
@@ -1208,6 +1229,7 @@ package mokee.providers {
     field public static final java.lang.String STATUS_BAR_AM_PM = "status_bar_am_pm";
     field public static final java.lang.String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     field public static final java.lang.String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
+    field public static final java.lang.String SYSTEMUI_BURNIN_PROTECTION = "systemui_burnin_protection";
     field public static final java.lang.String STATUS_BAR_CLOCK = "status_bar_clock";
     field public static final java.lang.String STATUS_BAR_IME_SWITCHER = "status_bar_ime_switcher";
     field public static final java.lang.String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
@@ -1219,6 +1241,8 @@ package mokee.providers {
     field public static final java.lang.String SYSTEM_PROFILES_ENABLED = "system_profiles_enabled";
     field public static final java.lang.String SYS_PROP_MK_SETTING_VERSION = "sys.mk_settings_system_version";
     field public static final java.lang.String T9_SEARCH_INPUT_LOCALE = "t9_search_input_locale";
+    field public static final java.lang.String TORCH_LONG_PRESS_POWER_GESTURE = "torch_long_press_power_gesture";
+    field public static final java.lang.String TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
     field public static final java.lang.String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
     field public static final java.lang.String USE_EDGE_SERVICE_FOR_GESTURES = "edge_service_for_gestures";
     field public static final java.lang.String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
