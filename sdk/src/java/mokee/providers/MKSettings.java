@@ -1972,6 +1972,28 @@ public final class MKSettings {
                 sBooleanValidator;
 
         /**
+         * Whether and where to show memory bar in Recents
+         */
+        public static final String SHOW_MEMORY_BAR_IN_RECENTS =
+                "show_memory_bar_in_recents";
+
+        /** @hide */
+        public static final Validator SHOW_MEMORY_BAR_IN_RECENTS_VALIDATOR =
+                new Validator() {
+                    @Override
+                    public boolean validate(String value) {
+                        switch (value) {
+                            case "top":
+                            case "bottom":
+                            case "hidden":
+                                return true;
+                            default:
+                                return false;
+                        }
+                    }
+                };
+
+        /**
          * @hide
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
@@ -2240,6 +2262,7 @@ public final class MKSettings {
             VALIDATORS.put(DISPLAY_PICTURE_ADJUSTMENT,
                     DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR);
             VALIDATORS.put(SHOW_CHARGING_SPEED, SHOW_CHARGING_SPEED_VALIDATOR);
+            VALIDATORS.put(SHOW_MEMORY_BAR_IN_RECENTS, SHOW_MEMORY_BAR_IN_RECENTS_VALIDATOR);
         };
         // endregion
     }
