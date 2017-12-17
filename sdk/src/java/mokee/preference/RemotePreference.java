@@ -77,6 +77,10 @@ public class RemotePreference extends SelfRemovingPreference
     public static final String META_REMOTE_KEY =
             "org.cyanogenmod.settings.summary.key";
 
+    // If defined, only returns this suggestion if the feature is supported.
+    public static final String META_DATA_REQUIRE_FEATURE =
+            "com.android.settings.require_feature";
+
     public static final String EXTRA_ENABLED = ":mk:pref_enabled";
     public static final String EXTRA_KEY = ":mk:pref_key";
     public static final String EXTRA_SUMMARY = ":mk:pref_summary";
@@ -132,6 +136,14 @@ public class RemotePreference extends SelfRemovingPreference
         return (remoteKey == null || !remoteKey.equals(getKey())) ? null : remoteKey;
     }
 
+    protected boolean isFeatureRequired(Bundle metaData) {
+        String featureRequired = metaData.getString(META_DATA_REQUIRE_FEATURE);
+        if (featureRequired != null) {
+            return mContext.getPackageManager().hasSystemFeature(featureRequired);
+        }
+        return true;
+    }
+
     @Override
     public Intent getReceiverIntent() {
         final Intent i = getIntent();
@@ -166,7 +178,7 @@ public class RemotePreference extends SelfRemovingPreference
             if (DEBUG) Log.d(TAG, "getReceiverIntent class=" + receiverClass +
                                   " package=" + receiverPackage + " key=" + remoteKey);
 
-            if (remoteKey == null) {
+            if (remoteKey == null || !isFeatureRequired(meta)) {
                 continue;
             }
 

@@ -894,6 +894,7 @@ package mokee.preference {
     ctor public RemotePreference(android.content.Context, android.util.AttributeSet);
     method public android.content.Intent getReceiverIntent();
     method protected java.lang.String getRemoteKey(android.os.Bundle);
+    method protected boolean isFeatureRequired(android.os.Bundle);
     method public void onAttached();
     method public void onDetached();
     method public void onRemoteUpdated(android.os.Bundle);
@@ -902,6 +903,7 @@ package mokee.preference {
     field public static final java.lang.String EXTRA_ENABLED = ":mk:pref_enabled";
     field public static final java.lang.String EXTRA_KEY = ":mk:pref_key";
     field public static final java.lang.String EXTRA_SUMMARY = ":mk:pref_summary";
+    field public static final java.lang.String META_DATA_REQUIRE_FEATURE = "com.android.settings.require_feature";
     field public static final java.lang.String META_REMOTE_KEY = "org.cyanogenmod.settings.summary.key";
     field public static final java.lang.String META_REMOTE_RECEIVER = "org.cyanogenmod.settings.summary.receiver";
     field protected final android.content.Context mContext;
