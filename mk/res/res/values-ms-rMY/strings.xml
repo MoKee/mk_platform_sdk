@@ -86,28 +86,74 @@
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permdesc_writePhoneLocation">Benarkan aplikasi mengubah lokasi telefon.</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv">Jimat kuasa</string>
+  <string name="perf_profile_bal">Telah diseimbangkan</string>
+  <string name="perf_profile_perf">Prestasi</string>
+  <string name="perf_profile_bias_power">Kecekapan</string>
+  <string name="perf_profile_bias_perf">Cepat</string>
   <!-- Performance profiles -->
   <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatik</string>
+  <string name="live_display_auto_summary">Melaraskan warna suhu skrin secara automatik selepas matahari terbenam dan terbit</string>
+  <string name="live_display_off">Dimatikan</string>
+  <string name="live_display_off_summary">Menyahdayakan semua pelarasan</string>
+  <string name="live_display_day">Siang</string>
+  <string name="live_display_day_summary">Gunakan seting siang sahaja</string>
   <string name="live_display_night">Malam</string>
+  <string name="live_display_night_summary">Gunakan seting malam sahaja</string>
+  <string name="live_display_outdoor">Luar (matahari cerah)</string>
+  <string name="live_display_outdoor_summary">Gunakan seting luar sahaja</string>
+  <string name="live_display_hint">LiveDisplay boleh tolong mengurangkan sakit mata dan membantu anda tidur pada waktu malam. Klik sini untuk mencubanya!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay dimatikan.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mod auto.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mod siang.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: mod malam.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: mod luar.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay telah dimatikan.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay telah ditukar kepada mod auto.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay telah ditukar kepada mod siang.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay telah ditukar kepada mod malam.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay telah ditukar kepada mod luar.</string>
   <!-- Third party keyguard permission label -->
+  <string name="permlab_thirdPartyKeyguard">skrin kunci pihak ketiga</string>
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Membenarkan aplikasi untuk digunakan secara skrin kunci yang tidak selamat.</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Gagal memasang tema</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g> tetah gagal memasang</string>
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">Set semula tema</string>
+  <string name="theme_reset_notification_message">Tema sistem telah dipulihkan disebabkan oleh beberapa masalah aplikasi.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">akses servis tema</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Membenarkan aplikasi untuk akses servis tema. Sepatutnya tidak diperlukan untuk aplikasi-aplikasi biasa.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">membaca maklumat tema anda</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Membenarkan aplikasi untuk membaca tema anda dan       menentukan tema mana yang anda gunakan.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">mengubahsuai tema-tema anda</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Membenarkan aplikasi untuk memasukkan tema-tema baru dan mengubahsuai tema mana yang anda gunakan.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">akses pengurus pretasi</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Membenarkan aplikasi untuk akses servis prestasi. Sepatutnya tidak diperlukan untuk aplikasi-aplikasi biasa.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">akses servis pengurus skrin kunci secara langsung</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Membenarkan aplikasi untuk akses servis pengurus skrin kunci secara langsung.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">akses servis pengurus skrin kunci secara langsung</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Membenarkan aplikasi sistem untuk akses servis pengurus skrin kunci secara langsung.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">menyediakan servis pengurus skrin kunci secara langsung</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Membenarkan servis untuk menyediakan servis pengurus skrin kunci secara langsung.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">membaca cuaca</string>
   <string name="permdesc_weather_read">Benarkan aplikasi membaca kandungan daripada penyedia ramalan cuaca.</string>
   <string name="permlab_weather_write">kemaskini penyedia ramalan cuaca</string>
   <string name="permdesc_weather_write">Benarkan aplikasi mengemaskini kandungan daripada penyedia ramalan cuaca.</string>
