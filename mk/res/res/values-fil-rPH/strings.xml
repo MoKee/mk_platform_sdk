@@ -139,21 +139,48 @@
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">i-access ang tagapamahala ng gawa</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Pagpahintulot sa app para makita ang pagganap ng serbisyo. Hindi na kaylangan para sa mga normal na apps.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">paghintulot sa buhay na nakakandadung screen na tagapamahalang serbisyo</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Paghintulot sa app upang ma-access ang kasalukuyang nakakandadong screen na tagapamahalang serbisyo.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">paghintulot sa buhay na nakakandadung screen na tagapamahalang serbisyo</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Paghintulot sa systema ng apps para magamit ang kasalukoyang nakakandadong screen ng tagapamahalang serbisyo.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">maglaan ng kasalukoyang nakakandadong screen na tagapamahala ng serbisyo</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Paghintulot sa serbisyo upang maglaan ng kasalukoyang nakakandadong screen na tagapangasiwa ng serbisyo.</string>
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">pagbasa sa lagay ng panahon</string>
+  <string name="permdesc_weather_read">Paghintulot sa app upang mabasa ang nilalaman galing sa tagapangasiwa sa lagay ng panahon.</string>
+  <string name="permlab_weather_write">i-update ang tagapangasiwa sa lagay ng panahon</string>
+  <string name="permdesc_weather_write">Paghintulot sa app upang i-update ang nilalaman nang tagapangasiwa sa lagay ng panahon.</string>
+  <string name="permlab_weather_bind">pag-ugnay bilang serbisyong tagapangasiwa sa lagay ng panahon</string>
+  <string name="permdesc_weather_bind">Paghintulot sa app upang kilalanin bilang serbisyong tagapangasiwa sa lagay ng panahon.</string>
+  <string name="permlab_weather_access_mgr">i-access ang serbisyong tagapangasiwa sa lagay ng panahon</string>
+  <string name="permdesc_weather_access_mgr">Paghintulot sa app para ma access ang serbisyong lagay ng panahon sa systema. Hindi na kailangan sa mga normal na apps.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">pagbago sa nagamit na data sa database</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Paghintulot sa app para i-update ang nilalaman ng nagamit na data sa database.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">pagbasa sa nagamit na data sa database</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Paghintulot sa app para mabasa ang nialalaman galing sa nagamit na data sa database.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permlab_manageLiveDisplay">pangasiwa sa mga setting ng LiveDisplay</string>
+  <string name="permdesc_manageLiveDisplay">Paghintulot sa app para magkompigura ang mga mas mataas na display setting.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">obserbahan ang mga nabago sa sesyon ng audio</string>
+  <string name="permdesc_observe_audio_sessions">Paghintulot sa app na ma obserbahan ang mga nagawa at nasira na mga audio stream.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_manage_audio_sessions">pangasiwa sa mga nabago sa sesyon ng audio</string>
+  <string name="permdesc_manage_audio_sessions">Paghintulot sa app para ma padala ang mga pagbabago sa audio stream.</string>
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">Mga tema</string>
+  <string name="qs_themes_content_description">Kustomisasyon sa iyong tema</string>
   <!-- Privacy Guard -->
   <!-- Permissions used by remote preferences -->
 </resources>
