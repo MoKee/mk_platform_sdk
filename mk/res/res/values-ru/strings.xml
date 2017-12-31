@@ -18,41 +18,41 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">Система MoKee</string>
-  <string name="permlab_publishCustomTile">создание пользовательской плитки на панели быстрых настроек</string>
-  <string name="permdesc_publishCustomTile">Позволяет приложению публиковать плитку быстрых настроек.</string>
-  <string name="permlab_modifyNetworkSettings">изменение сетевых параметров системы</string>
+  <string name="permlab_publishCustomTile">Создание пользовательской плитки на панели быстрых настроек</string>
+  <string name="permdesc_publishCustomTile">Позволяет приложению публиковать плитку на панели быстрых настроек.</string>
+  <string name="permlab_modifyNetworkSettings">Изменение сетевых параметров системы</string>
   <string name="permdesc_modifyNetworkSettings">Позволяет приложению внести изменения в ограниченный набор параметров сети системы.</string>
-  <string name="permlab_modifySoundSettings">Изменить параметры звука системы</string>
+  <string name="permlab_modifySoundSettings">Изменение параметров звука системы</string>
   <string name="permdesc_modifySoundSettings">Позволяет приложению внести изменения в ограниченный набор параметров звуковой системы.</string>
-  <string name="permlab_bindCustomTileListenerService">привязка к службе просмотра пользовательских плиток</string>
+  <string name="permlab_bindCustomTileListenerService">Привязка к службе просмотра пользовательских плиток</string>
   <string name="permdesc_bindCustomTileListenerService">Позволяет приложению связать интерфейс верхнего уровня с службой пользовательских плиток.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">просмотр состояния и данных подключения телефона с поддержкой нескольких SIM-карт</string>
-  <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
+  <string name="permlab_readMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких SIM-карт</string>
+  <string name="permdesc_readMSPhoneState">Позволяет приложению отслеживать состояние и данные подключения телефона с поддержкой нескольких SIM-карт.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких СИМ-карт</string>
-  <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких СИМ-карт.</string>
+  <string name="permlab_modifyMSPhoneState">Просмотр состояния и данных подключения телефона с поддержкой нескольких SIM-карт</string>
+  <string name="permdesc_modifyMSPhoneState">Позволяет приложению изменять состояние и данные подключения телефона с поддержкой нескольких SIM-карт.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">изменение системных профилей</string>
-  <string name="permdesc_modifyProfiles">Разрешает приложению изменять профили системы.</string>
+  <string name="permlab_modifyProfiles">Изменение системных профилей</string>
+  <string name="permdesc_modifyProfiles">Позволяет приложению изменять профили системы.</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">Использовать аппаратный framework</string>
-  <string name="permdesc_useHardwareFramework">Разрешать приложениям использовать аппаратный MK framework.</string>
+  <string name="permlab_useHardwareFramework">Использовать аппаратный фреймворк</string>
+  <string name="permdesc_useHardwareFramework">Позволяет приложенияю использовать аппаратный фреймворк MK.</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">напрямую изменить сигнализацию</string>
-  <string name="permdesc_write_alarms">Позволяет приложению добавить, изменить или удалить все ваши тревоги.</string>
+  <string name="permlab_write_alarms">Прямое изменение будильников</string>
+  <string name="permdesc_write_alarms">Позволяет приложению добавлять, изменять или удалять все ваши будильнии.</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">тумблер запланированных сигнализаций</string>
-  <string name="permdesc_manage_alarms">Позволяет приложению отключать запланированной сигнализации.</string>
+  <string name="permlab_manage_alarms">Включение/выключение запланированных будильников</string>
+  <string name="permdesc_manage_alarms">Позволяет приложению отключать запланированные будильники.</string>
   <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">доступ к расписанию сигнализации</string>
-  <string name="permdesc_read_alarms">Позволяет приложению читать ваши регулярные сигнализации.</string>
+  <string name="permlab_read_alarms">Доступ к запланированным будильникам</string>
+  <string name="permdesc_read_alarms">Позволяет приложению просматривать ваши запланированные будильники.</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">изменить параметры системы МК</string>
-  <string name="permdesc_writeSettings">Позволяет приложению изменять параметры системы МК.</string>
+  <string name="permlab_writeSettings">Изменение параметров системы</string>
+  <string name="permdesc_writeSettings">Позволяет приложению изменять параметры системы.</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">изменение настроек системы безопасности</string>
-  <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы МК. Не используется в обычных приложениях.</string>
+  <string name="permlab_writeSecureSettings">Изменение настроек системы безопасности</string>
+  <string name="permdesc_writeSecureSettings">Позволяет приложению изменять параметры безопасности системы. Не используется в обычными приложениями.</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">Управление постоянным хранилищем</string>
   <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться после заводского сброса.</string>
@@ -67,7 +67,7 @@
   <string name="profileNameWork">На работе</string>
   <string name="profileNameHome">Дома</string>
   <string name="profileNameSilent">Без звука</string>
-  <string name="profileNameNight">Ночь</string>
+  <string name="profileNameNight">Ночной</string>
   <string name="profileNameAutomobile">За рулем</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
@@ -80,11 +80,11 @@
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">Доступ к местоположению</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Позволить приложению получать информацию о местоположении телефона.</string>
+  <string name="permdesc_readPhoneLocation">Позволяет приложению получать информацию о местоположении телефона.</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">Записать местоположение</string>
+  <string name="permlab_writePhoneLocation">Запись местоположения телефона</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Позволить  приложению записывать местоположение телефона.</string>
+  <string name="permdesc_writePhoneLocation">Позволить приложению записывать местоположение телефона.</string>
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv">Энергосбережение</string>
   <string name="perf_profile_bal">Сбалансированный</string>
@@ -102,7 +102,7 @@
   <string name="live_display_auto_summary">Автоматически регулировать температуру цвета экрана после заката и восхода солнца</string>
   <string name="live_display_off">Отключить</string>
   <string name="live_display_off_summary">Автоподстройка экрана отключена</string>
-  <string name="live_display_day">День</string>
+  <string name="live_display_day">Дневной</string>
   <string name="live_display_day_summary">Использовать только дневные параметры</string>
   <string name="live_display_night">Ночь</string>
   <string name="live_display_night_summary">Использовать только ночные параметры</string>
@@ -117,78 +117,78 @@
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
   <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay изменен на режим auto.</string>
   <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay изменен на дневной режим.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay изменен на ночной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay переключён на ночной режим.</string>
   <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay изменен на режим улицы.</string>
   <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">сторонние блокировщики экрана</string>
+  <string name="permlab_thirdPartyKeyguard">Сторонние блокировщики экрана</string>
   <!-- Third party keyguard permission description -->
   <string name="permdesc_thirdPartyKeyguard">Разрешить приложению использоваться как блокировщик экрана.</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">Не удалось установить тему</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> не удалось установить</string>
+  <string name="theme_install_error_message">Не удалось установить тему <xliff:g id="theme">%1$s </xliff:g></string>
   <!-- Theme reset notification -->
   <string name="theme_reset_notification_title">Сброс темы</string>
   <string name="theme_reset_notification_message">Из-за сбоев приложений восстановлена стандартная тема.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">разрешения для темы</string>
+  <string name="permlab_accessThemeService">Доступ к службе тем</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Приложение сможет получать доступ к службе тем. Это разрешение не используется обычными приложениями.</string>
+  <string name="permdesc_accessThemeService">Позволяет приложению получить доступ к службе тем. Это разрешение не используется обычными приложениями.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">прочитайте информацию о вашей теме</string>
+  <string name="permlab_readThemes">Чтение информации о вашей теме</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Приложение сможет считывать темы оформления и определять, какая тема сейчас применена.</string>
+  <string name="permdesc_readThemesDesc">Позволяет приложению считывать темы оформления и определять, какая тема сейчас применена.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">Изменение тем</string>
+  <string name="permlab_writeThemes">Изменение ваших тем</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Приложение сможет осуществлять установку новых тем оформления и изменять текущую тему.</string>
+  <string name="permdesc_writeThemesDesc">Позволяет приложению осуществлять установку новых тем оформления и изменять текущую тему.</string>
   <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">Разрешения менеджера производительности</string>
+  <string name="permlab_perfAccess">Доступ к менеджеру производительности</string>
   <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Приложение сможет получать доступ к службе производительности. Это разрешение не используется обычными приложениями.</string>
+  <string name="permdesc_perfAccessDesc">Позволяет приложению получать доступ к службе производительности. Это разрешение не используется обычными приложениями.</string>
   <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">доступ к сервису живого экрана блокировки</string>
+  <string name="permlab_accessLiveLockScreenService">Доступ к сервису живого экрана блокировки</string>
   <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Разрешает приложению доступ к сервису живого экрана блокировки.</string>
+  <string name="permdesc_accessLiveLockScreenService">Позволяет приложению получить доступ к сервису живого экрана блокировки.</string>
   <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">доступ к сервису живого экрана блокировки</string>
+  <string name="permlab_accessLiveLockScreenServicePrivate">Доступ к сервису живого экрана блокировки</string>
   <!-- Privileged access live lock screen manager service permission description -->
   <string name="permdesc_accessLiveLockScreenServicePrivate">Разрешить системным приложениям доступ к службе живого экрана блокировки.</string>
   <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">предоставить службу живого экрана блокировки</string>
+  <string name="permlab_accessLiveLockScreenServiceProvider">Предоставление службы живого экрана блокировки</string>
   <!-- Live lock screen manager service provider permission description -->
   <string name="permdesc_accessLiveLockScreenServiceProvider">Разрешает приложению предоставить службу живого экрана блокировки.</string>
   <!-- Weather Service strings -->
-  <string name="permlab_weather_read">чтение погоды</string>
+  <string name="permlab_weather_read">Чтение информации о погоде</string>
   <string name="permdesc_weather_read">Позволяет приложению читать данные поставщика погоды.</string>
-  <string name="permlab_weather_write">обновить поставщика погоды</string>
+  <string name="permlab_weather_write">Обновление поставщика погоды</string>
   <string name="permdesc_weather_write">Позволяет приложению обновлять данные поставщика погоды.</string>
-  <string name="permlab_weather_bind">назначить службой поставщика погоды</string>
+  <string name="permlab_weather_bind">Назначение службы поставщика погоды</string>
   <string name="permdesc_weather_bind">Позволяет приложению быть службой поставщика погоды.</string>
-  <string name="permlab_weather_access_mgr">доступ к службе погоды</string>
-  <string name="permdesc_weather_access_mgr">Разрешает приложению доступ к поставщику погоды в системе МK. Не используется в обычных приложениях.</string>
+  <string name="permlab_weather_access_mgr">Доступ к службе погоды</string>
+  <string name="permdesc_weather_access_mgr">Разрешает приложению доступ к поставщику погоды в системе. Не используется обычными приложениями.</string>
   <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">изменять БД использования данных</string>
+  <string name="permlab_dataUsageWrite">Изменение БД использования данных</string>
   <!-- DataUsageProvider write permission description -->
   <string name="permdesc_dataUsageWrite">Разрешить запись в БД использования данных</string>
   <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">чтение БД использования данных</string>
+  <string name="permlab_dataUsageRead">Чтение БД использования данных</string>
   <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">Разрешить доступ на четние из БД использования данных</string>
+  <string name="permdesc_dataUsageRead">Разрешить доступ на чтение из БД использования данных</string>
   <!-- LiveDisplay manager permission -->
   <string name="permlab_manageLiveDisplay">Управление параметрами LiveDisplay</string>
   <string name="permdesc_manageLiveDisplay">Позволяет приложению управлять расширенными параметрами дисплея.</string>
   <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">наблюдать за изменениями аудио сессии</string>
+  <string name="permlab_observe_audio_sessions">Наблюдение за изменениями аудиосессии</string>
   <string name="permdesc_observe_audio_sessions">Позволяет приложению наблюдать за создаваемыми и разрушающимися аудиопотоками.</string>
   <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">наблюдать за изменениями аудио сессии</string>
+  <string name="permlab_manage_audio_sessions">Наблюдение за изменениями аудиосессии</string>
   <string name="permdesc_manage_audio_sessions">Разрешить приложению обновлять аудиопоток.</string>
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Темы</string>
   <string name="qs_themes_content_description">Настроить тему</string>
   <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Менеджер защиты личных данных</string>
+  <string name="privacy_guard_manager_title">Защищённый режим</string>
   <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">управление удаленными настройками</string>
-  <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удаленными настройками</string>
+  <string name="permlab_manageRemotePrefs">Управление удалёнными настройками</string>
+  <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удалёнными настройками</string>
 </resources>
