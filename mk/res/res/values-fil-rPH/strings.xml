@@ -92,6 +92,11 @@
   <string name="perf_profile_bias_power">Kahusayan</string>
   <string name="perf_profile_bias_perf">Mabilis</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Pinakamataas na matitipid na power, binabawasan ang performance sa kagamitan</string>
+  <string name="perf_profile_bal_summary">I-balanse para sa pinakamahusay na pagganap at mga katangian ng power</string>
+  <string name="perf_profile_perf_summary">Mataas ng performance mode. Kagamitan para sa mga aplikasyon at nangangailangan ng mababang latency at pinakamataas throughout sa power consumption na hindi inaalala</string>
+  <string name="perf_profile_bias_power_summary">Favor na pagpapatipid ng power. Limitahan ang pinakamataas ng CPU power at i-optimize para sa power saving na presyong mas mataas na latency</string>
+  <string name="perf_profile_bias_perf_summary">Favor na performance. Binabawasan ang latency pa pagkunsumo ng bahagyang mas mataas na power</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Awtomatiko</string>
   <string name="live_display_auto_summary">Awtomatikong i-adjust ang temperatura ng kulay ng screen pagkatapos ng paglubog ng araw at pagsikat ng araw</string>
@@ -182,5 +187,8 @@
   <string name="qs_themes_label">Mga tema</string>
   <string name="qs_themes_content_description">Kustomisasyon sa iyong tema</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">Privacy Guard</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">pamahalaan ang mga remote settings</string>
+  <string name="permdesc_manageRemotePrefs">Nagpapahintulot ng isang app upang pamahalaan ang mga remote settings</string>
 </resources>

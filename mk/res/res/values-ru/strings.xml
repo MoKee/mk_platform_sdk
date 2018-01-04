@@ -115,10 +115,10 @@
   <string name="accessibility_quick_settings_live_display_night">LiveDisplay: ночной режим.</string>
   <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим улицы.</string>
   <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay изменен на режим auto.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay изменен на дневной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay переключён на автоматический режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay переключён на дневной режим.</string>
   <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay переключён на ночной режим.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay изменен на режим улицы.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay переключён на уличный режим.</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">Сторонние блокировщики экрана</string>
   <!-- Third party keyguard permission description -->
