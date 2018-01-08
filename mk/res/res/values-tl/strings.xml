@@ -17,8 +17,21 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
+  <string name="mokee_system_label">Sistema ng MoKee</string>
+  <string name="permlab_publishCustomTile">lumikha ng isang pasadyang tile sa loob ng panel ng mga mabilisang setting</string>
+  <string name="permdesc_publishCustomTile">Nagpapahintulot sa isang app upang maglathala ng isang tile ng mabilisang settings.</string>
+  <string name="permlab_modifyNetworkSettings">baguhin ang mga setting ng network ng sistema</string>
+  <string name="permdesc_modifyNetworkSettings">Nagpapahintulot sa isang app na gumawa ng mga pagbabago sa airplane mode at mga setting ng network ng mobile data.</string>
+  <string name="permlab_modifySoundSettings">baguhin ang mga setting ng sistema ng tunog</string>
+  <string name="permdesc_modifySoundSettings">Nagpapahintulot sa isang app para gumawa ng mga pagbabago sa mode ng pagkaantala ng settings ng tunog.</string>
+  <string name="permlab_bindCustomTileListenerService">ilakip sa isang pasadyang tile ng serbisyo ng tagapakinig</string>
+  <string name="permdesc_bindCustomTileListenerService">Nagpapahintulot sa app upang ilakip sa interface ng nangungunang antas ng isang pasadyang tile ng serbisyo ng tagapakinig.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_readMSPhoneState">tingnan ang estado ng telepono at koneksyon ng data na may suporta sa maramihang SIMs</string>
+  <string name="permdesc_readMSPhoneState">Nagpapahintulot sa isang app upang tingnan ang estado ng telepono at koneksyon ng data na may suporta sa maramihang SIMs.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+  <string name="permlab_modifyMSPhoneState">baguhin ang estado ng telepono at koneksyon ng data na may suporta sa maramihang SIMs</string>
+  <string name="permdesc_modifyMSPhoneState">Nagpapahintulot sa isang app upang baguhin ang estado ng telepono at koneksyon ng data na may suporta sa maramihang SIMs.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <!-- Labels for the WRITE_ALARMS permission. -->

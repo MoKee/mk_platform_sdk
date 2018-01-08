@@ -73,8 +73,8 @@
   <string name="profileGroupPhone">Téléphone</string>
   <string name="profileGroupCalendar">Agenda</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
+  <string name="profileGroupEmail">Courriel</string>
+  <string name="profileGroupSMS">Texto</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Autres</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
