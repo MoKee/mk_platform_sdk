@@ -92,6 +92,9 @@
   <string name="perf_profile_bias_power">Kahusayan</string>
   <string name="perf_profile_bias_perf">Mabilis</string>
   <!-- Performance profiles -->
+  <string name="perf_profile_pwrsv_summary">Pinakamalaki na power savings, binabawasan ang performance ng device</string>
+  <string name="perf_profile_bal_summary">Balanse ng optimal performance at power characteristics</string>
+  <string name="perf_profile_perf_summary">Mode ng mataas na performance. Kapaki-pakinabang para sa mga application na nangangailangan ng mababang latency at pinakamataas na throughput kung ang paggamit sa power ay hindi dapat alalahanin</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">Awtomatiko</string>
   <string name="live_display_auto_summary">Awtomatikong i-adjust ang temperatura ng kulay ng screen pagkatapos ng paglubog ng araw at pagsikat ng araw</string>
@@ -103,31 +106,70 @@
   <string name="live_display_night_summary">Gamitin ang mga setting ng gabi lamang</string>
   <string name="live_display_outdoor">Labasan (maliwanag)</string>
   <string name="live_display_outdoor_summary">Gamitin ang mga setting ng panlabas lamang</string>
+  <string name="accessibility_quick_settings_live_display_off">Naka-off ang LiveDisplay.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: awtomatikong mode.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: pang-araw na mode.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: pang-gabi na mode.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: panlabas na mode.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay ay nakapatay.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay ay binago sa awtomatikong mode.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay ay binago sa pang-araw na mode.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay ay binago sa pang-gabi na mode.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay ay binago sa panlabas na mode.</string>
   <!-- Third party keyguard permission label -->
   <!-- Third party keyguard permission description -->
+  <string name="permdesc_thirdPartyKeyguard">Nagpapahintulot sa isang app na magamit bilang isang hindi ligtas na lock screen.</string>
   <!-- Theme installation error notification -->
+  <string name="theme_install_error_title">Nabigo na i-install ang theme</string>
+  <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g> nabigo na i-install</string>
   <!-- Theme reset notification -->
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">Nagpapahintulot sa isang app upang i-access ang theme service. Hindi dapat kailanganin para sa mga normal na app.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">basahin ang impormasyon ng iyong theme</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">Nagpapahintulot sa app upang basahin ang iyong mga theme at
+       tukuyin kung anong theme ang iyong ginamit.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">baguhin ang iyong mga theme</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">Nagpapahintulot sa app upang magpasok ng mga bagong theme at baguhin ang theme na iyong ginamit.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">i-access ang performance manager</string>
   <!-- Performance manager permission description -->
+  <string name="permdesc_perfAccessDesc">Nagpapahintulot sa app upang i-access ang performance service. Hindi dapat kailanganin para sa mga normal na app.</string>
   <!-- Access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenService">i-access ang live lock screen manager service</string>
   <!-- Access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenService">Nagpapahintulot sa isang app upang i-access ang live lock screen manager service.</string>
   <!-- Privileged access live lock screen manager service permission label -->
+  <string name="permlab_accessLiveLockScreenServicePrivate">i-access ang live lock screen manager service</string>
   <!-- Privileged access live lock screen manager service permission description -->
+  <string name="permdesc_accessLiveLockScreenServicePrivate">Nagpapahintulot sa mga system app upang i-access ang live lock screen manager service.</string>
   <!-- Live lock screen manager service provider permission label -->
+  <string name="permlab_accessLiveLockScreenServiceProvider">magbigay ng live lock screen manager service</string>
   <!-- Live lock screen manager service provider permission description -->
+  <string name="permdesc_accessLiveLockScreenServiceProvider">Nagpapahintulot sa isang service na magbigay sa live lock screen manager service.</string>
   <!-- Weather Service strings -->
+  <string name="permdesc_weather_read">Nagpapahintulot sa isang app upang basahin ang linalaman mula sa weather provider.</string>
+  <string name="permlab_weather_write">i-update ang weather provider</string>
+  <string name="permdesc_weather_write">Nagpapahintulot sa isang app upang i-update ang nilalaman ng weather provider.</string>
+  <string name="permdesc_weather_bind">Nagpapahintulot sa isang app na matukoy bilang isang weather provider service.</string>
+  <string name="permlab_weather_access_mgr">i-access ang weather service</string>
+  <string name="permdesc_weather_access_mgr">Nagpapahintulot sa isang app upang i-access ang weather service sa sistema. Hindi dapat kailanganin para sa mga normal na app.</string>
   <!-- DataUsageProvider write permission title -->
+  <string name="permlab_dataUsageWrite">baguhin ang data usage na database</string>
   <!-- DataUsageProvider write permission description -->
+  <string name="permdesc_dataUsageWrite">Nagpapahintulot sa isang app upang i-update ang nilalaman ng data usage na database.</string>
   <!-- DataUsageProvider read permission title -->
+  <string name="permlab_dataUsageRead">basahin ang data usage na database</string>
   <!-- DataUsageProvider read permission description -->
+  <string name="permdesc_dataUsageRead">Nagpapahintulot sa isang app upang basahin ang nilalaman mula sa data usage na database.</string>
   <!-- LiveDisplay manager permission -->
+  <string name="permdesc_manageLiveDisplay">Nagpapahintulot sa isang app upang i-configure ang advanced na mga display setting.</string>
   <!-- MKAudioService - observe session changes permission -->
+  <string name="permlab_observe_audio_sessions">obserbahan ang mga pagbabago sa audio session</string>
   <string name="permdesc_observe_audio_sessions">Paghintulot sa app na ma obserbahan ang mga nagawa at nasira na mga audio stream.</string>
   <!-- MKAudioService - observe session changes permission -->
   <string name="permlab_manage_audio_sessions">pangasiwa sa mga nabago sa sesyon ng audio</string>
@@ -137,4 +179,5 @@
   <string name="qs_themes_content_description">Kustomisasyon sa iyong tema</string>
   <!-- Privacy Guard -->
   <!-- Permissions used by remote preferences -->
+  <string name="permdesc_manageRemotePrefs">Nagpapahintulot sa isang app upang i-manage ang mga remote setting</string>
 </resources>
