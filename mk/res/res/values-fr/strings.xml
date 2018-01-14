@@ -73,7 +73,7 @@
   <string name="profileGroupPhone">Téléphone</string>
   <string name="profileGroupCalendar">Agenda</string>
   <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">E-mail</string>
+  <string name="profileGroupEmail">Courriel</string>
   <string name="profileGroupSMS">SMS</string>
   <!-- Name of wildcard profile. -->
   <string name="wildcardProfile">Autres</string>
