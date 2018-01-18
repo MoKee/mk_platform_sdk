@@ -21,7 +21,7 @@
   <string name="permlab_publishCustomTile">créer une tuile personnalisée dans le panneau de configuration rapide</string>
   <string name="permdesc_publishCustomTile">Permettre à une application de publier rapidement quelques paramètres.</string>
   <string name="permlab_modifyNetworkSettings">modifier les paramètres de réseau du système</string>
-  <string name="permdesc_modifyNetworkSettings">Autorise une application à effectuer des changements sur le mode avion et le réglage des données mobiles.</string>
+  <string name="permdesc_modifyNetworkSettings">Autorise une application à apporter des changements au mode avion et aux paramètres de données mobiles.</string>
   <string name="permlab_modifySoundSettings">modifier les paramètres système de son</string>
   <string name="permdesc_modifySoundSettings">Permet à une app de modifier les paramètres audio.</string>
   <string name="permlab_bindCustomTileListenerService">lier à un service d\'écoute de tuile personnalisée</string>
