@@ -57,18 +57,18 @@
   <string name="permlab_managePersistentStorage">Управление постоянным хранилищем</string>
   <string name="permdesc_managePersistentStorage">Позволяет приложению чтение или запись свойства, которые могут сохраняться после заводского сброса.</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Наблюдает за пользовательскими плитками</string>
+  <string name="custom_tile_listener_binding_label">Наблюдение за пользовательскими плитками</string>
   <!-- Labels for the PROTECTED_APP permission. -->
   <string name="permlab_protectedApp">Добавление и удаление приложений для защищенных приложений</string>
   <string name="permdesc_protectedApp">Разрешает приложению отмечать другие приложения как защищённые и блокировать их.</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
-  <string name="profileNameDefault">По умолчанию</string>
+  <string name="profileNameDefault">Стандартный</string>
   <string name="profileNameWork">На работе</string>
   <string name="profileNameHome">Дома</string>
   <string name="profileNameSilent">Без звука</string>
   <string name="profileNameNight">Ночной</string>
-  <string name="profileNameAutomobile">За рулем</string>
+  <string name="profileNameAutomobile">За рулём</string>
   <!-- Names of application groups. -->
   <string name="profileGroupPhone">Телефон</string>
   <string name="profileGroupCalendar">Календарь</string>
