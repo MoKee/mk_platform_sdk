@@ -27,11 +27,11 @@
   <string name="permlab_bindCustomTileListenerService">liên kết với một dịch vụ nghe tùy chỉnh tiêu đề</string>
   <string name="permdesc_bindCustomTileListenerService">Cho phép các ứng dụng liên kết với giao diện cấp cao của một dịch vụ nghe tùy chỉnh tiêu đề.</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs</string>
-  <string name="permdesc_readMSPhoneState">Cho phép một ứng dụng xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs.</string>
+  <string name="permlab_readMSPhoneState">xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
+  <string name="permdesc_readMSPhoneState">Cho phép một ứng dụng xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">thay đổi tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs</string>
-  <string name="permdesc_modifyMSPhoneState">Cho phép một ứng dụng sửa tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIMs.</string>
+  <string name="permlab_modifyMSPhoneState">thay đổi tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
+  <string name="permdesc_modifyMSPhoneState">Cho phép một ứng dụng sửa tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">sửa đổi hồ sơ hệ thống</string>
   <string name="permdesc_modifyProfiles">Cho phép một ứng dụng để sửa đổi hồ sơ hệ thống.</string>
