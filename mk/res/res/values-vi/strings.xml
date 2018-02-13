@@ -187,7 +187,7 @@
   <string name="qs_themes_label">Chủ đề</string>
   <string name="qs_themes_content_description">Tùy chỉnh các chủ đề của bạn</string>
   <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Privacy Guard</string>
+  <string name="privacy_guard_manager_title">Bảo vệ quyền riêng tư</string>
   <!-- Permissions used by remote preferences -->
   <string name="permlab_manageRemotePrefs">quản lý cài đặt từ xa</string>
   <string name="permdesc_manageRemotePrefs">Cho phép một ứng dụng quản lý cài đặt từ xa</string>
