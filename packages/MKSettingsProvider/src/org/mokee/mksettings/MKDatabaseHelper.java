@@ -372,9 +372,6 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             loadRegionLockedStringSetting(stmt,
                     MKSettings.Secure.DEFAULT_THEME_PACKAGE, R.string.def_theme_package);
 
-            loadIntegerSetting(stmt, MKSettings.Secure.DEV_FORCE_SHOW_NAVBAR,
-                    R.integer.def_force_show_navbar);
-
             loadStringSetting(stmt, MKSettings.Secure.QS_TILES,
                     org.mokee.platform.internal.
                             R.string.config_defaultQuickSettingsTiles);
@@ -452,6 +449,10 @@ public class MKDatabaseHelper extends SQLiteOpenHelper{
             stmt = db.compileStatement("INSERT OR IGNORE INTO global(name,value)"
                     + " VALUES(?,?);");
             // Global
+            loadIntegerSetting(stmt,
+                    MKSettings.Global.DEV_FORCE_SHOW_NAVBAR,
+                    R.integer.def_force_show_navbar);
+
             loadBooleanSetting(stmt,
                     MKSettings.Global.POWER_NOTIFICATIONS_ENABLED,
                     R.bool.def_power_notifications_enabled);
