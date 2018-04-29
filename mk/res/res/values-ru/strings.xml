@@ -187,8 +187,8 @@
   <string name="qs_themes_label">Темы</string>
   <string name="qs_themes_content_description">Настроить тему</string>
   <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Защищённый режим</string>
+  <string name="privacy_guard_manager_title">Защищенный режим</string>
   <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">управление удалёнными настройками</string>
-  <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удалёнными настройками</string>
+  <string name="permlab_manageRemotePrefs">управление удаленными настройками</string>
+  <string name="permdesc_manageRemotePrefs">Приложение сможет управлять удаленными настройками</string>
 </resources>
