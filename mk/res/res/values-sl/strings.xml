@@ -189,4 +189,6 @@
   <!-- Privacy Guard -->
   <string name="privacy_guard_manager_title">Varovanje zasebnosti</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">upravljanje oddaljenih nastavitev</string>
+  <string name="permdesc_manageRemotePrefs">Dovoli aplikaciji upravljanje oddaljenih nastavitev</string>
 </resources>
