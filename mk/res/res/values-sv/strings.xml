@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
+  <string name="mokee_system_label">MoKee System</string>
   <string name="permlab_modifyNetworkSettings">ändra system-nätverksinställningar</string>
   <string name="permlab_modifySoundSettings">ändra systemljudsinställningar</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
