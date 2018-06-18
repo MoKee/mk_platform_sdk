@@ -50,6 +50,7 @@
   <string name="profileNameNight">Natt</string>
   <string name="profileNameAutomobile">Bil</string>
   <!-- Names of application groups. -->
+  <string name="profileGroupPhone">Telefon</string>
   <string name="profileGroupCalendar">Kalender</string>
   <string name="profileGroupGmail">Gmail</string>
   <string name="profileGroupEmail">E-post</string>
