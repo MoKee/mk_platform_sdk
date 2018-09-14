@@ -19,48 +19,48 @@
   <!-- Label for the MoKee system components when they are shown to the user. -->
   <string name="mokee_system_label">MoKeeシステム</string>
   <string name="permlab_publishCustomTile">クイック設定パネルに新しいタイルを設定する</string>
-  <string name="permdesc_publishCustomTile">クイック設定パネルを変更することをアプリケーションに許可します。</string>
+  <string name="permdesc_publishCustomTile">クイック設定タイルの作成をアプリに許可します</string>
   <string name="permlab_modifyNetworkSettings">システムのネットワーク設定の変更</string>
-  <string name="permdesc_modifyNetworkSettings">機内モードとモバイルデータ設定の変更をアプリケーションに許可します。</string>
+  <string name="permdesc_modifyNetworkSettings">機内モードとモバイルデータ設定の変更をアプリに許可します</string>
   <string name="permlab_modifySoundSettings">システムのサウンド設定の変更</string>
-  <string name="permdesc_modifySoundSettings">割り込みモードサウンド設定の変更をアプリケーションに許可</string>
+  <string name="permdesc_modifySoundSettings">割り込みモードサウンド設定の変更をアプリに許可</string>
   <string name="permlab_bindCustomTileListenerService">通知リスナーサービスにバインド</string>
-  <string name="permdesc_bindCustomTileListenerService">アプリがカスタムタイルリスナーサービスのトップレベルインターフェイスにバインドすることを許可します。</string>
+  <string name="permdesc_bindCustomTileListenerService">アプリがカスタムタイルリスナーサービスのトップレベルインターフェースにバインドすることを許可します</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <string name="permlab_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示</string>
-  <string name="permdesc_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示することをアプリケーションに許可</string>
+  <string name="permdesc_readMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示することをアプリに許可</string>
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <string name="permlab_modifyMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を変更</string>
-  <string name="permdesc_modifyMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示することをアプリケーションに許可</string>
+  <string name="permdesc_modifyMSPhoneState">複数のSIMカードをサポートした電話の状態とデータ接続を表示することをアプリに許可</string>
   <!-- Labels for the MODIFY_PROFILES permission. -->
   <string name="permlab_modifyProfiles">システムプロファイルの変更</string>
-  <string name="permdesc_modifyProfiles">システムプロファイルの変更をアプリケーションに許可</string>
+  <string name="permdesc_modifyProfiles">システムプロファイルの変更をアプリに許可</string>
   <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
   <string name="permlab_useHardwareFramework">ハードウェアフレームワークの使用</string>
-  <string name="permdesc_useHardwareFramework">MKハードウェアフレームワークへのアクセスをアプリケーションに許可</string>
+  <string name="permdesc_useHardwareFramework">MKハードウェアフレームワークへのアクセスをアプリに許可</string>
   <!-- Labels for the WRITE_ALARMS permission. -->
   <string name="permlab_write_alarms">アラームを直接変更</string>
-  <string name="permdesc_write_alarms">アラームの追加、変更または削除することをアプリケーションに許可</string>
+  <string name="permdesc_write_alarms">アラームの追加、変更または削除することをアプリに許可</string>
   <!-- Labels for the MANAGE_ALARMS permission. -->
   <string name="permlab_manage_alarms">スケジュールされたアラームの切り替え</string>
-  <string name="permdesc_manage_alarms">スケジュールされたアラームのオンまたはオフすることをアプリケーションに許可</string>
+  <string name="permdesc_manage_alarms">スケジュールされたアラームのオンまたはオフすることをアプリに許可</string>
   <!-- Labels for the READ_ALARMS permission. -->
   <string name="permlab_read_alarms">スケジュールされたアラームにアクセス</string>
-  <string name="permdesc_read_alarms">スケジュールされたアラームの読み取りをアプリケーションに許可</string>
+  <string name="permdesc_read_alarms">スケジュールされたアラームの読み取りをアプリに許可</string>
   <!-- Labels for the WRITE_SETTINGS permission -->
   <string name="permlab_writeSettings">MKシステム設定の変更</string>
-  <string name="permdesc_writeSettings">MKシステム設定の変更をアプリケーションに許可</string>
+  <string name="permdesc_writeSettings">MKシステム設定の変更をアプリに許可</string>
   <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
   <string name="permlab_writeSecureSettings">MKシステムセキュリティ設定の変更</string>
-  <string name="permdesc_writeSecureSettings">MKシステムセキュリティ設定の変更をアプリケーションに許可（一般的ではないアプリケーション用）</string>
+  <string name="permdesc_writeSecureSettings">MKシステムセキュリティ設定の変更をアプリに許可（一般的ではないアプリ用）</string>
   <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
   <string name="permlab_managePersistentStorage">永続的なストレージ管理</string>
-  <string name="permdesc_managePersistentStorage">ファクトリーリセットが困難になる可能性のあるプロパティの読み書きをアプリケーションに許可</string>
+  <string name="permdesc_managePersistentStorage">ファクトリーリセットが困難になる可能性のあるプロパティの読み書きをアプリに許可</string>
   <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
   <string name="custom_tile_listener_binding_label">カスタムタイルリスナー</string>
   <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">保護されたアプリケーションにアプリケーションを追加したり削除したりする</string>
-  <string name="permdesc_protectedApp">アプリが他のアプリを保護されているとマークしてロックすることをアプリに許可します。</string>
+  <string name="permlab_protectedApp">保護されたアプリケーションにアプリを追加したり削除したりする</string>
+  <string name="permdesc_protectedApp">アプリが他のアプリを保護されているとマークしてロックすることをアプリに許可します</string>
   <!-- Profiles -->
   <!-- Names of default profiles. -->
   <string name="profileNameDefault">デフォルト</string>
@@ -80,11 +80,11 @@
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_readPhoneLocation">携帯電話の位置情報の読み取り</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">携帯電話の位置情報の読み取りをアプリケーションに許可</string>
+  <string name="permdesc_readPhoneLocation">携帯電話の位置情報の読み取りをアプリに許可</string>
   <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
   <string name="permlab_writePhoneLocation">携帯電話の位置情報の書き込み</string>
   <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">携帯電話の位置情報の変更をアプリケーションに許可</string>
+  <string name="permdesc_writePhoneLocation">携帯電話の位置情報の変更をアプリに許可</string>
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv">節電</string>
   <string name="perf_profile_bal">バランス</string>
@@ -94,35 +94,35 @@
   <!-- Performance profiles -->
   <string name="perf_profile_pwrsv_summary">最大の省電力、デバイス性能の低下</string>
   <string name="perf_profile_bal_summary">最適な性能と電力消費のバランス</string>
-  <string name="perf_profile_perf_summary">高性能モード。 低消費電力ではなくパフォーマンスを優先し電力消費が増加します。</string>
-  <string name="perf_profile_bias_power_summary">省電力を優先します。 最大CPUパワーを制限し、省電力モードに最適化する</string>
-  <string name="perf_profile_bias_perf_summary">パフォーマンスを優先する。 消費電力と待ち時間を短縮</string>
+  <string name="perf_profile_perf_summary">高性能モードです。 低消費電力ではなくパフォーマンスを優先し電力消費が増加します。</string>
+  <string name="perf_profile_bias_power_summary">省電力を優先します。 最大CPUパワーを制限し省電力モードに最適化します。</string>
+  <string name="perf_profile_bias_perf_summary">パフォーマンスを優先します。 消費電力と待ち時間を短縮します。</string>
   <!-- LiveDisplay strings -->
   <string name="live_display_auto">自動</string>
   <string name="live_display_auto_summary">日の出と日の入りの画面の色温度を自動的に調整</string>
   <string name="live_display_off">オフ</string>
-  <string name="live_display_off_summary">すべての調整を無効にする</string>
+  <string name="live_display_off_summary">全ての調整を無効にする</string>
   <string name="live_display_day">日</string>
   <string name="live_display_day_summary">日付け設定のみ使用</string>
   <string name="live_display_night">夜</string>
   <string name="live_display_night_summary">夜間設定のみ使用</string>
   <string name="live_display_outdoor">アウトドア (明るい太陽)</string>
   <string name="live_display_outdoor_summary">屋外の設定のみを使用する</string>
-  <string name="live_display_hint">LiveDisplayは目の疲れを軽減し、夜間に寝るのに役立ちます。 ここをクリックして試してみてください！</string>
-  <string name="accessibility_quick_settings_live_display_off">ライブディスプレイOFF</string>
-  <string name="accessibility_quick_settings_live_display_auto">ライブディスプレイ：自動モード</string>
-  <string name="accessibility_quick_settings_live_display_day">ライブディスプレイ：Dayモード</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜間モード。</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：屋外モード。</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplayをオフにします。</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplayが自動モードに変更されました。</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplayが曜日モードに変更されました。</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplayが夜間モードに変更されました。</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplayが屋外モードに変更されました。</string>
+  <string name="live_display_hint">LiveDisplayは目の疲れを軽減し夜間に寝るのに役立ちます。 ここをクリックして試してみて下さい！</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay オフ</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay：自動モード</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay：昼モード</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜間モード</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：屋外モード</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplayをオフにしました</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplayを自動モードに変更しました</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplayを昼モードに変更しました</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplayを夜間モードに変更しました</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplayを屋外モードに変更しました</string>
   <!-- Third party keyguard permission label -->
   <string name="permlab_thirdPartyKeyguard">サードパーティのロック画面</string>
   <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">アプリを安全でないロック画面として使用することを許可します。</string>
+  <string name="permdesc_thirdPartyKeyguard">アプリを安全でないロック画面として使用することを許可します</string>
   <!-- Theme installation error notification -->
   <string name="theme_install_error_title">テーマのインストールに失敗しました</string>
   <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> のインストールに失敗しました</string>
@@ -144,7 +144,7 @@
   <!-- Performance manager permission title -->
   <string name="permlab_perfAccess">アクセスのパフォーマンス管理</string>
   <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">パフォーマンス サービスへのアクセスをアプリに許可します。通常のアプリは必要ありませんする必要があります。</string>
+  <string name="permdesc_perfAccessDesc">パフォーマンスサービスへのアクセスをアプリに許可します。通常のアプリは必要ありませんする必要があります。</string>
   <!-- Access live lock screen manager service permission label -->
   <!-- Access live lock screen manager service permission description -->
   <!-- Privileged access live lock screen manager service permission label -->
@@ -152,15 +152,21 @@
   <!-- Live lock screen manager service provider permission label -->
   <!-- Live lock screen manager service provider permission description -->
   <!-- Weather Service strings -->
+  <string name="permlab_weather_read">天気の読み取り</string>
   <!-- DataUsageProvider write permission title -->
   <!-- DataUsageProvider write permission description -->
   <!-- DataUsageProvider read permission title -->
   <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">アプリがデータ使用状況データベースからコンテンツを読み取ることを許可します。</string>
+  <string name="permdesc_dataUsageRead">アプリがデータ使用状況データベースからコンテンツを読み取ることを許可します</string>
   <!-- LiveDisplay manager permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- MKAudioService - observe session changes permission -->
   <!-- QuickSettings: Themes tile -->
+  <string name="qs_themes_label">テーマ</string>
+  <string name="qs_themes_content_description">テーマをカスタマイズする</string>
   <!-- Privacy Guard -->
+  <string name="privacy_guard_manager_title">プライバシーガード</string>
   <!-- Permissions used by remote preferences -->
+  <string name="permlab_manageRemotePrefs">リモートの設定の管理</string>
+  <string name="permdesc_manageRemotePrefs">リモートの設定を管理することをアプリに許可する</string>
 </resources>
