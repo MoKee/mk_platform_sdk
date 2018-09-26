@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label for the MoKee system components when they are shown to the user. -->
+  <string name="mokee_system_label">MoKee System</string>
   <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
   <!-- Labels for the MODIFY_PROFILES permission. -->
@@ -96,13 +97,22 @@
   <string name="permdesc_thirdPartyKeyguard">ಅಸುರಕ್ಷಿತ ಲಾಕ್‌ ಸ್ಕ್ರೀನ್‌ ಎಂಬುದಾಗಿ ಒಂದು ತಂತ್ರಾಂಶಗಳನ್ನು ಬಳಸಲು ಒಂದು ತಂತ್ರಾಂಶ ಅನುಮತಿಸುತ್ತದೆ.</string>
   <!-- Theme installation error notification -->
   <!-- Theme reset notification -->
+  <string name="theme_reset_notification_title">ವಿಷಯ ಮರುಹೊಂದಿಸಿ</string>
+  <string name="theme_reset_notification_message">ಬಹುವಿಧದ ತಂತ್ರಾಂಶ ಕೊನೆಗೊಳ್ಳುವಿಕೆಯಿಂದ ಸಿಸ್ಟಮ್ ನ ವಿಷಯ ಮರುಹೊಂದಿಸಲ್ಪಟ್ಟಿದೆ.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_accessThemeService">ವಿಷಯ ಸೇವೆ ಅನುಮತಿ</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_accessThemeService">ವಿಷಯ ಸೇವೆಗಳನ್ನು ಬಳಸಲು ತಂತ್ರಾಂಶಕ್ಕೆ ಅನುಮತಿಸಿ. ಸಾಧಾರಣ ತಂತ್ರಾಂಶಗಳಿಗೆ ಎಂದಿಗೂ ಅವಶ್ಯಕತೆಯಿರುವುದಿಲ್ಲ.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_readThemes">ನಿಮ್ಮ ವಿಷಯ ಮಾಹಿತಿಯನ್ನು ಓದಿ</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_readThemesDesc">ನಿಮ್ಮ ವಿಷಯಗಳನ್ನು ತಂತ್ರಾಂಶಗಳಿಗೆ ಓದಲು ಅನುಮತಿಸುತ್ತದೆ ಮತ್ತು ನೀವು ಅಳವಡಿಸಿದ ವಿಷಯವನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.</string>
   <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_writeThemes">ನಿಮ್ಮ ವಿಷಯಗಳನ್ನು ಮಾರ್ಪಾಡಿಸಿ</string>
   <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_writeThemesDesc">ನೀವು ಅಳವಡಿಸಿದ ವಿಷಯಗಳನ್ನು ತಂತ್ರಾಂಶಗಳಿಗೆ ಸೇರಿಸಲು ಮತ್ತು ಮಾರ್ಪಾಡಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.</string>
   <!-- Performance manager permission title -->
+  <string name="permlab_perfAccess">ಕಾರ್ಯನಿರ್ವಹಣೆ ನಿರ್ವಾಹಕರನ್ನು ಪ್ರವೇಶಿಸು</string>
   <!-- Performance manager permission description -->
   <!-- Access live lock screen manager service permission label -->
   <!-- Access live lock screen manager service permission description -->
