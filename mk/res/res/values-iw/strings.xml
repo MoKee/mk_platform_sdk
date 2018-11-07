@@ -16,141 +16,141 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">מערכת MoKee</string>
-  <string name="permlab_publishCustomTile">צור אריח מותאם אישית בפאנל ההגדרות המהירות</string>
-  <string name="permdesc_publishCustomTile">מאפשר לאפליקציה לפרסם אריח הגדרה מהירה.</string>
-  <string name="permlab_modifyNetworkSettings">שנה את הגדרות הרשתות</string>
-  <string name="permdesc_modifyNetworkSettings">אפשר לאפליקציה לשנות את מצב טיסה ונתונים סלולרים.</string>
-  <string name="permlab_modifySoundSettings">שנה את הגדרות השמע</string>
-  <string name="permdesc_modifySoundSettings">מאפשר לאפליקציה לשנות את מצב \'אל תפריע\'.</string>
-  <string name="permlab_bindCustomTileListenerService">אפשר שירות של אריח מותאם אישית</string>
-  <string name="permdesc_bindCustomTileListenerService">אפשר לישום להוסיף אריח להגדרות מהירות.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">לראות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
-  <string name="permdesc_readMSPhoneState">אפשר לאפליקציה לראות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">לשנות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
-  <string name="permdesc_modifyMSPhoneState">אפשר לאפליקציה לשנות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">שינוי הפרופילים</string>
-  <string name="permdesc_modifyProfiles">אפשר לאפליקציה לשנות את הפרופילי מערכת.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">השתמש במסגרת חומרתית</string>
-  <string name="permdesc_useHardwareFramework">מאפשר לאפליקציה לגשת לתשתית החומרה MK.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">לשנות שעונים מעוררים</string>
-  <string name="permdesc_write_alarms">אפשר לאפליקציה להוסיף, לשנו או למחוק את השעונים המעוררים.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">להדליק או לכבות שעונים מעוררים</string>
-  <string name="permdesc_manage_alarms">מאפשר לאפליקציה להדליק או לכבות שעונים מעוררים.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">לראות את השעונים מעוררים המוגדרים</string>
-  <string name="permdesc_read_alarms">אפשר לאפליקציה לראות את השעונים מעוררים המוגדרים.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">שינוי הגדרות מערכת</string>
-  <string name="permdesc_writeSettings">מאפשר יישום לשנות את הגדרות המערכת MK.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">שנוי הגדרות אבטחה של המערכת</string>
-  <string name="permdesc_writeSecureSettings">מאפשר לישום לשנות הגדרות אבטחה של המערכת, לא לשימוש ע\"י אפליקציות רגילות.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">נהל זיכרון תמידי</string>
-  <string name="permdesc_managePersistentStorage">אפשר לישומים לקרוא או לכתוב הגדרות שאולי ישארו אחרי איפוס המערכת.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">אריח הגדרות מהירות מותאם אישית</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">הוסף או הסר ישומים לישומים מוגנים</string>
-  <string name="permdesc_protectedApp">אפשר לישום לסמן ישום אחר כישום מוגן ולנעול אותו.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">ברירת מחדל</string>
-  <string name="profileNameWork">עבודה</string>
-  <string name="profileNameHome">בית</string>
-  <string name="profileNameSilent">שקט</string>
-  <string name="profileNameNight">לילה</string>
-  <string name="profileNameAutomobile">רכב</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">טלפון</string>
-  <string name="profileGroupCalendar">לוח שנה</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">דוא\"ל</string>
-  <string name="profileGroupSMS">הודעות טקסט</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">אחר</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">לקרוא את מיקום המכשיר</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">אפשר לישום לקרוא את מיקום המכשיר.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">לשנות את מיקום המכשיר</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">אפשר לישום לשנות את מיקום המכשיר.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">חיסכון בסוללה</string>
-  <string name="perf_profile_bal">מאוזן</string>
-  <string name="perf_profile_perf">ביצועים</string>
-  <string name="perf_profile_bias_power">יעילות</string>
-  <string name="perf_profile_bias_perf">מהירות</string>
-  <!-- Performance profiles -->
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">אוטומטי</string>
-  <string name="live_display_auto_summary">התאם אוטומטית את צבעי המסך לזמני היום</string>
-  <string name="live_display_off">ללא</string>
-  <string name="live_display_off_summary">בטל את כל ההתאמות</string>
-  <string name="live_display_day">יום</string>
-  <string name="live_display_day_summary">השתמש רק בהגדרות היום</string>
-  <string name="live_display_night">לילה</string>
-  <string name="live_display_night_summary">השתמש רק בהגדרות הלילה</string>
-  <string name="live_display_outdoor">בחוץ (אור שמש)</string>
-  <string name="live_display_outdoor_summary">השתמש בהגדרות שמש בלבד</string>
-  <string name="live_display_hint">תצוגה חיה יכולה להוריד את מאמץ העניים ולעזור לך להרדם בלילה. לחץ כאן כדי לנסות אותה!</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">מסך נעילה חיצוני</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">אפשר לישום להחליף את המסך נעילה.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">התקנת ערכת הנושא נכשלה</string>
-  <string name="theme_install_error_message">התקנת <xliff:g id="theme">%1$s </xliff:g> נכשלה</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">אפס ערכת נושא</string>
-  <string name="theme_reset_notification_message">ערכת הנושא שוחזרה עקב קריסת הרבה אפליקציות.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">גישה לערכות נושא</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">מאפשר לישום לגשת לשירות ערכות נושא, אפליקציות רגילות לא צריכות את זה.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">קריאת פרטי ערכת הנושא</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">אפשר ליישום לקרוא את ערכות העיצוב ולקבוע איזו ערכה קבעת.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">שינוי ערכת נושא</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">אפשר ליישום להוסיף ערכות עיצוב חדשות ולשנות אותם.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">לגשת למנהל ביצועים</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">אפשר ליישום לגשת לפנס. לא אמור להידרש ליישומים רגילים.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">ךגשת לשירות מסך נעילה בשידור חי</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">מאפשר יישום לגשת לשירות מנהל מסך הנעילה בשידור חי.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">לגשת לשירות מסך נעילה בשידור חי</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">מאפשר ליישום לגשת לשירות מנהל מסך הנעילה בשידור חי.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">לגשת לשירות מסך נעילה בשידור חי</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">מאפשר יישום לגשת למנהל מסך הנעילה בשידור חי.</string>
-  <!-- Weather Service strings -->
-  <!-- DataUsageProvider write permission title -->
-  <!-- DataUsageProvider write permission description -->
-  <!-- DataUsageProvider read permission title -->
-  <!-- DataUsageProvider read permission description -->
-  <!-- LiveDisplay manager permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- QuickSettings: Themes tile -->
-  <!-- Privacy Guard -->
-  <!-- Permissions used by remote preferences -->
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">מערכת MoKee</string>
+    <string name="permlab_publishCustomTile">צור אריח מותאם אישית בפאנל ההגדרות המהירות</string>
+    <string name="permdesc_publishCustomTile">מאפשר לאפליקציה לפרסם אריח הגדרה מהירה.</string>
+    <string name="permlab_modifyNetworkSettings">שנה את הגדרות הרשתות</string>
+    <string name="permdesc_modifyNetworkSettings">אפשר לאפליקציה לשנות את מצב טיסה ונתונים סלולרים.</string>
+    <string name="permlab_modifySoundSettings">שנה את הגדרות השמע</string>
+    <string name="permdesc_modifySoundSettings">מאפשר לאפליקציה לשנות את מצב \'אל תפריע\'.</string>
+    <string name="permlab_bindCustomTileListenerService">אפשר שירות של אריח מותאם אישית</string>
+    <string name="permdesc_bindCustomTileListenerService">אפשר לישום להוסיף אריח להגדרות מהירות.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">לראות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
+    <string name="permdesc_readMSPhoneState">אפשר לאפליקציה לראות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">לשנות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
+    <string name="permdesc_modifyMSPhoneState">אפשר לאפליקציה לשנות את מצב הפלאפון ומצב הנתונים סוללרים עם תמיכה ביותר מSIM אחד</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">שינוי הפרופילים</string>
+    <string name="permdesc_modifyProfiles">אפשר לאפליקציה לשנות את הפרופילי מערכת.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">השתמש במסגרת חומרתית</string>
+    <string name="permdesc_useHardwareFramework">מאפשר לאפליקציה לגשת לתשתית החומרה MK.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">לשנות שעונים מעוררים</string>
+    <string name="permdesc_write_alarms">אפשר לאפליקציה להוסיף, לשנו או למחוק את השעונים המעוררים.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">להדליק או לכבות שעונים מעוררים</string>
+    <string name="permdesc_manage_alarms">מאפשר לאפליקציה להדליק או לכבות שעונים מעוררים.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">לראות את השעונים מעוררים המוגדרים</string>
+    <string name="permdesc_read_alarms">אפשר לאפליקציה לראות את השעונים מעוררים המוגדרים.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">שינוי הגדרות מערכת</string>
+    <string name="permdesc_writeSettings">מאפשר יישום לשנות את הגדרות המערכת MK.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">שנוי הגדרות אבטחה של המערכת</string>
+    <string name="permdesc_writeSecureSettings">מאפשר לישום לשנות הגדרות אבטחה של המערכת, לא לשימוש ע\"י אפליקציות רגילות.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">נהל זיכרון תמידי</string>
+    <string name="permdesc_managePersistentStorage">אפשר לישומים לקרוא או לכתוב הגדרות שאולי ישארו אחרי איפוס המערכת.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">אריח הגדרות מהירות מותאם אישית</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">הוסף או הסר ישומים לישומים מוגנים</string>
+    <string name="permdesc_protectedApp">אפשר לישום לסמן ישום אחר כישום מוגן ולנעול אותו.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">ברירת מחדל</string>
+    <string name="profileNameWork">עבודה</string>
+    <string name="profileNameHome">בית</string>
+    <string name="profileNameSilent">שקט</string>
+    <string name="profileNameNight">לילה</string>
+    <string name="profileNameAutomobile">רכב</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">טלפון</string>
+    <string name="profileGroupCalendar">לוח שנה</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">דוא\"ל</string>
+    <string name="profileGroupSMS">הודעות טקסט</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">אחר</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">לקרוא את מיקום המכשיר</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">אפשר לישום לקרוא את מיקום המכשיר.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">לשנות את מיקום המכשיר</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">אפשר לישום לשנות את מיקום המכשיר.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">חיסכון בסוללה</string>
+    <string name="perf_profile_bal">מאוזן</string>
+    <string name="perf_profile_perf">ביצועים</string>
+    <string name="perf_profile_bias_power">יעילות</string>
+    <string name="perf_profile_bias_perf">מהירות</string>
+    <!-- Performance profiles -->
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">אוטומטי</string>
+    <string name="live_display_auto_summary">התאם אוטומטית את צבעי המסך לזמני היום</string>
+    <string name="live_display_off">ללא</string>
+    <string name="live_display_off_summary">בטל את כל ההתאמות</string>
+    <string name="live_display_day">יום</string>
+    <string name="live_display_day_summary">השתמש רק בהגדרות היום</string>
+    <string name="live_display_night">לילה</string>
+    <string name="live_display_night_summary">השתמש רק בהגדרות הלילה</string>
+    <string name="live_display_outdoor">בחוץ (אור שמש)</string>
+    <string name="live_display_outdoor_summary">השתמש בהגדרות שמש בלבד</string>
+    <string name="live_display_hint">תצוגה חיה יכולה להוריד את מאמץ העניים ולעזור לך להרדם בלילה. לחץ כאן כדי לנסות אותה!</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">מסך נעילה חיצוני</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">אפשר לישום להחליף את המסך נעילה.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">התקנת ערכת הנושא נכשלה</string>
+    <string name="theme_install_error_message">התקנת <xliff:g id="theme">%1$s </xliff:g> נכשלה</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">אפס ערכת נושא</string>
+    <string name="theme_reset_notification_message">ערכת הנושא שוחזרה עקב קריסת הרבה אפליקציות.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">גישה לערכות נושא</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">מאפשר לישום לגשת לשירות ערכות נושא, אפליקציות רגילות לא צריכות את זה.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">קריאת פרטי ערכת הנושא</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">אפשר ליישום לקרוא את ערכות העיצוב ולקבוע איזו ערכה קבעת.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">שינוי ערכת נושא</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">אפשר ליישום להוסיף ערכות עיצוב חדשות ולשנות אותם.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">לגשת למנהל ביצועים</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">אפשר ליישום לגשת לפנס. לא אמור להידרש ליישומים רגילים.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">ךגשת לשירות מסך נעילה בשידור חי</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">מאפשר יישום לגשת לשירות מנהל מסך הנעילה בשידור חי.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">לגשת לשירות מסך נעילה בשידור חי</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">מאפשר ליישום לגשת לשירות מנהל מסך הנעילה בשידור חי.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">לגשת לשירות מסך נעילה בשידור חי</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">מאפשר יישום לגשת למנהל מסך הנעילה בשידור חי.</string>
+    <!-- Weather Service strings -->
+    <!-- DataUsageProvider write permission title -->
+    <!-- DataUsageProvider write permission description -->
+    <!-- DataUsageProvider read permission title -->
+    <!-- DataUsageProvider read permission description -->
+    <!-- LiveDisplay manager permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- QuickSettings: Themes tile -->
+    <!-- Privacy Guard -->
+    <!-- Permissions used by remote preferences -->
 </resources>

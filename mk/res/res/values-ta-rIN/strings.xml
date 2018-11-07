@@ -16,76 +16,76 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">மோகீ அமைப்பு</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <!-- Labels for the READ_ALARMS permission. -->
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">இயல்புநிலை</string>
-  <string name="profileNameWork">வேலை</string>
-  <string name="profileNameHome">முகப்பு</string>
-  <string name="profileNameSilent">அமைதி</string>
-  <string name="profileNameNight">இரவு</string>
-  <string name="profileNameAutomobile">வாகனம்</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">அலைபேசி</string>
-  <string name="profileGroupCalendar">நாட்காட்டி</string>
-  <string name="profileGroupEmail">மின்னஞ்சல்</string>
-  <string name="profileGroupSMS">குறுஞ்செய்தி</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">பிற</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">மின்சார சேமிப்பு</string>
-  <string name="perf_profile_bal">சமப்படுத்தப்பட்ட</string>
-  <string name="perf_profile_perf">செயற்திறன்</string>
-  <!-- Performance profiles -->
-  <!-- LiveDisplay strings -->
-  <string name="live_display_off">அணை</string>
-  <string name="live_display_day">பகல்</string>
-  <string name="live_display_day_summary">பகல் நேர அமைப்புகளை மட்டும் பயன்படுத்து</string>
-  <string name="live_display_night">இரவு</string>
-  <!-- Third party keyguard permission label -->
-  <!-- Third party keyguard permission description -->
-  <!-- Theme installation error notification -->
-  <!-- Theme reset notification -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Performance manager permission title -->
-  <!-- Performance manager permission description -->
-  <!-- Access live lock screen manager service permission label -->
-  <!-- Access live lock screen manager service permission description -->
-  <!-- Privileged access live lock screen manager service permission label -->
-  <!-- Privileged access live lock screen manager service permission description -->
-  <!-- Live lock screen manager service provider permission label -->
-  <!-- Live lock screen manager service provider permission description -->
-  <!-- Weather Service strings -->
-  <!-- DataUsageProvider write permission title -->
-  <!-- DataUsageProvider write permission description -->
-  <!-- DataUsageProvider read permission title -->
-  <!-- DataUsageProvider read permission description -->
-  <!-- LiveDisplay manager permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- QuickSettings: Themes tile -->
-  <!-- Privacy Guard -->
-  <!-- Permissions used by remote preferences -->
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">மோகீ அமைப்பு</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <!-- Labels for the READ_ALARMS permission. -->
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">இயல்புநிலை</string>
+    <string name="profileNameWork">வேலை</string>
+    <string name="profileNameHome">முகப்பு</string>
+    <string name="profileNameSilent">அமைதி</string>
+    <string name="profileNameNight">இரவு</string>
+    <string name="profileNameAutomobile">வாகனம்</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">அலைபேசி</string>
+    <string name="profileGroupCalendar">நாட்காட்டி</string>
+    <string name="profileGroupEmail">மின்னஞ்சல்</string>
+    <string name="profileGroupSMS">குறுஞ்செய்தி</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">பிற</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">மின்சார சேமிப்பு</string>
+    <string name="perf_profile_bal">சமப்படுத்தப்பட்ட</string>
+    <string name="perf_profile_perf">செயற்திறன்</string>
+    <!-- Performance profiles -->
+    <!-- LiveDisplay strings -->
+    <string name="live_display_off">அணை</string>
+    <string name="live_display_day">பகல்</string>
+    <string name="live_display_day_summary">பகல் நேர அமைப்புகளை மட்டும் பயன்படுத்து</string>
+    <string name="live_display_night">இரவு</string>
+    <!-- Third party keyguard permission label -->
+    <!-- Third party keyguard permission description -->
+    <!-- Theme installation error notification -->
+    <!-- Theme reset notification -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Performance manager permission title -->
+    <!-- Performance manager permission description -->
+    <!-- Access live lock screen manager service permission label -->
+    <!-- Access live lock screen manager service permission description -->
+    <!-- Privileged access live lock screen manager service permission label -->
+    <!-- Privileged access live lock screen manager service permission description -->
+    <!-- Live lock screen manager service provider permission label -->
+    <!-- Live lock screen manager service provider permission description -->
+    <!-- Weather Service strings -->
+    <!-- DataUsageProvider write permission title -->
+    <!-- DataUsageProvider write permission description -->
+    <!-- DataUsageProvider read permission title -->
+    <!-- DataUsageProvider read permission description -->
+    <!-- LiveDisplay manager permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- QuickSettings: Themes tile -->
+    <!-- Privacy Guard -->
+    <!-- Permissions used by remote preferences -->
 </resources>

@@ -16,179 +16,179 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">Hệ thống MoKee</string>
-  <string name="permlab_publishCustomTile">tạo một tiêu đề tùy chỉnh trong bảng cài đặt nhanh</string>
-  <string name="permdesc_publishCustomTile">Cho phép một ứng dụng để xuất bản một tiêu đề cài đặt nhanh.</string>
-  <string name="permlab_modifyNetworkSettings">thay đổi thiết đặt mạng hệ thống</string>
-  <string name="permdesc_modifyNetworkSettings">Cho phép một ứng dụng thực hiện thay đổi chế độ máy bay và thiết lập mạng dữ liệu di động.</string>
-  <string name="permlab_modifySoundSettings">thay đổi cài đặt âm thanh hệ thống</string>
-  <string name="permdesc_modifySoundSettings">Cho phép một ứng dụng để thay đổi cài đặt chế độ ngắt âm thanh.</string>
-  <string name="permlab_bindCustomTileListenerService">liên kết với một dịch vụ nghe tùy chỉnh tiêu đề</string>
-  <string name="permdesc_bindCustomTileListenerService">Cho phép các ứng dụng liên kết với giao diện cấp cao của một dịch vụ nghe tùy chỉnh tiêu đề.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
-  <string name="permdesc_readMSPhoneState">Cho phép một ứng dụng xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">thay đổi tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
-  <string name="permdesc_modifyMSPhoneState">Cho phép một ứng dụng sửa tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">sửa đổi hồ sơ hệ thống</string>
-  <string name="permdesc_modifyProfiles">Cho phép một ứng dụng để sửa đổi hồ sơ hệ thống.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">dùng khung làm việc phần cứng</string>
-  <string name="permdesc_useHardwareFramework">Cho phép ứng dụng truy cập khung làm việc phần cứng Mk.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">trực tiếp thay đổi báo động hệ thống</string>
-  <string name="permdesc_write_alarms">Cho phép một ứng dụng để thêm, chỉnh sửa hoặc xoá tất cả báo động hệ thống của bạn.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">chuyển đổi hệ thống báo động theo lịch trình</string>
-  <string name="permdesc_manage_alarms">Cho phép một ứng dụng để bật hoặc tắt báo động theo lịch trình của bạn.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">truy cập vào hệ thống báo động theo lịch trình</string>
-  <string name="permdesc_read_alarms">Cho phép một ứng dụng đọc báo động theo lịch trình của bạn.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">sửa đổi thiết đặt hệ thống MK</string>
-  <string name="permdesc_writeSettings">Cho phép một ứng dụng sửa đổi hệ thống cài đặt MK.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">sửa đổi thiết đặt bảo mật hệ thống MK</string>
-  <string name="permdesc_writeSecureSettings">Cho phép một ứng dụng để sửa đổi cài đặt bảo mật hệ thống MK. Không sử dụng bởi ứng dụng bình thường.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">quản lý lưu trữ liên tục</string>
-  <string name="permdesc_managePersistentStorage">Cho phép một ứng dụng để đọc hoặc ghi các đặc tính mà có thể kéo dài quá trình máy đặt lại trạng thái xuất xưởng.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Tùy chỉnh tiêu đề nghe</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">thêm và loại bỏ các ứng dụng bảo vệ các ứng dụng</string>
-  <string name="permdesc_protectedApp">Cho phép một ứng dụng để đánh dấu các ứng dụng khác như bảo vệ và khóa chúng.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Mặc định</string>
-  <string name="profileNameWork">Làm việc</string>
-  <string name="profileNameHome">Nhà riêng</string>
-  <string name="profileNameSilent">Im lặng</string>
-  <string name="profileNameNight">Đêm</string>
-  <string name="profileNameAutomobile">Trên ôtô</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Điện thoại</string>
-  <string name="profileGroupCalendar">Lịch</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Thư điện tử</string>
-  <string name="profileGroupSMS">SMS</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Khác</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">đọc địa điểm điện thoại</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Cho phép một ứng dụng đọc thông tin về vị trí điện thoại.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">ghi địa điểm điện thoại</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Cho phép một ứng dụng thay đổi vị trí của điện thoại.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">Tiết kiệm pin</string>
-  <string name="perf_profile_bal">Cân bằng</string>
-  <string name="perf_profile_perf">Hiệu năng</string>
-  <string name="perf_profile_bias_power">Hiệu quả</string>
-  <string name="perf_profile_bias_perf">Nhanh chóng</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Tiết kiệm năng lượng tối đa. Giảm hiệu suất thiết bị, tắt dữ liệu và tác vụ chạy nền, tắt hoạt ảnh, và giảm tỷ lệ khung hình hiển thị</string>
-  <string name="perf_profile_bal_summary">Cân bằng giữa hiệu suất và tiêu thụ năng lượng</string>
-  <string name="perf_profile_perf_summary">Chế độ hiệu suất cao. Hữu dụng cho các ứng dụng đòi hỏi độ trễ thấp và băng thông cao nhất khi không quan tâm đến việc tiêu thụ năng lượng</string>
-  <string name="perf_profile_bias_power_summary">Ưu tiên tiết kiệm pin. Hạn chế tối đa điện năng CPU và tối ưu hóa điện năng để tiết kiệm năng lượng, nhưng làm độ trễ cao hơn</string>
-  <string name="perf_profile_bias_perf_summary">Ưu tiên hiệu suất. Làm giảm độ trễ với điện năng tiêu thụ gia tăng không đáng kể</string>
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Tự động</string>
-  <string name="live_display_auto_summary">Tự động điều chỉnh nhiệt màu của màn hình sau khi mặt trời lặn và mặt trời mọc</string>
-  <string name="live_display_off">Tắt</string>
-  <string name="live_display_off_summary">Vô hiệu hoá tất cả các điều chỉnh</string>
-  <string name="live_display_day">Ngày</string>
-  <string name="live_display_day_summary">Sử dụng cài đặt chỉ ban ngày</string>
-  <string name="live_display_night">Đêm</string>
-  <string name="live_display_night_summary">Sử dụng cài đặt chỉ ban đêm</string>
-  <string name="live_display_outdoor">Ngoài trời (Mặt trời sáng chói)</string>
-  <string name="live_display_outdoor_summary">Sử dụng cài đặt chỉ ngoài trời</string>
-  <string name="live_display_hint">LiveDisplay có thể giúp giảm mỏi mắt và giúp bạn ngủ vào ban đêm. Nhấn vào đây để thử!</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay tắt.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: chế độ tự động.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: chế độ ngày.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: chế độ đêm.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: chế độ ngoài trời.</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay đã tắt.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay chuyển sang chế độ tự động.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay đã đổi sang chế độ ban ngày.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay chuyển sang chế độ đêm.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay chuyển sang chế độ ngoài trời.</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">màn hình khóa của bên thứ ba</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">Cho phép một ứng dụng được sử dụng như một màn hình khóa không an toàn.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">Không thể cài đặt chủ đề</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> không cài đặt</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">Đặt lại chủ đề</string>
-  <string name="theme_reset_notification_message">Hệ thống chủ đề phục hồi do nhiều ứng dụng crash.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">dịch vụ truy cập chủ đề</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Cho phép một ứng dụng để truy cập vào dịch vụ chủ đề. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">đọc thông tin chủ đề của bạn</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Cho phép các ứng dụng để đọc các chủ đề của bạn và xác định chủ đề mà bạn đã áp dụng.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">sửa đổi chủ đề của bạn</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Cho phép các ứng dụng chèn chủ đề mới và sửa đổi các chủ đề mà bạn đã áp dụng.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">truy cập hiệu quả quản lý</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Cho phép một ứng dụng để truy cập vào dịch vụ thực hiện. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">dịch vụ quản lý truy cập trực tiếp khóa màn hình</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Cho phép một ứng dụng để truy cập vào các dịch vụ quản lý trực tiếp khóa màn hình.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">dịch vụ quản lý truy cập trực tiếp khóa màn hình</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Cho phép hệ thống ứng dụng để truy cập Dịch vụ quản lý trực tiếp khóa màn hình.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">cung cấp dịch vụ quản lý màn hình khóa sống</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">Cho phép một dịch vụ cung cấp dịch vụ quản lý trực tiếp khóa màn hình.</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">đọc thời tiết</string>
-  <string name="permdesc_weather_read">Cho phép một ứng dụng để đọc nội dung từ các nhà cung cấp thời tiết.</string>
-  <string name="permlab_weather_write">cập nhật nhà cung cấp thời tiết</string>
-  <string name="permdesc_weather_write">Cho phép một ứng dụng để cập nhật nội dung của các nhà cung cấp thời tiết.</string>
-  <string name="permlab_weather_bind">ràng buộc như là một nhà cung cấp dịch vụ thời tiết</string>
-  <string name="permdesc_weather_bind">Cho phép một ứng dụng được xác định như là một nhà cung cấp dịch vụ thời tiết.</string>
-  <string name="permlab_weather_access_mgr">truy cập các dịch vụ thời tiết</string>
-  <string name="permdesc_weather_access_mgr">Cho phép một ứng dụng để truy cập vào các dịch vụ thời tiết trong hệ thống. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">sửa đổi dữ liệu sử dụng cơ sở dữ liệu</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">Cho phép một ứng dụng để cập nhật nội dung của các dữ liệu sử dụng cơ sở dữ liệu.</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">đọc dữ liệu sử dụng cơ sở dữ liệu</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">Cho phép một ứng dụng để đọc nội dung từ cơ sở dữ liệu sử dụng dữ liệu.</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">quản lý cài đặt LiveDisplay</string>
-  <string name="permdesc_manageLiveDisplay">Cho phép ứng dụng thiết lập cấu hình nâng cao.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">quan sát phiên âm thanh thay đổi</string>
-  <string name="permdesc_observe_audio_sessions">Cho phép một ứng dụng để quan sát dòng suối âm thanh được tạo ra và bị phá hủy.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">quản lý thay đổi âm thanh phiên</string>
-  <string name="permdesc_manage_audio_sessions">Cho phép một ứng dụng để gửi thông tin Cập Nhật dòng suối âm thanh.</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">Chủ đề</string>
-  <string name="qs_themes_content_description">Tùy chỉnh các chủ đề của bạn</string>
-  <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Bảo vệ quyền riêng tư</string>
-  <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">quản lý cài đặt từ xa</string>
-  <string name="permdesc_manageRemotePrefs">Cho phép một ứng dụng quản lý cài đặt từ xa</string>
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">Hệ thống MoKee</string>
+    <string name="permlab_publishCustomTile">tạo một tiêu đề tùy chỉnh trong bảng cài đặt nhanh</string>
+    <string name="permdesc_publishCustomTile">Cho phép một ứng dụng để xuất bản một tiêu đề cài đặt nhanh.</string>
+    <string name="permlab_modifyNetworkSettings">thay đổi thiết đặt mạng hệ thống</string>
+    <string name="permdesc_modifyNetworkSettings">Cho phép một ứng dụng thực hiện thay đổi chế độ máy bay và thiết lập mạng dữ liệu di động.</string>
+    <string name="permlab_modifySoundSettings">thay đổi cài đặt âm thanh hệ thống</string>
+    <string name="permdesc_modifySoundSettings">Cho phép một ứng dụng để thay đổi cài đặt chế độ ngắt âm thanh.</string>
+    <string name="permlab_bindCustomTileListenerService">liên kết với một dịch vụ nghe tùy chỉnh tiêu đề</string>
+    <string name="permdesc_bindCustomTileListenerService">Cho phép các ứng dụng liên kết với giao diện cấp cao của một dịch vụ nghe tùy chỉnh tiêu đề.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
+    <string name="permdesc_readMSPhoneState">Cho phép một ứng dụng xem tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">thay đổi tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM</string>
+    <string name="permdesc_modifyMSPhoneState">Cho phép một ứng dụng sửa tình trạng điện thoại và dữ liệu kết nối với hỗ trợ cho nhiều SIM.</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">sửa đổi hồ sơ hệ thống</string>
+    <string name="permdesc_modifyProfiles">Cho phép một ứng dụng để sửa đổi hồ sơ hệ thống.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">dùng khung làm việc phần cứng</string>
+    <string name="permdesc_useHardwareFramework">Cho phép ứng dụng truy cập khung làm việc phần cứng Mk.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">trực tiếp thay đổi báo động hệ thống</string>
+    <string name="permdesc_write_alarms">Cho phép một ứng dụng để thêm, chỉnh sửa hoặc xoá tất cả báo động hệ thống của bạn.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">chuyển đổi hệ thống báo động theo lịch trình</string>
+    <string name="permdesc_manage_alarms">Cho phép một ứng dụng để bật hoặc tắt báo động theo lịch trình của bạn.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">truy cập vào hệ thống báo động theo lịch trình</string>
+    <string name="permdesc_read_alarms">Cho phép một ứng dụng đọc báo động theo lịch trình của bạn.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">sửa đổi thiết đặt hệ thống MK</string>
+    <string name="permdesc_writeSettings">Cho phép một ứng dụng sửa đổi hệ thống cài đặt MK.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">sửa đổi thiết đặt bảo mật hệ thống MK</string>
+    <string name="permdesc_writeSecureSettings">Cho phép một ứng dụng để sửa đổi cài đặt bảo mật hệ thống MK. Không sử dụng bởi ứng dụng bình thường.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">quản lý lưu trữ liên tục</string>
+    <string name="permdesc_managePersistentStorage">Cho phép một ứng dụng để đọc hoặc ghi các đặc tính mà có thể kéo dài quá trình máy đặt lại trạng thái xuất xưởng.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">Tùy chỉnh tiêu đề nghe</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">thêm và loại bỏ các ứng dụng bảo vệ các ứng dụng</string>
+    <string name="permdesc_protectedApp">Cho phép một ứng dụng để đánh dấu các ứng dụng khác như bảo vệ và khóa chúng.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">Mặc định</string>
+    <string name="profileNameWork">Làm việc</string>
+    <string name="profileNameHome">Nhà riêng</string>
+    <string name="profileNameSilent">Im lặng</string>
+    <string name="profileNameNight">Đêm</string>
+    <string name="profileNameAutomobile">Trên ôtô</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">Điện thoại</string>
+    <string name="profileGroupCalendar">Lịch</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">Thư điện tử</string>
+    <string name="profileGroupSMS">SMS</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">Khác</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">đọc địa điểm điện thoại</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">Cho phép một ứng dụng đọc thông tin về vị trí điện thoại.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">ghi địa điểm điện thoại</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">Cho phép một ứng dụng thay đổi vị trí của điện thoại.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">Tiết kiệm pin</string>
+    <string name="perf_profile_bal">Cân bằng</string>
+    <string name="perf_profile_perf">Hiệu năng</string>
+    <string name="perf_profile_bias_power">Hiệu quả</string>
+    <string name="perf_profile_bias_perf">Nhanh chóng</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv_summary">Tiết kiệm năng lượng tối đa. Giảm hiệu suất thiết bị, tắt dữ liệu và tác vụ chạy nền, tắt hoạt ảnh, và giảm tỷ lệ khung hình hiển thị</string>
+    <string name="perf_profile_bal_summary">Cân bằng giữa hiệu suất và tiêu thụ năng lượng</string>
+    <string name="perf_profile_perf_summary">Chế độ hiệu suất cao. Hữu dụng cho các ứng dụng đòi hỏi độ trễ thấp và băng thông cao nhất khi không quan tâm đến việc tiêu thụ năng lượng</string>
+    <string name="perf_profile_bias_power_summary">Ưu tiên tiết kiệm pin. Hạn chế tối đa điện năng CPU và tối ưu hóa điện năng để tiết kiệm năng lượng, nhưng làm độ trễ cao hơn</string>
+    <string name="perf_profile_bias_perf_summary">Ưu tiên hiệu suất. Làm giảm độ trễ với điện năng tiêu thụ gia tăng không đáng kể</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Tự động</string>
+    <string name="live_display_auto_summary">Tự động điều chỉnh nhiệt màu của màn hình sau khi mặt trời lặn và mặt trời mọc</string>
+    <string name="live_display_off">Tắt</string>
+    <string name="live_display_off_summary">Vô hiệu hoá tất cả các điều chỉnh</string>
+    <string name="live_display_day">Ngày</string>
+    <string name="live_display_day_summary">Sử dụng cài đặt chỉ ban ngày</string>
+    <string name="live_display_night">Đêm</string>
+    <string name="live_display_night_summary">Sử dụng cài đặt chỉ ban đêm</string>
+    <string name="live_display_outdoor">Ngoài trời (Mặt trời sáng chói)</string>
+    <string name="live_display_outdoor_summary">Sử dụng cài đặt chỉ ngoài trời</string>
+    <string name="live_display_hint">LiveDisplay có thể giúp giảm mỏi mắt và giúp bạn ngủ vào ban đêm. Nhấn vào đây để thử!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay tắt.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: chế độ tự động.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: chế độ ngày.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: chế độ đêm.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: chế độ ngoài trời.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay đã tắt.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay chuyển sang chế độ tự động.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay đã đổi sang chế độ ban ngày.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay chuyển sang chế độ đêm.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay chuyển sang chế độ ngoài trời.</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">màn hình khóa của bên thứ ba</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">Cho phép một ứng dụng được sử dụng như một màn hình khóa không an toàn.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Không thể cài đặt chủ đề</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> không cài đặt</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Đặt lại chủ đề</string>
+    <string name="theme_reset_notification_message">Hệ thống chủ đề phục hồi do nhiều ứng dụng crash.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">dịch vụ truy cập chủ đề</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Cho phép một ứng dụng để truy cập vào dịch vụ chủ đề. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">đọc thông tin chủ đề của bạn</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Cho phép các ứng dụng để đọc các chủ đề của bạn và xác định chủ đề mà bạn đã áp dụng.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">sửa đổi chủ đề của bạn</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Cho phép các ứng dụng chèn chủ đề mới và sửa đổi các chủ đề mà bạn đã áp dụng.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">truy cập hiệu quả quản lý</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">Cho phép một ứng dụng để truy cập vào dịch vụ thực hiện. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">dịch vụ quản lý truy cập trực tiếp khóa màn hình</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">Cho phép một ứng dụng để truy cập vào các dịch vụ quản lý trực tiếp khóa màn hình.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">dịch vụ quản lý truy cập trực tiếp khóa màn hình</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">Cho phép hệ thống ứng dụng để truy cập Dịch vụ quản lý trực tiếp khóa màn hình.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">cung cấp dịch vụ quản lý màn hình khóa sống</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">Cho phép một dịch vụ cung cấp dịch vụ quản lý trực tiếp khóa màn hình.</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">đọc thời tiết</string>
+    <string name="permdesc_weather_read">Cho phép một ứng dụng để đọc nội dung từ các nhà cung cấp thời tiết.</string>
+    <string name="permlab_weather_write">cập nhật nhà cung cấp thời tiết</string>
+    <string name="permdesc_weather_write">Cho phép một ứng dụng để cập nhật nội dung của các nhà cung cấp thời tiết.</string>
+    <string name="permlab_weather_bind">ràng buộc như là một nhà cung cấp dịch vụ thời tiết</string>
+    <string name="permdesc_weather_bind">Cho phép một ứng dụng được xác định như là một nhà cung cấp dịch vụ thời tiết.</string>
+    <string name="permlab_weather_access_mgr">truy cập các dịch vụ thời tiết</string>
+    <string name="permdesc_weather_access_mgr">Cho phép một ứng dụng để truy cập vào các dịch vụ thời tiết trong hệ thống. Nên không bao giờ cần thiết cho các ứng dụng bình thường.</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">sửa đổi dữ liệu sử dụng cơ sở dữ liệu</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">Cho phép một ứng dụng để cập nhật nội dung của các dữ liệu sử dụng cơ sở dữ liệu.</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">đọc dữ liệu sử dụng cơ sở dữ liệu</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">Cho phép một ứng dụng để đọc nội dung từ cơ sở dữ liệu sử dụng dữ liệu.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">quản lý cài đặt LiveDisplay</string>
+    <string name="permdesc_manageLiveDisplay">Cho phép ứng dụng thiết lập cấu hình nâng cao.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">quan sát phiên âm thanh thay đổi</string>
+    <string name="permdesc_observe_audio_sessions">Cho phép một ứng dụng để quan sát dòng suối âm thanh được tạo ra và bị phá hủy.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">quản lý thay đổi âm thanh phiên</string>
+    <string name="permdesc_manage_audio_sessions">Cho phép một ứng dụng để gửi thông tin Cập Nhật dòng suối âm thanh.</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">Chủ đề</string>
+    <string name="qs_themes_content_description">Tùy chỉnh các chủ đề của bạn</string>
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_manager_title">Bảo vệ quyền riêng tư</string>
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">quản lý cài đặt từ xa</string>
+    <string name="permdesc_manageRemotePrefs">Cho phép một ứng dụng quản lý cài đặt từ xa</string>
 </resources>

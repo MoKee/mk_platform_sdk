@@ -16,179 +16,179 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">Sistem MoKee</string>
-  <string name="permlab_publishCustomTile">membuat tile kustom dalam panel setelan cepat</string>
-  <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan tile panel setelan cepat.</string>
-  <string name="permlab_modifyNetworkSettings">merubah setelan jaringan sistem</string>
-  <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
-  <string name="permlab_modifySoundSettings">mengubah setelan suara sistem</string>
-  <string name="permdesc_modifySoundSettings">Izinkan aplikasi untuk membuat perubahan pengaturan suara modus gangguan.</string>
-  <string name="permlab_bindCustomTileListenerService">mengikat ke layanan pendengar ikon kustom</string>
-  <string name="permdesc_bindCustomTileListenerService">Izinkan aplikasi untuk mengikat ke antarmuka tingkat atas layanan dari pendengar ikon kustom.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">lihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
-  <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">modifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
-  <string name="permdesc_modifyMSPhoneState">Izinkan aplikasi untuk memodifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
-  <string name="permdesc_modifyProfiles">Izinkan aplikasi untuk memodifikasi profil sistem.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">gunakan kerangka kerja perangkat keras</string>
-  <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses perangkat keras MK.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">langsung merubah alarm</string>
-  <string name="permdesc_write_alarms">Izinkan aplikasi untuk menambah, mengubah atau menghapus semua alarm anda.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">beralih ke alarm yang dijadwalkan</string>
-  <string name="permdesc_manage_alarms">Izinkan aplikasi untuk mengaktifkan atau menonaktifkan jadwal alarm anda.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">akses jadwal alarm</string>
-  <string name="permdesc_read_alarms">Izinkan aplikasi untuk membaca jadwal alarm anda.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">modifikasi setelan sistem MK</string>
-  <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem MK.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">modifikasi setelan sistem aman MK</string>
-  <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi pengaturan sistem aman MK. Tidak untuk digunakan oleh aplikasi yang normal.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">mengelola penyimpanan yang tetap</string>
-  <string name="permdesc_managePersistentStorage">Izinkan aplikasi untuk membaca atau menulis properti yang dapat bertahan melalui pengaturan ulang pabrik.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Daftar ikon kustom</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">menambah dan menghapus aplikasi untuk dilindungi apps</string>
-  <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Bawaan</string>
-  <string name="profileNameWork">Kerja</string>
-  <string name="profileNameHome">Rumah</string>
-  <string name="profileNameSilent">Diam</string>
-  <string name="profileNameNight">Malam</string>
-  <string name="profileNameAutomobile">Mobil</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Telepon</string>
-  <string name="profileGroupCalendar">Kalender</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Lainnya</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">baca lokasi telepon</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Izinkan aplikasi untuk membaca informasi tentang lokasi telepon.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">tulis lokasi telepon</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Memungkinkan aplikasi untuk mengubah lokasi telepon.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">Hemat daya</string>
-  <string name="perf_profile_bal">Seimbang</string>
-  <string name="perf_profile_perf">Kinerja</string>
-  <string name="perf_profile_bias_power">Efisiensi</string>
-  <string name="perf_profile_bias_perf">Cepat</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Maksimum penghematan daya. Mengurangi kinerja perangkat, mematikan latar belakang tugas dan data, mematikan animasi, dan mengurangi laju bingkai tampilan</string>
-  <string name="perf_profile_bal_summary">Keseimbangan kinerja dan daya karakteristik optimal</string>
-  <string name="perf_profile_perf_summary">Mode kinerja tinggi. Berguna untuk aplikasi yang memerlukan latency rendah dan throughput tinggi ketika konsumsi daya tidak perhatian</string>
-  <string name="perf_profile_bias_power_summary">Mendukung penghematan daya. Batas maksimum power CPU dan mengoptimalkan untuk penghematan biaya latensi lebih tinggi daya</string>
-  <string name="perf_profile_bias_perf_summary">Mendukung kinerja. Mengurangi latensi dengan konsumsi daya yang sedikit meningkat</string>
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Otomatis</string>
-  <string name="live_display_auto_summary">Otomatis mengatur temperatur warna layar setelah matahari terbenam dan matahari terbit</string>
-  <string name="live_display_off">Mati</string>
-  <string name="live_display_off_summary">Matikan semua penyesuaian</string>
-  <string name="live_display_day">Siang</string>
-  <string name="live_display_day_summary">Gunakan hanya ketika siang saja</string>
-  <string name="live_display_night">Malam</string>
-  <string name="live_display_night_summary">Gunakan hanya ketika malam saja</string>
-  <string name="live_display_outdoor">Luar ruangan (matahari terang)</string>
-  <string name="live_display_outdoor_summary">Gunakan hanya di luar ruangan saja</string>
-  <string name="live_display_hint">LiveDisplay dapat membantu mengurangi kelelahan mata dan membantu anda tidur di malam hari. Klik di sini untuk mencobanya!</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay mati.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mode otomatis.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mode siang.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: mode malam.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: mode diluar.</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay dimatikan.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay dirubah ke mode otomatis.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay dirubah ke mode siang hari.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay dirubah ke mode malam hari.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay dirubah ke mode diluar ruangan.</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">layar kunci pihak ketiga</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">Izinkan aplikasi untuk digunakan sebagai kunci layar yang tidak aman.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">Gagal memasang tema</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> gagal di pasang</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">Set ulang tema</string>
-  <string name="theme_reset_notification_message">Tema sitem dikembalikan karena beberapa aplikasi bertabrakan.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">akses layanan tema</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Izinkan aplikasi untuk mengakses layanan tema. Seharusnya tidak diperlukan oleh aplikasi normal.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">baca info tema anda</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Izinkan aplikasi untuk membaca tema anda dan menentukan tema yang telah anda terapkan.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">modifikasi tema anda</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Izinkan aplikasi untuk memasukkan tema baru dan mengubah tema yang telah anda terapkan.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">akses pengelola kinerja</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Izinkan aplikasi untuk akses layanan kinerja. Seharusnya tidak diperlukan untuk aplikasi normal.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">akses manajer layanan layar kunci hidup</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">akses manajer layanan layar kunci hidup</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">memberikan manajer layanan layar kunci nyata</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">Izinkan layanan untuk memberikan manajer layanan layar kunci hidup.</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">membaca cuaca</string>
-  <string name="permdesc_weather_read">Izinkan aplikasi untuk membaca isi dari penyedia cuaca.</string>
-  <string name="permlab_weather_write">pembaharuan penyedia cuaca</string>
-  <string name="permdesc_weather_write">Izinkan aplikasi untuk memperbarui isi dari penyedia cuaca.</string>
-  <string name="permlab_weather_bind">mengikat sebagai penyedia layanan cuaca</string>
-  <string name="permdesc_weather_bind">Iizinkan aplikasi untuk diidentifikasi sebagai penyedia layanan cuaca.</string>
-  <string name="permlab_weather_access_mgr">akses layanan cuaca</string>
-  <string name="permdesc_weather_access_mgr">Izinkan aplikasi untuk mengakses layanan cuaca di sistem. Tidak pernah diperlukan untuk aplikasi normal.</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">memodifikasi penggunaan data database</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">Izinkan aplikasi untuk memperbarui isi dari penggunaan data database.</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">membaca penggunaan data database</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">Izinkan aplikasi untuk memperbarui isi dari penggunaan data database.</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">kelola setelan LiveDisplay</string>
-  <string name="permdesc_manageLiveDisplay">Izinkan aplikasi untuk mengkonfigurasi pengaturan tampilan lanjutan.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">mengamati perubahan sesi audio</string>
-  <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati arus audio untuk diciptakan dan dihancurkan.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">mengelola perubahan sesi audio</string>
-  <string name="permdesc_manage_audio_sessions">Izinkan app untuk mengirim update audio steaming.</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">Tema</string>
-  <string name="qs_themes_content_description">Kustomisasi tema anda</string>
-  <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Penjaga Privasi</string>
-  <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">mengelola pengaturan jarak jauh</string>
-  <string name="permdesc_manageRemotePrefs">Memungkinkan aplikasi untuk mengelola pengaturan jarak jauh</string>
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">Sistem MoKee</string>
+    <string name="permlab_publishCustomTile">membuat tile kustom dalam panel setelan cepat</string>
+    <string name="permdesc_publishCustomTile">Izinkan aplikasi untuk mempublikasikan tile panel setelan cepat.</string>
+    <string name="permlab_modifyNetworkSettings">merubah setelan jaringan sistem</string>
+    <string name="permdesc_modifyNetworkSettings">Izinkan aplikasi membuat perubahan ke modus pesawat dan pengaturan jaringan data.</string>
+    <string name="permlab_modifySoundSettings">mengubah setelan suara sistem</string>
+    <string name="permdesc_modifySoundSettings">Izinkan aplikasi untuk membuat perubahan pengaturan suara modus gangguan.</string>
+    <string name="permlab_bindCustomTileListenerService">mengikat ke layanan pendengar ikon kustom</string>
+    <string name="permdesc_bindCustomTileListenerService">Izinkan aplikasi untuk mengikat ke antarmuka tingkat atas layanan dari pendengar ikon kustom.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">lihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
+    <string name="permdesc_readMSPhoneState">Izinkan aplikasi untuk melihat keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">modifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs</string>
+    <string name="permdesc_modifyMSPhoneState">Izinkan aplikasi untuk memodifikasi keadaan telepon dan sambungan data dengan dukungan untuk beberapa SIMs.</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">memodifikasi profil sistem</string>
+    <string name="permdesc_modifyProfiles">Izinkan aplikasi untuk memodifikasi profil sistem.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">gunakan kerangka kerja perangkat keras</string>
+    <string name="permdesc_useHardwareFramework">Izinkan aplikasi untuk mengakses perangkat keras MK.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">langsung merubah alarm</string>
+    <string name="permdesc_write_alarms">Izinkan aplikasi untuk menambah, mengubah atau menghapus semua alarm anda.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">beralih ke alarm yang dijadwalkan</string>
+    <string name="permdesc_manage_alarms">Izinkan aplikasi untuk mengaktifkan atau menonaktifkan jadwal alarm anda.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">akses jadwal alarm</string>
+    <string name="permdesc_read_alarms">Izinkan aplikasi untuk membaca jadwal alarm anda.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">modifikasi setelan sistem MK</string>
+    <string name="permdesc_writeSettings">Izinkan aplikasi untuk memodifikasi setelan sistem MK.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">modifikasi setelan sistem aman MK</string>
+    <string name="permdesc_writeSecureSettings">Izinkan aplikasi untuk memodifikasi pengaturan sistem aman MK. Tidak untuk digunakan oleh aplikasi yang normal.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">mengelola penyimpanan yang tetap</string>
+    <string name="permdesc_managePersistentStorage">Izinkan aplikasi untuk membaca atau menulis properti yang dapat bertahan melalui pengaturan ulang pabrik.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">Daftar ikon kustom</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">menambah dan menghapus aplikasi untuk dilindungi apps</string>
+    <string name="permdesc_protectedApp">Izinkan aplikasi untuk menandai aplikasi lain sebagai dilindungi dan mengunci mereka.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">Bawaan</string>
+    <string name="profileNameWork">Kerja</string>
+    <string name="profileNameHome">Rumah</string>
+    <string name="profileNameSilent">Diam</string>
+    <string name="profileNameNight">Malam</string>
+    <string name="profileNameAutomobile">Mobil</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">Telepon</string>
+    <string name="profileGroupCalendar">Kalender</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">E-mail</string>
+    <string name="profileGroupSMS">SMS</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">Lainnya</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">baca lokasi telepon</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">Izinkan aplikasi untuk membaca informasi tentang lokasi telepon.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">tulis lokasi telepon</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">Memungkinkan aplikasi untuk mengubah lokasi telepon.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">Hemat daya</string>
+    <string name="perf_profile_bal">Seimbang</string>
+    <string name="perf_profile_perf">Kinerja</string>
+    <string name="perf_profile_bias_power">Efisiensi</string>
+    <string name="perf_profile_bias_perf">Cepat</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv_summary">Maksimum penghematan daya. Mengurangi kinerja perangkat, mematikan latar belakang tugas dan data, mematikan animasi, dan mengurangi laju bingkai tampilan</string>
+    <string name="perf_profile_bal_summary">Keseimbangan kinerja dan daya karakteristik optimal</string>
+    <string name="perf_profile_perf_summary">Mode kinerja tinggi. Berguna untuk aplikasi yang memerlukan latency rendah dan throughput tinggi ketika konsumsi daya tidak perhatian</string>
+    <string name="perf_profile_bias_power_summary">Mendukung penghematan daya. Batas maksimum power CPU dan mengoptimalkan untuk penghematan biaya latensi lebih tinggi daya</string>
+    <string name="perf_profile_bias_perf_summary">Mendukung kinerja. Mengurangi latensi dengan konsumsi daya yang sedikit meningkat</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Otomatis</string>
+    <string name="live_display_auto_summary">Otomatis mengatur temperatur warna layar setelah matahari terbenam dan matahari terbit</string>
+    <string name="live_display_off">Mati</string>
+    <string name="live_display_off_summary">Matikan semua penyesuaian</string>
+    <string name="live_display_day">Siang</string>
+    <string name="live_display_day_summary">Gunakan hanya ketika siang saja</string>
+    <string name="live_display_night">Malam</string>
+    <string name="live_display_night_summary">Gunakan hanya ketika malam saja</string>
+    <string name="live_display_outdoor">Luar ruangan (matahari terang)</string>
+    <string name="live_display_outdoor_summary">Gunakan hanya di luar ruangan saja</string>
+    <string name="live_display_hint">LiveDisplay dapat membantu mengurangi kelelahan mata dan membantu anda tidur di malam hari. Klik di sini untuk mencobanya!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay mati.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: mode otomatis.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: mode siang.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: mode malam.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: mode diluar.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay dimatikan.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay dirubah ke mode otomatis.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay dirubah ke mode siang hari.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay dirubah ke mode malam hari.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay dirubah ke mode diluar ruangan.</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">layar kunci pihak ketiga</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">Izinkan aplikasi untuk digunakan sebagai kunci layar yang tidak aman.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Gagal memasang tema</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> gagal di pasang</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Set ulang tema</string>
+    <string name="theme_reset_notification_message">Tema sitem dikembalikan karena beberapa aplikasi bertabrakan.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">akses layanan tema</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Izinkan aplikasi untuk mengakses layanan tema. Seharusnya tidak diperlukan oleh aplikasi normal.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">baca info tema anda</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Izinkan aplikasi untuk membaca tema anda dan menentukan tema yang telah anda terapkan.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">modifikasi tema anda</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Izinkan aplikasi untuk memasukkan tema baru dan mengubah tema yang telah anda terapkan.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">akses pengelola kinerja</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">Izinkan aplikasi untuk akses layanan kinerja. Seharusnya tidak diperlukan untuk aplikasi normal.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">akses manajer layanan layar kunci hidup</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">akses manajer layanan layar kunci hidup</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">Memungkinkan aplikasi untuk mengakses manajer layanan layar kunci hidup.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">memberikan manajer layanan layar kunci nyata</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">Izinkan layanan untuk memberikan manajer layanan layar kunci hidup.</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">membaca cuaca</string>
+    <string name="permdesc_weather_read">Izinkan aplikasi untuk membaca isi dari penyedia cuaca.</string>
+    <string name="permlab_weather_write">pembaharuan penyedia cuaca</string>
+    <string name="permdesc_weather_write">Izinkan aplikasi untuk memperbarui isi dari penyedia cuaca.</string>
+    <string name="permlab_weather_bind">mengikat sebagai penyedia layanan cuaca</string>
+    <string name="permdesc_weather_bind">Iizinkan aplikasi untuk diidentifikasi sebagai penyedia layanan cuaca.</string>
+    <string name="permlab_weather_access_mgr">akses layanan cuaca</string>
+    <string name="permdesc_weather_access_mgr">Izinkan aplikasi untuk mengakses layanan cuaca di sistem. Tidak pernah diperlukan untuk aplikasi normal.</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">memodifikasi penggunaan data database</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">Izinkan aplikasi untuk memperbarui isi dari penggunaan data database.</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">membaca penggunaan data database</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">Izinkan aplikasi untuk memperbarui isi dari penggunaan data database.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">kelola setelan LiveDisplay</string>
+    <string name="permdesc_manageLiveDisplay">Izinkan aplikasi untuk mengkonfigurasi pengaturan tampilan lanjutan.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">mengamati perubahan sesi audio</string>
+    <string name="permdesc_observe_audio_sessions">Mengijinkan aplikasi untuk mengamati arus audio untuk diciptakan dan dihancurkan.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">mengelola perubahan sesi audio</string>
+    <string name="permdesc_manage_audio_sessions">Izinkan app untuk mengirim update audio steaming.</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">Tema</string>
+    <string name="qs_themes_content_description">Kustomisasi tema anda</string>
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_manager_title">Penjaga Privasi</string>
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">mengelola pengaturan jarak jauh</string>
+    <string name="permdesc_manageRemotePrefs">Memungkinkan aplikasi untuk mengelola pengaturan jarak jauh</string>
 </resources>

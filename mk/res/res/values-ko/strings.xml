@@ -16,179 +16,179 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">MoKee 시스템</string>
-  <string name="permlab_publishCustomTile">빠른 설정 패널에서 사용자 정의 타일 만들기</string>
-  <string name="permdesc_publishCustomTile">앱이 빠른 설정 타일을 게시할 수 있도록 허옹합니다.</string>
-  <string name="permlab_modifyNetworkSettings">시스템 네트워크 설정 변경</string>
-  <string name="permdesc_modifyNetworkSettings">비행기 모드 및 모바일 데이터 네트워크 설정을 앱이 변경하도록 허용합니다.</string>
-  <string name="permlab_modifySoundSettings">시스템 소리 설정을 변경합니다</string>
-  <string name="permdesc_modifySoundSettings">앱이 방해 금지 모드 소리 설정을 변경하도록 허용합니다.</string>
-  <string name="permlab_bindCustomTileListenerService">알림 수신기 서비스 사용</string>
-  <string name="permdesc_bindCustomTileListenerService">앱이 사용자 정의 타일 리스너 서비스에 대한 최상위 인터페이스를 사용하도록 허용합니다.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 봅니다</string>
-  <string name="permdesc_readMSPhoneState">앱이 다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 보도록 허용합니다.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 수정합니다</string>
-  <string name="permdesc_modifyMSPhoneState">앱이 다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 수정하도록 허용</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">시스템 프로필 수정</string>
-  <string name="permdesc_modifyProfiles">앱이 시스템 프로파일을 수정하도록 허용합니다.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">하드웨어 프레임워크 사용</string>
-  <string name="permdesc_useHardwareFramework">앱이 MK 하드웨어 프레임워크에 접근하도록 허용합니다.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">직접 알람 변경</string>
-  <string name="permdesc_write_alarms">앱이 모든 알람을 추가, 수정 또는 삭제하도록 허용합니다.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">예정된 알람 설정/해제</string>
-  <string name="permdesc_manage_alarms">앱이 예정된 알람을 켜고 끄도록 허용합니다.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">예정된 알람에 접근</string>
-  <string name="permdesc_read_alarms">앱이 예정된 알람을 읽도록 허용합니다.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">MK 시스템 설정 수정</string>
-  <string name="permdesc_writeSettings">앱이 MK 시스템 설정을 수정하도록 허용합니다.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">MK 보안 시스템 설정 수정</string>
-  <string name="permdesc_writeSecureSettings">앱이 MK 보안 시스템 설정을 수정하도록 허용합니다. 일반적은 앱에는 사용되지 않는 권한입니다.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">영구 저장소 관리</string>
-  <string name="permdesc_managePersistentStorage">앱이 공장 초기화 과정에서 지속될 수 있는 속성을 읽거나 쓸 수 있습니다.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">커스텀 타일 리스너</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">보호된 앱에 앱을 추가/제거</string>
-  <string name="permdesc_protectedApp">앱이 다른 앱들을 보호되고 잠그도록 표시하는 것을 허용합니다.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">기본</string>
-  <string name="profileNameWork">작업</string>
-  <string name="profileNameHome">홈</string>
-  <string name="profileNameSilent">음소거</string>
-  <string name="profileNameNight">야간</string>
-  <string name="profileNameAutomobile">자동차</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">전화</string>
-  <string name="profileGroupCalendar">일정</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">이메일</string>
-  <string name="profileGroupSMS">메시지</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">추가 사항</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">전화 위치 읽기</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">전화 위치에 대 한 정보를 읽는 응용을 프로그램을 수 있습니다.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">전화 위치 쓰기</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">휴대 전화 위치를 변경 하는 애플 리 케이 션을 수 있습니다.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">전원 절약</string>
-  <string name="perf_profile_bal">균형</string>
-  <string name="perf_profile_perf">성능</string>
-  <string name="perf_profile_bias_power">효율</string>
-  <string name="perf_profile_bias_perf">빠른</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">최대 전원 절약 모드입니다. 기기 성능이 제한됩니다.</string>
-  <string name="perf_profile_bal_summary">최적 성능 및 전력 특성 사이에서 균형을 맞춥니다.</string>
-  <string name="perf_profile_perf_summary">고성능 모드입니다. 높은 전력 소모량을 고려하지 않아도 되는 상황에서 낮은 지연 시간 및 많은 처리량을 요구하는 애플리케이션에 유용합니다.</string>
-  <string name="perf_profile_bias_power_summary">전원 절약 우위 모드입니다. 최대 CPU 성능을 제한하며 지연 시간이 늘어나는 대신 전원을 절약하는 쪽으로 최적화합니다.</string>
-  <string name="perf_profile_bias_perf_summary">성능 우위 모드입니다. 지연 시간이 줄어들고 전력 소모량이 약간 늘어납니다.</string>
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">자동</string>
-  <string name="live_display_auto_summary">스크린의 색 온도를 자동으로 조정</string>
-  <string name="live_display_off">끄기</string>
-  <string name="live_display_off_summary">모든 설정 사용하지 않음</string>
-  <string name="live_display_day">주간</string>
-  <string name="live_display_day_summary">주간 모드만 사용합니다.</string>
-  <string name="live_display_night">야간</string>
-  <string name="live_display_night_summary">야간 모드만 사용합니다.</string>
-  <string name="live_display_outdoor">야외 모드 (밝은 태양)</string>
-  <string name="live_display_outdoor_summary">야외 모드만을 사용합니다.</string>
-  <string name="live_display_hint">LiveDisplay은 눈의 피로를 줄이고 당신이 밤에 잠을 도움이 도움이 될 수 있습니다. 그것을 밖으로 시도하려면 여기를 클릭!</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay 꺼짐.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: 자동 모드입니다.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: 주간 모드입니다.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: 야간 모드입니다.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: 야외 모드입니다.</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay는 해제 되어 있습니다.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 자동 모드 변경.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 주간 모드 변경.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 야간 모드 변경.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 야외 모드 변경.</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">3th 잠금화면</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">앱은 안전하지 않은 잠금 화면으로 사용할 수 있습니다.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">테마를 설치하지 못했습니다.</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g>를 설치 하지 못했습니다.</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">테마 재설정</string>
-  <string name="theme_reset_notification_message">충돌로 인하여 시스템 테마가 복원되었습니다.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">테마 서비스에 액세스</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">앱이 테마 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">테마 정보 읽기</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">앱이 설치된 테마들을 읽어들이고 현재 적용된 테마를 확인할 수 있도록 허용합니다.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">테마 수정</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">앱이 새로운 테마를 설치하거나 다른 테마를 적용할 수 있도록 허용합니다.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">액세스 성능 관리자</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">앱이 손전등 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">액세스 라이브 잠금 화면 관리자 서비스</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">액세스 라이브 잠금 화면 관리자 서비스</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">액세스 라이브 잠금 화면 관리자 서비스</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">날씨를 읽기</string>
-  <string name="permdesc_weather_read">날씨 공급자에서 콘텐츠를 읽을 애플 리 케이 션이 있습니다.</string>
-  <string name="permlab_weather_write">날씨 공급자 업데이트</string>
-  <string name="permdesc_weather_write">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
-  <string name="permlab_weather_bind">날씨 공급자 서비스 바인딩</string>
-  <string name="permdesc_weather_bind">날씨 공급자 서비스를 식별 하는 앱을 읽을수 있습니다.</string>
-  <string name="permlab_weather_access_mgr">테마 서비스에 액세스</string>
-  <string name="permdesc_weather_access_mgr">앱이 테마 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">데이터 사용 데이터베이스 수정</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">데이터 사용 데이터베이스 수정</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">LiveDisplay 설정 관리</string>
-  <string name="permdesc_manageLiveDisplay">고급 디스플레이 설정을 구성 하는앱을 허용합니다.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">오디오 세션 변경 관찰</string>
-  <string name="permdesc_observe_audio_sessions">앱에서 오디오 스트림이 생성되고 파괴 관찰 할 수 있습니다.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">오디오 세션 변경 관리</string>
-  <string name="permdesc_manage_audio_sessions">앱을 통해 오디오 스트림 업데이트를 보내도록 합니다</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">테마</string>
-  <string name="qs_themes_content_description">테마 사용자 정의</string>
-  <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">프라이버시 가드</string>
-  <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">원격 설정 관리</string>
-  <string name="permdesc_manageRemotePrefs">앱이 원격 설정을 관리할 수 있도록 허용합니다</string>
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">MoKee 시스템</string>
+    <string name="permlab_publishCustomTile">빠른 설정 패널에서 사용자 정의 타일 만들기</string>
+    <string name="permdesc_publishCustomTile">앱이 빠른 설정 타일을 게시할 수 있도록 허옹합니다.</string>
+    <string name="permlab_modifyNetworkSettings">시스템 네트워크 설정 변경</string>
+    <string name="permdesc_modifyNetworkSettings">비행기 모드 및 모바일 데이터 네트워크 설정을 앱이 변경하도록 허용합니다.</string>
+    <string name="permlab_modifySoundSettings">시스템 소리 설정을 변경합니다</string>
+    <string name="permdesc_modifySoundSettings">앱이 방해 금지 모드 소리 설정을 변경하도록 허용합니다.</string>
+    <string name="permlab_bindCustomTileListenerService">알림 수신기 서비스 사용</string>
+    <string name="permdesc_bindCustomTileListenerService">앱이 사용자 정의 타일 리스너 서비스에 대한 최상위 인터페이스를 사용하도록 허용합니다.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 봅니다</string>
+    <string name="permdesc_readMSPhoneState">앱이 다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 보도록 허용합니다.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 수정합니다</string>
+    <string name="permdesc_modifyMSPhoneState">앱이 다중 SIM을 지원하는 휴대전화 상태 및 데이터 연결을 수정하도록 허용</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">시스템 프로필 수정</string>
+    <string name="permdesc_modifyProfiles">앱이 시스템 프로파일을 수정하도록 허용합니다.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">하드웨어 프레임워크 사용</string>
+    <string name="permdesc_useHardwareFramework">앱이 MK 하드웨어 프레임워크에 접근하도록 허용합니다.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">직접 알람 변경</string>
+    <string name="permdesc_write_alarms">앱이 모든 알람을 추가, 수정 또는 삭제하도록 허용합니다.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">예정된 알람 설정/해제</string>
+    <string name="permdesc_manage_alarms">앱이 예정된 알람을 켜고 끄도록 허용합니다.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">예정된 알람에 접근</string>
+    <string name="permdesc_read_alarms">앱이 예정된 알람을 읽도록 허용합니다.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">MK 시스템 설정 수정</string>
+    <string name="permdesc_writeSettings">앱이 MK 시스템 설정을 수정하도록 허용합니다.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">MK 보안 시스템 설정 수정</string>
+    <string name="permdesc_writeSecureSettings">앱이 MK 보안 시스템 설정을 수정하도록 허용합니다. 일반적은 앱에는 사용되지 않는 권한입니다.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">영구 저장소 관리</string>
+    <string name="permdesc_managePersistentStorage">앱이 공장 초기화 과정에서 지속될 수 있는 속성을 읽거나 쓸 수 있습니다.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">커스텀 타일 리스너</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">보호된 앱에 앱을 추가/제거</string>
+    <string name="permdesc_protectedApp">앱이 다른 앱들을 보호되고 잠그도록 표시하는 것을 허용합니다.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">기본</string>
+    <string name="profileNameWork">작업</string>
+    <string name="profileNameHome">홈</string>
+    <string name="profileNameSilent">음소거</string>
+    <string name="profileNameNight">야간</string>
+    <string name="profileNameAutomobile">자동차</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">전화</string>
+    <string name="profileGroupCalendar">일정</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">이메일</string>
+    <string name="profileGroupSMS">메시지</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">추가 사항</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">전화 위치 읽기</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">전화 위치에 대 한 정보를 읽는 응용을 프로그램을 수 있습니다.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">전화 위치 쓰기</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">휴대 전화 위치를 변경 하는 애플 리 케이 션을 수 있습니다.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">전원 절약</string>
+    <string name="perf_profile_bal">균형</string>
+    <string name="perf_profile_perf">성능</string>
+    <string name="perf_profile_bias_power">효율</string>
+    <string name="perf_profile_bias_perf">빠른</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv_summary">최대 전원 절약 모드입니다. 기기 성능이 제한됩니다.</string>
+    <string name="perf_profile_bal_summary">최적 성능 및 전력 특성 사이에서 균형을 맞춥니다.</string>
+    <string name="perf_profile_perf_summary">고성능 모드입니다. 높은 전력 소모량을 고려하지 않아도 되는 상황에서 낮은 지연 시간 및 많은 처리량을 요구하는 애플리케이션에 유용합니다.</string>
+    <string name="perf_profile_bias_power_summary">전원 절약 우위 모드입니다. 최대 CPU 성능을 제한하며 지연 시간이 늘어나는 대신 전원을 절약하는 쪽으로 최적화합니다.</string>
+    <string name="perf_profile_bias_perf_summary">성능 우위 모드입니다. 지연 시간이 줄어들고 전력 소모량이 약간 늘어납니다.</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">자동</string>
+    <string name="live_display_auto_summary">스크린의 색 온도를 자동으로 조정</string>
+    <string name="live_display_off">끄기</string>
+    <string name="live_display_off_summary">모든 설정 사용하지 않음</string>
+    <string name="live_display_day">주간</string>
+    <string name="live_display_day_summary">주간 모드만 사용합니다.</string>
+    <string name="live_display_night">야간</string>
+    <string name="live_display_night_summary">야간 모드만 사용합니다.</string>
+    <string name="live_display_outdoor">야외 모드 (밝은 태양)</string>
+    <string name="live_display_outdoor_summary">야외 모드만을 사용합니다.</string>
+    <string name="live_display_hint">LiveDisplay은 눈의 피로를 줄이고 당신이 밤에 잠을 도움이 도움이 될 수 있습니다. 그것을 밖으로 시도하려면 여기를 클릭!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay 꺼짐.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: 자동 모드입니다.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: 주간 모드입니다.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: 야간 모드입니다.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: 야외 모드입니다.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay는 해제 되어 있습니다.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 자동 모드 변경.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 주간 모드 변경.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 야간 모드 변경.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 야외 모드 변경.</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">3th 잠금화면</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">앱은 안전하지 않은 잠금 화면으로 사용할 수 있습니다.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">테마를 설치하지 못했습니다.</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g>를 설치 하지 못했습니다.</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">테마 재설정</string>
+    <string name="theme_reset_notification_message">충돌로 인하여 시스템 테마가 복원되었습니다.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">테마 서비스에 액세스</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">앱이 테마 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">테마 정보 읽기</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">앱이 설치된 테마들을 읽어들이고 현재 적용된 테마를 확인할 수 있도록 허용합니다.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">테마 수정</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">앱이 새로운 테마를 설치하거나 다른 테마를 적용할 수 있도록 허용합니다.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">액세스 성능 관리자</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">앱이 손전등 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">액세스 라이브 잠금 화면 관리자 서비스</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">액세스 라이브 잠금 화면 관리자 서비스</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">액세스 라이브 잠금 화면 관리자 서비스</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">라이브 잠금 화면 관리자 서비스에 액세스 할 수있는 응용 프로그램을 허용 할 수 있습니다.</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">날씨를 읽기</string>
+    <string name="permdesc_weather_read">날씨 공급자에서 콘텐츠를 읽을 애플 리 케이 션이 있습니다.</string>
+    <string name="permlab_weather_write">날씨 공급자 업데이트</string>
+    <string name="permdesc_weather_write">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
+    <string name="permlab_weather_bind">날씨 공급자 서비스 바인딩</string>
+    <string name="permdesc_weather_bind">날씨 공급자 서비스를 식별 하는 앱을 읽을수 있습니다.</string>
+    <string name="permlab_weather_access_mgr">테마 서비스에 액세스</string>
+    <string name="permdesc_weather_access_mgr">앱이 테마 서비스에 접근할 수 있도록 허용합니다. 일반 앱에서는 필요없는 권한입니다.</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">데이터 사용 데이터베이스 수정</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">데이터 사용 데이터베이스 수정</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">날씨 공급자에서 콘텐츠를 읽을 애플리케이션이 있습니다.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">LiveDisplay 설정 관리</string>
+    <string name="permdesc_manageLiveDisplay">고급 디스플레이 설정을 구성 하는앱을 허용합니다.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">오디오 세션 변경 관찰</string>
+    <string name="permdesc_observe_audio_sessions">앱에서 오디오 스트림이 생성되고 파괴 관찰 할 수 있습니다.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">오디오 세션 변경 관리</string>
+    <string name="permdesc_manage_audio_sessions">앱을 통해 오디오 스트림 업데이트를 보내도록 합니다</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">테마</string>
+    <string name="qs_themes_content_description">테마 사용자 정의</string>
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_manager_title">프라이버시 가드</string>
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">원격 설정 관리</string>
+    <string name="permdesc_manageRemotePrefs">앱이 원격 설정을 관리할 수 있도록 허용합니다</string>
 </resources>

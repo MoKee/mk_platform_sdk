@@ -16,82 +16,82 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">Sistema de MoKee</string>
-  <string name="permlab_modifyNetworkSettings">Canvia la configuració de xarxa del sistema</string>
-  <string name="permdesc_modifyNetworkSettings">Permet  a una aplicació realitzar canvis en el mode avió i en la configuració de la xarxa de dades mòbils.</string>
-  <string name="permlab_modifySoundSettings">canviar configuració de so del sistema</string>
-  <string name="permdesc_modifySoundSettings">Permet a una aplicació fer canvis a un conjunt restringit de configuracions dels sons del sistema.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">veure l\'estat del telèfon i la connexió de dades amb soport per múltiples SIMs</string>
-  <string name="permdesc_readMSPhoneState">Permet a una aplicació veure l\'estat del telèfon i la connexió de dades amb soport per múltiples SIMs.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <!-- Labels for the READ_ALARMS permission. -->
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Predeterminat</string>
-  <string name="profileNameWork">Feina</string>
-  <string name="profileNameHome">Casa</string>
-  <string name="profileNameSilent">Silenci</string>
-  <string name="profileNameNight">Nit</string>
-  <string name="profileNameAutomobile">Cotxe</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Telèfon</string>
-  <string name="profileGroupCalendar">Calendari</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">Correu electrònic</string>
-  <string name="profileGroupSMS">SMS</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Altres</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">llegir la ubicació</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Permet una aplicació per llegir informació sobre la ubicació del telèfon.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">escriure la ubicació</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Permet un app canviar la ubicació del telèfon.</string>
-  <!-- Performance profiles -->
-  <!-- Performance profiles -->
-  <!-- LiveDisplay strings -->
-  <string name="live_display_off">Desactivat</string>
-  <string name="live_display_night">Nit</string>
-  <!-- Third party keyguard permission label -->
-  <!-- Third party keyguard permission description -->
-  <!-- Theme installation error notification -->
-  <!-- Theme reset notification -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <!-- Performance manager permission title -->
-  <!-- Performance manager permission description -->
-  <!-- Access live lock screen manager service permission label -->
-  <!-- Access live lock screen manager service permission description -->
-  <!-- Privileged access live lock screen manager service permission label -->
-  <!-- Privileged access live lock screen manager service permission description -->
-  <!-- Live lock screen manager service provider permission label -->
-  <!-- Live lock screen manager service provider permission description -->
-  <!-- Weather Service strings -->
-  <!-- DataUsageProvider write permission title -->
-  <!-- DataUsageProvider write permission description -->
-  <!-- DataUsageProvider read permission title -->
-  <!-- DataUsageProvider read permission description -->
-  <!-- LiveDisplay manager permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- MKAudioService - observe session changes permission -->
-  <!-- QuickSettings: Themes tile -->
-  <!-- Privacy Guard -->
-  <!-- Permissions used by remote preferences -->
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">Sistema de MoKee</string>
+    <string name="permlab_modifyNetworkSettings">Canvia la configuració de xarxa del sistema</string>
+    <string name="permdesc_modifyNetworkSettings">Permet  a una aplicació realitzar canvis en el mode avió i en la configuració de la xarxa de dades mòbils.</string>
+    <string name="permlab_modifySoundSettings">canviar configuració de so del sistema</string>
+    <string name="permdesc_modifySoundSettings">Permet a una aplicació fer canvis a un conjunt restringit de configuracions dels sons del sistema.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">veure l\'estat del telèfon i la connexió de dades amb soport per múltiples SIMs</string>
+    <string name="permdesc_readMSPhoneState">Permet a una aplicació veure l\'estat del telèfon i la connexió de dades amb soport per múltiples SIMs.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <!-- Labels for the READ_ALARMS permission. -->
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">Predeterminat</string>
+    <string name="profileNameWork">Feina</string>
+    <string name="profileNameHome">Casa</string>
+    <string name="profileNameSilent">Silenci</string>
+    <string name="profileNameNight">Nit</string>
+    <string name="profileNameAutomobile">Cotxe</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">Telèfon</string>
+    <string name="profileGroupCalendar">Calendari</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">Correu electrònic</string>
+    <string name="profileGroupSMS">SMS</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">Altres</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">llegir la ubicació</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">Permet una aplicació per llegir informació sobre la ubicació del telèfon.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">escriure la ubicació</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">Permet un app canviar la ubicació del telèfon.</string>
+    <!-- Performance profiles -->
+    <!-- Performance profiles -->
+    <!-- LiveDisplay strings -->
+    <string name="live_display_off">Desactivat</string>
+    <string name="live_display_night">Nit</string>
+    <!-- Third party keyguard permission label -->
+    <!-- Third party keyguard permission description -->
+    <!-- Theme installation error notification -->
+    <!-- Theme reset notification -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <!-- Performance manager permission title -->
+    <!-- Performance manager permission description -->
+    <!-- Access live lock screen manager service permission label -->
+    <!-- Access live lock screen manager service permission description -->
+    <!-- Privileged access live lock screen manager service permission label -->
+    <!-- Privileged access live lock screen manager service permission description -->
+    <!-- Live lock screen manager service provider permission label -->
+    <!-- Live lock screen manager service provider permission description -->
+    <!-- Weather Service strings -->
+    <!-- DataUsageProvider write permission title -->
+    <!-- DataUsageProvider write permission description -->
+    <!-- DataUsageProvider read permission title -->
+    <!-- DataUsageProvider read permission description -->
+    <!-- LiveDisplay manager permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- MKAudioService - observe session changes permission -->
+    <!-- QuickSettings: Themes tile -->
+    <!-- Privacy Guard -->
+    <!-- Permissions used by remote preferences -->
 </resources>

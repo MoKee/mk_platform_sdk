@@ -16,172 +16,172 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">MoKee System</string>
-  <string name="permlab_publishCustomTile">oprette en tilpasset flise i selve hurtigindstillingspanelet</string>
-  <string name="permdesc_publishCustomTile">Lader en app udgive en hurtigindstillingsflise.</string>
-  <string name="permlab_modifyNetworkSettings">Ændre netværksindstillingerne</string>
-  <string name="permdesc_modifyNetworkSettings">Lader en app foretage ændringer i Flytilstand og netværksindstillinger for mobildata.</string>
-  <string name="permlab_modifySoundSettings">ændre systemlydindstillinger</string>
-  <string name="permdesc_modifySoundSettings">Lader en app foretage ændringer i lydindstillingernes afbrydelsestilstand.</string>
-  <string name="permlab_bindCustomTileListenerService">knytte til en tilpasset flises lyttertjeneste</string>
-  <string name="permdesc_bindCustomTileListenerService">Lader en app knytte sig til topniveau grænsefladen af en tilpasset flises lyttetjeneste.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">se telefontilstand og dataforbindelse med understøttelse af flere SIM-kort</string>
-  <string name="permdesc_readMSPhoneState">Lader en app se telefontilstand og dataforbindelse med understøttelse af flere SIM-kort.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">ændre telefontilstand og dataforbindelse med understøttelse af flere SIM-kort</string>
-  <string name="permdesc_modifyMSPhoneState">Lader en app ændre telefontilstand og dataforbindelse med understøttelse af flere SIM-kort.</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">ændre systemprofiler</string>
-  <string name="permdesc_modifyProfiles">Tillader at en app kan ændre systemprofiler.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">anvend hardware framework</string>
-  <string name="permdesc_useHardwareFramework">Giv en app tilladelse til at bruge MK hardware framework.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">direkte ændre alarmer</string>
-  <string name="permdesc_write_alarms">Tillader en app at tilføje, ændre eller slette alle dine alarmer.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">slå planlagte alarmer Til/Fra</string>
-  <string name="permdesc_manage_alarms">Lader en app slå dine planlagte alarmer Til/Fra.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">tilgå planlagte alarmer</string>
-  <string name="permdesc_read_alarms">Tillad app at læse dine planlagte alarmer.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">ændre MK-systemindstillinger</string>
-  <string name="permdesc_writeSettings">Lader en app ændre MK-systemindstillinger.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">ændre MK sikre systemindstillinger</string>
-  <string name="permdesc_writeSecureSettings">Lader en app ændre MK sikre systemindstillinger. Ikke til brug for normale apps.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">administrere faste lager</string>
-  <string name="permdesc_managePersistentStorage">Lader en app læse eller skrive egenskaber, som kan overleve en nulstilling til fabriksstandard.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Tilpasset flise lytter</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">tilføje og fjerne apps til beskyttede apps</string>
-  <string name="permdesc_protectedApp">Lader en app markere andre apps som beskyttede og låse dem.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Standard</string>
-  <string name="profileNameWork">Arbejde</string>
-  <string name="profileNameHome">Hjem</string>
-  <string name="profileNameSilent">Lydløs</string>
-  <string name="profileNameNight">Nat</string>
-  <string name="profileNameAutomobile">Bil</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Telefon</string>
-  <string name="profileGroupCalendar">Kalender</string>
-  <string name="profileGroupGmail">GMail</string>
-  <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Andet</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">læs enhedsplacering</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Lader en app læse oplysninger om enhedens placering.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">skrive enhedsplacering</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Lader en app ændre enhedens placering.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">Strømbesparelse</string>
-  <string name="perf_profile_bal">Balanceret</string>
-  <string name="perf_profile_perf">Høj ydeevne</string>
-  <string name="perf_profile_bias_power">Effektivitet</string>
-  <string name="perf_profile_bias_perf">Hurtig</string>
-  <!-- Performance profiles -->
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Automatisk</string>
-  <string name="live_display_auto_summary">Justér automatisk farvetemperaturen på skærmen efter solnedgang og -opgang</string>
-  <string name="live_display_off">Fra</string>
-  <string name="live_display_off_summary">Deaktivér alle justeringer</string>
-  <string name="live_display_day">Dag</string>
-  <string name="live_display_day_summary">Benyt kun dagindstillinger</string>
-  <string name="live_display_night">Nat</string>
-  <string name="live_display_night_summary">Benyt kun natindstillinger</string>
-  <string name="live_display_outdoor">Udendørs (klart solskin)</string>
-  <string name="live_display_outdoor_summary">Benyt alene udendørsindstillinger</string>
-  <string name="live_display_hint">LiveDisplay kan reducere øjenanstrengelse og hjælpe dig med at sove om natten. Tryk her for at prøve det!</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay inaktiv.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: autotilstand.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: dagstilstand.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nattetilstand.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: udendørstilstand.</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay inaktiv.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay skiftede til autotilstand.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay skiftede til dagtilstand.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay skiftede til nattilstand.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay skiftede til udendørstilstand.</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">tredjeparts låseskærm</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">Lader en app blive benyttet som en usikker låseskærm.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">Temainstallationen mislykkedes</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kunne ikke installeres</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">Nulstil tema</string>
-  <string name="theme_reset_notification_message">Systemtema gendannet grundet flere app-nedbrud.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">tilgå tematjenesten</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Lader en app tilgå tematjenesten. Bør aldrig være nødvendig for alm. apps.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">læse dine temaoplysninger</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Lader en app læse dine temaer og
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">MoKee System</string>
+    <string name="permlab_publishCustomTile">oprette en tilpasset flise i selve hurtigindstillingspanelet</string>
+    <string name="permdesc_publishCustomTile">Lader en app udgive en hurtigindstillingsflise.</string>
+    <string name="permlab_modifyNetworkSettings">Ændre netværksindstillingerne</string>
+    <string name="permdesc_modifyNetworkSettings">Lader en app foretage ændringer i Flytilstand og netværksindstillinger for mobildata.</string>
+    <string name="permlab_modifySoundSettings">ændre systemlydindstillinger</string>
+    <string name="permdesc_modifySoundSettings">Lader en app foretage ændringer i lydindstillingernes afbrydelsestilstand.</string>
+    <string name="permlab_bindCustomTileListenerService">knytte til en tilpasset flises lyttertjeneste</string>
+    <string name="permdesc_bindCustomTileListenerService">Lader en app knytte sig til topniveau grænsefladen af en tilpasset flises lyttetjeneste.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">se telefontilstand og dataforbindelse med understøttelse af flere SIM-kort</string>
+    <string name="permdesc_readMSPhoneState">Lader en app se telefontilstand og dataforbindelse med understøttelse af flere SIM-kort.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">ændre telefontilstand og dataforbindelse med understøttelse af flere SIM-kort</string>
+    <string name="permdesc_modifyMSPhoneState">Lader en app ændre telefontilstand og dataforbindelse med understøttelse af flere SIM-kort.</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">ændre systemprofiler</string>
+    <string name="permdesc_modifyProfiles">Tillader at en app kan ændre systemprofiler.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">anvend hardware framework</string>
+    <string name="permdesc_useHardwareFramework">Giv en app tilladelse til at bruge MK hardware framework.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">direkte ændre alarmer</string>
+    <string name="permdesc_write_alarms">Tillader en app at tilføje, ændre eller slette alle dine alarmer.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">slå planlagte alarmer Til/Fra</string>
+    <string name="permdesc_manage_alarms">Lader en app slå dine planlagte alarmer Til/Fra.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">tilgå planlagte alarmer</string>
+    <string name="permdesc_read_alarms">Tillad app at læse dine planlagte alarmer.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">ændre MK-systemindstillinger</string>
+    <string name="permdesc_writeSettings">Lader en app ændre MK-systemindstillinger.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">ændre MK sikre systemindstillinger</string>
+    <string name="permdesc_writeSecureSettings">Lader en app ændre MK sikre systemindstillinger. Ikke til brug for normale apps.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">administrere faste lager</string>
+    <string name="permdesc_managePersistentStorage">Lader en app læse eller skrive egenskaber, som kan overleve en nulstilling til fabriksstandard.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">Tilpasset flise lytter</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">tilføje og fjerne apps til beskyttede apps</string>
+    <string name="permdesc_protectedApp">Lader en app markere andre apps som beskyttede og låse dem.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">Standard</string>
+    <string name="profileNameWork">Arbejde</string>
+    <string name="profileNameHome">Hjem</string>
+    <string name="profileNameSilent">Lydløs</string>
+    <string name="profileNameNight">Nat</string>
+    <string name="profileNameAutomobile">Bil</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">Telefon</string>
+    <string name="profileGroupCalendar">Kalender</string>
+    <string name="profileGroupGmail">GMail</string>
+    <string name="profileGroupEmail">E-mail</string>
+    <string name="profileGroupSMS">SMS</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">Andet</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">læs enhedsplacering</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">Lader en app læse oplysninger om enhedens placering.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">skrive enhedsplacering</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">Lader en app ændre enhedens placering.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">Strømbesparelse</string>
+    <string name="perf_profile_bal">Balanceret</string>
+    <string name="perf_profile_perf">Høj ydeevne</string>
+    <string name="perf_profile_bias_power">Effektivitet</string>
+    <string name="perf_profile_bias_perf">Hurtig</string>
+    <!-- Performance profiles -->
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatisk</string>
+    <string name="live_display_auto_summary">Justér automatisk farvetemperaturen på skærmen efter solnedgang og -opgang</string>
+    <string name="live_display_off">Fra</string>
+    <string name="live_display_off_summary">Deaktivér alle justeringer</string>
+    <string name="live_display_day">Dag</string>
+    <string name="live_display_day_summary">Benyt kun dagindstillinger</string>
+    <string name="live_display_night">Nat</string>
+    <string name="live_display_night_summary">Benyt kun natindstillinger</string>
+    <string name="live_display_outdoor">Udendørs (klart solskin)</string>
+    <string name="live_display_outdoor_summary">Benyt alene udendørsindstillinger</string>
+    <string name="live_display_hint">LiveDisplay kan reducere øjenanstrengelse og hjælpe dig med at sove om natten. Tryk her for at prøve det!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay inaktiv.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: autotilstand.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: dagstilstand.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: nattetilstand.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: udendørstilstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay inaktiv.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay skiftede til autotilstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay skiftede til dagtilstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay skiftede til nattilstand.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay skiftede til udendørstilstand.</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">tredjeparts låseskærm</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">Lader en app blive benyttet som en usikker låseskærm.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Temainstallationen mislykkedes</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> kunne ikke installeres</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Nulstil tema</string>
+    <string name="theme_reset_notification_message">Systemtema gendannet grundet flere app-nedbrud.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">tilgå tematjenesten</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Lader en app tilgå tematjenesten. Bør aldrig være nødvendig for alm. apps.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">læse dine temaoplysninger</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Lader en app læse dine temaer og
        bestemme, hvilket tema du anvender.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">ændre dine temaer</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Lader en app indsætte nye temaer og skifte det tema, du anvender.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">tilgå ydelseshåndteringen</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Lader en app tilgå ydelsestjenesten. Bør aldrig være nødvendig for alm. apps.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">tilgå håndteringstjenesten for live låseskærm</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Lader en app tilgå tjenesten for live låseskærmshåndtering.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">tilgå håndteringstjenesten for live låseskærm</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Lader system-apps tilgå tjenesten for live låseskærmshåndtering.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">tilgængeliggøre håndteringstjeneste for live låseskærm</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">Lader en tjeneste tilgængeliggøre tjenesten for live låseskærmshåndtering.</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">tilgå vejret</string>
-  <string name="permdesc_weather_read">Tillad at en app kan læse indhold fra vejr-udbyderen.</string>
-  <string name="permlab_weather_write">opdater vejr-udbyder</string>
-  <string name="permdesc_weather_write">Lader en app opdatere vejrudbydertjenestens indhold.</string>
-  <string name="permlab_weather_bind">tilknytte en vejrudbydertjeneste</string>
-  <string name="permdesc_weather_bind">Lader en app blive identificeret som en vejrudbydertjeneste.</string>
-  <string name="permlab_weather_access_mgr">tilgå vejrtjenesten</string>
-  <string name="permdesc_weather_access_mgr">Lader en app tilgå vejrtjenesten. Bør aldrig være nødvendig for alm. apps.</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">ændre dataforbrugsdatabase</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">Lader en app opdatere dataforbrugsdatabasens indhold.</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">læse dataforbrugsdatabase</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">Lader en app læse dataforbrugsdatabasens indhold.</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">administrere indstillinger for LiveDisplay</string>
-  <string name="permdesc_manageLiveDisplay">Lader en app konfigurere avancerede skærmindstillinger.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">registrere lydsessionsændringer</string>
-  <string name="permdesc_observe_audio_sessions">Lader en app registrere oprettelse og ødelæggelse af lyd-streams.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">håndtere lydsessionsændringer</string>
-  <string name="permdesc_manage_audio_sessions">Tillader at en app kan sende lyd stream opdateringer.</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">Temaer</string>
-  <string name="qs_themes_content_description">Tilpas dit tema</string>
-  <!-- Privacy Guard -->
-  <!-- Permissions used by remote preferences -->
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">ændre dine temaer</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Lader en app indsætte nye temaer og skifte det tema, du anvender.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">tilgå ydelseshåndteringen</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">Lader en app tilgå ydelsestjenesten. Bør aldrig være nødvendig for alm. apps.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">tilgå håndteringstjenesten for live låseskærm</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">Lader en app tilgå tjenesten for live låseskærmshåndtering.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">tilgå håndteringstjenesten for live låseskærm</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">Lader system-apps tilgå tjenesten for live låseskærmshåndtering.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">tilgængeliggøre håndteringstjeneste for live låseskærm</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">Lader en tjeneste tilgængeliggøre tjenesten for live låseskærmshåndtering.</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">tilgå vejret</string>
+    <string name="permdesc_weather_read">Tillad at en app kan læse indhold fra vejr-udbyderen.</string>
+    <string name="permlab_weather_write">opdater vejr-udbyder</string>
+    <string name="permdesc_weather_write">Lader en app opdatere vejrudbydertjenestens indhold.</string>
+    <string name="permlab_weather_bind">tilknytte en vejrudbydertjeneste</string>
+    <string name="permdesc_weather_bind">Lader en app blive identificeret som en vejrudbydertjeneste.</string>
+    <string name="permlab_weather_access_mgr">tilgå vejrtjenesten</string>
+    <string name="permdesc_weather_access_mgr">Lader en app tilgå vejrtjenesten. Bør aldrig være nødvendig for alm. apps.</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">ændre dataforbrugsdatabase</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">Lader en app opdatere dataforbrugsdatabasens indhold.</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">læse dataforbrugsdatabase</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">Lader en app læse dataforbrugsdatabasens indhold.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">administrere indstillinger for LiveDisplay</string>
+    <string name="permdesc_manageLiveDisplay">Lader en app konfigurere avancerede skærmindstillinger.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">registrere lydsessionsændringer</string>
+    <string name="permdesc_observe_audio_sessions">Lader en app registrere oprettelse og ødelæggelse af lyd-streams.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">håndtere lydsessionsændringer</string>
+    <string name="permdesc_manage_audio_sessions">Tillader at en app kan sende lyd stream opdateringer.</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">Temaer</string>
+    <string name="qs_themes_content_description">Tilpas dit tema</string>
+    <!-- Privacy Guard -->
+    <!-- Permissions used by remote preferences -->
 </resources>

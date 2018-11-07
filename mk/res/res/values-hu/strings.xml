@@ -16,179 +16,179 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">MoKee rendszer</string>
-  <string name="permlab_publishCustomTile">hozzon létre egy egyéni csempét a gyors beállítások panelen belül</string>
-  <string name="permdesc_publishCustomTile">Alkalmazás számára engedélyezi, hogy gyors beállítások csempét hozzon létre.</string>
-  <string name="permlab_modifyNetworkSettings">rendszer hálózati beállításainak módosítása</string>
-  <string name="permdesc_modifyNetworkSettings">Engedélyt ad az alkalmazász számára, hogy befolyásolja a repülőgép üzemmódot és a mobilinternet beállításait.</string>
-  <string name="permlab_modifySoundSettings">rendszer hangbeállításainak módosítása</string>
-  <string name="permdesc_modifySoundSettings">Lehetővé teszi egy alkalmazás számára, hogy megváltoztassa a megszakítás üzemmód hangbeállításait.</string>
-  <string name="permlab_bindCustomTileListenerService">kössön egy válaszott csempét a figyelő szolgáltatáshoz</string>
-  <string name="permdesc_bindCustomTileListenerService">Lehetővé teszi az alkalmazásnak, hogy hozzárendeljen egy felső szintű felületet, egy egyéni csempe figyelő szolgáltatásból.</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">megtekinti a telefon állapotát és adatkapcsolatát, támogatással a több SIM kártya felé</string>
-  <string name="permdesc_readMSPhoneState">Lehetővé teszi egy alkalmazás számára, hogy megtekintse a telefon állapotát és mobil adatkapcsolatát, támogatással a több SIM felé.</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">megváltoztatja a telefon állapotát és adatkapcsolatát, támogatással a több SIM kártya felé</string>
-  <string name="permdesc_modifyMSPhoneState">Lehetővé teszi egy alkalmazás számára, hogy megváltoztassa a telefon állapotát és mobil adatkapcsolatát, támogatással a több SIM felé.</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">rendszerprofilok módosítása</string>
-  <string name="permdesc_modifyProfiles">Lehetővé teszi egy alkalmazás számára, hogy módosítsa a rendszerprofilokat.</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">hardver keretrendszer használata</string>
-  <string name="permdesc_useHardwareFramework">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen az MK hardver keretrendszerhez.</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">riasztások közvetlen változtatása</string>
-  <string name="permdesc_write_alarms">Engedélyezi egy alkalmazásnak, hogy módosítsa vagy törölje az összes riasztásodat.</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">ütemezett riasztások bekapcsolása</string>
-  <string name="permdesc_manage_alarms">Lehetővé teszi egy alkalmazásnak, hogy ki vagy be kapcsolja az időzített riasztásaidat.</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">hozzáférés az időzített riasztásokhoz</string>
-  <string name="permdesc_read_alarms">Lehetővé teszi egy alkalmazásnak, hogy olvassa az időzített riasztásaidat.</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">MK rendszer beállítások módosítása</string>
-  <string name="permdesc_writeSettings">Lehetővé teszi egy alkalmazásnak, hogy modósítsa az MK rendszer beállításait.</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">MK rendszer biztonsági beállításainak módosítása</string>
-  <string name="permdesc_writeSecureSettings">Lehetővé teszi egy alkalmazás számára hogy módosítsa az MK biztonsági rendszerbeállításait. Nem vonatkozik normál alkalmazásokra.</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">tartós tárhely kezelése</string>
-  <string name="permdesc_managePersistentStorage">Lehetővé teszi egy alkalmazás számára olyan tulajdonságok olvasását vagy írását, melyek esetében fennállhat a gyári visszaállítás esete.</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">Egyéni figyelő a csempéken</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">hozzáadás és eltávolítás a védett alkalmazásokhoz</string>
-  <string name="permdesc_protectedApp">Lehetővé teszi egy alkalmazásnak, hogy megjelöljön más alkalmazásokat védettként és zárolja azokat.</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">Alapértelmezett</string>
-  <string name="profileNameWork">Munkahely</string>
-  <string name="profileNameHome">Otthon</string>
-  <string name="profileNameSilent">Néma</string>
-  <string name="profileNameNight">Éjszakai</string>
-  <string name="profileNameAutomobile">Autó</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">Telefon</string>
-  <string name="profileGroupCalendar">Naptár</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">E-mail</string>
-  <string name="profileGroupSMS">SMS</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">Egyéb</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">telefon helyzetéhez való hozzáférés</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">Engedélyezi, hogy az alkalmazás hozzáférjen a telefon helyzetéhez.</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">telefon helyzetének megadása</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">Engedélyezi az alkalmazásnak, hogy megváltoztassa a telefon helyzetét.</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">Energiatakarékos</string>
-  <string name="perf_profile_bal">Kiegyensúlyozott</string>
-  <string name="perf_profile_perf">Teljesítmény</string>
-  <string name="perf_profile_bias_power">Hatékonyság</string>
-  <string name="perf_profile_bias_perf">Gyors</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">Maximális energiatakarékosság. Csökkenti a készülék teljesítményét, kikapcsolja a háttérfeladatokat és -adatokat, letiltja az animációkat, és csökkenti a kijelző képfrissítését</string>
-  <string name="perf_profile_bal_summary">Egyensúly az optimális teljesítmény és az energiafogyasztás között</string>
-  <string name="perf_profile_perf_summary">Nagy teljesítményű üzemmód. Hasznos az alacsony késleltetést és nagy teljesítményt igénylő alkalmazásokhoz, amikor a fogyasztás nem számít</string>
-  <string name="perf_profile_bias_power_summary">Energiatakarékosság előnyben részesítése. Korlátozza a maximális CPU teljesítményt és optimalizálja az energiatakarékosságot a nagyobb késleltetés árán</string>
-  <string name="perf_profile_bias_perf_summary">Teljesítmény előnyben részesítése. Enyhén megnövekedett energiafogyasztással csökkenti a késleltetést</string>
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">Automatikus</string>
-  <string name="live_display_auto_summary">Automatikusan beállítja a képernyő színhőmérsékletét naplemente és napkelte után</string>
-  <string name="live_display_off">Ki</string>
-  <string name="live_display_off_summary">Összes módosítás letiltása</string>
-  <string name="live_display_day">Nap</string>
-  <string name="live_display_day_summary">Csak nappali beállítások használata</string>
-  <string name="live_display_night">Éjszakai</string>
-  <string name="live_display_night_summary">Csak éjszakai beállítások használata</string>
-  <string name="live_display_outdoor">Kültéri (fényes nap)</string>
-  <string name="live_display_outdoor_summary">Csak kültéri beállítások használata</string>
-  <string name="live_display_hint">LiveDisplay segíthet csökkenteni a szem terhelését, és segít éjszaka aludni. Koppints ide a kipróbáláshoz!</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay ki.</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mód.</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: nap mód.</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: éjszakai mód.</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: kültéri mód.</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay kikapcsolva.</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay auto-módra változtva.</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay nappali módra változtatva.</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay nappali módra változtatva.</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay kültéri változtva.</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">harmadik féltől származó záróképernyő</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">Lehetővé teszi egy alkalmazás számára, hogy bizonytalan záróképernyőként legyen használva.</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">Téma telepítése sikertelen</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g>telepítése sikertelen</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">Téma viszaállítása</string>
-  <string name="theme_reset_notification_message">Több alkalmazás összeomlása miatt a rendszer téma visszaállításra került.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">hozzáférés a témaszolgáltatáshoz</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen a témaszolgáltatáshoz. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">téma információinak olvasása</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">Lehetővé teszi az alkalmazásnak, hogy megtekintse a témákat és megállapítsa, melyik téma aktív.</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">témák módosítása</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">Lehetővé teszi az alkalmazásnak, hogy új témákat hozzon létre és módosítsa a jelenleg aktív témát.</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">hozzáférés teljesítmény kezelő</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen a teljesítmény szolgáltatáshoz. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">hozzáférés az élő záróképernyő kezelő szolgáltatáshoz</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen az elő záróképernyő kezelő szolgáltatáshoz.</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">hozzáférés az élő záróképernyő kezelő szolgáltatáshoz</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">Lehetővé teszi rendszeralkalmazások számára, hogy hozzáférjenek az elő záróképernyő kezelő szolgáltatáshoz.</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">biztosít élő záróképernyő kezelő szolgáltatást</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">Lehetővé teszi egy szolgáltatás számára, hogy hozzáférjen az elő záróképernyő kezelő szolgáltatáshoz.</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">időjárás olvasása</string>
-  <string name="permdesc_weather_read">Lehetővé teszi egy alkalmazás számára, hogy tartalmat olvasson az időjárás-szolgáltatótól.</string>
-  <string name="permlab_weather_write">időjárás szolgáltató frissítése</string>
-  <string name="permdesc_weather_write">Lehetővé teszi egy alkalmazás számára, hogy frissítse a tartalmat az időjárás-szolgáltatóról.</string>
-  <string name="permlab_weather_bind">beállítás időjárás-szolgáltató szolgáltatásként</string>
-  <string name="permdesc_weather_bind">Lehetővé teszi egy alkalmazás számára, hogy időjárás-szolgáltató szolgáltatásként legyen azonosítva.</string>
-  <string name="permlab_weather_access_mgr">hozzáférés időjárás-szolgáltatóhoz</string>
-  <string name="permdesc_weather_access_mgr">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen az időjárás szolgáltatáshoz a rendszerben. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">adathasználat adabázis módosítása</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">Lehetővé teszi egy alkalmazás számára, hogy frissítse a tartalmat az adathasználat adatbázisáról.</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">adathasználat adabázis olvasása</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">Lehetővé teszi egy alkalmazás számára, hogy olvassa a tartalmat az adathasználat adatbázisáról.</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">LiveDisplay beállítások kezelése</string>
-  <string name="permdesc_manageLiveDisplay">Lehetővé teszi egy alkalmazás számára, hogy konfigurálja a haladó megjelenítési beállításokat.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">audió munkamenet változásainak figyelése</string>
-  <string name="permdesc_observe_audio_sessions">Lehetővé teszi egy alkalmazás számára, hogy megfigyelje az audió adások létrehozásást és megsemmisítését.</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">audió változások kezelése</string>
-  <string name="permdesc_manage_audio_sessions">Lehetővé teszi, hogy egy app-hoz audio stream-frissítéseket küldj.</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">Témák</string>
-  <string name="qs_themes_content_description">Témád testreszabása</string>
-  <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">Adatvédelmi beállítások</string>
-  <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">távoli beállítások kezelése</string>
-  <string name="permdesc_manageRemotePrefs">Lehetővé teszi az alkalmazások számára a távoli beállítások kezelését</string>
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">MoKee rendszer</string>
+    <string name="permlab_publishCustomTile">hozzon létre egy egyéni csempét a gyors beállítások panelen belül</string>
+    <string name="permdesc_publishCustomTile">Alkalmazás számára engedélyezi, hogy gyors beállítások csempét hozzon létre.</string>
+    <string name="permlab_modifyNetworkSettings">rendszer hálózati beállításainak módosítása</string>
+    <string name="permdesc_modifyNetworkSettings">Engedélyt ad az alkalmazász számára, hogy befolyásolja a repülőgép üzemmódot és a mobilinternet beállításait.</string>
+    <string name="permlab_modifySoundSettings">rendszer hangbeállításainak módosítása</string>
+    <string name="permdesc_modifySoundSettings">Lehetővé teszi egy alkalmazás számára, hogy megváltoztassa a megszakítás üzemmód hangbeállításait.</string>
+    <string name="permlab_bindCustomTileListenerService">kössön egy válaszott csempét a figyelő szolgáltatáshoz</string>
+    <string name="permdesc_bindCustomTileListenerService">Lehetővé teszi az alkalmazásnak, hogy hozzárendeljen egy felső szintű felületet, egy egyéni csempe figyelő szolgáltatásból.</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">megtekinti a telefon állapotát és adatkapcsolatát, támogatással a több SIM kártya felé</string>
+    <string name="permdesc_readMSPhoneState">Lehetővé teszi egy alkalmazás számára, hogy megtekintse a telefon állapotát és mobil adatkapcsolatát, támogatással a több SIM felé.</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">megváltoztatja a telefon állapotát és adatkapcsolatát, támogatással a több SIM kártya felé</string>
+    <string name="permdesc_modifyMSPhoneState">Lehetővé teszi egy alkalmazás számára, hogy megváltoztassa a telefon állapotát és mobil adatkapcsolatát, támogatással a több SIM felé.</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">rendszerprofilok módosítása</string>
+    <string name="permdesc_modifyProfiles">Lehetővé teszi egy alkalmazás számára, hogy módosítsa a rendszerprofilokat.</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">hardver keretrendszer használata</string>
+    <string name="permdesc_useHardwareFramework">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen az MK hardver keretrendszerhez.</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">riasztások közvetlen változtatása</string>
+    <string name="permdesc_write_alarms">Engedélyezi egy alkalmazásnak, hogy módosítsa vagy törölje az összes riasztásodat.</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">ütemezett riasztások bekapcsolása</string>
+    <string name="permdesc_manage_alarms">Lehetővé teszi egy alkalmazásnak, hogy ki vagy be kapcsolja az időzített riasztásaidat.</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">hozzáférés az időzített riasztásokhoz</string>
+    <string name="permdesc_read_alarms">Lehetővé teszi egy alkalmazásnak, hogy olvassa az időzített riasztásaidat.</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">MK rendszer beállítások módosítása</string>
+    <string name="permdesc_writeSettings">Lehetővé teszi egy alkalmazásnak, hogy modósítsa az MK rendszer beállításait.</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">MK rendszer biztonsági beállításainak módosítása</string>
+    <string name="permdesc_writeSecureSettings">Lehetővé teszi egy alkalmazás számára hogy módosítsa az MK biztonsági rendszerbeállításait. Nem vonatkozik normál alkalmazásokra.</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">tartós tárhely kezelése</string>
+    <string name="permdesc_managePersistentStorage">Lehetővé teszi egy alkalmazás számára olyan tulajdonságok olvasását vagy írását, melyek esetében fennállhat a gyári visszaállítás esete.</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">Egyéni figyelő a csempéken</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">hozzáadás és eltávolítás a védett alkalmazásokhoz</string>
+    <string name="permdesc_protectedApp">Lehetővé teszi egy alkalmazásnak, hogy megjelöljön más alkalmazásokat védettként és zárolja azokat.</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">Alapértelmezett</string>
+    <string name="profileNameWork">Munkahely</string>
+    <string name="profileNameHome">Otthon</string>
+    <string name="profileNameSilent">Néma</string>
+    <string name="profileNameNight">Éjszakai</string>
+    <string name="profileNameAutomobile">Autó</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">Telefon</string>
+    <string name="profileGroupCalendar">Naptár</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">E-mail</string>
+    <string name="profileGroupSMS">SMS</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">Egyéb</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">telefon helyzetéhez való hozzáférés</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">Engedélyezi, hogy az alkalmazás hozzáférjen a telefon helyzetéhez.</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">telefon helyzetének megadása</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">Engedélyezi az alkalmazásnak, hogy megváltoztassa a telefon helyzetét.</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">Energiatakarékos</string>
+    <string name="perf_profile_bal">Kiegyensúlyozott</string>
+    <string name="perf_profile_perf">Teljesítmény</string>
+    <string name="perf_profile_bias_power">Hatékonyság</string>
+    <string name="perf_profile_bias_perf">Gyors</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv_summary">Maximális energiatakarékosság. Csökkenti a készülék teljesítményét, kikapcsolja a háttérfeladatokat és -adatokat, letiltja az animációkat, és csökkenti a kijelző képfrissítését</string>
+    <string name="perf_profile_bal_summary">Egyensúly az optimális teljesítmény és az energiafogyasztás között</string>
+    <string name="perf_profile_perf_summary">Nagy teljesítményű üzemmód. Hasznos az alacsony késleltetést és nagy teljesítményt igénylő alkalmazásokhoz, amikor a fogyasztás nem számít</string>
+    <string name="perf_profile_bias_power_summary">Energiatakarékosság előnyben részesítése. Korlátozza a maximális CPU teljesítményt és optimalizálja az energiatakarékosságot a nagyobb késleltetés árán</string>
+    <string name="perf_profile_bias_perf_summary">Teljesítmény előnyben részesítése. Enyhén megnövekedett energiafogyasztással csökkenti a késleltetést</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">Automatikus</string>
+    <string name="live_display_auto_summary">Automatikusan beállítja a képernyő színhőmérsékletét naplemente és napkelte után</string>
+    <string name="live_display_off">Ki</string>
+    <string name="live_display_off_summary">Összes módosítás letiltása</string>
+    <string name="live_display_day">Nap</string>
+    <string name="live_display_day_summary">Csak nappali beállítások használata</string>
+    <string name="live_display_night">Éjszakai</string>
+    <string name="live_display_night_summary">Csak éjszakai beállítások használata</string>
+    <string name="live_display_outdoor">Kültéri (fényes nap)</string>
+    <string name="live_display_outdoor_summary">Csak kültéri beállítások használata</string>
+    <string name="live_display_hint">LiveDisplay segíthet csökkenteni a szem terhelését, és segít éjszaka aludni. Koppints ide a kipróbáláshoz!</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay ki.</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mód.</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: nap mód.</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: éjszakai mód.</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: kültéri mód.</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay kikapcsolva.</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay auto-módra változtva.</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay nappali módra változtatva.</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay nappali módra változtatva.</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay kültéri változtva.</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">harmadik féltől származó záróképernyő</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">Lehetővé teszi egy alkalmazás számára, hogy bizonytalan záróképernyőként legyen használva.</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Téma telepítése sikertelen</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s</xliff:g>telepítése sikertelen</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Téma viszaállítása</string>
+    <string name="theme_reset_notification_message">Több alkalmazás összeomlása miatt a rendszer téma visszaállításra került.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">hozzáférés a témaszolgáltatáshoz</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen a témaszolgáltatáshoz. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">téma információinak olvasása</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Lehetővé teszi az alkalmazásnak, hogy megtekintse a témákat és megállapítsa, melyik téma aktív.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">témák módosítása</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Lehetővé teszi az alkalmazásnak, hogy új témákat hozzon létre és módosítsa a jelenleg aktív témát.</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">hozzáférés teljesítmény kezelő</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen a teljesítmény szolgáltatáshoz. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">hozzáférés az élő záróképernyő kezelő szolgáltatáshoz</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">Lehetővé teszi egy alkalmazás számára, hogy hozzáférjen az elő záróképernyő kezelő szolgáltatáshoz.</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">hozzáférés az élő záróképernyő kezelő szolgáltatáshoz</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">Lehetővé teszi rendszeralkalmazások számára, hogy hozzáférjenek az elő záróképernyő kezelő szolgáltatáshoz.</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">biztosít élő záróképernyő kezelő szolgáltatást</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">Lehetővé teszi egy szolgáltatás számára, hogy hozzáférjen az elő záróképernyő kezelő szolgáltatáshoz.</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">időjárás olvasása</string>
+    <string name="permdesc_weather_read">Lehetővé teszi egy alkalmazás számára, hogy tartalmat olvasson az időjárás-szolgáltatótól.</string>
+    <string name="permlab_weather_write">időjárás szolgáltató frissítése</string>
+    <string name="permdesc_weather_write">Lehetővé teszi egy alkalmazás számára, hogy frissítse a tartalmat az időjárás-szolgáltatóról.</string>
+    <string name="permlab_weather_bind">beállítás időjárás-szolgáltató szolgáltatásként</string>
+    <string name="permdesc_weather_bind">Lehetővé teszi egy alkalmazás számára, hogy időjárás-szolgáltató szolgáltatásként legyen azonosítva.</string>
+    <string name="permlab_weather_access_mgr">hozzáférés időjárás-szolgáltatóhoz</string>
+    <string name="permdesc_weather_access_mgr">Lehetővé teszi az alkalmazás számára, hogy hozzáférjen az időjárás szolgáltatáshoz a rendszerben. Általános alkalmazásoknak soha nem kell ilyen engedély.</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">adathasználat adabázis módosítása</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">Lehetővé teszi egy alkalmazás számára, hogy frissítse a tartalmat az adathasználat adatbázisáról.</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">adathasználat adabázis olvasása</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">Lehetővé teszi egy alkalmazás számára, hogy olvassa a tartalmat az adathasználat adatbázisáról.</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">LiveDisplay beállítások kezelése</string>
+    <string name="permdesc_manageLiveDisplay">Lehetővé teszi egy alkalmazás számára, hogy konfigurálja a haladó megjelenítési beállításokat.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">audió munkamenet változásainak figyelése</string>
+    <string name="permdesc_observe_audio_sessions">Lehetővé teszi egy alkalmazás számára, hogy megfigyelje az audió adások létrehozásást és megsemmisítését.</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">audió változások kezelése</string>
+    <string name="permdesc_manage_audio_sessions">Lehetővé teszi, hogy egy app-hoz audio stream-frissítéseket küldj.</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">Témák</string>
+    <string name="qs_themes_content_description">Témád testreszabása</string>
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_manager_title">Adatvédelmi beállítások</string>
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">távoli beállítások kezelése</string>
+    <string name="permdesc_manageRemotePrefs">Lehetővé teszi az alkalmazások számára a távoli beállítások kezelését</string>
 </resources>

@@ -16,179 +16,179 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for the MoKee system components when they are shown to the user. -->
-  <string name="mokee_system_label">MoKee 系統</string>
-  <string name="permlab_publishCustomTile">建立快速設定面板中的自訂瓷磚</string>
-  <string name="permdesc_publishCustomTile">允許應用程式建立快速設定瓷磚</string>
-  <string name="permlab_modifyNetworkSettings">變更系統的網路設定</string>
-  <string name="permdesc_modifyNetworkSettings">允許應用程式對飛航模式和行動數據網路設定進行更改。</string>
-  <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
-  <string name="permdesc_modifySoundSettings">允許應用程式對中斷模式聲音設定進行變更。</string>
-  <string name="permlab_bindCustomTileListenerService">綁定到一個自訂瓷磚偵聽器服務</string>
-  <string name="permdesc_bindCustomTileListenerService">允許應用程式綁定到頂端自訂瓷磚攔截器服務介面。</string>
-  <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_readMSPhoneState">在支援多張 SIM 卡的裝置上查看電話狀態和數據連線</string>
-  <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 卡的裝置的電話狀態和數據連線</string>
-  <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
-  <string name="permlab_modifyMSPhoneState">在支援多張 SIM 卡的裝置上修改電話狀態和數據連線</string>
-  <string name="permdesc_modifyMSPhoneState">允許應用程式修改支援多張 SIM 卡的裝置的電話狀態和數據連線</string>
-  <!-- Labels for the MODIFY_PROFILES permission. -->
-  <string name="permlab_modifyProfiles">修改系統設定檔</string>
-  <string name="permdesc_modifyProfiles">允許應用程式修改系統設定檔</string>
-  <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
-  <string name="permlab_useHardwareFramework">使用硬體框架</string>
-  <string name="permdesc_useHardwareFramework">允許應用程式存取 MK 硬體框架。</string>
-  <!-- Labels for the WRITE_ALARMS permission. -->
-  <string name="permlab_write_alarms">直接更改鬧鐘</string>
-  <string name="permdesc_write_alarms">允許應用程式新增、修改或刪除你的鬧鐘。</string>
-  <!-- Labels for the MANAGE_ALARMS permission. -->
-  <string name="permlab_manage_alarms">切換已設定的鬧鐘</string>
-  <string name="permdesc_manage_alarms">允許應用程式開關你已設定的鬧鐘。</string>
-  <!-- Labels for the READ_ALARMS permission. -->
-  <string name="permlab_read_alarms">存取已設定的鬧鐘</string>
-  <string name="permdesc_read_alarms">允許應用程式讀取已設定的鬧鐘</string>
-  <!-- Labels for the WRITE_SETTINGS permission -->
-  <string name="permlab_writeSettings">修改 MK 系統設定</string>
-  <string name="permdesc_writeSettings">允許應用程式修改 MK 系統設定。</string>
-  <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
-  <string name="permlab_writeSecureSettings">修改 MK 系統安全設定</string>
-  <string name="permdesc_writeSecureSettings">允許應用程式修改 MK 系統安全設定。僅供偵錯使用。</string>
-  <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
-  <string name="permlab_managePersistentStorage">管理永久儲存空間</string>
-  <string name="permdesc_managePersistentStorage">允許應用程式存取一些恢復原廠設定後仍可保持的屬性。</string>
-  <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
-  <string name="custom_tile_listener_binding_label">自訂瓷磚偵聽器</string>
-  <!-- Labels for the PROTECTED_APP permission. -->
-  <string name="permlab_protectedApp">增加或刪除受保護的應用程式</string>
-  <string name="permdesc_protectedApp">允許應用程式將其他應用程式標註為受保護的並將其鎖定。</string>
-  <!-- Profiles -->
-  <!-- Names of default profiles. -->
-  <string name="profileNameDefault">預設位置</string>
-  <string name="profileNameWork">工作</string>
-  <string name="profileNameHome">住家</string>
-  <string name="profileNameSilent">静音</string>
-  <string name="profileNameNight">夜晚</string>
-  <string name="profileNameAutomobile">汽車</string>
-  <!-- Names of application groups. -->
-  <string name="profileGroupPhone">電話</string>
-  <string name="profileGroupCalendar">日曆</string>
-  <string name="profileGroupGmail">Gmail</string>
-  <string name="profileGroupEmail">電郵</string>
-  <string name="profileGroupSMS">簡訊</string>
-  <!-- Name of wildcard profile. -->
-  <string name="wildcardProfile">其他</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readPhoneLocation">讀取電話位置</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readPhoneLocation">允許應用程式讀取關於電話位置的資訊</string>
-  <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writePhoneLocation">寫入電話位置</string>
-  <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writePhoneLocation">允許應用程式變更電話位置。</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv">省電</string>
-  <string name="perf_profile_bal">平衡</string>
-  <string name="perf_profile_perf">效能</string>
-  <string name="perf_profile_bias_power">效率</string>
-  <string name="perf_profile_bias_perf">快速</string>
-  <!-- Performance profiles -->
-  <string name="perf_profile_pwrsv_summary">最大省電。 降低裝置效能、停用背景工作和資料、停用動畫，並降低顯示幀速率</string>
-  <string name="perf_profile_bal_summary">平衡最佳效能和功率</string>
-  <string name="perf_profile_perf_summary">高效能模式。 當功耗不是主要的考慮因素時，適用於需要低延遲和高用量的應用程式</string>
-  <string name="perf_profile_bias_power_summary">偏向省電。 限制最大 CPU 功耗，並以更高的延遲為主最佳化省電</string>
-  <string name="perf_profile_bias_perf_summary">偏向效能。 減少延遲、稍微增加功耗</string>
-  <!-- LiveDisplay strings -->
-  <string name="live_display_auto">自動</string>
-  <string name="live_display_auto_summary">在日落和日出後自動調節螢幕的顏色溫度</string>
-  <string name="live_display_off">關閉</string>
-  <string name="live_display_off_summary">停用所有的調整</string>
-  <string name="live_display_day">日間</string>
-  <string name="live_display_day_summary">僅在日間使用設定</string>
-  <string name="live_display_night">夜晚</string>
-  <string name="live_display_night_summary">僅在夜間使用設定</string>
-  <string name="live_display_outdoor">戶外 (陽光)</string>
-  <string name="live_display_outdoor_summary">僅使用戶外設定</string>
-  <string name="live_display_hint">LiveDisplay 有助於你減緩用眼疲勞並在晚上能幫助你入睡。點此試用。</string>
-  <string name="accessibility_quick_settings_live_display_off">LiveDisplay 關閉。</string>
-  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay︰自動模式。</string>
-  <string name="accessibility_quick_settings_live_display_day">LiveDisplay︰日間模式。</string>
-  <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜間模式。</string>
-  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：室外模式。</string>
-  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay 關閉。</string>
-  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 改為自動模式。</string>
-  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 改為日間模式。</string>
-  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 改為夜間模式。</string>
-  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 改為戶外模式。</string>
-  <!-- Third party keyguard permission label -->
-  <string name="permlab_thirdPartyKeyguard">第三方鎖定畫面</string>
-  <!-- Third party keyguard permission description -->
-  <string name="permdesc_thirdPartyKeyguard">允許應用程式用作不安全鎖定畫面。</string>
-  <!-- Theme installation error notification -->
-  <string name="theme_install_error_title">無法安裝主題</string>
-  <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> 安裝失敗</string>
-  <!-- Theme reset notification -->
-  <string name="theme_reset_notification_title">主題重設</string>
-  <string name="theme_reset_notification_message">由於多個應用程式發生錯誤，系統主題已重設。</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_accessThemeService">主題存取服務</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_accessThemeService">允許應用程式存取主題服務。一般應用程式並不需要此權限。</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_readThemes">閱讀您的主題資訊</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_readThemesDesc">允許應用程式讀取您的主題，並判斷您已套用的主題。</string>
-  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permlab_writeThemes">變更佈景主題</string>
-  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-  <string name="permdesc_writeThemesDesc">允許應用程式來插入新的主題，並修改您已套用的主題。</string>
-  <!-- Performance manager permission title -->
-  <string name="permlab_perfAccess">讀取效能管理員</string>
-  <!-- Performance manager permission description -->
-  <string name="permdesc_perfAccessDesc">允許應用程式存取性能主題服務。一般應用程式並不需要此權限。</string>
-  <!-- Access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenService">存取活動鎖定畫面管理員服務</string>
-  <!-- Access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenService">允許應用程式存取活動鎖定畫面管理員服務。</string>
-  <!-- Privileged access live lock screen manager service permission label -->
-  <string name="permlab_accessLiveLockScreenServicePrivate">讀取活動鎖定畫面管理員服務</string>
-  <!-- Privileged access live lock screen manager service permission description -->
-  <string name="permdesc_accessLiveLockScreenServicePrivate">允許系統應用程式存取活動鎖定畫面幕管理員服務。</string>
-  <!-- Live lock screen manager service provider permission label -->
-  <string name="permlab_accessLiveLockScreenServiceProvider">提供活動鎖定畫面管理員服務</string>
-  <!-- Live lock screen manager service provider permission description -->
-  <string name="permdesc_accessLiveLockScreenServiceProvider">允許服務提供活動鎖定畫面管理員服務。</string>
-  <!-- Weather Service strings -->
-  <string name="permlab_weather_read">讀取天氣</string>
-  <string name="permdesc_weather_read">允許應用程式讀取天氣資訊。</string>
-  <string name="permlab_weather_write">更新天氣提供程式</string>
-  <string name="permdesc_weather_write">允許應用程式更新的天氣更新來源。</string>
-  <string name="permlab_weather_bind">綁定天氣更新來源</string>
-  <string name="permdesc_weather_bind">允許應用程式設定為天氣更新來源</string>
-  <string name="permlab_weather_access_mgr">存取天氣服務</string>
-  <string name="permdesc_weather_access_mgr">允許應用程式讀取系統中的氣象服務。 一般應用程式不需使用這項功能。</string>
-  <!-- DataUsageProvider write permission title -->
-  <string name="permlab_dataUsageWrite">修改資料使用資料庫</string>
-  <!-- DataUsageProvider write permission description -->
-  <string name="permdesc_dataUsageWrite">允許應用程式以更新資料使用資料庫的內容。</string>
-  <!-- DataUsageProvider read permission title -->
-  <string name="permlab_dataUsageRead">讀取資料使用資料庫</string>
-  <!-- DataUsageProvider read permission description -->
-  <string name="permdesc_dataUsageRead">允許應用程式讀取資料使用資料庫中的內容。</string>
-  <!-- LiveDisplay manager permission -->
-  <string name="permlab_manageLiveDisplay">管理 LiveDisplay 設定</string>
-  <string name="permdesc_manageLiveDisplay">允許應用程式配置進階顯示設定。</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_observe_audio_sessions">觀察音頻會話變化</string>
-  <string name="permdesc_observe_audio_sessions">允許應用程式察看音訊串流的建立和銷毀。</string>
-  <!-- MKAudioService - observe session changes permission -->
-  <string name="permlab_manage_audio_sessions">管理音訊會話變化</string>
-  <string name="permdesc_manage_audio_sessions">允許應用程式傳送音訊串流更新。</string>
-  <!-- QuickSettings: Themes tile -->
-  <string name="qs_themes_label">主題</string>
-  <string name="qs_themes_content_description">自訂您的主題</string>
-  <!-- Privacy Guard -->
-  <string name="privacy_guard_manager_title">隱私守衛</string>
-  <!-- Permissions used by remote preferences -->
-  <string name="permlab_manageRemotePrefs">管理遠端設定</string>
-  <string name="permdesc_manageRemotePrefs">允許應用程式來管理遠端設定</string>
+    <!-- Label for the MoKee system components when they are shown to the user. -->
+    <string name="mokee_system_label">MoKee 系統</string>
+    <string name="permlab_publishCustomTile">建立快速設定面板中的自訂瓷磚</string>
+    <string name="permdesc_publishCustomTile">允許應用程式建立快速設定瓷磚</string>
+    <string name="permlab_modifyNetworkSettings">變更系統的網路設定</string>
+    <string name="permdesc_modifyNetworkSettings">允許應用程式對飛航模式和行動數據網路設定進行更改。</string>
+    <string name="permlab_modifySoundSettings">變更系統聲音設定</string>
+    <string name="permdesc_modifySoundSettings">允許應用程式對中斷模式聲音設定進行變更。</string>
+    <string name="permlab_bindCustomTileListenerService">綁定到一個自訂瓷磚偵聽器服務</string>
+    <string name="permdesc_bindCustomTileListenerService">允許應用程式綁定到頂端自訂瓷磚攔截器服務介面。</string>
+    <!-- Labels for the READ_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_readMSPhoneState">在支援多張 SIM 卡的裝置上查看電話狀態和數據連線</string>
+    <string name="permdesc_readMSPhoneState">允許應用程式查看支援多張 SIM 卡的裝置的電話狀態和數據連線</string>
+    <!-- Labels for the MODIFY_MSIM_PHONE_STATE permission. -->
+    <string name="permlab_modifyMSPhoneState">在支援多張 SIM 卡的裝置上修改電話狀態和數據連線</string>
+    <string name="permdesc_modifyMSPhoneState">允許應用程式修改支援多張 SIM 卡的裝置的電話狀態和數據連線</string>
+    <!-- Labels for the MODIFY_PROFILES permission. -->
+    <string name="permlab_modifyProfiles">修改系統設定檔</string>
+    <string name="permdesc_modifyProfiles">允許應用程式修改系統設定檔</string>
+    <!-- Labels for the HARDWARE_ABSTRACTION_ACCESS permission. -->
+    <string name="permlab_useHardwareFramework">使用硬體框架</string>
+    <string name="permdesc_useHardwareFramework">允許應用程式存取 MK 硬體框架。</string>
+    <!-- Labels for the WRITE_ALARMS permission. -->
+    <string name="permlab_write_alarms">直接更改鬧鐘</string>
+    <string name="permdesc_write_alarms">允許應用程式新增、修改或刪除你的鬧鐘。</string>
+    <!-- Labels for the MANAGE_ALARMS permission. -->
+    <string name="permlab_manage_alarms">切換已設定的鬧鐘</string>
+    <string name="permdesc_manage_alarms">允許應用程式開關你已設定的鬧鐘。</string>
+    <!-- Labels for the READ_ALARMS permission. -->
+    <string name="permlab_read_alarms">存取已設定的鬧鐘</string>
+    <string name="permdesc_read_alarms">允許應用程式讀取已設定的鬧鐘</string>
+    <!-- Labels for the WRITE_SETTINGS permission -->
+    <string name="permlab_writeSettings">修改 MK 系統設定</string>
+    <string name="permdesc_writeSettings">允許應用程式修改 MK 系統設定。</string>
+    <!-- Labels for the WRITE_SECURE_SETTINGS permission -->
+    <string name="permlab_writeSecureSettings">修改 MK 系統安全設定</string>
+    <string name="permdesc_writeSecureSettings">允許應用程式修改 MK 系統安全設定。僅供偵錯使用。</string>
+    <!-- Labels for the MANAGE_PERSISTENT_STORAGE permission. -->
+    <string name="permlab_managePersistentStorage">管理永久儲存空間</string>
+    <string name="permdesc_managePersistentStorage">允許應用程式存取一些恢復原廠設定後仍可保持的屬性。</string>
+    <!-- Label to show for a service that is running because it is observing the user's custom tiles. -->
+    <string name="custom_tile_listener_binding_label">自訂瓷磚偵聽器</string>
+    <!-- Labels for the PROTECTED_APP permission. -->
+    <string name="permlab_protectedApp">增加或刪除受保護的應用程式</string>
+    <string name="permdesc_protectedApp">允許應用程式將其他應用程式標註為受保護的並將其鎖定。</string>
+    <!-- Profiles -->
+    <!-- Names of default profiles. -->
+    <string name="profileNameDefault">預設位置</string>
+    <string name="profileNameWork">工作</string>
+    <string name="profileNameHome">住家</string>
+    <string name="profileNameSilent">静音</string>
+    <string name="profileNameNight">夜晚</string>
+    <string name="profileNameAutomobile">汽車</string>
+    <!-- Names of application groups. -->
+    <string name="profileGroupPhone">電話</string>
+    <string name="profileGroupCalendar">日曆</string>
+    <string name="profileGroupGmail">Gmail</string>
+    <string name="profileGroupEmail">電郵</string>
+    <string name="profileGroupSMS">簡訊</string>
+    <!-- Name of wildcard profile. -->
+    <string name="wildcardProfile">其他</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneLocation">讀取電話位置</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneLocation">允許應用程式讀取關於電話位置的資訊</string>
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writePhoneLocation">寫入電話位置</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writePhoneLocation">允許應用程式變更電話位置。</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv">省電</string>
+    <string name="perf_profile_bal">平衡</string>
+    <string name="perf_profile_perf">效能</string>
+    <string name="perf_profile_bias_power">效率</string>
+    <string name="perf_profile_bias_perf">快速</string>
+    <!-- Performance profiles -->
+    <string name="perf_profile_pwrsv_summary">最大省電。 降低裝置效能、停用背景工作和資料、停用動畫，並降低顯示幀速率</string>
+    <string name="perf_profile_bal_summary">平衡最佳效能和功率</string>
+    <string name="perf_profile_perf_summary">高效能模式。 當功耗不是主要的考慮因素時，適用於需要低延遲和高用量的應用程式</string>
+    <string name="perf_profile_bias_power_summary">偏向省電。 限制最大 CPU 功耗，並以更高的延遲為主最佳化省電</string>
+    <string name="perf_profile_bias_perf_summary">偏向效能。 減少延遲、稍微增加功耗</string>
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">自動</string>
+    <string name="live_display_auto_summary">在日落和日出後自動調節螢幕的顏色溫度</string>
+    <string name="live_display_off">關閉</string>
+    <string name="live_display_off_summary">停用所有的調整</string>
+    <string name="live_display_day">日間</string>
+    <string name="live_display_day_summary">僅在日間使用設定</string>
+    <string name="live_display_night">夜晚</string>
+    <string name="live_display_night_summary">僅在夜間使用設定</string>
+    <string name="live_display_outdoor">戶外 (陽光)</string>
+    <string name="live_display_outdoor_summary">僅使用戶外設定</string>
+    <string name="live_display_hint">LiveDisplay 有助於你減緩用眼疲勞並在晚上能幫助你入睡。點此試用。</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay 關閉。</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay︰自動模式。</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay︰日間模式。</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜間模式。</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：室外模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay 關閉。</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 改為自動模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 改為日間模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 改為夜間模式。</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 改為戶外模式。</string>
+    <!-- Third party keyguard permission label -->
+    <string name="permlab_thirdPartyKeyguard">第三方鎖定畫面</string>
+    <!-- Third party keyguard permission description -->
+    <string name="permdesc_thirdPartyKeyguard">允許應用程式用作不安全鎖定畫面。</string>
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">無法安裝主題</string>
+    <string name="theme_install_error_message"><xliff:g id="theme">%1$s </xliff:g> 安裝失敗</string>
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">主題重設</string>
+    <string name="theme_reset_notification_message">由於多個應用程式發生錯誤，系統主題已重設。</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">主題存取服務</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">允許應用程式存取主題服務。一般應用程式並不需要此權限。</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">閱讀您的主題資訊</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">允許應用程式讀取您的主題，並判斷您已套用的主題。</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">變更佈景主題</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">允許應用程式來插入新的主題，並修改您已套用的主題。</string>
+    <!-- Performance manager permission title -->
+    <string name="permlab_perfAccess">讀取效能管理員</string>
+    <!-- Performance manager permission description -->
+    <string name="permdesc_perfAccessDesc">允許應用程式存取性能主題服務。一般應用程式並不需要此權限。</string>
+    <!-- Access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenService">存取活動鎖定畫面管理員服務</string>
+    <!-- Access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenService">允許應用程式存取活動鎖定畫面管理員服務。</string>
+    <!-- Privileged access live lock screen manager service permission label -->
+    <string name="permlab_accessLiveLockScreenServicePrivate">讀取活動鎖定畫面管理員服務</string>
+    <!-- Privileged access live lock screen manager service permission description -->
+    <string name="permdesc_accessLiveLockScreenServicePrivate">允許系統應用程式存取活動鎖定畫面幕管理員服務。</string>
+    <!-- Live lock screen manager service provider permission label -->
+    <string name="permlab_accessLiveLockScreenServiceProvider">提供活動鎖定畫面管理員服務</string>
+    <!-- Live lock screen manager service provider permission description -->
+    <string name="permdesc_accessLiveLockScreenServiceProvider">允許服務提供活動鎖定畫面管理員服務。</string>
+    <!-- Weather Service strings -->
+    <string name="permlab_weather_read">讀取天氣</string>
+    <string name="permdesc_weather_read">允許應用程式讀取天氣資訊。</string>
+    <string name="permlab_weather_write">更新天氣提供程式</string>
+    <string name="permdesc_weather_write">允許應用程式更新的天氣更新來源。</string>
+    <string name="permlab_weather_bind">綁定天氣更新來源</string>
+    <string name="permdesc_weather_bind">允許應用程式設定為天氣更新來源</string>
+    <string name="permlab_weather_access_mgr">存取天氣服務</string>
+    <string name="permdesc_weather_access_mgr">允許應用程式讀取系統中的氣象服務。 一般應用程式不需使用這項功能。</string>
+    <!-- DataUsageProvider write permission title -->
+    <string name="permlab_dataUsageWrite">修改資料使用資料庫</string>
+    <!-- DataUsageProvider write permission description -->
+    <string name="permdesc_dataUsageWrite">允許應用程式以更新資料使用資料庫的內容。</string>
+    <!-- DataUsageProvider read permission title -->
+    <string name="permlab_dataUsageRead">讀取資料使用資料庫</string>
+    <!-- DataUsageProvider read permission description -->
+    <string name="permdesc_dataUsageRead">允許應用程式讀取資料使用資料庫中的內容。</string>
+    <!-- LiveDisplay manager permission -->
+    <string name="permlab_manageLiveDisplay">管理 LiveDisplay 設定</string>
+    <string name="permdesc_manageLiveDisplay">允許應用程式配置進階顯示設定。</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_observe_audio_sessions">觀察音頻會話變化</string>
+    <string name="permdesc_observe_audio_sessions">允許應用程式察看音訊串流的建立和銷毀。</string>
+    <!-- MKAudioService - observe session changes permission -->
+    <string name="permlab_manage_audio_sessions">管理音訊會話變化</string>
+    <string name="permdesc_manage_audio_sessions">允許應用程式傳送音訊串流更新。</string>
+    <!-- QuickSettings: Themes tile -->
+    <string name="qs_themes_label">主題</string>
+    <string name="qs_themes_content_description">自訂您的主題</string>
+    <!-- Privacy Guard -->
+    <string name="privacy_guard_manager_title">隱私守衛</string>
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">管理遠端設定</string>
+    <string name="permdesc_manageRemotePrefs">允許應用程式來管理遠端設定</string>
 </resources>
