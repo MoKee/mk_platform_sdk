@@ -191,6 +191,6 @@ uyguladığınız temayı değiştirmesine izin verir.</string>
     <!-- Privacy Guard -->
     <string name="privacy_guard_manager_title">Gizlilik Koruması</string>
     <!-- Permissions used by remote preferences -->
-    <string name="permlab_manageRemotePrefs">Uzak bağlantı ayarları</string>
+    <string name="permlab_manageRemotePrefs">Uzak bağlantı ayarları </string>
     <string name="permdesc_manageRemotePrefs">Bir uygulamaya uzak bağlantı ayarlarını yönetme izni verir</string>
 </resources>

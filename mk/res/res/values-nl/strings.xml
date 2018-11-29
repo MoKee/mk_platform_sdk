@@ -167,7 +167,7 @@
     <string name="permlab_weather_access_mgr">weer toegangsdienst</string>
     <string name="permdesc_weather_access_mgr">Geeft de app toegang tot de weer service. dit is niet. odig voor standaard apps.</string>
     <!-- DataUsageProvider write permission title -->
-    <string name="permlab_dataUsageWrite">Wijzig database van uw data verbruik</string>
+    <string name="permlab_dataUsageWrite">Wijzig database van uw data verbruik </string>
     <!-- DataUsageProvider write permission description -->
     <string name="permdesc_dataUsageWrite">Staat een app toe wijzigingen aan de brengen aan de database van uw gegevens verbruik</string>
     <!-- DataUsageProvider read permission title -->
@@ -178,7 +178,7 @@
     <string name="permlab_manageLiveDisplay">LiveDisplay-instellingen beheren</string>
     <string name="permdesc_manageLiveDisplay">Staat een app toe wijzigingen. aan te brengen aan de advanced display instellingen</string>
     <!-- MKAudioService - observe session changes permission -->
-    <string name="permlab_observe_audio_sessions">observeer de wijzigingen van audio</string>
+    <string name="permlab_observe_audio_sessions">observeer de wijzigingen van audio </string>
     <string name="permdesc_observe_audio_sessions">staat een app toe: audio streams te observeren die gemaakt worden of stuk zijn.</string>
     <!-- MKAudioService - observe session changes permission -->
     <string name="permlab_manage_audio_sessions">audio sessie wijzigingen beheren</string>
@@ -190,5 +190,5 @@
     <string name="privacy_guard_manager_title">Privacybescherming</string>
     <!-- Permissions used by remote preferences -->
     <string name="permlab_manageRemotePrefs">instellingen voor externe verbindingen beheren</string>
-    <string name="permdesc_manageRemotePrefs">een app toestaan wijzigingen te maken aan externe verbindingen</string>
+    <string name="permdesc_manageRemotePrefs">een app toestaan wijzigingen te maken aan externe verbindingen </string>
 </resources>

@@ -140,7 +140,7 @@
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_writeThemes">Променете вашите теми</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permdesc_writeThemesDesc">Позволява на приложението да вмъкне нови теми и да променя приложените вече.</string>
+    <string name="permdesc_writeThemesDesc">Позволява на приложението да вмъкне нови теми и да променя приложените вече. </string>
     <!-- Performance manager permission title -->
     <string name="permlab_perfAccess">Достъп до мениджър на бързодействие</string>
     <!-- Performance manager permission description -->
@@ -148,24 +148,24 @@
     <!-- Access live lock screen manager service permission label -->
     <string name="permlab_accessLiveLockScreenService">Достъп до услуги на заключване с жив тапет</string>
     <!-- Access live lock screen manager service permission description -->
-    <string name="permdesc_accessLiveLockScreenService">Достъп до услуги на заключване с жив тапет.</string>
+    <string name="permdesc_accessLiveLockScreenService">Достъп до услуги на заключване с жив тапет. </string>
     <!-- Privileged access live lock screen manager service permission label -->
     <string name="permlab_accessLiveLockScreenServicePrivate">Достъп до услуги на заключване с жив тапет</string>
     <!-- Privileged access live lock screen manager service permission description -->
-    <string name="permdesc_accessLiveLockScreenServicePrivate">Позволява на системни приложения достъп до услуги на заключване с жив тапет</string>
+    <string name="permdesc_accessLiveLockScreenServicePrivate">Позволява на системни приложения достъп до услуги на заключване с жив тапет </string>
     <!-- Live lock screen manager service provider permission label -->
     <string name="permlab_accessLiveLockScreenServiceProvider">Достъп до услуги на заключване с жив тапет</string>
     <!-- Live lock screen manager service provider permission description -->
-    <string name="permdesc_accessLiveLockScreenServiceProvider">Достъп до услуги на заключване с жив тапет.</string>
+    <string name="permdesc_accessLiveLockScreenServiceProvider">Достъп до услуги на заключване с жив тапет. </string>
     <!-- Weather Service strings -->
     <string name="permlab_weather_read">Четене прогноза за време</string>
     <string name="permdesc_weather_read">Позволява да се чете съдържанието от доставчика на времето.</string>
     <string name="permlab_weather_write">Актуализиране на информация за времето</string>
     <string name="permdesc_weather_write">Позволява да се чете съдържанието от доставчика на времето.</string>
-    <string name="permlab_weather_bind">Свръзва с този доставчик на прогноза.</string>
-    <string name="permdesc_weather_bind">Задаване като доставчик за услуги на времето.</string>
+    <string name="permlab_weather_bind">Свръзва с този доставчик на прогноза. </string>
+    <string name="permdesc_weather_bind">Задаване като доставчик за услуги на времето. </string>
     <string name="permlab_weather_access_mgr">Достъп до услуги за времето</string>
-    <string name="permdesc_weather_access_mgr">Позволява на приложението достъп до услугите на времето. Обикновено не е необходимо при нормално ползване.</string>
+    <string name="permdesc_weather_access_mgr">Позволява на приложението достъп до услугите на времето. Обикновено не е необходимо при нормално ползване. </string>
     <!-- DataUsageProvider write permission title -->
     <string name="permlab_dataUsageWrite">Промени информация за база данни</string>
     <!-- DataUsageProvider write permission description -->
@@ -179,10 +179,10 @@
     <string name="permdesc_manageLiveDisplay">Позволява ви да конфигурирате разширени настройки.</string>
     <!-- MKAudioService - observe session changes permission -->
     <string name="permlab_observe_audio_sessions">Следи за промени в аудио сесиите</string>
-    <string name="permdesc_observe_audio_sessions">Позволява следенето на аудио стриймове или тяхното създаване и прекъсване.</string>
+    <string name="permdesc_observe_audio_sessions">Позволява следенето на аудио стриймове или тяхното създаване и прекъсване. </string>
     <!-- MKAudioService - observe session changes permission -->
     <string name="permlab_manage_audio_sessions">Следи за промени в аудио сесиите</string>
-    <string name="permdesc_manage_audio_sessions">Позволява изпращане на ъпдейт за стриймове.</string>
+    <string name="permdesc_manage_audio_sessions">Позволява изпращане на ъпдейт за стриймове. </string>
     <!-- QuickSettings: Themes tile -->
     <string name="qs_themes_label">Теми</string>
     <string name="qs_themes_content_description">Персонализиране на темата</string>
